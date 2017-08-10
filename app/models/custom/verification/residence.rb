@@ -22,8 +22,8 @@ class Verification::Residence
 
   private
 
-    def valid_postal_code?
-      postal_code =~ /^280/
-    end
-
+  def valid_postal_code?
+    # postal_code =~ /^280/ # Madrid
+    postal_code.to_i >= 10121 && postal_code.to_i <= 10156 # Turin
+  end
 end

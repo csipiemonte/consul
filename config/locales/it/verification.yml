@@ -1,0 +1,112 @@
+---
+it:
+  verification:
+    alert:
+      lock: Hai raggiunto il numero massimo di tentativi. Per cortesia prova di nuovo più tardi.
+    back: Torna al mio account
+    email:
+      create:
+        alert:
+          failure: Si è verificato un problema durante la spedizione della email al tuo indirizzo
+        flash:
+          success: 'Ti abbiamo spedito una mail di conferma al tuo indirizzo di posta: %{email}'
+      show:
+        alert:
+          failure: Codice di verifica errato
+        flash:
+          success: Sei un utente verificato
+    letter:
+      alert:
+        unconfirmed_code: Non hai ancora introdotto il codice di conferma
+      create:
+        flash:
+          offices: Sportello per il Cittadino
+          success_html: Prima delle votazioni riceverai una lettera con le istruzioni per verificare il tuo account.<br> Ricorda che puoi evitare la spedizione effettuando la verifica di persona in uno qualsiasi degli %{offices}.
+      edit:
+        see_all: Vedi proposte
+        title: Carta solicitada
+      errors:
+        incorrect_code: Codice di verifica errato
+      new:
+        explanation: 'Per partecipare alle votazioni finali puoi:'
+        go_to_index: Vedi proposte
+        office: Eseguire la verifica di persona in qualsiasi %{office}
+        offices: Sportello per il Cittadino
+        send_letter: Richiedere una lettera per posta
+        title: "Congratulazioni!"
+        user_permission_info: Con il tuo account puoi già...
+      update:
+        flash:
+          success: Il tuo account è già stato verificato
+    redirect_notices:
+      already_verified: Il tuo account è già stato verificato
+      email_already_sent: Ti è stata già spedita una email con un link per la conferma, se non la trovi puoi richiedere qui un nuovo invio
+    residence:
+      alert:
+        unconfirmed_residency: Non hai ancora verificato la residenza
+      create:
+        flash:
+          success: Residenza verificata
+      new:
+        accept_terms_text: Acepto %{terms_url} al Padrón
+        accept_terms_text_title: Accetto i termini di accesso all'Anagrafe
+        date_of_birth: Data di nascita
+        document_number: Numero del documento
+        document_number_help_title: Aiuto
+        document_number_help_text_html: '<strong>Codice Fiscale</strong>: RSSGLI85S06L219P'
+        document_type:
+          passport: Passaporto
+          residence_card: Carta di residenza
+          spanish_id: Carta di Identità
+        document_type_label: Tipo di documento
+        error_not_allowed_age: No hai l'età minima per partecipare
+        error_not_allowed_postal_code: Per completare la verifica devi essere residente.
+        error_verifying_census: Non è stato possibile verificare in Anagrafe in tuoi dati. Per favore, conferma la correttezza dei tuoi dati chiamando il Comune o recandoti in uno degli %{offices}.
+        error_verifying_census_offices: sportello per il Cittadino
+        form_errors: evitaron verificar tu residencia
+        postal_code: CAP
+        postal_code_note: Per completare la verifica devi essere residente
+        terms: i termini di accesso
+        title: Verificare residenza
+        verify_residence: Verificare residenza
+    sms:
+      create:
+        flash:
+          success: Introduci il codice di conferma che ti abbiamo spedito come messaggio di testo
+      edit:
+        confirmation_code: Introduci il codice che hai ricevuto sul tuo telefono
+        resend_sms_link: Richiedere un nuovo codice
+        resend_sms_text: "Non hai ricevuto un messaggio di testo con il codice di conferma"
+        submit_button: Invia
+        title: SMS di conferma
+      new:
+        phone: Introduci il tuo numero di cellulare (comprensivo di prefisso internazionale) per ricevere il codice
+        phone_format_html: "<strong><em>(Esempio: 393383456789 o 00393383456789)</em></strong>"
+        phone_note: Il tuo numero di telefono sarà usato solamente per inviarti il codice, non sarai mai contattato.
+        phone_placeholder: "Esempio: 393383456789 o 00393383456789"
+        submit_button: Invia
+        title: SMS di conferma
+      update:
+        error: Codice di conferma errato
+        flash:
+          level_three:
+            success: Codice corretto. Il tuo account è stato verificato
+          level_two:
+            success: Codice corretto
+    step_1: Residenza
+    step_2: SMS di conferma
+    step_3: Verifica finale
+    user_permission_debates: Partecipare ai dibattiti
+    user_permission_info: Dopo aver verificato i tuoi dati potrai...
+    user_permission_proposal: Creare nuove proposte
+    user_permission_support_proposal: Sostenere le proposte
+    user_permission_votes: Partecipare alle votazioni finali
+    verified_user:
+      form:
+        submit_button: Invia codice
+      show:
+        email_title: Emails
+        explanation: In Anagrafe disponiamo dei seguenti dati, seleziona dove vuoi che ti sia spedito il codice di conferma.
+        phone_title: Telefono
+        title: Informazione disponibile
+        use_another_phone: Usare un altro numero di telefono
