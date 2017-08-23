@@ -53,7 +53,9 @@ class CensusCsiApi
       upd_body[:get_habita_datos_response][:get_habita_datos_return][:datos_vivienda] = { :item=> {} }
       upd_body[:get_habita_datos_response][:get_habita_datos_return][:datos_habitante][:item] = {}
       upd_body[:get_habita_datos_response][:get_habita_datos_return][:datos_vivienda][:item] = {}
-      upd_body[:get_habita_datos_response][:get_habita_datos_return][:datos_vivienda][:item][:codigo_distrito] = '01'
+
+      # TODO, decidere se e' necessaria oppure no l'indicazione del distretto/circoscrizione
+      # upd_body[:get_habita_datos_response][:get_habita_datos_return][:datos_vivienda][:item][:codigo_distrito] = '01'
 
       body[:multi_ref].each do |r|
         type = r[:"@xsi:type"].rpartition(':').last

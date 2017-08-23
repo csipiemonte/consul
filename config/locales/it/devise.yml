@@ -1,7 +1,7 @@
 it:
   devise:
     password_expired:
-      expire_password: "Contraseña caducada"
+      expire_password: "Password scaduta"
       change_required: "Tu contraseña ha caducado"
       change_password: "Cambia tu contraseña"
       new_password: "Nueva contraseña"
@@ -50,8 +50,8 @@ it:
       updated: "Has actualizado tu cuenta correttamente."
     sessions:
       signed_in: "Sessione iniziata correttamente."
-      signed_out: "Has cerrado la sesión correttamente."
-      already_signed_out: "Has cerrado la sesión correttamente."
+      signed_out: "Sessione terminata correttamente."
+      already_signed_out: "Hai terminato correttamente la sessione."
     unlocks:
       send_instructions: "Recibirás un correo electrónico en unos minutos con instrucciones sobre cómo desbloquear tu cuenta."
       send_paranoid_instructions: "Si tu cuenta existe, recibirás un correo electrónico en unos minutos con instrucciones sobre cómo desbloquear tu cuenta."

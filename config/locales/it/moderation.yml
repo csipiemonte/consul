@@ -2,77 +2,77 @@
 it:
   moderation:
     header:
-      title: Moderación
+      title: Moderazione
     comments:
       index:
-        block_authors: Bloquear autores
-        confirm: "¿Estás seguro?"
-        filter: Filtrar
+        block_authors: Blocca autori
+        confirm: "Sei sicuro?"
+        filter: Filtra
         filters:
-          all: Todos
-          pending_flag_review: Pendientes
-          with_ignored_flag: Marcados como revisados
+          all: Tutti
+          pending_flag_review: Pendenti
+          with_ignored_flag: Marcati come esaminati
         headers:
-          comment: Comentario
-          moderate: Moderar
-        hide_comments: Ocultar comentarios
-        ignore_flags: Marcar como revisados
-        order: Orden
+          comment: Commenti
+          moderate: Modera
+        hide_comments: Nascondi commenti
+        ignore_flags: Segna come esaminati
+        order: Ordine
         orders:
-          flags: Más denunciados
-          newest: Más nuevos
-        title: Comentarios
+          flags: Più segnalati
+          newest: Più nuovi
+        title: Commenti
     dashboard:
       index:
-        title: Moderación
+        title: Moderazione
     debates:
       index:
-        block_authors: Bloquear autores
-        confirm: "¿Estás seguro?"
-        filter: Filtrar
+        block_authors: Blocca autori
+        confirm: "Sei sicuro?"
+        filter: Filtra
         filters:
-          all: Todos
-          pending_flag_review: Pendientes
-          with_ignored_flag: Marcados como revisados
+          all: Tutti
+          pending_flag_review: Pendenti
+          with_ignored_flag: Marcati come esaminati
         headers:
-          debate: Debate
-          moderate: Moderar
-        hide_debates: Ocultar debates
-        ignore_flags: Marcar como revisados
-        order: Orden
+          debate: Dibattito
+          moderate: Modera
+        hide_debates: Nascondi dibattiti
+        ignore_flags: Segna come esaminati
+        order: Ordine
         orders:
-          created_at: Más nuevos
-          flags: Más denunciados
-        title: Debates
+          created_at: Più nuovi
+          flags: Più segnalati
+        title: Dibattiti
     menu:
-      flagged_comments: Comentarios
-      flagged_debates: Debates
-      proposals: Propuestas
-      users: Bloquear usuarios
+      flagged_comments: Commenti
+      flagged_debates: Dibattiti
+      proposals: Proposte
+      users: Blocca utenti
     proposals:
       index:
-        block_authors: Bloquear autores
-        confirm: "¿Estás seguro?"
+        block_authors: Blocca autori
+        confirm: "Sei sicuro?"
         filter: Filtro
         filters:
-          all: Todas
-          pending_flag_review: Pendientes de revisión
-          with_ignored_flag: Marcadas como revisadas
+          all: Tutte
+          pending_flag_review: In attesa di revisione
+          with_ignored_flag: Marcate come esaminate
         headers:
-          moderate: Moderar
-          proposal: Propuesta
-        hide_proposals: Ocultar Propuestas
-        ignore_flags: Marcar como revisadas
-        order: Ordenar por
+          moderate: Modera
+          proposal: Proposta
+        hide_proposals: Nascondi Proposte
+        ignore_flags: Segna come esaminate
+        order: Ordina per
         orders:
-          created_at: Más recientes
-          flags: Más denunciadas
-        title: Propuestas
+          created_at: Più recenti
+          flags: Più segnalate
+        title: Proposte
     users:
       index:
-        hidden: Bloqueado
-        hide: Bloquear
-        search: Buscar
-        search_placeholder: email o nombre de usuario
-        title: Bloquear usuarios
-      notice_hide: Usuario bloqueado. Se han ocultado todos sus debates y comentarios.
+        hidden: Bloccato
+        hide: Blocca
+        search: Cerca
+        search_placeholder: email o nome utente
+        title: Blocca utenti
+      notice_hide: Utente bloccato. Tutti i suoi dibattiti e i suoi commenti sono stati nascosti.

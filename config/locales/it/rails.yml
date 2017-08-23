@@ -5,50 +5,50 @@ it:
     - dom
     - lun
     - mar
-    - mié
-    - jue
-    - vie
-    - sáb
+    - mer
+    - gio
+    - ven
+    - sab
     abbr_month_names:
     -
-    - ene
+    - gen
     - feb
     - mar
-    - abr
-    - may
-    - jun
-    - jul
+    - apr
+    - mag
+    - giu
+    - lug
     - ago
-    - sep
-    - oct
+    - set
+    - ott
     - nov
     - dic
     day_names:
-    - domingo
-    - lunes
-    - martes
-    - miércoles
-    - jueves
-    - viernes
-    - sábado
+    - domenica
+    - lunedì
+    - martedì
+    - mercoledì
+    - giovedì
+    - venerdì
+    - sabato
     formats:
       default: "%d/%m/%Y"
       long: "%d de %B de %Y"
       short: "%d de %b"
     month_names:
     -
-    - enero
-    - febrero
+    - gennaio
+    - febbraio
     - marzo
-    - abril
-    - mayo
-    - junio
-    - julio
+    - aprile
+    - maggio
+    - giugno
+    - luglio
     - agosto
-    - septiembre
-    - octubre
-    - noviembre
-    - diciembre
+    - settembre
+    - ottobre
+    - novembre
+    - dicembre
     order:
     - :day
     - :month
@@ -90,54 +90,54 @@ it:
         one: 1 segundo
         other: "%{count} segundos"
     prompts:
-      day: Día
-      hour: Hora
-      minute: Minutos
-      month: Mes
-      second: Segundos
-      year: Año
+      day: Giorno
+      hour: Ora
+      minute: Minuti
+      month: Mese
+      second: Secondi
+      year: Anno
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: debe ser aceptado
       blank: no puede estar en blanco
       present: debe estar en blanco
-      confirmation: no coincide
-      empty: no puede estar vacío
-      equal_to: debe ser igual a %{count}
-      even: debe ser par
+      confirmation: non coincide
+      empty: non può restare vuoto
+      equal_to: deve essere uguale a %{count}
+      even: deve essere pari
       exclusion: está reservado
-      greater_than: debe ser mayor que %{count}
-      greater_than_or_equal_to: debe ser mayor que o igual a %{count}
-      inclusion: no está incluido en la lista
-      invalid: no es válido
-      less_than: debe ser menor que %{count}
-      less_than_or_equal_to: debe ser menor que o igual a %{count}
-      not_a_number: no es un número
-      not_an_integer: debe ser un entero
-      odd: debe ser impar
+      greater_than: deve essere maggiore di %{count}
+      greater_than_or_equal_to: deve essere maggiore o uguale a %{count}
+      inclusion: non è incluso nella lista
+      invalid: non è valido
+      less_than: deve essere minore di %{count}
+      less_than_or_equal_to: deve essere minore o uguale a %{count}
+      not_a_number: non è un numero
+      not_an_integer: deve essere un intero
+      odd: deve essere dispari
       record_invalid: 'La validación falló: %{errors}'
       restrict_dependent_destroy:
         one: No se puede eliminar el registro porque existe un %{record} dependiente
         many: No se puede eliminar el registro porque existen %{record} dependientes
-      taken: ya está en uso
-      too_long: es demasiado largo (%{count} caracteres máximo)
-      too_short: es demasiado corto (%{count} caracteres mínimo)
+      taken: è già in uso
+      too_long: è troppo lungo (numero massimo di caratteri %{count})
+      too_short: è troppo corto (numero minimo di caratteri %{count})
       wrong_length: no tiene la longitud correcta (%{count} caracteres exactos)
-      other_than: debe ser distinto de %{count}
-      invalid_date: "no es una fecha valida"
+      other_than: deve essere diverso da %{count}
+      invalid_date: "non è una data valida"
     template:
       body: 'Se encontraron problemas con los siguientes campos:'
       header:
-        one: No se pudo guardar este/a %{model} porque se encontró 1 error
-        other: No se pudo guardar este/a %{model} porque se encontraron %{count} errores
+        one: Non è stato possibile salvare questo/a %{model} perché si è verificato 1 errore
+        other: Non è stato possibile salvare questo/a %{model} perché si sono verificati %{count} errori
   helpers:
     select:
-      prompt: Por favor seleccione
+      prompt: Per favore seleziona
     submit:
-      create: Crear %{model}
-      submit: Guardar %{model}
-      update: Actualizar %{model}
+      create: Crea %{model}
+      submit: Salva %{model}
+      update: Aggiorna %{model}
   number:
     currency:
       format:

@@ -2,87 +2,87 @@
 it:
   admin:
     header:
-      title: Administración
+      title: Amministrazione
     actions:
-      actions: Acciones
-      confirm: "¿Estás seguro?"
-      confirm_hide: Confirmar
-      hide: Ocultar
-      hide_author: Bloquear al autor
-      restore: Volver a mostrar
-      mark_featured: Destacar
-      unmark_featured: Quitar destacado
-      edit: Editar
-      configure: Configurar
+      actions: Azioni
+      confirm: "Sei securo?"
+      confirm_hide: Conferma
+      hide: Nascondi
+      hide_author: "Blocca l'autore"
+      restore: Torna a mostrare
+      mark_featured: Evidenzia
+      unmark_featured: Elimina evidenziatura
+      edit: Modifica
+      configure: Configura
     banners:
       index:
         title: Banners
-        create: Crear un banner
-        edit: Editar banner
-        delete: Eliminar banner
+        create: Crea un banner
+        edit: Modifica banner
+        delete: Elimina banner
         filters:
-          all: Todos
-          with_active: Activos
-          with_inactive: Inactivos
-        preview: Vista previa
+          all: Tutti
+          with_active: Attivi
+          with_inactive: Inattivi
+        preview: Anteprima
       banner:
-        title: Título
-        description:  Descripción
-        target_url:  Enlace
-        style: Estilo
-        image: Imagen
-        post_started_at: Inicio de publicación
-        post_ended_at: Fin de publicación
+        title: Titolo
+        description:  Descrizione
+        target_url:  link
+        style: Stile
+        image: Immagine
+        post_started_at: Inizio della pubblicazione
+        post_ended_at: Fine della pubblicazione
       edit:
-        editing: Editar el banner
+        editing: Modifica il banner
         form:
-          submit_button: Guardar Cambios
+          submit_button: Salva Modifiche
       errors:
         form:
           error:
-            one: "error impidió guardar el banner"
-            other: "errores impidieron guardar el banner."
+            one: "errore non ha permesso salvare il banner"
+            other: "errori non hanno permesso salvare il banner."
       new:
-        creating: Crear banner
+        creating: Creare banner
     activity:
       show:
-        action: Acción
+        action: Azione
         actions:
-          block: Bloqueado
-          hide: Ocultado
-          restore: Restaurado
-        by: Moderado por
-        content: Contenido
-        filter: Mostrar
+          block: Bloccato
+          hide: Nascosto
+          restore: Ripristinato
+        by: Moderato da
+        content: Contenuto
+        filter: Mostra
         filters:
-          all: Todo
-          on_comments: Comentarios
-          on_debates: Debates
-          on_proposals: Propuestas
-          on_users: Usuarios
-        title: Actividad de los Moderadores
+          all: Tutti
+          on_comments: Commenti
+          on_debates: Dibattiti
+          on_proposals: Proposte
+          on_users: Utenti
+        title: Attività dei Moderatori
         type: Tipo
     budgets:
       index:
-        title: Presupuestos participativos
-        new_link: Crear nuevo presupuesto
+        title: Budget partecipativi
+        new_link: Crea nuovo budget
         filters:
-          current: Abiertos
-          finished: Terminados
-        budget_investments: Ver propuestas de inversión
-        table_name: Nombre
+          current: Aperti
+          finished: Terminati
+        budget_investments: Vedi proposte di investimento
+        table_name: Nome
         table_phase: Fase
-        table_investments: Propuestas de inversión
-        table_edit_groups: Grupos de partidas
-        table_edit_budget: Editar
-        edit_groups: Editar grupos de partidas
-        edit_budget: Editar presupuesto
+        table_investments: Proposte di investimento
+        table_edit_groups: Grupppi di voci
+        table_edit_budget: Modifica
+        edit_groups: Modifica grupppi di voci
+        edit_budget: Modifica budget
       create:
-        notice: ¡Nueva campaña de presupuestos participativos creada con éxito!
+        notice: Nuova campagna di budget partecipativi creata con successo!
       update:
-        notice: Campaña de presupuestos participativos actualizada
+        notice: Campagna di budget partecipativi aggiornata
       edit:
-        title: Editar campaña de presupuestos participativos
+        title: Modifica campagna di budget partecipativi
       new:
         title: Nuevo presupuesto ciudadano
       show:
@@ -206,37 +206,37 @@ it:
       index:
         filter: Filtro
         filters:
-          all: Todos
-          with_confirmed_hide: Confirmados
-          without_confirmed_hide: Pendientes
-        hidden_debate: Debate oculto
-        hidden_proposal: Propuesta oculta
-        title: Comentarios ocultos
+          all: Tutti
+          with_confirmed_hide: Confermati
+          without_confirmed_hide: Pendenti
+        hidden_debate: Dibattito nascosto
+        hidden_proposal: proposta nascosta
+        title: Commenti nascosti
     dashboard:
       index:
-        back: Volver a
-        title: Administración
+        back: Torna a
+        title: Amministrazione
     debates:
       index:
         filter: Filtro
         filters:
-          all: Todos
-          with_confirmed_hide: Confirmados
-          without_confirmed_hide: Pendientes
-        title: Debates ocultos
+          all: Tutti
+          with_confirmed_hide: Confermati
+          without_confirmed_hide: Pendenti
+        title: Dibattiti nascosti
     hidden_users:
       index:
         filter: Filtro
         filters:
-          all: Todos
-          with_confirmed_hide: Confirmados
-          without_confirmed_hide: Pendientes
+          all: Tutti
+          with_confirmed_hide: Confermati
+          without_confirmed_hide: Pendenti
         title: Usuarios bloqueados
       show:
         email: 'Email:'
-        hidden_at: 'Bloqueado:'
-        registered_at: 'Fecha de alta:'
-        title: Actividad del usuario (%{user})
+        hidden_at: 'Bloccato:'
+        registered_at: 'Data di iscrizione:'
+        title: Attività utente (%{user})
     legislation:
       processes:
         create:
@@ -252,7 +252,7 @@ it:
           submit_button: Guardar cambios
         errors:
           form:
-            error: Error
+            error: Errore
         form:
           enabled: Habilitado
           process: Proceso
@@ -305,7 +305,7 @@ it:
           warning: Ojo, has editado el texto. Para conservar de forma permanente los cambios, no te olvides de hacer click en Guardar.
         errors:
           form:
-            error: Error
+            error: Errore
         form:
           title_html: 'Editando <span class="strong">%{draft_version_title}</span> del proceso <span class="strong">%{process_title}</span>'
           launch_text_editor: Lanzar editor de texto
@@ -340,31 +340,31 @@ it:
       questions:
         create:
           notice: 'Domanda creata correttamente. <a href="%{link}">Fai click par vederla</a>'
-          error: No se ha podido crear la pregunta
+          error: Non si è potuto creare la domanda
         update:
-          notice: 'Pregunta actualizada correctamente. <a href="%{link}">Haz click para verla</a>'
-          error: No se ha podido actualizar la pregunta
+          notice: 'Domanda aggiornata correttamente. <a href="%{link}">Haz click para verla</a>'
+          error: Non si è potuto aggiornare la domanda
         destroy:
-          notice: Pregunta eliminada correctamente
+          notice: Domanda rimossa correttamente
         edit:
-          back: Volver
-          title: "Editar “%{question_title}”"
-          submit_button: Guardar cambios
+          back: Indietro
+          title: "Modifica “%{question_title}”"
+          submit_button: Salva Modifiche
         errors:
           form:
-            error: Error
+            error: Errore
         form:
-          add_option: +Añadir respuesta cerrada
+          add_option: +Aggiungi risposta chiusa
           title_placeholder: Escribe un título a la pregunta
           value_placeholder: Escribe una respuesta cerrada
         index:
-          back: Volver
-          title: Preguntas asociadas a este proceso
-          create: Crear pregunta
-          delete: Borrar
+          back: Indietro
+          title: Domande associate a questo processo
+          create: Crea domanda
+          delete: Elimina
         new:
-          back: Volver
-          title: Crear nueva pregunta
+          back: Indietro
+          title: Crea nuova domanda
           submit_button: Crear pregunta
         table:
           title: Título
@@ -375,7 +375,7 @@ it:
           remove_option: Eliminar
     administrators:
       index:
-        title: Administradores
+        title: Amministratori
       administrator:
         add: Añadir como Administrador
         delete: Borrar
@@ -386,7 +386,7 @@ it:
         user_not_found: Usuario no encontrado
     managers:
       index:
-        title: Gestores
+        title: Gestori
       manager:
         add: Añadir como Gestor
         delete: Borrar
@@ -435,18 +435,18 @@ it:
       users: Usuarios
     moderators:
       index:
-        title: Moderadores
+        title: Moderatori
       moderator:
-        add: Añadir como Moderador
-        delete: Borrar
+        add: Aggiungi como Moderatore
+        delete: Elimina
       search:
-        email_placeholder: Buscar usuario por email
-        search: Buscar
-        user_not_found: Usuario no encontrado
+        email_placeholder: Cerca utente per email
+        search: Cerca
+        user_not_found: Utente non trovato
     newsletters:
       index:
-        title: Envío de newsletters
-        button: Descargar zip con lista de usuarios
+        title: Invio delle newsletters
+        button: Scarica zip con la lista degli utenti
     valuators:
       index:
         title: Evaluadores
@@ -455,9 +455,9 @@ it:
         user_found: Usuario encontrado
         add: Añadir como evaluador
       search:
-        email_placeholder: Buscar usuario por email
-        search: Buscar
-        user_not_found: Usuario no encontrado
+        email_placeholder: Cerca utente per email
+        search: Cerca
+        user_not_found: Utente non trovato
       summary:
         title: Resumen de evaluación de propuestas de inversión
         valuator_name: Evaluador
@@ -469,97 +469,97 @@ it:
         cost: Coste total
     poll_officers:
       index:
-        title: Presidentes de mesa
+        title: Presidenti di seggio
       officer:
-        add: Añadir como Presidente de mesa
-        delete: Eliminar cargo
-        name: Nombre
+        add: Aggiungi come Presidente di seggio
+        delete: Elimina incarico
+        name: Nome
         email: Email
-        entry_name: presidente de mesa
+        entry_name: presidente di seggio
       search:
-        email_placeholder: Buscar usuario por email
-        search: Buscar
-        user_not_found: Usuario no encontrado
+        email_placeholder: Cerca utente per email
+        search: Cerca
+        user_not_found: Utente non trovato
     poll_officer_assignments:
       flash:
-        destroy: "Eliminado turno de presidente de mesa"
-        create: "Añadido turno de presidente de mesa"
-        error_destroy: "Se ha producido un error al eliminar el turno"
-        error_create: "Se ha producido un error al intentar crear el turno"
+        destroy: "Eliminato turno del presidente di seggio"
+        create: "Aggiunto turno del presidente di seggio"
+        error_destroy: "Si è verificato un errore durante la rimozione del turno"
+        error_create: "Si è verificato un errore durante il tentativo di creazione del turno"
       index:
-        officers_title: "Listado de presidentes de mesa asignados"
-        no_officers: "No hay presidentes de mesa asignados a esta votación."
-        table_name: "Nombre"
+        officers_title: "Elenco dei presidenti di seggio assegnati"
+        no_officers: "Non ci sono presidenti di seggio assegnati a questa votazione."
+        table_name: "Nome"
         table_email: "Email"
-        add_officer_assignments: "Añadir turnos como presidente de mesa"
-        edit_officer_assignments: "Editar turnos"
+        add_officer_assignments: "Aggiungere turni come presidente di seggio"
+        edit_officer_assignments: "Modifica turni"
       by_officer:
-        new_assignment: "Nuevo turno"
-        date: "Fecha"
+        new_assignment: "Nuovo turno"
+        date: "Data"
         booth: "Urna"
-        assignment: "Asignación"
-        select_date: "Seleccionar día"
-        select_booth: "Seleccionar urna"
-        add_assignment: "Añadir turno"
-        remove_assignment: "Eliminar turno"
-        assignments: "Turnos como presidente de mesa en esta votación"
+        assignment: "Assegnazione"
+        select_date: "Selezionare giorno"
+        select_booth: "Selezionare urna"
+        add_assignment: "Aggiungere turno"
+        remove_assignment: "Eliminare turno"
+        assignments: "Turni come presidente di seggio in questa votazione"
         no_assignments: "No tiene turnos como presidente de mesa en esta votación."
-        final_recounts: "Recuentos finales"
-        final_recount: "Recuento final (presidente de mesa)"
+        final_recounts: "Riconteggi finali"
+        final_recount: "Riconteggio finale (presidente di seggio)"
     poll_booth_assignments:
       flash:
         destroy: "Urna desasignada"
         create: "Urna asignada"
-        error_destroy: "Se ha producido un error al desasignar la urna"
-        error_create: "Se ha producido un error al intentar asignar la urna"
+        error_destroy: "Si è verificato un errore nella deallocazione dell'urna"
+        error_create: "Si è verificato un errore nell'assegnazione dell'urna"
       show:
-        location: "Ubicación"
-        officers: "Presidentes de mesa"
-        officers_list: "Lista de presidentes de mesa asignados a esta urna"
-        no_officers: "No hay presidentes de mesa para esta urna"
-        recounts: "Recuentos"
-        recounts_list: "Lista de recuentos de esta urna"
-        date: "Fecha"
-        count_final: "Recuento final (presidente de mesa)"
-        count_by_system:  "Votos (automático)"
+        location: "Ubicazione"
+        officers: "Presidenti di seggio"
+        officers_list: "Elenco dei presidenti di seggio assegnati a questa urna"
+        no_officers: "Non ci sono presidenti di seggio per questa urna"
+        recounts: "Riconteggi"
+        recounts_list: "Elenco dei riconteggi di questa urna"
+        date: "Data"
+        count_final: "Riconteggio finale (presidente di seggio)"
+        count_by_system:  "Voti (automatico)"
       index:
-        booths_title: "Listado de urnas asignadas"
-        no_booths: "No hay urnas asignadas a esta votación."
-        table_name: "Nombre"
-        table_location: "Ubicación"
-        table_assignment: "Asignación"
-        remove_booth: "Desasignar urna"
-        add_booth: "Asignar urna"
+        booths_title: "Elenco delle urne assegnate"
+        no_booths: "Non ci sono urne assegnate a questa votazione."
+        table_name: "Nome"
+        table_location: "Ubicazione"
+        table_assignment: "Assegnazione"
+        remove_booth: "Deallocare urna"
+        add_booth: "Assegnare urna"
     polls:
       index:
-        title: "Listado de votaciones"
+        title: "Elenco delle votazioni"
         no_polls: "No hay ninguna votación."
         create: "Crear votación"
-        name: "Nombre"
-        dates: "Fechas"
+        name: "Nome"
+        dates: "Date"
       new:
-        title: "Nueva votación"
+        title: "Nuova votazione"
         submit_button: "Crear votación"
       edit:
         title: "Editar votación"
         submit_button: "Actualizar votación"
       show:
-        questions_tab: Preguntas
-        booths_tab: Urnas
-        officers_tab: Presidentes de mesa
-        recounts_tab: Recuentos
-        results_tab: Resultados
-        no_questions: "No hay preguntas asignadas a esta votación."
-        questions_title: "Listado de preguntas asignadas"
-        remove_question: "Desasignar pregunta"
-        add_question: "Incluir pregunta"
-        table_title: "Título"
-        table_assignment: "Asignación"
-        table_name: "Nombre"
+        questions_tab: Domande
+        booths_tab: Urne
+        officers_tab: Presidenti di seggio
+        recounts_tab: Riconteggi
+        results_tab: Risultati
+        no_questions: "Non ci sono domande associate a questa votazione."
+        questions_title: "Elenco delle domande associate"
+        remove_question: "Deallocare domanda"
+        add_question: "Includere domanda"
+        table_title: "Titolo"
+        table_assignment: "Assegnazione"
+        table_name: "Nome"
       flash:
-        question_added: "Pregunta añadida a esta votación"
+        question_added: "Domanda aggiunta a questa votazione"
         error_on_question_added: "No se pudo asignar la pregunta"
-        question_removed: "Pregunta eliminada de esta votación"
+        question_removed: "Domanda eliminada de esta votación"
         error_on_question_removed: "No se pudo quitar la pregunta"
     questions:
       index:
@@ -572,7 +572,7 @@ it:
         successful_proposals_tab: "Propuestas que han superado el umbral"
         create_question: "Crear pregunta para votación"
         table_proposal: "Propuesta"
-        table_question: "Pregunta"
+        table_question: "Domanda"
       edit:
         title: "Editar pregunta ciudadana"
       new:
@@ -641,22 +641,22 @@ it:
       index:
         filter: Filtro
         filters:
-          all: Todas
-          pending: Pendientes
-          rejected: Rechazadas
-          verified: Verificadas
+          all: Tutte
+          pending: Pendenti
+          rejected: Rifiutate
+          verified: Verificate
         hidden_count_html:
           one: Hay además <strong>una organización</strong> sin usuario o con el usuario bloqueado.
           other: Hay <strong>%{count} organizaciones</strong> sin usuario o con el usuario bloqueado.
-        reject: Rechazar
-        rejected: Rechazada
-        search: Buscar
-        search_placeholder: Nombre, email o teléfono
-        title: Organizaciones
-        verified: Verificada
-        verify: Verificar
+        reject: Rifiuta
+        rejected: Rifiutata
+        search: Cerca
+        search_placeholder: Nome, email o telefono
+        title: Organizzazioni
+        verified: Verificata
+        verify: Verifica
       search:
-        title: Buscar Organizaciones
+        title: Cerca Organizzazioni
     proposals:
       index:
         filter: Filtro
@@ -667,39 +667,39 @@ it:
         title: Propuestas ocultas
     settings:
       flash:
-        updated: Valor actualizado
+        updated: Valore aggiornato
       index:
         banners: Banner style
         banner_imgs: Banner images
-        title: Configuración global
-        update_setting: Actualizar
-        feature_flags: Funcionalidades
+        title: Configurazione globale
+        update_setting: Aggiorna
+        feature_flags: Funzionalità
         features:
-          enabled: "Funcionalidad activada"
-          disabled: "Funcionalidad desactivada"
-          enable: "Activar"
-          disable: "Desactivar"
+          enabled: "Funzionalità attivata"
+          disabled: "Funzionalità disattivata"
+          enable: "Attiva"
+          disable: "Disattiva"
     shared:
       booths_search:
-        button: Buscar
-        placeholder: Buscar urna por nombre
+        button: Cerca
+        placeholder: Cerca urna per nome
       poll_officers_search:
-        button: Buscar
-        placeholder: Buscar presidentes de mesa
+        button: Cerca
+        placeholder: Cerca presidenti di seggio
       poll_questions_search:
-        button: Buscar
-        placeholder: Buscar preguntas
+        button: Cerca
+        placeholder: Cerca domande
       proposal_search:
-        button: Buscar
-        placeholder: Buscar propuestas por título, código, descripción o pregunta
+        button: Cerca
+        placeholder: Cerca proposte per titolo, codice, descrizione o domanda
       spending_proposal_search:
-        button: Buscar
-        placeholder: Buscar propuestas por título o descripción
+        button: Cerca
+        placeholder: Cerca proposte per titolo o descrizione
       user_search:
-        button: Buscar
-        placeholder: Buscar usuario por nombre o email
-      search_results: "Resultados de la búsqueda"
-      no_search_results: "No se han encontrado resultados."
+        button: Cerca
+        placeholder: Cerca utente per nome o email
+      search_results: "Risultati della ricerca"
+      no_search_results: "Nessun risultato."
     spending_proposals:
       index:
         geozone_filter_all: Todos los ámbitos de actuación
@@ -758,12 +758,12 @@ it:
         cost_for_geozone: Coste total
     geozones:
       index:
-        title: Distritos
-        create: Crear un distrito
-        edit: Editar
-        delete: Borrar
+        title: Distretti
+        create: Crea un distretto
+        edit: Modifica
+        delete: Elimina
       geozone:
-        name: Nombre
+        name: Nome
         external_code: Código externo
         census_code: Código del censo
         coordinates: Coordenadas
@@ -774,12 +774,12 @@ it:
             other: "errores impidieron guardar el distrito."
       edit:
         form:
-          submit_button: Guardar cambios
+          submit_button: Salva modifiche
         editing: Editando distrito
-        back: Volver
+        back: Indietro
       new:
-        back: Volver
-        creating: Crear distrito
+        back: Indietro
+        creating: Crea distretto
       delete:
         success: Distrito borrado correctamente
         error: No se puede borrar el distrito porque ya tiene elementos asociados
@@ -824,17 +824,17 @@ it:
           unverified_users: Usuarios sin verificar
           user_level_three: Usuarios de nivel tres
           user_level_two: Usuarios de nivel dos
-          users: Usuarios
-          verified_users: Usuarios verificados
-          verified_users_who_didnt_vote_proposals: Usuarios verificados que no han votado propuestas
-          visits: Visitas
-          votes: Votos
+          users: Utenti
+          verified_users: Utenti verificati
+          verified_users_who_didnt_vote_proposals: Utenti verificati che non hanno votato proposte
+          visits: Visite
+          votes: Voti
         spending_proposals_title: Propuestas de inversión
         budgets_title: Presupuestos participativos
         visits_title: Visitas
         direct_messages: Mensajes directos
-        proposal_notifications: Notificaciones de propuestas
-        incomplete_verifications: Verificaciones incompletas
+        proposal_notifications: Notifiche di proposte
+        incomplete_verifications: Verifiche incomplete
       direct_messages:
         title: Mensajes directos
         total: Total
@@ -844,25 +844,25 @@ it:
         total: Total
         proposals_with_notifications: Propuestas con notificaciones
     tags:
-      create: Crear Tema
-      destroy: Eliminar Tema
+      create: Crea Argomento
+      destroy: Elimina Argomento
       index:
-        add_tag: Añade un nuevo tema de propuesta
-        title: Temas de propuesta
+        add_tag: Aggiungi un nuovo argomento di proposta
+        title: Argomenti di proposta
       name:
-        placeholder: Escribe el nombre del tema
+        placeholder: Scrivi il nome
     users:
       columns:
-        name: Nombre
-        email: Correo electrónico
-        document_number: DNI/Pasaporte/Tarjeta de residencia
-        roles: Roles
-        verification_level: Nivel de verficación
+        name: Nome
+        email: Email
+        document_number: Codice Fiscale
+        roles: Ruoli
+        verification_level: Livello di verifica
       index:
-        title: Usuarios
+        title: Utenti
       search:
-        placeholder: Buscar usuario por email, nombre o DNI
-        search: Buscar
+        placeholder: Cerca utente per email, nome o DNI
+        search: Cerca
     verifications:
       index:
         phone_not_given: No ha dado su teléfono
@@ -887,7 +887,7 @@ it:
           title: Editar bloque
         errors:
           form:
-            error: Error
+            error: Errore
         index:
           create: Crear nuevo bloque
           delete: Borrar bloque
@@ -922,7 +922,7 @@ it:
           title: Editar %{page_title}
         errors:
           form:
-            error: Error
+            error: Errore
         form:
           options: Opciones
         index:

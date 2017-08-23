@@ -81,9 +81,9 @@ it:
         title: SMS di conferma
       new:
         phone: Introduci il tuo numero di cellulare (comprensivo di prefisso internazionale) per ricevere il codice
-        phone_format_html: "<strong><em>(Esempio: 393383456789 o 00393383456789)</em></strong>"
+        phone_format_html: "<strong><em>(Esempio: 00393383456789)</em></strong>"
         phone_note: Il tuo numero di telefono sarà usato solamente per inviarti il codice, non sarai mai contattato.
-        phone_placeholder: "Esempio: 393383456789 o 00393383456789"
+        phone_placeholder: "Esempio: 00393383456789"
         submit_button: Invia
         title: SMS di conferma
       update:

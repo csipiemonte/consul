@@ -2,81 +2,81 @@
 it:
   officing:
     header:
-      title: Votaciones
+      title: Votazione
     dashboard:
       index:
-        title: Presidir mesa de votaciones
-        info: Aquí puedes validar documentos de ciudadanos y guardar los resultados de las urnas
+        title: Presiedere il seggio delle votazioni
+        info: Qui puoi validare i documenti dei cittadini e salvare i risultati delle urne
     menu:
-      voters: "Validar documento y votar"
-      final_recounts: "Recuento final y escrutinio"
+      voters: "Validare documento e votare"
+      final_recounts: "Riconteggio finale e scrutinio"
     polls:
       final:
-        title: "Listado de votaciones finalizadas"
+        title: "Elenco delle votazioni concluse"
         no_polls: "No tienes permiso para recuento final en ninguna votación reciente"
         select_poll: "Selecciona votación"
         add_recount: "Añadir recuentos finales"
         add_results: "Añadir resultados"
     final_recounts:
       flash:
-        create: "Datos añadidos"
+        create: "Dati aggiunti"
         error_create: "Recuento final NO añadido. Error en los datos"
       new:
         title: "%{poll} - Añadir recuento final"
-        not_allowed: "No tienes permiso para introducir recountos finales"
+        not_allowed: "Non hai i permessi per introdurre i riconteggi finali"
         booth: "Urna"
-        date: "Día"
-        select_booth: "Elige urna"
-        select_date: "Elige día"
-        count: "Recuento final"
-        count_placeholder: "Número final de votos"
-        submit: "Guardar"
-        final_recount_list: "Tus recuentos finales"
-        system_count: "Recuento del sistema"
-        add_results: "Añadir resultados"
+        date: "Giorno"
+        select_booth: "Scegli urna"
+        select_date: "Scegli giorno"
+        count: "Riconteggio finale"
+        count_placeholder: "Numero finale di voti"
+        submit: "Salva"
+        final_recount_list: "I tuoi riconteggi finali"
+        system_count: "Riconteggio del sistema"
+        add_results: "Aggiungi risultati"
     results:
       flash:
-        create: "Datos guardados"
-        error_create: "Resultados NO añadidos. Error en los datos"
-        error_wrong_booth: "Urna incorrecta. Resultados NO guardados."
-        error_wrong_date: "Fecha incorrecta. Resultados NO guardados."
+        create: "Dati salvati"
+        error_create: "Risultati NON aggiunti. Errore nei dati"
+        error_wrong_booth: "Urna errata. Risultati NON salvati."
+        error_wrong_date: "Data errata. Risultati NON salvati."
       new:
-        title: "%{poll} - Añadir resultados"
-        not_allowed: "No tienes permiso para introducir resultados"
+        title: "%{poll} - Aggiungi risultati"
+        not_allowed: "Non hai i permessi per introdurre i risultati"
         booth: "Urna"
-        date: "Día"
-        select_booth: "Elige urna"
-        select_date: "Elige día"
-        ballots_white: "Papeletas en blanco"
-        ballots_null: "Papeletas nulas"
-        submit: "Guardar"
-        results_list: "Tus resultados"
-        see_results: "Ver resultados"
+        date: "Giorno"
+        select_booth: "Scegli urna"
+        select_date: "Scegli giorno"
+        ballots_white: "Schede bianche"
+        ballots_null: "Schede nulle"
+        submit: "Salva"
+        results_list: "I tuoi risultati"
+        see_results: "Vedi risultati"
       index:
-        no_results: "No hay resultados"
-        results: "Resultados"
-        table_answer: Respuesta
-        table_votes: Votos
-        table_whites: Papeletas en blanco
-        table_nulls: Papeletas nulas
+        no_results: "Non ci sono risultati"
+        results: "Risultati"
+        table_answer: Risposta
+        table_votes: Voti
+        table_whites: Schede bianche
+        table_nulls: Schede nulle
     residence:
       flash:
         create: "Documento verificado con el Padrón"
-        not_allowed: "Hoy no tienes turno de presidente de mesa"
+        not_allowed: "Oggi non hai turno come presidente di seggio"
       new:
-        title: Validar documento
-        document_number: "Número de documento (incluida letra)"
-        submit: Validar documento
+        title: Valida documento
+        document_number: "Numero di documento"
+        submit: Valida documento
         error_verifying_census: El Padrón no pudo verificar este documento.
         form_errors: evitaron verificar este documento
         no_assignments: "Hoy no tienes turno de presidente de mesa"
     voters:
       new:
-        title: Votaciones
-        table_poll: Votación
-        table_actions: Estado de las votaciones
+        title: Votazioni
+        table_poll: Votazione
+        table_actions: Stato delle votazioni
       show:
-        can_vote: Puede votar
-        error_already_voted: "Ya ha participado en esta votación."
-        submit: Confirmar voto
-        success: "¡Voto introducido!"
+        can_vote: Puoi votare
+        error_already_voted: "Hai già partecipato a questa votazione."
+        submit: Conferma voto
+        success: "Voto aggiunto!"
