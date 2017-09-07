@@ -62,19 +62,17 @@ describe :poll do
     end
   end
 
-  describe "#document_has_voted?" do
-    it "returns true if Poll::Voter with document exists" do
-      poll = create(:poll)
-      voter = create(:poll_voter, :valid_document, poll: poll)
+  describe "#current_or_incoming" do
+    it "returns current or incoming polls" do
+      current = create(:poll, :current)
+      incoming = create(:poll, :incoming)
+      expired = create(:poll, :expired)
 
-      expect(poll.document_has_voted?(voter.document_number, voter.document_type)).to eq(true)
-    end
+      current_or_incoming = Poll.current_or_incoming
 
-    it "returns false if Poll::Voter with document does not exists" do
-      poll_2 = create(:poll)
-      voter = create(:poll_voter, :valid_document, poll: poll_2)
-
-      expect(poll.document_has_voted?(voter.document_number, voter.document_type)).to eq(false)
+      expect(current_or_incoming).to include(current)
+      expect(current_or_incoming).to include(incoming)
+      expect(current_or_incoming).to_not include(expired)
     end
   end
 

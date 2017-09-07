@@ -91,7 +91,7 @@ it:
           other: "%{count} Grupos de partidas presupuestarias"
       form:
         group: Nombre del grupo
-        no_groups: No hay grupos creados todavía. Cada usuario podrá votar en una sola partida de cada grupo.
+        no_groups: Non sono ancora stati creati gruppi. Cada usuario podrá votar en una sola partida de cada grupo.
         add_group: Añadir nuevo grupo
         create_group: Crear grupo
         heading: Nombre de la partida
@@ -377,62 +377,63 @@ it:
       index:
         title: Amministratori
       administrator:
-        add: Añadir como Administrador
-        delete: Borrar
-        restricted_removal: "Lo sentimos, no puedes eliminarte a ti mismo de la lista"
+        add: Aggiungi come Amministratore
+        delete: Elimina
+        restricted_removal: "Spiacenti, non puoi eliminarti dall'elenco"
       search:
-        email_placeholder: Buscar usuario por email
-        search: Buscar
-        user_not_found: Usuario no encontrado
+        email_placeholder: Cerca utente per email
+        search: Cerca
+        user_not_found: Utente non trovato
     managers:
       index:
         title: Gestori
       manager:
-        add: Añadir como Gestor
-        delete: Borrar
+        add: Aggiungi come Gestore
+        delete: Elimina
       search:
-        email_placeholder: Buscar usuario por email
-        search: Buscar
-        user_not_found: Usuario no encontrado
+        email_placeholder: Cerca utente per email
+        search: Cerca
+        user_not_found: Utente non trovato
     menu:
-      activity: Actividad de moderadores
-      admin: Menú de administración
-      banner: Gestionar banners
-      proposals_topics: Temas de propuestas
-      poll_questions: Preguntas ciudadanas
-      budgets: Presupuestos participativos
-      geozones: Gestionar distritos
-      hidden_comments: Comentarios ocultos
-      hidden_debates: Debates ocultos
-      hidden_proposals: Propuestas ocultas
-      hidden_users: Usuarios bloqueados
-      managers: Gestores
-      administrators: Administradores
-      moderators: Moderadores
-      newsletter: Envío de Newsletters
-      valuators: Evaluadores
-      poll_officers: Presidentes de mesa
-      polls: Votaciones
-      poll_booths: Ubicación de urnas
-      officials: Cargos públicos
-      organizations: Organizaciones
-      settings: Configuración global
-      spending_proposals: Propuestas de inversión
-      stats: Estadísticas
-      signature_sheets: Hojas de firmas
+      activity: Attività di moderadori
+      admin: Menu di amministrazione
+      banner: Gestire banners
+      proposals_topics: Temi delle proposte
+      poll_questions: Domande dei cittadini
+      budgets: Budget partecipativi
+      geozones: Gestire distretti
+      hidden_comments: Commenti nascosti
+      hidden_debates: Dibattiti nascosti
+      hidden_proposals: Proposte nascoste
+      hidden_users: Utenti bloccati
+      managers: Gestori
+      administrators: Amministratori
+      moderators: Moderatori
+      newsletter: Invio della Newsletters
+      valuators: Valutatori
+      poll_officers: Presidenti di seggio
+      polls: Votazioni
+      poll_booths: Ubicazione delle urne
+      poll_shifts: Assegna turni
+      officials: Incarichi pubblici
+      organizations: Organizzazioni
+      settings: Configurazione globale
+      spending_proposals: Proposte di investimento
+      stats: Statistiche
+      signature_sheets: Fogli delle firme
       site_customization:
-        pages: Personalizar páginas
-        images: Personalizar imágenes
-        content_blocks: Personalizar bloques
-      title_categories: Categorías
-      title_moderated_content: Contenido moderado
-      title_budgets: Presupuestos
-      title_polls: Votaciones
-      title_profiles: Perfiles
+        pages: Personalizzare pagine
+        images: Personalizzare immagini
+        content_blocks: Personalizzare blocchi
+      title_categories: Categorie
+      title_moderated_content: Contenuto moderato
+      title_budgets: Budget
+      title_polls: Votazioni
+      title_profiles: Profili
       title_banners: Banners
-      title_site_customization: Personalizar sitio
-      legislation: Legislación colaborativa
-      users: Usuarios
+      title_site_customization: Personalizzare sito
+      legislation: Legislazione collaborativa
+      users: Utenti
     moderators:
       index:
         title: Moderatori
@@ -449,24 +450,24 @@ it:
         button: Scarica zip con la lista degli utenti
     valuators:
       index:
-        title: Evaluadores
+        title: Valutatori
       valuator:
-        description_placeholder: "Descripción (opcional)"
-        user_found: Usuario encontrado
-        add: Añadir como evaluador
+        description_placeholder: "Descrizione (facoltativa)"
+        user_found: Utente trovato
+        add: Aggiungi come valutatore
       search:
         email_placeholder: Cerca utente per email
         search: Cerca
         user_not_found: Utente non trovato
       summary:
-        title: Resumen de evaluación de propuestas de inversión
-        valuator_name: Evaluador
-        finished_and_feasible_count: Finalizadas viables
-        finished_and_unfeasible_count: Finalizadas inviables
-        finished_count: Finalizadas
-        in_evaluation_count: En evaluación
-        total_count: Total
-        cost: Coste total
+        title: Riepilogo della valutazione delle proposte di investimento
+        valuator_name: Valutatore
+        finished_and_feasible_count: Concluse realizzabili
+        finished_and_unfeasible_count: Concluse non realizzabili
+        finished_count: Concluse
+        in_evaluation_count: In valutazione
+        total_count: Totale
+        cost: Costo totale
     poll_officers:
       index:
         title: Presidenti di seggio
@@ -481,11 +482,6 @@ it:
         search: Cerca
         user_not_found: Utente non trovato
     poll_officer_assignments:
-      flash:
-        destroy: "Eliminato turno del presidente di seggio"
-        create: "Aggiunto turno del presidente di seggio"
-        error_destroy: "Si è verificato un errore durante la rimozione del turno"
-        error_create: "Si è verificato un errore durante il tentativo di creazione del turno"
       index:
         officers_title: "Elenco dei presidenti di seggio assegnati"
         no_officers: "Non ci sono presidenti di seggio assegnati a questa votazione."
@@ -494,18 +490,27 @@ it:
         add_officer_assignments: "Aggiungere turni come presidente di seggio"
         edit_officer_assignments: "Modifica turni"
       by_officer:
-        new_assignment: "Nuovo turno"
-        date: "Data"
+        date: "Fecha"
         booth: "Urna"
-        assignment: "Assegnazione"
-        select_date: "Selezionare giorno"
-        select_booth: "Selezionare urna"
-        add_assignment: "Aggiungere turno"
-        remove_assignment: "Eliminare turno"
-        assignments: "Turni come presidente di seggio in questa votazione"
+        assignments: "Turnos como presidente de mesa en esta votación"
         no_assignments: "No tiene turnos como presidente de mesa en esta votación."
-        final_recounts: "Riconteggi finali"
-        final_recount: "Riconteggio finale (presidente di seggio)"
+        final_recounts: "Recuentos finales"
+        final_recount: "Recuento final (presidente de mesa)"
+    poll_shifts:
+      new:
+        new_assignment: "Nuevo turno"
+        date: "Fecha"
+        officer: "Presidente de mesa"
+        assignment: "Asignación"
+        select_date: "Seleccionar día"
+        select_officer: "Seleccionar presidente de mesa"
+        add_assignment: "Añadir turno"
+        remove_assignment: "Eliminar turno"
+        assignments: "Turnos en esta urna"
+        no_assignments: "Esta urna no tiene turnos asignados"
+      flash:
+        create: "Añadido turno de presidente de mesa"   
+        destroy: "Eliminado turno de presidente de mesa"
     poll_booth_assignments:
       flash:
         destroy: "Urna desasignada"
@@ -528,21 +533,21 @@ it:
         table_name: "Nome"
         table_location: "Ubicazione"
         table_assignment: "Assegnazione"
-        remove_booth: "Deallocare urna"
-        add_booth: "Assegnare urna"
+        remove_booth: "Dealloca urna"
+        add_booth: "Assegna urna"
     polls:
       index:
         title: "Elenco delle votazioni"
-        no_polls: "No hay ninguna votación."
-        create: "Crear votación"
+        no_polls: "Non c'è nessuna votazione."
+        create: "Crea votazione"
         name: "Nome"
         dates: "Date"
       new:
         title: "Nuova votazione"
-        submit_button: "Crear votación"
+        submit_button: "Crea votazione"
       edit:
-        title: "Editar votación"
-        submit_button: "Actualizar votación"
+        title: "Modifica votazione"
+        submit_button: "Aggiorna votazione"
       show:
         questions_tab: Domande
         booths_tab: Urne
@@ -588,55 +593,57 @@ it:
         preview: Ver en la web
     recounts:
       index:
-        title: "Recuentos"
-        no_recounts: "No hay nada de lo que hacer recuento"
+        title: "Riconteggi"
+        no_recounts: "Non c'è nulla da riconteggiare"
         table_booth_name: "Urna"
-        table_final_recount: "Recuento final (presidente de mesa)"
-        table_system_count: "Votos (automático)"
+        table_final_recount: "Riconteggio finale (presidente di seggio)"
+        table_system_count: "Voti (automatico)"
     results:
       index:
-        title: "Resultados"
-        no_results: "No hay resultados"
-        table_whites: Papeletas en blanco
-        table_nulls: Papeletas nulas
-        table_answer: Respuesta
-        table_votes: Votos
+        title: "Resultati"
+        no_results: "Non ci sono risultati"
+        table_whites: Schede bianche
+        table_nulls: Schede nulle
+        table_answer: Risposta
+        table_votes: Voti
     booths:
       index:
-        title: "Lista de urnas"
-        no_booths: "No hay urnas."
-        add_booth: "Añadir urna"
-        name: "Nombre"
-        location: "Ubicación"
+        title: "Elenco delle urne"
+        no_booths: "Non ci sono urne."
+        add_booth: "Aggiungi urna"
+        name: "Nome"
+        location: "Ubicazione"
       new:
-        title: "Nueva urna"
-        name: "Nombre"
-        location: "Ubicación"
-        submit_button: "Crear urna"
+        title: "Nuova urna"
+        name: "Nome"
+        location: "Ubicazione"
+        submit_button: "Crea urna"
       edit:
-        title: "Editar urna"
-        submit_button: "Actualizar urna"
+        title: "Modifica urna"
+        submit_button: "Aggiorna urna"
       show:
-        location: "Ubicación"
+        location: "Ubicazione"
+      booth:
+        shifts: "Assegna turni"
     officials:
       edit:
-        destroy: Eliminar condición de 'Cargo Público'
-        title: 'Cargos Públicos: Editar usuario'
+        destroy: Elimina condizione di 'incarico Pubblico'
+        title: 'Incarichi Pubblici: Modifica utente'
       flash:
-        official_destroyed: 'Datos guardados: el usuario ya no es cargo público'
-        official_updated: Datos del cargo público guardados
+        official_destroyed: "Dati salvati: l'utente non è più un incarico pubblico"
+        official_updated: Dati dell'incarico pubblico salvati
       index:
-        title: Cargos Públicos
-      level_0: No es cargo público
-      level_1: Nivel 1
-      level_2: Nivel 2
-      level_3: Nivel 3
-      level_4: Nivel 4
-      level_5: Nivel 5
+        title: Incarichi Pubblici
+      level_0: Non è un incarico pubblico
+      level_1: Livello 1
+      level_2: Livello 2
+      level_3: Livello 3
+      level_4: Livello 4
+      level_5: Livello 5
       search:
-        edit_official: Editar cargo público
-        make_official: Convertir en cargo público
-        title: 'Cargos Públicos: Búsqueda de usuarios'
+        edit_official: Modifica incarico pubblico
+        make_official: Converti in incarico pubblico
+        title: 'Incarichi Pubblici: Ricerca degli utenti'
     organizations:
       index:
         filter: Filtro
@@ -661,10 +668,10 @@ it:
       index:
         filter: Filtro
         filters:
-          all: Todas
-          with_confirmed_hide: Confirmadas
-          without_confirmed_hide: Pendientes
-        title: Propuestas ocultas
+          all: Tutte
+          with_confirmed_hide: Confermate
+          without_confirmed_hide: Pendenti
+        title: Domande nascoste
     settings:
       flash:
         updated: Valore aggiornato

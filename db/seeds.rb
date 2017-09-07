@@ -39,10 +39,10 @@ Setting["months_to_archive_proposals"] = 12
 Setting["email_domain_for_officials"] = ''
 
 # Code to be included at the top (inside <head>) of every page (useful for tracking)
-Setting['per_page_code_head'] =  ''
+Setting['per_page_code_head'] = ''
 
 # Code to be included at the top (inside <body>) of every page
-Setting['per_page_code_body'] =  ''
+Setting['per_page_code_body'] = ''
 
 # Social settings
 Setting["twitter_handle"] = nil
@@ -58,11 +58,11 @@ Setting["opendata_url"] = "/opendata"
 # Public-facing URL of the app.
 Setting["url"] = "http://example.com"
 
-# Consul installation's organization name
-Setting["org_name"] = "Consul"
+# CONSUL installation's organization name
+Setting["org_name"] = "CONSUL"
 
-# Consul installation place name (City, Country...)
-Setting["place_name"] = "Consul-land"
+# CONSUL installation place name (City, Country...)
+Setting["place_name"] = "CONSUL-land"
 
 # Meta tags for SEO
 Setting["meta_description"] = nil
@@ -79,6 +79,7 @@ Setting['feature.public_stats'] = true
 Setting['feature.budgets'] = true
 Setting['feature.signature_sheets'] = true
 Setting['feature.legislation'] = true
+Setting['feature.community'] = true
 
 # Spending proposals feature flags
 Setting['feature.spending_proposal_features.voting_allowed'] = nil
@@ -98,7 +99,7 @@ Setting['proposal_notification_minimum_interval_in_days'] = 3
 Setting['direct_message_max_per_day'] = 3
 
 # Email settings
-Setting['mailer_from_name'] = 'Consul'
+Setting['mailer_from_name'] = 'CONSUL'
 Setting['mailer_from_address'] = 'noreply@consul.dev'
 
 # Verification settings

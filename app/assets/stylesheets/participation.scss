@@ -248,11 +248,15 @@
 .debate-form,
 .proposal-form,
 .budget-investment-form,
-.spending-proposal-form {
+.spending-proposal-form,
+.document-form,
+.topic-new,
+.topic-form  {
 
   .icon-debates,
   .icon-proposals,
-  .icon-budget {
+  .icon-budget,
+  .icon-documents {
     font-size: rem-calc(50);
     line-height: $line-height;
     opacity: 0.5;
@@ -262,7 +266,8 @@
     color: $debates;
   }
 
-  .icon-proposals {
+  .icon-proposals,
+  .icon-documents {
     color: $proposals;
   }
 
@@ -294,7 +299,10 @@
   }
 }
 
-.proposal-form {
+.proposal-form,
+.topic-form,
+.topic-new,
+.document-form {
 
   .recommendations li::before {
     color: $proposals;
@@ -312,7 +320,9 @@
 .debate-quiz,
 .budget-investment-show,
 .draft-panels,
-.debate-questions {
+.debate-questions,
+.communities-show,
+.topic-show {
 
   p {
     word-wrap: break-word;
@@ -346,7 +356,8 @@
   .debate-info,
   .proposal-info,
   .investment-project-info,
-  .budget-investment-show {
+  .budget-investment-show,
+  .topic-info {
     clear: both;
     color: $text-medium;
     font-size: $small-font-size;
@@ -428,33 +439,30 @@
 
   .document-link,
   .video-link {
-    border: 1px solid $border;
+    background: $highlight-soft;
+    border: 1px solid $highlight;
     display: block;
     margin: $line-height / 2 0;
     padding: $line-height / 2;
     position: relative;
 
     a {
-      padding-left: rem-calc(24);
+      word-wrap: break-word;
     }
 
-    ::before {
-      color: #007bb7;
-      content: 'G';
-      font-family: "icons" !important;
+    [class^="icon-"] {
+      display: inline-block;
       font-size: rem-calc(24);
-      left: rem-calc(6);
-      padding-top: rem-calc(3);
-      position: absolute;
-      top: 0;
+      line-height: $line-height;
+      vertical-align: middle;
     }
-  }
 
-  .video-link {
+    .icon-document {
+      color: #007bb7;
+    }
 
-    ::before {
+    .icon-video {
       color: #cc181e;
-      content: 'D';
     }
   }
 
@@ -626,7 +634,8 @@
 .proposal,
 .investment-project,
 .budget-investment,
-.legislation {
+.legislation,
+.communities-show {
   margin: $line-height / 4 0;
 
   .panel {
@@ -698,7 +707,8 @@
   .debate-info,
   .proposal-info,
   .investment-project-info,
-  .budget-investment-info {
+  .budget-investment-info,
+  .topic-info {
     color: $text-medium;
     font-size: $small-font-size;
     margin: rem-calc(6) 0 0;
@@ -747,6 +757,12 @@
 
 .divider {
   display: none;
+}
+
+.document-form{
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .more-info {
@@ -875,6 +891,13 @@
     line-height: $line-height;
     margin-left: rem-calc(6);
     top: 0;
+  }
+}
+
+.help-header {
+
+  h1 {
+    font-size: rem-calc(24);
   }
 }
 
@@ -1484,13 +1507,9 @@
 
 .poll,
 .poll-question {
-  background: #fff;
-  border-radius: rem-calc(6);
+  border: 1px solid $border;
   margin-bottom: $line-height / 2;
-}
-
-.poll {
-  padding: $line-height;
+  padding: $line-height / 2;
   position: relative;
 
   .icon-poll-answer {

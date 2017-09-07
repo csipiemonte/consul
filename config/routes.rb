@@ -95,6 +95,14 @@ Rails.application.routes.draw do
 
   resources :follows, only: [:create, :destroy]
 
+  resources :documents, only: [:new, :create, :destroy] do
+    collection do
+      get :new_nested
+      delete :destroy_upload
+      post :upload
+    end
+  end
+
   resources :stats, only: [:index]
 
   resources :legacy_legislations, only: [:show], path: 'legislations'
@@ -148,6 +156,10 @@ Rails.application.routes.draw do
 
   resource :verification, controller: "verification", only: [:show]
 
+  resources :communities, only: [:show] do
+    resources :topics
+  end
+
   scope module: :verification do
     resource :residence, controller: "residence", only: [:new, :create]
     resource :sms, controller: "sms", only: [:new, :create, :edit, :update]
@@ -155,6 +167,7 @@ Rails.application.routes.draw do
     resource :email, controller: "email", only: [:new, :show, :create]
     resource :letter, controller: "letter", only: [:new, :create, :show, :edit, :update]
   end
+
 
   namespace :admin do
     root to: "dashboard#index"
@@ -273,7 +286,10 @@ Rails.application.routes.draw do
         get :search, on: :collection
       end
 
-      resources :booths
+      resources :booths do
+        resources :shifts
+      end
+
       resources :questions
     end
 

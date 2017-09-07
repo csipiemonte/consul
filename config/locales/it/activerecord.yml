@@ -76,6 +76,9 @@ it:
       legislation/answers:
         one: "Risposta"
         other: "Risposte"
+      documents:
+        one: "Documento"
+        other: "Documenti"
     attributes:
       budget:
         name: "Nome"
@@ -192,6 +195,9 @@ it:
         value: Valor
       legislation/annotation:
         text: Comentario
+      document:
+        title: Título
+        attachment: Archivo adjunto
     errors:
       models:
         user:
