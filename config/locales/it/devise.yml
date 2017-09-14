@@ -2,10 +2,10 @@ it:
   devise:
     password_expired:
       expire_password: "Password scaduta"
-      change_required: "Tu contraseña ha caducado"
-      change_password: "Cambia tu contraseña"
-      new_password: "Nueva contraseña"
-      updated: "Contraseña actualizada con éxito"
+      change_required: "La tua password è scaduta"
+      change_password: "Cambia password"
+      new_password: "Nuova password"
+      updated: "Password aggiornata con successo"
     confirmations:
       confirmed: "Tu cuenta ha sido confirmada. Por favor autentifícate con tu red social o tu usuario y contraseña"
       send_instructions: "Recibirás un correo electrónico en unos minutos con instrucciones sobre cómo restablecer tu contraseña."

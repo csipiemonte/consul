@@ -494,22 +494,28 @@ it:
         booth: "Urna"
         assignments: "Turnos como presidente de mesa en esta votación"
         no_assignments: "No tiene turnos como presidente de mesa en esta votación."
-        final_recounts: "Recuentos finales"
-        final_recount: "Recuento final (presidente de mesa)"
+        final_recounts: "Riconteggi finali"
+        final_recount: "Riconteggio finale (presidente di seggio)"
     poll_shifts:
       new:
-        new_assignment: "Nuevo turno"
-        date: "Fecha"
-        officer: "Presidente de mesa"
-        assignment: "Asignación"
-        select_date: "Seleccionar día"
-        select_officer: "Seleccionar presidente de mesa"
-        add_assignment: "Añadir turno"
-        remove_assignment: "Eliminar turno"
-        assignments: "Turnos en esta urna"
-        no_assignments: "Esta urna no tiene turnos asignados"
+        add_shift: "Aggiungi turno"
+        shift: "Assegnazione"
+        shifts: "Turni in questa urna"
+        date: "Data"
+        edit_shifts: Assegna turno
+        new_shift: "Nuovo turno"
+        no_shifts: "Questa urna non ha turni assegnati"
+        officer: "Presidente di seggio"
+        remove_shift: "Elimina turno"
+        search_officer_button: Cerca
+        search_officer_placeholder: Cerca presidente di seggio
+        search_officer_text: Cerca il presidente di seggio per assegnare un turno
+        select_date: "Seleziona giorno"
+        table_shift: "Turno"
+        table_email: "Email"
+        table_name: "Nome"
       flash:
-        create: "Añadido turno de presidente de mesa"   
+        create: "Añadido turno de presidente de mesa"
         destroy: "Eliminado turno de presidente de mesa"
     poll_booth_assignments:
       flash:
@@ -590,6 +596,8 @@ it:
         title: Título
         valid_answers: Respuestas válidas
         description: Descripción
+        video_url: Video esterno
+        documents: Documenti
         preview: Ver en la web
     recounts:
       index:

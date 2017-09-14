@@ -1,0 +1,7 @@
+---
+it:
+  omniauth:
+    shibboleth:
+      sign_in: Entra con Shibboleth
+      sign_up: Registrati con Shibboleth
+      name: Shibboleth
