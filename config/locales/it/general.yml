@@ -191,7 +191,7 @@ it:
       ie: Abbiamo rilevato che stai navigando con il browser Internet Explorer. Per una esperienza migliore ti consigliamo di usare %{firefox} o %{chrome}.
       ie_title: Questo sito web non è ottimizzato per il tuo browser
     footer:
-      accessibility: Accesibilità
+      accessibility: Accessibilità
       conditions: Condizioni di utilizzo
       consul: applicazione Consul
       consul_url: https://github.com/consul/consul

@@ -577,28 +577,28 @@ it:
         title: "Preguntas ciudadanas"
         create: "Crear pregunta ciudadana"
         no_questions: "No hay ninguna pregunta ciudadana."
-        filter_poll: "Filtrar por votación"
-        select_poll: "Seleccionar votación"
+        filter_poll: "Filtra per votazione"
+        select_poll: "Seleziona votazione"
         questions_tab: "Preguntas ciudadanas"
-        successful_proposals_tab: "Propuestas que han superado el umbral"
-        create_question: "Crear pregunta para votación"
-        table_proposal: "Propuesta"
+        successful_proposals_tab: "Proposte che hanno superator il quorum"
+        create_question: "Crea domanda per la votazione"
+        table_proposal: "Proposta"
         table_question: "Domanda"
       edit:
         title: "Editar pregunta ciudadana"
       new:
         title: "Crear pregunta ciudadana"
-        poll_label: "Votación"
-        valid_answers_note: "Escribe las respuestas separadas por comas (,)"
+        poll_label: "Votazione"
+        valid_answers_note: "Scrivi le risposte separate da virgole (,)"
       show:
         proposal: Propuesta ciudadana original
-        author: Autor
-        title: Título
-        valid_answers: Respuestas válidas
-        description: Descripción
+        author: autore
+        title: Titolo
+        valid_answers: Risposte valide
+        description: Descrizione
         video_url: Video esterno
         documents: Documenti
-        preview: Ver en la web
+        preview: Vedi nel sito
     recounts:
       index:
         title: "Riconteggi"
@@ -612,6 +612,7 @@ it:
         no_results: "Non ci sono risultati"
         table_whites: Schede bianche
         table_nulls: Schede nulle
+        table_total: Schede totali
         table_answer: Risposta
         table_votes: Voti
     booths:

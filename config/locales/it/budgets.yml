@@ -14,13 +14,13 @@ it:
         zero: "Todavía no has votado ninguna propuesta de inversión."
       reasons_for_not_balloting:
         not_logged_in: Necesitas %{signin} o %{signup} para continuar.
-        not_verified: Las propuestas de inversión sólo pueden ser apoyadas por usuarios verificados, %{verify_account}.
-        organization: Las organizaciones no pueden votar.
+        not_verified: Le proposte di investimento possono essere appoggiate solamente da utenti verificati, %{verify_account}.
+        organization: Le organizzazioni non possono votare.
         not_selected: No se pueden votar propuestas inviables.
         not_enough_money_html: "Ya has asignado el presupuesto disponible.<br><small>Recuerda que puedes %{change_ballot} en cualquier momento</small>"
-        no_ballots_allowed: El periodo de votación está cerrado.
+        no_ballots_allowed: Il periodo di votazione è concluso.
         different_heading_assigned: Ya votaste en una sección distinta del presupuesto.
-        change_ballot: cambiar tus votos
+        change_ballot: cambia i tuoi voti
     groups:
       show:
         title: Seleziona una opzione
@@ -62,14 +62,14 @@ it:
         unfeasible_text_definitions: ver definiciones aquí
         by_heading: "Propuestas de inversión con ámbito: %{heading}"
         search_form:
-          button: Buscar
-          placeholder: Buscar propuestas de inversión...
-          title: Buscar
+          button: Cerca
+          placeholder: Cerca proposte di investimento...
+          title: Cerca
         search_results_html:
-          one: " que contiene <strong>'%{search_term}'</strong>"
-          other: " que contienen <strong>'%{search_term}'</strong>"
+          one: " che contiene <strong>'%{search_term}'</strong>"
+          other: " che contengono <strong>'%{search_term}'</strong>"
         sidebar:
-          my_ballot: Mis votos
+          my_ballot: I miei voti
           voted_html:
             one: "<strong>Has votado una propuesta por un valor de %{amount_spent}</strong>"
             other: "<strong>Has votado %{count} propuestas por un valor de %{amount_spent}</strong>"
@@ -80,12 +80,12 @@ it:
           check_ballot_link: "revisar mis votos"
           zero: "Todavía no has votado ninguna propuesta de inversión en este ámbito del presupuesto."
           verified_only: "Para crear una nueva propuesta de inversión %{verify}."
-          verify_account: "verifica tu cuenta"
-          create: "Crear propuesta de inversión"
-          not_logged_in: "Para crear una nueva propuesta de inversión debes %{sign_in} o %{sign_up}."
-          sign_in: "iniciar sesión"
-          sign_up: "registrarte"
-          by_feasibility: Por viabilidad
+          verify_account: "verifica il tuo account"
+          create: "Crea proposta di investimento"
+          not_logged_in: "Per creare una nuova proposta di investimento devi %{sign_in} o %{sign_up}."
+          sign_in: "fare login"
+          sign_up: "registrarti"
+          by_feasibility: Per fattibilità
           feasible: Ver los proyectos viables
           unfeasible: Ver los proyectos inviables
         orders:

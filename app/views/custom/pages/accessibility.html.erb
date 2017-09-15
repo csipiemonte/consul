@@ -1,0 +1,146 @@
+<% provide :title do %><%= t('pages.titles.accessibility') %><% end %>
+<% content_for :canonical do %>
+  <%= render "shared/canonical", href: page_url("accessibility") %>
+<% end %>
+
+<div class="row">
+<div class="small-12 column">
+  <h1>Accessibilit&agrave;</h1>
+  <p>Per accessibilit&agrave; web si intende la possibilità di accesso al Web e a tutti i suoi contenuti da parte di tutte le persone, indipendentemente dalle disabilità (fisiche, intellettuali o tecniche) che possano presentare o che derivino dal contesto di utilizzo (disabilità tecnologiche o ambientali).</p>
+
+  <p>Quando i siti web sono stati progettati tenendo in conto dell'accessibilità', tutti gli utenti possono arrivare in modo paritario ai contenuti, per esempio:</p>
+
+  <ul>
+    <li>Inserendo un testo alternativo alle immagini, gli utenti non vedenti o con problemi di vista possono usare speciali lettori per ottenere l'informazione. </li>
+    <li>Quando i video sono dotati di sottotitoli, gli utenti con difficoltà uditive possono comprenderli pienamente. </li>
+    <li>Se i contenuti sono scritti usando un linguaggio semplice e sono illustrati, gli utenti con problemi di apprendimento sono facilitati nella comprensione.</li>
+    <li>Se l'utente ha problemi di mobilità e non riesce ad usare il mouse, le combinazioni di tasti lo aiutano nella navigazione.</li>
+  </ul>
+
+  <h2>Tasti di scelta rapida</h2>
+
+  <p>Per poter navigare fra le pagine di questo sito in maniera accessibile, è stato realizzato un gruppo di tasti di scelta rapida che portano alle principali sezioni del sito.</p>
+
+  <div class="small-12 medium-6">
+    <table>
+      <caption class="show-for-sr">Tasti di scelta rapida per il menu di navigazione</caption>
+      <thead>
+        <tr>
+          <th scope="col" class="text-center">Tasto</th>
+          <th scope="col">Pagina</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="text-center">0</td>
+          <td>Inizio</td>
+        </tr>
+        <tr>
+          <td class="text-center">1</td>
+          <td>Debattiti</td>
+        </tr>
+        <tr>
+          <td class="text-center">2</td>
+          <td>Proposte</td>
+        </tr>
+        <tr>
+          <td class="text-center">3</td>
+          <td>Votazioni</td>
+        </tr>
+        <tr>
+          <td class="text-center">4</td>
+          <td>Budget partecipativi</td>
+        </tr>
+        <tr>
+          <td class="text-center">5</td>
+          <td>Processi legislativi</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>A seconda del sistema operativo e del browser che si utilizza, la combinazione dei tasti sarà la seguente:</p>
+
+  <div class="small-12 medium-6">
+    <table>
+      <caption class="show-for-sr">Combinazione dei tasti in funzione del sistema operativo e del browser</caption>
+      <thead>
+        <tr>
+          <th scope="col">Browser</th>
+          <th scope="col">Combinazione dei tasti</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Edge</td>
+          <td>ALT + tasto scelta rapida e poi ENTER</td>
+        </tr>
+        <tr>
+          <td>Firefox</td>
+          <td>ALT + MAIUSCOLE + tasto scelta rapida</td>
+        </tr>
+        <tr>
+          <td>Chrome</td>
+          <td>ALT + tasto scelta rapida (se è un MAC, CTRL + ALT + tasto scelta rapida)</td>
+        </tr>
+        <tr>
+          <td>Safari</td>
+          <td>ALT + tasto scelta rapida (se è un MAC, CMD + tasto scelta rapida)</td>
+        </tr>
+        <tr>
+          <td>Opera</td>
+          <td>MAIUSCOLE + ESC + tasto scelta rapida</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Dimensione del testo</h2>
+  <p>Il progetto accessibile di questo sito web consente all'utente di scegliere la dimensione del testo. Tale operazione può essere portata a termine in maniera differente a seconda del browser utilizzato.</p>
+
+  <div class="small-12 medium-6">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Browser</th>
+          <th scope="col">Operazione da eseguire </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Edge</td>
+          <td>Impostazioni e altro (icona) > Zoom</td>
+        </tr>
+        <tr>
+          <td>Firefox</td>
+          <td>Apri menu (icona) > Reimposta il livello di zoom</td>
+        </tr>
+        <tr>
+          <td>Chrome</td>
+          <td>Personalizza e controlla Google Chrome (icona) > Dimensioni dei caratteri</td>
+        </tr>
+        <tr>
+          <td>Safari</td>
+          <td>Visualizzazione > aumenta/riduci</td>
+        </tr>
+        <tr>
+          <td>Opera</td>
+          <td>Vedi > scala</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Un altro modo per modificare la dimensione del testo è quello di impiegare le combinazioni di tasti di scelta rapida definite nei browser, in particolare la combinazione di tasti:</p>
+
+  <ul>
+    <li><code>CTRL e + (CMD e + in MAC)</code> per aumentare la dimensione del testo</li>
+    <li><code> CTRL e - (CMD e - in MAC)</code> per ridurre la dimensione del testo</li>
+  </ul>
+
+  <h2>Compatibilità con gli standard e progetto visuale</h2>
+
+  <p>Tutte le pagine di questo sito web rispettano le <strong>Norme di Accessibilità</strong> o Principi Generali del Progetto Accessibile stabiliti dal Gruppo di Lavoro&nbsp;<abbr title="Web Accessibility Initiative" lang="en">WAI</abbr> appartenente al W3C.</p>
+
+  </div>
+</div>

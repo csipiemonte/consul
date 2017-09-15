@@ -8,6 +8,8 @@ module UsersHelper
       t "verification.residence.new.document_type.passport"
     when "3"
       t "verification.residence.new.document_type.residence_card"
+    when "4"
+      t "verification.residence.new.document_type.codice_fiscale"
     end
   end
 
