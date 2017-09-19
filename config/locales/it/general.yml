@@ -425,20 +425,21 @@ it:
       login_to_comment: È necessario %{signin} o %{signup} per commentare.
       notifications_tab: Notifiche
       retired_warning: "El autor de esta propuesta considera que ya no debe seguir recogiendo apoyos."
-      retired_warning_link_to_explanation: Revisa su explicación antes de apoyarla.
+      retired_warning_link_to_explanation: Verifica la spiegazione prima di appoggiarla.
       retired: "Proposta ritirata dall'autore"
       send_notification: Invia notifica
       share: Condividi
       no_notifications: "Questa proposta non ha notifiche."
       embed_video_title: "Video in %{proposal}"
-      title_external_url: "Documentación adicional"
-      title_video_url: "Vídeo externo"
+      title_external_url: "Documentazione aggiuntiva"
+      title_video_url: "Video esterno"
+      author: Autore
     update:
       form:
         submit_button: Salva modifiche
   polls:
-    all: "Todas"
-    no_dates: "sin fecha asignada"
+    all: "Tutte"
+    no_dates: "senza data assegnata"
     dates: "Dal %{open_at} al %{closed_at}"
     final_date: "Riconteggio finale/Resultati"
     index:
@@ -452,15 +453,15 @@ it:
       participate_button_expired: "Votazione terminata"
       no_geozone_restricted: "Tutta la città"
       geozone_restricted: "Distretti"
-      geozone_info: "Pueden participar las personas empadronadas en: "
-      can_answer: "¡Puedes participar en esta votación!"
-      cant_answer: "Esta votación no está disponible en tu zona"
-      cant_answer_not_logged_in: "Necesitas iniciar sesión o registrarte para participar"
-      cant_answer_verify: "Por favor verifica tu cuenta para poder responder"
-      already_answer: "Ya has participado en esta votación"
+      geozone_info: "Possono partecipare le persone residenti in: "
+      can_answer: "Puoi partecipare a questa votazione!"
+      cant_answer: "Queesta votazione non è disponibile per la tua zona"
+      cant_answer_not_logged_in: "È necessario fare login o registrarsi per partecipare"
+      cant_answer_verify: "Per cortesia verifica il tuo account per poter rispondere"
+      already_answer: "Hai già partecipato a questa votazione"
       section_header:
-        icon_alt: Icono de Votaciones
-        title: Votaciones
+        icon_alt: Icona delle Votazioni
+        title: Votazioni
         help: Ayuda sobre las votaciones
       section_footer:
         title: Ayuda sobre las votaciones
@@ -668,33 +669,33 @@ it:
   users:
     direct_messages:
       new:
-        body_label: "Mensaje"
+        body_label: "Messaggio"
         direct_messages_bloqued: "Este usuario ha decidido no recibir mensajes privados"
-        submit_button: "Enviar mensaje"
-        title: Enviar mensaje privado a %{receiver}
-        title_label: "Título"
-        verified_only: Para enviar un mensaje privado %{verify_account}
-        verify_account: verifica tu cuenta
+        submit_button: "Invia messaggio"
+        title: Invia messaggio privato a %{receiver}
+        title_label: "Titolo"
+        verified_only: Per spedire un messaggio privato %{verify_account}
+        verify_account: verifica il tuo account
         authenticate: Necesitas %{signin} o %{signup}.
         signin: iniciar sesión
         signup: registrarte
       show:
         receiver: Mensaje enviado a %{receiver}
     show:
-      deleted: Eliminado
-      deleted_debate: Este debate ha sido eliminado
-      deleted_proposal: Este propuesta ha sido eliminada
-      deleted_budget_investment: Este propuesta de inversión ha sido eliminada
+      deleted: Eliminato
+      deleted_debate: Questo dibattito è stato eliminato
+      deleted_proposal: Questa proposta è stata eliminata
+      deleted_budget_investment: Questa proposta di investimento è stata eliminata
       filters:
         comments:
-          one: 1 Comentario
-          other: "%{count} Comentarios"
+          one: 1 Commento
+          other: "%{count} Commenti"
         debates:
-          one: 1 Debate
-          other: "%{count} Debates"
+          one: 1 Dibattito
+          other: "%{count} Dibattiti"
         proposals:
-          one: 1 Propuesta
-          other: "%{count} Propuestas"
+          one: 1 Proposta
+          other: "%{count} Proposte"
         budget_investments:
           one: 1 Proyecto de presupuestos participativos
           other: "%{count} Proyectos de presupuestos participativos"
@@ -702,7 +703,7 @@ it:
           one: 1 Siguiendo
           other: "%{count} Siguiendo"
       no_activity: Utente senza attività pubblica
-      no_private_messages: "Este usuario no acepta mensajes privados."
+      no_private_messages: "Questo utente non accetta messaggi privati."
       private_activity: Este usuario ha decidido mantener en privado su lista de actividades
       send_private_message: "Invia un messaggio privato"
     proposals:
@@ -712,35 +713,35 @@ it:
       see: "Vedi proposta"
   votes:
     agree: Estoy de acuerdo
-    anonymous: Demasiados votos anónimos, para poder votar %{verify_account}.
+    anonymous: Troppi voti anonimi, per poter votare %{verify_account}.
     comment_unauthenticated: Necesitas %{signin} o %{signup} para poder votar.
     disagree: No estoy de acuerdo
     organizations: Las organizaciones no pueden votar
-    signin: iniciar sesión
-    signup: registrarte
-    supports: Apoyos
+    signin: iniziare la sessione
+    signup: registrarsi
+    supports: Appoggi
     unauthenticated: È necessario %{signin} o %{signup} per proseguire.
-    verified_only: Las propuestas sólo pueden ser votadas por usuarios verificados, %{verify_account}.
-    verify_account: verifica tu cuenta
+    verified_only: Le proposte possono essere votate solamente da utenti verificati, %{verify_account}.
+    verify_account: verifica il tuo account
     spending_proposals:
       not_logged_in: È necessario %{signin} o %{signup} per proseguire.
-      not_verified: Las propuestas de inversión sólo pueden ser apoyadas por usuarios verificados, %{verify_account}.
-      organization: Las organizaciones no pueden votar.
-      unfeasible: No se pueden votar propuestas inviables.
-      not_voting_allowed: El periodo de votación está cerrado.
+      not_verified: Le proposte di investimento possono essere sostenute solamente da utenti verificati, %{verify_account}.
+      organization: Le organizzazioni non possono votare.
+      unfeasible: Non si possono votare le proposte non realizzabili.
+      not_voting_allowed: Il periodo di votazione è concluso.
     budget_investments:
       not_logged_in: È necessario %{signin} o %{signup} per proseguire.
-      not_verified: Las propuestas de inversión sólo pueden ser apoyadas por usuarios verificados, %{verify_account}.
-      organization: Las organizaciones no pueden votar.
-      unfeasible: No se pueden votar propuestas inviables.
-      not_voting_allowed: El periodo de votación está cerrado.
-      different_heading_assigned: Sólo puedes apoyar propuestas en un distrito
+      not_verified: Le proposte di investimento possono essere sostenute solamente da utenti verificati, %{verify_account}.
+      organization: Le organizzazioni non possono votare.
+      unfeasible: Non si possono votare le proposte non realizzabili.
+      not_voting_allowed: Il periodo di votazione è concluso.
+      different_heading_assigned: Sólo puedes apoyar proposte en un distrito
   welcome:
     debates:
-      description: Encontrarnos, debatir y compartir lo que nos parece importante en nuestra ciudad.
+      description: Incontrarci, dibattere e condividere ciò che ci sembra importante nella nostra città.
       title: Dibatti
     decide:
-      description: La ciudadanía decide si acepta o rechaza las propuestas más apoyadas.
+      description: La cittadinanza decide se accettare o rifiutare le proposte più sostenute.
       title: Decidi
     do:
       description: Si la propuesta es aceptada mayoritariamente, el Ayuntamiento la asume como propia y se hace.

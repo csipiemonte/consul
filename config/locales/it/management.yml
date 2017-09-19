@@ -5,7 +5,7 @@ it:
       alert:
         unverified_user: Si possono modificare solo gli account degli utenti verificati
       show:
-        title: Cuenta de usuario
+        title: Account utente
     account_info:
       change_user: Cambiare utente
       document_number_label: 'Numero del documento:'
@@ -16,23 +16,23 @@ it:
     check: Comprobar
     dashboard:
       index:
-        title: Gestión
-        info: Desde aquí puedes gestionar usuarios a través de las acciones listadas en el menú de la izquierda.
-    document_number: Número de documento
-    document_type_label: Tipo de documento
+        title: Gestione
+        info: Da qui è possibile gestire gli utenti mediante le azioni elencate nel menu di sinistra.
+    document_number: Numero del documento
+    document_type_label: Tipo di documento
     document_verifications:
-      already_verified: Esta cuenta de usuario ya está verificada.
+      already_verified: Questo account utente è già stato verificato.
       has_no_account_html: Para crear un usuario entre en %{link} y haga clic en la opción <b>'Registrarse'</b> en la parte superior derecha de la pantalla.
       link: Consul
       in_census_has_following_permissions: 'Este usuario puede participar en el Portal de Gobierno Abierto con las siguientes posibilidades:'
-      not_in_census: Este documento no está registrado.
+      not_in_census: Questo documento non è registrato.
       not_in_census_info: 'Las personas no empadronadas pueden participar en el Portal de Gobierno Abierto con las siguientes posibilidades:'
       please_check_account_data: Compruebe que los datos anteriores son correctos para proceder a verificar la cuenta completamente.
-      title: Gestión de usuarios
+      title: Gestione degli utenti
       under_age: No tienes edad suficiente para verificar tu cuenta.
-      verify: Verificar usuario
+      verify: Verifica utente
     email_label: Email
-    date_of_birth: Fecha de nacimiento
+    date_of_birth: Data di nascita
     email_verifications:
       already_verified: Esta cuenta de usuario ya está verificada.
       choose_options: 'Elige una de las opciones siguientes:'
@@ -45,41 +45,41 @@ it:
       introduce_email: 'Introduce el email con el que creó la cuenta:'
       send_email: Enviar email de verificación
     menu:
-      create_proposal: Crear propuesta
-      print_proposals: Imprimir propuestas
-      support_proposals: Apoyar propuestas
-      create_spending_proposal: Crear propuesta de inversión
-      print_spending_proposals: Imprimir propts. de inversión
-      support_spending_proposals: Apoyar propts. de inversión
-      create_budget_investment: Crear proyectos de inversión
-      print_budget_investments: Imprimir proyectos de inversión
-      support_budget_investments: Apoyar proyectos de inversión
-      users: Usuarios
-      edit_user_accounts: Editar cuenta de usuario
+      create_proposal: Crea proposta
+      print_proposals: Stampa proposte
+      support_proposals: Sostieni proposte
+      create_spending_proposal: Crea proposta di investimento
+      print_spending_proposals: Stampa prop. di investimento
+      support_spending_proposals: Sostieni prop. di investimento
+      create_budget_investment: Crea progetti di investimento
+      print_budget_investments: Stampa progetti di investimento
+      support_budget_investments: Sostieni progetti di investimento
+      users: Utenti
+      edit_user_accounts: Modifica account utente
       user_invites: Invitaciones para usuarios
     permissions:
-      create_proposals: Crear nuevas propuestas
-      debates: Participar en debates
-      support_proposals: Apoyar propuestas
-      vote_proposals: Participar en las votaciones finales
+      create_proposals: Crea nuove proposte
+      debates: Partecipa ai dibattiti
+      support_proposals: Sostieni proposte
+      vote_proposals: Partecipa alle votazioni finali
     print:
       proposals_info: Haz tu propuesta en http://url.consul
-      proposals_note: Las propuestas más apoyadas serán llevadas a votación. Y si las acepta una mayoría, el Ayuntamiento las llevará a cabo.
-      proposals_title: 'Propuestas:'
+      proposals_note: Las proposte más apoyadas serán llevadas a votación. Y si las acepta una mayoría, el Ayuntamiento las llevará a cabo.
+      proposals_title: 'Proposte:'
       spending_proposals_info: Participa en http://url.consul
       spending_proposals_note: Los presupuestos participativos se invertirán en las propuestas de inversión más apoyadas.
       budget_investments_info: Participa en http://url.consul
       budget_investments_note: Los presupuestos participativos se invertirán en las propuestas de inversión más apoyadas.
-    print_info: Imprimir esta información
+    print_info: Stampa esta información
     proposals:
       alert:
         unverified_user: Este usuario no está verificado
-      create_proposal: Crear propuesta
+      create_proposal: Crear proposta
       print:
-        print_button: Imprimir
+        print_button: Stampa
     budgets:
       create_new_investment: Crear nuevo proyecto
-      print_investments: Imprimir proyectos
+      print_investments: Stampa proyectos
       support_investments: Apoyar proyectos
     budget_investments:
       alert:
@@ -89,7 +89,7 @@ it:
         heading: Concepto
         unfeasible: Proyectos no factibles
       print:
-        print_button: Imprimir
+        print_button: Stampa
       search_results:
         one: " contiene el término '%{search_term}'"
         other: " contienen el término '%{search_term}'"
@@ -101,27 +101,27 @@ it:
         unfeasible: Propuestas de inversión no viables
         by_geozone: "Propuestas de inversión con ámbito: %{geozone}"
       print:
-        print_button: Imprimir
+        print_button: Stampa
       search_results:
         one: " que contiene '%{search_term}'"
         other: " que contienen '%{search_term}'"
     sessions:
-      signed_out: Has cerrado la sesión correctamente.
-      signed_out_managed_user: Se ha cerrado correctamente la sesión del usuario.
-    username_label: Nombre de usuario
+      signed_out: Sessione utente conclusa con successo.
+      signed_out_managed_user: Si è conclusa con successo la sessione utente.
+    username_label: Nome utente
     users:
-      create_user: Crear nueva cuenta de usuario
+      create_user: Crea nuovo account utente
       create_user_info: 'Procedemos a crear un usuario con la siguiente información:'
-      create_user_submit: Crear usuario
+      create_user_submit: Crea utente
       create_user_success_html: Hemos enviado un correo electrónico a <b>%{email}</b> para verificar que es suya. El correo enviado contiene un link que el usuario deberá pulsar. Entonces podrá seleccionar una clave de acceso, y entrar en la web de participación.
       autogenerated_password_html: "Se ha asignado la contraseña <b>%{password}</b> a este usuario. Puede modificarla desde el apartado 'Mi cuenta' de la web."
-      email_optional_label: "Email (recomendado pero opcional)"
-      erased_notice: Cuenta de usuario borrada.
-      erased_by_manager: "Borrada por el manager: %{manager}"
-      erase_account_link: Borrar cuenta
+      email_optional_label: "Email (consigliato però facoltativo)"
+      erased_notice: Account utente eliminato.
+      erased_by_manager: "eliminata dal manager: %{manager}"
+      erase_account_link: Elimina account
       erase_account_confirm: ¿Seguro que quieres borrar a este usuario? Esta acción no se puede deshacer
       erase_warning: Esta acción no se puede deshacer. Por favor asegurese de que quiere eliminar esta cuenta.
-      erase_submit: Borrar cuenta
+      erase_submit: Elimina account
     user_invites:
       new:
         label: Emails

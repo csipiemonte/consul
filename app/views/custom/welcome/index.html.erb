@@ -1,0 +1,69 @@
+﻿<% content_for :canonical do %>
+  <%= render "shared/canonical", href: root_url %>
+<% end %>
+
+<div class="jumbo highlight">
+  <div class="row">
+    <div class="small-12 medium-9 small-centered column text-center">
+      <h1><%= t("layouts.header.titolo") %></h1>
+      <p class="lead">
+        <%= t("layouts.header.html") %>
+      </p>
+      <div class="small-12 medium-6 large-4 small-centered">
+        <%= link_to t("layouts.header.more_info"), more_info_path, class: "button expanded large" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% cache [locale_and_user_status, @featured_debates, @featured_proposals, 'featured'] do %>
+  <main>
+    <div class="row">
+      <div class="small-12 medium-4 column margin-bottom">
+        <figure class="figure-card">
+          <%= link_to more_info_path, title: t("welcome.schede.scheda1.link") do %>
+          <%= image_tag "welcome/img1.jpg", alt: t("welcome.schede.scheda1.title") %>
+          <% end %>
+          <figcaption>
+          <%= link_to more_info_path, title: t("welcome.schede.scheda1.link") do %>
+            <span><%= t("welcome.schede.scheda1.label") %></span><br>
+            <p class="title"><%= t("welcome.schede.scheda1.title") %></p>
+          <% end %>
+          </figcaption>
+        </figure>
+        <p><%= t("welcome.schede.scheda1.description") %></p>
+        <p><%= link_to t("welcome.schede.scheda1.link"), more_info_path %></p>
+      </div>
+      <div class="small-12 medium-4 column margin-bottom">
+        <figure class="figure-card">
+          <%= link_to more_info_path, title: t("welcome.schede.scheda1.link") do %>
+          <%= image_tag "welcome/img1.jpg", alt: t("welcome.schede.scheda1.title") %>
+          <% end %>
+          <figcaption>
+          <%= link_to more_info_path, title: t("welcome.schede.scheda1.link") do %>
+          <span><%= t("welcome.schede.scheda1.label") %></span><br>
+          <p class="title"><%= t("welcome.schede.scheda1.title") %></p>
+          <% end %>
+          </figcaption>
+        </figure>
+        <p><%= t("welcome.schede.scheda1.description") %></p>
+        <p><%= link_to t("welcome.schede.scheda1.link"), more_info_path %></p>
+	    </div>    
+	    <div class="small-12 medium-4 column margin-bottom">
+        <figure class="figure-card">
+        <%= link_to more_info_path, title: t("welcome.schede.scheda1.link") do %>
+        <%= image_tag "welcome/img1.jpg", alt: t("welcome.schede.scheda1.title") %>
+        <% end %>
+        <figcaption>
+        <%= link_to more_info_path, title: t("welcome.schede.scheda1.link") do %>
+          <span><%= t("welcome.schede.scheda1.label") %></span><br>
+          <p class="title"><%= t("welcome.schede.scheda1.title") %></p>
+        <% end %>
+        </figcaption>
+      </figure>
+      <p><%= t("welcome.schede.scheda1.description") %></p>
+      <p><%= link_to t("welcome.schede.scheda1.link"), more_info_path %></p>
+      </div>
+    </div>
+  </main>
+<% end %>

@@ -1,5 +1,10 @@
----
+﻿---
 it:
+  layouts:
+    header:
+      titolo: La città che ami sarà la città  che vuoi. 
+      html: Esistono città governate direttamente dai suoi abitanti, che <strong>dibattono</strong> di temi verso cui nutrono preoccupazione, <strong>propongono</strong> idee per migliorare le loro vite e <strong>decidono</strong> fra tutte e tutti quelle da realizzare.
+      more_info: Leggi tutto	  
   omniauth:
     shibboleth:
       sign_in: Entra con Shibboleth
@@ -10,3 +15,11 @@ it:
       new:
         document_type:
           codice_fiscale: Codice Fiscale
+  welcome:
+    schede:
+      scheda1: 
+        title: Titolo 1
+        description: Descrizione 1
+        label: Argomento 1	 	  
+        link: Vedi progetto 
+

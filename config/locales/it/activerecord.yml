@@ -42,10 +42,10 @@ it:
         other: "Propuestas ciudadanas"
       poll/booth:
         one: "urna"
-        other: "urnas"
+        other: "urne"
       poll/officer:
-        one: "presidente de mesa"
-        other: "presidentes de mesa"
+        one: "presidente di seggio"
+        other: "presidenti di seggio"
       spending_proposal:
         one: "Proposta di investimento"
         other: "Proposte di investimento"
@@ -56,14 +56,14 @@ it:
         one: Immagine
         other: Immagini
       site_customization/content_block:
-        one: Bloque
-        other: Bloques
+        one: Blocco
+        other: Blocchi
       legislation/process:
-          one: "Proceso"
-          other: "Procesos"
+          one: "Processo"
+          other: "Processi"
       legislation/draft_versions:
-          one: "Versión borrador"
-          other: "Versiones borrador"
+          one: "Versione bozza"
+          other: "Versioni bozza"
       legislation/draft_texts:
         one: "Borrador"
         other: "Borradores"
@@ -82,49 +82,49 @@ it:
     attributes:
       budget:
         name: "Nome"
-        description_accepting: "Descripción durante la fase de presentación de proyectos"
-        description_reviewing: "Descripción durante la fase de revisión interna"
-        description_selecting: "Descripción durante la fase de apoyos"
-        description_valuating: "Descripción durante la fase de evaluación"
-        description_balloting: "Descripción durante la fase de votación"
-        description_reviewing_ballots: "Descripción durante la fase de revisión de votos"
+        description_accepting: "Descrizione durante la fase di presentazione dei progetti"
+        description_reviewing: "Descrizione durante la fase di controllo interno"
+        description_selecting: "Descrizione durante la fase di apoggi"
+        description_valuating: "Descrizione durante la fase di valutazione"
+        description_balloting: "Descrizione durante la fase di votazione"
+        description_reviewing_ballots: "Descrizione durante la fase di controllo dei voti"
         description_finished: "Descripción cuando el presupuesto ha finalizado / Resultados"
         phase: "Fase"
         currency_symbol: "Divisa"
       budget/investment:
-        administrator_id: "Administrador"
-        description: "Descripción"
-        external_url: "Enlace a documentación adicional"
+        administrator_id: "Amministratore"
+        description: "Descrizione"
+        external_url: "Link alla documentazione aggiuntiva"
         heading_id: "Partida presupuestaria"
-        title: "Título"
-        location: "Ubicación"
-        organization_name: "Si estás proponiendo en nombre de una organización o colectivo, escribe su nombre"
+        title: "Titolo"
+        location: "Ubicazione"
+        organization_name: "Se stai proponendo a nome di una organizzazione o collettivo, scrivi il nome"
       comment:
-        body: "Comentario"
-        user: "Usuario"
+        body: "Commento"
+        user: "Utente"
       budget/investment/milestone:
-        title: "Título"
-        description: "Descripción"
+        title: "Titolo"
+        description: "Descrizione"
       debate:
-        author: "Autor"
-        description: "Opinión"
-        terms_of_service: "Términos de servicio"
-        title: "Título"
+        author: "Autore"
+        description: "Opinione"
+        terms_of_service: "Termini del servizio"
+        title: "Titolo"
       proposal:
-        author: "Autor"
-        title: "Título"
-        question: "Pregunta"
-        description: "Descripción"
-        terms_of_service: "Términos de servicio"
+        author: "Autore"
+        title: "Titolo"
+        question: "Domanda"
+        description: "Descrizione"
+        terms_of_service: "Termini del servizio"
       user:
-        login: Email o nombre de usuario
-        email: "Correo electrónico"
-        username: "Nombre de usuario"
-        password_confirmation: "Confirmación de contraseña"
-        password: "Contraseña"
-        current_password: "Contraseña actual"
-        phone_number: "Teléfono"
-        official_position: "Cargo público"
+        login: Email o nome utente
+        email: "Email"
+        username: "Nome utente"
+        password_confirmation: "Ripeti password"
+        password: "Password"
+        current_password: "Password attuale"
+        phone_number: "Telefono"
+        official_position: "Incarico pubblico"
         official_level: "Nivel del cargo"
         redeemable_code: "Código de verificación por carta (opcional)"
       organization:
@@ -147,22 +147,22 @@ it:
         valid_answers: "Posibles respuestas"
         summary: "Resumen"
         description: "Descripción"
-        external_url: "Enlace a documentación adicional"
+        external_url: "Link alla documentazione aggiuntiva"
       signature_sheet:
         signable_type: "Tipo de hoja de firmas"
         signable_id: "ID Propuesta ciudadana/Propuesta inversión"
         document_numbers: "Números de documentos"
       site_customization/page:
         content: Contenido
-        created_at: Creada
-        subtitle: Subtítulo
+        created_at: Creata
+        subtitle: Sottotitolo
         slug: Slug
         status: Estado
-        title: Título
-        updated_at: última actualización
+        title: Titolo
+        updated_at: ultimo aggiornamento
         more_info_flag: Mostrar en la página de más información
         print_content_flag: Botón de imprimir contenido
-        locale: Idioma
+        locale: Lingua
       site_customization/image:
         name: Nombre
         image: Imagen
