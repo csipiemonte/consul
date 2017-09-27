@@ -2,7 +2,7 @@
 it:
   layouts:
     header:
-      titolo: La città che ami sarà la città  che vuoi. 
+      titolo: La città che ami sarà la città che vuoi. 
       html: Esistono città governate direttamente dai suoi abitanti, che <strong>dibattono</strong> di temi verso cui nutrono preoccupazione, <strong>propongono</strong> idee per migliorare le loro vite e <strong>decidono</strong> fra tutte e tutti quelle da realizzare.
       more_info: Leggi tutto	  
   omniauth:
@@ -15,6 +15,7 @@ it:
       new:
         document_type:
           codice_fiscale: Codice Fiscale
+        error_verifying_census: "Non è stato possibile verificare in Anagrafe in tuoi dati. Per favore, controlla i dati inseriti e ripeti l'operazione."
   welcome:
     schede:
       scheda1: 
@@ -22,4 +23,3 @@ it:
         description: Descrizione 1
         label: Argomento 1	 	  
         link: Vedi progetto 
-

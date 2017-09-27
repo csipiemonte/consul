@@ -181,6 +181,7 @@ it:
     signature_sheet: il foglio delle firme
     document: il documento
     topic: Tema
+    image: Immagine
   geozones:
     none: Tutta la città
     all: Tutti gli ambiti di attuazione

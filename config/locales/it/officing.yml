@@ -9,12 +9,12 @@ it:
         info: Qui puoi validare i documenti dei cittadini e salvare i risultati delle urne
     menu:
       voters: "Validare documento e votare"
-      final_recounts: "Riconteggio finale e scrutinio"
+      final_recounts: "Riconteggio totale e scrutinio"
     polls:
       final:
         title: "Elenco delle votazioni concluse"
-        no_polls: "No tienes permiso para recuento final en ninguna votación reciente"
-        select_poll: "Selecciona votación"
+        no_polls: "Non si dispone dei permessi per il riconteggio finale nelle votazioni recenti"
+        select_poll: "Seleziona votazione"
         add_results: "Aggiungi risultati"
     results:
       flash:
@@ -53,7 +53,7 @@ it:
         submit: Valida documento
         error_verifying_census: El Padrón no pudo verificar este documento.
         form_errors: evitaron verificar este documento
-        no_assignments: "Hoy no tienes turno de presidente de mesa"
+        no_assignments: "Oggi non hai turno come presidente di seggio"
     voters:
       new:
         title: Votazioni

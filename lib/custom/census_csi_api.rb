@@ -6,10 +6,9 @@ class CensusCsiApi
     response = nil
     get_document_number_variants(document_type, document_number).each do |variant|
       resp_body = get_response_body(document_type, variant)
-      #resp_naosrv_body = get_response_naosrv_body(variant)
+      resp_naosrv_body = get_response_naosrv_body(variant)
 
-      # response = Response.new(resp_body, resp_naosrv_body)
-      response = Response.new(resp_body)
+      response = Response.new(resp_body, resp_naosrv_body)
 
       return response if response.valid?
     end
@@ -48,8 +47,8 @@ class CensusCsiApi
       upd_body[:get_habita_datos_response] = { :get_habita_datos_return=> {} }
       upd_body[:get_habita_datos_response][:get_habita_datos_return] = { :datos_habitante=> { }, :datos_vivienda=> { } }
 
-      if body.class != Hash || !body.key?(:multi_ref)
-        Rails.logger.info 'Risposta del WS non valida'
+      if body.class != Hash || !body.key?(:multi_ref) || naosrv_body.class != Hash || !naosrv_body.key?(:multi_ref)
+        Rails.logger.info 'Risposta dei WS non valida'
         @body = upd_body
         return
       end
@@ -78,16 +77,15 @@ class CensusCsiApi
         end
       end
 
-=begin
       naosrv_body[:multi_ref].each do |r|
         type = r[:"@xsi:type"].rpartition(':').last
         Rails.logger.info "type: #{type}"
 
         next if type != 'IndirizzoInterno'
         Rails.logger.info "id_circoscrizione: #{r[:id_circoscrizione]}, desc_circoscrizione: #{r[:desc_circoscrizione]}"
-        upd_body[:get_habita_datos_response][:get_habita_datos_return][:datos_vdescCircoscrizioneivienda][:item][:codigo_distrito] = r[:id_circoscrizione]
+        upd_body[:get_habita_datos_response][:get_habita_datos_return][:datos_vivienda][:item][:codigo_distrito] = r[:id_circoscrizione]
+        break
       end
-=end
 
       Rails.logger.info "upd_body: #{upd_body}"
       @body = upd_body
@@ -141,7 +139,9 @@ class CensusCsiApi
     begin
       client.call(:trova_cittadino_dettaglio, message: request(document_type, document_number)).body
     rescue Savon::SOAPFault => error
-      Rails.logger.info "error: #{error.message}"
+      Rails.logger.info "Rilevato Savon::SOAPFault, dettaglio: #{error.message}"
+    rescue Net::HTTPFatalError => e
+      Rails.logger.info "Rilevato Net::HTTPFatalError, dettaglio: #{e.message}"
     end
   end
 
@@ -149,7 +149,9 @@ class CensusCsiApi
     begin
       client_naosrv.call(:visura_soggetto_per_codice_fiscale, message: request_naosrv(codice_fiscale)).body
     rescue Savon::SOAPFault => error
-      Rails.logger.info "error: #{error.message}"
+      Rails.logger.info "Rilevato Savon::SOAPFault, dettaglio: #{error.message}"
+    rescue Net::HTTPFatalError => e
+      Rails.logger.info "Rilevato Net::HTTPFatalError, dettaglio: #{e.message}"
     end
   end
 
@@ -187,7 +189,7 @@ class CensusCsiApi
     req
   end
 
-  def is_dni?(document_type)
+  def dni?(document_type)
     document_type.to_s == '1'
   end
 

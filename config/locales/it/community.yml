@@ -1,11 +1,11 @@
-es:
+it:
   community:
     sidebar:
-      title: Comunidad
+      title: Comunità
       description:
-        proposal: Participa en la comunidad de usuarios de esta propuesta.
-        investment: Participa en la comunidad de usuarios de este proyecto de inversión.
-      button_to_access: Acceder a la comunidad
+        proposal: Partecipa alla comunità di utenti di questa proposta.
+        investment: Partecipa alla comunità di utenti di questo progetto di investimento.
+      button_to_access: Accedi alla comunità
     show:
       title:
         proposal: Comunidad de la propuesta
@@ -19,7 +19,7 @@ es:
         sub_first_theme: Para crear un tema tienes que %{link}
         sign_link: "acceder a %{org_name}"
       tab:
-        participants: Participantes
+        participants: Partecipanti
       sidebar:
         participate: Partecipa
         new_topic: Crea un tema
@@ -28,28 +28,28 @@ es:
         edit_button: Modifica
         destroy_button: Elimina
         comments:
-          one: 1 Comentario
+          one: 1 Commento
           other: "%{count} Comentarios"
           zero: Sin comentarios
     topic:
-      create: Crear un tema
+      create: Crea un tema
       edit: Modifica tema
       form:
-        topic_title: Titulo del tema
-        topic_description: Descripción
+        topic_title: Titolo del tema
+        topic_description: Descrizione
         new:
-          submit_button: Crear tema
+          submit_button: Crea tema
         edit:
-          submit_button: Guardar cambios
+          submit_button: Salva modifiche
         create:
-          submit_button: Crear tema
+          submit_button: Crea tema
         update:
-          submit_button: Actualizar tema
+          submit_button: Aggiorna tema
       show:
         tab:
-          comments_tab: Comentarios
+          comments_tab: Commenti
       sidebar:
-        recommendations_title: Recomendaciones para crear un tema
+        recommendations_title: Raccomandazioni per creare un tema
         recommendation_one: No escribas el título del tema o frases enteras en mayúsculas. En internet eso se considera gritar. Y a nadie le gusta que le griten.
         recommendation_two: Cualquier tema o comentario que implique una acción ilegal será eliminada, también las que tengan la intención de sabotear los espacios del tema, todo lo demás está permitido.
         recommendation_three: Disfruta de este espacio, de las voces que lo llenan, también es tuyo

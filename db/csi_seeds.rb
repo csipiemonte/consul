@@ -44,15 +44,15 @@ Setting.create(key: 'per_page_code_head', value: '')
 Setting.create(key: 'per_page_code_body', value: '')
 
 # Social settings
-Setting.create(key: 'twitter_handle', value: '@deciditorino')
+Setting.create(key: 'twitter_handle', value: '@twitorino')
 Setting.create(key: 'twitter_hashtag', value: '#deciditorino')
-Setting.create(key: 'facebook_handle', value: 'deciditorino')
-Setting.create(key: 'youtube_handle', value: 'deciditorino')
-Setting.create(key: 'telegram_handle', value: 'deciditorino')
-Setting.create(key: 'instagram_handle', value: 'deciditorino')
-Setting.create(key: 'blog_url', value: '')
-Setting.create(key: 'transparency_url', value: nil)
-Setting.create(key: 'opendata_url', value: '/opendata')
+Setting.create(key: 'facebook_handle', value: 'cittaditorino')
+Setting.create(key: 'youtube_handle', value: 'youtorino')
+Setting.create(key: 'telegram_handle', value: 'comunetorino')
+Setting.create(key: 'instagram_handle', value: 'cittaditorino')
+Setting.create(key: 'blog_url', value: nil)
+Setting.create(key: 'transparency_url', value: 'http://www.comune.torino.it/amministrazionetrasparente/')
+Setting.create(key: 'opendata_url', value: nil)
 
 # Public-facing URL of the app.
 Setting.create(key: 'url', value: 'http://localhost:3000')
@@ -70,7 +70,7 @@ Setting.create(key: 'meta_keywords', value: 'citizen participation, open governm
 # Feature flags
 Setting.create(key: 'feature.debates', value: 'true')
 Setting.create(key: 'feature.spending_proposals', value: nil)
-Setting.create(key: 'feature.polls', value: 'true')
+Setting.create(key: 'feature.polls', value: nil)
 Setting.create(key: 'feature.twitter_login', value: 'true')
 Setting.create(key: 'feature.facebook_login', value: 'true')
 Setting.create(key: 'feature.google_login', value: 'true')
@@ -103,7 +103,7 @@ Setting.create(key: 'mailer_from_address', value: 'noreply@deciditorino.it')
 
 # Verification settings
 Setting.create(key: 'verification_offices_url', value: 'http://oficinas-atencion-ciudadano.url/')
-Setting.create(key: 'min_age_to_participate', value: '18')
+Setting.create(key: 'min_age_to_participate', value: '16')
 
 # Proposal improvement url path ('/more-information/proposal-improvement')
 Setting.create(key: 'proposal_improvement_path', value: nil)
@@ -111,14 +111,14 @@ Setting.create(key: 'proposal_improvement_path', value: nil)
 puts " ✅"
 print "Creating Geozones (Circoscrizioni)"
 
-Geozone.create(name: "Centro - Crocetta", census_code: "1")
-Geozone.create(name: "Santa Rita - Mirafiori Nord - Mirafiori Sud", census_code: "2")
-Geozone.create(name: "San Paolo - Cenisia - Pozzo Strada - Cit Turin - Borgata Lesna", census_code: "3")
-Geozone.create(name: "San Donato - Campidoglio - Parella", census_code: "4")
-Geozone.create(name: "Borgo Vittoria - Madonna di Campagna - Lucento - Vallette", census_code: "5")
-Geozone.create(name: "Barriera di Milano - Regio Parco - Barca - Bertolla - Falchera - Rebaudengo - Villaretto", census_code: "6")
-Geozone.create(name: "Aurora - Vanchiglia - Sassi - Madonna del Pilone", census_code: "7")
-Geozone.create(name: "San Salvario - Cavoretto - Borgo Po - Nizza Millefonti - Lingotto - Filadelfia", census_code: "8")
+Geozone.create(name: "Centro - Crocetta", census_code: "1", html_map_coordinates: "159, 132, 134, 183, 136, 190, 134, 195, 151, 206, 172, 169, 188, 178, 199, 165, 188, 148, 177, 146, 159, 132")
+Geozone.create(name: "Santa Rita - Mirafiori Nord - Mirafiori Sud", census_code: "2", html_map_coordinates: "89, 180, 117, 188, 127, 187, 134, 189, 131, 196, 143, 203, 101, 254, 122, 266, 126, 256, 138, 262, 138, 266, 132, 284, 126, 282, 115, 285, 107, 281, 105, 280, 94, 276, 91, 283, 86, 282, 74, 276, 65, 277, 58, 271, 39, 266, 40, 258, 52, 261, 63, 235, 53, 238, 23, 219, 19, 211, 21, 209, 27, 213, 31, 207, 70, 232, 73, 218, 77, 219, 80, 208, 84, 202, 79, 200, 80, 198, 87, 190, 89, 181")
+Geozone.create(name: "San Paolo - Cenisia - Pozzo Strada - Cit Turin - Borgata Lesna", census_code: "3", html_map_coordinates: "62, 144, 152, 142, 137, 187, 125, 185, 115, 187, 90, 179, 89, 173, 76, 175, 70, 173, 65, 171, 66, 164, 74, 162, 73, 158, 67, 156, 66, 150, 59, 149, 61, 144")
+Geozone.create(name: "San Donato - Campidoglio - Parella", census_code: "4", html_map_coordinates: "82, 99, 80, 110, 75, 115, 72, 116, 69, 123, 62, 143, 154, 139, 167, 112, 133, 109, 131, 119, 75, 90, 82, 99")
+Geozone.create(name: "Borgo Vittoria - Madonna di Campagna - Lucento - Vallette", census_code: "5", html_map_coordinates: "92, 62, 76, 89, 126, 115, 136, 105, 168, 111, 200, 61, 144, 52, 130, 68, 123, 67")
+Geozone.create(name: "Barriera di Milano - Regio Parco - Barca - Bertolla - Falchera - Rebaudengo - Villaretto", census_code: "6", html_map_coordinates: "136, 38, 145, 48, 165, 41, 172, 55, 183, 52, 192, 61, 198, 61, 200, 70, 172, 111, 187, 113, 203, 132, 231, 115, 234, 103, 248, 104, 262, 108, 281, 89, 258, 73, 254, 44, 232, 40, 227, 33, 237, 17, 225, 14, 223, 23, 197, 28, 171, 13, 155, 12, 148, 20, 138, 18, 143, 30")
+Geozone.create(name: "Aurora - Vanchiglia - Sassi - Madonna del Pilone", census_code: "7", html_map_coordinates: "242, 106, 268, 114, 282, 131, 310, 141, 251, 221, 242, 219, 236, 210, 236, 187, 217, 158, 200, 163, 187, 144, 159, 130, 171, 112, 188, 116, 203, 136, 233, 115, 240, 107")
+Geozone.create(name: "San Salvario - Cavoretto - Borgo Po - Nizza Millefonti - Lingotto - Filadelfia", census_code: "8", html_map_coordinates: "172, 172, 190, 180, 212, 161, 234, 190, 232, 213, 240, 223, 240, 225, 233, 236, 195, 253, 178, 248, 166, 266, 139, 265, 137, 259, 124, 254, 121, 263, 104, 253, 144, 205, 152, 210, 172, 170")
 
 
 
@@ -155,8 +155,6 @@ manager.create_manager
 valuator = create_user('valuator@deciditorino.it', 'valuator')
 valuator.create_valuator
 
-verified = create_user('verified@deciditorino.it', 'verified')
-verified.update(residence_verified_at: Time.current, confirmed_phone: Faker::PhoneNumber.phone_number, document_type: "1", verified_at: Time.current, document_number: "3333333333")
 
 puts " ✅"
 print "Creating Tags Categories"

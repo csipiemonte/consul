@@ -1,0 +1,26 @@
+﻿---
+en:
+  layouts:
+    header:
+      titolo: La città che ami sarà la città  che vuoi. 
+      html: Esistono città governate direttamente dai suoi abitanti, che <strong>dibattono</strong> di temi verso cui nutrono preoccupazione, <strong>propongono</strong> idee per migliorare le loro vite e <strong>decidono</strong> fra tutte e tutti quelle da realizzare.
+      more_info: Leggi tutto	  
+  omniauth:
+    shibboleth:
+      sign_in: Login with Shibboleth
+      sign_up: Signin with Shibboleth
+      name: Shibboleth
+  verification:
+    residence:
+      new:
+        document_type:
+          codice_fiscale: Codice Fiscale
+        error_verifying_census: "Non è stato possibile verificare in Anagrafe in tuoi dati. Per favore, controlla i dati inseriti e ripeti l'operazione."
+  welcome:
+    schede:
+      scheda1: 
+        title: Title 1
+        description: Description 1
+        label: Argument 1	 	  
+        link: See project 
+

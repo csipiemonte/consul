@@ -90,10 +90,10 @@ it:
           one: 1 Grupo de partidas presupuestarias
           other: "%{count} Grupos de partidas presupuestarias"
       form:
-        group: Nombre del grupo
+        group: Nome del gruppo
         no_groups: Non sono ancora stati creati gruppi. Cada usuario podrá votar en una sola partida de cada grupo.
-        add_group: Añadir nuevo grupo
-        create_group: Crear grupo
+        add_group: Aggiungi nuovo gruppo
+        create_group: Crea gruppo
         heading: Nombre de la partida
         add_heading: Añadir partida
         amount: Cantidad
@@ -110,22 +110,22 @@ it:
       index:
         heading_filter_all: Todas las partidas
         administrator_filter_all: Todos los administradores
-        valuator_filter_all: Todos los evaluadores
-        tags_filter_all: Todas las etiquetas
+        valuator_filter_all: Tutti i valutatori
+        tags_filter_all: Tutte le etichette
         filters:
-          valuation_open: Abiertas
-          without_admin: Sin administrador
+          valuation_open: Aperte
+          without_admin: Senza amministratore
           managed: Gestionando
-          valuating: En evaluación
+          valuating: In valutazione
           valuation_finished: Evaluación finalizada
           valuation_finished_feasible: Viables
           selected: Seleccionadas
           winners: Ganadoras
-          all: Todas
-        title: Propuestas de inversión
-        assigned_admin: Administrador asignado
-        no_admin_assigned: Sin admin asignado
-        no_valuators_assigned: Sin evaluador
+          all: Tutte
+        title: Proposte di investimento
+        assigned_admin: Amministratore assegnato
+        no_admin_assigned: Senza admin assegnato
+        no_valuators_assigned: Senza valutatore
         feasibility:
           feasible: "Viable (%{price})"
           unfeasible: "Inviable"
@@ -208,21 +208,22 @@ it:
         filters:
           all: Tutti
           with_confirmed_hide: Confermati
-          without_confirmed_hide: Pendenti
+          without_confirmed_hide: In sospeso
         hidden_debate: Dibattito nascosto
         hidden_proposal: proposta nascosta
         title: Commenti nascosti
     dashboard:
       index:
-        back: Torna a
+        back: Torna a %{org}
         title: Amministrazione
+        description: Benvenuto nel pannello di amministrazione di %{org}.
     debates:
       index:
         filter: Filtro
         filters:
           all: Tutti
           with_confirmed_hide: Confermati
-          without_confirmed_hide: Pendenti
+          without_confirmed_hide: In sospeso
         title: Dibattiti nascosti
     hidden_users:
       index:
@@ -230,7 +231,7 @@ it:
         filters:
           all: Tutti
           with_confirmed_hide: Confermati
-          without_confirmed_hide: Pendenti
+          without_confirmed_hide: In sospeso
         title: Usuarios bloqueados
       show:
         email: 'Email:'
@@ -494,8 +495,8 @@ it:
         booth: "Urna"
         assignments: "Turnos como presidente de mesa en esta votación"
         no_assignments: "No tiene turnos como presidente de mesa en esta votación."
-        final_recounts: "Riconteggi finali"
-        final_recount: "Riconteggio finale (presidente di seggio)"
+        final_recounts: "Riconteggi totali"
+        final_recount: "Riconteggio totale (presidente di seggio)"
     poll_shifts:
       new:
         add_shift: "Aggiungi turno"
@@ -515,12 +516,12 @@ it:
         table_email: "Email"
         table_name: "Nome"
       flash:
-        create: "Añadido turno de presidente de mesa"
-        destroy: "Eliminado turno de presidente de mesa"
+        create: "Aggiunto turno del presidente di seggio"
+        destroy: "Eliminato turno del presidente di seggio"
     poll_booth_assignments:
       flash:
-        destroy: "Urna desasignada"
-        create: "Urna asignada"
+        destroy: "Urna deallocata"
+        create: "Urna assegnata"
         error_destroy: "Si è verificato un errore nella deallocazione dell'urna"
         error_create: "Si è verificato un errore nell'assegnazione dell'urna"
       show:
@@ -533,6 +534,7 @@ it:
         date: "Data"
         count_final: "Riconteggio finale (presidente di seggio)"
         count_by_system:  "Voti (automatico)"
+        total_system: "Voti totali accumulati(automatico)"
       index:
         booths_title: "Elenco delle urne assegnate"
         no_booths: "Non ci sono urne assegnate a questa votazione."
@@ -569,9 +571,9 @@ it:
         table_name: "Nome"
       flash:
         question_added: "Domanda aggiunta a questa votazione"
-        error_on_question_added: "No se pudo asignar la pregunta"
-        question_removed: "Domanda eliminada de esta votación"
-        error_on_question_removed: "No se pudo quitar la pregunta"
+        error_on_question_added: "Non si è potuto assegnare la domanda"
+        question_removed: "Domanda eliminata da questa votazione"
+        error_on_question_removed: "Non è stato possibile eliminare la domanda"
     questions:
       index:
         title: "Preguntas ciudadanas"
@@ -597,14 +599,14 @@ it:
         valid_answers: Risposte valide
         description: Descrizione
         video_url: Video esterno
-        documents: Documenti
+        documents: Documenti (1)
         preview: Vedi nel sito
     recounts:
       index:
         title: "Riconteggi"
         no_recounts: "Non c'è nulla da riconteggiare"
         table_booth_name: "Urna"
-        table_final_recount: "Riconteggio finale (presidente di seggio)"
+        table_final_recount: "Riconteggio totale (presidente di seggio)"
         table_system_count: "Voti (automatico)"
     results:
       index:
@@ -658,7 +660,7 @@ it:
         filter: Filtro
         filters:
           all: Tutte
-          pending: Pendenti
+          pending: In sospeso
           rejected: Rifiutate
           verified: Verificate
         hidden_count_html:
@@ -679,7 +681,7 @@ it:
         filters:
           all: Tutte
           with_confirmed_hide: Confermate
-          without_confirmed_hide: Pendenti
+          without_confirmed_hide: In sospeso
         title: Domande nascoste
     settings:
       flash:

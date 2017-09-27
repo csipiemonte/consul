@@ -1,34 +1,43 @@
-es:
+it:
   documents:
-    tab: Documentos
-    no_documents: No hay documentos subidos
-    upload_document: Subir documento
-    max_documents_allowed_reached_html: ¡Has alcanzado el número máximo de documentos permitidos! <strong>Tienes que eliminar uno antes de poder subir otro.</strong>
+    tab: Documenti
+    no_documents: Non sono presenti documenti allegati
+    upload_document: Allega documento
+    max_documents_allowed_reached_html: Hai raggiunto il numero massimo di documenti consentiti! <strong>Se ne deve eliminare uno per poter allegarne un altro.</strong>
+
     form:
-      title: Documentos
-      attachment_label: Selecciona un documento
-      submit_button: Subir documento
-      delete_button: Eliminar documento
-      note: "Puedes subir hasta un máximo de %{max_documents_allowed} documentos en los formatos: %{accepted_content_types}, y de hasta %{max_file_size} MB por archivo."
-      add_new_document: Añadir nuevo documento
+      title: Documenti
+      attachment_label: Seleziona un documento
+      submit_button: Allega documento
+      delete_button: Elimina documento
+      note: "Si può allegare fino ad un massimo di %{max_documents_allowed} documenti nei formati: %{accepted_content_types}, e di dimensione fino a %{max_file_size} MB per file."
+      add_new_document: Aggiungi nuovo documento
+
     new:
-      title: Subir un documento
-    recommendations_title: Consejos para subir archivos
-    recommendation_one_html: Puedes subir hasta un máximo de <strong>%{max_documents_allowed} documentos</strong>
-    recommendation_two_html: Sólo puedes subir <strong>archivos %{accepted_content_types}</strong>.
-    recommendation_three_html: Puedes subir archivos de hasta <strong>%{max_file_size}  MB</strong>
+      title: Allega un documento
+      budget_investment:
+        note: 'Aggiungi un documento alla proposta di investimento: %{title}.'
+      proposal:
+        note: 'Aggiungi un documento alla proposta: %{title}.'
+      form:
+        title_placeholder: Aggiungi al documento un titolo descrittivo
+    recommendations_title: Consigli per allegare file
+    recommendation_one_html: Si può allegare fino ad un massimo di <strong>%{max_documents_allowed} documenti</strong>
+    recommendation_two_html: È consentito allegare solamente <strong>file %{accepted_content_types}</strong>.
+    recommendation_three_html: Si possono allegare file di dimensione fino a <strong>%{max_file_size}  MB</strong>
+
     actions:
       create:
-        notice: "El documento se ha creado correctamente."
-        alert: "El documento no se ha podido crear. Revise los errores del formulario."
+        notice: "Il documento è stato creato con successo."
+        alert: "Non è stato possibile creare il documento. Controlla gli errori segnalati."
       destroy:
-        notice: "El documento se ha eliminado correctamente."
-        alert: "El documento no se ha podido eliminar."
-        confirm: "¿Está seguro de que desea eliminar el documento? Esta acción no se puede deshacer!"
+        notice: "Il documento è stato eliminato con successo."
+        alert: "Non è stato possibile eliminare il documento."
+        confirm: "Confermi l'eliminazione del documento? Non è possibile annullare questa operazione!"
     buttons:
-      download_document: Descargar archivo
-      destroy_document: Eliminar
+      download_document: Download file
+      destroy_document: Elimina
     errors:
       messages:
-        in_between: debe estar entre %{min} y %{max}
-        wrong_content_type: El tipo de contenido %{content_type} del archivo no coincide con ninguno de los tipos de contenido aceptados %{accepted_content_types}
+        in_between: deve stare fra %{min} e %{max}
+        wrong_content_type: Il tipo di contenuto %{content_type} del file non coincide con nessuno dei tipi di contenuto accettati %{accepted_content_types}

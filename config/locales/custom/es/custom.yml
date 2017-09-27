@@ -1,0 +1,26 @@
+﻿---
+es:
+  layouts:
+    header:
+      titolo: La ciudad que quieres será la ciudad que quieras. 
+      html: Existen ciudades gobernadas directamente por sus habitantes, que <strong>debaten</strong> sobre temas que les preocupan, <strong>proponen</strong> ideas para mejorar sus vidas y <strong>deciden</strong> entre todas y todos las que se llevan a cabo.
+      more_info: Más informaciones	  
+  omniauth:
+    shibboleth:
+      sign_in: Entra con Shibboleth
+      sign_up: Regístrate con Shibboleth
+      name: Shibboleth
+  verification:
+    residence:
+      new:
+        document_type:
+          codice_fiscale: DNF
+        error_verifying_census: "Non è stato possibile verificare in Anagrafe in tuoi dati. Per favore, controlla i dati inseriti e ripeti l'operazione."
+  welcome:
+    schede:
+      scheda1: 
+        title: Título 1
+        description: Descripción 1
+        label: Tema 1	 	  
+        link: Ver proyecto 
+

@@ -1,14 +1,12 @@
-<%= link_to admin_settings_path, class: "button float-right" do %>
-  <span class="icon-settings"></span>
-  <%= t("admin.menu.settings") %>
-<% end %>
+<div class="float-right">
+  <%= link_to root_path do %>
+    <%= t("admin.dashboard.index.back", org: setting['org_name']) %>
+  <% end %>
+</div>
 
-<%= link_to admin_stats_path, class: "button float-right" do %>
-  <span class="icon-stats"></span>
-  <%= t("admin.menu.stats") %>
-<% end %>
+<h2 class="title inline-block"><%= t("admin.dashboard.index.title") %></h2>
 
-<h2 class="inline-block"><%= t("admin.dashboard.index.title") %></h2>
+<p><%= t("admin.dashboard.index.description", org: setting['org_name']) %></p>
 
 <p>Da qui puoi amministrare il sistema, mediante le seguenti azioni:</p>
 
