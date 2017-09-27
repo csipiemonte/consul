@@ -7,36 +7,22 @@ it:
 
     form:
       title: Documenti
+      title_placeholder: Aggiungi un titolo descrittivo del documento
       attachment_label: Seleziona un documento
-      submit_button: Allega documento
       delete_button: Elimina documento
       note: "Si può allegare fino ad un massimo di %{max_documents_allowed} documenti nei formati: %{accepted_content_types}, e di dimensione fino a %{max_file_size} MB per file."
       add_new_document: Aggiungi nuovo documento
 
-    new:
-      title: Allega un documento
-      budget_investment:
-        note: 'Aggiungi un documento alla proposta di investimento: %{title}.'
-      proposal:
-        note: 'Aggiungi un documento alla proposta: %{title}.'
-      form:
-        title_placeholder: Aggiungi al documento un titolo descrittivo
-    recommendations_title: Consigli per allegare file
-    recommendation_one_html: Si può allegare fino ad un massimo di <strong>%{max_documents_allowed} documenti</strong>
-    recommendation_two_html: È consentito allegare solamente <strong>file %{accepted_content_types}</strong>.
-    recommendation_three_html: Si possono allegare file di dimensione fino a <strong>%{max_file_size}  MB</strong>
-
     actions:
-      create:
-        notice: "Il documento è stato creato con successo."
-        alert: "Non è stato possibile creare il documento. Controlla gli errori segnalati."
       destroy:
         notice: "Il documento è stato eliminato con successo."
         alert: "Non è stato possibile eliminare il documento."
         confirm: "Confermi l'eliminazione del documento? Non è possibile annullare questa operazione!"
+
     buttons:
       download_document: Download file
       destroy_document: Elimina
+
     errors:
       messages:
         in_between: deve stare fra %{min} e %{max}

@@ -35,22 +35,37 @@
           <td class="text-center">0</td>
           <td>Inizio</td>
         </tr>
+        <% if feature?(:debates) %>
         <tr>
           <td class="text-center">1</td>
-          <td>Debattiti</td>
+          <td><%= t("layouts.header.debates") %></td>
         </tr>
+        <% end %>
         <tr>
           <td class="text-center">2</td>
-          <td>Proposte</td>
+          <td><%= t("layouts.header.proposals") %></td>
         </tr>
-
+        <% if feature?(:polls) %>
+        <tr>
+          <td class="text-center">3</td>
+          <td><%= t("layouts.header.poll_questions") %></td>
+        </tr>
+        <% end %>
+        <% if feature?(:legislation) %>
         <tr>
           <td class="text-center">4</td>
-		  <td>Processi legislativi</td>
+          <td><%= t("layouts.header.collaborative_legislation") %></td>
         </tr>
+        <% end %>
+        <% if feature?(:budgets) %>
         <tr>
           <td class="text-center">5</td>
-		  <td>Budget partecipativi</td>
+          <td><%= t("layouts.header.budgets") %></td>
+        </tr>
+        <% end %>
+        <tr>
+          <td class="text-center">6</td>
+          <td><%= t("layouts.header.more_info") %></td>
         </tr>
       </tbody>
     </table>

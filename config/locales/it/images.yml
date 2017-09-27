@@ -1,41 +1,21 @@
 it:
   images:
-    upload_image: Allega immagine
     remove_image: Elimina immagine
 
     form:
       title: Immagine descrittiva
       attachment_label: Seleziona una immagine
-      submit_button: Allega immagine
       delete_button: Elimina immagine
       note: "Puoi allegare una immagine nei formati: %{accepted_content_types}, di dimensione fino a %{max_file_size} MB per file."
       add_new_image: Aggiungi immagine
-
-    new:
-      title: Allega una immagine
-      budget_investment:
-        note: 'Aggiungi una immagine alla proposta di investimento: %{title}.'
-      proposal:
-        note: 'Aggiungi una immagine alla proposta: %{title}.'
-      form:
-        title_placeholder: "Aggiungi all'immagine un titolo descrittivo"
-
-    recommendations_title: Consigli per allegare immagini
-    proposal:
-      recommendation_one_html: "Le proposte con immagine attirano di più l'attenzione degli utenti rispetto a quelle che ne sono sprovviste. Questa immagine sarà mostrata nell'elenco delle proposte e nella pagina con il dettaglio della proposta."
-    budget_investment:
-      recommendation_one_html: "I progetti di investimento forniti di immagine attirano di più l'attenzione degli utenti rispetto a quelli che ne sono sprovvisti. Questa immagine sarà mostrata nell'elenco dei progetti di investimento e nella pagina con il dettaglio del progetto."
-    recommendation_two_html: "Sono ammesse solamente le <strong>immagini nei formati: %{accepted_content_types}</strong>."
-    recommendation_three_html: Si può allegare una immagine di dimensione fino a <strong>1 MB</strong>.
+      title_placeholder: "Aggiungi un titolo descrittivo dell'immagine"
 
     actions:
-      create:
-        notice: "L'immagine è stata creata con successo."
-        alert: "Non è stato possibile creare l'immagine. Controlla gli errori segnalati."
       destroy:
         notice: "L'immagine è stata eliminata con successo."
         alert: "Non è stato possibile eliminare l'immagine."
         confirm: "Confermi l'eliminazione dell'immagine? Non è possibile annullare l'operazione!"
+
     errors:
       messages:
         in_between: deve stare fra %{min} e %{max}
