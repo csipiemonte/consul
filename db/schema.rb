@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170918231410) do
+ActiveRecord::Schema.define(version: 20170927110953) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -549,6 +549,17 @@ ActiveRecord::Schema.define(version: 20170918231410) do
 
   add_index "managers", ["user_id"], name: "index_managers_on_user_id", using: :btree
 
+  create_table "map_locations", force: :cascade do |t|
+    t.float   "latitude"
+    t.float   "longitude"
+    t.integer "zoom"
+    t.integer "proposal_id"
+    t.integer "investment_id"
+  end
+
+  add_index "map_locations", ["investment_id"], name: "index_map_locations_on_investment_id", using: :btree
+  add_index "map_locations", ["proposal_id"], name: "index_map_locations_on_proposal_id", using: :btree
+
   create_table "moderators", force: :cascade do |t|
     t.integer "user_id"
   end
@@ -687,6 +698,7 @@ ActiveRecord::Schema.define(version: 20170918231410) do
     t.datetime "updated_at"
     t.string   "officer_name"
     t.string   "officer_email"
+    t.integer  "task",          default: 0, null: false
   end
 
   add_index "poll_shifts", ["booth_id", "officer_id"], name: "index_poll_shifts_on_booth_id_and_officer_id", using: :btree

@@ -2,7 +2,8 @@ include DocumentParser
 class CensusCsiApi
 
   def call(document_type, document_number)
-    Rails.logger.info "document_number: #{document_number}"
+    prf = "[#{self.class}" + '::call] '
+    Rails.logger.info "#{prf}document_number: #{document_number}"
     response = nil
     get_document_number_variants(document_type, document_number).each do |variant|
       resp_body = get_response_body(document_type, variant)
@@ -17,7 +18,8 @@ class CensusCsiApi
 
   class Response
     def initialize(body, naosrv_body = nil)
-      Rails.logger.info "body: #{body}, naosrv_body: #{naosrv_body}"
+      prf = "[#{self.class}" + '::initialize] '
+      Rails.logger.info "#{prf}body: #{body}, naosrv_body: #{naosrv_body}"
 
 =begin
     Il json della risposta deve essere cosi' composto
@@ -44,26 +46,25 @@ class CensusCsiApi
       }
 =end
       upd_body = {}
-      upd_body[:get_habita_datos_response] = { :get_habita_datos_return=> {} }
-      upd_body[:get_habita_datos_response][:get_habita_datos_return] = { :datos_habitante=> { }, :datos_vivienda=> { } }
+      upd_body[:get_habita_datos_response] = { :get_habita_datos_return => {} }
+      upd_body[:get_habita_datos_response][:get_habita_datos_return] = { :datos_habitante => { }, :datos_vivienda => { } }
 
       if body.class != Hash || !body.key?(:multi_ref) || naosrv_body.class != Hash || !naosrv_body.key?(:multi_ref)
-        Rails.logger.info 'Risposta dei WS non valida'
+        Rails.logger.error prf + 'Risposta dei WS non valida'
         @body = upd_body
         return
       end
 
-      upd_body[:get_habita_datos_response][:get_habita_datos_return][:datos_habitante] = { :item=> {} }
-      upd_body[:get_habita_datos_response][:get_habita_datos_return][:datos_vivienda] = { :item=> {} }
+      upd_body[:get_habita_datos_response][:get_habita_datos_return][:datos_habitante] = { :item => {} }
+      upd_body[:get_habita_datos_response][:get_habita_datos_return][:datos_vivienda] = { :item => {} }
       upd_body[:get_habita_datos_response][:get_habita_datos_return][:datos_habitante][:item] = {}
       upd_body[:get_habita_datos_response][:get_habita_datos_return][:datos_vivienda][:item] = {}
 
-      
       upd_body[:get_habita_datos_response][:get_habita_datos_return][:datos_vivienda][:item][:codigo_distrito] = '01' # TODO, provv
 
       body[:multi_ref].each do |r|
         type = r[:"@xsi:type"].rpartition(':').last
-        Rails.logger.info "type: #{type}"
+        Rails.logger.debug "#{prf}type: #{type}"
 
         if type == 'Cittadino'
           upd_body[:get_habita_datos_response][:get_habita_datos_return][:datos_habitante][:item][:fecha_nacimiento_string] = r[:data_nascita]
@@ -79,17 +80,17 @@ class CensusCsiApi
 
       naosrv_body[:multi_ref].each do |r|
         type = r[:"@xsi:type"].rpartition(':').last
-        Rails.logger.info "type: #{type}"
+        Rails.logger.debug "#{prf}type: #{type}"
 
         next if type != 'IndirizzoInterno'
-        Rails.logger.info "id_circoscrizione: #{r[:id_circoscrizione]}, desc_circoscrizione: #{r[:desc_circoscrizione]}"
+        Rails.logger.info "#{prf}id_circoscrizione: #{r[:id_circoscrizione]}, desc_circoscrizione: #{r[:desc_circoscrizione]}"
         upd_body[:get_habita_datos_response][:get_habita_datos_return][:datos_vivienda][:item][:codigo_distrito] = r[:id_circoscrizione]
         break
       end
 
-      Rails.logger.info "upd_body: #{upd_body}"
+      Rails.logger.info "#{prf}upd_body: #{upd_body}"
       @body = upd_body
-      Rails.logger.info "data: #{data}"
+      Rails.logger.info "#{prf}data: #{data}"
     end
 
     def valid?
@@ -97,11 +98,12 @@ class CensusCsiApi
     end
 
     def date_of_birth
-      Rails.logger.info "data (date_of_birth): #{data}"
+      prf = "[#{self.class}" + '::date_of_birth] '
+      Rails.logger.info "#{prf}data (date_of_birth): #{data}"
       str = data[:datos_habitante][:item][:fecha_nacimiento_string]
-      Rails.logger.info "str: #{str}"
+      Rails.logger.info "#{prf}str: #{str}"
       day, month, year = str.match(/(\d\d?)\D(\d\d?)\D(\d\d\d?\d?)/)[1..3]
-      Rails.logger.info "day: #{day}, month: #{month}, year: #{year}"
+      Rails.logger.info "#{prf}day: #{day}, month: #{month}, year: #{year}"
       return nil unless day.present? && month.present? && year.present?
       Date.new(year.to_i, month.to_i, day.to_i)
     end
@@ -126,6 +128,7 @@ class CensusCsiApi
     def name
       "#{data[:datos_habitante][:item][:nombre]} #{data[:datos_habitante][:item][:apellido1]}"
     end
+
     private
 
       def data
@@ -136,22 +139,32 @@ class CensusCsiApi
   private
 
   def get_response_body(document_type, document_number)
+    prf = "[#{self.class}" + '::get_response_body] '
+    serv_name = '[BPRCSI:TrovaCittadinoDettaglio]'
     begin
+      start = Time.zone.now
       client.call(:trova_cittadino_dettaglio, message: request(document_type, document_number)).body
+      finish = Time.zone.now
+      Rails.logger.info prf + 'Risposta del servizio ' + serv_name + ' ottenuta in ' + (finish - start).to_s + ' sec'
     rescue Savon::SOAPFault => error
-      Rails.logger.info "Rilevato Savon::SOAPFault, dettaglio: #{error.message}"
+      Rails.logger.error "#{prf}Rilevato Savon::SOAPFault, dettaglio: #{error.message}"
     rescue Net::HTTPFatalError => e
-      Rails.logger.info "Rilevato Net::HTTPFatalError, dettaglio: #{e.message}"
+      Rails.logger.error "#{prf}Rilevato Net::HTTPFatalError, dettaglio: #{e.message}"
     end
   end
 
   def get_response_naosrv_body(codice_fiscale)
+    prf = "[#{self.class}" + '::get_response_naosrv_body] '
+    serv_name = '[NAO::SrvVisuraAnagrafica:VisuraSoggettoPerCodiceFiscale]'
     begin
+      start = Time.zone.now
       client_naosrv.call(:visura_soggetto_per_codice_fiscale, message: request_naosrv(codice_fiscale)).body
+      finish = Time.zone.now
+      Rails.logger.info prf + 'Risposta del servizio ' + serv_name + ' ottenuta in ' + (finish - start).to_s + ' sec'
     rescue Savon::SOAPFault => error
-      Rails.logger.info "Rilevato Savon::SOAPFault, dettaglio: #{error.message}"
+      Rails.logger.error "#{prf}Rilevato Savon::SOAPFault, dettaglio: #{error.message}"
     rescue Net::HTTPFatalError => e
-      Rails.logger.info "Rilevato Net::HTTPFatalError, dettaglio: #{e.message}"
+      Rails.logger.error "#{prf}Rilevato Net::HTTPFatalError, dettaglio: #{e.message}"
     end
   end
 
@@ -160,8 +173,10 @@ class CensusCsiApi
   end
 
   def client_naosrv
-    @client_naosrv = Savon.client(wsdl: Rails.application.secrets.naosrv_api_end_point,
-      basic_auth: [Rails.application.secrets.naosrv_username, Rails.application.secrets.naosrv_password])
+    @client_naosrv = Savon.client(
+      wsdl: Rails.application.secrets.naosrv_api_end_point,
+      basic_auth: [Rails.application.secrets.naosrv_username, Rails.application.secrets.naosrv_password]
+    )
   end
 
   def request(document_type, document_number)
@@ -173,7 +188,8 @@ class CensusCsiApi
   end
 
   def request_naosrv(codice_fiscale)
-    Rails.logger.info "codice_fiscale: #{codice_fiscale}"
+    prf = "[#{self.class}" + '::request_naosrv] '
+    Rails.logger.info "#{prf}codice_fiscale: #{codice_fiscale}"
     req_in1 = {
       flg_paternita_maternita: false,
       flg_protocolli_riservati_e: false,
@@ -185,7 +201,7 @@ class CensusCsiApi
     req_in2 = { codice_utente: Rails.application.secrets.naosrv_username }
 
     req = { in0: codice_fiscale, in1: req_in1, in2: req_in2 }
-    Rails.logger.info "req: #{req}"
+    Rails.logger.info "#{prf}req: #{req}"
     req
   end
 

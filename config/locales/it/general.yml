@@ -333,6 +333,9 @@ it:
       tags_label: Temi
       tag_category_label: "Categorie"
       tags_placeholder: "Scrivi le etichette che desideri separandole con una virgola (',')"
+      map_location: "Localizzazione nella mappa"
+      map_location_instructions: "Naviga sulla mappa fino al punto scelto e metti il marcatore."
+      map_remove_marker: "Elimina il marcatore"
     index:
       featured_proposals: In evidenza
       filter_topic:

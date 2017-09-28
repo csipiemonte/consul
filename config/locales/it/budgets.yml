@@ -55,6 +55,9 @@ it:
         tags_label: Temas
         tag_category_label: "Categorie"
         tags_placeholder: "Scrivi le etichette che desideri separandole con il carattere virgola (',')"
+        map_location: "Localizzazione nella mappa"
+        map_location_instructions: "Naviga sulla mappa fino al punto scelto e metti il marcatore."
+        map_remove_marker: "Elimina il marcatore"
       index:
         title: Presupuestos participativos
         unfeasible: Propuestas de inversión no viables

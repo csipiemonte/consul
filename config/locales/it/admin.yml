@@ -66,6 +66,7 @@ it:
       index:
         title: Budget partecipativi
         new_link: Crea nuovo budget
+        filter: Filtro
         filters:
           current: Aperti
           finished: Terminati
@@ -503,6 +504,7 @@ it:
         shift: "Assegnazione"
         shifts: "Turni in questa urna"
         date: "Data"
+        task: "Incarico"
         edit_shifts: Assegna turno
         new_shift: "Nuovo turno"
         no_shifts: "Questa urna non ha turni assegnati"
@@ -512,12 +514,16 @@ it:
         search_officer_placeholder: Cerca presidente di seggio
         search_officer_text: Cerca il presidente di seggio per assegnare un turno
         select_date: "Seleziona giorno"
+        select_task: "Seleziona incarico"
         table_shift: "Turno"
         table_email: "Email"
         table_name: "Nome"
       flash:
         create: "Aggiunto turno del presidente di seggio"
         destroy: "Eliminato turno del presidente di seggio"
+        date_missing: "Si deve selezionare una data"
+      vote_collection: Raccogliere Voti
+      recount_scrutiny: Riconteggio & Scrutinio
     poll_booth_assignments:
       flash:
         destroy: "Urna deallocata"
@@ -664,8 +670,8 @@ it:
           rejected: Rifiutate
           verified: Verificate
         hidden_count_html:
-          one: Hay además <strong>una organización</strong> sin usuario o con el usuario bloqueado.
-          other: Hay <strong>%{count} organizaciones</strong> sin usuario o con el usuario bloqueado.
+          one: "È inoltre presente <strong>una organizzazione</strong> senza utente o con l'utente bloccato."
+          other: "Sono presenti <strong>%{count} organizzazioni</strong> senza utente o con l'utente bloccato."
         reject: Rifiuta
         rejected: Rifiutata
         search: Cerca
@@ -697,6 +703,13 @@ it:
           disabled: "Funzionalità disattivata"
           enable: "Attiva"
           disable: "Disattiva"
+        map:
+          title: Configurazione della mappa
+          help: Da qui è possibile personalizzare il modo nel quale si mostra la mappa agli utenti. Trascina il marcatore o fai click su una parte qualsiasi della mappa, regola lo zoom e fai click sul pulsante 'Aggiorna'.
+          flash:
+            update: La configurazione della mappa è stata salvata con successo.
+          form:
+            submit: Aggiorna
     shared:
       booths_search:
         button: Cerca
@@ -720,17 +733,17 @@ it:
       no_search_results: "Nessun risultato."
     spending_proposals:
       index:
-        geozone_filter_all: Todos los ámbitos de actuación
-        administrator_filter_all: Todos los administradores
-        valuator_filter_all: Todos los evaluadores
-        tags_filter_all: Todas las etiquetas
+        geozone_filter_all: Tutti gli ambiti di attuazione
+        administrator_filter_all: Tutti gli amministratori
+        valuator_filter_all: Tutti i valutatori
+        tags_filter_all: Tutte le etichette
         filters:
-          valuation_open: Abiertas
-          without_admin: Sin administrador
+          valuation_open: Aperte
+          without_admin: Senza amministratore
           managed: Gestionando
           valuating: En evaluación
           valuation_finished: Evaluación finalizada
-          all: Todas
+          all: Tutte
         title: Propuestas de inversión para presupuestos participativos
         assigned_admin: Administrador asignado
         no_admin_assigned: Sin admin asignado
@@ -744,15 +757,15 @@ it:
       show:
         assigned_admin: Administrador asignado
         assigned_valuators: Evaluadores asignados
-        back: Volver
+        back: Indietro
         classification: Clasificación
         heading: Propuesta de inversión %{id}
-        edit: Editar
+        edit: Modifica
         edit_classification: Editar clasificación
-        association_name: Asociación
-        by: Autor
-        sent: Fecha
-        geozone: Ámbito
+        association_name: Associazione
+        by: Autore
+        sent: Data
+        geozone: Ambito
         dossier: Informe
         edit_dossier: Editar informe
         tags: Etiquetas

@@ -6,11 +6,15 @@ class SMSCsiApi
   attr_accessor :client
 
   def sms_deliver(phone, code)
-    Rails.logger.info "sms end poit: #{Rails.application.secrets.sms_end_point}"
+    prf = "[#{self.class}" + '::sms_deliver] '
+    Rails.logger.info "#{prf}sms end poit: #{Rails.application.secrets.sms_end_point}"
+    start = Time.zone.now
 
     uri = URI(Rails.application.secrets.sms_end_point)
     response = Net::HTTP.post_form(uri, 'xmlSms' => request(phone, code))
-    Rails.logger.info "response.code: #{response.code}, response.body: #{response.body}"
+    finish = Time.zone.now
+    Rails.logger.info "#{prf}Risposta del Gateway SMS, response.code: #{response.code}, response.body: #{response.body}, " \
+      "tempo di esecuzione: " + (finish - start).to_s + ' sec'
 
     success?(response.body.to_s)
   end
@@ -38,23 +42,4 @@ class SMSCsiApi
 
     titolo == 'INSERIMENTO SMS' && descr == 'Inserimento effettuato con successo'
   end
-
-=begin
-  def stubbed_response
-    {
-      respuesta_sms: {
-        identificador_mensaje: "1234567",
-        fecha_respuesta: "Thu, 20 Aug 2015 16:28:05 +0200",
-        respuesta_pasarela: {
-          codigo_pasarela: "0000",
-          descripcion_pasarela: "Operación ejecutada correctamente."
-        },
-        respuesta_servicio_externo: {
-          codigo_respuesta: "1000",
-          texto_respuesta: "Success"
-        }
-      }
-    }
-  end
-=end
 end

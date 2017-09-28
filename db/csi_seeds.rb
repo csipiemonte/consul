@@ -79,6 +79,8 @@ Setting.create(key: 'feature.public_stats', value: 'true')
 Setting.create(key: 'feature.budgets', value: 'true')
 Setting.create(key: 'feature.signature_sheets', value: 'true')
 Setting.create(key: 'feature.legislation', value: 'true')
+Setting.create(key: 'feature.community', value: 'true')
+Setting.create(key: 'feature.map', value: 'true')
 
 # Spending proposals feature flags
 Setting.create(key: 'feature.spending_proposal_features.voting_allowed', value: nil)
@@ -107,6 +109,11 @@ Setting.create(key: 'min_age_to_participate', value: '16')
 
 # Proposal improvement url path ('/more-information/proposal-improvement')
 Setting.create(key: 'proposal_improvement_path', value: nil)
+
+# City map feature default configuration (Greenwich)
+Setting.create(key: 'map_latitude', value: 45.073179654563646)
+Setting.create(key: 'map_longitude', value: 7.680763006210328)
+Setting.create(key: 'map_zoom', value: 12)
 
 puts " ✅"
 print "Creating Geozones (Circoscrizioni)"
