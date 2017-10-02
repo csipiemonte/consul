@@ -9,14 +9,21 @@ class SMSCsiApi
     prf = "[#{self.class}" + '::sms_deliver] '
     Rails.logger.info "#{prf}sms end poit: #{Rails.application.secrets.sms_end_point}"
     start = Time.zone.now
+    res_op = false
 
-    uri = URI(Rails.application.secrets.sms_end_point)
-    response = Net::HTTP.post_form(uri, 'xmlSms' => request(phone, code))
-    finish = Time.zone.now
-    Rails.logger.info "#{prf}Risposta del Gateway SMS, response.code: #{response.code}, response.body: #{response.body}, " \
-      "tempo di esecuzione: " + (finish - start).to_s + ' sec'
+    begin
+      uri = URI(Rails.application.secrets.sms_end_point)
+      response = Net::HTTP.post_form(uri, 'xmlSms' => request(phone, code))
 
-    success?(response.body.to_s)
+      finish = Time.zone.now
+      Rails.logger.info "#{prf}Risposta del Gateway SMS, response.code: #{response.code}, response.body: #{response.body}, " \
+        "tempo di esecuzione: " + (finish - start).to_s + ' sec'
+
+      res_op = success?(response.body.to_s)
+    rescue Exception => e
+      Rails.logger.error "#{prf}Rilevata Exception, dettaglio: #{e.message}"
+    end
+    res_op
   end
 
   # phone: deve iniziare con il prefisso internazionale (per l'Italia sono ammessi sia '39' sia '0039'

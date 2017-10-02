@@ -1,5 +1,8 @@
 ﻿---
 es:
+  errors:
+    messages:
+      sms_deliver: Errores ocuridos en la verificación del móvil. Por favor, intentalo otra vez más tarde.
   layouts:
     header:
       titolo: La ciudad que quieres será la ciudad que quieras. 

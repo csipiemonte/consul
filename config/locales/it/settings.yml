@@ -39,6 +39,8 @@ it:
       spending_proposal_features:
         voting_allowed: Votazioni sulle proposte di investimento
       legislation: Legislación
+      user:
+        recommendations: Recomendaciones
       community: Comunidad en propuestas y proyectos de inversión
       map: Geolocalizzazione delle proposte e dei progetti di investimento
     map_latitude: Latitudine

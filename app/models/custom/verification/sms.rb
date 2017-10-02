@@ -26,8 +26,13 @@ class Verification::Sms
   def save
     return false unless valid?
     update_user_phone_information
-    send_sms
-    Lock.increase_tries(user)
+
+    unless (send_sms)
+      user.update(unconfirmed_phone: nil, sms_confirmation_code: nil)
+      errors.add(:phone, :sms_deliver)
+      return false
+    end
+    Lock.increase_tries(user) # incremento il numero di tentativi qualora non si siano verificati errori con il Gateway SMS
   end
 
   def update_user_phone_information

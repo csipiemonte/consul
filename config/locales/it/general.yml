@@ -109,6 +109,10 @@ it:
         hot_score: Più attivi oggi
         most_commented: Più commentati
         relevance: Più rilevanti
+        recommendations: Recomendaciones
+      recommendations:
+        without_results: No existen debates relacionados con tus intereses
+        without_interests: Sigue propuestas para que podamos darte recomendaciones
       search_form:
         button: Cerca
         placeholder: Cerca dibattiti...
@@ -348,6 +352,10 @@ it:
         most_commented: Più commentate
         relevance: Più rilevanti
         archival_date: Archiviate
+        recommendations: Recomendaciones
+      recommendations:
+        without_results: No existen propuestas relacionadas con tus intereses
+        without_interests: Sigue propuestas para que podamos darte recomendaciones
       retired_proposals: Proposte ritirate
       retired_proposals_link: "Proposte ritirate dagli autori"
       retired_links:
@@ -753,6 +761,16 @@ it:
     proposal:
       description: Espacio abierto para propuestas ciudadanas sobre el tipo de ciudad en el que queremos vivir.
       title: Proponi
+    recommended:
+      title: Recomendaciones que te pueden interesar
+      debates:
+        title: Debates recomendados
+        btn_text_link: Todos los debates recomendados
+      proposals:
+        title: Propuestas recomendadas
+        btn_text_link: Todas las propuestas recomendadas
+      budget_investments:
+        title: Presupuestos recomendados
     verification:
       i_dont_have_an_account: No tengo cuenta, quiero crear una y verificarla
       i_have_an_account: Ya tengo una cuenta que quiero verificar

@@ -79,6 +79,7 @@ Setting.create(key: 'feature.public_stats', value: 'true')
 Setting.create(key: 'feature.budgets', value: 'true')
 Setting.create(key: 'feature.signature_sheets', value: 'true')
 Setting.create(key: 'feature.legislation', value: 'true')
+Setting.create(key: 'feature.user.recommendations', value: 'true')
 Setting.create(key: 'feature.community', value: 'true')
 Setting.create(key: 'feature.map', value: 'true')
 

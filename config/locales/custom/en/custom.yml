@@ -1,5 +1,8 @@
 ﻿---
 en:
+  errors:
+    messages:
+      sms_deliver: Errors occurred in the verification of the mobile. Please try again later.
   layouts:
     header:
       titolo: La città che ami sarà la città  che vuoi. 
