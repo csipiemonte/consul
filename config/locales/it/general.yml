@@ -481,10 +481,11 @@ it:
         help_text_1: "Las votaciones se convocan cuando una propuesta ciudadana alcanza el 1% de apoyos del censo con derecho a voto. En las votaciones también se pueden incluir cuestiones que el Ayuntamiento somete a decisión directa de la ciudadanía."
         help_text_2: "Para participar en la próxima votación tienes que registrarte en %{org} y verificar tu cuenta. Pueden votar todas las personas empadronadas en la ciudad mayores de 16 años. Los resultados de todas las votaciones serán vinculantes para el gobierno."
     show:
-      dates_title: "Fechas de participación"
-      cant_answer_not_logged_in: "Necesitas %{signin} o %{signup} para participar."
-      signin: iniciar sesión
-      signup: registrarte
+      already_voted_in_booth: "Hai già partecipato, presso una urna, a questa votazione."
+      dates_title: "Date di partecipazione"
+      cant_answer_not_logged_in: "È necessario %{signin} o %{signup} per partecipare."
+      signin: iniziare la sessione
+      signup: registrarsi
       cant_answer_verify_html: "Por favor %{verify_link} para poder responder."
       verify_link: "verifica tu cuenta"
       cant_answer_incoming: "Esta votación todavía no ha comenzado."
@@ -496,29 +497,29 @@ it:
       answer_this_question: "Responder a esta pregunta"
       original_proposal: "Proposta originale"
       author: "Creato da"
-      dates_title: "Fechas de participación"
+      dates_title: "Date di partecipazione"
       more_info: "Más información"
-      not_logged_in: "Necesitas %{signin} o %{signup} para participar."
-      signin: iniciar sesión
-      signup: registrarte
-      cant_answer_verify_html: "Por favor %{verify_link} para poder responder."
-      verify_link: "verifica tu cuenta"
-      cant_answer_incoming: "Esta votación todavía no ha comenzado."
-      cant_answer_expired: "Esta votación ha terminado."
-      cant_answer_wrong_geozone: "Esta votación no está disponible en tu zona."
-      vote_answer: "Votar %{answer}"
-      voted: "Has votado %{answer}"
-      poll: "Votación"
+      not_logged_in: "È necessario %{signin} o %{signup} per partecipare."
+      signin: iniziare la sessione
+      signup: registrarsi
+      cant_answer_verify_html: "Per cortesia %{verify_link} per poter rispondere."
+      verify_link: "verifica il tuo account"
+      cant_answer_incoming: "Questa votazione non è ancora iniziata."
+      cant_answer_expired: "Questa votazione è terminata."
+      cant_answer_wrong_geozone: "Questa votazione non è disponibile per la tua circoscrizione."
+      vote_answer: "Vota %{answer}"
+      voted: "Hai votato %{answer}"
+      poll: "Votazione"
   proposal_notifications:
     new:
-      title: "Enviar mensaje"
-      title_label: "Título"
-      body_label: "Mensaje"
-      submit_button: "Enviar mensaje"
-      info_about_receivers_html: "Este mensaje se enviará a <strong>%{count} usuarios</strong> y se publicará en %{proposal_page}.<br> El mensaje no se enviará inmediatamente, los usuarios recibirán periódicamente un email con todas las notificaciones de propuestas."
-      proposal_page: "la página de la propuesta"
+      title: "Invia messaggio"
+      title_label: "Titolo"
+      body_label: "Messaggio"
+      submit_button: "Invia messaggio"
+      info_about_receivers_html: "Questo messaggio sarà inviato a <strong>%{count} utenti</strong> e sarà pubblicato nella %{proposal_page}.<br> Il messaggio non sarà inviato immediatamente, gli utenti riceveranno una email con tutte le notifiche relative alle proposte."
+      proposal_page: "pagina della proposta"
     show:
-      back: "Volver a mi actividad"
+      back: "Torna a la mia attività"
   shared:
     edit: 'Modifica'
     save: 'Salva'
