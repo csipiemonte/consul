@@ -9,6 +9,8 @@ it:
       note: "Puoi allegare una immagine nei formati: %{accepted_content_types}, di dimensione fino a %{max_file_size} MB per file."
       add_new_image: Aggiungi immagine
       title_placeholder: "Aggiungi un titolo descrittivo dell'immagine"
+      admin_title: "Imagen principal de la votación"
+      admin_alt_text: "Texto alternativo para la imagen"
 
     actions:
       destroy:

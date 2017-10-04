@@ -31,14 +31,10 @@ Rails.application.configure do
   # Disable request forgery protection in test environment.
   config.action_controller.allow_forgery_protection = false
 
-  # Tell Action Mailer not to deliver emails to the real world.
-  # The :test delivery method accumulates sent emails in the
-  # ActionMailer::Base.deliveries array.
-  config.action_mailer.delivery_method = :test
-  config.action_mailer.default_url_options = {
-    host: 'test'
-  }
-  config.action_mailer.asset_host = 'http://consul.test'
+  # Ignore bad email addresses and do not raise email delivery errors.
+  # Set this to true and configure the email server for immediate delivery to raise delivery errors.
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.asset_host = "http://#{Rails.application.secrets.server_name}"
 
   # Randomize the order test cases are executed.
   config.active_support.test_order = :random
@@ -59,4 +55,6 @@ Rails.application.configure do
     end
   end
 
+  # log level
+  config.log_level = :info
 end

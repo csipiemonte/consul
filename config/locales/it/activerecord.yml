@@ -129,69 +129,71 @@ it:
         current_password: "Password attuale"
         phone_number: "Telefono"
         official_position: "Incarico pubblico"
-        official_level: "Nivel del cargo"
-        redeemable_code: "Código de verificación por carta (opcional)"
+        official_level: "Livello dell'incarico"
+        redeemable_code: "Codice di verifica per lettera (facoltativo)"
       organization:
-        name: "Nombre de organización"
-        responsible_name: "Persona responsable del colectivo"
+        name: "Nome dell'organizzazione"
+        responsible_name: "Persona responsabile del collettivo"
       spending_proposal:
-        administrator_id: "Administrador"
-        association_name: "Nombre de la asociación"
-        description: "Descripción"
-        external_url: "Enlace a documentación adicional"
-        geozone_id: "Ámbito de actuación"
-        title: "Título"
+        administrator_id: "Amministratore"
+        association_name: "Nome dell'associazione"
+        description: "Descrizione"
+        external_url: "Link alla documentazione aggiuntiva"
+        geozone_id: "Ambito di attuazione"
+        title: "Titolo"
       poll:
-        name: "Nombre"
-        starts_at: "Fecha de apertura"
-        ends_at: "Fecha de cierre"
-        geozone_restricted: "Restringida por zonas"
+        name: "Nome"
+        starts_at: "Data di apertura"
+        ends_at: "Data di chiusura"
+        geozone_restricted: "Ristretta per zone"
+        summary: "Sommario"
+        description: "Descrizione"
       poll/question:
-        title: "Pregunta"
-        valid_answers: "Posibles respuestas"
-        summary: "Resumen"
-        description: "Descripción"
+        title: "Domanda"
+        valid_answers: "Possibili risposte"
+        summary: "Sommario"
+        description: "Descrizione"
         external_url: "Link alla documentazione aggiuntiva"
       signature_sheet:
-        signable_type: "Tipo de hoja de firmas"
+        signable_type: "Tipo del foglio delle firme"
         signable_id: "ID Propuesta ciudadana/Propuesta inversión"
-        document_numbers: "Números de documentos"
+        document_numbers: "Numeri dei documenti"
       site_customization/page:
-        content: Contenido
+        content: Contenuto
         created_at: Creata
         subtitle: Sottotitolo
         slug: Slug
-        status: Estado
+        status: Stato
         title: Titolo
         updated_at: ultimo aggiornamento
         more_info_flag: Mostrar en la página de más información
         print_content_flag: Botón de imprimir contenido
         locale: Lingua
       site_customization/image:
-        name: Nombre
-        image: Imagen
+        name: Nome
+        image: Imamagine
       site_customization/content_block:
-        name: Nombre
-        locale: Idioma
-        body: Contenido
+        name: Nome
+        locale: Lingua
+        body: Contenuto
       legislation/process:
-        title: Título del proceso
-        description: En qué consiste
-        additional_info: Información adicional
-        start_date: Fecha de inicio del proceso
-        end_date: Fecha de fin del proceso
-        debate_start_date: Fecha de inicio del debate
-        debate_end_date: Fecha de fin del debate
-        draft_publication_date: Fecha de publicación del borrador
-        allegations_start_date: Fecha de inicio de alegaciones
-        allegations_end_date: Fecha de fin de alegaciones
-        result_publication_date: Fecha de publicación del resultado final
+        title: Titolo del processo
+        description: In cosa consiste
+        additional_info: Informazione aggiuntiva
+        start_date: Data di inizio processo
+        end_date: Data di fine processo
+        debate_start_date: Data di inizio dibattito
+        debate_end_date: Data di fine dibattito
+        draft_publication_date: Data di pubblicazione della bozza
+        allegations_start_date: Data de inicio de alegaciones
+        allegations_end_date: Data de fin de alegaciones
+        result_publication_date: Data di pubblicazione del risultato finale
       legislation/draft_version:
-        title: Título de la version
-        body: Texto
-        changelog: Cambios
+        title: Titolo della versione
+        body: Testo
+        changelog: Modifiche
         status: Estado
-        final_version: Versión final
+        final_version: Versione finale
       legislation/question:
         title: Título
         question_options: Respuestas

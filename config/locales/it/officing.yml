@@ -29,7 +29,7 @@ it:
         date: "Giorno"
         select_booth: "Scegli urna"
         select_date: "Scegli giorno"
-        ballots_white: "Schede bianche"
+        ballots_white: "Schede totalmente bianche"
         ballots_null: "Schede nulle"
         ballots_total: "Schede totali"
         submit: "Salva"
@@ -40,7 +40,7 @@ it:
         results: "Risultati"
         table_answer: Risposta
         table_votes: Voti
-        table_whites: Schede bianche
+        table_whites: Schede totalmente bianche
         table_nulls: Schede nulle
         table_total: Schede totali
     residence:

@@ -129,7 +129,6 @@ Geozone.create(name: "Aurora - Vanchiglia - Sassi - Madonna del Pilone", census_
 Geozone.create(name: "San Salvario - Cavoretto - Borgo Po - Nizza Millefonti - Lingotto - Filadelfia", census_code: "8", html_map_coordinates: "172, 172, 190, 180, 212, 161, 234, 190, 232, 213, 240, 223, 240, 225, 233, 236, 195, 253, 178, 248, 166, 266, 139, 265, 137, 259, 124, 254, 121, 263, 104, 253, 144, 205, 152, 210, 172, 170")
 
 
-
 puts " ✅"
 print "Creating Users"
 
@@ -138,30 +137,6 @@ if Administrator.count == 0
   admin = User.create!(username: 'admin', email: 'admin@deciditorino.it', password: '12345678', password_confirmation: '12345678', confirmed_at: Time.current, terms_of_service: "1")
   admin.create_administrator
 end
-
-def create_user(email, username = Faker::Name.name)
-  pwd = '12345678'
-  User.create!(
-    username:               username,
-    email:                  email,
-    password:               pwd,
-    password_confirmation:  pwd,
-    confirmed_at:           Time.current,
-    terms_of_service:       "1",
-    gender:                 ['Male', 'Female'].sample,
-    date_of_birth:          rand((Time.current - 80.years) .. (Time.current - 16.years)),
-    public_activity:        (rand(1..100) > 30)
-  )
-end
-
-moderator = create_user('mod@deciditorino.it', 'mod')
-moderator.create_moderator
-
-manager = create_user('manager@deciditorino.it', 'manager')
-manager.create_manager
-
-valuator = create_user('valuator@deciditorino.it', 'valuator')
-valuator.create_valuator
 
 
 puts " ✅"

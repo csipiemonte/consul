@@ -489,15 +489,11 @@ it:
         no_officers: "Non ci sono presidenti di seggio assegnati a questa votazione."
         table_name: "Nome"
         table_email: "Email"
-        add_officer_assignments: "Aggiungere turni come presidente di seggio"
-        edit_officer_assignments: "Modifica turni"
       by_officer:
-        date: "Fecha"
+        date: "Data"
         booth: "Urna"
-        assignments: "Turnos como presidente de mesa en esta votación"
-        no_assignments: "No tiene turnos como presidente de mesa en esta votación."
-        final_recounts: "Riconteggi totali"
-        final_recount: "Riconteggio totale (presidente di seggio)"
+        assignments: "Turni come presidente di seggio per questa votazione"
+        no_assignments: "Non hai turni come presidente di seggio per questa votazione."
     poll_shifts:
       new:
         add_shift: "Aggiungi turno"
@@ -570,16 +566,10 @@ it:
         results_tab: Risultati
         no_questions: "Non ci sono domande associate a questa votazione."
         questions_title: "Elenco delle domande associate"
-        remove_question: "Deallocare domanda"
-        add_question: "Includere domanda"
         table_title: "Titolo"
-        table_assignment: "Assegnazione"
-        table_name: "Nome"
       flash:
         question_added: "Domanda aggiunta a questa votazione"
         error_on_question_added: "Non si è potuto assegnare la domanda"
-        question_removed: "Domanda eliminata da questa votazione"
-        error_on_question_removed: "Non è stato possibile eliminare la domanda"
     questions:
       index:
         title: "Preguntas ciudadanas"
@@ -603,10 +593,8 @@ it:
         author: autore
         title: Titolo
         valid_answers: Risposte valide
-        description: Descrizione
         video_url: Video esterno
         documents: Documenti (1)
-        preview: Vedi nel sito
     recounts:
       index:
         title: "Riconteggi"
@@ -618,7 +606,7 @@ it:
       index:
         title: "Resultati"
         no_results: "Non ci sono risultati"
-        table_whites: Schede bianche
+        table_whites: Schede totalmente bianche
         table_nulls: Schede nulle
         table_total: Schede totali
         table_answer: Risposta
@@ -741,25 +729,25 @@ it:
           valuation_open: Aperte
           without_admin: Senza amministratore
           managed: Gestionando
-          valuating: En evaluación
-          valuation_finished: Evaluación finalizada
+          valuating: In valutazione
+          valuation_finished: Valutazione terminata
           all: Tutte
         title: Propuestas de inversión para presupuestos participativos
-        assigned_admin: Administrador asignado
-        no_admin_assigned: Sin admin asignado
+        assigned_admin: Amministratore assegnato
+        no_admin_assigned: Senza admin assegnato
         no_valuators_assigned: Sin evaluador
-        summary_link: "Resumen de propuestas"
+        summary_link: "Sommario delle proposte"
         valuator_summary_link: "Resumen de evaluadores"
         feasibility:
-          feasible: "Viable (%{price})"
-          not_feasible: "Inviable"
-          undefined: "Sin definir"
+          feasible: "Realizzabile (%{price})"
+          not_feasible: "Non realizzabile"
+          undefined: "Da definire"
       show:
         assigned_admin: Administrador asignado
         assigned_valuators: Evaluadores asignados
         back: Indietro
-        classification: Clasificación
-        heading: Propuesta de inversión %{id}
+        classification: Classifica
+        heading: Proposta di investimento %{id}
         edit: Modifica
         edit_classification: Editar clasificación
         association_name: Associazione
@@ -769,9 +757,9 @@ it:
         dossier: Informe
         edit_dossier: Editar informe
         tags: Etiquetas
-        undefined: Sin definir
+        undefined: Da definire
       edit:
-        classification: Clasificación
+        classification: Classifica
         assigned_valuators: Evaluadores
         submit_button: Actualizar
         tags: Etiquetas
