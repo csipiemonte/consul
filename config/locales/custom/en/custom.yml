@@ -1,5 +1,9 @@
 ﻿---
 en:
+  devise:
+    sessions:
+      census_code_updated: Census code updated.
+      user_not_resident: You are no longer registered in Torino.
   errors:
     messages:
       sms_deliver: Errors occurred in the verification of the mobile. Please try again later.

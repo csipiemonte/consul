@@ -19,7 +19,7 @@ class Users::SessionsController < Devise::SessionsController
       if census_api_resp.return_code == 'OK'
         return if current_user.geozone_id == census_api_resp.district_code
         current_user.update(geozone_id: census_api_resp.district_code)
-        # TODO, far comparire messaggio di aggiornamento del numero della circoscrizione
+        flash[:notice] = t('devise.sessions.census_code_updated')
 
       elsif census_api_resp.return_code == 'NOT_FOUND'
         current_user.update(
@@ -38,7 +38,7 @@ class Users::SessionsController < Devise::SessionsController
           gender: nil,
           date_of_birth: nil
         )
-        # TODO, far comparire messaggio di ritorno alla sola email verificata
+        flash[:notice] = t('devise.sessions.user_not_resident')
       end
     end
 

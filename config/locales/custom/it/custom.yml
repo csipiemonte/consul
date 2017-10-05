@@ -1,5 +1,9 @@
 ﻿---
 it:
+  devise:
+    sessions:
+      census_code_updated: Aggiornato il numero della circoscrizione.
+      user_not_resident: Non sei più residente a Torino.
   errors:
     messages:
       sms_deliver: Errori occorsi durante la verifica del numero di telefono, per favore riprova più tardi.

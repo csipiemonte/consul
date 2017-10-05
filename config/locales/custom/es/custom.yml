@@ -1,5 +1,9 @@
 ﻿---
 es:
+  devise:
+    sessions:
+      census_code_updated: Actualizado el número de distrito.
+      user_not_resident: Ya no estás empadronado en Torino.
   errors:
     messages:
       sms_deliver: Errores ocuridos en la verificación del móvil. Por favor, intentalo otra vez más tarde.
@@ -26,4 +30,3 @@ es:
         description: Descripción 1
         label: Tema 1	 	  
         link: Ver proyecto 
-
