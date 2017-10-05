@@ -486,25 +486,18 @@ it:
       cant_answer_not_logged_in: "È necessario %{signin} o %{signup} per partecipare."
       signin: iniziare la sessione
       signup: registrarsi
-      cant_answer_verify_html: "Por favor %{verify_link} para poder responder."
-      verify_link: "verifica tu cuenta"
-      cant_answer_incoming: "Esta votación todavía no ha comenzado."
+      cant_answer_verify_html: "Per cortesia %{verify_link} per poter rispondere."
+      verify_link: "verifica il tuo account"
+      cant_answer_incoming: "Questa votazione non è ancora iniziata."
       cant_answer_expired: "Questa votazione è terminata."
-      more_info_title: "Más información"
+      cant_answer_wrong_geozone: "Questa votazione non è disponibile per la tua circoscrizione."
+      more_info_title: "Più informazioni"
       documents: Documentazione
       zoom_plus: Ampliar imagen
   poll_questions:
     create_question: "Crea domanda per la votazione"
     default_valid_answers: "Sì, No"
     show:
-      not_logged_in: "È necessario %{signin} o %{signup} per partecipare."
-      signin: iniziare la sessione
-      signup: registrarsi
-      cant_answer_verify_html: "Per cortesia %{verify_link} per poter rispondere."
-      verify_link: "verifica il tuo account"
-      cant_answer_incoming: "Questa votazione non è ancora iniziata."
-      cant_answer_expired: "Questa votazione è terminata."
-      cant_answer_wrong_geozone: "Questa votazione non è disponibile per la tua circoscrizione."
       vote_answer: "Vota %{answer}"
       voted: "Hai votato %{answer}"
   proposal_notifications:
@@ -761,9 +754,9 @@ it:
       description: Espacio abierto para propuestas ciudadanas sobre el tipo de ciudad en el que queremos vivir.
       title: Proponi
     recommended:
-      title: Recomendaciones que te pueden interesar
+      title: Raccomandazioni che ti possono interessare
       debates:
-        title: Debates recomendados
+        title: Dibattiti raccomandati
         btn_text_link: Todos los debates recomendados
       proposals:
         title: Propuestas recomendadas
@@ -773,8 +766,8 @@ it:
     verification:
       i_dont_have_an_account: No tengo cuenta, quiero crear una y verificarla
       i_have_an_account: Ya tengo una cuenta que quiero verificar
-      question: ¿Tienes ya una cuenta en %{org_name}?
-      title: Verificación de cuenta
+      question: Hai un account in %{org_name}?
+      title: Verifica account
     welcome:
       go_to_index: Adesso no, vedi proposte
       title: Inizia a partecipare

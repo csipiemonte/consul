@@ -156,7 +156,7 @@ it:
         external_url: "Link alla documentazione aggiuntiva"
       signature_sheet:
         signable_type: "Tipo del foglio delle firme"
-        signable_id: "ID Propuesta ciudadana/Propuesta inversión"
+        signable_id: "ID Propuesta ciudadana/Proposta investimento"
         document_numbers: "Numeri dei documenti"
       site_customization/page:
         content: Contenuto
@@ -166,7 +166,7 @@ it:
         status: Stato
         title: Titolo
         updated_at: ultimo aggiornamento
-        more_info_flag: Mostrar en la página de más información
+        more_info_flag: Mostra nella pagina di dettaglio
         print_content_flag: Botón de imprimir contenido
         locale: Lingua
       site_customization/image:
@@ -185,28 +185,31 @@ it:
         debate_start_date: Data di inizio dibattito
         debate_end_date: Data di fine dibattito
         draft_publication_date: Data di pubblicazione della bozza
-        allegations_start_date: Data de inicio de alegaciones
-        allegations_end_date: Data de fin de alegaciones
+        allegations_start_date: Data di inizio degli allegati
+        allegations_end_date: Data di fine degli allegati
         result_publication_date: Data di pubblicazione del risultato finale
       legislation/draft_version:
         title: Titolo della versione
         body: Testo
         changelog: Modifiche
-        status: Estado
+        status: Stato
         final_version: Versione finale
       legislation/question:
-        title: Título
-        question_options: Respuestas
+        title: Titolo
+        question_options: Risposte
       legislation/question_option:
-        value: Valor
+        value: Valore
       legislation/annotation:
-        text: Comentario
+        text: Commento
       document:
-        title: Título
-        attachment: Archivo adjunto
+        title: Titolo
+        attachment: File allegato
       image:
         title: Titolo
-        attachment: Archivo adjunto
+        attachment: File allegato
+      poll/question_answer:
+        title: "Risposta"
+        description: "Descrizione"
     errors:
       models:
         user:
@@ -220,7 +223,7 @@ it:
         direct_message:
           attributes:
             max_per_day:
-              invalid: "Has llegado al número máximo de mensajes privados por día"
+              invalid: "Hai raggiunto il numero massimo di messaggi privati per giorno"
         image:
           attributes:
             attachment:
@@ -230,15 +233,15 @@ it:
           attributes:
             document_number:
               not_in_census: "Este documento no aparece en el censo"
-              has_voted: "Este usuario ya ha votado"
+              has_voted: "Questo utente ha già votato"
         legislation/process:
           attributes:
             end_date:
-              invalid_date_range: tiene que ser igual o posterior a la fecha de inicio
+              invalid_date_range: deve essere uguale o successiva alla data di inizio
             debate_end_date:
-              invalid_date_range: tiene que ser igual o posterior a la fecha de inicio del debate
+              invalid_date_range: deve essere uguale o successiva alla data di inizio del dibattito
             allegations_end_date:
-              invalid_date_range: tiene que ser igual o posterior a la fecha de inicio de las alegaciones
+              invalid_date_range: deve essere uguale o successiva alla data di inizio degli allegati
         proposal:
           attributes:
             tag_list:

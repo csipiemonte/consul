@@ -587,12 +587,22 @@ it:
       new:
         title: "Crear pregunta ciudadana"
         poll_label: "Votazione"
-        valid_answers_note: "Scrivi le risposte separate da virgole (,)"
       show:
         proposal: Propuesta ciudadana original
         author: autore
         title: Titolo
         valid_answers: Risposte valide
+        add_answer: "Aggiungi risposta"
+        description: Descrizione
+        video_url: Video esterno
+        documents: Documenti (1)
+        preview: Vedi nel sito
+        answers:
+          title: Risposta
+          description: Descrizione
+    answers:
+      new:
+        title: "Nuova risposta"
         video_url: Video esterno
         documents: Documenti (1)
     recounts:
@@ -760,11 +770,11 @@ it:
         undefined: Da definire
       edit:
         classification: Classifica
-        assigned_valuators: Evaluadores
-        submit_button: Actualizar
-        tags: Etiquetas
+        assigned_valuators: Valutatori
+        submit_button: Aggiorna
+        tags: Etichette
         tags_placeholder: "Escribe las etiquetas que desees separadas por comas (,)"
-        undefined: Sin definir
+        undefined: Da definire
       summary:
         title: Resumen de propuestas de inversión
         title_proposals_with_supports: Resumen para propuestas que han superado la fase de apoyos
@@ -772,48 +782,48 @@ it:
         finished_and_feasible_count: Finalizadas viables
         finished_and_unfeasible_count: Finalizadas inviables
         finished_count: Finalizadas
-        in_evaluation_count: En evaluación
-        total_count: Total
-        cost_for_geozone: Coste total
+        in_evaluation_count: In valutazione
+        total_count: Totale
+        cost_for_geozone: Costo totale
     geozones:
       index:
-        title: Distretti
-        create: Crea un distretto
+        title: Circoscrizioni
+        create: Crea circoscrizione
         edit: Modifica
         delete: Elimina
       geozone:
         name: Nome
-        external_code: Código externo
-        census_code: Código del censo
-        coordinates: Coordenadas
+        external_code: Codice externo
+        census_code: Numero
+        coordinates: Coordinate
       errors:
         form:
           error:
-            one: "error impidió guardar el distrito"
-            other: "errores impidieron guardar el distrito."
+            one: "errore non ha consentito salvare la circoscrizione"
+            other: "errori non hanno consentito salvare la circoscrizione."
       edit:
         form:
           submit_button: Salva modifiche
-        editing: Editando distrito
+        editing: Modificando circoscrizione
         back: Indietro
       new:
         back: Indietro
-        creating: Crea distretto
+        creating: Crea circoscrizione
       delete:
-        success: Distrito borrado correctamente
-        error: No se puede borrar el distrito porque ya tiene elementos asociados
+        success: Circoscrizione eliminata con successo
+        error: Non è possibile eliminare la circoscrizione perché ha elementi associati
     signature_sheets:
-      author: Autor
-      created_at: Fecha de creación
-      name: Nombre
-      no_signature_sheets: "No existen hojas de firmas"
+      author: Autore
+      created_at: Data di creazione
+      name: Nome
+      no_signature_sheets: "Non esistono fogli delle firme"
       index:
-        title: Hojas de firmas
-        new: Nueva hoja de firmas
+        title: Foglio delle firme
+        new: Nuovo foglio delle firme
       new:
-        title: Nueva hoja de firmas
-        document_numbers_note: "Introduce los números separados por comas (,)"
-        submit: Crear hoja de firmas
+        title: Nuovo foglio delle firme
+        document_numbers_note: "Introdurre i numeri separati da virgole (,)"
+        submit: Crea foglio delle firme
       show:
         created_at: Creado
         author: Autor
@@ -829,39 +839,39 @@ it:
         loading: "Aún hay firmas que se están verificando por el Padrón, por favor refresca la página en unos instantes"
     stats:
       show:
-        stats_title: Estadísticas
+        stats_title: Statistiche
         summary:
-          comment_votes: Votos en comentarios
-          comments: Comentarios
-          debate_votes: Votos en debates
-          debates: Debates
-          proposal_votes: Votos en propuestas
-          proposals: Propuestas
-          budgets: Presupuestos abiertos
-          budget_investments: Propuestas de inversión
-          spending_proposals: Propuestas de inversión
-          unverified_users: Usuarios sin verificar
-          user_level_three: Usuarios de nivel tres
-          user_level_two: Usuarios de nivel dos
+          comment_votes: Voti nei commenti
+          comments: Commenti
+          debate_votes: Voti nei dibattiti
+          debates: Dibattiti
+          proposal_votes: Voti nelle proposte
+          proposals: Proposte
+          budgets: Budget aperti
+          budget_investments: Proposte di investimento
+          spending_proposals: Proposte di investimento
+          unverified_users: Utenti da verificare
+          user_level_three: Utenti di livello tre
+          user_level_two: Utenti di livello due
           users: Utenti
           verified_users: Utenti verificati
           verified_users_who_didnt_vote_proposals: Utenti verificati che non hanno votato proposte
           visits: Visite
           votes: Voti
-        spending_proposals_title: Propuestas de inversión
-        budgets_title: Presupuestos participativos
-        visits_title: Visitas
-        direct_messages: Mensajes directos
+        spending_proposals_title: Proposte di investimento
+        budgets_title: Budget partecipativi
+        visits_title: Visite
+        direct_messages: Messaggi diretti
         proposal_notifications: Notifiche di proposte
         incomplete_verifications: Verifiche incomplete
       direct_messages:
-        title: Mensajes directos
-        total: Total
-        users_who_have_sent_message: Usuarios que han enviado un mensaje privado
+        title: Messaggi diretti
+        total: Totale
+        users_who_have_sent_message: Utenti che hanno inviato un messaggio privato
       proposal_notifications:
-        title: Notificaciones de propuestas
-        total: Total
-        proposals_with_notifications: Propuestas con notificaciones
+        title: Notifiche delle proposte
+        total: Totale
+        proposals_with_notifications: Proposte con notifiche
     tags:
       create: Crea Argomento
       destroy: Elimina Argomento
@@ -886,76 +896,76 @@ it:
       index:
         phone_not_given: No ha dado su teléfono
         sms_code_not_confirmed: No ha introducido su código de seguridad
-        title: Verificaciones incompletas
+        title: Verifiche incomplete
     site_customization:
       content_blocks:
         form:
-          content_blocks_information: Información sobre los bloques de texto
+          content_blocks_information: Informazione sui blocchi di testo
           content_block_about: Puedes crear bloques de HTML que se incrustarán en la cabecera o el pie de tu Cónsul.
           content_block_top_links_html: "Los <strong>bloques de la cabecera (top_links)</strong> son bloques de enlaces que deben crearse con este formato:"
           content_block_footer_html: "Los <strong>bloques del pie (footer)</strong> pueden tener cualquier formato y se pueden utilizar para guardar huellas Javascript, contenido CSS o contenido HTML personalizado."
         create:
-          notice: Bloque creado correctamente
-          error: No se ha podido crear el bloque
+          notice: Blocco creato con successo
+          error: Non è stato possibile creare il blocco
         update:
-          notice: Bloque actualizado correctamente
-          error: No se ha podido actualizar el bloque
+          notice: Blocco aggiornato con successo
+          error: Non è stato possibile aggiornare il blocco
         destroy:
-          notice: Bloque borrado correctamente
+          notice: Blocco eliminato con successo
         edit:
-          title: Editar bloque
+          title: Modifica blocco
         errors:
           form:
             error: Errore
         index:
-          create: Crear nuevo bloque
-          delete: Borrar bloque
-          title: Bloques
+          create: Crea nuovo blocco
+          delete: Elimina blocco
+          title: Blocchi
         new:
-          title: Crear nuevo bloque
+          title: Crea nuovo blocco
         content_block:
-          body: Contenido
-          name: Nombre
+          body: Contenuto
+          name: Nome
       images:
         index:
-          title: Personalizar imágenes
-          update: Actualizar
-          delete: Borrar
-          image: Imagen
+          title: Personalizza immagini
+          update: Aggiorna
+          delete: Elimina
+          image: Immagine
         update:
-          notice: Imagen actualizada correctamente
-          error: No se ha podido actualizar la imagen
+          notice: Immagine aggiornata con successo
+          error: "Non è stato possibile aggiornare l'immagine"
         destroy:
-          notice: Imagen borrada correctamente
-          error: No se ha podido borrar la imagen
+          notice: Immagine eliminata con successo
+          error: "Non è stato possibile eliminare l'immagine"
       pages:
         create:
-          notice: Página creada correctamente
-          error: No se ha podido crear la página
+          notice: Pagina creata con successo
+          error: Non è stato possibile creare la pagina
         update:
-          notice: Página actualizada correctamente
-          error: No se ha podido actualizar la página
+          notice: Pagina aggiornata con successo
+          error: Non è stato possibile aggiornare la pagina
         destroy:
-          notice: Página eliminada correctamente
+          notice: Pagina eliminata con successo
         edit:
-          title: Editar %{page_title}
+          title: Modifica %{page_title}
         errors:
           form:
             error: Errore
         form:
-          options: Opciones
+          options: Opzioni
         index:
-          create: Crear nueva página
-          delete: Borrar página
-          title: Páginas
-          see_page: Ver página
+          create: Crea nuova pagina
+          delete: Elimina pagina
+          title: Pagine
+          see_page: Vedi pagina
         new:
-          title: Página nueva
+          title: Pagina nuova
         page:
-          created_at: Creada
-          status: Estado
-          title: Título
-          updated_at: Última actualización
-          status_draft: Borrador
-          status_published: Publicada
-          locale: Idioma
+          created_at: Creata
+          status: Stato
+          title: Titolo
+          updated_at: Ultimo aggiornamento
+          status_draft: Bozza
+          status_published: Pubblicata
+          locale: Lingua
