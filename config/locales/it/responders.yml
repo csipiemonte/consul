@@ -9,6 +9,7 @@ it:
         poll: "Votazione creata con successo."
         poll_booth: "Urna creata con successo."
         poll_question_answer: "Risposta creata con successo"
+        poll_question_answer_video: "Video creato correttamente"
         proposal: "Proposta creata con successo."
         proposal_notification: "Il tuo messaggio è stato inviato con successo."
         spending_proposal: "Proposta di investimento creata con successo. La si può consultare da %{activity}"
@@ -31,3 +32,4 @@ it:
         budget_investment: "Proposta di investimento eliminata."
         error: "Non è stato possibile eliminare"
         topic: "Tema eliminato."
+        poll_question_answer_video: "Video di risposta eliminato."

@@ -5,14 +5,14 @@ it:
         one: "attività"
         other: "attività"
       budget:
-        one: "Presupuesto participativo"
-        other: "Presupuestos participativos"
+        one: "Budget partecipativo"
+        other: "Budget partecipativi"
       budget/investment:
         one: "Progetto di investimento"
         other: "Progetti di investimento"
       budget/investment/milestone:
-        one: "hito"
-        other: "hitos"
+        one: "milestone"
+        other: "milestones"
       comment:
         one: "Commento"
         other: "Commenti"
@@ -38,8 +38,8 @@ it:
         one: "Organizzazione"
         other: "Organizzazioni"
       proposal:
-        one: "Propuesta ciudadana"
-        other: "Propuestas ciudadanas"
+        one: "Proposta cittadina"
+        other: "Proposte cittadine"
       poll/booth:
         one: "urna"
         other: "urne"
@@ -65,14 +65,14 @@ it:
           one: "Versione bozza"
           other: "Versioni bozza"
       legislation/draft_texts:
-        one: "Borrador"
-        other: "Borradores"
+        one: "Bozza"
+        other: "Bozze"
       legislation/questions:
         one: "Domanda"
         other: "Domande"
       legislation/question_options:
-        one: "Opción de respuesta cerrada"
-        other: "Opciones de respuesta cerrada"
+        one: "Opzione di risposta chiusa"
+        other: "Opzioni di risposta chiusa"
       legislation/answers:
         one: "Risposta"
         other: "Risposte"
@@ -91,18 +91,18 @@ it:
         description_valuating: "Descrizione durante la fase di valutazione"
         description_balloting: "Descrizione durante la fase di votazione"
         description_reviewing_ballots: "Descrizione durante la fase di controllo dei voti"
-        description_finished: "Descripción cuando el presupuesto ha finalizado / Resultados"
+        description_finished: "Descrizione quando il budget è concluso / Risultati"
         phase: "Fase"
         currency_symbol: "Divisa"
       budget/investment:
         administrator_id: "Amministratore"
         description: "Descrizione"
         external_url: "Link alla documentazione aggiuntiva"
-        heading_id: "Partida presupuestaria"
+        heading_id: "Voce di bilancio"
         title: "Titolo"
         location: "Ubicazione"
         organization_name: "Se stai proponendo a nome di una organizzazione o collettivo, scrivi il nome"
-        image: "Imagen descriptiva de la propuesta de inversión"
+        image: "Immagine descrittiva della proposta di investimento"
       comment:
         body: "Commento"
         user: "Utente"
@@ -145,7 +145,7 @@ it:
         name: "Nome"
         starts_at: "Data di apertura"
         ends_at: "Data di chiusura"
-        geozone_restricted: "Ristretta per zone"
+        geozone_restricted: "Ristretta per circoscrizioni"
         summary: "Sommario"
         description: "Descrizione"
       poll/question:
@@ -156,7 +156,7 @@ it:
         external_url: "Link alla documentazione aggiuntiva"
       signature_sheet:
         signable_type: "Tipo del foglio delle firme"
-        signable_id: "ID Propuesta ciudadana/Proposta investimento"
+        signable_id: "ID Proposta cittadina/Proposta investimento"
         document_numbers: "Numeri dei documenti"
       site_customization/page:
         content: Contenuto
@@ -167,11 +167,11 @@ it:
         title: Titolo
         updated_at: ultimo aggiornamento
         more_info_flag: Mostra nella pagina di dettaglio
-        print_content_flag: Botón de imprimir contenido
+        print_content_flag: Bottone di stampa contenuto
         locale: Lingua
       site_customization/image:
         name: Nome
-        image: Imamagine
+        image: Immagine
       site_customization/content_block:
         name: Nome
         locale: Lingua
@@ -207,19 +207,22 @@ it:
       image:
         title: Titolo
         attachment: File allegato
-      poll/question_answer:
+      poll/question/answer:
         title: "Risposta"
         description: "Descrizione"
+      poll/question/answer/video:
+        title: Titolo
+        url: Video esterno
     errors:
       models:
         user:
           attributes:
             email:
-              password_already_set: "Este usuario ya tiene una clave asociada"
+              password_already_set: "A questo utente è già stata assegnata una chiave"
         debate:
           attributes:
             tag_list:
-              less_than_or_equal_to: "los temas deben ser menor o igual que %{count}"
+              less_than_or_equal_to: "i temi devono essere minori o uguali a %{count}"
         direct_message:
           attributes:
             max_per_day:
@@ -227,12 +230,12 @@ it:
         image:
           attributes:
             attachment:
-              min_image_width: "La imagen debe tener al menos %{required_min_width}px de largo"
-              min_image_height: "La imagen debe tener al menos %{required_min_height}px de alto"
+              min_image_width: "L'immagine deve essere di almeno %{required_min_width}px di larghezza"
+              min_image_height: "L'immagine deve essere di almeno %{required_min_height}px di altezza"
         poll/voter:
           attributes:
             document_number:
-              not_in_census: "Este documento no aparece en el censo"
+              not_in_census: "Questo documento non appare in Anagrafe"
               has_voted: "Questo utente ha già votato"
         legislation/process:
           attributes:
@@ -245,26 +248,26 @@ it:
         proposal:
           attributes:
             tag_list:
-              less_than_or_equal_to: "los temas deben ser menor o igual que %{count}"
+              less_than_or_equal_to: "i temi devono essere minori o uguali a %{count}"
         budget/investment:
           attributes:
             tag_list:
-              less_than_or_equal_to: "los temas deben ser menor o igual que %{count}"
+              less_than_or_equal_to: "i temi devono essere minori o uguali a %{count}"
         proposal_notification:
           attributes:
             minimum_interval:
-              invalid: "Debes esperar un mínimo de %{interval} días entre notificaciones"
+              invalid: "Devi aspettare un minimo di %{interval} giorni tra le notifiche"
         signature:
           attributes:
             document_number:
-              not_in_census: 'No verificado por Padrón'
-              already_voted: 'Ya ha votado esta propuesta'
+              not_in_census: 'Non verificato in Anagrafe'
+              already_voted: 'Hai già votato questa proposta'
         site_customization/page:
           attributes:
             slug:
-              slug_format: "deber ser letras, números, _ y -"
+              slug_format: "deve essere lettere, numeri, _ e -"
         site_customization/image:
           attributes:
             image:
-              image_width: "Debe tener %{required_width}px de ancho"
-              image_height: "Debe tener %{required_height}px de alto"
+              image_width: "Deve essere di %{required_width}px di larghezza"
+              image_height: "Deve essere di %{required_height}px de altezza"

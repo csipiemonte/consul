@@ -8,20 +8,20 @@ it:
       erase_account_link: Disiscrizione
       finish_verification: Concludere la verifica
       notifications: Notifiche
-      organization_name_label: Nombre de la organización
-      organization_responsible_name_placeholder: Representante de la asociación/colectivo
+      organization_name_label: "Nome dell'organizzazione"
+      organization_responsible_name_placeholder: "Rappresentante dell'associazione/collettivo"
       personal: Dati personali
       phone_number_label: Telefono
       public_activity_label: Rendi pubblica la mia lista di attività
       public_interests_label: Rendi pubblici i miei interessi
-      public_interests_my_title_list: Lista de intereses (Etiquetas de los elementos que sigues)
-      public_interests_user_title_list: Lista de intereses (Etiquetas de los elementos seguidos este usuario)
-      public_interests_my_empty_list: Aún no sigues ningún elemento.
-      public_interests_user_empty_list: Este usuario no sigue ningún elemento todavía.
+      public_interests_my_title_list: Lista degli interessi (Etichette degli elementi che segui)
+      public_interests_user_title_list: Lista degli interessi (Etichette degli elementi seguiti da questo utente)
+      public_interests_my_empty_list: Non stai seguendo nessun elemento.
+      public_interests_user_empty_list: Questo utente al momento non segue nessun elemento.
       save_changes_submit: Salva modifiche
-      subscription_to_website_newsletter_label: Recibir emails con información interesante sobre la web
-      email_on_direct_message_label: Recibir emails con mensajes privados
-      email_digest_label: Recibir resumen de notificaciones sobre propuestas
+      subscription_to_website_newsletter_label: Ricevi email con informazioni interessanti circa il sito
+      email_on_direct_message_label: Ricevi email con messaggi privati
+      email_digest_label: Ricevi riassunto delle notifiche sulle proposte
       official_position_badge_label: Mostrar etiqueta de tipo de usuario
       title: Il mio account
       user_permission_debates: Partecipare ai dibattiti
@@ -30,7 +30,7 @@ it:
       user_permission_support_proposal: Sostenere le proposte*
       user_permission_title: Partecipazione
       user_permission_verify: Per poter eseguire tutte le azioni verifica il tuo account.
-      user_permission_verify_info: "* Sólo usuarios empadronados."
+      user_permission_verify_info: "* Solamente utenti residenti."
       user_permission_votes: Partecipare alle votazioni finali*
       username_label: Nome utente
       verified_account: Account verificato
@@ -109,32 +109,32 @@ it:
         hot_score: Più attivi oggi
         most_commented: Più commentati
         relevance: Più rilevanti
-        recommendations: Recomendaciones
+        recommendations: Suggerimenti
       recommendations:
-        without_results: No existen debates relacionados con tus intereses
-        without_interests: Sigue propuestas para que podamos darte recomendaciones
+        without_results: Non esistono dibattiti relazionati con i tuoi interessi
+        without_interests: Segui le proposte per ricevere suggerimenti
       search_form:
         button: Cerca
         placeholder: Cerca dibattiti...
         title: Cerca
       search_results_html:
         one: " che contiene <strong>'%{search_term}'</strong>"
-        other: " che contienen <strong>'%{search_term}'</strong>"
+        other: " che contengono <strong>'%{search_term}'</strong>"
       select_order: Ordina per
       start_debate: Inizia un dibattito
       title: Dibattiti
       section_header:
-        icon_alt: Icono de Debates
-        title: Debates
-        help: Ayuda sobre los debates
+        icon_alt: Icona dei Dibattiti
+        title: Dibattiti
+        help: Aiuto sui dibattiti
       section_footer:
-        title: Ayuda sobre los debates
+        title: Aiuto sui dibattiti
         description: Inizia un dibattito per condividere il tuo punto di vista con altre persone a proposito dei temi che ti preoccupano.
-        help_text_1: "El espacio de debates ciudadanos está dirigido a que cualquier persona pueda exponer temas que le preocupan y sobre los que quiera compartir puntos de vista con otras personas."
-        help_text_2: 'Para abrir un debate es necesario registrarse en %{org}. Los usuarios ya registrados también pueden comentar los debates abiertos y valorarlos con los botones de "Estoy de acuerdo" o "No estoy de acuerdo" que se encuentran en cada uno de ellos.'
-        help_text_3: "Ten en cuenta que un debate no activa ningún mecanismo de actuación concreto. Si quieres hacer una %{proposal} para la ciudad o plantear un proyecto de %{budget} cuando se abra la convocatoria, ve a la sección correspondiente."
-        proposals_link: propuesta
-        budget_link: presupuestos participativos
+        help_text_1: "Lo spazio dei dibattiti cittadini è diretto a qualsiasi persona che voglia esporre tematiche che le stanno a cuore e sulle quali voglia condividere il proprio punto di vista con altre persone."
+        help_text_2: 'Per aprire un dibattito è necessario registrarsi su %{org}. Gli utenti che sono già registrati possono anche commentare i dibattiti aperti e esprimere il proprio giudizio con i pulsanti "Acconsento" o "Non acconsento" che sono presenti accanto a ciascuna discussione.'
+        help_text_3: "Ricorda che un dibattito non attiva nessun meccanismo concreto di esecuzione. Se ti interessa fare una %{proposal} per la città o proporre un progetto di %{budget} all'annuncio di convocazione, vedi la sezione corrispondente."
+        proposals_link: proposta
+        budget_link: budget partecipativi
     new:
       form:
         submit_button: Inizia un dibattito
@@ -145,7 +145,7 @@ it:
       recommendation_one: Non scrivere in maiuscolo il titolo del dibattito o intere frasi. In internet il maiuscolo è considerato gridare. A nessuno piace che si alzi la voce.
       recommendation_three: "Le critiche spietate sono bene accette. Questo è uno spazio di pensiero. Però ti raccomandiamo di conservare l'eleganza e l'intelligenza, fanno del mondo un posto migliore."
       recommendation_two: "Qualsiasi dibattito o commento che implichi una azione illegale sarà eliminato, anche quelli che abbiano l'intenzione di sabotare gli spazi di dibattito, tutto il resto è permesso."
-      recommendations_title: Raccomandazioni per creare un dibattito
+      recommendations_title: Suggerimenti per creare un dibattito
       start_new: Inizia un dibattito
     show:
       author_deleted: Utente eliminato
@@ -180,6 +180,7 @@ it:
     spending_proposal: la proposta di spesa
     budget/investment: la proposta di investimento
     poll/shift: il turno
+    poll/question/answer: la risposta
     user: la cuenta
     verification/sms: il numero di telefono
     signature_sheet: il foglio delle firme
@@ -198,20 +199,20 @@ it:
     footer:
       accessibility: Accessibilità
       conditions: Condizioni di utilizzo
-      consul: applicazione Consul
+      consul: Consul
       consul_url: https://github.com/consul/consul
       contact_us: Per ottenere assistenza tecnica entra in
       copyright: Consul, %{year}
-      description: Este portal usa la %{consul} que es %{open_source}.
+      description: Questo portale utilizza %{consul} che è %{open_source}.
       faq: Assistenza tecnica
-      open_data_text: Todos los datos del Ayuntamiento son tuyos.
+      open_data_text: Tutti i dati del Comune sono tuoi.
       open_data_title: Dati Aperti
       open_source: software libero
       open_source_url: http://www.gnu.org/licenses/agpl-3.0.html
-      participation_text: Decide cómo debe ser la ciudad que quieres.
+      participation_text: Decidi come deve essere la città che ami.
       participation_title: Partecipazione
-      privacy: Política de privacidad
-      transparency_text: Obtén cualquier información sobre la ciudad.
+      privacy: Politica sulla privacy
+      transparency_text: Ottieni tutte le informazioni sulla città.
       transparency_title: Trasparenza
       transparency_url: https://transparency.consul
     header:
@@ -226,7 +227,7 @@ it:
       external_link_transparency: Transparenza
       external_link_transparency_url: https://transparency.consul
       locale: 'Lingua:'
-      logo: Consul logo
+      logo: DecidiTorino logo
       management: Gestire
       moderation: Moderare
       valuation: Valutare
@@ -248,41 +249,41 @@ it:
       budgets: Budget partecipativi
       spending_proposals: "Proposte di investimento"
     admin:
-      watch_form_message: 'Has realizado cambios que no han sido guardados. ¿Seguro que quieres abandonar la página?'
+      watch_form_message: 'Hai eseguito modifiche che non sono state salvate. Confermi che vuoi abbandonare la pagina?'
   legacy_legislation:
     help:
-      alt: Selecciona el texto que quieres comentar y pulsa en el botón con el lápiz.
-      text: Para comentar este documento debes %{sign_in} o %{sign_up}. Después selecciona el texto que quieres comentar y pulsa en el botón con el lápiz.
-      text_sign_in: iniciar sesión
-      text_sign_up: registrarte
-      title: "¿Cómo puedo comentar este documento?"
+      alt: Seleziona il testo che intendi commentare e fai click sul bottone con la matita.
+      text: Per commentare questo documento devi %{sign_in} o %{sign_up}. Dopo seleziona il testo che vuoi commentare e fai click sul bottone con la matita.
+      text_sign_in: iniziare la sessione
+      text_sign_up: registrarti
+      title: "Come posso commentare questo documento?"
   locale: Italiano
   notifications:
     index:
       comments_on:
-        one: Hay un nuevo comentario en
-        other: Hay %{count} comentarios nuevos en
-      empty_notifications: No tienes notificaciones nuevas.
-      mark_all_as_read: Marcar todas como leídas
+        one: "C'è un nuovo commento in"
+        other: Ci sono %{count} commenti nuovi in
+      empty_notifications: Non hai nuove notifiche.
+      mark_all_as_read: Segna tutte come lette
       proposal_notification:
-        one: Hay una nueva notificación en
-        other: Hay %{count} nuevas notificaciones en
+        one: "C'è un nuovo notifica in"
+        other: Ci sono %{count} nuove notifiche in
       replies_to:
-        one: Hay una respuesta nueva a tu comentario en
-        other: Hay %{count} nuevas respuestas a tu comentario en
-      title: Notificaciones
+        one: "C'è una nuova risposta ad un tuo commento in"
+        other: Ci sono %{count} nuove risposte ad un tuo commento in
+      title: Notifiche
   map:
-    title: "Distritos"
-    proposal_for_district: "Crea una propuesta para tu distrito"
-    select_district: "Ámbito de actuación"
-    start_proposal: Crea una propuesta
+    title: "Circoscrizioni"
+    proposal_for_district: "Crea una proposta per la tua circoscrizione"
+    select_district: "Ambito di esecuzione"
+    start_proposal: Crea una proposta
   omniauth:
     facebook:
       sign_in: Entra con Facebook
       sign_up: Registrati con Facebook
       name: Facebook
     finish_signup:
-      title: Añade tu email
+      title: Aggiungi la tua email
     google_oauth2:
       sign_in: Entra con Google
       sign_up: Registrati con Google
@@ -295,7 +296,7 @@ it:
     info_sign_up: "Registrati con:"
     or_fill: "O riempi i seguenti campi:"
     finish_signup:
-      title: "Detalles adicionales de tu cuenta"
+      title: "Dettagli aggiuntivi del tuo account"
       username_warning: "Debido a que hemos cambiado la forma en la que nos conectamos con redes sociales y es posible que tu nombre de usuario aparezca como 'ya en uso', incluso si antes podías acceder con él. Si es tu caso, por favor elige un nombre de usuario distinto."
   proposals:
     create:
@@ -309,9 +310,9 @@ it:
     retire_form:
       title: Ritira proposta
       warning: "Si sigues adelante tu propuesta podrá seguir recibiendo apoyos, pero dejará de ser listada en la lista principal, y aparecerá un mensaje para todos los usuarios avisándoles de que el autor considera que esta propuesta no debe seguir recogiendo apoyos."
-      retired_reason_label: Razón por la que se retira la propuesta
-      retired_reason_blank: Selecciona una opción
-      retired_explanation_label: Explicación
+      retired_reason_label: Motivo per il quale si ritira la proposta
+      retired_reason_blank: Selezione una opzione
+      retired_explanation_label: Motivazione
       retired_explanation_placeholder: Explica brevemente por que consideras que esta propuesta no debe recoger más apoyos
       submit_button: Ritira la proposta
     retire_options:
@@ -321,7 +322,7 @@ it:
       done: Realizzata
       other: Altra
     form:
-      geozone: "Ambito di attuazione"
+      geozone: "Ambito di esecuzione"
       proposal_external_url: Link alla documentazione aggiuntiva
       proposal_question: Domanda della proposta
       proposal_question_example_html: "Deve essere riassunta in una domanda a cui si risponde con Sì o con No. <br>Es. 'Sei a favore di pedonalizzare via Po?'"
@@ -466,10 +467,6 @@ it:
       no_geozone_restricted: "Tutta la città"
       geozone_restricted: "Distretti"
       geozone_info: "Possono partecipare le persone residenti in: "
-      can_answer: "Puoi partecipare a questa votazione!"
-      cant_answer: "Queesta votazione non è disponibile per la tua zona"
-      cant_answer_not_logged_in: "È necessario fare login o registrarsi per partecipare"
-      cant_answer_verify: "Per cortesia verifica il tuo account per poter rispondere"
       already_answer: "Hai già partecipato a questa votazione"
       section_header:
         icon_alt: Icona delle Votazioni

@@ -85,32 +85,32 @@ it:
       edit:
         title: Modifica campagna di budget partecipativi
       new:
-        title: Nuevo presupuesto ciudadano
+        title: Nuovo budget cittadino
       show:
         groups:
-          one: 1 Grupo de partidas presupuestarias
-          other: "%{count} Grupos de partidas presupuestarias"
+          one: 1 Gruppo di voci di bilancio
+          other: "%{count} Gruppi di voci di bilancio"
       form:
         group: Nome del gruppo
-        no_groups: Non sono ancora stati creati gruppi. Cada usuario podrá votar en una sola partida de cada grupo.
+        no_groups: Non sono ancora stati creati gruppi. Ogni utente potrà votare in una sola voce di bilancio di ciascun gruppo.
         add_group: Aggiungi nuovo gruppo
         create_group: Crea gruppo
-        heading: Nombre de la partida
-        add_heading: Añadir partida
-        amount: Cantidad
-        population: Población
-        save_heading: Guardar partida
-        no_heading: Este grupo no tiene ninguna partida asignada.
-        table_heading: Partida
-        table_amount: Cantidad
-        table_population: Población
+        heading: Nome della voce
+        add_heading: Aggiungi voce
+        amount: Quantità
+        population: Popolazione
+        save_heading: Salva voce
+        no_heading: Questo gruppo non ha assegnata nessuna voce.
+        table_heading: Voce
+        table_amount: Quantità
+        table_population: Popolazione
       winners:
-        calculate: Calcular propuestas ganadoras
-        calculated: Calculando ganadoras, puede tardar un minuto.
+        calculate: Calcola proposte vincitrici
+        calculated: In elaborazione delle proposte vincitrici, può durare un minuto.
     budget_investments:
       index:
-        heading_filter_all: Todas las partidas
-        administrator_filter_all: Todos los administradores
+        heading_filter_all: Tutte le voci
+        administrator_filter_all: Tutti gli amministratori
         valuator_filter_all: Tutti i valutatori
         tags_filter_all: Tutte le etichette
         filters:
@@ -118,91 +118,91 @@ it:
           without_admin: Senza amministratore
           managed: Gestionando
           valuating: In valutazione
-          valuation_finished: Evaluación finalizada
-          valuation_finished_feasible: Viables
-          selected: Seleccionadas
-          winners: Ganadoras
+          valuation_finished: Valutazione terminata
+          valuation_finished_feasible: Realizzabili
+          selected: Selezionate
+          winners: vincitrici
           all: Tutte
         title: Proposte di investimento
         assigned_admin: Amministratore assegnato
         no_admin_assigned: Senza admin assegnato
         no_valuators_assigned: Senza valutatore
         feasibility:
-          feasible: "Viable (%{price})"
-          unfeasible: "Inviable"
-          undecided: "Sin decidir"
-        selected: "Seleccionada"
-        select: "Seleccionar"
+          feasible: "Realizzabile (%{price})"
+          unfeasible: "Irrealizzabile"
+          undecided: "Da decidere"
+        selected: "Selezionata"
+        select: "Seleziona"
         table_id: "ID"
-        table_title: "Título"
-        table_supports: "Apoyos"
-        table_admin: "Administrador"
-        table_valuator: "Evaluador"
-        table_geozone: "Ámbito de actuación"
-        table_feasibility: "Viabilidad"
-        table_valuation_finished: "Ev. Fin."
-        table_selection: "Selección"
-        table_incompatible: "Incompatible"
+        table_title: "Titolo"
+        table_supports: "Appoggi"
+        table_admin: "Amministratore"
+        table_valuator: "Valutatore"
+        table_geozone: "Ambito di esecuzione"
+        table_feasibility: "Fattibilità"
+        table_valuation_finished: "Val. Ter."
+        table_selection: "Selezione"
+        table_incompatible: "Incompatibile"
       show:
-        assigned_admin: Administrador asignado
-        assigned_valuators: Evaluadores asignados
-        classification: Clasificación
-        info: "%{budget_name} - Grupo: %{group_name} - Propuesta de inversión %{id}"
-        edit: Editar
-        edit_classification: Editar clasificación
-        by: Autor
-        sent: Fecha
-        group: Grupo
-        heading: Partida
-        dossier: Informe
-        edit_dossier: Editar informe
-        tags: Etiquetas
-        undefined: Sin definir
-        milestone: Seguimiento
-        new_milestone: Crear nuevo hito
+        assigned_admin: Amministratore assegnato
+        assigned_valuators: Valutatori assegnati
+        classification: Classifica
+        info: "%{budget_name} - Gruppo: %{group_name} - Proposta di investimento %{id}"
+        edit: Modifica
+        edit_classification: Modifica classifica
+        by: Autore
+        sent: Data
+        group: Gruppo
+        heading: Voce
+        dossier: Rapporto
+        edit_dossier: Modifica rapporto
+        tags: tags
+        undefined: Da definire
+        milestone: Tracciato
+        new_milestone: Crea nuova milestone
         compatibility:
-          title: Compatibilidad
-          "true": Incompatible
-          "false": Compatible
+          title: Compatibilità
+          "true": Incompatibile
+          "false": Compatibile
         selection:
-          title: Selección
-          "true": Seleccionado
-          "false": No seleccionado
+          title: Selezione
+          "true": Selezionato
+          "false": Non selezionato
         winner:
-          title: Ganador
+          title: Vincitore
           "true": "Si"
           "false": "No"
       edit:
-        classification: Clasificación
-        compatibility: Compatibilidad
-        mark_as_incompatible: Marcar como incompatible
-        selection: Selección
-        mark_as_selected: Marcar como seleccionado
-        assigned_valuators: Evaluadores
-        select_heading: Seleccionar partida
-        submit_button: Actualizar
-        tags: Etiquetas
-        tags_placeholder: "Escribe las etiquetas que desees separadas por comas (,)"
-        undefined: Sin definir
-      search_unfeasible: Buscar inviables
+        classification: Classifica
+        compatibility: Compatibilità
+        mark_as_incompatible: Segna come incompatibile
+        selection: Selezione
+        mark_as_selected: Segna come selezionato
+        assigned_valuators: Valutatori
+        select_heading: Selezione voce
+        submit_button: Aggiorna
+        tags: Tags
+        tags_placeholder: "Scrivi i tags che desideri separati da virgole (,)"
+        undefined: Da definire
+      search_unfeasible: Cerca irrealizzabili
     milestones:
       index:
         table_id: "ID"
-        table_title: "Título"
-        table_description: "Descripción"
-        table_actions: "Acciones"
-        delete: "Eliminar hito"
-        no_milestones: "No hay hitos definidos"
+        table_title: "Titolo"
+        table_description: "Descrizione"
+        table_actions: "Azioni"
+        delete: "Elimina milestone"
+        no_milestones: "Non ci sono milestone definite"
       new:
-        creating: Crear hito
+        creating: Crea milestone
       edit:
-        title: Editar hito
+        title: Modifica milestone
       create:
-        notice: Nuevo hito creado con éxito!
+        notice: Nuova milestone creata con successo!
       update:
-        notice: Hito actualizado
+        notice: Milestone aggiornata
       delete:
-        notice: Hito borrado correctamente
+        notice: Milestone eliminata con successo
     comments:
       index:
         filter: Filtro
@@ -233,7 +233,7 @@ it:
           all: Tutti
           with_confirmed_hide: Confermati
           without_confirmed_hide: In sospeso
-        title: Usuarios bloqueados
+        title: Utenti bloccati
       show:
         email: 'Email:'
         hidden_at: 'Bloccato:'
@@ -242,94 +242,94 @@ it:
     legislation:
       processes:
         create:
-          notice: 'Proceso creado correctamente. <a href="%{link}">Haz click para verlo</a>'
-          error: No se ha podido crear el proceso
+          notice: 'Processo creato con successo. <a href="%{link}">Fai click per vederlo</a>'
+          error: Non è stato possibile creare il processo
         update:
-          notice: 'Proceso actualizado correctamente. <a href="%{link}">Haz click para verlo</a>'
-          error: No se ha podido actualizar el proceso
+          notice: 'Processo aggiornato con successo. <a href="%{link}">Fai click per vederlo</a>'
+          error: Non è stato possibile aggiornare il processo
         destroy:
-          notice: Proceso eliminado correctamente
+          notice: Procseso eliminato con successo
         edit:
-          back: Volver
-          submit_button: Guardar cambios
+          back: Torna
+          submit_button: Salva modifiche
         errors:
           form:
             error: Errore
         form:
-          enabled: Habilitado
-          process: Proceso
-          debate_phase: Fase previa
-          allegations_phase: Fase de alegaciones
-          start: Inicio
-          end: Fin
-          use_markdown: Usa Markdown para formatear el texto
-          title_placeholder: Escribe el título del proceso
-          summary_placeholder: Resumen corto de la descripción
-          description_placeholder: Añade una descripción del proceso
-          additional_info_placeholder: Añade cualquier información adicional que pueda ser de interés
+          enabled: Abilitato
+          process: Processo
+          debate_phase: Fase preliminare
+          allegations_phase: Fase degli allegati
+          start: Inizio
+          end: Fine
+          use_markdown: Usa Markdown per aggiungere la formattazione al testo
+          title_placeholder: Scrivi il titolo del processo
+          summary_placeholder: Sommario breve della descrizione
+          description_placeholder: Aggiorna una descrizione del processo
+          additional_info_placeholder: Aggiungi qualsiasi informazione aggiuntiva che possa essere di interesse
         index:
-          create: Nuevo proceso
-          delete: Borrar
-          title: Procesos de legislación colaborativa
+          create: Nuovo processo
+          delete: Elimina
+          title: Processi di legislazione collaborativa
           filters:
-            open: Abiertos
-            next: Próximamente
-            past: Pasados
-            all: Todos
+            open: Aperti
+            next: A breve
+            past: Passati
+            all: Tutti
         new:
-          back: Volver
-          title: Crear nuevo proceso de legislación colaborativa
-          submit_button: Crear proceso
+          back: Torna
+          title: Crea nuovo processo di legislazione collaborativa
+          submit_button: Crea processo
         process:
-          title: Proceso
-          comments: Comentarios
-          status: Estado
-          creation_date: Fecha creación
-          status_open: Abierto
-          status_closed: Cerrado
-          status_planned: Próximamente
+          title: Processo
+          comments: Commenti
+          status: Stato
+          creation_date: Data creazione
+          status_open: Aperto
+          status_closed: Chiuso
+          status_planned: A breve
         subnav:
-          info: Información
-          draft_texts: Texto
-          questions: Debate
+          info: Informazione
+          draft_texts: Testo
+          questions: Dibattito
       draft_versions:
         create:
-          notice: 'Borrador creado correctamente. <a href="%{link}">Haz click para verlo</a>'
-          error: No se ha podido crear el borrador
+          notice: 'Bozza creata correttamente. <a href="%{link}">Fai click per vederla</a>'
+          error: Non è stato possibile creare la bozza
         update:
-          notice: 'Borrador actualizado correctamente. <a href="%{link}">Haz click para verlo</a>'
-          error: No se ha podido actualizar el borrador
+          notice: 'Bozza aggiornata correttamente. <a href="%{link}">Fai click per vederla</a>'
+          error: Non è stato possibile aggiornare la bozza
         destroy:
-          notice: Borrador eliminado correctamente
+          notice: Bozza eliminata correttamente
         edit:
-          back: Volver
-          submit_button: Guardar cambios
-          warning: Ojo, has editado el texto. Para conservar de forma permanente los cambios, no te olvides de hacer click en Guardar.
+          back: Torna
+          submit_button: Salva modifiche
+          warning: Attenzione, hai modificato il testo. Per memorizzare le modifiche senza perderle, non dimenticarti di fare click su Salva.
         errors:
           form:
             error: Errore
         form:
-          title_html: 'Editando <span class="strong">%{draft_version_title}</span> del proceso <span class="strong">%{process_title}</span>'
-          launch_text_editor: Lanzar editor de texto
-          close_text_editor: Cerrar editor de texto
-          use_markdown: Usa Markdown para formatear el texto
+          title_html: 'In modifica <span class="strong">%{draft_version_title}</span> del processo <span class="strong">%{process_title}</span>'
+          launch_text_editor: Attiva editor di testo
+          close_text_editor: Chiudi editor di testo
+          use_markdown: Usa Markdown per aggiungere la formattazione al testo
           hints:
-            final_version: Será la versión que se publique en Publicación de Resultados. Esta versión no se podrá comentar
+            final_version: Sarà la versione da pubblicare in Pubblicazione dei Risultati. Questa versione non potrà essere commentata
             status:
-              draft: Podrás previsualizarlo como logueado, nadie más lo podrá ver
-              published: Será visible para todo el mundo
-          title_placeholder: Escribe el título de esta versión del borrador
+              draft: "Una volta loggato, potrai vederne l'anteprima, nessun altro lo potrà vedere"
+              published: Sarà visibile a tutti
+          title_placeholder: Scrivi il titolo di questa versione della bozza
           changelog_placeholder: Describe cualquier cambio relevante con la versión anterior
-          body_placeholder: Escribe el texto del borrador
+          body_placeholder: Scrivi il testo della bozza
         index:
-          title: Versiones del borrador
-          create: Crear versión
-          delete: Borrar
-          preview: Previsualizar
+          title: Versioni della bozza
+          create: Crea versione
+          delete: Elimina
+          preview: Anteprima
         new:
-          back: Volver
-          title: Crear nueva versión
-          submit_button: Crear versión
+          back: Torna
+          title: Crea nuova versione
+          submit_button: Crea versione
         statuses:
           draft: Rimosso
           published: Pubblicato
@@ -344,7 +344,7 @@ it:
           notice: 'Domanda creata correttamente. <a href="%{link}">Fai click par vederla</a>'
           error: Non si è potuto creare la domanda
         update:
-          notice: 'Domanda aggiornata correttamente. <a href="%{link}">Haz click para verla</a>'
+          notice: 'Domanda aggiornata correttamente. <a href="%{link}">Fai click par vederla</a>'
           error: Non si è potuto aggiornare la domanda
         destroy:
           notice: Domanda rimossa correttamente
@@ -357,8 +357,8 @@ it:
             error: Errore
         form:
           add_option: +Aggiungi risposta chiusa
-          title_placeholder: Escribe un título a la pregunta
-          value_placeholder: Escribe una respuesta cerrada
+          title_placeholder: Scrivi un titolo per la domanda
+          value_placeholder: Scrivi una risposta chiusa
         index:
           back: Indietro
           title: Domande associate a questo processo
@@ -367,14 +367,14 @@ it:
         new:
           back: Indietro
           title: Crea nuova domanda
-          submit_button: Crear pregunta
+          submit_button: Crea domanda
         table:
-          title: Título
-          question_options: Opciones de respuesta
-          answers_count: Número de respuestas
-          comments_count: Número de comentarios
+          title: Titolo
+          question_options: Opzioni di risposta
+          answers_count: Numero di risposte
+          comments_count: Numero di commenti
         question_option_fields:
-          remove_option: Eliminar
+          remove_option: Elimina
     administrators:
       index:
         title: Amministratori
@@ -572,39 +572,58 @@ it:
         error_on_question_added: "Non si è potuto assegnare la domanda"
     questions:
       index:
-        title: "Preguntas ciudadanas"
-        create: "Crear pregunta ciudadana"
-        no_questions: "No hay ninguna pregunta ciudadana."
+        title: "Domande cittadine"
+        create: "Crea domanda cittadina"
+        no_questions: "Non sono presenti domande cittadine."
         filter_poll: "Filtra per votazione"
         select_poll: "Seleziona votazione"
-        questions_tab: "Preguntas ciudadanas"
+        questions_tab: "Domande cittadine"
         successful_proposals_tab: "Proposte che hanno superator il quorum"
         create_question: "Crea domanda per la votazione"
         table_proposal: "Proposta"
         table_question: "Domanda"
       edit:
-        title: "Editar pregunta ciudadana"
+        title: "Modifica domanda cittadina"
       new:
         title: "Crear pregunta ciudadana"
         poll_label: "Votazione"
+        form:
+          title: Titolo
+          description: Descrizione
+      answers:
+        images:
+          add_image: "Aggiungi immagine"
+          save_image: "Salva immagine"
       show:
-        proposal: Propuesta ciudadana original
+        proposal: Proposta cittadina originale
         author: autore
         title: Titolo
         valid_answers: Risposte valide
         add_answer: "Aggiungi risposta"
-        description: Descrizione
         video_url: Video esterno
-        documents: Documenti (1)
         preview: Vedi nel sito
         answers:
           title: Risposta
           description: Descrizione
+          videos: Video
+          video_list: Elenco dei video (%{count})
+          images: Immagini
+          images_list: Elenco delle immagini
     answers:
       new:
         title: "Nuova risposta"
         video_url: Video esterno
         documents: Documenti (1)
+      videos:
+        index:
+          title: Video
+          add_video: Aggiungi video
+          video_title: Titolo
+          video_url: URL del video
+        new:
+          title: Nuovo video
+        edit:
+          title: Modifica video
     recounts:
       index:
         title: "Riconteggi"
@@ -691,7 +710,7 @@ it:
       flash:
         updated: Valore aggiornato
       index:
-        banners: Banner style
+        banners: Stile del banner
         banner_imgs: Banner images
         title: Configurazione globale
         update_setting: Aggiorna
@@ -753,32 +772,32 @@ it:
           not_feasible: "Non realizzabile"
           undefined: "Da definire"
       show:
-        assigned_admin: Administrador asignado
-        assigned_valuators: Evaluadores asignados
+        assigned_admin: Amministratore assegnato
+        assigned_valuators: Valutatori assegnati
         back: Indietro
         classification: Classifica
         heading: Proposta di investimento %{id}
         edit: Modifica
-        edit_classification: Editar clasificación
+        edit_classification: Modifica classifica
         association_name: Associazione
         by: Autore
         sent: Data
         geozone: Ambito
-        dossier: Informe
-        edit_dossier: Editar informe
-        tags: Etiquetas
+        dossier: Rapporto
+        edit_dossier: Modifica rapporto
+        tags: Tags
         undefined: Da definire
       edit:
         classification: Classifica
         assigned_valuators: Valutatori
         submit_button: Aggiorna
-        tags: Etichette
-        tags_placeholder: "Escribe las etiquetas que desees separadas por comas (,)"
+        tags: Tags
+        tags_placeholder: "Scrivi i tags che desideri separati da virgole (,)"
         undefined: Da definire
       summary:
-        title: Resumen de propuestas de inversión
+        title: Sommario delle proposte di investimento
         title_proposals_with_supports: Resumen para propuestas que han superado la fase de apoyos
-        geozone_name: Ámbito de ciudad
+        geozone_name: Ambito della città
         finished_and_feasible_count: Finalizadas viables
         finished_and_unfeasible_count: Finalizadas inviables
         finished_count: Finalizadas
@@ -825,10 +844,10 @@ it:
         document_numbers_note: "Introdurre i numeri separati da virgole (,)"
         submit: Crea foglio delle firme
       show:
-        created_at: Creado
-        author: Autor
-        documents: Documentos
-        document_count: "Número de documentos:"
+        created_at: Creato
+        author: Autore
+        documents: Documenti
+        document_count: "Numero di documenti:"
         verified:
           one: "Hay %{count} firma válida"
           other: "Hay %{count} firmas válidas"
