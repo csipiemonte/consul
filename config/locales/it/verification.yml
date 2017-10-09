@@ -61,7 +61,7 @@ it:
         document_type_label: Tipo di documento
         error_not_allowed_age: No hai l'età minima per partecipare
         error_not_allowed_postal_code: Per completare la verifica devi essere residente.
-        error_verifying_census: Non è stato possibile verificare in Anagrafe in tuoi dati. Per favore, conferma la correttezza dei tuoi dati chiamando il Comune o recandoti in uno degli %{offices}.
+        error_verifying_census: Non è stato possibile verificare in Anagrafe i tuoi dati. Per favore, conferma la correttezza dei tuoi dati chiamando il Comune o recandoti in uno degli %{offices}.
         error_verifying_census_offices: sportello per il Cittadino
         form_errors: evitaron verificar tu residencia
         postal_code: CAP

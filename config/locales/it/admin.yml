@@ -587,9 +587,6 @@ it:
       new:
         title: "Crear pregunta ciudadana"
         poll_label: "Votazione"
-        form:
-          title: Titolo
-          description: Descrizione
       answers:
         images:
           add_image: "Aggiungi immagine"
@@ -601,19 +598,29 @@ it:
         valid_answers: Risposte valide
         add_answer: "Aggiungi risposta"
         video_url: Video esterno
-        preview: Vedi nel sito
         answers:
           title: Risposta
           description: Descrizione
           videos: Video
-          video_list: Elenco dei video (%{count})
+          video_list: Elenco dei video
           images: Immagini
           images_list: Elenco delle immagini
+          documents: Documenti
+          documents_list: Elenco dei documenti
+          document_title: Titolo
+          document_actions: Azioni
     answers:
       new:
-        title: "Nuova risposta"
+        title: Nuova risposta
         video_url: Video esterno
         documents: Documenti (1)
+      show:
+        title: Titolo
+        description: Descrizione
+        images: Immagini
+        images_list: Elenco delle immagini
+      edit:
+        title: Modifica risposta
       videos:
         index:
           title: Video

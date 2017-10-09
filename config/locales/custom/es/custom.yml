@@ -22,7 +22,7 @@ es:
       new:
         document_type:
           codice_fiscale: DNF
-        error_verifying_census: "Non è stato possibile verificare in Anagrafe in tuoi dati. Per favore, controlla i dati inseriti e ripeti l'operazione."
+        error_verifying_census: "Non è stato possibile verificare in Anagrafe i tuoi dati. Per favore, controlla i dati inseriti e ripeti l'operazione."
   welcome:
     schede:
       scheda1: 
