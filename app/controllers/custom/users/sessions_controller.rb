@@ -13,13 +13,19 @@ class Users::SessionsController < Devise::SessionsController
     end
 
     def check_current_user_residence
-      Rails.logger.info "check_current_user_residence- current_user.document_number: #{current_user.document_number}"
+      Rails.logger.info "check_current_user_residence - current_user.document_number: #{current_user.document_number}"
 
       census_api_resp = CensusCsiApi.new.call(current_user.document_number)
       if census_api_resp.return_code == 'OK'
-        return if current_user.geozone_id == census_api_resp.district_code
-        current_user.update(geozone_id: census_api_resp.district_code)
-        flash[:notice] = t('devise.sessions.census_code_updated')
+        Rails.logger.info "check_current_user_residence - current_user.geozone_id: #{current_user.geozone_id}, " \
+        "census_api_resp.district_code: #{census_api_resp.district_code}"
+
+        return if current_user.geozone_id.nil? || census_api_resp.district_code.nil?
+
+        if current_user.geozone_id.to_i != census_api_resp.district_code.to_i
+          current_user.update(geozone_id: census_api_resp.district_code)
+          flash[:notice] = t('devise.sessions.census_code_updated')
+        end
 
       elsif census_api_resp.return_code == 'NOT_FOUND'
         current_user.update(
