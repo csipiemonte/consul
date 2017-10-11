@@ -319,7 +319,7 @@ it:
               draft: "Una volta loggato, potrai vederne l'anteprima, nessun altro lo potrà vedere"
               published: Sarà visibile a tutti
           title_placeholder: Scrivi il titolo di questa versione della bozza
-          changelog_placeholder: Describe cualquier cambio relevante con la versión anterior
+          changelog_placeholder: Descrivi le differenze più rilevanti con la versione precedente
           body_placeholder: Scrivi il testo della bozza
         index:
           title: Versioni della bozza
@@ -718,7 +718,7 @@ it:
         updated: Valore aggiornato
       index:
         banners: Stile del banner
-        banner_imgs: Banner images
+        banner_imgs: Immagini del banner
         title: Configurazione globale
         update_setting: Aggiorna
         feature_flags: Funzionalità
@@ -760,7 +760,7 @@ it:
         geozone_filter_all: Tutti gli ambiti di attuazione
         administrator_filter_all: Tutti gli amministratori
         valuator_filter_all: Tutti i valutatori
-        tags_filter_all: Tutte le etichette
+        tags_filter_all: Tutti i tags
         filters:
           valuation_open: Aperte
           without_admin: Senza amministratore
@@ -768,12 +768,12 @@ it:
           valuating: In valutazione
           valuation_finished: Valutazione terminata
           all: Tutte
-        title: Propuestas de inversión para presupuestos participativos
+        title: Proposte di investimento per budget partecipativi
         assigned_admin: Amministratore assegnato
         no_admin_assigned: Senza admin assegnato
-        no_valuators_assigned: Sin evaluador
+        no_valuators_assigned: Senza valutatore
         summary_link: "Sommario delle proposte"
-        valuator_summary_link: "Resumen de evaluadores"
+        valuator_summary_link: "Sommario dei valutatori"
         feasibility:
           feasible: "Realizzabile (%{price})"
           not_feasible: "Non realizzabile"
@@ -803,11 +803,11 @@ it:
         undefined: Da definire
       summary:
         title: Sommario delle proposte di investimento
-        title_proposals_with_supports: Resumen para propuestas que han superado la fase de apoyos
+        title_proposals_with_supports: Sommario per le proposte che hanno superato la fase degli appoggi
         geozone_name: Ambito della città
-        finished_and_feasible_count: Finalizadas viables
-        finished_and_unfeasible_count: Finalizadas inviables
-        finished_count: Finalizadas
+        finished_and_feasible_count: Terminate realizzabili
+        finished_and_unfeasible_count: Terminate non realizzabili
+        finished_count: Terminate
         in_evaluation_count: In valutazione
         total_count: Totale
         cost_for_geozone: Costo totale
@@ -856,13 +856,13 @@ it:
         documents: Documenti
         document_count: "Numero di documenti:"
         verified:
-          one: "Hay %{count} firma válida"
-          other: "Hay %{count} firmas válidas"
+          one: "È presente %{count} firma valida"
+          other: "Sono presenti %{count} firme valide"
         unverified:
-          one: "Hay %{count} firma inválida"
-          other: "Hay %{count} firmas inválidas"
-        unverified_error: (No verificadas por el Padrón)
-        loading: "Aún hay firmas que se están verificando por el Padrón, por favor refresca la página en unos instantes"
+          one: "È presente %{count} firma non valida"
+          other: "Sono presenti %{count} firme non valide"
+        unverified_error: (Non verificate in Anagrafe)
+        loading: "Sono ancora presenti firme in corso di verifica presso l'Anagrafe, per cortesia aggiorna la pagina fra qualche istante"
     stats:
       show:
         stats_title: Statistiche
@@ -920,16 +920,16 @@ it:
         search: Cerca
     verifications:
       index:
-        phone_not_given: No ha dado su teléfono
-        sms_code_not_confirmed: No ha introducido su código de seguridad
+        phone_not_given: Non ha fornito il suo numero di telefono
+        sms_code_not_confirmed: Non ha introdotto il suo codice di sicurezza
         title: Verifiche incomplete
     site_customization:
       content_blocks:
         form:
           content_blocks_information: Informazione sui blocchi di testo
-          content_block_about: Puedes crear bloques de HTML que se incrustarán en la cabecera o el pie de tu Cónsul.
-          content_block_top_links_html: "Los <strong>bloques de la cabecera (top_links)</strong> son bloques de enlaces que deben crearse con este formato:"
-          content_block_footer_html: "Los <strong>bloques del pie (footer)</strong> pueden tener cualquier formato y se pueden utilizar para guardar huellas Javascript, contenido CSS o contenido HTML personalizado."
+          content_block_about: "È possibile creare blocchi di HTML da incorporare nell'intestazione o nel piè di pagina dell'applicazione Consul."
+          content_block_top_links_html: "I <strong>blocchi dell'intestazione (top_links)</strong> sono blocchi di link che devono essere creati seguendo questo formato:"
+          content_block_footer_html: "I <strong>blocci di piè di pagina (footer)</strong> hanno formato libero e si possono impiegare per salvare impronte Javascript, contenuto CSS o contenuto HTML personalizzato."
         create:
           notice: Blocco creato con successo
           error: Non è stato possibile creare il blocco

@@ -48,20 +48,20 @@ it:
         help_text_1: "I budget partecipativi sono processi nei quali la poplazione decide in maniera diretta in cosa si spende una parte del budget municipale. Qualsiasi persona residente maggiore di 16 anni puà proporre un progetto di spesa che si preseleziona in una fase di appoggi cittadini."
         help_text_2: "I progetti più votati sono valutati e passano alla votazione finale nella quale si decidono le esecuzioni che realizzerà il Comune una volta che si approvino i budget municipali del prossimo anno."
         help_text_3: "La presentazione dei progetti dei budget partecipativi avviene da gennaio per un periodo, all'incirca, di un mese e mezzo. Per partecipare e presentare proposte per tutta la città o per le circoscrizioni è necessario registrarsi su %{org} e verificare il proprio account."
-        help_text_4: "Para conseguir el mayor número de apoyos y votos posible, elige un titular descriptivo y comprensible de tu proyecto. Después tienes un espacio para desarrollar el planteamiento de tu propuesta. Aporta todos los datos y explicaciones, e incluso documentos e imágenes, para ayudar a otras personas participantes a entender mejor lo que planteas."
+        help_text_4: "Per ottenere il maggior numero possibile di appoggi e di voti, scegli un titolo descrittivo e comprensibile del tuo progetto. Dopo hai uno spazio per sviluppare il fine della tua proposta. Fornisci tutti i dati e le motivazioni, con anche documenti e immagini, per aiutare gli altri partecipanti a comprendere meglio ciò che proponi."
     investments:
       form:
         tags_instructions: "Aggiungi tag a questa proposta. Puoi scegliere tra le categorie proposte o introdurre quelle che desideri"
         tags_label: Temas
         tag_category_label: "Categorie"
-        tags_placeholder: "Scrivi le etichette che desideri separandole con il carattere virgola (',')"
+        tags_placeholder: "Scrivi i tags che desideri separandoli con il carattere virgola (',')"
         map_location: "Localizzazione nella mappa"
         map_location_instructions: "Naviga sulla mappa fino al punto scelto e metti il marcatore."
         map_remove_marker: "Elimina il marcatore"
       index:
         title: Budget partecipativi
         unfeasible: Proposte di investimento non realizzabili
-        unfeasible_text: Le proposte presentate devono incontrare una serie di criteri (legalità, concreción, ser competencia del Ayuntamiento, no superar el tope del presupuesto; %{definitions}) para ser declaradas viables y llegar hasta la fase de votación final. Todas las propuestas que no cumplen estos criterios son marcadas como inviables y publicadas en la siguiente lista, junto con su informe de inviabilidad.
+        unfeasible_text: Le proposte presentate devono incontrare una serie di criteri (legalità, concretezza, essere di competenza del Comune, non superare il massimo del budget; %{definitions}) per essere dichiarate realizzabili e giungere alla fase della votazione finale. Tutte le proposte che non soddisfano tali criteri sono segnate come non realizzabili e pubblicate nella lista seguente, insieme al corrispondente rapporto di non fattibilità.
         unfeasible_text_definitions: vedi definizioni qui
         by_heading: "Proposte di investimento con ambito: %{heading}"
         search_form:
@@ -74,12 +74,12 @@ it:
         sidebar:
           my_ballot: I miei voti
           voted_html:
-            one: "<strong>Has votado una propuesta por un valor de %{amount_spent}</strong>"
-            other: "<strong>Has votado %{count} propuestas por un valor de %{amount_spent}</strong>"
-          voted_info: Puedes %{link} en cualquier momento hasta el cierre de esta fase. No hace falta que gastes todo el dinero disponible.
-          voted_info_link: cambiar tus votos
-          different_heading_assigned_html: "Ya apoyaste propuestas de otra sección del presupuesto: %{heading_link}"
-          change_ballot: "Si cambias de opinión puedes borrar tus votos en %{check_ballot} y volver a empezar."
+            one: "<strong>Hai votato una proposta per un valore di %{amount_spent}</strong>"
+            other: "<strong>Hai votato %{count} proposte per un valore di %{amount_spent}</strong>"
+          voted_info: È possibile %{link} in qualsiasi momento fino alla chiusura di questa fase. Non è necessario spendere tutto il denaro a tua disposizione.
+          voted_info_link: cambiare i tuoi voti
+          different_heading_assigned_html: "Hai già sostenuto le proposte di un'altra sezione del budget: %{heading_link}"
+          change_ballot: "Se modifichi la tua opinione puoi cancellare i tuoi voti in %{check_ballot} e iniziare nuovamente."
           check_ballot_link: "controllare i miei voti"
           zero: "Non hai ancora votato una proposta di investimento in questo ambito del budget."
           verified_only: "Per creare una nuova proposta di investimento %{verify}."
@@ -125,7 +125,7 @@ it:
         give_support: Appoggia
       header:
         check_ballot: Controllo i miei voti
-        different_heading_assigned_html: "Hai già appoggiato proposte di una altra sezione del budget: %{heading_link}"
+        different_heading_assigned_html: "Hai già sostenuto le proposte di un'altra sezione del budget: %{heading_link}"
         change_ballot: "Se cambi opinione puoi eliminare i tuoi voti in %{check_ballot} e iniziare nuovamente."
         check_ballot_link: "controlla i miei voti"
     progress_bar:
@@ -140,7 +140,7 @@ it:
       see_results: Vedi risultati
     results:
       link: Risultati
-      page_title: "%{budget} - Ri"
+      page_title: "%{budget} - Risultati"
       heading: "Risultati budget partecipativi"
       heading_selection_title: "Ambito di esecuzione"
       spending_proposal: Titolo
