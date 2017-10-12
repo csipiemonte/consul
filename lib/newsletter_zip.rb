@@ -11,7 +11,7 @@ class NewsletterZip
   end
 
   def path
-    Rails.root + "/tmp/#{filename}.zip"
+    Rails.root.join('tmp').to_s + "#{filename}.zip"
   end
 
   def create

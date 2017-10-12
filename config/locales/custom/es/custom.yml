@@ -17,12 +17,15 @@ es:
       sign_in: Entra con Shibboleth
       sign_up: Regístrate con Shibboleth
       name: Shibboleth
+  settings:
+    feature:
+      shibboleth_login: Registro con Shibboleth
   verification:
     residence:
       new:
         document_type:
           codice_fiscale: DNF
-        error_verifying_census: "Non è stato possibile verificare in Anagrafe i tuoi dati. Per favore, controlla i dati inseriti e ripeti l'operazione."
+        error_verifying_census: "No ha sido posible comprobar tu DNF. Por favor, revisa tus datos y repite la operación."
   welcome:
     schede:
       scheda1: 

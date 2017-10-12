@@ -17,6 +17,9 @@ it:
       sign_in: Entra con Shibboleth
       sign_up: Registrati con Shibboleth
       name: Shibboleth
+  settings:
+    feature:
+      shibboleth_login: Registro con Shibboleth
   verification:
     residence:
       new:

@@ -666,6 +666,7 @@ it:
         location: "Ubicazione"
       booth:
         shifts: "Assegna turni"
+        edit: "Modifica urna"
     officials:
       edit:
         destroy: Elimina condizione di 'incarico Pubblico'

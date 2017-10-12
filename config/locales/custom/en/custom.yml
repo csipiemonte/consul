@@ -9,20 +9,23 @@ en:
       sms_deliver: Errors occurred in the verification of the mobile. Please try again later.
   layouts:
     header:
-      titolo: La città che ami sarà la città  che vuoi. 
-      html: Esistono città governate direttamente dai suoi abitanti, che <strong>dibattono</strong> di temi verso cui nutrono preoccupazione, <strong>propongono</strong> idee per migliorare le loro vite e <strong>decidono</strong> fra tutte e tutti quelle da realizzare.
-      more_info: Leggi tutto	  
+      titolo: Love the city, and it will become a city you love 
+      html: There are cities that are governed directly by their inhabitants, who <strong>discuss</strong> the topics they are concerned about, <strong>propose</strong> ideas to improve their lives and <strong>decide</strong> among themselves which ones will be carried out.
+      more_info: More info	  
   omniauth:
     shibboleth:
       sign_in: Login with Shibboleth
       sign_up: Signin with Shibboleth
       name: Shibboleth
+  settings:
+    feature:
+      shibboleth_login: Shibboleth login
   verification:
     residence:
       new:
         document_type:
-          codice_fiscale: Codice Fiscale
-        error_verifying_census: "Non è stato possibile verificare in Anagrafe i tuoi dati. Per favore, controlla i dati inseriti e ripeti l'operazione."
+          codice_fiscale: Fiscal Code
+        error_verifying_census: "It was not possible to verify your data in Register. Please check the data you entered and repeat the operation."
   welcome:
     schede:
       scheda1: 
