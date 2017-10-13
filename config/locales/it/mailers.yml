@@ -3,10 +3,10 @@ it:
   mailers:
     no_reply: "Este mensaje se ha enviado desde una dirección de correo electrónico que no admite respuestas."
     comment:
-      hi: Hola
+      hi: Ciao
       new_comment_by_html: Hay un nuevo comentario de <b>%{commenter}</b> en
       subject: Alguien ha comentado en tu %{commentable}
-      title: Nuevo comentario
+      title: Nuovo commento
     config:
       manage_email_subscriptions: Puedes dejar de recibir estos emails cambiando tu configuración en
     email_verification:
@@ -49,8 +49,8 @@ it:
     user_invite:
       ignore: "Si no has solicitado esta invitación no te preocupes, puedes ignorar este correo."
       text: "¡Gracias por solicitar unirte a %{org}! En unos segundos podrás empezar a decidir la ciudad que quieres, sólo tienes que rellenar el siguiente formulario:"
-      thanks: "Muchas gracias."
-      title: "Bienvenido a %{org}"
+      thanks: "Grazie mille."
+      title: "Benvenuto a %{org}"
       button: Completar registro
       subject: "Invitación a %{org_name}"
     budget_investment_created:

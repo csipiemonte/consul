@@ -7,63 +7,63 @@ it:
       new_password: "Nuova password"
       updated: "Password aggiornata con successo"
     confirmations:
-      confirmed: "Tu cuenta ha sido confirmada. Por favor autentifícate con tu red social o tu usuario y contraseña"
-      send_instructions: "Recibirás un correo electrónico en unos minutos con instrucciones sobre cómo restablecer tu contraseña."
-      send_paranoid_instructions: "Si tu correo electrónico existe en nuestra base de datos recibirás un correo electrónico en unos minutos con instrucciones sobre cómo restablecer tu contraseña."
+      confirmed: "Il tuo account è stato confermato. Per favore autenticati con i social networks o con utente e password"
+      send_instructions: "Fra pochi istanti riceverai una email con le istruzioni per impostare nuovamente la password."
+      send_paranoid_instructions: "Se il tuo indirizzo di posta elettronica è presente nei nostri archivi, fra qualche minuto riceverai una email con le istruzioni per impostare nuovamente la password."
     failure:
-      already_authenticated: "Ya has iniciado sesión."
-      inactive: "Tu cuenta aún no ha sido activada."
-      invalid: "%{authentication_keys} o contraseña inválidos."
+      already_authenticated: "Sessione già iniziata."
+      inactive: "Il tuo account non è ancora stato attivato."
+      invalid: "%{authentication_keys} o password non validi."
       locked: "Il tuo account è stato bloccato."
-      last_attempt: "Tienes un último intento antes de que tu cuenta sea bloqueada."
-      not_found_in_database: "%{authentication_keys} o contraseña inválidos."
-      timeout: "Tu sesión ha expirado, por favor inicia sesión nuevamente para continuar."
-      unauthenticated: "Necesitas iniciar sesión o registrarte para continuar."
-      unconfirmed: "Para continuar, por favor pulsa en el enlace de confirmación que hemos enviado a tu cuenta de correo."
+      last_attempt: "Hai a disposizione un ultimo tentativo prima che il tuo account sia bloccato."
+      not_found_in_database: "%{authentication_keys} o password non validi."
+      timeout: "La tua sessione è scaduta, per favore inizia una nuova sessione per proseguire."
+      unauthenticated: "È necessario iniziare una sessione o registrarsi per proseguire."
+      unconfirmed: "Per proseguire, per favore fai click sul link di conferma che abbiamo spedito al tuo indirizzo di posta elettronica."
     mailer:
       confirmation_instructions:
         subject: "Istruzioni di conferma"
       reset_password_instructions:
-        subject: "Instrucciones para restablecer tu contraseña"
+        subject: "Istruzioni per reimpostare la password"
       unlock_instructions:
-        subject: "Instrucciones de desbloqueo"
+        subject: "Istruzioni di sblocco"
     omniauth_callbacks:
-      failure: "No se te ha podido identificar via %{kind} por el siguiente motivo: \"%{reason}\"."
+      failure: "L'identificazione tramite %{kind} non è avvenuta per la seguente ragione: \"%{reason}\"."
       success: "Identificato con successo mediante %{kind}."
     passwords:
-      no_token: "No puedes acceder a esta página si no es a través de un enlace para restablecer la contraseña. Si has accedido desde el enlace para restablecer la contraseña, asegúrate de que la URL esté completa."
-      send_instructions: "Recibirás un correo electrónico con instrucciones sobre cómo restablecer tu contraseña en unos minutos."
-      send_paranoid_instructions: "Si tu correo electrónico existe en nuestra base de datos, recibirás un enlace para restablecer la contraseña en unos minutos."
-      updated: "Tu contraseña ha cambiado correctamente. Has sido identificado correctamente."
+      no_token: "Non è possibile accedere a questa pagina se non è mediante un link per reimpostare la password. Se l'accesso è avvenuto tramite il link per reimpostare la password, è bene verificare che l'indirizzo (URL) sia completo."
+      send_instructions: "Riceverai una email con le istruzioni per reimpostare la password in pochi minuti."
+      send_paranoid_instructions: "Se il tuo indirizzo di posta elettronica è presente nei nostri archivi, riceverai via mail un link per reimpostare la password in pochi minuti."
+      updated: "Password cambiata correttamente. Identificazione avvenuta con successo."
       updated_not_active: "La password è stata cambiata con successo."
     registrations:
       destroyed:
-        "¡Adiós! Tu cuenta ha sido cancelada. Esperamos volver a verte pronto. Le informamos que de conformidad con su petición,
-        sus datos personales registrados como usuario de la Web y que forman parte del fichero 'Fichero'
-        cuyo responsable es 'Responsable', han sido cancelados en los términos de lo previsto en el artículo 16 de la
+        "Addio! Il suo account è stato rimosso. Ci auguriamo di rivederla presto. La informamiamo che in accordo con la sua richiesta,
+        i suoi dati personali registrati come utente del sito e che fanno parte del file 'File'
+        il cui responsabile è 'Responsabile', sono stati eliminati nei termini di ciò che è previsto en el artículo 16 de la
         Ley Orgánica 15/1999 de Protección de Datos de Carácter Personal y del artículo 31 de su Reglamento de desarrollo (RD 1720/2007)."
-      signed_up: "¡Bienvenido! Has sido identificado."
-      signed_up_but_inactive: "Te has registrado correttamente, pero no has podido iniciar sesión porque tu cuenta no ha sido activada."
-      signed_up_but_locked: "Te has registrado correttamente, pero no has podido iniciar sesión porque tu cuenta está bloqueada."
+      signed_up: "Benvenuto! Identificazione avvenuta con successo."
+      signed_up_but_inactive: "La registrazione si è conclusa con successo, però non è stato possibile iniziare la sessione perché l'account non è stato attivato."
+      signed_up_but_locked: "La registrazione si è conclusa con successo, però non è stato possibile iniziare la sessione perché l'account è bloccato."
       signed_up_but_unconfirmed: "Ti è stato inviato un messaggio di posta con un link di conferma. Per cortesia visita il link per attivare il tuo account."
       update_needs_confirmation: "Hai modificato con successo il tuo account, ciò nonostante dobbiamo verificare il tuo nuovo indirizzo email. Per cortesia controlla la tua casella di posta e visita il link che ti abbiamo spedito per completare la conferma del tuo nuovo indirizzo email."
-      updated: "Has actualizado tu cuenta correttamente."
+      updated: "Account aggiornato con successo."
     sessions:
       signed_in: "Sessione iniziata correttamente."
       signed_out: "Sessione terminata correttamente."
       already_signed_out: "Hai terminato correttamente la sessione."
     unlocks:
-      send_instructions: "Recibirás un correo electrónico en unos minutos con instrucciones sobre cómo desbloquear tu cuenta."
-      send_paranoid_instructions: "Si tu cuenta existe, recibirás un correo electrónico en unos minutos con instrucciones sobre cómo desbloquear tu cuenta."
-      unlocked: "Tu cuenta ha sido desbloqueada. Por favor inicia sesión para continuar."
+      send_instructions: "Fra qualche istante riceverai una email con le istruzioni per sbloccare l'account."
+      send_paranoid_instructions: "Se il tuo account è presente, fra qualche istante riceverai una email con le istruzioni per sbloccare l'account."
+      unlocked: "L'account è stato sbloccato. Per continuare, per favore, iniziare una nuova sessione."
   errors:
     messages:
-      already_confirmed: "ya has sido confirmado, por favor intenta iniciar sesión."
-      confirmation_period_expired: "necesitas ser confirmado en %{period}, por favor vuelve a solicitarla."
-      expired: "ha expirado, por favor vuelve a solicitarla."
-      not_found: "no se ha encontrado."
-      not_locked: "no estaba bloqueado."
+      already_confirmed: "sei già stato confermato, per favore prova ad iniziare la sessione."
+      confirmation_period_expired: "è necessario essere confermati in %{period}, per favore richiedilo nuovamente."
+      expired: "è scaduto, per favore richiedilo nuovamente."
+      not_found: "non è stato trovato."
+      not_locked: "non era bloccato."
       not_saved:
-        one: "1 error impidió que este %{resource} fuera guardado:"
-        other: "%{count} errores impidieron que este %{resource} fuera guardado:"
-      equal_to_current_password: "debe ser diferente a la contraseña actual"
+        one: "1 errore non ha consentito salvare questo %{resource}:"
+        other: "%{count} errori non hanno consentito salavare questo %{resource}:"
+      equal_to_current_password: "non deve essere identica alla password attuale"

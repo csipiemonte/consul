@@ -8,29 +8,29 @@ it:
       button_to_access: Accedi alla comunità
     show:
       title:
-        proposal: Comunidad de la propuesta
-        investment: Comunidad del presupuesto participativo
+        proposal: Communità della proposta
+        investment: Communità del budget partecipativo
       description:
-        proposal: Participa en la comunidad de esta propuesta. Una comunidad activa puede ayudar a mejorar el contenido de la propuesta así como a dinamizar su difusión para conseguir más apoyos.
-        investment: Participa en la comunidad de este proyecto de inversión. Una comunidad activa puede ayudar a mejorar el contenido del proyecto de inversión así como a dinamizar su difusión para conseguir más apoyos.
+        proposal: Partecipa alla comunità di questa proposta. Una comunità attiva può aiutare a migliorare il contenuto della proposta così come può aumentare la sua diffusione allo scopo di ricevere più appoggi.
+        investment: Partecipa alla comunità di questo progetto di investimento. Una comunità attiva può aiutare a migliorare il contenuto del progetto di investimento così come può aumentare la sua diffusione allo scopo di ricevere più appoggi.
       create_first_community_topic:
-        first_theme_not_logged_in: Aún no hay ningun tema disponible, participa creando el primero. Haz click en el botón crear nuevo tema.
-        first_theme: Crea el primer tema de la comunidad
-        sub_first_theme: Para crear un tema tienes que %{link}
-        sign_link: "acceder a %{org_name}"
+        first_theme_not_logged_in: Al momento non ci sono temi disponibili, partecipa alla creazione del primo. Fai click sul bottone Crea nuovo tema.
+        first_theme: Crea il primo tema della comunità
+        sub_first_theme: Per creare un tema è necessario %{link}
+        sign_link: "accedere a %{org_name}"
       tab:
         participants: Partecipanti
       sidebar:
         participate: Partecipa
         new_topic: Crea un tema
-        disabled_info_title: Necesitas estar logueado para crear un nuevo tema
+        disabled_info_title: È necessario autenticarsi per creare un nuovo tema
       topic:
         edit_button: Modifica
         destroy_button: Elimina
         comments:
           one: 1 Commento
-          other: "%{count} Comentarios"
-          zero: Sin comentarios
+          other: "%{count} Commenti"
+          zero: Senza commenti
     topic:
       create: Crea un tema
       edit: Modifica tema
@@ -49,10 +49,10 @@ it:
         tab:
           comments_tab: Commenti
       sidebar:
-        recommendations_title: Raccomandazioni per creare un tema
-        recommendation_one: No escribas el título del tema o frases enteras en mayúsculas. En internet eso se considera gritar. Y a nadie le gusta que le griten.
-        recommendation_two: Cualquier tema o comentario que implique una acción ilegal será eliminada, también las que tengan la intención de sabotear los espacios del tema, todo lo demás está permitido.
-        recommendation_three: Disfruta de este espacio, de las voces que lo llenan, también es tuyo
+        recommendations_title: Suggerimenti per creare un tema
+        recommendation_one: Non scrivere in maiuscolo il titolo del tema o intere frasi. In internet il maiuscolo è considerato gridare. A nessuno piace che si alzi la voce.
+        recommendation_two: "Qualsiasi tema o commento che implichi una azione illegale sarà eliminato, anche quelli scritti con l'intenzione di sabotare gli spazi del tema, tutto il resto è permesso."
+        recommendation_three: Usa bene questo spazio e le voci che lo compongono, sono a tua disposizione.
   topics:
     show:
-      login_to_comment: Necesitas %{signin} o %{signup} para comentar.
+      login_to_comment: È necessario %{signin} o %{signup} per commentare.

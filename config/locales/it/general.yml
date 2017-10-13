@@ -353,10 +353,10 @@ it:
         most_commented: Più commentate
         relevance: Più rilevanti
         archival_date: Archiviate
-        recommendations: Recomendaciones
+        recommendations: Suggerite
       recommendations:
-        without_results: No existen propuestas relacionadas con tus intereses
-        without_interests: Sigue propuestas para que podamos darte recomendaciones
+        without_results: Non esistono proposte relazionate con i tuoi interessi
+        without_interests: Segui le proposte così possiamo darti qualche suggerimento
       retired_proposals: Proposte ritirate
       retired_proposals_link: "Proposte ritirate dagli autori"
       retired_links:
@@ -372,15 +372,15 @@ it:
         title: Cerca
       search_results_html:
         one: " che contiene <strong>'%{search_term}'</strong>"
-        other: " che contienen <strong>'%{search_term}'</strong>"
+        other: " che contengono <strong>'%{search_term}'</strong>"
       select_order: Ordina per
-      select_order_long: Estas viendo las propuestas
+      select_order_long: Stai vedendo le proposte
       start_proposal: Crea una proposta
-      title: Propuestas ciudadanas
-      top: Top semanal
-      top_link_proposals: Propuestas más apoyadas por categoría
+      title: Proposte cittadina
+      top: Top della settimana
+      top_link_proposals: Proposte più appoggiate per categoria
       section_header:
-        icon_alt: Icono de Propuestas
+        icon_alt: Icona delle Proposte
         title: Proposte
         help: Ayuda sobre las propuestas
       section_footer:
@@ -394,19 +394,19 @@ it:
         submit_button: Crea proposta
       more_info: "¿Cómo funcionan las propuestas ciudadanas?"
       recommendation_one: Non scrivere in maiuscolo il titolo della proposta o intere frasi. In internet il maiuscolo è considerato gridare. A nessuno piace che si alzi la voce.
-      recommendation_three: Sfrutta questo spazio a tua disposizione e delle voci che lo compongono.
-      recommendation_two: "Qualsiasi proposta o commento che implichi una azione illegale sarà eliminato, anche quelle che abbiano l'intenzione di sabotare gli spazi di proposta, tutto il resto è permesso."
-      recommendations_title: Raccomandazioni per creare una proposta
+      recommendation_three: Usa bene questo spazio e le voci che lo compongono, sono a tua disposizione.
+      recommendation_two: "Qualsiasi proposta o commento che implichi una azione illegale sarà eliminato, anche quelle scritte con l'intenzione di sabotare gli spazi della proposta, tutto il resto è permesso."
+      recommendations_title: Suggerimenti per creare una proposta
       start_new: Crea una proposta
     notice:
       retired: Proposta ritirata
     proposal:
       created: "Hai creato una proposta!"
       share:
-        guide: "Condividila percgé la gente inizi a sostenerla."
+        guide: "Condividila perché la gente inizi a sostenerla."
         edit: "Prima di pubblicarla potrai modificare il testo a tuo piacimento."
-        view_proposal: "Ahora no, ir a mi proposta"
-      improve_info: "Mejora tu campaña y consigue más apoyos"
+        view_proposal: "Adesso no, vai alla proposta"
+      improve_info: "Migliora la tua campagna e ottieni più appoggi"
       improve_info_link: "Vedi più informazioni"
       already_supported: "Hai già sostenuto questa proposta, condividila!"
       comments:
@@ -417,13 +417,13 @@ it:
       support: Sostieni
       support_title: Sostieni questa proposta
       supports:
-        one: 1 apoyo
-        other: "%{count} apoyos"
-        zero: Sin apoyos
-      supports_necessary: "%{number} apoyos necesarios"
+        one: 1 appoggio
+        other: "%{count} appoggi"
+        zero: Senza appoggi
+      supports_necessary: "%{number} appoggi necessari"
       total_percent: 100%
       archived: "Questa proposta è stata archiviata e non può più essere sostenuta."
-      successful: "Esta propuesta ha alcanzado los apoyos necesarios y pasará a la %{voting}."
+      successful: "Questa proposta ha ottenuto gli appoggi necessari e andrà alla %{voting}."
       voting: "prossima votazione"
     show:
       author_deleted: Utente eliminato
@@ -522,7 +522,7 @@ it:
     "no": "No"
     search_results: "Risultati della ricerca"
     advanced_search:
-      author_type: 'Por categoría de autor'
+      author_type: "Per categoria dell'autore"
       author_type_blank: 'Scegli una categoria'
       date: 'Per data'
       date_placeholder: 'DD/MM/AAAA'
@@ -545,22 +545,22 @@ it:
     check: Seleziona
     check_all: Tutti
     check_none: Nessuno
-    collective: Colectivo
-    flag: Denunciar como inapropiado
-    follow: "Seguir"
-    follow_entity: "Seguir %{entity}"
+    collective: Collettivo
+    flag: Segnala come inadeguato
+    follow: "Segui"
+    follow_entity: "Segui %{entity}"
     followable:
       budget_investment:
         create:
-          notice_html: "¡Ahora estás siguiendo este proyecto de inversión! </br> Te notificaremos los cambios a medida que se produzcan para que estés al día."
+          notice_html: "Adesso stai seguendo questo progetto di investimento! </br> Ti saranno notificate le modifiche man mano che si realizzano per tenerti aggiornato."
         destroy:
-          notice_html: "¡Has dejado de seguir este proyecto de inverisión! </br> Ya no recibirás más notificaciones relacionadas con este proyecto."
+          notice_html: "Hai smesso di seguire questo progetto di investimento! </br> Non riceverai più le notifiche relazionate con questo progetto."
       proposal:
           create:
-            notice_html: "¡Ahora estás siguiendo esta propuesta ciudadana! </br> Te notificaremos los cambios a medida que se produzcan para que estés al día."
+            notice_html: "Adesso stai seguendo questa proposta cittadina! </br> Ti saranno notificate le modifiche man mano che si realizzano per tenerti aggiornato."
           destroy:
-            notice_html: "¡Has dejado de seguir esta propuesta ciudadana! </br> Ya no recibirás más notificaciones relacionadas con esta propuesta."
-    hide: Ocultar
+            notice_html: "Hai smesso di seguire questa proposta cittadina! </br> Non riceverai più le notifiche relazionate con questa proposta."
+    hide: Nascondi
     print:
       print_button: Stampa questa informazione
     search: Cerca
@@ -568,63 +568,63 @@ it:
     suggest:
       debate:
         found:
-          one: "Existe un debate con el término '%{query}', puedes participar en él en vez de abrir uno nuevo."
-          other: "Existen debates con el término '%{query}', puedes participar en ellos en vez de abrir uno nuevo."
-        message: "Estás viendo %{limit} de %{count} debates que contienen el término '%{query}'"
-        see_all: "Ver todos"
+          one: "Esiste un dibattito con la parola '%{query}', puoi parteciparvi invece di aprirne uno nuovo."
+          other: "Esistono dibattiti con la parola '%{query}', puoi parteciparvi invece di aprirne uno nuovo."
+        message: "Visualizzato %{limit} di %{count} dibattiti che contengono la parola '%{query}'"
+        see_all: "Mostra tutti"
       budget_investment:
         found:
-          one: "Existe una propuesta de inversión con el término '%{query}', puedes participar en ella en vez de abrir una nueva."
-          other: "Existen propuestas de inversión con el término '%{query}', puedes participar en ellas en vez de abrir una nueva."
-        message: "Estás viendo %{limit} de %{count} propuestas de inversión que contienen el término '%{query}'"
-        see_all: "Ver todas"
+          one: "Esiste una proposta di investimento con la parola '%{query}', puoi parteciparvi invece di aprirne una nuova."
+          other: "Esistono proposte di investimento con la parola '%{query}', puoi parteciparvi invece di aprirne una nuova."
+        message: "Visualizzata %{limit} di %{count} proposte di investimento che contengono la parola '%{query}'"
+        see_all: "Mostra tutte"
       proposal:
         found:
-          one: "Existe una propuesta con el término '%{query}', puedes participar en ella en vez de abrir uno nuevo."
-          other: "Existen propuestas con el término '%{query}', puedes participar en ellas en vez de abrir uno nuevo."
-        message: "Estás viendo %{limit} de %{count} propuestas que contienen el término '%{query}'"
-        see_all: "Ver todas"
+          one: "Esiste una proposta con la parola '%{query}', puoi parteciparvi invece di aprirne una nuova."
+          other: "Esistono proposte con la parola '%{query}', puoi parteciparvi invece di aprirne una nuova."
+        message: "Visualizzata %{limit} di %{count} proposte che contengono la parola '%{query}'"
+        see_all: "Mostra tutte"
     tags_cloud:
       tags: Tendenze
       districts: "Distretti"
       districts_list: "Elenco dei distretti"
       categories: "Categorie"
-    target_blank_html: " (se abre en ventana nueva)"
+    target_blank_html: " (si apre in una nuova finestra)"
     you_are_in: "Ti trovi in"
-    unflag: Deshacer denuncia
+    unflag: Annulla denuncia
     unfollow: Smetti di seguire
     unfollow_entity: "Smetti di seguire %{entity}"
     outline:
       budget: Budget partecipativi
-      searcher: Buscador
-    go_to_page: "Ir a la página de "
+      searcher: Cerca
+    go_to_page: "Vai alla pagina di "
     share: Condividi
     orbit:
       previous_slide: Immagine precedente
       next_slide: Immagine seguente
   social:
-    blog: "Blog de %{org}"
-    facebook: "Facebook de %{org}"
-    twitter: "Twitter de %{org}"
-    youtube: "YouTube de %{org}"
+    blog: "Blog di %{org}"
+    facebook: "Facebook di %{org}"
+    twitter: "Twitter di %{org}"
+    youtube: "YouTube di %{org}"
     whatsapp: WhatsApp
-    telegram: "Telegram de %{org}"
-    instagram: "Instagram de %{org}"
+    telegram: "Telegram di %{org}"
+    instagram: "Instagram di %{org}"
   spending_proposals:
     form:
-      association_name_label: 'Si propones en nombre de una asociación o colectivo añade el nombre aquí'
-      association_name: 'Nombre de la asociación'
+      association_name_label: 'Se proponi a nome di una associazione o collettivo aggiungi il nome qui'
+      association_name: "Nome dell'associazione"
       description: Descrizione dettagliata
       external_url: Link alla documentazione aggiuntiva
-      geozone: "Ámbito de actuación"
+      geozone: "Ambito di esecuzione"
       submit_buttons:
         create: Crea
         new: Crea
       title: Titolo della proposta di spesa
     index:
       title: Budget partecipativi
-      unfeasible: Propuestas de inversión no viables
-      by_geozone: "Propuestas de inversión con ámbito: %{geozone}"
+      unfeasible: Proposte di investimento non realizzabili
+      by_geozone: "Proposte di investimento con ambito: %{geozone}"
       search_form:
         button: Cerca
         placeholder: Proposte di investimento...
@@ -634,61 +634,61 @@ it:
         other: " che contengono '%{search_term}'"
       sidebar:
         geozones: Ambiti di attuazione
-        feasibility: Viabilidad
-        unfeasible: No viables
+        feasibility: Fattibilità
+        unfeasible: Non realizzabili
       start_spending_proposal: Crea una proposta di investimento
     new:
       more_info: "Come funzionano i budget partecipativi?"
-      recommendation_one: Es fundamental que haga referencia a una actuación presupuestable.
-      recommendation_three: Intenta detallar lo máximo posible la propuesta para que el equipo de gobierno encargado de estudiarla tenga las menor dudas posibles.
-      recommendation_two: Cualquier propuesta o comentario que implique acciones ilegales será eliminada.
-      recommendations_title: Cómo crear una propuesta de gasto
+      recommendation_one: È fondamentale che si faccia riferimento ad una voce di bilancio.
+      recommendation_three: Cerca di descrivere in maniera dettagliata la proposta affinché la squadra di governo incaricata di analizzarla abbia il minor numero di dubbi.
+      recommendation_two: Qualsiasi proposta o commento che implichi azioni illegali sarà eliminata.
+      recommendations_title: Come creare una proposta di spesa
       start_new: Crea una proposta di spesa
     show:
       author_deleted: Utente eliminato
       code: 'Codice della proposta:'
       share: Condividi
-    wrong_price_format: Solo puede incluir caracteres numéricos
+    wrong_price_format: Si possono includere solo caratteri numerici
     spending_proposal:
-      spending_proposal: Propuesta de inversión
-      already_supported: Ya has apoyado este proyecto. ¡Compártelo!
-      support: Apoyar
-      support_title: Apoyar este proyecto
+      spending_proposal: Proposta di investimento
+      already_supported: Hai già appoggiato questo progetto. Condividilo!
+      support: Appoggia
+      support_title: Appoggia questo progetto
       supports:
-        one: 1 apoyo
-        other: "%{count} apoyos"
-        zero: Sin apoyos
+        one: 1 appoggio
+        other: "%{count} appoggi"
+        zero: Senza appoggi
   stats:
     index:
-      visits: Visitas
-      debates: Debates
-      proposals: Propuestas ciudadanas
-      comments: Comentarios
-      proposal_votes: Votos en propuestas
-      debate_votes: Votos en debates
-      comment_votes: Votos en comentarios
-      votes: Votos
-      verified_users: Usuarios verificados
-      unverified_users: Usuarios sin verificar
+      visits: Visite
+      debates: Dibattiti
+      proposals: Proposte cittadine
+      comments: Commenti
+      proposal_votes: Voti nelle proposte
+      debate_votes: Voti nei dibattiti
+      comment_votes: Voti nei commenti
+      votes: Voti
+      verified_users: Utenti verificati
+      unverified_users: Utenti da verificare
   unauthorized:
-    default: No tienes permiso para acceder a esta página.
+    default: Non si dispone del permesso per accedere a questa pagina.
     manage:
-      all: "No tienes permiso para realizar la acción '%{action}' sobre %{subject}."
+      all: "Non si dispone del permesso per eseguire l'azione '%{action}' su %{subject}."
   users:
     direct_messages:
       new:
         body_label: "Messaggio"
-        direct_messages_bloqued: "Este usuario ha decidido no recibir mensajes privados"
+        direct_messages_bloqued: "Questo utente ha deciso di non ricevere messaggi privati"
         submit_button: "Invia messaggio"
         title: Invia messaggio privato a %{receiver}
         title_label: "Titolo"
         verified_only: Per spedire un messaggio privato %{verify_account}
         verify_account: verifica il tuo account
-        authenticate: Necesitas %{signin} o %{signup}.
-        signin: iniciar sesión
-        signup: registrarte
+        authenticate: È necessario %{signin} o %{signup}.
+        signin: iniziare la sessione
+        signup: registrarsi
       show:
-        receiver: Mensaje enviado a %{receiver}
+        receiver: Messaggio inviato a %{receiver}
     show:
       deleted: Eliminato
       deleted_debate: Questo dibattito è stato eliminato
@@ -705,14 +705,14 @@ it:
           one: 1 Proposta
           other: "%{count} Proposte"
         budget_investments:
-          one: 1 Proyecto de presupuestos participativos
-          other: "%{count} Proyectos de presupuestos participativos"
+          one: 1 Progetto di budget partecipativi
+          other: "%{count} Progetti di budget partecipativi"
         follows:
-          one: 1 Siguiendo
-          other: "%{count} Siguiendo"
+          one: 1 Siguendo
+          other: "%{count} Siguendo"
       no_activity: Utente senza attività pubblica
       no_private_messages: "Questo utente non accetta messaggi privati."
-      private_activity: Este usuario ha decidido mantener en privado su lista de actividades
+      private_activity: Questo utente ha deciso di non pubblicare la sua lista di attività
       send_private_message: "Invia un messaggio privato"
     proposals:
       send_notification: "Invia notifica"
@@ -720,11 +720,11 @@ it:
       retired: "Ritirata"
       see: "Vedi proposta"
   votes:
-    agree: Estoy de acuerdo
+    agree: "Sono d'accordo"
     anonymous: Troppi voti anonimi, per poter votare %{verify_account}.
-    comment_unauthenticated: Necesitas %{signin} o %{signup} para poder votar.
-    disagree: No estoy de acuerdo
-    organizations: Las organizaciones no pueden votar
+    comment_unauthenticated: È necessario %{signin} o %{signup} per poter votare.
+    disagree: "Non sono d'accordo"
+    organizations: Le organizzazioni non possono votare
     signin: iniziare la sessione
     signup: registrarsi
     supports: Appoggi
@@ -743,7 +743,7 @@ it:
       organization: Le organizzazioni non possono votare.
       unfeasible: Non si possono votare le proposte non realizzabili.
       not_voting_allowed: Il periodo di votazione è concluso.
-      different_heading_assigned: Sólo puedes apoyar proposte en un distrito
+      different_heading_assigned: È possibile appoggiare le proposte solamente in una circoscrizione
   welcome:
     debates:
       description: Incontrarci, dibattere e condividere ciò che ci sembra importante nella nostra città.
@@ -752,24 +752,24 @@ it:
       description: La cittadinanza decide se accettare o rifiutare le proposte più sostenute.
       title: Decidi
     do:
-      description: Si la propuesta es aceptada mayoritariamente, el Ayuntamiento la asume como propia y se hace.
+      description: Se la proposta è accettata dalla maggioranza, il Comune la assume come propria e la mette in pratica.
       title: Si fa
     proposal:
-      description: Espacio abierto para propuestas ciudadanas sobre el tipo de ciudad en el que queremos vivir.
+      description: Spazio aperto per le proposte cittadine a proposito del tipo di città nella quale vogliamo vivere.
       title: Proponi
     recommended:
       title: Raccomandazioni che ti possono interessare
       debates:
-        title: Dibattiti raccomandati
-        btn_text_link: Todos los debates recomendados
+        title: Dibattiti suggeriti
+        btn_text_link: Tutti i dibattiti suggeriti
       proposals:
-        title: Propuestas recomendadas
-        btn_text_link: Todas las propuestas recomendadas
+        title: Proposte suggerite
+        btn_text_link: Tutte le proposte suggerite
       budget_investments:
-        title: Presupuestos recomendados
+        title: Budget suggeriti
     verification:
-      i_dont_have_an_account: No tengo cuenta, quiero crear una y verificarla
-      i_have_an_account: Ya tengo una cuenta que quiero verificar
+      i_dont_have_an_account: Non dispongo di un account, voglio crearne uno e poi verificarlo
+      i_have_an_account: Ho già un account che voglio verificare
       question: Hai un account in %{org_name}?
       title: Verifica account
     welcome:
@@ -784,5 +784,5 @@ it:
       user_permission_verify_my_account: Verificare account
       user_permission_votes: Partecipare alle votazioni finali*
   invisible_captcha:
-    sentence_for_humans: "Si eres humano, por favor ignora este campo"
-    timestamp_error_message: "Eso ha sido demasiado rápido. Por favor, reenvía el formulario."
+    sentence_for_humans: "Se non sei un robot, per favore ignora questo campo"
+    timestamp_error_message: "Sei stato troppo rapido. Per favore, invia nuovamente i dati."

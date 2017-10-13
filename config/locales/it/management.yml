@@ -13,7 +13,7 @@ it:
       email_label: 'Email:'
       identified_label: 'Identificado como:'
       username_label: 'Utente:'
-    check: Comprobar
+    check: Verifica
     dashboard:
       index:
         title: Gestione
@@ -56,7 +56,7 @@ it:
       support_budget_investments: Sostieni progetti di investimento
       users: Utenti
       edit_user_accounts: Modifica account utente
-      user_invites: Invitaciones para usuarios
+      user_invites: Inviti per gli utenti
     permissions:
       create_proposals: Crea nuove proposte
       debates: Partecipa ai dibattiti
@@ -125,9 +125,9 @@ it:
     user_invites:
       new:
         label: Emails
-        info: "Introduce los emails separados por ','"
-        submit: Enviar invitaciones
-        title: Invitaciones para usuarios
+        info: "Introdurre gli indirizzi di email separati da ','"
+        submit: Spedisci inviti
+        title: Inviti per gli utenti
       create:
-        success_html: Se han enviado <strong>%{count} invitaciones</strong>.
-        title: Invitaciones para usuarios
+        success_html: Sono stati inviati <strong>%{count} inviti</strong>.
+        title: Inviti per gli utenti

@@ -3,117 +3,117 @@ it:
   legislation:
     annotations:
       comments:
-        see_all: Ver todos
-        see_complete: Ver completo
+        see_all: Vedi tutti
+        see_complete: Vedi completo
         comments_count:
-          one: "%{count} comentario"
-          other: "%{count} comentarios"
+          one: "%{count} commento"
+          other: "%{count} commenti"
         replies_count:
-          one: "%{count} respuesta"
-          other: "%{count} respuestas"
-        cancel: Cancelar
-        publish_comment: Publicar Comentario
+          one: "%{count} risposta"
+          other: "%{count} risposte"
+        cancel: Annulla
+        publish_comment: Pubblica Commento
       form:
-        phase_not_open: Esta fase del proceso no está abierta
-        login_to_comment: Necesitas %{signin} o %{signup} para comentar.
-        signin: iniciar sesión
-        signup: registrarte
+        phase_not_open: Questa fase del processo non è aperta
+        login_to_comment: È necessario %{signin} o %{signup} per commentare.
+        signin: iniziare la sessione
+        signup: registrarsi
       index:
-        title: Comentarios
-        see_in_context: Ver en contexto
-        comments_about: Comentarios sobre
+        title: Commenti
+        see_in_context: Mostra nel contesto
+        comments_about: Commenti su
         comments_count:
-          one: "%{count} comentario"
-          other: "%{count} comentarios"
+          one: "%{count} commento"
+          other: "%{count} commenti"
       show:
-        title: Comentario
+        title: Commento
       version_chooser:
-        seeing_version: Comentarios para la versión
-        see_text: Ver borrador del texto
+        seeing_version: Commenti dela versione
+        see_text: Mostra la bozza del testo
     draft_versions:
       changes:
-        title: Cambios
-        seeing_changelog_version: Resumen de cambios de la revisión
-        see_text: Ver borrador del texto
+        title: Modifiche
+        seeing_changelog_version: Elenco delle modifiche della revisione
+        see_text: Mostra la bozza del testo
       show:
-        loading_comments: Cargando comentarios
-        seeing_version: Estás viendo la revisión
-        select_draft_version: Seleccionar borrador
-        select_version_submit: ver
-        updated_at: actualizada el %{date}
-        see_changes: ver resumen de cambios
-        see_comments: Ver todos los comentarios
-        text_toc: Índice
-        text_body: Texto
-        text_comments: Comentarios
+        loading_comments: Caricamento dei commenti in corso
+        seeing_version: Stai vedendo la revisione
+        select_draft_version: Seleziona bozza
+        select_version_submit: vedi
+        updated_at: aggiornata il %{date}
+        see_changes: vedi lista delle modifiche
+        see_comments: Vedi tutti i commenti
+        text_toc: Indice
+        text_body: Testo
+        text_comments: Commenti
     processes:
       header:
-        view_process_information: Ver información del proceso
+        view_process_information: Vedi informazione del processo
       debate:
-        empty_questions: No hay preguntas
-        participate: Realiza tus aportaciones al debate previo participando en los siguientes temas.
+        empty_questions: Non ci sono domande
+        participate: Dai i tuoi contributi al dibattito iniziale partecipando ai seguenti temi.
       header_full:
-        description: En qué consiste
-        more_info: Más información y contexto
+        description: In cosa consiste
+        more_info: Più informazioni e contesto
       index:
         filters:
-          open: Proccessi attivi
-          next: Próximamente
+          open: Processi attivi
+          next: Prossimamente
           past: Terminati
-        no_open_processes: No hay procesos activos
-        no_next_processes: No hay procesos planeados
-        no_past_processes: No hay procesos terminados
+        no_open_processes: Non ci sono processi attivi
+        no_next_processes: Non ci sono processi pianificati
+        no_past_processes: Non ci sono processi terminati
         section_header:
-          icon_alt: Icono de Procesos legislativos
-          title: Procesos legislativos
-          help: Ayuda sobre procesos legislativos
+          icon_alt: Icona di Processi legislativi
+          title: Processi legislativi
+          help: Aiuto sui processi legislativi
         section_footer:
-          title: Ayuda sobre procesos legislativos
-          description: Participa en los debates y procesos previos a la aprobación de una norma o de una actuación municipal. Tu opinión será tenida en cuenta por el Ayuntamiento.
-          help_text_1: "En los procesos participativos, el Ayuntamiento ofrece a la ciudadanía la oportunidad de participar en la elaboración y modificación de normativa que afecta a la ciudad y de dar su opinión sobre ciertas actuaciones que tiene previsto llevar a cabo."
-          help_text_2: "Las personas registradas en %{org} pueden participar con aportaciones en la consulta pública de nuevas ordenanzas, reglamentos y directrices, entre otros. Sus comentarios son analizados por el área correspondiente y tenidos en cuenta de cara a la redacción final de las normas."
-          help_text_3: "El Ayuntamiento también abre procesos para recibir aportaciones y opiniones sobre actuaciones municipales."
+          title: Aiuto sui processi legislativi
+          description: "Partecipa ai dibattiti e ai processi precedenti l'approvazione di una norma o di una opera comunale. La tua opinione sarà tenuta in considerazione da parte del Comune."
+          help_text_1: "Nei processi partecipativi, il Comune offre alla cittadinanza l'opportunità di partecipare all'elaborazione e alla modifica della normativa che interessa la città, e di dare la propria opinione su determinate opere che ha in previsione realizzare."
+          help_text_2: "Le persone registrate su %{org} possono dare il proprio contributo ai referendum su, fra gli altri, nuove ordinanze, regolamenti e linee guida. I commenti sono analizzati dall'area di pertinenza e tenuti in considerazione al momento della stesura finale delle norme."
+          help_text_3: "Il Comune apre anche processi per ricevere contributi e opinioni a proposito delle opere comunali."
       phase_not_open:
-        not_open: Esta fase del proceso todavía no está abierta
+        not_open: Questa fase del processo non è stata ancora aperta
       phase_empty:
-          empty: No hay nada publicado todavía
+          empty: "Al momento non c'è nulla di pubblicato"
       process:
-        see_latest_comments: Ver últimas aportaciones
-        see_latest_comments_title: Aportar a este proceso
+        see_latest_comments: Mostra gli ultimi contributi
+        see_latest_comments_title: Contribuisci a questo processo
       shared:
         key_dates: Date chiave
-        debate_dates: Debate previo
-        draft_publication_date: Publicación borrador
-        allegations_dates: Alegaciones
-        result_publication_date: Publicación resultados
+        debate_dates: Dibattito iniziale
+        draft_publication_date: Pubblicazione bozza
+        allegations_dates: Allegati
+        result_publication_date: Pubblicazione risultati
     questions:
       comments:
-        comment_button: Publicar respuesta
-        comments_title: Respuestas abiertas
-        comments_closed: Fase cerrada
+        comment_button: Pubblica risposta
+        comments_title: Risposte aperte
+        comments_closed: Fase chiusa
         form:
-          leave_comment: Deja tu respuesta
+          leave_comment: Lascia la tua risposta
       question:
         comments:
-          zero: Sin comentarios
-          one: "%{count} comentario"
-          other: "%{count} comentarios"
-        debate: Debate
+          zero: Senza commenti
+          one: "%{count} commento"
+          other: "%{count} commenti"
+        debate: Dibattito
       show:
-        answer_question: Enviar respuesta
-        next_question: Siguiente pregunta
-        first_question: Primera pregunta
-        share: Compartir
-        title: Proceso de legislación colaborativa
+        answer_question: Invia risposta
+        next_question: Domanda successiva
+        first_question: Prima domanda
+        share: Condividi
+        title: Processo di legislazione collaborativa
       participation:
-        phase_not_open: Esta fase no está abierta
-        organizations: Las organizaciones no pueden participar en el debate
-        signin: iniciar sesión
-        signup: registrarte
-        unauthenticated: Necesitas %{signin} o %{signup} para participar en el debate.
-        verified_only: Solo los usuarios verificados pueden participar en el debate, %{verify_account}.
-        verify_account: verifica tu cuenta
-        debate_phase_not_open: La fase de debate previo ya ha finalizado y en este momento no se aceptan respuestas
+        phase_not_open: Questa fase non è aperta
+        organizations: Le organizzazioni non possono partecipare al dibattito
+        signin: iniziare la sessione
+        signup: registrarsie
+        unauthenticated: È necessario %{signin} o %{signup} per partecipare al dibattito.
+        verified_only: Solamente gli utenti verificati possono partecipare al dibattito, %{verify_account}.
+        verify_account: verifica il tuo account
+        debate_phase_not_open: La fase del dibattito iniziale si è conclusa e in questo momento non si accettano risposte
     shared:
-      share: Compartir
-      share_comment: Comentario sobre la %{version_name} del borrador del proceso %{process_name}
+      share: Condividi
+      share_comment: Commento sulla %{version_name} della bozza del processo %{process_name}

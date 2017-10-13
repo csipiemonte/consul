@@ -5,7 +5,7 @@ it:
       title: Amministrazione
     actions:
       actions: Azioni
-      confirm: "Sei securo?"
+      confirm: "Sei sicuro?"
       confirm_hide: Conferma
       hide: Nascondi
       hide_author: "Blocca l'autore"
@@ -552,6 +552,7 @@ it:
         create: "Crea votazione"
         name: "Nome"
         dates: "Date"
+        geozone_restricted: "Ristretta alle circoscrizioni"
       new:
         title: "Nuova votazione"
         submit_button: "Crea votazione"
@@ -593,8 +594,9 @@ it:
           save_image: "Salva immagine"
       show:
         proposal: Proposta cittadina originale
-        author: autore
-        title: Titolo
+        author: Autore
+        question: Domanda
+        edit_question: Modifica domanda
         valid_answers: Risposte valide
         add_answer: "Aggiungi risposta"
         video_url: Video esterno
@@ -619,6 +621,7 @@ it:
         description: Descrizione
         images: Immagini
         images_list: Elenco delle immagini
+        edit: Modifica risposta
       edit:
         title: Modifica risposta
       videos:
