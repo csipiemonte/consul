@@ -45,22 +45,26 @@ it:
         table_total: Schede totali
     residence:
       flash:
-        create: "Documento verificado con el Padrón"
+        create: "Documento verificato in Anagrafe"
         not_allowed: "Oggi non hai turno come presidente di seggio"
       new:
         title: Valida documento
         document_number: "Numero di documento"
         submit: Valida documento
-        error_verifying_census: El Padrón no pudo verificar este documento.
+        error_verifying_census: Non è stato possibile verificare il documento in Anagrafe.
         form_errors: evitaron verificar este documento
         no_assignments: "Oggi non hai turno come presidente di seggio"
     voters:
       new:
         title: Votazioni
         table_poll: Votazione
-        table_actions: Stato delle votazioni
+        table_status: Stato delle votazioni
+        table_actions: Azioni
       show:
         can_vote: Puoi votare
-        error_already_voted: "Hai già partecipato a questa votazione."
+        error_already_voted: "Hai già partecipato a questa votazione"
+        no_actions: Non ci sono azioni disponibili
         submit: Conferma voto
         success: "Voto aggiunto!"
+      can_vote:
+        submit_disable_with: "Attendi, processo di conferma del voto in corso..."

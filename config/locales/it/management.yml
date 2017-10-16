@@ -11,7 +11,7 @@ it:
       document_number_label: 'Numero del documento:'
       document_type_label: 'Tipo di documento:'
       email_label: 'Email:'
-      identified_label: 'Identificado como:'
+      identified_label: 'Identificato come:'
       username_label: 'Utente:'
     check: Verifica
     dashboard:
@@ -22,38 +22,38 @@ it:
     document_type_label: Tipo di documento
     document_verifications:
       already_verified: Questo account utente è già stato verificato.
-      has_no_account_html: Para crear un usuario entre en %{link} y haga clic en la opción <b>'Registrarse'</b> en la parte superior derecha de la pantalla.
-      link: Consul
-      in_census_has_following_permissions: 'Este usuario puede participar en el Portal de Gobierno Abierto con las siguientes posibilidades:'
+      has_no_account_html: Per creare un account, vai a %{link} e fai click su <b>'Registrati'</b> nella parte superiore destra dello schermo.
+      link: DecidiTorino
+      in_census_has_following_permissions: 'Questo utente può partecipare con le seguenti autorizzazioni:'
       not_in_census: Questo documento non è registrato.
-      not_in_census_info: 'Las personas no empadronadas pueden participar en el Portal de Gobierno Abierto con las siguientes posibilidades:'
-      please_check_account_data: Compruebe que los datos anteriores son correctos para proceder a verificar la cuenta completamente.
+      not_in_census_info: 'I cittadini non residenti possono partecipare con le seguenti autorizzazioni:'
+      please_check_account_data: "Si prega di controllare che i dati dell'utenza sopra riportati siano corretti."
       title: Gestione degli utenti
-      under_age: No tienes edad suficiente para verificar tu cuenta.
+      under_age: "Non hai l'età richiesta per verificare l'account."
       verify: Verifica utente
     email_label: Email
     date_of_birth: Data di nascita
     email_verifications:
       already_verified: Esta cuenta de usuario ya está verificada.
-      choose_options: 'Elige una de las opciones siguientes:'
-      document_found_in_census: Este documento está en el registro del padrón municipal, pero todavía no tiene una cuenta de usuario asociada.
-      document_mismatch: Ese email corresponde a un usuario que ya tiene asociado el documento %{document_number}(%{document_type})
-      email_placeholder: Introduce el email de registro
-      email_sent_instructions: Para terminar de verificar esta cuenta es necesario que haga clic en el enlace que le hemos enviado a la dirección de correo que figura arriba. Este paso es necesario para confirmar que dicha cuenta de usuario es suya.
-      if_existing_account: Si la persona ya ha creado una cuenta de usuario en la web
-      if_no_existing_account: Si la persona todavía no ha creado una cuenta de usuario en la web
-      introduce_email: 'Introduce el email con el que creó la cuenta:'
-      send_email: Enviar email de verificación
+      choose_options: 'Si prega di scegliere una delle opzioni seguenti:'
+      document_found_in_census: Questo documento è stato trovato in anagrafe, ma non ha alcun account utente ad esso associato.
+      document_mismatch: 'Questa e-mail appartiene a un utente che dispone già di un identificativo associato: %{document_number}(%{document_type})'
+      email_placeholder: "Inserisci l'email utilizzata per creare l'utente"
+      email_sent_instructions: "Per verificare completamente questo utente, è necessario che cliccare su un link che ti abbiamo inviato all'indirizzo di posta elettronica sopra riportato. Questo passaggio è necessario al fine di confermare che l'indirizzo e-mail sia proprio il tuo."
+      if_existing_account: Se la persona ha già un account utente creato nel sito,
+      if_no_existing_account: Se questa persona non ha ancora creato nel sito un account
+      introduce_email: "Si prega di introdurre l'indirizzo di email usato per creare l'utenza:"
+      send_email: Invia email di verifica
     menu:
       create_proposal: Crea proposta
       print_proposals: Stampa proposte
       support_proposals: Sostieni proposte
       create_spending_proposal: Crea proposta di investimento
-      print_spending_proposals: Stampa prop. di investimento
-      support_spending_proposals: Sostieni prop. di investimento
+      print_spending_proposals: Stampare le proposte di spesa
+      support_spending_proposals: Appoggia le proposte di spesa
       create_budget_investment: Crea progetti di investimento
-      print_budget_investments: Stampa progetti di investimento
-      support_budget_investments: Sostieni progetti di investimento
+      print_budget_investments: Stampa i progetti di investimento
+      support_budget_investments: Appoggia i progetti di investimento
       users: Utenti
       edit_user_accounts: Modifica account utente
       user_invites: Inviti per gli utenti
@@ -64,63 +64,63 @@ it:
       vote_proposals: Partecipa alle votazioni finali
     print:
       proposals_info: Haz tu propuesta en http://url.consul
-      proposals_note: Las proposte más apoyadas serán llevadas a votación. Y si las acepta una mayoría, el Ayuntamiento las llevará a cabo.
+      proposals_note: Le proposte maggiormente sostenute passeranno alla fase di votazione. Se saranno accettate dalla maggioranza, il Comune si impegnerà a realizzarle.
       proposals_title: 'Proposte:'
       spending_proposals_info: Participa en http://url.consul
-      spending_proposals_note: Los presupuestos participativos se invertirán en las propuestas de inversión más apoyadas.
+      spending_proposals_note: I fondi per il bilancio partecipativo saranno assegnati ai progetti di investimento più votati.
       budget_investments_info: Participa en http://url.consul
       budget_investments_note: Los presupuestos participativos se invertirán en las propuestas de inversión más apoyadas.
-    print_info: Stampa esta información
+    print_info: Stampa questa informazione
     proposals:
       alert:
-        unverified_user: Este usuario no está verificado
-      create_proposal: Crear proposta
+        unverified_user: "L'utente non è stato verificato"
+      create_proposal: Crea proposta
       print:
         print_button: Stampa
     budgets:
-      create_new_investment: Crear nuevo proyecto
-      print_investments: Stampa proyectos
-      support_investments: Apoyar proyectos
+      create_new_investment: Crea un nuovo progetto di investimento
+      print_investments: Stampa progetti
+      support_investments: Appoggia progetti
     budget_investments:
       alert:
-        unverified_user: Usuario no verificado
-      create: Crear nuevo proyecto
+        unverified_user: Utente non verificato
+      create: Crea nuovo progetto
       filters:
         heading: Concepto
-        unfeasible: Proyectos no factibles
+        unfeasible: Progetti non realizzabili
       print:
         print_button: Stampa
       search_results:
-        one: " contiene el término '%{search_term}'"
-        other: " contienen el término '%{search_term}'"
+        one: " contiene la parola '%{search_term}'"
+        other: " contengono la parola '%{search_term}'"
     spending_proposals:
       alert:
-        unverified_user: Este usuario no está verificado
-      create: Crear propuesta de inversión
+        unverified_user: "L'utente non è stato verificato"
+      create: Crea proposta di investimento
       filters:
-        unfeasible: Propuestas de inversión no viables
-        by_geozone: "Propuestas de inversión con ámbito: %{geozone}"
+        unfeasible: Proposte di investimento non realizzabili
+        by_geozone: "Proposte di investimento con ambito: %{geozone}"
       print:
         print_button: Stampa
       search_results:
-        one: " que contiene '%{search_term}'"
-        other: " que contienen '%{search_term}'"
+        one: " che contiene '%{search_term}'"
+        other: " che contengono '%{search_term}'"
     sessions:
-      signed_out: Sessione utente conclusa con successo.
-      signed_out_managed_user: Si è conclusa con successo la sessione utente.
+      signed_out: Disconnesso correttamente.
+      signed_out_managed_user: Sessione utente disconnessa correttamente.
     username_label: Nome utente
     users:
       create_user: Crea nuovo account utente
-      create_user_info: 'Procedemos a crear un usuario con la siguiente información:'
+      create_user_info: 'Creeremo un account con i seguenti dati:'
       create_user_submit: Crea utente
-      create_user_success_html: Hemos enviado un correo electrónico a <b>%{email}</b> para verificar que es suya. El correo enviado contiene un link que el usuario deberá pulsar. Entonces podrá seleccionar una clave de acceso, y entrar en la web de participación.
-      autogenerated_password_html: "Se ha asignado la contraseña <b>%{password}</b> a este usuario. Puede modificarla desde el apartado 'Mi cuenta' de la web."
+      create_user_success_html: "Abbiamo inviato una email all'indirizzo <b>%{email}</b> per verificare che sia la tua. La mail contiene un link che dovrà essere cliccato per impostare la password di accesso."
+      autogenerated_password_html: "La password generata automaticamente è <b>%{password}</b>, è possibile modificarla nella sezione «Mio profilo»"
       email_optional_label: "Email (consigliato però facoltativo)"
       erased_notice: Account utente eliminato.
       erased_by_manager: "eliminata dal manager: %{manager}"
       erase_account_link: Elimina account
-      erase_account_confirm: ¿Seguro que quieres borrar a este usuario? Esta acción no se puede deshacer
-      erase_warning: Esta acción no se puede deshacer. Por favor asegurese de que quiere eliminar esta cuenta.
+      erase_account_confirm: "Sei sicuro di che voler cancellare l'account? Questa azione non può essere annullata"
+      erase_warning: Questa azione non può essere annullata. Si prega di assicurarsi che si desidera cancellare questo account.
       erase_submit: Elimina account
     user_invites:
       new:

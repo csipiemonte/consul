@@ -2,7 +2,7 @@
 it:
   verification:
     alert:
-      lock: Hai raggiunto il numero massimo di tentativi. Per cortesia prova di nuovo più tardi.
+      lock: Hai raggiunto il numero massimo di tentativi ammessi. Si prega di riprovare più tardi.
     back: Torna al mio account
     email:
       create:
@@ -12,19 +12,19 @@ it:
           success: 'Ti abbiamo spedito una mail di conferma al tuo indirizzo di posta: %{email}'
       show:
         alert:
-          failure: Codice di verifica errato
+          failure: Codice di verifica non corretto
         flash:
           success: Sei un utente verificato
     letter:
       alert:
-        unconfirmed_code: Non hai ancora introdotto il codice di conferma
+        unconfirmed_code: Non hai ancora inserito il codice di conferma
       create:
         flash:
           offices: Sportello per il Cittadino
           success_html: Prima delle votazioni riceverai una lettera con le istruzioni per verificare il tuo account.<br> Ricorda che puoi evitare la spedizione effettuando la verifica di persona in uno qualsiasi degli %{offices}.
       edit:
         see_all: Vedi proposte
-        title: Carta solicitada
+        title: Lettera richiesta
       errors:
         incorrect_code: Codice di verifica errato
       new:
@@ -34,7 +34,7 @@ it:
         offices: Sportello per il Cittadino
         send_letter: Richiedere una lettera per posta
         title: "Congratulazioni!"
-        user_permission_info: Con il tuo account puoi già...
+        user_permission_info: Con il tuo profilo puoi...
       update:
         flash:
           success: Il tuo account è già stato verificato
@@ -48,8 +48,8 @@ it:
         flash:
           success: Residenza verificata
       new:
-        accept_terms_text: Acepto %{terms_url} al Padrón
-        accept_terms_text_title: Accetto i termini di accesso all'Anagrafe
+        accept_terms_text: "Accetto %{terms_url} all'Anagrafe"
+        accept_terms_text_title: "Accetto i termini di accesso all'Anagrafe"
         date_of_birth: Data di nascita
         document_number: Numero del documento
         document_number_help_title: Aiuto
@@ -59,7 +59,7 @@ it:
           residence_card: Carta di residenza
           spanish_id: Carta di Identità
         document_type_label: Tipo di documento
-        error_not_allowed_age: No hai l'età minima per partecipare
+        error_not_allowed_age: "No hai l'età minima per partecipare"
         error_not_allowed_postal_code: Per completare la verifica devi essere residente.
         error_verifying_census: Non è stato possibile verificare in Anagrafe i tuoi dati. Per favore, conferma la correttezza dei tuoi dati chiamando il Comune o recandoti in uno degli %{offices}.
         error_verifying_census_offices: sportello per il Cittadino
@@ -72,11 +72,11 @@ it:
     sms:
       create:
         flash:
-          success: Introduci il codice di conferma che ti abbiamo spedito come messaggio di testo
+          success: Inserisci il codice di conferma inviato tramite SMS
       edit:
-        confirmation_code: Introduci il codice che hai ricevuto sul tuo telefono
+        confirmation_code: Inserisci il codice ricevuto sul tuo telefonino
         resend_sms_link: Richiedere un nuovo codice
-        resend_sms_text: "Non hai ricevuto un messaggio di testo con il codice di conferma"
+        resend_sms_text: "Non hai ricevuto un SMS con il codice di conferma"
         submit_button: Invia
         title: SMS di conferma
       new:

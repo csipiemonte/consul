@@ -4,28 +4,28 @@ it:
     actions:
       create:
         notice: "%{resource_name} creato con successo."
-        debate: "Dibattito creato con successo."
-        direct_message: "Il tuo messaggio è stato inviato con successo."
+        debate: "Dibattito creato correttamente."
+        direct_message: "Il messaggio è stato inviato correttamente."
         poll: "Votazione creata con successo."
-        poll_booth: "Urna creata con successo."
+        poll_booth: "Seggio creato correttamente."
         poll_question_answer: "Risposta creata con successo"
         poll_question_answer_video: "Video creato correttamente"
-        proposal: "Proposta creata con successo."
-        proposal_notification: "Il tuo messaggio è stato inviato con successo."
-        spending_proposal: "Proposta di investimento creata con successo. La si può consultare da %{activity}"
-        budget_investment: "Proposta di investimento creata con successo."
-        signature_sheet: "Foglio delle firme creato con successo"
+        proposal: "Proposta creata correttamente."
+        proposal_notification: "Il tuo messaggio è stato inviato correttamente."
+        spending_proposal: "Proposta di investimento è stata creata. È possibile accedervi da %{activity}"
+        budget_investment: "Proposta di investimento creata correttamente."
+        signature_sheet: "Foglio per le firme creato correttamente"
         topic: "Tema creato con successo."
       save_changes:
-        notice: Modifiche salavate
+        notice: Modifiche salvate
       update:
         notice: "%{resource_name} aggiornato con successo."
-        debate: "Dibattito aggiornato con successo."
-        proposal: "Proposta aggiornata con successo."
-        poll: "Votazione aggiornata con successo."
-        poll_booth: "Urna aggiornata con successo."
-        spending_proposal: "Proposta di investimento aggiornata con successo."
-        budget_investment: "Proposta di investimento aggiornata con successo"
+        debate: "Dibattito aggiornato correttamente."
+        proposal: "Proposta aggiornata correttamente."
+        poll: "Votazione aggiornata ccorrettamente."
+        poll_booth: "Seggio aggiornato correttamente."
+        spending_proposal: "Proposta di investimento aggiornata correttamente."
+        budget_investment: "Proposta di investimento aggiornata correttamente."
         topic: "Tema aggiornato con successo."
       destroy:
         spending_proposal: "Proposta di investimento eliminata."

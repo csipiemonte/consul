@@ -3,7 +3,7 @@ it:
     ballots:
       show:
         title: I miei voti
-        amount_spent: Costo totale
+        amount_spent: Importo speso
         remaining: "Ti restano <span>%{amount}</span> per investire"
         no_balloted_group_yet: "Non hai ancora votato i progetti di questo gruppo, vota!"
         remove: Rimuovi voto
@@ -14,18 +14,18 @@ it:
         zero: "Non hai ancora votato una proposta di investimento."
       reasons_for_not_balloting:
         not_logged_in: È necessario %{signin} o %{signup} per continuare.
-        not_verified: Le proposte di investimento possono essere appoggiate solamente da utenti verificati, %{verify_account}.
+        not_verified: Gli investimenti possono essere appoggiati solamente da utenti verificati, %{verify_account}.
         organization: Le organizzazioni non possono votare.
         not_selected: Non si possono votare proposte irrealizzabili.
-        not_enough_money_html: "Hai già assegnato il budget disponibile.<br><small>Ricorda che puoi %{change_ballot} in qualsiasi momento</small>"
+        not_enough_money_html: "Hai già assegnato il bilancio disponibile.<br><small>Ricorda che puoi %{change_ballot} in qualsiasi momento</small>"
         no_ballots_allowed: Il periodo di votazione è concluso.
-        different_heading_assigned: Hai già votato in una sezione diversa del budget.
+        different_heading_assigned: Hai già votato in una sezione diversa del bilancio.
         change_ballot: cambia i tuoi voti
     groups:
       show:
         title: Seleziona una opzione
-        unfeasible_title: Proposte irrealizzabili
-        unfeasible: Vedi proposte irrealizzabili
+        unfeasible_title: Progetti di investimento irrealizzabili
+        unfeasible: Mostra gli investimenti irrealizzabili
         unselected_title: Proposte non selezionate per la votazione finale
         unselected: Vedi le proposte non selezionate per la votazione finale
     phase:
@@ -37,17 +37,17 @@ it:
       reviewing_ballots: Votazione conclusa
       finished: Risultati
     index:
-      title: Budget partecipativi
+      title: bilanci partecipativi
       section_header:
-        icon_alt: Icona dei Budget partecipativi
-        title: Budget partecipativi
-        help: Aiuto sui budget partecipativi
+        icon_alt: Icona dei Bilanci partecipativi
+        title: Bilanci partecipativi
+        help: Aiuto sui bilanci partecipativi
       section_footer:
-        title: Aiuto sui budget partecipativi
-        description: Con i budget partecipativi la poplazione decide a quali progetti presentati da cittadini e cittadine vada destinata una parte del budget municipale.
-        help_text_1: "I budget partecipativi sono processi nei quali la poplazione decide in maniera diretta in cosa si spende una parte del budget municipale. Qualsiasi persona residente maggiore di 16 anni puà proporre un progetto di spesa che si preseleziona in una fase di appoggi cittadini."
-        help_text_2: "I progetti più votati sono valutati e passano alla votazione finale nella quale si decidono le esecuzioni che realizzerà il Comune una volta che si approvino i budget municipali del prossimo anno."
-        help_text_3: "La presentazione dei progetti dei budget partecipativi avviene da gennaio per un periodo, all'incirca, di un mese e mezzo. Per partecipare e presentare proposte per tutta la città o per le circoscrizioni è necessario registrarsi su %{org} e verificare il proprio account."
+        title: Aiuto sui bilanci partecipativi
+        description: Con i bilanci partecipativi la poplazione decide a quali progetti presentati da cittadini e cittadine vada destinata una parte del bilancio municipale.
+        help_text_1: "I bilanci partecipativi sono processi nei quali la poplazione decide in maniera diretta in cosa si spende una parte del bilancio municipale. Qualsiasi persona residente maggiore di 16 anni puà proporre un progetto di spesa che si preseleziona in una fase di appoggi cittadini."
+        help_text_2: "I progetti più votati sono valutati e passano alla votazione finale nella quale si decidono le esecuzioni che realizzerà il Comune una volta che si approvino i bilanci municipali del prossimo anno."
+        help_text_3: "La presentazione dei progetti dei bilanci partecipativi avviene da gennaio per un periodo, all'incirca, di un mese e mezzo. Per partecipare e presentare proposte per tutta la città o per le circoscrizioni è necessario registrarsi su %{org} e verificare il proprio account."
         help_text_4: "Per ottenere il maggior numero possibile di appoggi e di voti, scegli un titolo descrittivo e comprensibile del tuo progetto. Dopo hai uno spazio per sviluppare il fine della tua proposta. Fornisci tutti i dati e le motivazioni, con anche documenti e immagini, per aiutare gli altri partecipanti a comprendere meglio ciò che proponi."
     investments:
       form:
@@ -59,9 +59,9 @@ it:
         map_location_instructions: "Naviga sulla mappa fino al punto scelto e metti il marcatore."
         map_remove_marker: "Elimina il marcatore"
       index:
-        title: Budget partecipativi
+        title: Bilanci partecipativi
         unfeasible: Proposte di investimento non realizzabili
-        unfeasible_text: Le proposte presentate devono incontrare una serie di criteri (legalità, concretezza, essere di competenza del Comune, non superare il massimo del budget; %{definitions}) per essere dichiarate realizzabili e giungere alla fase della votazione finale. Tutte le proposte che non soddisfano tali criteri sono segnate come non realizzabili e pubblicate nella lista seguente, insieme al corrispondente rapporto di non fattibilità.
+        unfeasible_text: Le proposte presentate devono incontrare una serie di criteri (legalità, concretezza, essere di competenza del Comune, non superare il massimo del bilancio; %{definitions}) per essere dichiarate realizzabili e giungere alla fase della votazione finale. Tutte le proposte che non soddisfano tali criteri sono segnate come non realizzabili e pubblicate nella lista seguente, insieme al corrispondente rapporto di non fattibilità.
         unfeasible_text_definitions: vedi definizioni qui
         by_heading: "Proposte di investimento con ambito: %{heading}"
         search_form:
@@ -78,10 +78,10 @@ it:
             other: "<strong>Hai votato %{count} proposte per un valore di %{amount_spent}</strong>"
           voted_info: È possibile %{link} in qualsiasi momento fino alla chiusura di questa fase. Non è necessario spendere tutto il denaro a tua disposizione.
           voted_info_link: cambiare i tuoi voti
-          different_heading_assigned_html: "Hai già sostenuto le proposte di un'altra sezione del budget: %{heading_link}"
+          different_heading_assigned_html: "Hai già sostenuto le proposte di un'altra sezione del bilancio: %{heading_link}"
           change_ballot: "Se modifichi la tua opinione puoi cancellare i tuoi voti in %{check_ballot} e iniziare nuovamente."
           check_ballot_link: "controllare i miei voti"
-          zero: "Non hai ancora votato una proposta di investimento in questo ambito del budget."
+          zero: "Non hai ancora votato una proposta di investimento in questo ambito del bilancio."
           verified_only: "Per creare una nuova proposta di investimento %{verify}."
           verify_account: "verifica il tuo account"
           create: "Crea proposta di investimento"
@@ -125,7 +125,7 @@ it:
         give_support: Appoggia
       header:
         check_ballot: Controllo i miei voti
-        different_heading_assigned_html: "Hai già sostenuto le proposte di un'altra sezione del budget: %{heading_link}"
+        different_heading_assigned_html: "Hai già sostenuto le proposte di un'altra sezione del bilancio: %{heading_link}"
         change_ballot: "Se cambi opinione puoi eliminare i tuoi voti in %{check_ballot} e iniziare nuovamente."
         check_ballot_link: "controlla i miei voti"
     progress_bar:
@@ -141,14 +141,14 @@ it:
     results:
       link: Risultati
       page_title: "%{budget} - Risultati"
-      heading: "Risultati budget partecipativi"
+      heading: "Risultati bilanci partecipativi"
       heading_selection_title: "Ambito di esecuzione"
       spending_proposal: Titolo
       ballot_lines_count: Voti
       hide_discarded_link: Nascondi scartate
       show_all_link: Mostra tutte
       price: Costo
-      amount_available: Budget disponibile
+      amount_available: Bilancio disponibile
       accepted: "Proposta di investimento accettata: "
       discarded: "Proposta di investimento scartata: "
       incompatibles: Incompatibili

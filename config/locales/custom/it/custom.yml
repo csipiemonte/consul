@@ -19,13 +19,14 @@ it:
       name: Shibboleth
   settings:
     feature:
-      shibboleth_login: Registro con Shibboleth
+      shibboleth_login: Accesso con Shibboleth
   verification:
     residence:
       new:
         document_type:
           codice_fiscale: Codice Fiscale
         error_verifying_census: "Non è stato possibile verificare in Anagrafe i tuoi dati. Per favore, controlla i dati inseriti e ripeti l'operazione."
+        error_not_resident: "Utente non residente"
   welcome:
     schede:
       scheda1: 

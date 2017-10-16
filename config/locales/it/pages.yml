@@ -1,24 +1,24 @@
 ---
 it:
   pages:
-    census_terms: Para verificar la cuenta hay que tener 16 años o más y estar empadronado aportando los datos indicados anteriormente, los cuales serán contrastados. Aceptando el proceso de verificación acepta dar su consentimiento para contrastar dicha información, así como medios de contacto que figuren en dichos ficheros. Los datos aportados serán incorporados y tratados en un fichero indicado anteriormente en las condiciones de uso del portal.
-    conditions: Condiciones de uso
+    census_terms: Per confermare la tua utenza (account) devi avere almeno 16 anni ed essere registrato, dopo aver fornito le informazioni richieste in precedenza, che saranno verificate. Accettando il processo di verifica, acconsenti anche alla verifica di tali informazioni, ed autorizzi i metodi di contatto indicati. I dati forniti saranno acquisiti e memorizzati in un archivio, come menzionato in precedenza nei termini e condizioni di utilizzo del portale.
+    conditions: "Condizioni d'uso"
     general_terms: Termini e Condizioni
     more_info:
       title: "Scopri %{org_name}"
-      subtitle: "Aprende todo lo que puedes hacer en esta web."
-      guide: 'Esta guía explica cada una de las secciones de %{org_name}. Puedes ampliar la información en los enlaces de "Información detallada".'
+      subtitle: "Impara tutto ciò che si può fare su questo sito."
+      guide: 'Questa guida spiega ogni sezione di %{org_name}. Per maggiori informazioni cliccare su "Informazioni dettagliate".'
       menu:
         debates: "Dibattiti"
         proposals: "Proposte"
-        budgets: "Budget partecipativi"
-        other: "Otra información de interés"
+        budgets: "Bilanci partecipativi"
+        other: "Altre informazioni di interesse"
       debates:
         title: "Dibattiti"
         description: "Crea un hilo en el que debatir sobre cualquier tema que quieras compartir con el resto de gente de tu ciudad."
-        feature_1: "Para crear un debate tienes que %{link}"
-        feature_1_link: "registrarte en %{org_name}"
-        feature_2_html: "Los debates pueden ser valorados utilizando los botones de <strong>Estoy de acuerdo</strong> o <strong>No estoy de acuerdo</strong> que encontrarás en cada uno de ellos."
+        feature_1: "Per creare un dibattito è necessario %{link}"
+        feature_1_link: "registrarsi su %{org_name}"
+        feature_2_html: "I dibattiti possono essere valutati utilizzando i pulsanti <strong>Sono d'accordo</strong> o <strong>Non sono d'accordo</strong> che si trovano accanto a ciascuno di essi."
         image_alt: "Botones para valorar los debates"
         figcaption: 'Botones "Estoy de acuerdo" y "No estoy de acuerdo" para valorar los debates.'
       proposals:
@@ -28,12 +28,12 @@ it:
         feature_1_link: "registrarte en %{org_name}"
         feature_2_html: "Las propuestas que consigan <strong>el apoyo del 1% de la gente</strong> (mayor de 16 años empadronada en Madrid; 27.064 apoyos) pasan a votación."
         feature_3_html: "Si hay más gente a favor que en contra en la votación, <strong>el Ayuntamiento asume la propuesta y se hace</strong>."
-        image_alt: "Botón para apoyar una propuesta"
+        image_alt: "Pulsante per appoggiare una proposta"
         figcaption_html: 'Botón para "Apoyar" una propuesta.<br>Cuando alcance el número de apoyos pasará a votación.'
       budgets:
-        title: "Budget partecipativi"
-        description: "Los primeros seis meses de cada año puedes decidir cómo gastar parte del presupuesto."
-        feature_1: "Para crear un proyecto de gasto tienes que %{link} y verificar tu cuenta."
+        title: "Bilanci partecipativi"
+        description: "Nei primi sei mesi di ogni anno puoi decidere come spendere parte del bilancio."
+        feature_1: "Per presentare un progetto di spesa tienes que %{link} y verificar tu cuenta."
         feature_1_link: "registrarte en %{org_name}"
         feature_2_html: "En primer lugar empieza la <strong>fase de aceptación</strong> de proyectos de gasto."
         feature_3_html: "Después hay una <strong>fase de apoyos</strong> para priorizar lo más interesante, las más apoyadas son evaluadas por el Ayuntamiento para ver si son viables y cuánto valen."
@@ -54,11 +54,11 @@ it:
         page:
           title: "Domande Frequenti"
           description: "Utiliza esta página para resolver las Preguntas frencuentes a los usuarios del sitio."
-          faq_1_title: "Pregunta 1"
-          faq_1_description: "Este es un ejemplo para la descripción de la pregunta uno."
+          faq_1_title: "Domanda 1"
+          faq_1_description: "Questo è un esempio di descrizione della domanda 1."
       other:
         title: "Otra información de interés"
-        how_to_use: "Utiliza %{org_name} en tu municipio"
+        how_to_use: "Usa %{org_name} nella tua città"
       how_to_use:
         text: |-
           Utilízalo en tu municipio libremente o ayúdanos a mejorarlo, es software libre.
@@ -75,10 +75,10 @@ it:
       more_info: "Più informazioni su %{org_name}"
       privacy: Política de Privacidad
     verify:
-      code: Código que has recibido en tu carta
+      code: Codice che hai ricevuto nella lettera
       email: Email
-      info: 'Para verificar tu cuenta introduce los datos con los que te registraste:'
-      info_code: 'Ahora introduce el código que has recibido en tu carta:'
+      info: 'Per verificare la tua utenza, introduci i dati forniti durante la registrazione:'
+      info_code: 'Ora introduci il codice che hai ricevuto nella lettera:'
       password: Password
       submit: Verifica il mio account
       title: Verifica il tuo account

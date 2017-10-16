@@ -8,18 +8,18 @@ it:
       confirm: "Sei sicuro?"
       confirm_hide: Conferma
       hide: Nascondi
-      hide_author: "Blocca l'autore"
-      restore: Torna a mostrare
+      hide_author: "Nascondi l'autore"
+      restore: Ripristina
       mark_featured: Evidenzia
-      unmark_featured: Elimina evidenziatura
+      unmark_featured: "Deselezionare 'in primo piano'"
       edit: Modifica
       configure: Configura
     banners:
       index:
         title: Banners
         create: Crea un banner
-        edit: Modifica banner
-        delete: Elimina banner
+        edit: Modifica il banner
+        delete: Elimina il banner
         filters:
           all: Tutti
           with_active: Attivi
@@ -64,8 +64,8 @@ it:
         type: Tipo
     budgets:
       index:
-        title: Budget partecipativi
-        new_link: Crea nuovo budget
+        title: Bilanci partecipativi
+        new_link: Crea nuovo bilancio
         filter: Filtro
         filters:
           current: Aperti
@@ -77,15 +77,15 @@ it:
         table_edit_groups: Grupppi di voci
         table_edit_budget: Modifica
         edit_groups: Modifica grupppi di voci
-        edit_budget: Modifica budget
+        edit_budget: Modifica bilancio
       create:
-        notice: Nuova campagna di budget partecipativi creata con successo!
+        notice: Nuovo bilancio partecipativo creato con successo!
       update:
-        notice: Campagna di budget partecipativi aggiornata
+        notice: Bilancio partecipativo aggiornato con successo
       edit:
-        title: Modifica campagna di budget partecipativi
+        title: Modifica il bilancio partecipativo
       new:
-        title: Nuovo budget cittadino
+        title: Nuovo bilancio partecipativo
       show:
         groups:
           one: 1 Gruppo di voci di bilancio
@@ -97,10 +97,10 @@ it:
         create_group: Crea gruppo
         heading: Nome della voce
         add_heading: Aggiungi voce
-        amount: Quantità
+        amount: Importo
         population: Popolazione
         save_heading: Salva voce
-        no_heading: Questo gruppo non ha assegnata nessuna voce.
+        no_heading: A questo gruppo non è stata ancora assegnata una intestazione.
         table_heading: Voce
         table_amount: Quantità
         table_population: Popolazione
@@ -213,6 +213,7 @@ it:
         hidden_debate: Dibattito nascosto
         hidden_proposal: proposta nascosta
         title: Commenti nascosti
+        no_hidden_comments: Non sono presenti commenti nascosti.
     dashboard:
       index:
         back: Torna a %{org}
@@ -226,6 +227,7 @@ it:
           with_confirmed_hide: Confermati
           without_confirmed_hide: In sospeso
         title: Dibattiti nascosti
+        no_hidden_debates: Non sono presenti dibattiti nascosti.
     hidden_users:
       index:
         filter: Filtro
@@ -234,6 +236,8 @@ it:
           with_confirmed_hide: Confermati
           without_confirmed_hide: In sospeso
         title: Utenti bloccati
+        user: Utente
+        no_hidden_users: Non sono presenti utenti bloccati.
       show:
         email: 'Email:'
         hidden_at: 'Bloccato:'
@@ -402,8 +406,8 @@ it:
       banner: Gestire banners
       proposals_topics: Temi delle proposte
       poll_questions: Domande dei cittadini
-      budgets: Budget partecipativi
-      geozones: Gestire distretti
+      budgets: Bilanci partecipativi
+      geozones: Gestire circoscrizioni
       hidden_comments: Commenti nascosti
       hidden_debates: Dibattiti nascosti
       hidden_proposals: Proposte nascoste
@@ -429,7 +433,7 @@ it:
         content_blocks: Personalizzare blocchi
       title_categories: Categorie
       title_moderated_content: Contenuto moderato
-      title_budgets: Budget
+      title_budgets: Bilanci
       title_polls: Votazioni
       title_profiles: Profili
       title_banners: Banners
@@ -717,6 +721,7 @@ it:
           with_confirmed_hide: Confermate
           without_confirmed_hide: In sospeso
         title: Domande nascoste
+        no_hidden_proposals: Non sono presenti proposte nascoste.
     settings:
       flash:
         updated: Valore aggiornato
@@ -759,6 +764,9 @@ it:
         placeholder: Cerca utente per nome o email
       search_results: "Risultati della ricerca"
       no_search_results: "Nessun risultato."
+      actions: Azioni
+      title: "Titolo"
+      description: "Descrizione"
     spending_proposals:
       index:
         geozone_filter_all: Tutti gli ambiti di attuazione
@@ -772,7 +780,7 @@ it:
           valuating: In valutazione
           valuation_finished: Valutazione terminata
           all: Tutte
-        title: Proposte di investimento per budget partecipativi
+        title: Proposte di investimento per bilanci partecipativi
         assigned_admin: Amministratore assegnato
         no_admin_assigned: Senza admin assegnato
         no_valuators_assigned: Senza valutatore
@@ -781,7 +789,7 @@ it:
         feasibility:
           feasible: "Realizzabile (%{price})"
           not_feasible: "Non realizzabile"
-          undefined: "Da definire"
+          undefined: "Non definito"
       show:
         assigned_admin: Amministratore assegnato
         assigned_valuators: Valutatori assegnati
@@ -877,7 +885,7 @@ it:
           debates: Dibattiti
           proposal_votes: Voti nelle proposte
           proposals: Proposte
-          budgets: Budget aperti
+          budgets: Bilanci aperti
           budget_investments: Proposte di investimento
           spending_proposals: Proposte di investimento
           unverified_users: Utenti da verificare
@@ -889,7 +897,7 @@ it:
           visits: Visite
           votes: Voti
         spending_proposals_title: Proposte di investimento
-        budgets_title: Budget partecipativi
+        budgets_title: Bilanci partecipativi
         visits_title: Visite
         direct_messages: Messaggi diretti
         proposal_notifications: Notifiche di proposte
@@ -903,11 +911,12 @@ it:
         total: Totale
         proposals_with_notifications: Proposte con notifiche
     tags:
-      create: Crea Argomento
-      destroy: Elimina Argomento
+      create: Crea argomento
+      destroy: Elimina argomento
       index:
         add_tag: Aggiungi un nuovo argomento di proposta
         title: Argomenti di proposta
+        topic: Argomento
       name:
         placeholder: Scrivi il nome
     users:

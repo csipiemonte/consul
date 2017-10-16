@@ -5,13 +5,13 @@ it:
         one: "attività"
         other: "attività"
       budget:
-        one: "Budget partecipativo"
-        other: "Budget partecipativi"
+        one: "Bilancio partecipativo"
+        other: "Bilanci partecipativi"
       budget/investment:
-        one: "Progetto di investimento"
-        other: "Progetti di investimento"
+        one: "Investimento"
+        other: "Investimenti"
       budget/investment/milestone:
-        one: "milestone"
+        one: "traguardo"
         other: "milestones"
       comment:
         one: "Commento"
@@ -20,8 +20,8 @@ it:
         one: "Dibattito"
         other: "Dibattiti"
       tag:
-        one: "Tema"
-        other: "Temi"
+        one: "Tag"
+        other: "Tag"
       user:
         one: "Utente"
         other: "Utenti"
@@ -47,23 +47,23 @@ it:
         one: "presidente di seggio"
         other: "presidenti di seggio"
       spending_proposal:
-        one: "Proposta di investimento"
-        other: "Proposte di investimento"
+        one: "Proposta di spesa"
+        other: "Proposte di spesa"
       site_customization/page:
-        one: Pagina
-        other: Pagine
+        one: Pagina personalizzata
+        other: Pagine personalizzate
       site_customization/image:
-        one: Immagine
-        other: Immagini
+        one: Immagine personalizzata
+        other: Immagini personalizzate
       site_customization/content_block:
-        one: Blocco
-        other: Blocchi
+        one: Blocco di contenuto personalizzato
+        other: Blocchi di contenuto personalizzato
       legislation/process:
           one: "Processo"
           other: "Processi"
       legislation/draft_versions:
-          one: "Versione bozza"
-          other: "Versioni bozza"
+          one: "Versione in bozza"
+          other: "Versioni in bozza"
       legislation/draft_texts:
         one: "Bozza"
         other: "Bozze"
@@ -85,15 +85,15 @@ it:
     attributes:
       budget:
         name: "Nome"
-        description_accepting: "Descrizione durante la fase di presentazione dei progetti"
-        description_reviewing: "Descrizione durante la fase di controllo interno"
-        description_selecting: "Descrizione durante la fase di apoggi"
-        description_valuating: "Descrizione durante la fase di valutazione"
-        description_balloting: "Descrizione durante la fase di votazione"
-        description_reviewing_ballots: "Descrizione durante la fase di controllo dei voti"
-        description_finished: "Descrizione quando il budget è concluso / Risultati"
+        description_accepting: "Descrizione durante la fase della Accettazione"
+        description_reviewing: "Descrizione durante la fase della Verifica"
+        description_selecting: "Descrizione durante la fase della Ricerca di appoggi"
+        description_valuating: "Descrizione durante la fase della Valutazione"
+        description_balloting: "Descrizione durante la fase del Voto"
+        description_reviewing_ballots: "Descrizione durante la fase della Verifica del voto"
+        description_finished: "Descrizione durante la fase della Approvazione del Bilancio / Risultati"
         phase: "Fase"
-        currency_symbol: "Divisa"
+        currency_symbol: "Valuta"
       budget/investment:
         administrator_id: "Amministratore"
         description: "Descrizione"
@@ -101,7 +101,7 @@ it:
         heading_id: "Voce di bilancio"
         title: "Titolo"
         location: "Ubicazione"
-        organization_name: "Se stai proponendo a nome di una organizzazione o collettivo, scrivi il nome"
+        organization_name: "Se stai proponendo a nome di una organizzazione o collettivo, scrivine il nome"
         image: "Immagine descrittiva della proposta di investimento"
       comment:
         body: "Commento"
@@ -112,14 +112,14 @@ it:
       debate:
         author: "Autore"
         description: "Opinione"
-        terms_of_service: "Termini del servizio"
+        terms_of_service: "Termini di servizio"
         title: "Titolo"
       proposal:
         author: "Autore"
         title: "Titolo"
         question: "Domanda"
         description: "Descrizione"
-        terms_of_service: "Termini del servizio"
+        terms_of_service: "Termini di servizio"
       user:
         login: Email o nome utente
         email: "Email"
@@ -155,9 +155,9 @@ it:
         description: "Descrizione"
         external_url: "Link alla documentazione aggiuntiva"
       signature_sheet:
-        signable_type: "Tipo del foglio delle firme"
-        signable_id: "ID Proposta cittadina/Proposta investimento"
-        document_numbers: "Numeri dei documenti"
+        signable_type: "Tipo Foglio firme"
+        signable_id: "ID Proposta"
+        document_numbers: "Numero di documenti"
       site_customization/page:
         content: Contenuto
         created_at: Creata
@@ -166,8 +166,8 @@ it:
         status: Stato
         title: Titolo
         updated_at: ultimo aggiornamento
-        more_info_flag: Mostra nella pagina di dettaglio
-        print_content_flag: Bottone di stampa contenuto
+        more_info_flag: Mostra in ulteriore pagina informativa
+        print_content_flag: Bottone di stampa
         locale: Lingua
       site_customization/image:
         name: Nome
@@ -179,11 +179,11 @@ it:
       legislation/process:
         title: Titolo del processo
         description: In cosa consiste
-        additional_info: Informazione aggiuntiva
-        start_date: Data di inizio processo
-        end_date: Data di fine processo
-        debate_start_date: Data di inizio dibattito
-        debate_end_date: Data di fine dibattito
+        additional_info: Ulteriori info
+        start_date: Data di inizio
+        end_date: Data di fine
+        debate_start_date: Data di inizio del dibattito
+        debate_end_date: Data di fine del dibattito
         draft_publication_date: Data di pubblicazione della bozza
         allegations_start_date: Data di inizio degli allegati
         allegations_end_date: Data di fine degli allegati
@@ -218,15 +218,15 @@ it:
         user:
           attributes:
             email:
-              password_already_set: "A questo utente è già stata assegnata una chiave"
+              password_already_set: "Questo utente ha già una password"
         debate:
           attributes:
             tag_list:
-              less_than_or_equal_to: "i temi devono essere minori o uguali a %{count}"
+              less_than_or_equal_to: "i tags devono essere minori o uguali a %{count}"
         direct_message:
           attributes:
             max_per_day:
-              invalid: "Hai raggiunto il numero massimo di messaggi privati per giorno"
+              invalid: "Hai raggiunto il numero massimo di messaggi privati giornalieri"
         image:
           attributes:
             attachment:
@@ -235,8 +235,8 @@ it:
         poll/voter:
           attributes:
             document_number:
-              not_in_census: "Questo documento non appare in Anagrafe"
-              has_voted: "Questo utente ha già votato"
+              not_in_census: "Il documento non è presente negli archivi istituzionali"
+              has_voted: "L'utente ha già votato"
         legislation/process:
           attributes:
             end_date:
@@ -248,11 +248,11 @@ it:
         proposal:
           attributes:
             tag_list:
-              less_than_or_equal_to: "i temi devono essere minori o uguali a %{count}"
+              less_than_or_equal_to: "i tags devono essere minori o uguali a %{count}"
         budget/investment:
           attributes:
             tag_list:
-              less_than_or_equal_to: "i temi devono essere minori o uguali a %{count}"
+              less_than_or_equal_to: "i tags devono essere minori o uguali a %{count}"
         proposal_notification:
           attributes:
             minimum_interval:
@@ -260,8 +260,8 @@ it:
         signature:
           attributes:
             document_number:
-              not_in_census: 'Non verificato in Anagrafe'
-              already_voted: 'Hai già votato questa proposta'
+              not_in_census: 'Il documento non è stato verificato negli archivi istituzionali'
+              already_voted: 'Proposta già votata'
         site_customization/page:
           attributes:
             slug:

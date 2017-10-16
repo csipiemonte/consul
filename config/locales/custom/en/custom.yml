@@ -26,6 +26,7 @@ en:
         document_type:
           codice_fiscale: Fiscal Code
         error_verifying_census: "It was not possible to verify your data in Register. Please check the data you entered and repeat the operation."
+        error_not_resident: "User not resident"
   welcome:
     schede:
       scheda1: 

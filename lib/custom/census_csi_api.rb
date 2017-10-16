@@ -65,7 +65,7 @@ class CensusCsiApi
 
       resp_body[:multi_ref].each do |r|
         type = r[:"@xsi:type"].rpartition(':').last
-        next if type != 'Generalita' && type != 'IndirizzoInterno'
+        next if type != 'Generalita' && type != 'StatoSoggetto' && type != 'IndirizzoInterno'
         Rails.logger.debug "#{prf}type: #{type}"
 
         if type == 'Generalita'
@@ -77,6 +77,10 @@ class CensusCsiApi
           format_birth_d = "#{birth_d[6, 2]}-#{birth_d[4, 2]}-#{birth_d[0, 4]}"
           @body[:get_habita_datos_response][:get_habita_datos_return][:datos_habitante][:item][:fecha_nacimiento_string] = format_birth_d
           Rails.logger.info "#{prf}nome: #{r[:nome]}, cognome: #{r[:cognome]}, data_nascita: #{format_birth_d}, sesso: #{r[:sesso]}"
+
+        elsif type == 'StatoSoggetto'
+          Rails.logger.info "#{prf}desc_breve_stato: #{r[:desc_breve_stato]}"
+          @body[:get_habita_datos_response][:get_habita_datos_return][:datos_habitante][:item][:estado] = r[:desc_breve_stato]
 
         elsif type == 'IndirizzoInterno'
           Rails.logger.info "#{prf}cap: #{r[:cap]}, id_circoscrizione: #{r[:id_circoscrizione]}, desc_circoscr: #{r[:desc_circoscrizione]}"
@@ -126,6 +130,10 @@ class CensusCsiApi
 
     def name
       "#{data[:datos_habitante][:item][:nombre]} #{data[:datos_habitante][:item][:apellido1]}"
+    end
+
+    def status
+      data[:datos_habitante][:item][:estado]
     end
 
     private

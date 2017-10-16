@@ -56,39 +56,39 @@ it:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: alrededor de 1 hora
-        other: alrededor de %{count} horas
+        one: circa 1 ora
+        other: circa %{count} ore
       about_x_months:
-        one: alrededor de 1 mes
-        other: alrededor de %{count} meses
+        one: circa 1 mese
+        other: circa %{count} mesi
       about_x_years:
-        one: alrededor de 1 año
-        other: alrededor de %{count} años
+        one: circa 1 anno
+        other: circa %{count} anni
       almost_x_years:
-        one: casi 1 año
-        other: casi %{count} años
-      half_a_minute: medio minuto
+        one: quasi 1 anno
+        other: quasi %{count} anni
+      half_a_minute: mezzo minuto
       less_than_x_minutes:
-        one: menos de 1 minuto
-        other: menos de %{count} minutos
+        one: meno di un minuto
+        other: meno di %{count} minuti
       less_than_x_seconds:
-        one: menos de 1 segundo
-        other: menos de %{count} segundos
+        one: meno di 1 secondo
+        other: meno di %{count} secondi
       over_x_years:
-        one: más de 1 año
-        other: más de %{count} años
+        one: oltre 1 anno
+        other: oltre %{count} anni
       x_days:
-        one: 1 día
-        other: "%{count} días"
+        one: 1 giorno
+        other: "%{count} giorni"
       x_minutes:
         one: 1 minuto
-        other: "%{count} minutos"
+        other: "%{count} minuti"
       x_months:
-        one: 1 mes
-        other: "%{count} meses"
+        one: 1 mese
+        other: "%{count} mesi"
       x_seconds:
-        one: 1 segundo
-        other: "%{count} segundos"
+        one: 1 secondo
+        other: "%{count} secondi"
     prompts:
       day: Giorno
       hour: Ora
@@ -99,14 +99,14 @@ it:
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: debe ser aceptado
-      blank: no puede estar en blanco
-      present: debe estar en blanco
+      accepted: deve essere accettato
+      blank: non può restare in bianco
+      present: deve restare in bianco
       confirmation: non coincide
       empty: non può restare vuoto
       equal_to: deve essere uguale a %{count}
       even: deve essere pari
-      exclusion: está reservado
+      exclusion: è riservato
       greater_than: deve essere maggiore di %{count}
       greater_than_or_equal_to: deve essere maggiore o uguale a %{count}
       inclusion: non è incluso nella lista
@@ -116,7 +116,7 @@ it:
       not_a_number: non è un numero
       not_an_integer: deve essere un intero
       odd: deve essere dispari
-      record_invalid: 'La validación falló: %{errors}'
+      record_invalid: 'La validazione non si è conclusa: %{errors}'
       restrict_dependent_destroy:
         one: No se puede eliminar el registro porque existe un %{record} dependiente
         many: No se puede eliminar el registro porque existen %{record} dependientes
@@ -127,13 +127,13 @@ it:
       other_than: deve essere diverso da %{count}
       invalid_date: "non è una data valida"
     template:
-      body: 'Se encontraron problemas con los siguientes campos:'
+      body: 'Ci sono stati problemi con i seguenti campi:'
       header:
         one: Non è stato possibile salvare questo/a %{model} perché si è verificato 1 errore
         other: Non è stato possibile salvare questo/a %{model} perché si sono verificati %{count} errori
   helpers:
     select:
-      prompt: Per favore seleziona
+      prompt: Si prega di selezionare
     submit:
       create: Crea %{model}
       submit: Salva %{model}
@@ -158,7 +158,7 @@ it:
       decimal_units:
         format: "%n %u"
         units:
-          billion: mil millones
+          billion: Miliardi
           million: millón
           quadrillion: mil billones
           thousand: mil
@@ -187,8 +187,8 @@ it:
         delimiter: ''
   support:
     array:
-      last_word_connector: " y "
-      two_words_connector: " y "
+      last_word_connector: " e "
+      two_words_connector: " e "
       words_connector: ", "
   time:
     am: am

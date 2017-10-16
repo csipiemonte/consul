@@ -8,8 +8,8 @@ it:
       button_to_access: Accedi alla comunità
     show:
       title:
-        proposal: Communità della proposta
-        investment: Communità del budget partecipativo
+        proposal: Comunità della proposta
+        investment: Comunità del bilancio partecipativo
       description:
         proposal: Partecipa alla comunità di questa proposta. Una comunità attiva può aiutare a migliorare il contenuto della proposta così come può aumentare la sua diffusione allo scopo di ricevere più appoggi.
         investment: Partecipa alla comunità di questo progetto di investimento. Una comunità attiva può aiutare a migliorare il contenuto del progetto di investimento così come può aumentare la sua diffusione allo scopo di ricevere più appoggi.

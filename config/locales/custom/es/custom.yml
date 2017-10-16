@@ -26,6 +26,7 @@ es:
         document_type:
           codice_fiscale: DNF
         error_verifying_census: "No ha sido posible comprobar tu DNF. Por favor, revisa tus datos y repite la operación."
+        error_not_resident: "El usuario no es residente"
   welcome:
     schede:
       scheda1: 
