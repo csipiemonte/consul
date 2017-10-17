@@ -93,7 +93,7 @@ class Verification::Residence
 
     def residency_valid?
       val = @census_data.valid? &&
-        @census_data.postal_code == postal_code &&
+        (@census_data.postal_code == postal_code || @census_data.postal_code == 'reserved') &&
         @census_data.date_of_birth == date_of_birth
 
       if @census_data.status != 'RV' # Residente Vivo

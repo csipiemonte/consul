@@ -28,13 +28,14 @@ class SMSCsiApi
 
   # phone: deve iniziare con il prefisso internazionale (per l'Italia sono ammessi sia '39' sia '0039'
   def request(phone, code)
-    Rails.logger.info "phone: #{phone}, code: #{code}"
+    prf = "[#{self.class}" + '::request] '
+    Rails.logger.info "#{prf}phone: #{phone}, code: #{code}"
 
     xml_req = "<RICHIESTA_SMS><USERNAME>#{Rails.application.secrets.sms_username}</USERNAME>" \
     "<PASSWORD>#{Rails.application.secrets.sms_password}</PASSWORD>" \
     "<CODICE_PROGETTO>#{Rails.application.secrets.sms_project_code}</CODICE_PROGETTO>" \
     "<REPLY_DETAIL>none</REPLY_DETAIL>" \
-    "<SMS><TELEFONO>#{phone}</TELEFONO><TESTO>Clave para verificarte: #{code}. Gobierno Abierto</TESTO>" \
+    "<SMS><TELEFONO>#{phone}</TELEFONO><TESTO>DecidiTorino - Codice di verifica: #{code}</TESTO>" \
     "<CODIFICA/><TTL/><PRIORITA/><DATA_INVIO/><NOTE>-</NOTE></SMS></RICHIESTA_SMS>"
     xml_req
   end
@@ -42,11 +43,19 @@ class SMSCsiApi
   # response_body nella forma
   # <MESSAGGIO><TITOLO> titolo esito richiesta </TITOLO><DESCRIZIONE> descrizione esito richiesta </DESCRIZIONE></MESSAGGIO>
   def success?(response_body)
+    prf = "[#{self.class}" + '::success?] '
     doc = Nokogiri::XML(response_body)
     msg = doc.at_xpath('//MESSAGGIO')
     titolo = msg.at_xpath('//TITOLO').content
     descr = msg.at_xpath('//DESCRIZIONE').content
 
-    titolo == 'INSERIMENTO SMS' && descr == 'Inserimento effettuato con successo'
+    if titolo == 'INSERIMENTO SMS' && descr == 'Inserimento effettuato con successo'
+      Rails.logger.info "#{prf}#{titolo}: #{descr}"
+      res = true
+    else
+      Rails.logger.error "#{prf}Errore occorso durante la richiesta di invio codice tramite SMS [Titolo: #{titolo}, Descrizione: #{descr}]"
+      res = false
+    end
+    res
   end
 end

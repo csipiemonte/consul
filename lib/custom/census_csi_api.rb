@@ -83,9 +83,18 @@ class CensusCsiApi
           @body[:get_habita_datos_response][:get_habita_datos_return][:datos_habitante][:item][:estado] = r[:desc_breve_stato]
 
         elsif type == 'IndirizzoInterno'
-          Rails.logger.info "#{prf}cap: #{r[:cap]}, id_circoscrizione: #{r[:id_circoscrizione]}, desc_circoscr: #{r[:desc_circoscrizione]}"
-          @body[:get_habita_datos_response][:get_habita_datos_return][:datos_vivienda][:item][:codigo_postal] = r[:cap]
-          @body[:get_habita_datos_response][:get_habita_datos_return][:datos_vivienda][:item][:codigo_distrito] = r[:id_circoscrizione]
+          cap = r[:cap]
+          id_circ = r[:id_circoscrizione]
+
+          if cap.to_s == '{:"@xsi:type"=>"xsd:int"}' || id_circ.to_s == '{:"@xsi:type"=>"xsd:int"}'
+            Rails.logger.info "#{prf}Rilevato residente a protocollo riservato, CAP e circoscrizione NON disponibili"
+            cap = 'reserved'
+            id_circ = nil
+          end
+
+          @body[:get_habita_datos_response][:get_habita_datos_return][:datos_vivienda][:item][:codigo_postal] = cap
+          @body[:get_habita_datos_response][:get_habita_datos_return][:datos_vivienda][:item][:codigo_distrito] = id_circ
+          Rails.logger.info "#{prf}cap: #{cap}, id_circoscrizione: #{id_circ}}"
         end
       end
 

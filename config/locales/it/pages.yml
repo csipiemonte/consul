@@ -43,14 +43,14 @@ it:
       polls:
         title: "Votazioni"
         description: "Las propuestas ciudadanas que alcancen el 1% de apoyos pasarán a votación."
-        feature_1: "Para participar en la próxima votación tienes que %{link} y verificar tu cuenta."
-        feature_1_link: "registrarte en %{org_name}"
-        feature_2: "Pueden votar todas las personas empadronadas en la ciudad mayores de 16 años."
-        feature_3: "Los resultados de todas las votaciones serán vinculantes para el gobierno."
+        feature_1: "Per partecipare alla prossima votazione è necessario %{link} e verificare il proprio account."
+        feature_1_link: "registrarsi su %{org_name}"
+        feature_2: "Possono votare gli utenti registrati maggiori di 16 anni."
+        feature_3: "I risultati di tutti le votazioni saranno vincolanti per l'Amministrazione Comunale."
       faq:
-        title: "¿Problemas técnicos?"
-        description: "Lee las preguntas frecuentes y resuelve tus dudas."
-        button: "Vedi domande frequenti"
+        title: "Problemi tecnici?"
+        description: "Leggi le FAQ per risolvere i tuoi dubbi."
+        button: "Visualizzare le domande frequenti (FAQ)"
         page:
           title: "Domande Frequenti"
           description: "Utiliza esta página para resolver las Preguntas frencuentes a los usuarios del sitio."
