@@ -3,7 +3,9 @@ class Users::SessionsController < Devise::SessionsController
   private
 
     def after_sign_in_path_for(resource)
-      check_current_user_residence if current_user.document_number
+      if Rails.application.config.verify_residence_on_login
+        check_current_user_residence if current_user.document_number
+      end
 
       if !verifying_via_email? && resource.show_welcome_screen?
         welcome_path

@@ -219,12 +219,12 @@ it:
       administration_menu: Admin
       administration: Amministrare
       available_locales: Lingue disponibili
-      collaborative_legislation: Progetti legislativi
+      collaborative_legislation: Progetti
       debates: Dibattiti
       external_link_blog: Blog
       external_link_opendata: Dati aperti
       external_link_opendata_url: https://opendata.consul
-      external_link_transparency: Transparenza
+      external_link_transparency: Trasparenza
       external_link_transparency_url: https://transparency.consul
       locale: 'Lingua:'
       logo: DecidiTorino logo

@@ -64,13 +64,13 @@ it:
         no_next_processes: Non ci sono progetti pianificati
         no_past_processes: Non ci sono progetti terminati
         section_header:
-          icon_alt: Icona dei Progetti legislativi
-          title: Progetti legislativi
-          help: Aiuto sui progetti legislativi
+          icon_alt: Icona dei Progetti
+          title: Progetti
+          help: Aiuto sui progetti
         section_footer:
-          title: Aiuto sui progetti legislativi
+          title: Aiuto sui progetti
           description: "Partecipa ai dibattiti e ai progetti precedenti l'approvazione di una norma o di una opera comunale. La tua opinione sarà tenuta in considerazione da parte del Comune."
-          help_text_1: "Nei progetti legislativi, il Comune offre alla cittadinanza l'opportunità di partecipare all'elaborazione e alla modifica della normativa che interessa la città, e di dare la propria opinione su determinate opere che ha in previsione di realizzare."
+          help_text_1: "Nei progetti il Comune offre alla cittadinanza l'opportunità di partecipare all'elaborazione e alla modifica della normativa che interessa la città, e di dare la propria opinione su determinate opere che ha in previsione di realizzare."
           help_text_2: "Le persone registrate su %{org} possono dare il proprio contributo ai referendum su, fra gli altri, nuove ordinanze, regolamenti e linee guida. I commenti sono analizzati dall'area di pertinenza e tenuti in considerazione al momento della stesura finale delle norme."
           help_text_3: "Il Comune apre anche progetti per ricevere contributi e opinioni a proposito delle opere comunali."
       phase_not_open:
@@ -104,7 +104,7 @@ it:
         next_question: Domanda successiva
         first_question: Prima domanda
         share: Condividi
-        title: Progetto di legislazione collaborativa
+        title: Progetto
       participation:
         phase_not_open: Questa fase non è aperta
         organizations: Le organizzazioni non possono partecipare al dibattito

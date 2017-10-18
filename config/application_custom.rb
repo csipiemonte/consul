@@ -21,5 +21,7 @@ module Consul
     	address: Rails.application.secrets.smtp_address,
     	port: Rails.application.secrets.smtp_port
     }
+
+    config.verify_residence_on_login = true
   end
 end
