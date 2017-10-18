@@ -26,7 +26,10 @@ es:
         document_type:
           codice_fiscale: DNF
         error_verifying_census: "No ha sido posible comprobar tu DNF. Por favor, revisa tus datos y repite la operación."
-        error_not_resident: "El usuario no es residente"
+        error_not_resident: "El usuario no está empadronado"
+    sms:
+      read:
+        verification_code: "DecidiTorino - Código de verificación: "
   welcome:
     schede:
       scheda1: 

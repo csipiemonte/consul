@@ -20,7 +20,7 @@ it:
         not_enough_money_html: "Hai già assegnato il bilancio disponibile.<br><small>Ricorda che puoi %{change_ballot} in qualsiasi momento</small>"
         no_ballots_allowed: Il periodo di votazione è concluso.
         different_heading_assigned: Hai già votato in una sezione diversa del bilancio.
-        change_ballot: cambia i tuoi voti
+        change_ballot: cambiare i tuoi voti
     groups:
       show:
         title: Seleziona una opzione
@@ -52,7 +52,7 @@ it:
     investments:
       form:
         tags_instructions: "Aggiungi tag a questa proposta. Puoi scegliere tra le categorie proposte o introdurre quelle che desideri"
-        tags_label: Temas
+        tags_label: Tags
         tag_category_label: "Categorie"
         tags_placeholder: "Scrivi i tags che desideri separandoli con il carattere virgola (',')"
         map_location: "Localizzazione nella mappa"

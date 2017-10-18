@@ -61,8 +61,8 @@ it:
       edit:
         dossier: Fascicolo
         price_html: "Costo (%{currency}) <small>(dato pubblico)</small>"
-        price_first_year_html: "Costo del primo anno (%{currency}) <small>(opcional, dato no público)</small>"
-        price_explanation_html: "Relazione di spesa <small>(opcional, dato público)</small>"
+        price_first_year_html: "Costo del primo anno (%{currency}) <small>(facoltativo, dato non pubblico)</small>"
+        price_explanation_html: "Relazione di spesa <small>(facoltativo, dato pubblico)</small>"
         feasibility: Fattibilità
         feasible: Realizzabile
         unfeasible: Non realizzabile

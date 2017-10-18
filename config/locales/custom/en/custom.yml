@@ -27,6 +27,9 @@ en:
           codice_fiscale: Fiscal Code
         error_verifying_census: "It was not possible to verify your data in Register. Please check the data you entered and repeat the operation."
         error_not_resident: "User not resident"
+    sms:
+      read:
+        verification_code: "DecidiTorino - Verification code: "
   welcome:
     schede:
       scheda1: 
@@ -34,4 +37,3 @@ en:
         description: Description 1
         label: Argument 1	 	  
         link: See project 
-

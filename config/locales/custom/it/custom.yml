@@ -27,6 +27,9 @@ it:
           codice_fiscale: Codice Fiscale
         error_verifying_census: "Non è stato possibile verificare in Anagrafe i tuoi dati. Per favore, controlla i dati inseriti e ripeti l'operazione."
         error_not_resident: "Utente non residente"
+    sms:
+      read:
+        verification_code: "DecidiTorino - Codice di verifica: "
   welcome:
     schede:
       scheda1: 

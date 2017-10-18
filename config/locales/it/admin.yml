@@ -100,7 +100,7 @@ it:
         amount: Importo
         population: Popolazione
         save_heading: Salva voce
-        no_heading: A questo gruppo non è stata ancora assegnata una intestazione.
+        no_heading: A questo gruppo non è stata ancora assegnata una voce.
         table_heading: Voce
         table_amount: Quantità
         table_population: Popolazione

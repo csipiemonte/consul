@@ -40,7 +40,8 @@ class Verification::Sms
   end
 
   def send_sms
-    SMSCsiApi.new.sms_deliver(user.unconfirmed_phone, user.sms_confirmation_code)
+    txt_sms = I18n.t('verification.sms.read.verification_code') + "#{user.sms_confirmation_code}"
+    SMSCsiApi.new.sms_deliver(user.unconfirmed_phone, txt_sms)
   end
 
   def verified?

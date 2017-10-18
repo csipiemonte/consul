@@ -94,7 +94,7 @@ class CensusCsiApi
 
           @body[:get_habita_datos_response][:get_habita_datos_return][:datos_vivienda][:item][:codigo_postal] = cap
           @body[:get_habita_datos_response][:get_habita_datos_return][:datos_vivienda][:item][:codigo_distrito] = id_circ
-          Rails.logger.info "#{prf}cap: #{cap}, id_circoscrizione: #{id_circ}}"
+          Rails.logger.info "#{prf}cap: #{cap}, id_circoscrizione: #{id_circ}"
         end
       end
 

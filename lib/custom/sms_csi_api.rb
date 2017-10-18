@@ -5,7 +5,7 @@ require 'nokogiri'
 class SMSCsiApi
   attr_accessor :client
 
-  def sms_deliver(phone, code)
+  def sms_deliver(phone, text)
     prf = "[#{self.class}" + '::sms_deliver] '
     Rails.logger.info "#{prf}sms end poit: #{Rails.application.secrets.sms_end_point}"
     start = Time.zone.now
@@ -13,7 +13,7 @@ class SMSCsiApi
 
     begin
       uri = URI(Rails.application.secrets.sms_end_point)
-      response = Net::HTTP.post_form(uri, 'xmlSms' => request(phone, code))
+      response = Net::HTTP.post_form(uri, 'xmlSms' => request(phone, text))
 
       finish = Time.zone.now
       Rails.logger.info "#{prf}Risposta del Gateway SMS, response.code: #{response.code}, response.body: #{response.body}, " \
@@ -27,15 +27,14 @@ class SMSCsiApi
   end
 
   # phone: deve iniziare con il prefisso internazionale (per l'Italia sono ammessi sia '39' sia '0039'
-  def request(phone, code)
+  def request(phone, text)
     prf = "[#{self.class}" + '::request] '
-    Rails.logger.info "#{prf}phone: #{phone}, code: #{code}"
+    Rails.logger.info "#{prf}phone: #{phone}, text: #{text}"
 
     xml_req = "<RICHIESTA_SMS><USERNAME>#{Rails.application.secrets.sms_username}</USERNAME>" \
     "<PASSWORD>#{Rails.application.secrets.sms_password}</PASSWORD>" \
     "<CODICE_PROGETTO>#{Rails.application.secrets.sms_project_code}</CODICE_PROGETTO>" \
-    "<REPLY_DETAIL>none</REPLY_DETAIL>" \
-    "<SMS><TELEFONO>#{phone}</TELEFONO><TESTO>DecidiTorino - Codice di verifica: #{code}</TESTO>" \
+    "<REPLY_DETAIL>none</REPLY_DETAIL><SMS><TELEFONO>#{phone}</TELEFONO><TESTO>#{text}</TESTO>" \
     "<CODIFICA/><TTL/><PRIORITA/><DATA_INVIO/><NOTE>-</NOTE></SMS></RICHIESTA_SMS>"
     xml_req
   end

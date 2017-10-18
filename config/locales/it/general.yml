@@ -131,7 +131,7 @@ it:
         title: Aiuto sui dibattiti
         description: Inizia un dibattito per condividere il tuo punto di vista con altre persone a proposito dei temi che ti preoccupano.
         help_text_1: "Lo spazio dei dibattiti cittadini è diretto a qualsiasi persona che voglia esporre tematiche che le stanno a cuore e sulle quali voglia condividere il proprio punto di vista con altre persone."
-        help_text_2: 'Per aprire un dibattito è necessario registrarsi su %{org}. Gli utenti che sono già registrati possono anche commentare i dibattiti aperti e esprimere il proprio giudizio con i pulsanti "Acconsento" o "Non acconsento" che sono presenti accanto a ciascuna discussione.'
+        help_text_2: "Per aprire un dibattito è necessario registrarsi su %{org}. Gli utenti che sono già registrati possono anche commentare i dibattiti aperti e esprimere il proprio giudizio con i pulsanti 'Sono d'accordo' o 'Non sono d'accordo' che sono presenti accanto a ciascuna discussione."
         help_text_3: "Ricorda che un dibattito non attiva nessun meccanismo concreto di esecuzione. Se ti interessa fare una %{proposal} per la città o proporre un progetto di %{budget} all'annuncio di convocazione, vedi la sezione corrispondente."
         proposals_link: proposta
         budget_link: bilanci partecipativi
@@ -219,7 +219,7 @@ it:
       administration_menu: Admin
       administration: Amministrare
       available_locales: Lingue disponibili
-      collaborative_legislation: Processi legislativi
+      collaborative_legislation: Progetti legislativi
       debates: Dibattiti
       external_link_blog: Blog
       external_link_opendata: Dati aperti
@@ -474,9 +474,9 @@ it:
         help: Aiuto sulle votazioni
       section_footer:
         title: Aiuto sulle votazioni
-        description: Regístrate para poder votar propuestas ciudadanas y las cuestiones que pregunta a sus vecinos el Ayuntamiento. Toma decisiones municipales de forma directa.
-        help_text_1: "Las votaciones se convocan cuando una propuesta ciudadana alcanza el 1% de apoyos del censo con derecho a voto. En las votaciones también se pueden incluir cuestiones que el Ayuntamiento somete a decisión directa de la ciudadanía."
-        help_text_2: "Para participar en la próxima votación tienes que registrarte en %{org} y verificar tu cuenta. Pueden votar todas las personas empadronadas en la ciudad mayores de 16 años. Los resultados de todas las votaciones serán vinculantes para el gobierno."
+        description: Registrati per poter votare le proposte cittadine e le questioni per le quali il Consiglio Comunale interpella la cittadinanza. Decidi direttamente.
+        help_text_1: "Le votazioni si convocano quando una proposta cittadina raggiunge l'1% di appoggi da parte dei residenti con diritto di voto. Nelle votazioni si possono includere anche questioni che il Consiglio Comunale sottopone alla decisione diretta della cittadinanza."
+        help_text_2: "Per partecipare alla prossima votazione è necessario registrarsi su %{org} e verificare il proprio account. Possono votare tutte le persone residenti in città di età maggiore di 16 anni. I risultati di tutte le votazioni saranno vincolanti per il Comune."
     show:
       already_voted_in_booth: "Hai già partecipato a questa votazione presso le urne di un seggio, non è possibile votare di nuovo."
       already_voted_in_web: "Hai già partecipato a questa votazione. Se voti nuovamente, il risultato precedente sarà sovrascritto."
@@ -493,14 +493,13 @@ it:
       cant_answer_wrong_geozone: "Questa votazione non è disponibile per la tua circoscrizione."
       more_info_title: "Più informazioni"
       documents: Documentazione
-      zoom_plus: Ampliar imagen
+      zoom_plus: Zoom immagine
       read_more: "Leggi di più su %{answer}"
       read_less: "Leggi di meno su %{answer}"
       participate_in_other_polls: Partecipa ad altre votazioni
       videos: "Video esterno"
   poll_questions:
     create_question: "Crea domanda per la votazione"
-    default_valid_answers: "Sì, No"
     show:
       vote_answer: "Vota %{answer}"
       voted: "Hai votato %{answer}"
