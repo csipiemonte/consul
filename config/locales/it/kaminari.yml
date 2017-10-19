@@ -12,7 +12,7 @@ it:
         display_entries:
           one: Presente <strong>1 %{entry_name}</strong>
           other: Presenti <strong>%{count} %{entry_name}</strong>
-          zero: Non trovate %{entry_name}
+          zero: La ricerca non ha prodotto risultati per %{entry_name}
   views:
     pagination:
       first: Prima

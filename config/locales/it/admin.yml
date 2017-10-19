@@ -246,46 +246,46 @@ it:
     legislation:
       processes:
         create:
-          notice: 'Processo creato con successo. <a href="%{link}">Fai click per vederlo</a>'
-          error: Non è stato possibile creare il processo
+          notice: 'Progetto creato con successo. <a href="%{link}">Fai click per vederlo</a>'
+          error: Non è stato possibile creare il progetto
         update:
-          notice: 'Processo aggiornato con successo. <a href="%{link}">Fai click per vederlo</a>'
-          error: Non è stato possibile aggiornare il processo
+          notice: 'Progetto aggiornato con successo. <a href="%{link}">Fai click per vederlo</a>'
+          error: Non è stato possibile aggiornare il progetto
         destroy:
-          notice: Procseso eliminato con successo
+          notice: Progetto eliminato con successo
         edit:
-          back: Torna
+          back: Indietro
           submit_button: Salva modifiche
         errors:
           form:
             error: Errore
         form:
           enabled: Abilitato
-          process: Processo
+          process: Progetto
           debate_phase: Fase preliminare
           allegations_phase: Fase degli allegati
           start: Inizio
           end: Fine
           use_markdown: Usa Markdown per aggiungere la formattazione al testo
-          title_placeholder: Scrivi il titolo del processo
+          title_placeholder: Scrivi il titolo del progetto
           summary_placeholder: Sommario breve della descrizione
-          description_placeholder: Aggiorna una descrizione del processo
+          description_placeholder: Aggiorna la descrizione del progetto
           additional_info_placeholder: Aggiungi qualsiasi informazione aggiuntiva che possa essere di interesse
         index:
-          create: Nuovo processo
+          create: Nuovo progetto
           delete: Elimina
-          title: Processi di legislazione collaborativa
+          title: Progetti di legislazione collaborativa
           filters:
             open: Aperti
             next: A breve
             past: Passati
             all: Tutti
         new:
-          back: Torna
-          title: Crea nuovo processo di legislazione collaborativa
-          submit_button: Crea processo
+          back: Indietro
+          title: Crea nuovo progetto di legislazione collaborativa
+          submit_button: Crea progetto
         process:
-          title: Processo
+          title: Progetto
           comments: Commenti
           status: Stato
           creation_date: Data creazione
@@ -306,21 +306,21 @@ it:
         destroy:
           notice: Bozza eliminata correttamente
         edit:
-          back: Torna
+          back: Indietro
           submit_button: Salva modifiche
           warning: Attenzione, hai modificato il testo. Per memorizzare le modifiche senza perderle, non dimenticarti di fare click su Salva.
         errors:
           form:
             error: Errore
         form:
-          title_html: 'In modifica <span class="strong">%{draft_version_title}</span> del processo <span class="strong">%{process_title}</span>'
+          title_html: 'In modifica <span class="strong">%{draft_version_title}</span> del progetto <span class="strong">%{process_title}</span>'
           launch_text_editor: Attiva editor di testo
           close_text_editor: Chiudi editor di testo
           use_markdown: Usa Markdown per aggiungere la formattazione al testo
           hints:
             final_version: Sarà la versione da pubblicare in Pubblicazione dei Risultati. Questa versione non potrà essere commentata
             status:
-              draft: "Una volta loggato, potrai vederne l'anteprima, nessun altro lo potrà vedere"
+              draft: "Una volta collegato, potrai vederne l'anteprima, nessun altro la potrà vedere"
               published: Sarà visibile a tutti
           title_placeholder: Scrivi il titolo di questa versione della bozza
           changelog_placeholder: Descrivi le differenze più rilevanti con la versione precedente
@@ -331,7 +331,7 @@ it:
           delete: Elimina
           preview: Anteprima
         new:
-          back: Torna
+          back: Indietro
           title: Crea nuova versione
           submit_button: Crea versione
         statuses:
@@ -365,7 +365,7 @@ it:
           value_placeholder: Scrivi una risposta chiusa
         index:
           back: Indietro
-          title: Domande associate a questo processo
+          title: Domande associate a questo progetto
           create: Crea domanda
           delete: Elimina
         new:
@@ -405,7 +405,7 @@ it:
       admin: Menu di amministrazione
       banner: Gestire banners
       proposals_topics: Temi delle proposte
-      poll_questions: Domande dei cittadini
+      poll_questions: Domande delle votazioni
       budgets: Bilanci partecipativi
       geozones: Gestire circoscrizioni
       hidden_comments: Commenti nascosti
@@ -577,12 +577,12 @@ it:
         error_on_question_added: "Non si è potuto assegnare la domanda"
     questions:
       index:
-        title: "Domande cittadine"
+        title: "Domande delle votazioni"
         create: "Crea domanda cittadina"
         no_questions: "Non sono presenti domande cittadine."
         filter_poll: "Filtra per votazione"
         select_poll: "Seleziona votazione"
-        questions_tab: "Domande cittadine"
+        questions_tab: "Domande"
         successful_proposals_tab: "Proposte che hanno superator il quorum"
         create_question: "Crea domanda per la votazione"
         table_proposal: "Proposta"
@@ -940,7 +940,7 @@ it:
       content_blocks:
         form:
           content_blocks_information: Informazione sui blocchi di testo
-          content_block_about: "È possibile creare blocchi di HTML da incorporare nell'intestazione o nel piè di pagina dell'applicazione Consul."
+          content_block_about: "È possibile creare blocchi di HTML da incorporare nell'intestazione o nel piè di pagina dell'applicazione DecidiTorino."
           content_block_top_links_html: "I <strong>blocchi dell'intestazione (top_links)</strong> sono blocchi di link che devono essere creati seguendo questo formato:"
           content_block_footer_html: "I <strong>blocci di piè di pagina (footer)</strong> hanno formato libero e si possono impiegare per salvare impronte Javascript, contenuto CSS o contenuto HTML personalizzato."
         create:

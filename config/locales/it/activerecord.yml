@@ -56,11 +56,11 @@ it:
         one: Immagine personalizzata
         other: Immagini personalizzate
       site_customization/content_block:
-        one: Blocco di contenuto personalizzato
-        other: Blocchi di contenuto personalizzato
+        one: Blocco di contenuto proprio
+        other: Blocchi di contenuto proprio
       legislation/process:
-          one: "Processo"
-          other: "Processi"
+          one: "Progetto"
+          other: "Progetti"
       legislation/draft_versions:
           one: "Versione in bozza"
           other: "Versioni in bozza"
