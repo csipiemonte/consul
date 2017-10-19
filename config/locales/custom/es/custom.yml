@@ -8,10 +8,12 @@ es:
     messages:
       sms_deliver: Errores ocuridos en la verificación del móvil. Por favor, intentalo otra vez más tarde.
   layouts:
+    footer:
+      copyright: DecidiTorino, %{year}
     header:
       titolo: La ciudad que quieres será la ciudad que quieras. 
       html: Existen ciudades gobernadas directamente por sus habitantes, que <strong>debaten</strong> sobre temas que les preocupan, <strong>proponen</strong> ideas para mejorar sus vidas y <strong>deciden</strong> entre todas y todos las que se llevan a cabo.
-      more_info: Más informaciones	  
+      more_info: Descubre DecidiTorino
   omniauth:
     shibboleth:
       sign_in: Entra con Shibboleth
@@ -32,7 +34,7 @@ es:
         verification_code: "DecidiTorino - Código de verificación: "
   welcome:
     schede:
-      scheda1: 
+      scheda1:
         title: Título 1
         description: Descripción 1
         label: Tema 1	 	  

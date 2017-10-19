@@ -851,8 +851,7 @@ fr:
       consul_url: https://github.com/consul/consul
       contact_us: Pour l'assistance technique entrer
       copyright: Consul, %{year}
-      description: Ce portail utiliser %{consul} qui est %{open_source}. De Madrid
-        ouvert sur le monde.
+      description: Ce portail utiliser %{consul} qui est %{open_source}.
       faq: assistance technique
       open_data_text: Tout les détails de la Mairie sont vôtre pour accès
       open_data_title: Open data

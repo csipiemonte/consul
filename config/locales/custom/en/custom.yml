@@ -8,10 +8,12 @@ en:
     messages:
       sms_deliver: Errors occurred in the verification of the mobile. Please try again later.
   layouts:
+    footer:
+      copyright: DecidiTorino, %{year}
     header:
       titolo: Love the city, and it will become a city you love 
       html: There are cities that are governed directly by their inhabitants, who <strong>discuss</strong> the topics they are concerned about, <strong>propose</strong> ideas to improve their lives and <strong>decide</strong> among themselves which ones will be carried out.
-      more_info: More info	  
+      more_info: Discover DecidiTorino
   omniauth:
     shibboleth:
       sign_in: Login with Shibboleth
@@ -32,7 +34,7 @@ en:
         verification_code: "DecidiTorino - Verification code: "
   welcome:
     schede:
-      scheda1: 
+      scheda1:
         title: Title 1
         description: Description 1
         label: Argument 1	 	  

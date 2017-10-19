@@ -20,6 +20,8 @@ header .locale{float:right;}
 .subnavigation a {color: #fff;line-height:45px;}
 .subnavigation a:hover, .subnavigation a:focus, .subnavigation a:active{text-decoration:underline;color:#fff;}
 .subnavigation a.active  {border-bottom: 2px solid #fff;color:#fff;text-decoration:none; }
+
+.top-bar .menu-icon.dark::after, .top-bar .menu-icon.dark:hover::after {background: #204d88; box-shadow: 0 7px 0 #204d88, 0 14px 0 #204d88;}
  
 
 /*---display small----*/

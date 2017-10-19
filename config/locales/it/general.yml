@@ -14,8 +14,8 @@ it:
       phone_number_label: Telefono
       public_activity_label: Rendi pubblica la mia lista di attività
       public_interests_label: Rendi pubblici i miei interessi
-      public_interests_my_title_list: Lista degli interessi (Etichette degli elementi che segui)
-      public_interests_user_title_list: Lista degli interessi (Etichette degli elementi seguiti da questo utente)
+      public_interests_my_title_list: Lista degli interessi (etichette degli elementi che segui)
+      public_interests_user_title_list: Lista degli interessi (etichette degli elementi seguiti da questo utente)
       public_interests_my_empty_list: Non stai seguendo nessun elemento.
       public_interests_user_empty_list: Questo utente al momento non segue nessun elemento.
       save_changes_submit: Salva modifiche
@@ -158,6 +158,7 @@ it:
       flag: Questo dibattito è stato contrassegnato come inappropriato da diversi utenti.
       login_to_comment: È necessario %{signin} o %{signup} per commentare.
       share: Condividi
+      author: Autor
     update:
       form:
         submit_button: Salva modifiche
@@ -167,8 +168,8 @@ it:
       invalid_date_range: "L'intervallo di date non è valido"
   form:
     accept_terms: Accetto la %{policy} e le %{conditions}
-    accept_terms_title: Accetto la Politica della privacy e le Condizioni di utilizzo
-    conditions: Condizioni di utilizzo
+    accept_terms_title: "Accetto la Politica della privacy e le Condizioni d'uso"
+    conditions: "Condizioni d'uso"
     debate: il dibattito
     direct_message: il messaggio privato
     error: errore
@@ -198,7 +199,7 @@ it:
       ie_title: Questo sito web non è ottimizzato per il tuo browser
     footer:
       accessibility: Accessibilità
-      conditions: Condizioni di utilizzo
+      conditions: "Condizioni d'uso"
       consul: Consul
       consul_url: https://github.com/consul/consul
       contact_us: Per ottenere assistenza tecnica entra in
@@ -498,6 +499,19 @@ it:
       read_less: "Leggi di meno su %{answer}"
       participate_in_other_polls: Partecipa ad altre votazioni
       videos: "Video esterno"
+      info_menu: "Informazione"
+      stats_menu: "Statistiche sulla partecipazione"
+      stats:
+        title: "Dati sulla partecipazione"
+        total_participation: "Partecipazione totale"
+        total_votes: "Nº totale di voti emessi"
+        votes: "VOTI"
+        web: "WEB"
+        booth: "URNE"
+        total: "TOTALE"
+        valid: "Validi"
+        white: "In bianco"
+        null_votes: "Nulli"
   poll_questions:
     create_question: "Crea domanda per la votazione"
     show:
@@ -694,6 +708,11 @@ it:
       deleted_debate: Questo dibattito è stato eliminato
       deleted_proposal: Questa proposta è stata eliminata
       deleted_budget_investment: Questa proposta di investimento è stata eliminata
+      proposals: Proposte
+      debates: Dibattiti
+      budget_investments: Progetti dei bilanci partecipativi
+      comments: Commenti
+      actions: Azioni
       filters:
         comments:
           one: 1 Commento
@@ -712,7 +731,7 @@ it:
           other: "%{count} Seguendo"
       no_activity: Utente senza attività pubblica
       no_private_messages: "Questo utente non accetta messaggi privati."
-      private_activity: Questo utente ha deciso di non pubblicare la sua lista di attività
+      private_activity: Questo utente ha deciso di non pubblicare la lista delle sue attività.
       send_private_message: "Invia un messaggio privato"
     proposals:
       send_notification: "Invia notifica"

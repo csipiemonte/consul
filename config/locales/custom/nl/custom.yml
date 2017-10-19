@@ -1,0 +1,41 @@
+﻿---
+nl:
+  devise:
+    sessions:
+      census_code_updated: Het gebiedsnummer bijgewerkt.
+      user_not_resident: U bent niet langer in Turijn woonachtig.
+  errors:
+    messages:
+      sms_deliver: Fouten bij het verifiëren van uw telefoonnummer, probeer het later opnieuw.
+  layouts:
+    footer:
+      copyright: DecidiTorino, %{year}
+    header:
+      titolo: De stad waar u van houdt zal de stad zijn die u wilt.
+      html: Er zijn steden die rechtstreeks door hun bewoners worden geregeerd, die kwesties bespreken die ze bezorgd hebben, ideeën voorstellen om hun leven te verbeteren en te beslissen onderling en alles wat gerealiseerd moet worden.
+      more_info: Ontdekken DecidiTorino
+  omniauth:
+    shibboleth:
+      sign_in: Log in Shibboleth
+      sign_up: Registreer via Shibboleth
+      name: Shibboleth
+  settings:
+    feature:
+      shibboleth_login: Log in Shibboleth
+  verification:
+    residence:
+      new:
+        document_type:
+          codice_fiscale: Belastingcode
+        error_verifying_census: "Het was niet mogelijk uw gegevens te verifiëren in Register. Controleer de gegevens die u hebt ingevoerd en herhaal de procedure."
+        error_not_resident: "Niet-ingezetene gebruiker"
+    sms:
+      read:
+        verification_code: "DecidiTorino - Verificatiecode: "
+  welcome:
+    schede:
+      scheda1:
+        title: Titel 1
+        description: Beschrijving 1
+        label: Onderwerp 1	 	  
+        link: Zie project

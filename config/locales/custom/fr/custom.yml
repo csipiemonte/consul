@@ -1,0 +1,41 @@
+﻿---
+fr:
+  devise:
+    sessions:
+      census_code_updated: Mise à jour du numéro de zone.
+      user_not_resident: "Vous n'êtes plus résident à Turin."
+  errors:
+    messages:
+      sms_deliver: Les erreurs rencontrées lors de la vérification de votre numéro de téléphone, veuillez réessayer plus tard.
+  layouts:
+    footer:
+      copyright: DecidiTorino, %{year}
+    header:
+      titolo: La ville que vous aimez sera la ville que vous voulez.
+      html: Il y a des villes directement gouvernées par leurs habitants, qui <strong>discutent</strong> des problèmes qui les inquiètent, <strong>proposent</strong> des idées pour améliorer leur vie et <strong>décider</strong> entre elles et tous ceux qui doivent être réalisés.
+      more_info: Découvre DecidiTorino
+  omniauth:
+    shibboleth:
+      sign_in: "S'enregistrer avec Shibboleth"
+      sign_up: Se connecter avec Shibboleth
+      name: Shibboleth
+  settings:
+    feature:
+      shibboleth_login: Se connecter avec Shibboleth
+  verification:
+    residence:
+      new:
+        document_type:
+          codice_fiscale: Code fiscal
+        error_verifying_census: "Il n'a pas été possible de vérifier vos données dans Register. Veuillez vérifier les données que vous avez saisies et répétez l'opération."
+        error_not_resident: "Utilisateur non-résident"
+    sms:
+      read:
+        verification_code: "DecidiTorino - Code de vérification: "
+  welcome:
+    schede:
+      scheda1:
+        title: Titre 1
+        description: Description 1
+        label: Sujet 1
+        link: Voir le projet

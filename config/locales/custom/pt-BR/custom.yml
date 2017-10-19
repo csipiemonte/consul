@@ -1,0 +1,41 @@
+﻿---
+pt-BR:
+  devise:
+    sessions:
+      census_code_updated: Atualizado o número da área.
+      user_not_resident: Você não é mais residente em Turim.
+  errors:
+    messages:
+      sms_deliver: Erros encontrados durante a verificação do seu número de telefone, tente novamente mais tarde.
+  layouts:
+    footer:
+      copyright: DecidiTorino, %{year}
+    header:
+      titolo: A cidade que você ama será a cidade que deseja. 
+      html: Existem cidades diretamente governadas por seus habitantes, que <strong>discutem</strong> questões que estão preocupadas, <strong>propõem</strong> idéias para melhorar suas vidas e <strong>decidem</strong> entre si e com todos aqueles que precisam ser realizados.
+      more_info: Descobri DecidiTorino
+  omniauth:
+    shibboleth:
+      sign_in: Iniciar sessão com o Shibboleth
+      sign_up: Inscrever-se com o Shibboleth
+      name: Shibboleth
+  settings:
+    feature:
+      shibboleth_login: Iniciar sessão com o Shibboleth
+  verification:
+    residence:
+      new:
+        document_type:
+          codice_fiscale: Código Tributário
+        error_verifying_census: "Não foi possível verificar seus dados no Registro. Verifique os dados que você inseriu e repita a operação."
+        error_not_resident: "Usuário não residente"
+    sms:
+      read:
+        verification_code: "DecidiTorino - Código de verificação: "
+  welcome:
+    schede:
+      scheda1:
+        title: Título 1
+        description: Descrição 1
+        label: Tópico 1	 	  
+        link: Ver projeto

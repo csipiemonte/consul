@@ -838,8 +838,7 @@ pt-BR:
       consul_url: https://github.com/consul/consul
       contact_us: Para suporte técnico entre
       copyright: Consul, %{year}
-      description: Este portal usa o %{consul} que é %{open_source}. De Madrid para
-        o mundo.
+      description: Este portal usa o %{consul} que é %{open_source}.
       faq: suporte técnico
       open_data_text: Todos os detalhes sobre a Câmara estão disponíveis para acesso.
       open_data_title: Dados abertos

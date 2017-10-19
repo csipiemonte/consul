@@ -1,6 +1,7 @@
 it:
   settings:
     comments_body_max_length: "Lunghezza massima dei commenti"
+    direct_message_max_per_day: "Numero massimo di messaggi giornalieri"
     official_level_1_name: "Funzionario pubblico di livello 1"
     official_level_2_name: "Funzionario pubblico di livello 2"
     official_level_3_name: "Funzionario pubblico di livello 3"
@@ -10,6 +11,7 @@ it:
     max_votes_for_proposal_edit: "Numero di voti necessari per non poter più modificare una proposta"
     max_votes_for_debate_edit: "Numero di voti necessari per non poter più modificare un dibattito"
     proposal_code_prefix: "Prefisso per i codici delle proposta"
+    proposal_notification_minimum_interval_in_days: "Intervallo minimo in giorni per la notifica di una proposta"
     votes_for_proposal_success: "Numero di voti necessari per approvare una proposta"
     months_to_archive_proposals: "Mesi per archiviare le proposte"
     email_domain_for_officials: "Dominio di posta elettronica per funzionari pubblici"
@@ -34,6 +36,7 @@ it:
       google_login: Accesso con Google
       debates: Dibattiti
       polls: Votazioni
+      public_stats: Statistiche pubbliche
       signature_sheets: Fogli delle firme
       spending_proposals: Progetti di investimento
       spending_proposal_features:

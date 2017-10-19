@@ -80,7 +80,7 @@ Setting.create(key: 'feature.budgets', value: 'true')
 Setting.create(key: 'feature.signature_sheets', value: 'true')
 Setting.create(key: 'feature.legislation', value: 'true')
 Setting.create(key: 'feature.user.recommendations', value: 'true')
-Setting.create(key: 'feature.community', value: 'true')
+Setting.create(key: 'feature.community', value: 'false')
 Setting.create(key: 'feature.map', value: 'true')
 
 # Spending proposals feature flags

@@ -9,7 +9,7 @@ it:
         info: Qui puoi validare i documenti dei cittadini e salvare i risultati delle urne
     menu:
       voters: "Validare documento e votare"
-      final_recounts: "Riconteggio totale e scrutinio"
+      total_recounts: "Riconteggio totale e scrutinio"
     polls:
       final:
         title: "Elenco delle votazioni concluse"
