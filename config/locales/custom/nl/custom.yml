@@ -27,6 +27,8 @@ nl:
       new:
         document_type:
           codice_fiscale: Belastingcode
+        error_not_matched_date_birth: De geboortedatum komt niet overeen met die in het Register.
+        error_not_matched_postal_code: De getypte postcode komt niet overeen met die in het register.
         error_verifying_census: "Het was niet mogelijk uw gegevens te verifiëren in Register. Controleer de gegevens die u hebt ingevoerd en herhaal de procedure."
         error_not_resident: "Niet-ingezetene gebruiker"
     sms:

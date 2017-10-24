@@ -27,6 +27,8 @@ fr:
       new:
         document_type:
           codice_fiscale: Code fiscal
+        error_not_matched_date_birth: La date de naissance saisie ne coïncide pas avec celle du registre.
+        error_not_matched_postal_code: Le code postal tapé ne correspond pas à celui du registre.
         error_verifying_census: "Il n'a pas été possible de vérifier vos données dans Register. Veuillez vérifier les données que vous avez saisies et répétez l'opération."
         error_not_resident: "Utilisateur non-résident"
     sms:

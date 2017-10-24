@@ -111,8 +111,8 @@ it:
           organization_signup: "Rappresenti una organizzazione o un collettivo? %{signup_link}"
           organization_signup_link: Registrati qui
           password_confirmation_label: Ripeti la password
-          password_label: Password che userai per accedere a questo sito web
-          redeemable_code: Codice di verifica (se si ha ricevuto il codice per lettera)
+          password_label: Password (minimo 8 caratteri)
+          redeemable_code: Codice di verifica (nel caso si abbia ricevuto il codice per lettera)
           submit: Registrarsi
           terms: Registrandoti accetti le %{terms}
           terms_link: condizioni di uso

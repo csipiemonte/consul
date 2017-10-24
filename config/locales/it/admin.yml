@@ -420,6 +420,7 @@ it:
       poll_officers: Presidenti di seggio
       polls: Votazioni
       poll_booths: Ubicazione delle urne
+      poll_booth_assignments: Assegnazione delle urne
       poll_shifts: Assegna turni
       officials: Incarichi pubblici
       organizations: Organizzazioni
@@ -514,6 +515,7 @@ it:
         search_officer_placeholder: Cerca presidente di seggio
         search_officer_text: Cerca il presidente di seggio per assegnare un turno
         select_date: "Seleziona giorno"
+        no_voting_days: "Giorni di votazione terminati"
         select_task: "Seleziona incarico"
         table_shift: "Turno"
         table_email: "Email"
@@ -524,6 +526,17 @@ it:
         date_missing: "Si deve selezionare una data"
       vote_collection: Raccogliere Voti
       recount_scrutiny: Riconteggio & Scrutinio
+    booth_assignments:
+      manage_assignments: Gestire le assegnazioni
+      manage:
+        assignments_list: "Assegnazioni per la votazione '%{poll}'"
+        status:
+          assign_status: Assegnazione
+          assigned: Assegnata
+          unassigned: Non assegnata
+        actions:
+          assign: Assegna urna
+          unassign: Annulla assegnazione urna
     poll_booth_assignments:
       flash:
         destroy: "Urna deallocata"
@@ -537,6 +550,7 @@ it:
         no_officers: "Non ci sono presidenti di seggio per questa urna"
         recounts: "Riconteggi"
         recounts_list: "Elenco dei riconteggi di questa urna"
+        results: "Risultati"
         date: "Data"
         count_final: "Riconteggio finale (presidente di seggio)"
         count_by_system:  "Voti (automatico)"
@@ -546,9 +560,6 @@ it:
         no_booths: "Non ci sono urne assegnate a questa votazione."
         table_name: "Nome"
         table_location: "Ubicazione"
-        table_assignment: "Assegnazione"
-        remove_booth: "Dealloca urna"
-        add_booth: "Assegna urna"
     polls:
       index:
         title: "Elenco delle votazioni"
@@ -559,6 +570,10 @@ it:
         geozone_restricted: "Ristretta alle circoscrizioni"
       new:
         title: "Nuova votazione"
+        show_results_and_stats: "Mostra risultati e statistiche"
+        show_results: "Mostra risultati"
+        show_stats: "Mostra statistiche"
+        results_and_stats_reminder: "Mettendo la spunta su questi box i risultati e/o le statistiche di questa votazione saranno di dominio pubblico e potranno essere visti da tutti gli utenti."
         submit_button: "Crea votazione"
       edit:
         title: "Modifica votazione"
@@ -649,11 +664,17 @@ it:
       index:
         title: "Resultati"
         no_results: "Non ci sono risultati"
+      result:
         table_whites: Schede totalmente bianche
         table_nulls: Schede nulle
         table_total: Schede totali
         table_answer: Risposta
         table_votes: Voti
+      results_by_booth:
+        booth: Urna
+        results: Risultati
+        see_results: Vedi risultati
+        title: "Risultati per urna"
     booths:
       index:
         title: "Elenco delle urne"
@@ -661,6 +682,7 @@ it:
         add_booth: "Aggiungi urna"
         name: "Nome"
         location: "Ubicazione"
+        no_location: "Senza ubicazione"
       new:
         title: "Nuova urna"
         name: "Nome"

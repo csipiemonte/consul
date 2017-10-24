@@ -9,18 +9,18 @@ class Verification::Sms
   validate :prefix_phone
 
   def uniqness_phone
+    return if errors.any?
     errors.add(:phone, :taken) if User.where(confirmed_phone: phone).any?
   end
 
   # Verifica che il numero di cellulare introdotto sia della lunghezza corretta
-  # Numero di cellulare nel formato: 0039 3XX 123456 (o 1234567) - lunghezza totale 4 + 3 + 6/7 = 13/14
-  # Verifica che il numero di cellulare introdotto sia comprensivo del prefisso italiano (0039)
+  # Numero di cellulare nel formato: 3XX 123456 (o 1234567) - lunghezza totale 3 + 6/7 = 9/10
   def prefix_phone
-    if phone.length != 13 && phone.length != 14
+    return if errors.any?
+    if phone.length != 9 && phone.length != 10
       errors.add(:phone, :invalid)
       return
     end
-    errors.add(:phone, :invalid) unless phone.start_with?('0039')
   end
 
   def save

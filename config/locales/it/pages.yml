@@ -15,7 +15,7 @@ it:
         other: "Altre informazioni di interesse"
       debates:
         title: "Dibattiti"
-        description: "Crea un filo sul quale dibattere su qualsiasi tema che intendi condividere con gli altri abitanti della tua città."
+        description: "Crea un tema sul quale dibattere su qualsiasi tema che intendi condividere con gli altri abitanti della tua città."
         feature_1: "Per creare un dibattito è necessario %{link}"
         feature_1_link: "registrarsi su %{org_name}"
         feature_2_html: "I dibattiti possono essere valutati utilizzando i pulsanti <strong>Sono d'accordo</strong> o <strong>Non sono d'accordo</strong> che si trovano accanto a ciascuno di essi."
@@ -23,7 +23,7 @@ it:
         figcaption: "Pulsanti 'Sono d'accordo' e 'Non sono d'accordo' per la valutazione dei dibattiti."
       proposals:
         title: "Proposte"
-        description: "Proponi ciò che vorresti che il Consiglio Comunale realizzasse e appoggia le proposte di altre persone."
+        description: "Proponi ciò che vorresti che la Città realizzasse e appoggia le proposte di altre persone."
         feature_1: "Per creare le proposte è necessario %{link}, invece per appoggiarle bisogna verificare il proprio account."
         feature_1_link: "registrarsi su %{org_name}"
         feature_2_html: "Le proposte che raggiungono <strong>l'appoggio dell'1% della popolazione</strong> (residenti a Torino di una età maggiore di 16 anni; 7.730 appoggi) passano a votazione."

@@ -29,7 +29,7 @@ it:
         incorrect_code: Codice di verifica errato
       new:
         explanation: 'Per partecipare alle votazioni finali puoi:'
-        go_to_index: Vedi proposte
+        go_to_index: Vai a DecidiTorino
         office: Eseguire la verifica di persona in qualsiasi %{office}
         offices: Sportello per il Cittadino
         send_letter: Richiedere una lettera per posta
@@ -48,27 +48,27 @@ it:
         flash:
           success: Residenza verificata
       new:
-        accept_terms_text: "Accetto %{terms_url} all'Anagrafe"
-        accept_terms_text_title: "Accetto i termini di accesso all'Anagrafe"
+        accept_terms_text: "Accetto %{terms_url} alla piattaforma DecidiTorino"
+        accept_terms_text_title: "Accetto i termini per l'accesso completo alla piattaforma DecidiTorino"
         date_of_birth: Data di nascita
         document_number: Numero del documento
         document_number_help_title: Aiuto
-        document_number_help_text_html: '<strong>Codice Fiscale</strong>: RSSGLI85S06L219P'
+        document_number_help_text_html: 'Introduci i 16 caratteri del Codice Fiscale.'
         document_type:
           passport: Passaporto
           residence_card: Carta di residenza
           spanish_id: Carta di Identità
         document_type_label: Tipo di documento
         error_not_allowed_age: "No hai l'età minima per partecipare"
-        error_not_allowed_postal_code: Per completare la verifica devi essere residente.
+        error_not_allowed_postal_code: Per completare la certificazione devi essere residente a Torino. Il CAP deve essere compreso fra 10121 e 10156.
         error_verifying_census: Non è stato possibile verificare in Anagrafe i tuoi dati. Per favore, conferma la correttezza dei tuoi dati chiamando il Comune o recandoti in uno degli %{offices}.
         error_verifying_census_offices: sportello per il Cittadino
-        form_errors: evitaron verificar tu residencia
+        form_errors: non hanno consentito certificare la tua residenza
         postal_code: CAP
-        postal_code_note: Per completare la verifica devi essere residente
-        terms: i termini di accesso
-        title: Verificare residenza
-        verify_residence: Verificare residenza
+        postal_code_note: Per completare la certificazione devi essere residente a Torino. Il CAP deve essere compreso fra 10121 e 10156.
+        terms: "i termini per l'accesso completo"
+        title: Verifica residenza
+        verify_residence: Verifica residenza
     sms:
       create:
         flash:
@@ -80,10 +80,10 @@ it:
         submit_button: Invia
         title: SMS di conferma
       new:
-        phone: Introduci il tuo numero di cellulare (comprensivo di prefisso internazionale) per ricevere il codice
-        phone_format_html: "<strong><em>(Esempio: 00393383456789)</em></strong>"
-        phone_note: Il tuo numero di telefono sarà usato solamente per inviarti il codice, non sarai mai contattato.
-        phone_placeholder: "Esempio: 00393383456789"
+        phone: Introduci il tuo numero di cellulare (con SIM italiana) per ricevere il codice
+        phone_format_html: "<strong><em>(Esempio: 338....)</em></strong>"
+        phone_note: "L'SMS con il codice di verifica può arrivare dopo qualche minuto di attesa. In caso di mancata ricezione, può esserci un problema tecnico, ti chiediamo di riprovare più tardi."
+        phone_placeholder: "Esempio: 338...."
         submit_button: Invia
         title: SMS di conferma
       update:

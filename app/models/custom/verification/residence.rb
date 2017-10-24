@@ -73,6 +73,7 @@ class Verification::Residence
 
   def postal_code_in_torino
     errors.add(:postal_code, I18n.t('verification.residence.new.error_not_allowed_postal_code')) unless valid_postal_code?
+    return if errors.any?
   end
 
   def residence_in_torino
@@ -92,9 +93,18 @@ class Verification::Residence
     end
 
     def residency_valid?
-      val = @census_data.valid? &&
-        (@census_data.postal_code == postal_code || @census_data.postal_code == 'reserved') &&
-        @census_data.date_of_birth == date_of_birth
+      val = true
+      return false unless @census_data.valid?
+
+      if @census_data.postal_code != postal_code && @census_data.postal_code != 'reserved' # CAP='reserved' indica gli utenti a protocollo riservato
+        errors.add(:postal_code, I18n.t('verification.residence.new.error_not_matched_postal_code'))
+        return false
+      end
+
+      if @census_data.date_of_birth != date_of_birth
+        errors.add(:date_of_birth, I18n.t('verification.residence.new.error_not_matched_date_birth'))
+        return false
+      end
 
       if @census_data.status != 'RV' # Residente Vivo
         val = false

@@ -547,11 +547,27 @@ poll = Poll.create(name: "Upcoming Poll",
                    ends_at:   2.months.from_now)
 
 puts " ✅"
+print "Recounting Poll"
+poll = Poll.create(name: "Recounting Poll",
+                   # slug: "recounting-poll",
+                   starts_at: 1.months.ago,
+                   ends_at:   5.days.ago)
+
+puts " ✅"
 print "Expired Poll"
 poll = Poll.create(name: "Expired Poll",
                    # slug: "expired-poll",
                    starts_at: 2.months.ago,
                    ends_at:   1.month.ago)
+
+puts " ✅"
+print "Expired Poll with Stats & Results"
+poll = Poll.create(name: "Expired Poll with Stats & Results",
+                   # slug: "expired-poll-with-stats-and-results",
+                   starts_at: 2.months.ago,
+                   ends_at:   1.month.ago,
+                   results_enabled: true,
+                   stats_enabled: true)
 
 puts " ✅"
 print "Creating Poll Questions"
@@ -638,6 +654,49 @@ print "Creating Poll Voters"
   poll = Poll.all.sample
   user = User.level_two_verified.sample
   Poll::Voter.create(poll: poll, user: user)
+end
+
+puts " ✅"
+print "Creating Poll Recounts"
+
+Poll.all.each do |poll|
+  poll.booth_assignments.each do |booth_assignment|
+    officer_assignment = poll.officer_assignments.first
+    author = Poll::Officer.first.user
+
+    Poll::Recount.create!(officer_assignment: officer_assignment,
+                          booth_assignment: booth_assignment,
+                          author: author,
+                          date: poll.ends_at,
+                          white_amount: rand(0..10),
+                          null_amount: rand(0..10),
+                          total_amount: rand(100..9999),
+                          origin: "booth")
+  end
+end
+
+puts " ✅"
+print "Creating Poll Results"
+
+Poll.all.each do |poll|
+  poll.booth_assignments.each do |booth_assignment|
+    officer_assignment = poll.officer_assignments.first
+    author = Poll::Officer.first.user
+
+    poll.questions.each do |question|
+      question.question_answers.each do |answer|
+        Poll::PartialResult.create!(officer_assignment: officer_assignment,
+                                    booth_assignment: booth_assignment,
+                                    date: Date.current,
+                                    question: question,
+                                    answer: answer.title,
+                                    author: author,
+                                    amount: rand(999),
+                                    origin: "booth")
+      end
+    end
+  end
+
 end
 
 puts " ✅"

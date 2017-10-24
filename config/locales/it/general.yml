@@ -22,26 +22,26 @@ it:
       subscription_to_website_newsletter_label: Ricevi email con informazioni interessanti circa il sito
       email_on_direct_message_label: Ricevi email con messaggi privati
       email_digest_label: Ricevi un riepilogo delle notifiche sulle proposte
-      official_position_badge_label: Mostrar etiqueta de tipo de usuario
+      official_position_badge_label: Mostra etichetta del tipo di utente
       title: Il mio account
       user_permission_debates: Partecipare ai dibattiti
       user_permission_info: Con il tuo account puoi già...
       user_permission_proposal: Creare nuove proposte
       user_permission_support_proposal: Sostenere le proposte*
       user_permission_title: Partecipazione
-      user_permission_verify: Per poter eseguire tutte le azioni occorre verificare la tua utenza.
-      user_permission_verify_info: "* Solo per gli utenti in Anagrafe."
+      user_permission_verify: Per poter eseguire tutte le azioni occorre certificare la propria utenza.
+      user_permission_verify_info: "* Solo per i residenti a Torino certificati."
       user_permission_votes: Partecipare alle votazioni finali*
       username_label: Nome utente
-      verified_account: Utenza verificata
-      verify_my_account: Verifica la mia utenza
+      verified_account: Utenza certificata
+      verify_my_account: Certifica la mia utenza
   application:
     close: Chiudi
     menu: Menu
   comments:
     comments_closed: I commenti sono chiusi
     verified_only: Per partecipare %{verify_account}
-    verify_account: verifica la tua utenza
+    verify_account: certifica la tua utenza
     comment:
       admin: Amministratore
       author: Autore
@@ -204,7 +204,7 @@ it:
       consul_url: https://github.com/consul/consul
       contact_us: Per ottenere assistenza tecnica entra in
       copyright: Consul, %{year}
-      description: Questo portale utilizza %{consul} che è %{open_source}.
+      description: Questo portale utilizza il %{open_source} %{consul} ed è stato realizzato con fondi PON METRO.
       faq: Assistenza tecnica
       open_data_text: Tutti i dati del Comune sono tuoi.
       open_data_title: Dati Aperti
@@ -383,12 +383,12 @@ it:
       section_header:
         icon_alt: Icona delle Proposte
         title: Proposte
-        help: Aiuta sulle proposte
+        help: Aiuto sulle proposte
       section_footer:
-        title: Aiuta sulle proposte
+        title: Aiuto sulle proposte
         description: "Fai una proposta cittadina. Se ottiene gli appoggi sufficienti e passa alla votazione, puoi ottenere che tutti gli abitanti decidano come vogliano che sia la nostra città."
         help_text_1: "Le proposte cittadine rappresentano un'opportunità data agli abitanti e ai collettivi di decidere, in forma diretta, sul come si vuole che sia la propria città. Qualsiasi persona può formulare una proposta su un tema che le interessa o che la preoccupa; se la proposta ottiene gli appoggi sufficienti e passa un referendum cittadino, il Consiglio Comunale la metterà in pratica."
-        help_text_2: "Per creare una proposta bisogna registrarsi su %{org}. Le proposte che raggiungono l'appoggio dell'1% della gente sul sito, passano a votazione. Per appoggiare le proposte è necessario disporre di un account verificato."
+        help_text_2: "Per creare una proposta bisogna registrarsi su %{org}. Le proposte che raggiungono l'appoggio dell'1% della popolazione (residenti a Torino di una età maggiore di 16 anni), passano a votazione. Per appoggiare le proposte è necessario disporre di un account verificato."
         help_text_3: "Si convoca un referendum cittadino quando le proposte raggiungono gli appoggi necessari. Una volta concluso, se c'è più gente a favore di quella contro, il Consiglio Comunale la proposta e la esegue."
     new:
       form:
@@ -409,19 +409,19 @@ it:
         view_proposal: "Adesso no, vai alla proposta"
       improve_info: "Migliora la tua campagna e ottieni più appoggi"
       improve_info_link: "Vedi più informazioni"
-      already_supported: "Hai già sostenuto questa proposta, condividila!"
+      already_supported: "Hai sostenuto questa proposta, condividila!"
       comments:
         one: 1 Commento
         other: "%{count} Commenti"
         zero: Senza commenti
-      reason_for_supports_necessary: 1% del Censo
+      reason_for_supports_necessary: 1% della popolazione (residenti a Torino di una età maggiore di 16 anni)
       support: Sostieni
       support_title: Sostieni questa proposta
       supports:
         one: 1 appoggio
         other: "%{count} appoggi"
         zero: Senza appoggi
-      supports_necessary: "%{number} appoggi necessari"
+      supports_necessary: "%{number} appoggi necessari per passare a votazione"
       total_percent: 100%
       archived: "Questa proposta è stata archiviata e non può più essere sostenuta."
       successful: "Questa proposta ha ottenuto gli appoggi necessari e andrà alla %{voting}."
@@ -466,7 +466,7 @@ it:
       participate_button_incoming: "Più informazioni"
       participate_button_expired: "Votazione terminata"
       no_geozone_restricted: "Tutta la città"
-      geozone_restricted: "Distretti"
+      geozone_restricted: "Circoscrizioni"
       geozone_info: "Possono partecipare le persone residenti in: "
       already_answer: "Hai già partecipato a questa votazione"
       section_header:
@@ -488,7 +488,7 @@ it:
       signin: iniziare la sessione
       signup: registrarsi
       cant_answer_verify_html: "Per cortesia %{verify_link} per poter rispondere."
-      verify_link: "verifica il tuo account"
+      verify_link: "certifica il tuo account"
       cant_answer_incoming: "Questa votazione non è ancora iniziata."
       cant_answer_expired: "Questa votazione è terminata."
       cant_answer_wrong_geozone: "Questa votazione non è disponibile per la tua circoscrizione."
@@ -501,6 +501,7 @@ it:
       videos: "Video esterno"
       info_menu: "Informazione"
       stats_menu: "Statistiche sulla partecipazione"
+      results_menu: "Risultati della votazione"
       stats:
         title: "Dati sulla partecipazione"
         total_participation: "Partecipazione totale"
@@ -512,6 +513,9 @@ it:
         valid: "Validi"
         white: "In bianco"
         null_votes: "Nulli"
+      results:
+        title: "Domande"
+        most_voted_answer: "Risposta più votata: "
   poll_questions:
     create_question: "Crea domanda per la votazione"
     show:
@@ -600,8 +604,8 @@ it:
         see_all: "Mostra tutte"
     tags_cloud:
       tags: Tendenze
-      districts: "Distretti"
-      districts_list: "Elenco dei distretti"
+      districts: "Circoscrizioni"
+      districts_list: "Elenco delle circoscrizioni"
       categories: "Categorie"
     target_blank_html: " (si apre in una nuova finestra)"
     you_are_in: "Ti trovi in"
@@ -665,7 +669,7 @@ it:
     wrong_price_format: Si possono includere solo caratteri numerici
     spending_proposal:
       spending_proposal: Proposta di investimento
-      already_supported: Hai già appoggiato questo progetto. Condividilo!
+      already_supported: Hai appoggiato questo progetto. Condividilo!
       support: Appoggia
       support_title: Appoggia questo progetto
       supports:
@@ -697,7 +701,7 @@ it:
         title: Invia messaggio privato a %{receiver}
         title_label: "Titolo"
         verified_only: Per spedire un messaggio privato %{verify_account}
-        verify_account: verifica il tuo account
+        verify_account: certifica il tuo account
         authenticate: È necessario %{signin} o %{signup}.
         signin: iniziare la sessione
         signup: registrarsi
@@ -749,7 +753,7 @@ it:
     supports: Appoggi
     unauthenticated: È necessario %{signin} o %{signup} per proseguire.
     verified_only: Le proposte possono essere votate solamente da utenti verificati, %{verify_account}.
-    verify_account: verifica il tuo account
+    verify_account: certifica il tuo account
     spending_proposals:
       not_logged_in: È necessario %{signin} o %{signup} per proseguire.
       not_verified: Le proposte di investimento possono essere sostenute solamente da utenti verificati, %{verify_account}.
@@ -790,15 +794,15 @@ it:
       i_dont_have_an_account: Non dispongo di un account, voglio crearne uno e poi verificarlo
       i_have_an_account: Ho già un account che voglio verificare
       question: Hai un account in %{org_name}?
-      title: Verifica account
+      title: Certifica account
     welcome:
-      go_to_index: Adesso no, vedi proposte
+      go_to_index: Adesso no, continua
       title: Inizia a partecipare
       user_permission_debates: Partecipare ai dibattiti
       user_permission_info: Con il tuo account puoi già...
       user_permission_proposal: Creare nuove proposte
       user_permission_support_proposal: Sostenere proposte*
-      user_permission_verify: Per poter compiere tutte le azioni, verifica il tuo account.
+      user_permission_verify: Per poter compiere tutte le azioni, certifica il tuo account.
       user_permission_verify_info: "* Solamente utenti residenti."
       user_permission_verify_my_account: Verificare account
       user_permission_votes: Partecipare alle votazioni finali*

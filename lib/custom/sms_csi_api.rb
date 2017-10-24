@@ -26,15 +26,16 @@ class SMSCsiApi
     res_op
   end
 
-  # phone: deve iniziare con il prefisso internazionale (per l'Italia sono ammessi sia '39' sia '0039'
   def request(phone, text)
     prf = "[#{self.class}" + '::request] '
     Rails.logger.info "#{prf}phone: #{phone}, text: #{text}"
+    phone_iprefix = "0039#{phone}" # deve iniziare con il prefisso internazionale, per l'Italia '0039'
+    Rails.logger.info "#{prf}phone_iprefix: #{phone_iprefix}"
 
     xml_req = "<RICHIESTA_SMS><USERNAME>#{Rails.application.secrets.sms_username}</USERNAME>" \
     "<PASSWORD>#{Rails.application.secrets.sms_password}</PASSWORD>" \
     "<CODICE_PROGETTO>#{Rails.application.secrets.sms_project_code}</CODICE_PROGETTO>" \
-    "<REPLY_DETAIL>none</REPLY_DETAIL><SMS><TELEFONO>#{phone}</TELEFONO><TESTO>#{text}</TESTO>" \
+    "<REPLY_DETAIL>none</REPLY_DETAIL><SMS><TELEFONO>#{phone_iprefix}</TELEFONO><TESTO>#{text}</TESTO>" \
     "<CODIFICA/><TTL/><PRIORITA/><DATA_INVIO/><NOTE>-</NOTE></SMS></RICHIESTA_SMS>"
     xml_req
   end
