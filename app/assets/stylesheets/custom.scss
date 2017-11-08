@@ -30,6 +30,10 @@ header .locale{float:right;}
 	a.logo, .top-bar{color: #204d88!important;}
 	.top-bar .menu>li a {background: #204d88;color: #fff; padding-left: 0;}
 	ul.dropdown{background: #204d88;}
+	.row .row {
+	  margin-left: 0;
+	  margin-right: 0;
+	}
 }
 
 /*---display da medium in su----*/
