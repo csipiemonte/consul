@@ -10,6 +10,19 @@ en:
   layouts:
     footer:
       copyright: DecidiTorino, %{year}
+      logon: How to register    
+      platform: How to use the platform
+      faq: FAQ
+      contacts: Contacts  
+      ponmetro_url: "http://www.ponmetro.it/"
+      ponmetro_alt: PON Metro
+      citta_url: "http://www.comune.torino.it"
+      citta_alt: Comune di Torino     
+      europa_url: "https://ec.europa.eu/info/funding-tenders/european-structural-and-investment-funds_it"
+      europa_alt: European funds
+      ministero_url: "http://www.agenziacoesione.gov.it/it"
+      ministero_alt: Agenzia per la coesione territoriale
+      ponmetro_finanziamento: PONMETRO Project      
     header:
       titolo: Love the city, and it will become a city you love 
       html: There are cities that are governed directly by their inhabitants, who <strong>discuss</strong> the topics they are concerned about, <strong>propose</strong> ideas to improve their lives and <strong>decide</strong> among themselves which ones will be carried out.

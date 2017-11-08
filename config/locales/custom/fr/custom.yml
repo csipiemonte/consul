@@ -10,6 +10,19 @@ fr:
   layouts:
     footer:
       copyright: DecidiTorino, %{year}
+      logon: Come registrarsi    
+      platform: Come usare la piattaforma
+      faq: Domande frequenti
+      contacts: Contatti  
+      ponmetro_url: "http://www.ponmetro.it/"
+      ponmetro_alt: PON Metro
+      citta_url: "http://www.comune.torino.it"
+      citta_alt: Comune di Torino     
+      europa_url: "https://ec.europa.eu/info/funding-tenders/european-structural-and-investment-funds_it"
+      europa_alt: Fondi strutturali e di investimento europei
+      ministero_url: "http://www.agenziacoesione.gov.it/it"
+      ministero_alt: Agenzia per la coesione territoriale
+      ponmetro_finanziamento: Progetto confinanziato da Unione Europea - Fondi strutturali e di investimento europei - Programma Operativo Città Metropolitane 2014 - 2020
     header:
       titolo: La ville que vous aimez sera la ville que vous voulez.
       html: Il y a des villes directement gouvernées par leurs habitants, qui <strong>discutent</strong> des problèmes qui les inquiètent, <strong>proposent</strong> des idées pour améliorer leur vie et <strong>décider</strong> entre elles et tous ceux qui doivent être réalisés.
