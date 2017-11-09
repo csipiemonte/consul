@@ -421,6 +421,10 @@ it:
         one: 1 appoggio
         other: "%{count} appoggi"
         zero: Senza appoggi
+      votes:
+        one: 1 voto
+        other: "%{count} voti"
+        zero: Senza voti
       supports_necessary: "%{number} appoggi necessari per passare a votazione"
       total_percent: 100%
       archived: "Questa proposta è stata archiviata e non può più essere sostenuta."

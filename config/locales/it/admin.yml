@@ -62,6 +62,7 @@ it:
           on_users: Utenti
         title: Attività dei Moderatori
         type: Tipo
+        no_activity: Non ci sono attività dei moderatori.
     budgets:
       index:
         title: Bilanci partecipativi
@@ -264,6 +265,7 @@ it:
           process: Progetto
           debate_phase: Fase preliminare
           allegations_phase: Fase degli allegati
+          proposals_phase: Fase delle proposte
           start: Inizio
           end: Fine
           use_markdown: Usa Markdown per aggiungere la formattazione al testo
@@ -296,6 +298,17 @@ it:
           info: Informazione
           draft_texts: Testo
           questions: Dibattito
+          proposals: Proposte
+      proposals:
+        index:
+          title: Proposte
+          back: Indietro
+        form:
+          header_information: "Intestatario dell'informazione"
+          header_information_description: Proporciona información sobre el recorrido de las propuestas. Este texto se mostrará como una alerta en el encabezado de la sección de Propuestas dentro de este proceso. Usa Markdown per aggiungere la formattazione al testo.
+          header_information_placeholder: Añade información para el encabezado de las las propuestas
+          custom_categories: Categorie
+          custom_categories_description: "Categorie che l'utente può selezionare durante la creazione della proposta."
       draft_versions:
         create:
           notice: 'Bozza creata correttamente. <a href="%{link}">Fai click per vederla</a>'
@@ -382,24 +395,26 @@ it:
     administrators:
       index:
         title: Amministratori
+        name: Nome
+        email: Email
+        no_administrators: Non ci sono amministratori.
       administrator:
         add: Aggiungi come Amministratore
         delete: Elimina
         restricted_removal: "Spiacenti, non puoi eliminarti dall'elenco"
       search:
-        email_placeholder: Cerca utente per email
-        search: Cerca
-        user_not_found: Utente non trovato
+        title: "Amministratori: Ricerca degli utenti"
     managers:
       index:
         title: Gestori
+        name: Nome
+        email: Email
+        no_managers: Non ci sono gestori.
       manager:
         add: Aggiungi come Gestore
         delete: Elimina
       search:
-        email_placeholder: Cerca utente per email
-        search: Cerca
-        user_not_found: Utente non trovato
+        title: 'Gestori: Ricerca degli utenti'
     menu:
       activity: Attività di moderadori
       admin: Menu di amministrazione
@@ -444,13 +459,14 @@ it:
     moderators:
       index:
         title: Moderatori
+        name: Nome
+        email: Email
+        no_moderators: Non ci sono moderatori.
       moderator:
         add: Aggiungi como Moderatore
         delete: Elimina
       search:
-        email_placeholder: Cerca utente per email
-        search: Cerca
-        user_not_found: Utente non trovato
+        title: 'Moderatori: Ricerca degli utenti'
     newsletters:
       index:
         title: Invio delle newsletters
@@ -458,14 +474,16 @@ it:
     valuators:
       index:
         title: Valutatori
+        name: Nome
+        email: Email
+        description: Descrizione
+        no_description: Senza descrizione
+        no_valuators: Non ci sono valutatori.
       valuator:
         description_placeholder: "Descrizione (facoltativa)"
-        user_found: Utente trovato
         add: Aggiungi come valutatore
       search:
-        email_placeholder: Cerca utente per email
-        search: Cerca
-        user_not_found: Utente non trovato
+        title: 'Valutatori: Ricerca degli utenti'
       summary:
         title: Riepilogo della valutazione delle proposte di investimento
         valuator_name: Valutatore
@@ -705,6 +723,10 @@ it:
         official_updated: Dati dell'incarico pubblico salvati
       index:
         title: Incarichi Pubblici
+        no_officials: Non ci sono incarichi pubblici.
+        name: Nome
+        official_position: Incarico pubblico
+        official_level: Livello
       level_0: Non è un incarico pubblico
       level_1: Livello 1
       level_2: Livello 2
@@ -715,6 +737,7 @@ it:
         edit_official: Modifica incarico pubblico
         make_official: Converti in incarico pubblico
         title: 'Incarichi Pubblici: Ricerca degli utenti'
+        no_results: Non sono stati trovati incarichi pubblici.
     organizations:
       index:
         filter: Filtro
@@ -726,6 +749,12 @@ it:
         hidden_count_html:
           one: "È inoltre presente <strong>una organizzazione</strong> senza utente o con l'utente bloccato."
           other: "Sono presenti <strong>%{count} organizzazioni</strong> senza utente o con l'utente bloccato."
+        name: Nome
+        email: Email
+        phone_number: Telefono
+        responsible_name: Responsabile
+        status: Stato
+        no_organizations: Non ci sono organizzazioni.
         reject: Rifiuta
         rejected: Rifiutata
         search: Cerca
@@ -733,8 +762,10 @@ it:
         title: Organizzazioni
         verified: Verificata
         verify: Verifica
+        pending: In attesa
       search:
         title: Cerca Organizzazioni
+        no_results: Non sono state trovate organizzazioni.
     proposals:
       index:
         filter: Filtro
@@ -950,6 +981,7 @@ it:
         verification_level: Livello di verifica
       index:
         title: Utenti
+        no_users: Non ci sono utenti.
       search:
         placeholder: Cerca utente per email, nome o DNI
         search: Cerca

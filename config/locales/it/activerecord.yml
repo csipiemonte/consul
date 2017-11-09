@@ -31,6 +31,12 @@ it:
       administrator:
         one: "Amministratore"
         other: "Amministratori"
+      valuator:
+        one: "Valutatore"
+        other: "Valutatori"
+      manager:
+        one: "Gestore"
+        other: "Gestori"
       vote:
         one: "Voto"
         other: "Voti"
