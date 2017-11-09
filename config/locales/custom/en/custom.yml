@@ -18,10 +18,10 @@ en:
       ponmetro_alt: PON Metro
       citta_url: "http://www.comune.torino.it"
       citta_alt: Comune di Torino     
-      europa_url: "https://ec.europa.eu/info/funding-tenders/european-structural-and-investment-funds_it"
+      europa_url: "https://ec.europa.eu/info/funding-tenders/european-structural-and-investment-funds_en"
       europa_alt: European funds
       ministero_url: "http://www.agenziacoesione.gov.it/it"
-      ministero_alt: Agenzia per la coesione territoriale
+      ministero_alt: Agency for Territorial Cohesion
       ponmetro_finanziamento: PONMETRO Project      
     header:
       titolo: Love the city, and it will become a city you love 

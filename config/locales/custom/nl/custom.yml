@@ -10,19 +10,19 @@ nl:
   layouts:
     footer:
       copyright: DecidiTorino, %{year}
-      logon: Come registrarsi    
-      platform: Come usare la piattaforma
-      faq: Domande frequenti
-      contacts: Contatti  
+      logon: Hoe te registreren   
+      platform: Hoe het platform te gebruiken
+      faq: FAQ
+      contacts: Contacten  
       ponmetro_url: "http://www.ponmetro.it/"
       ponmetro_alt: PON Metro
       citta_url: "http://www.comune.torino.it"
       citta_alt: Comune di Torino     
-      europa_url: "https://ec.europa.eu/info/funding-tenders/european-structural-and-investment-funds_it"
-      europa_alt: Fondi strutturali e di investimento europei
+      europa_url: "https://ec.europa.eu/info/funding-tenders/european-structural-and-investment-funds_nl"
+      europa_alt: Europese structuur- en investeringsfondsen
       ministero_url: "http://www.agenziacoesione.gov.it/it"
-      ministero_alt: Agenzia per la coesione territoriale
-      ponmetro_finanziamento: Progetto confinanziato da Unione Europea - Fondi strutturali e di investimento europei - Programma Operativo Città Metropolitane 2014 - 2020      
+      ministero_alt: Agentschap voor territoriale cohesie
+      ponmetro_finanziamento: Project toegekend door Europese Unie - Europese structuur- en investeringsfondsen - Operationeel programma Metropolitan Cities 2014 - 2020      
     header:
       titolo: De stad waar u van houdt zal de stad zijn die u wilt.
       html: Er zijn steden die rechtstreeks door hun bewoners worden geregeerd, die kwesties bespreken die ze bezorgd hebben, ideeën voorstellen om hun leven te verbeteren en te beslissen onderling en alles wat gerealiseerd moet worden.
