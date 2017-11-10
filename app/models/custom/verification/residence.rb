@@ -17,6 +17,7 @@ class Verification::Residence
   validate :allowed_age
   validate :document_number_uniqueness
 
+  validate :codice_fiscale_syntax
   validate :postal_code_in_torino
   validate :residence_in_torino
 
@@ -71,6 +72,11 @@ class Verification::Residence
     @census_data.gender
   end
 
+  def codice_fiscale_syntax
+    errors.add(:document_number, I18n.t('verification.residence.new.error_syntax_codice_fiscale')) unless valid_codice_fiscale?
+    return if errors.any?
+  end
+
   def postal_code_in_torino
     errors.add(:postal_code, I18n.t('verification.residence.new.error_not_allowed_postal_code')) unless valid_postal_code?
     return if errors.any?
@@ -96,7 +102,9 @@ class Verification::Residence
       val = true
       return false unless @census_data.valid?
 
-      if @census_data.postal_code != postal_code && @census_data.postal_code != 'reserved' # CAP='reserved' indica gli utenti a protocollo riservato
+      if @census_data.postal_code != postal_code && postal_code.to_i != 10100 && @census_data.postal_code != 'reserved'
+        # CAP=10100 qualora l'utente abbia inserito il CAP generico di Torino -> controllo non eseguito
+        # CAP='reserved' indica gli utenti a protocollo riservato
         errors.add(:postal_code, I18n.t('verification.residence.new.error_not_matched_postal_code'))
         return false
       end
@@ -117,8 +125,45 @@ class Verification::Residence
       self.document_number = document_number.gsub(/[^a-z0-9]+/i, "").upcase if document_number.present?
     end
 
+    def valid_codice_fiscale?
+      setdisp = [1, 0, 5, 7, 9, 13, 15, 17, 19, 21, 2, 4, 18, 20, 11, 3, 6, 8, 12, 14, 16, 10, 22, 25, 24, 23]
+      ord_zero = '0'.ord
+      ord_a = 'A'.ord
+
+      return false if document_number.length != 16
+
+      codice_fiscale = document_number.upcase
+      match = /^[0-9A-Z]{16}$/.match(codice_fiscale)
+
+      return false if match.nil? # il codice fiscale contiene caratteri non validi
+
+      s = 0
+      (1...14).step(2).each do |i|
+        c = codice_fiscale[i]
+        if c.scan(/\D/).empty?
+          s += c.ord - ord_zero
+        else
+          s += c.ord - ord_a
+        end
+      end
+
+      (0...15).step(2).each do |i|
+        c = codice_fiscale[i]
+        if c.scan(/\D/).empty?
+          c = c.ord - ord_zero
+        else
+          c = c.ord - ord_a
+        end
+        s += setdisp[c]
+      end
+
+      return false if (s % 26 + ord_a != codice_fiscale[15].ord)
+
+      true
+    end
+
     # metodo privato per verificare che il CAP inserito appartenga a Torino
     def valid_postal_code?
-      postal_code.to_i >= 10121 && postal_code.to_i <= 10156
+      (postal_code.to_i >= 10121 && postal_code.to_i <= 10156) || postal_code.to_i == 10100
     end
 end

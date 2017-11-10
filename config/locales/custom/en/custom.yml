@@ -42,8 +42,9 @@ en:
           codice_fiscale: Fiscal Code
         error_not_matched_date_birth: The date of birth entered does not coincide with the one in the Register.
         error_not_matched_postal_code: The postal code typed does not match the one in the Register.
-        error_verifying_census: "It was not possible to verify your data in Register. Please check the data you entered and repeat the operation."
         error_not_resident: "User not resident"
+        error_syntax_codice_fiscale: The entered Fiscal Code is invalid.
+        error_verifying_census: "It was not possible to verify your data in Register. Please check the data you entered and repeat the operation."
     sms:
       read:
         verification_code: "DecidiTorino - Verification code: "

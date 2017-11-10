@@ -60,12 +60,12 @@ it:
           spanish_id: Carta di Identità
         document_type_label: Tipo di documento
         error_not_allowed_age: "No hai l'età minima per partecipare"
-        error_not_allowed_postal_code: Per completare la certificazione devi essere residente a Torino. Il CAP deve essere compreso fra 10121 e 10156.
+        error_not_allowed_postal_code: Per completare la certificazione devi essere residente a Torino. Nel campo CAP si può inserire 10100 o un valore compreso fra 10121 e 10156. 
         error_verifying_census: Non è stato possibile verificare in Anagrafe i tuoi dati. Per favore, conferma la correttezza dei tuoi dati chiamando il Comune o recandoti in uno degli %{offices}.
         error_verifying_census_offices: sportello per il Cittadino
-        form_errors: non hanno consentito certificare la tua residenza
+        form_errors: hanno impedito la certificazione della residenza
         postal_code: CAP
-        postal_code_note: Per completare la certificazione devi essere residente a Torino. Il CAP deve essere compreso fra 10121 e 10156.
+        postal_code_note: Per completare la certificazione devi essere residente a Torino. Nel campo CAP si può inserire 10100 o un valore compreso fra 10121 e 10156.
         terms: "i termini per l'accesso completo"
         title: Verifica residenza
         verify_residence: Verifica residenza

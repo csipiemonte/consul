@@ -42,8 +42,9 @@ pt-BR:
           codice_fiscale: Código Tributário
         error_not_matched_date_birth: A data de nascimento inserida não coincide com a do Registro.
         error_not_matched_postal_code: O código postal digitado não corresponde ao do Registro.
-        error_verifying_census: "Não foi possível verificar seus dados no Registro. Verifique os dados que você inseriu e repita a operação."
         error_not_resident: "Usuário não residente"
+        error_syntax_codice_fiscale: O código tributário inserido é inválido.
+        error_verifying_census: "Não foi possível verificar seus dados no Registro. Verifique os dados que você inseriu e repita a operação."
     sms:
       read:
         verification_code: "DecidiTorino - Código de verificação: "

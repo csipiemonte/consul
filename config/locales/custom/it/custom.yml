@@ -42,8 +42,9 @@ it:
           codice_fiscale: Codice Fiscale
         error_not_matched_date_birth: La data di nascita inserita non coincide con quella presente in Anagrafe.
         error_not_matched_postal_code: Il CAP digitato non coincide con quello presente in Anagrafe.
-        error_verifying_census: "Non è stato possibile verificare in Anagrafe i tuoi dati. Per favore, controlla i dati inseriti e ripeti l'operazione."
         error_not_resident: "Utente non residente"
+        error_syntax_codice_fiscale: Il Codice Fiscale inserito non è valido.
+        error_verifying_census: "Non è stato possibile verificare in Anagrafe i tuoi dati. Per favore, controlla i dati inseriti e ripeti l'operazione."
     sms:
       read:
         verification_code: "DecidiTorino - Codice di verifica: "

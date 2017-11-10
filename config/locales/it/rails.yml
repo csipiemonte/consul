@@ -123,7 +123,7 @@ it:
       taken: è già in uso
       too_long: è troppo lungo (numero massimo di caratteri %{count})
       too_short: è troppo corto (numero minimo di caratteri %{count})
-      wrong_length: no tiene la longitud correcta (%{count} caracteres exactos)
+      wrong_length: lunghezza errata (massimo %{count} caratteri)
       other_than: deve essere diverso da %{count}
       invalid_date: "non è una data valida"
     template:

@@ -103,7 +103,7 @@ it:
         save_heading: Salva voce
         no_heading: A questo gruppo non è stata ancora assegnata una voce.
         table_heading: Voce
-        table_amount: Quantità
+        table_amount: Importo
         table_population: Popolazione
       winners:
         calculate: Calcola proposte vincitrici
@@ -117,7 +117,7 @@ it:
         filters:
           valuation_open: Aperte
           without_admin: Senza amministratore
-          managed: Gestionando
+          managed: In elaborazione
           valuating: In valutazione
           valuation_finished: Valutazione terminata
           valuation_finished_feasible: Realizzabili
@@ -305,8 +305,8 @@ it:
           back: Indietro
         form:
           header_information: "Intestatario dell'informazione"
-          header_information_description: Proporciona información sobre el recorrido de las propuestas. Este texto se mostrará como una alerta en el encabezado de la sección de Propuestas dentro de este proceso. Usa Markdown per aggiungere la formattazione al testo.
-          header_information_placeholder: Añade información para el encabezado de las las propuestas
+          header_information_description: "Fornisci informazioni sul percorso delle proposte. Questo testo sarà visualizzato, sotto forma di avviso, al responsabile della sezione Proposte all'interno di questo processo. Usa Markdown per aggiungere la formattazione al testo."
+          header_information_placeholder: Aggiungi informazioni per il responsabile delle proposte
           custom_categories: Categorie
           custom_categories_description: "Categorie che l'utente può selezionare durante la creazione della proposta."
       draft_versions:
@@ -454,7 +454,7 @@ it:
       title_profiles: Profili
       title_banners: Banners
       title_site_customization: Personalizzare sito
-      legislation: Legislazione collaborativa
+      legislation: Progetti
       users: Utenti
     moderators:
       index:
@@ -829,7 +829,7 @@ it:
         filters:
           valuation_open: Aperte
           without_admin: Senza amministratore
-          managed: Gestionando
+          managed: In elaborazione
           valuating: In valutazione
           valuation_finished: Valutazione terminata
           all: Tutte
@@ -890,8 +890,8 @@ it:
       errors:
         form:
           error:
-            one: "errore non ha consentito salvare la circoscrizione"
-            other: "errori non hanno consentito salvare la circoscrizione."
+            one: "errore ha impedito di memorizzare la circoscrizione"
+            other: "errori hanno impedito di memorizzare la circoscrizione."
       edit:
         form:
           submit_button: Salva modifiche

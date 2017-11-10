@@ -42,8 +42,9 @@ es:
           codice_fiscale: DNF
         error_not_matched_date_birth: La fecha de nacimiento ingresada no coincide con la del Padrón.
         error_not_matched_postal_code: El código postal escrito no coincide con el del Padrón.
-        error_verifying_census: "No ha sido posible comprobar tu DNF. Por favor, revisa tus datos y repite la operación."
         error_not_resident: "El usuario no está empadronado"
+        error_syntax_codice_fiscale: DNF incorrecto.
+        error_verifying_census: "No ha sido posible comprobar tu DNF. Por favor, revisa tus datos y repite la operación."
     sms:
       read:
         verification_code: "DecidiTorino - Código de verificación: "

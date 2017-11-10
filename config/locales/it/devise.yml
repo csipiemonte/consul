@@ -64,6 +64,6 @@ it:
       not_found: "non è stato trovato."
       not_locked: "non era bloccato."
       not_saved:
-        one: "1 errore non ha consentito salvare questo %{resource}:"
-        other: "%{count} errori non hanno consentito salavare questo %{resource}:"
+        one: "1 errore ha impedito di salvare questo %{resource}:"
+        other: "%{count} errori hanno impedito di salvare questo %{resource}:"
       equal_to_current_password: "non deve essere identica alla password attuale"

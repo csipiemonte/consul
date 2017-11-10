@@ -72,7 +72,7 @@ it:
     titles:
       accessibility: Accesibilità
       conditions: "Condizioni d'uso"
-      more_info: "Più informazioni su %{org_name}"
+      more_info: "Scopri %{org_name}"
       privacy: Politica della Privacy
     verify:
       code: Codice che hai ricevuto nella lettera
