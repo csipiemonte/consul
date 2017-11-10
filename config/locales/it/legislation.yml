@@ -60,7 +60,7 @@ it:
       index:
         filters:
           open: Progetti attivi
-          next: Prossimamente
+          next: A breve
           past: Terminati
         no_open_processes: Non ci sono progetti attivi
         no_next_processes: Non ci sono progetti pianificati

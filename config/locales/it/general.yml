@@ -463,7 +463,7 @@ it:
     index:
       filters:
         current: "Aperte"
-        incoming: "Prossimamente"
+        incoming: "A breve"
         expired: "Terminate"
       title: "Votazioni"
       participate_button: "Partecipa a questa votazione"
