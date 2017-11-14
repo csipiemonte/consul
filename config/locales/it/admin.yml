@@ -1,11 +1,10 @@
----
 it:
   admin:
     header:
       title: Amministrazione
     actions:
       actions: Azioni
-      confirm: "Sei sicuro?"
+      confirm: 'Sei sicuro?'
       confirm_hide: Conferma
       hide: Nascondi
       hide_author: "Nascondi l'autore"
@@ -27,8 +26,8 @@ it:
         preview: Anteprima
       banner:
         title: Titolo
-        description:  Descrizione
-        target_url:  link
+        description: Descrizione
+        target_url: Link
         style: Stile
         image: Immagine
         post_started_at: Inizio della pubblicazione
@@ -41,7 +40,7 @@ it:
         form:
           error:
             one: "errore non ha permesso salvare il banner"
-            other: "errori non hanno permesso salvare il banner."
+            other: 'errori non hanno permesso salvare il banner.'
       new:
         creating: Creare banner
     activity:
@@ -80,7 +79,7 @@ it:
         edit_groups: Modifica grupppi di voci
         edit_budget: Modifica bilancio
       create:
-        notice: Nuovo bilancio partecipativo creato con successo!
+        notice: 'Nuovo bilancio partecipativo creato con successo!'
       update:
         notice: Bilancio partecipativo aggiornato con successo
       edit:
@@ -122,7 +121,7 @@ it:
           valuation_finished: Valutazione terminata
           valuation_finished_feasible: Realizzabili
           selected: Selezionate
-          winners: vincitrici
+          winners: Vincitrici
           all: Tutte
         title: Proposte di investimento
         assigned_admin: Amministratore assegnato
@@ -148,7 +147,7 @@ it:
         assigned_admin: Amministratore assegnato
         assigned_valuators: Valutatori assegnati
         classification: Classifica
-        info: "%{budget_name} - Gruppo: %{group_name} - Proposta di investimento %{id}"
+        info: '%{budget_name} - Gruppo: %{group_name} - Proposta di investimento %{id}'
         edit: Modifica
         edit_classification: Modifica classifica
         by: Autore
@@ -170,7 +169,7 @@ it:
           "true": Selezionato
           "false": Non selezionato
         winner:
-          title: Vincitore
+          title: Vincitrice
           "true": "Si"
           "false": "No"
       edit:
@@ -392,18 +391,6 @@ it:
           comments_count: Numero di commenti
         question_option_fields:
           remove_option: Elimina
-    administrators:
-      index:
-        title: Amministratori
-        name: Nome
-        email: Email
-        no_administrators: Non ci sono amministratori.
-      administrator:
-        add: Aggiungi come Amministratore
-        delete: Elimina
-        restricted_removal: "Spiacenti, non puoi eliminarti dall'elenco"
-      search:
-        title: "Amministratori: Ricerca degli utenti"
     managers:
       index:
         title: Gestori
@@ -419,16 +406,16 @@ it:
       activity: Attività di moderadori
       admin: Menu di amministrazione
       banner: Gestire banners
-      proposals_topics: Temi delle proposte
       poll_questions: Domande delle votazioni
+      proposals_topics: Temi delle proposte
       budgets: Bilanci partecipativi
       geozones: Gestire circoscrizioni
       hidden_comments: Commenti nascosti
       hidden_debates: Dibattiti nascosti
       hidden_proposals: Proposte nascoste
       hidden_users: Utenti bloccati
-      managers: Gestori
       administrators: Amministratori
+      managers: Gestori
       moderators: Moderatori
       newsletter: Invio della Newsletters
       valuators: Valutatori
@@ -456,6 +443,18 @@ it:
       title_site_customization: Personalizzare sito
       legislation: Progetti
       users: Utenti
+    administrators:
+      index:
+        title: Amministratori
+        name: Nome
+        email: Email
+        no_administrators: Non ci sono amministratori.
+      administrator:
+        add: Aggiungi come Amministratore
+        delete: Elimina
+        restricted_removal: "Spiacenti, non puoi eliminarti dall'elenco"
+      search:
+        title: 'Amministratori: Ricerca degli utenti'
     moderators:
       index:
         title: Moderatori
@@ -480,7 +479,7 @@ it:
         no_description: Senza descrizione
         no_valuators: Non ci sono valutatori.
       valuator:
-        description_placeholder: "Descrizione (facoltativa)"
+        description_placeholder: 'Descrizione (facoltativa)'
         add: Aggiungi come valutatore
       search:
         title: 'Valutatori: Ricerca degli utenti'
@@ -571,8 +570,8 @@ it:
         results: "Risultati"
         date: "Data"
         count_final: "Riconteggio finale (presidente di seggio)"
-        count_by_system:  "Voti (automatico)"
-        total_system: "Voti totali accumulati(automatico)"
+        count_by_system: "Voti (automatico)"
+        total_system: Voti totali accumulati(automatico)
       index:
         booths_title: "Elenco delle urne assegnate"
         no_booths: "Non ci sono urne assegnate a questa votazione."
@@ -613,8 +612,8 @@ it:
         title: "Domande delle votazioni"
         create: "Crea domanda cittadina"
         no_questions: "Non sono presenti domande cittadine."
-        filter_poll: "Filtra per votazione"
-        select_poll: "Seleziona votazione"
+        filter_poll: Filtra per votazione
+        select_poll: Seleziona votazione
         questions_tab: "Domande"
         successful_proposals_tab: "Proposte che hanno superator il quorum"
         create_question: "Crea domanda per la votazione"
@@ -651,8 +650,6 @@ it:
     answers:
       new:
         title: Nuova risposta
-        video_url: Video esterno
-        documents: Documenti (1)
       show:
         title: Titolo
         description: Descrizione
@@ -683,9 +680,9 @@ it:
         title: "Resultati"
         no_results: "Non ci sono risultati"
       result:
-        table_whites: Schede totalmente bianche
-        table_nulls: Schede nulle
-        table_total: Schede totali
+        table_whites: "Schede totalmente bianche"
+        table_nulls: "Schede nulle"
+        table_total: "Schede totali"
         table_answer: Risposta
         table_votes: Voti
       results_by_booth:
@@ -818,8 +815,8 @@ it:
       search_results: "Risultati della ricerca"
       no_search_results: "Nessun risultato."
       actions: Azioni
-      title: "Titolo"
-      description: "Descrizione"
+      title: Titolo
+      description: Descrizione
     spending_proposals:
       index:
         geozone_filter_all: Tutti gli ambiti di attuazione
@@ -848,7 +845,7 @@ it:
         assigned_valuators: Valutatori assegnati
         back: Indietro
         classification: Classifica
-        heading: Proposta di investimento %{id}
+        heading: "Proposta di investimento %{id}"
         edit: Modifica
         edit_classification: Modifica classifica
         association_name: Associazione
@@ -891,7 +888,7 @@ it:
         form:
           error:
             one: "errore ha impedito di memorizzare la circoscrizione"
-            other: "errori hanno impedito di memorizzare la circoscrizione."
+            other: 'errori hanno impedito di memorizzare la circoscrizione.'
       edit:
         form:
           submit_button: Salva modifiche

@@ -1,4 +1,3 @@
----
 it:
   mailers:
     no_reply: "Questo messaggio è stato inviato da un indirizzo di posta elettronica che non accetta risposte."
@@ -23,7 +22,7 @@ it:
       title: Nuova risposta al tuo commento
     unfeasible_spending_proposal:
       hi: "Gentile utente,"
-      new_html: "In ragione di ciò, ti invitiamo a elaborare una <strong>nuova proposta</strong> che sia conforme alle condizioni di questo processo. Tale operazione può essere portata a termine facendo click: %{url}."
+      new_html: 'In ragione di ciò, ti invitiamo a elaborare una <strong>nuova proposta</strong> che sia conforme alle condizioni di questo processo. Tale operazione può essere portata a termine facendo click su: %{url}.'
       new_href: "nuovo progetto di investimento"
       reconsider_html: "Se credi che la proposta rifiutata abbia i requisiti per restare una proposta di investimento, potrai comunicarlo, entro 48 ore, alla email proposte@deciditorino.it, indicando nell'oggetto della email il codice della proposta %{code}, necessario per il corretto processamento della tua richiesta."
       sincerely: "Cordiali saluti"
@@ -31,6 +30,16 @@ it:
       sorry: "Ci scusiamo per l'inconveniente e ancora grazie per la tua preziosa partecipazione."
       subject: "Il tuo progetto di investimento '%{code}' è stato contrassegnato come non realizzabile"
       unfeasible_html: "Il Consiglio Comunale ringrazia calorosamente per la partecipazione ai <strong>Bilanci Partecipativi</strong>. Ci dispiace informarti che la tua proposta <strong>'%{title}'</strong> resterà esclusa da questo processo partecipativo per il seguente motivo:"
+    budget_investment_unfeasible:
+      hi: "Stimato utente,"
+      new_html: 'In ragione di ciò, ti invitiamo ad elaborare un <strong>nuovo progetto di spesa</strong> che sia conforme alle condizioni di questo processo. Tale operazione può essere portata a termine facendo click su: %{url}.'
+      new_href: "nuova proposta di investimento"
+      reconsider_html: "Se credi che il progetto rifiutato abbia i requisiti per continuare ad essere un progetto di spesa, potrai comunicarlo, entro 48 ore, alla email proposte@deciditorino.it, indicando nell'oggetto della email il codice del progetto %{code}, necessario per il corretto processamento della tua richiesta."
+      sincerely: "Cordiali saluti"
+      signatory: "DIREZIONE GENERALE DELLA PARTECIPAZIONE CITTADINA"
+      sorry: "Ci dispiace per l'inconveniente e ringraziamo di nuovo per la partecipazione."
+      subject: "La tua proposta di investimento '%{code}' è stata contrassegnata come non realizzabile"
+      unfeasible_html: "Il Consiglio Comunale ringrazia calorosamente per la partecipazione ai <strong>Bilanci Partecipativi</strong>. Ci dispiace informarti che il tuo progetto <strong>'%{title}'</strong> resterà escluso da questo processo partecipativo per il seguente motivo:"
     proposal_notification_digest:
       info: "Di seguito ti mostriamo le nuove notifiche che hanno pubblicato gli autori delle proposte che stai sostenendo su %{org_name}."
       title: "Notifiche delle proposte su %{org_name}"
@@ -63,16 +72,6 @@ it:
       sincerely: "Cordiali saluti,"
       signatory: "DIREZIONE GENERALE DELLA PARTECIPAZIONE CITTADINA"
       share: "Condividi il tuo progetto"
-    budget_investment_unfeasible:
-      hi: "Stimato utente,"
-      new_html: "In ragione di ciò, ti invitiamo ad elaborare un <strong>nuovo progetto di spesa</strong> che sia conforme alle condizioni di questo processo. Tale operazione può essere portata a termine facendo click su: %{url}."
-      new_href: "nuova proposta di investimento"
-      reconsider_html: "Se credi che il progetto rifiutato abbia i requisiti per continuare ad essere un progetto di spesa, potrai comunicarlo, entro 48 ore, alla email proposte@deciditorino.it, indicando nell'oggetto della email il codice del progetto %{code}, necessario per il corretto processamento della tua richiesta."
-      sincerely: "Cordiali saluti"
-      signatory: "DIREZIONE GENERALE DELLA PARTECIPAZIONE CITTADINA"
-      sorry: "Ci dispiace per l'inconveniente e ringraziamo di nuovo per la partecipazione."
-      subject: "La tua proposta di investimento '%{code}' è stata contrassegnata come non realizzabile"
-      unfeasible_html: "Il Consiglio Comunale ringrazia calorosamente per la partecipazione ai <strong>Bilanci Partecipativi</strong>. Ci dispiace informarti che il tuo progetto <strong>'%{title}'</strong> resterà escluso da questo processo partecipativo per il seguente motivo:"
     budget_investment_selected:
       subject: "Il tuo progetto di investimento '%{code}' è stato selezionato"
       hi: "Stimato utente"

@@ -43,15 +43,15 @@ it:
       organization:
         one: "Organizzazione"
         other: "Organizzazioni"
-      proposal:
-        one: "Proposta cittadina"
-        other: "Proposte cittadine"
       poll/booth:
         one: "urna"
         other: "urne"
       poll/officer:
         one: "presidente di seggio"
         other: "presidenti di seggio"
+      proposal:
+        one: "Proposta cittadina"
+        other: "Proposte cittadine"
       spending_proposal:
         one: "Proposta di spesa"
         other: "Proposte di spesa"
@@ -65,11 +65,11 @@ it:
         one: Blocco di contenuto proprio
         other: Blocchi di contenuto proprio
       legislation/process:
-          one: "Progetto"
-          other: "Progetti"
+        one: "Progetto"
+        other: "Progetti"
       legislation/draft_versions:
-          one: "Versione in bozza"
-          other: "Versioni in bozza"
+        one: "Versione in bozza"
+        other: "Versioni in bozza"
       legislation/draft_texts:
         one: "Bozza"
         other: "Bozze"
@@ -101,20 +101,21 @@ it:
         phase: "Fase"
         currency_symbol: "Valuta"
       budget/investment:
-        administrator_id: "Amministratore"
-        description: "Descrizione"
-        external_url: "Link alla documentazione aggiuntiva"
         heading_id: "Voce di bilancio"
         title: "Titolo"
+        description: "Descrizione"
+        external_url: "Link alla documentazione aggiuntiva"
         location: "Ubicazione"
+        administrator_id: "Amministratore"
         organization_name: "Se stai proponendo a nome di una organizzazione o collettivo, scrivine il nome"
         image: "Immagine descrittiva della proposta di investimento"
-      comment:
-        body: "Commento"
-        user: "Utente"
+        image_title: "Titolo dell'immagine"
       budget/investment/milestone:
         title: "Titolo"
         description: "Descrizione"
+      comment:
+        body: "Commento"
+        user: "Utente"
       debate:
         author: "Autore"
         description: "Opinione"
@@ -127,7 +128,7 @@ it:
         description: "Descrizione"
         terms_of_service: "Termini di servizio"
       user:
-        login: Email o nome utente
+        login: "Email o nome utente"
         email: "Email"
         username: "Nome utente"
         password_confirmation: "Ripeti password"

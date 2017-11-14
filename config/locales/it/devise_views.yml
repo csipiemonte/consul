@@ -1,4 +1,3 @@
----
 it:
   devise_views:
     confirmations:
@@ -51,7 +50,7 @@ it:
           title: Registrarsi como organizzazione / collettivo
         success:
           back_to_index: "Ho capito, torna alla pagina principale"
-          instructions_1_html: Tra breve <b>ti contatteremo</b> per verificare che rappresenti realmente questo collettivo.
+          instructions_1_html: "Tra breve <b>ti contatteremo</b> per verificare che rappresenti realmente questo collettivo."
           instructions_2_html: Mentre <b>controlli la tua posta elettronica</b>, ti abbiamo inviato un <b>link per confermare il tuo account</b>.
           instructions_3_html: Una volta confermato, potrai iniziare a partecipare come collettivo non verificato.
           thank_you_html: Grazie per avere registrato il tuo collettivo sul sito. Adesso si trova <b>in attesa di verifica</b>.
@@ -65,11 +64,11 @@ it:
       new:
         email_label: Email
         send_submit: Ricevere istruzioni
-        title: "Hai dimenticato la password?"
+        title: 'Hai dimenticato la password?'
     sessions:
       new:
         login_label: Email o nome utente
-        password_label: Password
+        password_label: Password che userai per accedere a questo sito web
         remember_me: Ricordami
         submit: Login
         title: Login
@@ -77,10 +76,10 @@ it:
       links:
         login: Login
         new_confirmation: "Non hai ricevuto le istruzioni per confermare l'account?"
-        new_password: "Hai dimenticato la password?"
-        new_unlock: "Non hai ricevuto le istruzioni per eseguire lo sblocco?"
+        new_password: 'Hai dimenticato la password?'
+        new_unlock: 'Non hai ricevuto le istruzioni per eseguire lo sblocco?'
         signin_with_provider: Entra con %{provider}
-        signup: "Non hai un account? %{signup_link}"
+        signup: 'Non hai un account? %{signup_link}'
         signup_link: Registrati
     unlocks:
       new:
@@ -92,12 +91,12 @@ it:
         delete_form:
           erase_reason_label: Motivo della cancellazione
           info: Non è possibile annullare questa operazione. Una volta disicritto, non potrai più eseguire il login con la tua utenza attuale.
-          info_reason: Se vuoi, scrivi il perché intendi cancellarti (facoltativo).
+          info_reason: Se vuoi, scrivi il perché intendi cancellarti (facoltativo)
           submit: Cancellare il mio account
           title: Cancellare il mio account
         edit:
           current_password_label: Password attuale
-          edit: Modifica
+          edit: Modifica proposta
           email_label: Email
           leave_blank: Lasciare vuoto se non si desidera cambiarla
           need_current: La password attuale è necessaria per confermare le modifiche
@@ -108,7 +107,7 @@ it:
         new:
           cancel: Annulla login
           email_label: Email
-          organization_signup: "Rappresenti una organizzazione o un collettivo? %{signup_link}"
+          organization_signup: 'Rappresenti una organizzazione o un collettivo? %{signup_link}'
           organization_signup_link: Registrati qui
           password_confirmation_label: Ripeti la password
           password_label: Password (minimo 8 caratteri)
@@ -118,8 +117,8 @@ it:
           terms_link: condizioni di uso
           terms_title: Registrandoti accetti le condizioni di uso
           title: Registrazione
-          username_is_available: "Nome utente disponibile"
-          username_is_not_available: "Nome utente già in uso"
+          username_is_available: Nome utente disponibile
+          username_is_not_available: Nome utente già in uso
           username_label: Nome utente
           username_note: Nome pubblico che apparirà nelle tue pubblicazioni
         success:

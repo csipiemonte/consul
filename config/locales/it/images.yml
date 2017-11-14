@@ -1,23 +1,20 @@
 it:
   images:
     remove_image: Elimina immagine
-
     form:
       title: Immagine descrittiva
+      title_placeholder: "Aggiungi un titolo descrittivo dell'immagine"
       attachment_label: Seleziona una immagine
       delete_button: Elimina immagine
-      note: "Puoi allegare una immagine nei formati: %{accepted_content_types}, di dimensione fino a %{max_file_size} MB per file."
+      note: 'È possibile allegare una immagine nei formati: %{accepted_content_types}, di dimensione fino a %{max_file_size} MB per file.'
       add_new_image: Aggiungi immagine
-      title_placeholder: "Aggiungi un titolo descrittivo dell'immagine"
       admin_title: "Immagine principale della votazione"
       admin_alt_text: "Testo alternativo per l'immagine"
-
     actions:
       destroy:
         notice: "L'immagine è stata eliminata con successo."
         alert: "Non è stato possibile eliminare l'immagine."
         confirm: "Confermi l'eliminazione dell'immagine? Non è possibile annullare l'operazione!"
-
     errors:
       messages:
         in_between: deve stare fra %{min} e %{max}

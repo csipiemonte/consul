@@ -1,4 +1,3 @@
----
 it:
   account:
     show:
@@ -48,14 +47,14 @@ it:
       deleted: Questo commento è stato eliminato
       moderator: Moderatore
       responses:
+        zero: Senza risposte
         one: 1 Risposta
         other: "%{count} Risposte"
-        zero: Senza risposte
       user_deleted: Utente rimosso
       votes:
+        zero: Senza voti
         one: 1 voto
         other: "%{count} voti"
-        zero: Senza voti
     form:
       comment_as_admin: Commenta come amministratore
       comment_as_moderator: Commenta come moderatore
@@ -80,13 +79,13 @@ it:
         submit_button: Inizia un dibattito
     debate:
       comments:
+        zero: Senza commenti
         one: 1 commento
         other: "%{count} Commenti"
-        zero: Senza commenti
       votes:
+        zero: Senza voti
         one: 1 voto
         other: "%{count} voti"
-        zero: Senza voti
     edit:
       editing: Modifica dibattito
       form:
@@ -150,9 +149,9 @@ it:
     show:
       author_deleted: Utente eliminato
       comments:
+        zero: Senza commenti
         one: 1 commento
         other: "%{count} commenti"
-        zero: Senza commenti
       comments_title: Commenti
       edit_debate_link: Modifica dibattito
       flag: Questo dibattito è stato contrassegnato come inappropriato da diversi utenti.
@@ -201,7 +200,7 @@ it:
       accessibility: Accessibilità
       conditions: "Condizioni d'uso"
       consul: Consul
-      consul_url: https://github.com/consul/consul
+      consul_url: 'https://github.com/consul/consul'
       contact_us: Per ottenere assistenza tecnica entra in
       copyright: Consul, %{year}
       description: Questo portale utilizza il %{open_source} %{consul} ed è stato realizzato con fondi PON METRO.
@@ -209,24 +208,24 @@ it:
       open_data_text: Tutti i dati del Comune sono tuoi.
       open_data_title: Dati Aperti
       open_source: software libero
-      open_source_url: http://www.gnu.org/licenses/agpl-3.0.html
+      open_source_url: 'http://www.gnu.org/licenses/agpl-3.0.html'
       participation_text: Decidi come deve essere la città che ami.
       participation_title: Partecipazione
       privacy: Politica sulla privacy
       transparency_text: Ottieni tutte le informazioni sulla città.
       transparency_title: Trasparenza
-      transparency_url: https://transparency.consul
+      transparency_url: 'https://transparency.consul'
     header:
       administration_menu: Admin
-      administration: Amministrare
+      administration: Amministrazione
       available_locales: Lingue disponibili
       collaborative_legislation: Progetti
       debates: Dibattiti
       external_link_blog: Blog
       external_link_opendata: Dati aperti
-      external_link_opendata_url: https://opendata.consul
+      external_link_opendata_url: 'https://opendata.consul'
       external_link_transparency: Trasparenza
-      external_link_transparency_url: https://transparency.consul
+      external_link_transparency_url: 'https://transparency.consul'
       locale: 'Lingua:'
       logo: DecidiTorino logo
       management: Gestire
@@ -240,7 +239,7 @@ it:
       new_notifications:
         one: Hai una nuova notifica
         other: Hai %{count} nuove notifiche
-      no_notifications: Non hai nuove notifiche
+      no_notifications: 'Non hai nuove notifiche'
       open: aperto
       open_city_slogan_html: Esistono città governate direttamente dai suoi abitanti, che <strong>dibattono</strong> di temi verso cui nutrono preoccupazione, <strong>propongono</strong> idee per migliorare le loro vite e <strong>decidono</strong> fra tutte e tutti quelle da realizzare.
       open_city_title: La città che ami sarà la città che vuoi.
@@ -248,7 +247,7 @@ it:
       proposals: Proposte
       poll_questions: Votazioni
       budgets: Bilanci partecipativi
-      spending_proposals: "Proposte di investimento"
+      spending_proposals: Proposte di investimento
     admin:
       watch_form_message: 'Hai eseguito modifiche che non sono state salvate. Confermi che vuoi abbandonare la pagina?'
   legacy_legislation:
@@ -257,7 +256,7 @@ it:
       text: Per commentare questo documento devi %{sign_in} o %{sign_up}. Dopo seleziona il testo che vuoi commentare e fai click sul bottone con la matita.
       text_sign_in: iniziare la sessione
       text_sign_up: registrarti
-      title: "Come posso commentare questo documento?"
+      title: 'Come posso commentare questo documento?'
   locale: Italiano
   notifications:
     index:
@@ -276,7 +275,7 @@ it:
   map:
     title: "Circoscrizioni"
     proposal_for_district: "Crea una proposta per la tua circoscrizione"
-    select_district: "Ambito di esecuzione"
+    select_district: Ambito di esecuzione
     start_proposal: Crea una proposta
   omniauth:
     facebook:
@@ -284,7 +283,8 @@ it:
       sign_up: Registrati con Facebook
       name: Facebook
     finish_signup:
-      title: Aggiungi la tua email
+      title: "Dettagli aggiuntivi del tuo account"
+      username_warning: "Dovuto alla modifica del processo usato per la connessione ai social networks è possibile che il tuo nome utente appaia come 'già in uso', anche se prima lo usavi per accedere al sito. Se si verifica tale situazione, per favore scegli un altro nome utente."
     google_oauth2:
       sign_in: Entra con Google
       sign_up: Registrati con Google
@@ -296,9 +296,6 @@ it:
     info_sign_in: "Entra con:"
     info_sign_up: "Registrati con:"
     or_fill: "O riempi i seguenti campi:"
-    finish_signup:
-      title: "Dettagli aggiuntivi del tuo account"
-      username_warning: "Dovuto alla modifica del processo usato per la connessione ai social networks è possibile che il tuo nome utente appaia come 'già in uso', anche se prima lo usavi per accedere al sito. Se si verifica tale situazione, per favore scegli un altro nome utente."
   proposals:
     create:
       form:
@@ -323,7 +320,7 @@ it:
       done: Realizzata
       other: Altra
     form:
-      geozone: "Ambito di esecuzione"
+      geozone: Ambito di esecuzione
       proposal_external_url: Link alla documentazione aggiuntiva
       proposal_question: Domanda della proposta
       proposal_question_example_html: "Deve essere riassunta in una domanda a cui si risponde con Sì o con No. <br>Es. 'Sei a favore di pedonalizzare via Po?'"
@@ -335,9 +332,9 @@ it:
       proposal_title: Titolo della proposta
       proposal_video_url: Link a video esterno
       proposal_video_url_note: Puoi aggiungere un link a YouTube o a Vimeo
+      tag_category_label: "Tags"
       tags_instructions: "Etichetta questa proposta. Puoi scegliere fra le categorie che ti sono presentate o puoi introdurre quelle che desideri"
       tags_label: Temi
-      tag_category_label: "Tags"
       tags_placeholder: "Scrivi i tags che desideri separandoli con una virgola (',')"
       map_location: "Localizzazione nella mappa"
       map_location_instructions: "Naviga sulla mappa fino al punto scelto e metti il marcatore."
@@ -375,7 +372,7 @@ it:
         one: " che contiene <strong>'%{search_term}'</strong>"
         other: " che contengono <strong>'%{search_term}'</strong>"
       select_order: Ordina per
-      select_order_long: Stai vedendo le proposte
+      select_order_long: 'Stai vedendo le proposte'
       start_proposal: Crea una proposta
       title: Proposte
       top: Top della settimana
@@ -393,7 +390,7 @@ it:
     new:
       form:
         submit_button: Crea proposta
-      more_info: "Come funzionano le proposte cittadine?"
+      more_info: 'Come funzionano le proposte cittadine?'
       recommendation_one: Non scrivere in maiuscolo il titolo della proposta o intere frasi. In internet il maiuscolo è considerato gridare. A nessuno piace che si alzi la voce.
       recommendation_three: Usa bene questo spazio e le voci che lo compongono, sono a tua disposizione.
       recommendation_two: "Qualsiasi proposta o commento che implichi una azione illegale sarà eliminato, anche quelle scritte con l'intenzione di sabotare gli spazi della proposta, tutto il resto è permesso."
@@ -406,21 +403,21 @@ it:
       share:
         guide: "Condividila perché la gente inizi a sostenerla."
         edit: "Prima di pubblicarla potrai modificare il testo a tuo piacimento."
-        view_proposal: "Adesso no, vai alla proposta"
+        view_proposal: Adesso no, vai alla proposta
       improve_info: "Migliora la tua campagna e ottieni più appoggi"
       improve_info_link: "Vedi più informazioni"
-      already_supported: "Hai sostenuto questa proposta, condividila!"
+      already_supported: 'Hai sostenuto questa proposta, condividila!'
       comments:
+        zero: Senza commenti
         one: 1 Commento
         other: "%{count} Commenti"
-        zero: Senza commenti
       reason_for_supports_necessary: 1% della popolazione (residenti a Torino di una età maggiore di 16 anni)
       support: Sostieni
       support_title: Sostieni questa proposta
       supports:
+        zero: Senza appoggi
         one: 1 appoggio
         other: "%{count} appoggi"
-        zero: Senza appoggi
       votes:
         one: 1 voto
         other: "%{count} voti"
@@ -434,9 +431,9 @@ it:
       author_deleted: Utente eliminato
       code: 'Codice della proposta:'
       comments:
+        zero: Senza commenti
         one: 1 Commento
         other: "%{count} Commenti"
-        zero: Senza commenti
       comments_tab: Commenti
       edit_proposal_link: Modifica proposta
       flag: Questa proposta è stata definita inadeguata da molti utenti.
@@ -445,8 +442,8 @@ it:
       retired_warning: "L'autore di questa proposta ritiene che non debba più continuare a ricevere appoggi."
       retired_warning_link_to_explanation: Verifica la spiegazione prima di appoggiarla.
       retired: "Proposta ritirata dall'autore"
-      send_notification: Invia notifica
       share: Condividi
+      send_notification: Invia notifica
       no_notifications: "Questa proposta non ha notifiche."
       embed_video_title: "Video in %{proposal}"
       title_external_url: "Documentazione aggiuntiva"
@@ -471,7 +468,7 @@ it:
       participate_button_expired: "Votazione terminata"
       no_geozone_restricted: "Tutta la città"
       geozone_restricted: "Circoscrizioni"
-      geozone_info: "Possono partecipare le persone residenti in: "
+      geozone_info: 'Possono partecipare le persone residenti in: '
       already_answer: "Hai già partecipato a questa votazione"
       section_header:
         icon_alt: Icona delle Votazioni
@@ -519,9 +516,9 @@ it:
         null_votes: "Nulli"
       results:
         title: "Domande"
-        most_voted_answer: "Risposta più votata: "
+        most_voted_answer: 'Risposta più votata: '
   poll_questions:
-    create_question: "Crea domanda per la votazione"
+    create_question: "Crea domanda"
     show:
       vote_answer: "Vota %{answer}"
       voted: "Hai votato %{answer}"
@@ -539,7 +536,7 @@ it:
   shared:
     edit: 'Modifica'
     save: 'Salva'
-    delete: 'Elimina'
+    delete: Elimina
     "yes": "Sì"
     "no": "No"
     search_results: "Risultati della ricerca"
@@ -560,7 +557,6 @@ it:
       search: 'Filtra'
       title: 'Ricerca avanzata'
       to: 'A'
-    delete: 'Elimina'
     author_info:
       author_deleted: Utente eliminato
     back: Indietro
@@ -578,10 +574,10 @@ it:
         destroy:
           notice_html: "Hai smesso di seguire questo progetto di investimento! </br> Non riceverai più le notifiche relazionate con questo progetto."
       proposal:
-          create:
-            notice_html: "Adesso stai seguendo questa proposta cittadina! </br> Ti saranno notificate le modifiche man mano che si realizzano per tenerti aggiornato."
-          destroy:
-            notice_html: "Hai smesso di seguire questa proposta cittadina! </br> Non riceverai più le notifiche relazionate con questa proposta."
+        create:
+          notice_html: "Adesso stai seguendo questa proposta cittadina! </br> Ti saranno notificate le modifiche man mano che si realizzano per tenerti aggiornato."
+        destroy:
+          notice_html: "Hai smesso di seguire questa proposta cittadina! </br> Non riceverai più le notifiche relazionate con questa proposta."
     hide: Nascondi
     print:
       print_button: Stampa questa informazione
@@ -614,7 +610,7 @@ it:
     target_blank_html: " (si apre in una nuova finestra)"
     you_are_in: "Ti trovi in"
     unflag: Annulla denuncia
-    unfollow: Smetti di seguire
+    unfollow: "Smetti di seguire"
     unfollow_entity: "Smetti di seguire %{entity}"
     outline:
       budget: Bilanci partecipativi
@@ -638,7 +634,7 @@ it:
       association_name: "Nome dell'associazione"
       description: Descrizione dettagliata
       external_url: Link alla documentazione aggiuntiva
-      geozone: "Ambito di esecuzione"
+      geozone: Ambito di esecuzione
       submit_buttons:
         create: Crea
         new: Crea
@@ -646,7 +642,7 @@ it:
     index:
       title: Bilanci partecipativi
       unfeasible: Proposte di investimento non realizzabili
-      by_geozone: "Proposte di investimento con ambito: %{geozone}"
+      by_geozone: 'Proposte di investimento con ambito: %{geozone}'
       search_form:
         button: Cerca
         placeholder: Proposte di investimento...
@@ -660,7 +656,7 @@ it:
         unfeasible: Non realizzabili
       start_spending_proposal: Crea una proposta di investimento
     new:
-      more_info: "Come funzionano i bilanci partecipativi?"
+      more_info: 'Come funzionano i bilanci partecipativi?'
       recommendation_one: È fondamentale che si faccia riferimento ad una voce di bilancio.
       recommendation_three: Cerca di descrivere in maniera dettagliata la proposta affinché la squadra di governo incaricata di analizzarla abbia il minor numero di dubbi.
       recommendation_two: Qualsiasi proposta o commento che implichi azioni illegali sarà eliminata.
@@ -677,9 +673,9 @@ it:
       support: Appoggia
       support_title: Appoggia questo progetto
       supports:
+        zero: Senza appoggi
         one: 1 appoggio
         other: "%{count} appoggi"
-        zero: Senza appoggi
   stats:
     index:
       visits: Visite
@@ -699,11 +695,11 @@ it:
   users:
     direct_messages:
       new:
-        body_label: "Messaggio"
+        body_label: Messaggio
         direct_messages_bloqued: "Questo utente ha deciso di non ricevere messaggi privati"
-        submit_button: "Invia messaggio"
+        submit_button: Invia messaggio
         title: Invia messaggio privato a %{receiver}
-        title_label: "Titolo"
+        title_label: Titolo
         verified_only: Per spedire un messaggio privato %{verify_account}
         verify_account: certifica il tuo account
         authenticate: È necessario %{signin} o %{signup}.
@@ -797,7 +793,7 @@ it:
     verification:
       i_dont_have_an_account: Non dispongo di un account, voglio crearne uno e poi verificarlo
       i_have_an_account: Ho già un account che voglio verificare
-      question: Hai un account in %{org_name}?
+      question: 'Hai un account in %{org_name}?'
       title: Certifica account
     welcome:
       go_to_index: Adesso no, continua

@@ -1,4 +1,3 @@
----
 it:
   officing:
     header:
@@ -8,14 +7,14 @@ it:
         title: Presiedere il seggio delle votazioni
         info: Qui puoi validare i documenti dei cittadini e salvare i risultati delle urne
     menu:
-      voters: "Validare documento e votare"
-      total_recounts: "Riconteggio totale e scrutinio"
+      voters: Validare documento e votare
+      total_recounts: Riconteggio totale e scrutinio
     polls:
       final:
-        title: "Elenco delle votazioni concluse"
-        no_polls: "Non si dispone dei permessi per il riconteggio finale nelle votazioni recenti"
-        select_poll: "Seleziona votazione"
-        add_results: "Aggiungi risultati"
+        title: Elenco delle votazioni concluse
+        no_polls: Non si dispone dei permessi per il riconteggio finale nelle votazioni recenti
+        select_poll: Seleziona votazione
+        add_results: Aggiungi risultati
     results:
       flash:
         create: "Dati salvati"
@@ -35,12 +34,12 @@ it:
         see_results: "Vedi risultati"
       index:
         no_results: "Non ci sono risultati"
-        results: "Risultati"
+        results: Risultati
         table_answer: Risposta
         table_votes: Voti
-        table_whites: Schede totalmente bianche
-        table_nulls: Schede nulle
-        table_total: Schede totali
+        table_whites: "Schede totalmente bianche"
+        table_nulls: "Schede nulle"
+        table_total: "Schede totali"
     residence:
       flash:
         create: "Documento verificato in Anagrafe"
@@ -49,7 +48,7 @@ it:
         title: Valida documento
         document_number: "Numero di documento"
         submit: Valida documento
-        error_verifying_census: Non è stato possibile verificare il documento in Anagrafe.
+        error_verifying_census: "Non è stato possibile verificare il documento in Anagrafe."
         form_errors: evitaron verificar este documento
         no_assignments: "Oggi non hai turno come presidente di seggio"
     voters:
@@ -60,7 +59,7 @@ it:
         table_actions: Azioni
       show:
         can_vote: Puoi votare
-        error_already_voted: "Hai già partecipato a questa votazione"
+        error_already_voted: Hai già partecipato a questa votazione.
         submit: Conferma voto
         success: "Voto aggiunto!"
       can_vote:

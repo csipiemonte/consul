@@ -11,7 +11,7 @@ it:
           one: "Hai votato <span>una</span> proposta."
           other: "Hai votato <span>%{count}</span> proposte."
         voted_info_html: "Puoi cambiarei tuoi voti in qualsiasi momento fino alla chiusura di questa fase.<br> Non c'è bisogno che spendi tutto il denaro disponibile."
-        zero: "Non hai ancora votato una proposta di investimento."
+        zero: Non hai ancora votato una proposta di investimento.
       reasons_for_not_balloting:
         not_logged_in: È necessario %{signin} o %{signup} per continuare.
         not_verified: Gli investimenti possono essere appoggiati solamente da utenti verificati, %{verify_account}.
@@ -51,9 +51,9 @@ it:
         help_text_4: "Per ottenere il maggior numero possibile di appoggi e di voti, scegli un titolo descrittivo e comprensibile del tuo progetto. Dopo hai uno spazio per sviluppare il fine della tua proposta. Fornisci tutti i dati e le motivazioni, con anche documenti e immagini, per aiutare gli altri partecipanti a comprendere meglio ciò che proponi."
     investments:
       form:
+        tag_category_label: "Categorie"
         tags_instructions: "Aggiungi tag a questa proposta. Puoi scegliere tra le categorie proposte o introdurre quelle che desideri"
         tags_label: Tags
-        tag_category_label: "Categorie"
         tags_placeholder: "Scrivi i tags che desideri separandoli con il carattere virgola (',')"
         map_location: "Localizzazione nella mappa"
         map_location_instructions: "Naviga sulla mappa fino al punto scelto e metti il marcatore."
@@ -61,9 +61,9 @@ it:
       index:
         title: Bilanci partecipativi
         unfeasible: Proposte di investimento non realizzabili
-        unfeasible_text: Le proposte presentate devono incontrare una serie di criteri (legalità, concretezza, essere di competenza del Comune, non superare il massimo del bilancio; %{definitions}) per essere dichiarate realizzabili e giungere alla fase della votazione finale. Tutte le proposte che non soddisfano tali criteri sono segnate come non realizzabili e pubblicate nella lista seguente, insieme al corrispondente rapporto di non fattibilità.
+        unfeasible_text: "Le proposte presentate devono incontrare una serie di criteri (legalità, concretezza, essere di competenza del Comune, non superare il massimo del bilancio; %{definitions}) per essere dichiarate realizzabili e giungere alla fase della votazione finale. Tutte le proposte che non soddisfano tali criteri sono segnate come non realizzabili e pubblicate nella lista seguente, insieme al corrispondente rapporto di non fattibilità."
         unfeasible_text_definitions: vedi definizioni qui
-        by_heading: "Proposte di investimento con ambito: %{heading}"
+        by_heading: 'Proposte di investimento con ambito: %{heading}'
         search_form:
           button: Cerca
           placeholder: Cerca proposte di investimento...
@@ -81,7 +81,7 @@ it:
           different_heading_assigned_html: "Hai già sostenuto le proposte di un'altra sezione del bilancio: %{heading_link}"
           change_ballot: "Se modifichi la tua opinione puoi cancellare i tuoi voti in %{check_ballot} e iniziare nuovamente."
           check_ballot_link: "controllare i miei voti"
-          zero: "Non hai ancora votato una proposta di investimento in questo ambito del bilancio."
+          zero: Non hai ancora votato una proposta di investimento in questo ambito del bilancio.
           verified_only: "Per creare una nuova proposta di investimento %{verify}."
           verify_account: "verifica il tuo account"
           create: "Crea proposta di investimento"
@@ -114,14 +114,14 @@ it:
       wrong_price_format: Si possono includere solo caratteri numerici
       investment:
         add: Vota
-        already_added: "Hai già aggiunto questa proposta di investimento"
+        already_added: Hai già aggiunto questa proposta di investimento
         already_supported: Hai già appoggiato questa proposta. Condividila!
         support_title: Appoggia questa proposta
         confirm_group: "Puoi appoggiare solamente le proposte di una circoscrizione. Se prosegui non potrai cambiare questa decisione. Sei sicuro?"
         supports:
+          zero: Senzi appoggi
           one: 1 appoggio
           other: "%{count} appoggi"
-          zero: Senzi appoggi
         give_support: Appoggia
       header:
         check_ballot: Controllo i miei voti
@@ -129,7 +129,7 @@ it:
         change_ballot: "Se cambi opinione puoi eliminare i tuoi voti in %{check_ballot} e iniziare nuovamente."
         check_ballot_link: "controlla i miei voti"
     progress_bar:
-      available: "Disponibile: "
+      available: 'Disponibile: '
     show:
       group: Gruppo
       phase: Fase attuale
@@ -147,8 +147,8 @@ it:
       ballot_lines_count: Voti
       hide_discarded_link: Nascondi scartate
       show_all_link: Mostra tutte
-      price: Costo
+      price: Costo totale
       amount_available: Bilancio disponibile
-      accepted: "Proposta di investimento accettata: "
-      discarded: "Proposta di investimento scartata: "
+      accepted: 'Proposta di investimento accettata: '
+      discarded: 'Proposta di investimento scartata: '
       incompatibles: Incompatibili

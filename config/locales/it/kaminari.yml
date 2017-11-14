@@ -1,23 +1,22 @@
----
 it:
   helpers:
     page_entries_info:
       entry:
+        zero: Ingressi
         one: ingresso
         other: ingressi
-        zero: ingressi
       more_pages:
         display_entries: Elementi <strong>%{first}&nbsp;-&nbsp;%{last}</strong> di un totale di <strong>%{total} %{entry_name}</strong>
       one_page:
         display_entries:
+          zero: "La ricerca non ha prodotto risultati per %{entry_name}"
           one: Presente <strong>1 %{entry_name}</strong>
           other: Presenti <strong>%{count} %{entry_name}</strong>
-          zero: La ricerca non ha prodotto risultati per %{entry_name}
   views:
     pagination:
+      current: Ti trovi nella pagina
       first: Prima
       last: Ultima
       next: Successiva
       previous: Precedente
       truncate: "&hellip;"
-      current: Ti trovi nella pagina

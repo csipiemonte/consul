@@ -1,13 +1,10 @@
----
 it:
   moderation:
-    header:
-      title: Moderazione
     comments:
       index:
         block_authors: Blocca autori
-        confirm: "Sei sicuro?"
-        filter: Filtra
+        confirm: 'Sei sicuro?'
+        filter: Filtro
         filters:
           all: Tutti
           pending_flag_review: Pendenti
@@ -24,11 +21,11 @@ it:
         title: Commenti
     dashboard:
       index:
-        title: Moderazione
+        title: Moderare
     debates:
       index:
         block_authors: Blocca autori
-        confirm: "Sei sicuro?"
+        confirm: 'Sei sicuro?'
         filter: Filtra
         filters:
           all: Tutti
@@ -44,6 +41,8 @@ it:
           created_at: Più nuovi
           flags: Più segnalati
         title: Dibattiti
+    header:
+      title: Moderazione
     menu:
       flagged_comments: Commenti
       flagged_debates: Dibattiti
@@ -52,7 +51,7 @@ it:
     proposals:
       index:
         block_authors: Blocca autori
-        confirm: "Sei sicuro?"
+        confirm: 'Sei sicuro?'
         filter: Filtro
         filters:
           all: Tutte

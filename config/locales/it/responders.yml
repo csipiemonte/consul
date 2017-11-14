@@ -1,4 +1,3 @@
----
 it:
   flash:
     actions:
@@ -21,9 +20,9 @@ it:
       update:
         notice: "%{resource_name} aggiornato con successo."
         debate: "Dibattito aggiornato correttamente."
-        proposal: "Proposta aggiornata correttamente."
         poll: "Votazione aggiornata ccorrettamente."
         poll_booth: "Seggio aggiornato correttamente."
+        proposal: "Proposta aggiornata correttamente."
         spending_proposal: "Proposta di investimento aggiornata correttamente."
         budget_investment: "Proposta di investimento aggiornata correttamente."
         topic: "Tema aggiornato con successo."

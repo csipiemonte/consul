@@ -1,4 +1,3 @@
----
 it:
   valuation:
     header:
@@ -25,8 +24,8 @@ it:
           valuation_open: Aperte
           valuating: Valutazione in corso
           valuation_finished: Valutazione terminata
-        title: Progetti di investimento
         assigned_to: "Assegnate a %{valuator}"
+        title: Progetti di investimento
         edit: Modifica fascicolo
         valuators_assigned:
           one: Valutatore assegnato
@@ -62,16 +61,16 @@ it:
         dossier: Fascicolo
         price_html: "Costo (%{currency}) <small>(dato pubblico)</small>"
         price_first_year_html: "Costo del primo anno (%{currency}) <small>(facoltativo, dato non pubblico)</small>"
-        price_explanation_html: "Relazione di spesa <small>(facoltativo, dato pubblico)</small>"
+        price_explanation_html: Relazione di spesa <small>(facoltativo, dato pubblico)</small>
         feasibility: Fattibilità
         feasible: Realizzabile
         unfeasible: Non realizzabile
         undefined_feasible: Non definito
-        feasible_explanation_html: "Rapporto sulla fattibilità <small>(qualora lo sia, dato pubblico)</small>"
+        feasible_explanation_html: Rapporto sulla fattibilità <small>(qualora lo sia, dato pubblico)</small>
         valuation_finished: Valutazione conclusa
-        duration_html: "Tempo di esecuzione <small>(facoltativo, dato non pubblico)</small>"
-        internal_comments_html: "Commenti e osservazioni <small>(per i responsabili interni, dato non pubblico)</small>"
-        save: Salva modifiche
+        duration_html: Tempo di esecuzione <small>(facoltativo, dato non pubblico)</small>
+        internal_comments_html: Commenti e osservazioni <small>(per i responsabili interni, dato non pubblico)</small>
+        save: Salva Modifiche
       notice:
         valuate: "Fascicolo aggiornato"
     spending_proposals:
@@ -111,15 +110,15 @@ it:
         price_html: "Costo (%{currency}) <small>(dato pubblico)</small>"
         price_first_year_html: "Costo nel primo anno (%{currency}) <small>(facoltativo, privato)</small>"
         currency: "€"
-        price_explanation_html: "Relazione di spesa <small>(facoltativo, dato pubblico)</small>"
+        price_explanation_html: Relazione di spesa <small>(facoltativo, dato pubblico)</small>
         feasibility: Fattibilità
         feasible: Realizzabile
         not_feasible: Non realizzabile
         undefined_feasible: Non definito
         feasible_explanation_html: "Relazione di non fattibilità <small>(qualora lo sia, dato pubblico)</small>"
         valuation_finished: Fascicolo concluso
-        time_scope_html: "Tempo di esecuzione <small>(opcional, dato no público)</small>"
-        internal_comments_html: "Commenti e osservazioni <small>(per i responsabili interni, dato non pubblico)</small>"
+        time_scope_html: Tempo di esecuzione <small>(facoltativo, dato non pubblico)</small>
+        internal_comments_html: Commenti e osservazioni <small>(per i responsabili interni, dato non pubblico)</small>
         save: Salva modifiche
       notice:
         valuate: "Fascicolo aggiornato"

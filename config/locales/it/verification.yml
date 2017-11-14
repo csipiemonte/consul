@@ -1,4 +1,3 @@
----
 it:
   verification:
     alert:
@@ -33,7 +32,7 @@ it:
         office: Eseguire la verifica di persona in qualsiasi %{office}
         offices: Sportello per il Cittadino
         send_letter: Richiedere una lettera per posta
-        title: "Congratulazioni!"
+        title: 'Congratulazioni!'
         user_permission_info: Con il tuo profilo puoi...
       update:
         flash:
@@ -76,7 +75,7 @@ it:
       edit:
         confirmation_code: Inserisci il codice ricevuto sul tuo telefonino
         resend_sms_link: Richiedere un nuovo codice
-        resend_sms_text: "Non hai ricevuto un SMS con il codice di conferma"
+        resend_sms_text: 'Non hai ricevuto un SMS con il codice di conferma?'
         submit_button: Invia
         title: SMS di conferma
       new:
@@ -100,7 +99,7 @@ it:
     user_permission_info: Dopo aver verificato i tuoi dati potrai...
     user_permission_proposal: Creare nuove proposte
     user_permission_support_proposal: Sostenere le proposte
-    user_permission_votes: Partecipare alle votazioni finali
+    user_permission_votes: Partecipare alle votazioni finali*
     verified_user:
       form:
         submit_button: Invia codice

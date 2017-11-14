@@ -28,9 +28,9 @@ it:
         edit_button: Modifica
         destroy_button: Elimina
         comments:
+          zero: Senza commenti
           one: 1 Commento
           other: "%{count} Commenti"
-          zero: Senza commenti
     topic:
       create: Crea un tema
       edit: Modifica tema
