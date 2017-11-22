@@ -277,3 +277,8 @@ it:
             image:
               image_width: "Deve essere di %{required_width}px di larghezza"
               image_height: "Deve essere di %{required_height}px de altezza"
+      messages:
+        record_invalid: "La certificazione non è avvenuta: %{errors}"
+        restrict_dependent_destroy:
+          has_one: Non è possibile eliminare il registro per la presenza di un %{record} dipendente
+          has_many: Non è possibile eliminare il registro per la presenza di %{record} dipendenti

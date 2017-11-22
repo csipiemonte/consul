@@ -156,7 +156,8 @@ it:
         heading: Voce
         dossier: Rapporto
         edit_dossier: Modifica rapporto
-        tags: tags
+        tags: Tags
+        user_tags: "Tags dell'utente"
         undefined: Da definire
         milestone: Tracciato
         new_milestone: Crea nuova milestone
@@ -181,6 +182,7 @@ it:
         assigned_valuators: Valutatori
         select_heading: Selezione voce
         submit_button: Aggiorna
+        user_tags: "Tags assegnati dall'utente"
         tags: Tags
         tags_placeholder: "Scrivi i tags che desideri separati da virgole (,)"
         undefined: Da definire
@@ -481,6 +483,7 @@ it:
       valuator:
         description_placeholder: 'Descrizione (facoltativa)'
         add: Aggiungi come valutatore
+        delete: Elimina
       search:
         title: 'Valutatori: Ricerca degli utenti'
       summary:
