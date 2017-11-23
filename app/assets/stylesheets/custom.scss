@@ -16,6 +16,8 @@ header .locale{float:right;}
 .top-bar .top-bar-title > a .irossa, , a.logo .irossa{color:#ca2d2d!important;}
 .top-bar-title a img{background: transparent !important;} 
 
+header .external-links{padding-top:9px;}
+
 .subnavigation {background: #204d88;}
 .subnavigation a {color: #fff;line-height:45px;}
 .subnavigation a:hover, .subnavigation a:focus, .subnavigation a:active{text-decoration:underline;color:#fff;}
@@ -28,12 +30,18 @@ header .locale{float:right;}
 @media screen and (max-width: 40em) {
 	a.logo{ font-size: 27px;}
 	a.logo, .top-bar{color: #204d88!important;}
-	.top-bar .menu>li a {background: #204d88;color: #fff; padding-left: 0;}
+	.top-bar ul {padding-right: 0;}
+	.top-bar .menu>li a {background: #204d88;color: #fff; padding-left: 0.625rem;}
 	ul.dropdown{background: #204d88;}
 	.row .row {
 	  margin-left: 0;
 	  margin-right: 0;
 	}
+
+	footer p.info a img{width:80px}
+	footer .help_vari{padding-left:0.625rem}
+
+	.verification .verification-step { min-height: 80px;}
 }
 
 /*---display da medium in su----*/

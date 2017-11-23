@@ -33,7 +33,7 @@ it:
     email_label: Email
     date_of_birth: Data di nascita
     email_verifications:
-      already_verified: Esta cuenta de usuario ya está verificada.
+      already_verified: "Questo account dell'utente è già certificato."
       choose_options: 'Si prega di scegliere una delle opzioni seguenti:'
       document_found_in_census: Questo documento è stato trovato in anagrafe, ma non ha alcun account utente ad esso associato.
       document_mismatch: 'Questa e-mail appartiene a un utente che dispone già di un identificativo associato: %{document_number}(%{document_type})'

@@ -37,7 +37,7 @@ it:
       updated: "Password cambiata correttamente. Identificazione avvenuta con successo."
       updated_not_active: "La password è stata cambiata con successo."
     registrations:
-      destroyed: "Addio! Il suo account è stato rimosso. Ci auguriamo di rivederla presto. La informamiamo che in accordo con la sua richiesta, i suoi dati personali registrati come utente del sito e che fanno parte del file 'File' il cui responsabile è 'Responsabile', sono stati eliminati nei termini di ciò che è previsto nell'articolo 16 della Legge Organica 15/1999 de Protección de Datos de Carácter Personal y del artículo 31 de su Reglamento de desarrollo (RD 1720/2007)."
+      destroyed: "Il tuo account è stato rimosso come richiesto."
       signed_up: "Benvenuto! Identificazione avvenuta con successo."
       signed_up_but_inactive: "La registrazione si è conclusa con successo, però non è stato possibile iniziare la sessione perché l'account non è stato attivato."
       signed_up_but_locked: "La registrazione si è conclusa con successo, però non è stato possibile iniziare la sessione perché l'account è bloccato."

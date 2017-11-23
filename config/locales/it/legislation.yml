@@ -27,7 +27,7 @@ it:
       show:
         title: Commento
       version_chooser:
-        seeing_version: Commenti dela versione
+        seeing_version: Commenti della versione
         see_text: Mostra la bozza del testo
     draft_versions:
       changes:
