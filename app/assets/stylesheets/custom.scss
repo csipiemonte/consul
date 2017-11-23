@@ -28,26 +28,26 @@ header .external-links{padding-top:9px;}
 
 /*---display small----*/
 @media screen and (max-width: 40em) {
-	a.logo{ font-size: 27px;}
-	a.logo, .top-bar{color: #204d88!important;}
-	.top-bar ul {padding-right: 0;}
-	.top-bar .menu>li a {background: #204d88;color: #fff; padding-left: 0.625rem;}
-	ul.dropdown{background: #204d88;}
-	.row .row {
-	  margin-left: 0;
-	  margin-right: 0;
-	}
+    a.logo{ font-size: 27px;}
+    a.logo, .top-bar{color: #204d88!important;}
+    .top-bar ul {padding-right: 0;}
+    .top-bar .menu>li a {background: #204d88;color: #fff; padding-left: 0.625rem;}
+    .top-bar .menu>li a, .subnavigation a{line-height:27px; margin-bottom:10px;}
+    ul.dropdown{background: #204d88;}
+    .row .row {margin-left: 0;margin-right: 0;}
 
-	footer p.info a img{width:80px}
-	footer .help_vari{padding-left:0.625rem}
+    footer p.info a img{width:80px}
+    footer .help_vari{padding-left:0.625rem}
 
-	.verification .verification-step { min-height: 80px;}
+    .verification .verification-step { min-height: 80px;}
+
+    #proposals-list .no-image{height:0}
 }
 
 /*---display da medium in su----*/
 @media screen and (min-width: 40em) {
-	
-}	
+    /*codice da inserire*/
+}    
 
 /*home welcome*/
 figure {margin: 0;}
@@ -63,7 +63,7 @@ p {
     font-size: 1.0625rem;
     font-weight: 400;
     line-height: 1.625rem;
-	margin-bottom: 1rem;
+    margin-bottom: 1rem;
     text-rendering: optimizeLegibility;
 }
 
