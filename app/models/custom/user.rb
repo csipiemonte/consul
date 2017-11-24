@@ -1,4 +1,5 @@
 # Model 'User' -> versione custom, differisce dalla versione originale per la presenza del metodo 'identity_provider?'
+# e per il fix sul metodo 'first_or_initialize_for_oauth' (cfr. commento nel metodo)
 class User < ActiveRecord::Base
 
   include Verification
@@ -71,7 +72,10 @@ class User < ActiveRecord::Base
   # Get the existing user by email if the provider gives us a verified email.
   def self.first_or_initialize_for_oauth(auth)
     oauth_email           = auth.info.email
-    oauth_email_confirmed = oauth_email.present? && (auth.info.verified || auth.info.verified_email)
+
+    # Rispetto al codice originario non si controlla il valore di 'verified', campo presente solo nella
+    # Auth Hash di Facebook e non in quella degli altri Identity Provider.
+    oauth_email_confirmed = oauth_email.present?
     oauth_user            = User.find_by(email: oauth_email) if oauth_email_confirmed
 
     oauth_user || User.new(
@@ -284,11 +288,17 @@ class User < ActiveRecord::Base
   end
 
   def save_requiring_finish_signup
+      prf = "[#{self.class}" + '::save_requiring_finish_signup] '
+      Rails.logger.info "#{prf}save(validate: false)"
+
     begin
       self.registering_with_oauth = true
       save(validate: false)
+      # validazione sullo username e' disabilitata perche' accedendo da social networks si usera' sempre
+      # solo l'indirizzo di mail (prelevato dal social network) per accedere.
     # Devise puts unique constraints for the email the db, so we must detect & handle that
     rescue ActiveRecord::RecordNotUnique
+      Rails.logger.info "#{prf}Rilevato 'RecordNotUnique'"
       self.email = nil
       save(validate: false)
     end

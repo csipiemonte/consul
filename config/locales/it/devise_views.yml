@@ -9,7 +9,7 @@ it:
         instructions_html: "Procediamo con la conferma dell'account tramite la email <b>%{email}</b>"
         new_password_confirmation_label: Reintrodurre la password
         new_password_label: Nuova password
-        please_set_password: Por favor introduce una nueva clave de acceso para su cuenta (te permitirá hacer login con el email de más arriba)
+        please_set_password: "Per cortesia introduci una nuova password per il tuo account (insieme alla email specificata prima ti permetterà di eseguire il login)"
         submit: Conferma
         title: Conferma account
     mailer:
