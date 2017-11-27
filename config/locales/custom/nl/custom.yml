@@ -34,6 +34,7 @@ nl:
       name: Shibboleth
   settings:
     feature:
+      proposals: Voorstellen
       shibboleth_login: Log in Shibboleth
   verification:
     residence:

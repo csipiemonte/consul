@@ -2,8 +2,7 @@ module Consul
   class Application < Rails::Application
 
   	config.i18n.default_locale = :it
-    config.i18n.available_locales = [:en, :es, :fr, :it, :nl, 'pt-BR']
-    config.i18n.fallbacks = { 'en' => 'it', 'es' => 'it', 'fr' => 'it', 'nl' => 'en', 'pt-br' => 'it' }
+    config.i18n.available_locales = [:it]
 
   	config.autoload_paths << "#{Rails.root}/lib/custom"
 

@@ -464,7 +464,7 @@ it:
         email: Email
         no_moderators: Non ci sono moderatori.
       moderator:
-        add: Aggiungi como Moderatore
+        add: Aggiungi come Moderatore
         delete: Elimina
       search:
         title: 'Moderatori: Ricerca degli utenti'

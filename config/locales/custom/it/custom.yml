@@ -34,6 +34,7 @@ it:
       name: Shibboleth
   settings:
     feature:
+      proposals: Proposte
       shibboleth_login: Accesso con Shibboleth
   verification:
     residence:

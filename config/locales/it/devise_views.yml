@@ -47,7 +47,7 @@ it:
           responsible_name_label: Nome e cognome della persona responsabile del collettivo
           responsible_name_note: "Sarà la persona che rappresenta l'associazione/collettivo in noe della quale sono presentate le proposte"
           submit: Registrarsi
-          title: Registrarsi como organizzazione / collettivo
+          title: Registrarsi come organizzazione / collettivo
         success:
           back_to_index: "Ho capito, torna alla pagina principale"
           instructions_1_html: "Tra breve <b>ti contatteremo</b> per verificare che rappresenti realmente questo collettivo."

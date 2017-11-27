@@ -128,10 +128,10 @@ it:
         help: Aiuto sui dibattiti
       section_footer:
         title: Aiuto sui dibattiti
-        description: Inizia un dibattito per condividere il tuo punto di vista con altre persone a proposito dei temi che ti preoccupano.
-        help_text_1: "Lo spazio dei dibattiti cittadini è diretto a qualsiasi persona che voglia esporre tematiche che le stanno a cuore e sulle quali voglia condividere il proprio punto di vista con altre persone."
-        help_text_2: "Per aprire un dibattito è necessario registrarsi su %{org}. Gli utenti che sono già registrati possono anche commentare i dibattiti aperti e esprimere il proprio giudizio con i pulsanti 'Sono d'accordo' o 'Non sono d'accordo' che sono presenti accanto a ciascuna discussione."
-        help_text_3: "Ricorda che un dibattito non attiva nessun meccanismo concreto di esecuzione. Se ti interessa fare una %{proposal} per la città o proporre un progetto di %{budget} all'annuncio di convocazione, vedi la sezione corrispondente."
+        description: "Crea un tema sul quale dibattere su qualsiasi argomento che intendi condividere con gli altri abitanti della tua città."
+        help_text_1: "Per creare un dibattito è necessario registrarsi su DecidiTorino"
+        help_text_2: "I dibattiti possono essere valutati utilizzando i pulsanti Sono d'accordo o Non sono d'accordo che si trovano accanto a ciascuno di essi."
+        help_text_3: "Puoi anche valutare i commenti che sono già stati proposti"
         proposals_link: proposta
         budget_link: bilanci partecipativi
     new:

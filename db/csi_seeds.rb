@@ -69,6 +69,7 @@ Setting.create(key: 'meta_keywords', value: 'citizen participation, open governm
 
 # Feature flags
 Setting.create(key: 'feature.debates', value: 'true')
+Setting.create(key: 'feature.proposals', value: 'true')
 Setting.create(key: 'feature.spending_proposals', value: nil)
 Setting.create(key: 'feature.polls', value: nil)
 Setting.create(key: 'feature.twitter_login', value: 'true')
