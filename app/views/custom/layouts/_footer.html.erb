@@ -14,9 +14,9 @@
     <div class="footer-sections small-12 large-3 column">
       <div class="help_vari">  
         <p><%= link_to t("layouts.footer.faq"), faq_path + '#faq' %></p>
-        <p><%= link_to t("layouts.footer.logon"), faq_path + '#logon' %></p>
-        <p><%= link_to t("layouts.footer.platform"), faq_path + '#platform' %></p>
-        <p><%= link_to t("layouts.footer.contacts"), faq_path + '#contacts' %></p>
+        <!--<p><%= link_to t("layouts.footer.logon"), faq_path + '#logon' %></p>
+        <p><%= link_to t("layouts.footer.platform"), faq_path + '#platform' %></p>-->
+        <p><%= link_to t("layouts.footer.contacts"), faq_path + '#3' %></p>
       </div>  
     </div>
   </div>
@@ -30,7 +30,11 @@
        <br>
       <em><%= t("layouts.footer.copyright", year: Time.current.year) %></em>&nbsp;|
       <ul class="no-bullet inline-block">
-        <li class="inline-block"><%= link_to t("layouts.footer.privacy"), page_path('privacy') %>&nbsp;|</li>
+        <li class="inline-block">
+          <%= link_to t("layouts.footer.privacy"),
+                t("layouts.footer.privacy_url"),
+                target: "_blank",
+                rel: "nofollow" %> &nbsp;|</li> 
         <li class="inline-block"><%= link_to t("layouts.footer.conditions"), page_path('conditions') %>&nbsp;|</li>
         <li class="inline-block"><%= link_to t("layouts.footer.accessibility"), page_path('accessibility') %></li>
       </ul>

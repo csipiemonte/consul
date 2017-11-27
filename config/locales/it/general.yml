@@ -200,7 +200,7 @@ it:
       accessibility: Accessibilità
       conditions: "Condizioni d'uso"
       consul: Consul
-      consul_url: 'https://github.com/consul/consul'
+      consul_url: 'https://github.com/csipiemonte/consul'
       contact_us: Per ottenere assistenza tecnica entra in
       copyright: Consul, %{year}
       description: Questo portale utilizza il %{open_source} %{consul} ed è stato realizzato con fondi PON METRO.
@@ -383,10 +383,10 @@ it:
         help: Aiuto sulle proposte
       section_footer:
         title: Aiuto sulle proposte
-        description: "Fai una proposta cittadina. Se ottiene gli appoggi sufficienti e passa alla votazione, puoi ottenere che tutti gli abitanti decidano come vogliano che sia la nostra città."
-        help_text_1: "Le proposte cittadine rappresentano un'opportunità data agli abitanti e ai collettivi di decidere, in forma diretta, sul come si vuole che sia la propria città. Qualsiasi persona può formulare una proposta su un tema che le interessa o che la preoccupa; se la proposta ottiene gli appoggi sufficienti e passa un referendum cittadino, il Consiglio Comunale la metterà in pratica."
-        help_text_2: "Per creare una proposta bisogna registrarsi su %{org}. Le proposte che raggiungono l'appoggio dell'1% della popolazione (residenti a Torino di una età maggiore di 16 anni), passano a votazione. Per appoggiare le proposte è necessario disporre di un account verificato."
-        help_text_3: "Si convoca un referendum cittadino quando le proposte raggiungono gli appoggi necessari. Una volta concluso, se c'è più gente a favore di quella contro, il Consiglio Comunale la proposta e la esegue."
+        description: "Proponi ciò che vorresti che la Città realizzasse e appoggia le proposte di altre persone."
+        help_text_1: "Per creare le proposte è necessario registrarsi su DecidiTorino."
+        help_text_2: "Per appoggiare le proposte, occorre che il proprio account sia stato verificato (ovvero che si risulti residenti in Torino. Tale verifica è automatica dopo aver indicato il proprio codice fiscale ed il CAP di residenza. Occorrerà fornire il numero di cellulare per ottenere l'SMS di conferma)"
+        help_text_3: "Le proposte che raggiungono l'appoggio di 5000 residenti a Torino (con età maggiore di 16 anni) passeranno ad una valutazione tecnica dell'Amministrazione per la fattibilità. Di questa valutazione verrà dato esito pubblico."
     new:
       form:
         submit_button: Crea proposta
