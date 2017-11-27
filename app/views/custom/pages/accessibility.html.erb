@@ -41,10 +41,12 @@
           <td><%= t("layouts.header.debates") %></td>
         </tr>
         <% end %>
+        <% if feature?(:proposals) %>
         <tr>
           <td class="text-center">2</td>
           <td><%= t("layouts.header.proposals") %></td>
         </tr>
+        <% end %>
         <% if feature?(:polls) %>
         <tr>
           <td class="text-center">3</td>

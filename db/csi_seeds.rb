@@ -135,7 +135,7 @@ print "Creating Users"
 
 # Default admin user (change password after first deploy to a server!)
 if Administrator.count == 0
-  admin = User.create!(username: 'admin', email: 'admin@deciditorino.it', password: '12345678', password_confirmation: '12345678', confirmed_at: Time.current, terms_of_service: "1")
+  admin = User.create!(username: 'DecidiTorino', email: 'admin@deciditorino.it', password: '12345678', password_confirmation: '12345678', confirmed_at: Time.current, terms_of_service: "1")
   admin.create_administrator
 end
 
