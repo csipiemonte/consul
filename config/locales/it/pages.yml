@@ -54,9 +54,9 @@ it:
           title: "Domande Frequenti"
           description: "Usa questa pagina per risolvere le FAQ utili agli utenti del sito."
           faq_1_title: "Non mi funziona la verifica di residenza"
-          faq_1_description: "La residenza in Torino è verificata, attivando la richiesta presente nel proprio profilo. La verifica avviene dopo aver introdotto il codice fiscale e il CAP di residenza. In alcuni casi può capitare che il codice fiscale introdotto non corrisponda a quello registrato in anagrafe, soprattutto quando si hanno doppi nomi o il codice è cambiato recentemente. In questi casi occorre segnalare l’occorrenza, fornendo, all’indirizzo email presente nella prima pagina alla voce ‘contatti’ i propri dati identificativi presenti su DecidiTorino (nome utente) nonché data di nascita e codice inserito. Si verrà ricontattati una volta compresi i motivi del blocco e per chiarire come procedere."
+          faq_1_description: "La residenza in Torino è verificata, attivando la richiesta presente nel proprio profilo. La verifica avviene dopo aver introdotto il codice fiscale e il CAP di residenza. In alcuni casi può capitare che il codice fiscale introdotto non corrisponda a quello registrato in anagrafe, soprattutto quando si hanno doppi nomi o il codice è cambiato recentemente. In questi casi occorre segnalare l’occorrenza, fornendo, all’indirizzo email presente alla voce 'contatti' i propri dati identificativi presenti su DecidiTorino (nome utente) nonché data di nascita e codice inserito. Si verrà ricontattati una volta compresi i motivi del blocco e per chiarire come procedere."
           faq_2_title: "Non riesco a creare la mia utenza"
-          faq_2_description: "Nel caso non si riesca a creare correttamente la propria utenza, si prega di contattare, lasciando opportuni recapiti (email e/o telefono) all'indirizzo email presente nella prima pagina alla voce 'contatti'"
+          faq_2_description: "Nel caso non si riesca a creare correttamente la propria utenza, si prega di contattare, lasciando opportuni recapiti (email e/o telefono) all'indirizzo email presente alla voce 'contatti'"
           faq_3_title: "Contatti "
           faq_3_description: "Per problemi legati alla registrazione e all'utilizzo della piattaforma scrivere una mail a www@comune.torino.it"      
       other:

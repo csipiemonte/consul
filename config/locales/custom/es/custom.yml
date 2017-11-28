@@ -13,7 +13,8 @@ es:
       logon: Cómo registrarse   
       platform: Cómo usar la plataforma
       faq: Preguntas frecuentes
-      contacts: Contactos  
+      contacts: Contactos
+      privacy_url: "http://www.comune.torino.it/condizioni.shtml"
       ponmetro_url: "http://www.ponmetro.it/"
       ponmetro_alt: PON Metro
       citta_url: "http://www.comune.torino.it"

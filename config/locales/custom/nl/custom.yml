@@ -13,7 +13,8 @@ nl:
       logon: Hoe te registreren   
       platform: Hoe het platform te gebruiken
       faq: FAQ
-      contacts: Contacten  
+      contacts: Contacten
+      privacy_url: "http://www.comune.torino.it/condizioni.shtml"
       ponmetro_url: "http://www.ponmetro.it/"
       ponmetro_alt: PON Metro
       citta_url: "http://www.comune.torino.it"
