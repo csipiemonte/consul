@@ -14,14 +14,7 @@ nl:
       platform: Hoe het platform te gebruiken
       faq: FAQ
       contacts: Contacten
-      privacy_url: "http://www.comune.torino.it/condizioni.shtml"
-      ponmetro_url: "http://www.ponmetro.it/"
-      ponmetro_alt: PON Metro
-      citta_url: "http://www.comune.torino.it"
-      citta_alt: Comune di Torino     
-      europa_url: "https://ec.europa.eu/info/funding-tenders/european-structural-and-investment-funds_nl"
       europa_alt: Europese structuur- en investeringsfondsen
-      ministero_url: "http://www.agenziacoesione.gov.it/it"
       ministero_alt: Agentschap voor territoriale cohesie
       ponmetro_finanziamento: Project toegekend door Europese Unie - Europese structuur- en investeringsfondsen - Operationeel programma Metropolitan Cities 2014 - 2020      
     header:
@@ -29,14 +22,14 @@ nl:
       html: Er zijn steden die rechtstreeks door hun bewoners worden geregeerd, die kwesties bespreken die ze bezorgd hebben, ideeën voorstellen om hun leven te verbeteren en te beslissen onderling en alles wat gerealiseerd moet worden.
       more_info: Ontdekken DecidiTorino
   omniauth:
-    shibboleth:
-      sign_in: Log in Shibboleth
-      sign_up: Registreer via Shibboleth
-      name: Shibboleth
+    spid:
+      sign_in: Log in SPID
+      sign_up: Registreer via SPID
+      name: SPID
   settings:
     feature:
       proposals: Voorstellen
-      shibboleth_login: Log in Shibboleth
+      spid_login: Log in SPID
   verification:
     residence:
       new:

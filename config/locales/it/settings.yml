@@ -51,6 +51,7 @@ it:
     map_zoom: Zoom
     mailer_from_name: Nominativo del mittente
     mailer_from_address: Email del mittente
+    meta_title: "Titolo del sito (SEO)"
     meta_description: "Descrizione del sito (SEO)"
     meta_keywords: "Parole chiave (SEO)"
     verification_offices_url: URL degli uffici di verifica

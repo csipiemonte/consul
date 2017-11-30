@@ -64,6 +64,7 @@ Setting.create(key: 'org_name', value: 'DecidiTorino')
 Setting.create(key: 'place_name', value: 'Torino')
 
 # Meta tags for SEO
+Setting.create(key: 'meta_title', value: 'DecidiTorino')
 Setting.create(key: 'meta_description', value: 'Citizen Participation and Open Government Application')
 Setting.create(key: 'meta_keywords', value: 'citizen participation, open government')
 
@@ -75,7 +76,7 @@ Setting.create(key: 'feature.polls', value: nil)
 Setting.create(key: 'feature.twitter_login', value: 'true')
 Setting.create(key: 'feature.facebook_login', value: 'true')
 Setting.create(key: 'feature.google_login', value: 'true')
-Setting.create(key: 'feature.shibboleth_login', value: 'false')
+Setting.create(key: 'feature.spid_login', value: nil)
 Setting.create(key: 'feature.public_stats', value: 'true')
 Setting.create(key: 'feature.budgets', value: 'true')
 Setting.create(key: 'feature.signature_sheets', value: 'true')

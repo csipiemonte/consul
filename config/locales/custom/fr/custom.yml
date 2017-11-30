@@ -14,14 +14,7 @@ fr:
       platform: Comment utiliser la plate-forme
       faq: Foire aux questions
       contacts: Contacts
-      privacy_url: "http://www.comune.torino.it/condizioni.shtml"
-      ponmetro_url: "http://www.ponmetro.it/"
-      ponmetro_alt: PON Metro
-      citta_url: "http://www.comune.torino.it"
-      citta_alt: Comune di Torino     
-      europa_url: "https://ec.europa.eu/info/funding-tenders/european-structural-and-investment-funds_fr"
       europa_alt: Fonds structurels et d'investissement européens
-      ministero_url: "http://www.agenziacoesione.gov.it/it"
       ministero_alt: Agence pour la cohésion territoriale
       ponmetro_finanziamento: Projet accordé par l'Union européenne - Fonds structurels et d'investissement européens - Programme opérationnel Villes métropolitaines 2014 - 2020
     header:
@@ -29,14 +22,14 @@ fr:
       html: Il y a des villes directement gouvernées par leurs habitants, qui <strong>discutent</strong> des problèmes qui les inquiètent, <strong>proposent</strong> des idées pour améliorer leur vie et <strong>décider</strong> entre elles et tous ceux qui doivent être réalisés.
       more_info: Découvre DecidiTorino
   omniauth:
-    shibboleth:
-      sign_in: "S'enregistrer avec Shibboleth"
-      sign_up: Se connecter avec Shibboleth
-      name: Shibboleth
+    spid:
+      sign_in: "S'enregistrer avec SPID"
+      sign_up: Se connecter avec SPID
+      name: SPID
   settings:
     feature:
       proposals: Propositions
-      shibboleth_login: Se connecter avec Shibboleth
+      spid_login: Se connecter avec SPID
   verification:
     residence:
       new:

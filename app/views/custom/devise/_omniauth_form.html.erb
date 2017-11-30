@@ -32,11 +32,11 @@
         </div>
       <% end %>
 
-      <% if feature? :shibboleth_login %>
+      <% if feature? :spid_login %>
         <div class="small-12 medium-6 large-4 column end">
-          <%= link_to t("omniauth.shibboleth.name"), user_omniauth_authorize_path(:shibboleth),
-                      title: t("omniauth.shibboleth.sign_in"),
-                      class: "button-google button expanded" %> <!-- TODO, inserire css class di shibboleth -->
+          <%= link_to t("omniauth.spid.name"), user_omniauth_authorize_path(:shibboleth),
+                      title: t("omniauth.spid.sign_in"),
+                      class: "button-google button expanded" %> <!-- TODO, inserire css class di spid -->
         </div>
       <% end %>
 
@@ -77,11 +77,11 @@
         </div>
       <% end %>
 
-      <% if feature? :shibboleth_login %>
+      <% if feature? :spid_login %>
         <div class="small-12 medium-6 large-4 column end">
-          <%= link_to t("omniauth.shibboleth.name"), user_omniauth_authorize_path(:shibboleth),
-                      title: t("omniauth.shibboleth.sign_up"),
-                      class: "button-google button expanded" %> <!-- TODO, inserire css class di shibboleth -->
+          <%= link_to t("omniauth.spid.name"), user_omniauth_authorize_path(:shibboleth),
+                      title: t("omniauth.spid.sign_up"),
+                      class: "button-google button expanded" %> <!-- TODO, inserire css class di spid -->
         </div>
       <% end %>
 

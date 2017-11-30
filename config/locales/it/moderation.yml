@@ -7,7 +7,7 @@ it:
         filter: Filtro
         filters:
           all: Tutti
-          pending_flag_review: Pendenti
+          pending_flag_review: In sospeso
           with_ignored_flag: Marcati come esaminati
         headers:
           comment: Commenti
@@ -29,7 +29,7 @@ it:
         filter: Filtra
         filters:
           all: Tutti
-          pending_flag_review: Pendenti
+          pending_flag_review: In sospeso
           with_ignored_flag: Marcati come esaminati
         headers:
           debate: Dibattito

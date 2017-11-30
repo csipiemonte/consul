@@ -13,8 +13,8 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     sign_in_with :google_login, :google_oauth2
   end
 
-  def shibboleth
-    sign_in_with :shibboleth, :shibboleth
+  def spid
+    sign_in_with :spid, :spid
   end
 
   def after_sign_in_path_for(resource)

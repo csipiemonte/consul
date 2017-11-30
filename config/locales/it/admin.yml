@@ -104,6 +104,7 @@ it:
         table_heading: Voce
         table_amount: Importo
         table_population: Popolazione
+        population_info: "Il campo 'Popolazione' delle voci di bilancio è usato unicamente a fini statistici, con l'obbiettivo di mostrare la percentuale di voti avuti in ciascuna voce che rappresenta un'area con popolazione. Si tratta di un dato facoltativo, può essere lasciato vuoto qualora non lo si adotti."
       winners:
         calculate: Calcola proposte vincitrici
         calculated: In elaborazione delle proposte vincitrici, può durare un minuto.
@@ -558,6 +559,8 @@ it:
           assign: Assegna urna
           unassign: Annulla assegnazione urna
     poll_booth_assignments:
+      alert:
+        shifts: "Sono presenti turni assegnati per questa urna. Rimuovendo l'assegnazione, questi turni saranno eliminati. Si desidera procedere?"
       flash:
         destroy: "Urna deallocata"
         create: "Urna assegnata"
@@ -955,6 +958,7 @@ it:
         direct_messages: Messaggi diretti
         proposal_notifications: Notifiche di proposte
         incomplete_verifications: Verifiche incomplete
+        polls: Votazioni
       direct_messages:
         title: Messaggi diretti
         total: Totale
@@ -963,6 +967,17 @@ it:
         title: Notifiche delle proposte
         total: Totale
         proposals_with_notifications: Proposte con notifiche
+      polls:
+        title: Statistiche delle votazioni
+        all: Votazioni
+        web_participants: Partecipanti sul sito web
+        total_participants: Partecipanti totali
+        poll_questions: "Domande della votazione: %{poll}"
+        table:
+          poll_name: Votazione
+          question_name: Domanda
+          origin_web: Partecipanti Web
+          origin_total: Partecipanti Totali
     tags:
       create: Crea argomento
       destroy: Elimina argomento

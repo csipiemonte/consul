@@ -211,7 +211,7 @@ it:
       open_source_url: 'http://www.gnu.org/licenses/agpl-3.0.html'
       participation_text: Decidi come deve essere la città che ami.
       participation_title: Partecipazione
-      privacy: Politica sulla privacy
+      privacy: Tutela della privacy
       transparency_text: Ottieni tutte le informazioni sulla città.
       transparency_title: Trasparenza
       transparency_url: 'https://transparency.consul'
@@ -295,7 +295,7 @@ it:
       name: Twitter
     info_sign_in: "Entra con:"
     info_sign_up: "Registrati con:"
-    or_fill: "O riempi i seguenti campi:"
+    or_fill: "Oppure riempi i seguenti campi:"
   proposals:
     create:
       form:

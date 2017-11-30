@@ -14,14 +14,7 @@ en:
       platform: How to use the platform
       faq: FAQ
       contacts: Contacts
-      privacy_url: "http://www.comune.torino.it/condizioni.shtml"
-      ponmetro_url: "http://www.ponmetro.it/"
-      ponmetro_alt: PON Metro
-      citta_url: "http://www.comune.torino.it"
-      citta_alt: Comune di Torino     
-      europa_url: "https://ec.europa.eu/info/funding-tenders/european-structural-and-investment-funds_en"
-      europa_alt: European funds
-      ministero_url: "http://www.agenziacoesione.gov.it/it"
+      europa_alt: European Structural and Investment Funds
       ministero_alt: Agency for Territorial Cohesion
       ponmetro_finanziamento: PONMETRO Project      
     header:
@@ -29,14 +22,14 @@ en:
       html: There are cities that are governed directly by their inhabitants, who <strong>discuss</strong> the topics they are concerned about, <strong>propose</strong> ideas to improve their lives and <strong>decide</strong> among themselves which ones will be carried out.
       more_info: Discover DecidiTorino
   omniauth:
-    shibboleth:
-      sign_in: Login with Shibboleth
-      sign_up: Signin with Shibboleth
-      name: Shibboleth
+    spid:
+      sign_in: Login with SPID
+      sign_up: Signin with SPID
+      name: SPID
   settings:
     feature:
       proposals: Proposals
-      shibboleth_login: Shibboleth login
+      spid_login: SPID login
   verification:
     residence:
       new:

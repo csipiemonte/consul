@@ -19,6 +19,9 @@ class CensusCsiApi
     rescue Savon::InvalidResponseError => e
       err_msg = e.message
       Rails.logger.error "#{prf}Rilevato Savon::InvalidResponseError, dettaglio: #{err_msg}"
+    rescue Net::OpenTimeout => e
+      err_msg = e.message
+      Rails.logger.error "#{prf}Rilevato Net::OpenTimeout, dettaglio: #{err_msg}"
     rescue Net::HTTPFatalError => e
       err_msg = e.message
       Rails.logger.error "#{prf}Rilevato Net::HTTPFatalError, dettaglio: #{err_msg}"

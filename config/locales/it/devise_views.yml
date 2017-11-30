@@ -120,7 +120,7 @@ it:
           username_is_available: Nome utente disponibile
           username_is_not_available: Nome utente già in uso
           username_label: Nome utente
-          username_note: Nome pubblico che apparirà nelle tue pubblicazioni
+          username_note: "Inserisci il tuo nome e cognome, oppure uno pseudo: apparirà nelle tue pubblicazioni. Ricorda che non puoi usare identità altrui (neanche come pseudo) perché è reato (art. 494 Codice Penale) perseguibile d'ufficio."
         success:
           back_to_index: Ho capito, torna alla pagina principale
           instructions_1_html: Per cortesia <b>controlla la tua casella di posta elettronica</b> - ti abbiamo inviato un <b>link per confermare il tuo account</b>.
