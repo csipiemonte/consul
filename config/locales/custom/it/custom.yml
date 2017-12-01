@@ -16,7 +16,7 @@ it:
       contacts: Contatti
       europa_alt: Fondi strutturali e di investimento europei
       ministero_alt: Agenzia per la coesione territoriale
-      ponmetro_finanziamento: Progetto confinanziato da Unione Europea - Fondi strutturali e di investimento europei - Programma Operativo Città Metropolitane 2014 - 2020
+      ponmetro_finanziamento: "Progetto cofinanziato dall'Unione Europea - Fondi Strutturali di Investimento Europei - Programma Operativo Città Metropolitane 2014-2020"
     header:
       titolo: La città che ami sarà la città che vuoi. 
       html: Esistono città governate direttamente dai loro abitanti, che <strong>dibattono</strong> di temi verso cui nutrono preoccupazione, <strong>propongono</strong> idee per migliorare le loro vite e <strong>decidono</strong> fra tutte e tutti quelle da realizzare.
@@ -46,7 +46,22 @@ it:
   welcome:
     schede:
       scheda1:
-        title: Titolo 1
-        description: Descrizione 1
-        label: Argomento 1	 	  
+        title: "Zona di libera discussione"
+        description: "Vi ricordiamo che l'area dibattiti è una zona di libera discussione tra utenti. Per formulare proposte di cui la Città si impegna a valutare tecnicamente la fattibilità, anche in termini di risorse, sarà prossimanente attiva, non appena approvate le regole di partecipazione, la sezione proposte dove potranno essere formulate idee e progetti da commentare ed appoggiare."
+        label: Dibattiti	 	  
+        link: Vai ai dibattiti 
+      scheda2:
+        title: "Anagrafe"
+        description: "Invitiamo a commentare le domande che trovate in questa pagina per meglio focalizzare le aree di possibile intervento dell’Amministrazione."
+        label: Progetti     
         link: Vedi progetto 
+      scheda3:
+        title: Innovazione e sicurezza partecipata
+        description: "Il progetto prevede di applicare il tema della Innovazione e della Partecipazione ad una esigenza concreta dei cittadini e cittadine ovvero 'la sicurezza'."
+        label: Progetti      
+        link: Vedi progetto   
+      scheda4:
+        title: "La partecipazione cittadina"
+        description: "Una riflessione sulle regole per partecipare a DecidiTorino."
+        label: Progetti     
+        link: Vedi progetto                         

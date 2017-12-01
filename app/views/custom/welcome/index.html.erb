@@ -29,4 +29,78 @@
 <% end %>
 
 <% cache [locale_and_user_status, @featured_debates, @featured_proposals, 'featured'] do %>
+  <main>
+    <div class="row">
+      <div class="small-12 medium-6 column margin-bottom">
+        <figure class="figure-card">
+          <%= link_to debates_path, title: t("welcome.schede.scheda1.link") do %>
+          <%= image_tag "welcome/img1.jpg", alt: t("welcome.schede.scheda1.title") %>
+          <% end %>
+          <figcaption>
+          <%= link_to debates_path, title: t("welcome.schede.scheda1.link") do %>
+          <span><%= t("welcome.schede.scheda1.label") %></span><br>
+          <p class="title"><%= t("welcome.schede.scheda1.title") %></p>
+          <% end %>
+          </figcaption>
+        </figure>
+        <p><%= t("welcome.schede.scheda1.description") %></p>
+        <p>
+          <%= link_to t("welcome.schede.scheda1.link"), debates_path %>
+        </p>
+      </div>      
+      <div class="small-12 medium-6 column margin-bottom">
+        <figure class="figure-card">
+          <%= link_to "#{request.url}legislation/processes/3", title: t("welcome.schede.scheda2.link") do %>
+          <%= image_tag "welcome/img1.jpg", alt: t("welcome.schede.scheda2.title") %>
+          <% end %>
+          <figcaption>
+          <%= link_to "#{request.url}legislation/processes/3", title: t("welcome.schede.scheda2.link") do %>
+            <span><%= t("welcome.schede.scheda2.label") %></span><br>
+            <p class="title"><%= t("welcome.schede.scheda2.title") %></p>
+          <% end %>
+          </figcaption>
+        </figure>
+        <p><%= t("welcome.schede.scheda2.description") %></p>
+        <p>
+          <%= link_to t("welcome.schede.scheda4.link"), "#{request.url}legislation/processes/3" %>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 medium-6 column margin-bottom">
+        <figure class="figure-card">
+          <%= link_to "#{request.url}legislation/processes/2", title: t("welcome.schede.scheda3.link") do %>
+          <%= image_tag "welcome/img1.jpg", alt: t("welcome.schede.scheda3.title") %>
+          <% end %>
+          <figcaption>
+          <%= link_to "#{request.url}legislation/processes/2", title: t("welcome.schede.scheda3.link") do %>
+            <span><%= t("welcome.schede.scheda3.label") %></span><br>
+            <p class="title"><%= t("welcome.schede.scheda3.title") %></p>
+          <% end %>
+          </figcaption>
+        </figure>
+        <p><%= t("welcome.schede.scheda3.description") %></p>
+        <p>
+          <%= link_to t("welcome.schede.scheda4.link"), "#{request.url}legislation/processes/2" %>
+        </p>
+      </div>
+      <div class="small-12 medium-6 column margin-bottom">
+        <figure class="figure-card">
+          <%= link_to "#{request.url}legislation/processes/1", title: t("welcome.schede.scheda4.link") do %>
+          <%= image_tag "welcome/img1.jpg", alt: t("welcome.schede.scheda4.title") %>
+          <% end %>
+          <figcaption>
+          <%= link_to "#{request.url}legislation/processes/1", title: t("welcome.schede.scheda4.link") do %>
+          <span><%= t("welcome.schede.scheda4.label") %></span><br>
+          <p class="title"><%= t("welcome.schede.scheda4.title") %></p>
+          <% end %>
+          </figcaption>
+        </figure>
+        <p><%= t("welcome.schede.scheda4.description") %></p>
+        <p>
+          <%= link_to t("welcome.schede.scheda4.link"), "#{request.url}legislation/processes/1" %>
+        </p>
+      </div>
+    </div>    
+  </main>
 <% end %>
