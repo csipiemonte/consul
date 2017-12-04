@@ -46,7 +46,22 @@ fr:
   welcome:
     schede:
       scheda1:
-        title: Titre 1
-        description: Description 1
-        label: Sujet 1
-        link: Voir le projet
+        title: "Zone de débats libres"
+        description: "Nous vous rappelons que le domaine des débats est un espace de discussion libre entre utilisateurs. Afin de formuler des propositions pour lesquelles la Ville entreprend d'évaluer techniquement sa faisabilité, y compris en termes de ressources, la section proposée sera bientôt prête, dès que les règles de participation auront été approuvées, où des idées et des projets pour commenter et soutenir être formulé."
+        label: Débats      
+        link: Voir débats 
+      scheda2:
+        title: "Bureau d'enregistrement"
+        description: "Nous vous invitons à commenter les questions que vous trouverez sur cette page pour mieux vous concentrer sur les domaines d'intervention possibles de l'administration."
+        label: Processus législatifs     
+        link: Voir les processus législatifs 
+      scheda3:
+        title: "Innovation et sécurité partagée"
+        description: "Le processus législatif prévoit d'appliquer le thème de l'innovation et de la participation à un besoin concret de citoyens ou de «sécurité»."
+        label: Processus législatifs      
+        link: Voir les processus législatifs   
+      scheda4:
+        title: "Participation citoyenne"
+        description: "Une réflexion sur les règles de participation à DecidiTorino."
+        label: Processus législatifs     
+        link: Voir les processus législatifs

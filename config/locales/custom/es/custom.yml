@@ -46,7 +46,22 @@ es:
   welcome:
     schede:
       scheda1:
-        title: Título 1
-        description: Descripción 1
-        label: Tema 1	 	  
-        link: Ver proyecto 
+        title: "Área de debates libres"
+        description: "Le recordamos que el área de debates es un área de discusión libre entre los usuarios. Con el fin de formular propuestas para las cuales la Ciudad se compromete a evaluar técnicamente su viabilidad, también en términos de recursos, la sección propuesta estará pronto lista, tan pronto como se hayan aprobado las reglas de participación, donde las ideas y proyectos para comentar y apoyar puedan ser formulado."
+        label: Debates      
+        link: See debates 
+      scheda2:
+        title: "Oficina de Registro"
+        description: "Lo invitamos a comentar las preguntas que encuentra en esta página para centrarse mejor en las áreas de posible intervención administrativa."
+        label: Procesos legislativos     
+        link: Ver los Procesos legislativos 
+      scheda3:
+        title: "Innovación y seguridad compartida"
+        description: "El proceso legislativo planea aplicar el tema de Innovación y Participación a una necesidad concreta de ciudadanos o 'seguridad'."
+        label: Procesos legislativos      
+        link: Ver los Procesos legislativos   
+      scheda4:
+        title: "Participacion ciudadana"
+        description: "Una reflexión sobre las reglas para participar en DecidiTorino."
+        label: Procesos legislativos     
+        link: Ver los Procesos legislativos
