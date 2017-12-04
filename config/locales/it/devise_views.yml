@@ -96,7 +96,7 @@ it:
           title: Cancellare il mio account
         edit:
           current_password_label: Password attuale
-          edit: Modifica proposta
+          edit: Modifica password
           email_label: Email
           leave_blank: Lasciare vuoto se non si desidera cambiarla
           need_current: La password attuale è necessaria per confermare le modifiche

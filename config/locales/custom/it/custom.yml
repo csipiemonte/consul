@@ -1,5 +1,9 @@
 ﻿---
 it:
+  debates:
+    index:
+      section_footer:
+        help_text_4: "Il titolo e il testo dei dibattiti che hanno ricevuto almeno 1 appoggio, non potranno più essere modificati dal proponente."
   devise:
     sessions:
       census_code_updated: Aggiornato il numero della circoscrizione.
@@ -26,6 +30,11 @@ it:
       sign_in: Entra con SPID
       sign_up: Registrati con SPID
       name: SPID
+  pages:
+    more_info:
+      debates:
+        feature_3_html: "Il titolo e il testo dei dibattiti che hanno ricevuto almeno 1 appoggio, non potranno più essere modificati dal proponente."
+        feature_4_html: "Vi ricordiamo che l'area dibattiti è una zona di libera discussione tra utenti. Per formulare proposte di cui la Città si impegna a valutare tecnicamente la fattibilità, anche in termini di risorse, sarà prossimanente attiva, non appena approvate le regole di partecipazione, la sezione Proposte dove potranno essere formulate idee e progetti da commentare ed appoggiare."
   settings:
     feature:
       proposals: Proposte
