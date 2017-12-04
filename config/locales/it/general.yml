@@ -130,8 +130,8 @@ it:
         title: Aiuto sui dibattiti
         description: "Crea un tema sul quale dibattere su qualsiasi argomento che intendi condividere con gli altri abitanti della tua città."
         help_text_1: "Per creare un dibattito è necessario registrarsi su DecidiTorino"
-        help_text_2: "I dibattiti possono essere valutati utilizzando i pulsanti Sono d'accordo o Non sono d'accordo che si trovano accanto a ciascuno di essi."
-        help_text_3: "Puoi anche valutare i commenti che sono già stati proposti"
+        help_text_2: "I dibattiti possono essere valutati utilizzando i pulsanti Sono d'accordo o Non sono d'accordo che si trovano accanto a ciascuno di essi. Puoi anche valutare i commenti che sono già stati proposti."
+        help_text_3: "Vi ricordiamo che l'area dibattiti è una zona di libera discussione tra utenti. Per formulare proposte di cui la Città si impegna a valutare tecnicamente la fattibilità, anche in termini di risorse, sarà prossimanente attiva, non appena approvate le regole di partecipazione, la sezione proposte dove potranno essere formulate idee e progetti da commentare ed appoggiare."
         proposals_link: proposta
         budget_link: bilanci partecipativi
     new:
