@@ -2,7 +2,7 @@
 
 # CONSUL
 
-Citizen Participation and Open Government Application
+Citizen Participation and Open Government Application - City of Torino general version
 
 [![Build Status](https://travis-ci.org/consul/consul.svg?branch=master)](https://travis-ci.org/consul/consul)
 [![Code Climate](https://codeclimate.com/github/consul/consul/badges/gpa.svg)](https://codeclimate.com/github/consul/consul)

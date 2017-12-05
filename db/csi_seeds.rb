@@ -16,7 +16,7 @@ Setting.create(key: 'official_level_5_name', value: 'Sindaco')
 Setting.create(key: 'max_ratio_anon_votes_on_debates', value: '50')
 
 # Max votes where a debate is still editable
-Setting.create(key: 'max_votes_for_debate_edit', value: '1000')
+Setting.create(key: 'max_votes_for_debate_edit', value: '1')
 
 # Max votes where a proposal is still editable
 Setting.create(key: 'max_votes_for_proposal_edit', value: '1000')
