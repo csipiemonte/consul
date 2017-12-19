@@ -13,8 +13,8 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     sign_in_with :google_login, :google_oauth2
   end
 
-  def spid
-    sign_in_with :spid, :spid
+  def shibboleth
+    sign_in_with :shibboleth_login, :shibboleth
   end
 
   def after_sign_in_path_for(resource)
@@ -28,10 +28,11 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   private
 
     def sign_in_with(feature, provider)
+      prf = "[#{self.class}" + '::sign_in_with] '
       raise ActionController::RoutingError.new('Not Found') unless Setting["feature.#{feature}"]
 
       auth = env["omniauth.auth"]
-      Rails.logger.info "auth: #{auth}"
+      Rails.logger.info "#{prf}auth: #{auth}"
 
       identity = Identity.first_or_create_from_oauth(auth)
       @user = current_user || identity.user || User.first_or_initialize_for_oauth(auth)
@@ -39,7 +40,14 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
       if save_user
         identity.update(user: @user)
         sign_in_and_redirect @user, event: :authentication
-        set_flash_message(:notice, :success, kind: provider.to_s.capitalize) if is_navigational_format?
+        kind_msg = provider.to_s.capitalize
+        Rails.logger.info "#{prf}provider: #{provider}"
+
+        if provider.to_s == 'shibboleth' # su shibboleth si basa l'autenticazione di molti Identity Provider (SPID, TorinoFacile)
+          kind_msg = auth.info.idp
+        end
+
+        set_flash_message(:notice, :success, kind: kind_msg) if is_navigational_format?
       else
         session["devise.#{provider}_data"] = auth
         redirect_to new_user_registration_url

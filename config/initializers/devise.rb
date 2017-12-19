@@ -247,7 +247,7 @@ Devise.setup do |config|
   config.omniauth :facebook, Rails.application.secrets.facebook_key, Rails.application.secrets.facebook_secret, scope: 'email', info_fields: 'email,name,verified'
   config.omniauth :google_oauth2, Rails.application.secrets.google_oauth2_key, Rails.application.secrets.google_oauth2_secret
 
-  config.omniauth :shibboleth, { :uid_field => 'eppn', :info_fields => {:email => 'mail', :name => 'cn', :last_name => 'sn'}, :extra_fields => [:schacHomeOrganization] }
+  config.omniauth :shibboleth, { :request_type => :header, :uid_field => 'eppn', :info_fields => {:email => 'Shib-Email', :name => 'Shib-Identita-Nome', :last_name => 'Shib-Identita-Cognome', :idp => 'Shib-Identita-Provider'} }
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or

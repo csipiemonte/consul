@@ -78,8 +78,13 @@ class User < ActiveRecord::Base
     oauth_email_confirmed = oauth_email.present?
     oauth_user            = User.find_by(email: oauth_email) if oauth_email_confirmed
 
+    uname = auth.info.name
+    if auth.provider.to_s == 'shibboleth'
+      uname += ' ' + auth.info.last_name
+    end
+
     oauth_user || User.new(
-      username:  auth.info.name || auth.uid,
+      username:  uname || auth.uid,
       email: oauth_email,
       oauth_email: oauth_email,
       password: Devise.friendly_token[0, 20],

@@ -51,6 +51,9 @@ Rails.application.configure do
     end
   end
 
+  # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
+  config.force_ssl = true
+
   # log level
   config.log_level = :debug
 end
