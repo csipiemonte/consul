@@ -79,18 +79,27 @@ p {font-size: 1.0625rem; font-weight: 400; line-height: 1.625rem; margin-bottom:
 
 
 .button.button-spid {
-  background: #eaebef;
-  border-left: 3px solid #0066cb;
+  height: $line-height * 2;
+  line-height: $line-height * 2;
+  padding: 0 0 0 17px;
+  position: relative;
+  background: #06C;
+  color:#000;
+  font-weight: bold;
+  text-align:left;
+  border-left: 3px solid #036;
 
   &::before {
-    color: #0066cb;
-    content: 'B';
-    font-family: "icons" !important;
-    font-size: rem-calc(24);
-    left: 0;
-    line-height: $line-height * 2;
-    padding: 0 rem-calc(20);
-    position: absolute;
-    top: 0;
+    content: ' '!important;
+    background-image: url(spid-ico-circle-bb.svg);
+    font-size: 1.5rem;
+    line-height: 3rem;
+    padding-left: 44px;
+    width: 10px;
+    height: 48px;
+    background-color: transparent;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 0;
   }
 }
