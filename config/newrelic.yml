@@ -47,4 +47,5 @@ staging:
   app_name: DecidiTorino (Staging)
 
 production:
+  log_file_path: "/var/log/rails/www.deciditorino.it_443/"
   <<: *default_settings

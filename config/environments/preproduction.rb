@@ -54,6 +54,9 @@ Rails.application.configure do
   # Use a different logger for distributed setups.
   # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
 
+  # TODO - specificare il path corretto dei log di preproduction
+  # config.logger = Logger.new("/var/log/rails/tst-www-deciditorino.portali.csi.it_443/#{Rails.env}.log", 5, 100*1048576)
+
   # Use a different cache store in production.
   config.cache_store = :dalli_store
 
