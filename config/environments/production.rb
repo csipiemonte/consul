@@ -53,7 +53,7 @@ Rails.application.configure do
 
   # Use a different logger for distributed setups.
   # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
-  config.logger = Logger.new("/var/log/rails/www.deciditorino.it_443/#{Rails.env}.log", 5, 100*1048576)
+  config.logger = Logger.new("/var/log/rails/www.deciditorino.it_443/#{Rails.env}.log")
 
   # Use a different cache store in production.
   config.cache_store = :dalli_store, "#{Rails.application.secrets.memcached_url}"
