@@ -7,7 +7,7 @@ it:
         title: Account utente
     account_info:
       change_user: Cambiare utente
-      document_number_label: 'Numero del documento:'
+      document_number_label: 'Dati identificativi del documento:'
       document_type_label: 'Tipo di documento:'
       email_label: 'Email:'
       identified_label: 'Identificato come:'
@@ -17,7 +17,7 @@ it:
       index:
         title: Gestione
         info: Da qui è possibile gestire gli utenti mediante le azioni elencate nel menu di sinistra.
-    document_number: Numero del documento
+    document_number: Dati identificativi del documento
     document_type_label: Tipo di documento
     document_verifications:
       already_verified: Questo account utente è già stato verificato.

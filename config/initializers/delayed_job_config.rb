@@ -6,7 +6,7 @@ elsif Rails.env.test?
   Delayed::Worker.logger = Logger.new("/var/log/rails/tst-www-deciditorino.portali.csi.it_443/delayed_job.log")
 else
   # production
-  Delayed::Worker.delay_jobs = true
+  Delayed::Worker.delay_jobs = false
   Delayed::Worker.logger = Logger.new("/var/log/rails/www.deciditorino.it_443/delayed_job.log")
 end
 Delayed::Worker.destroy_failed_jobs = false

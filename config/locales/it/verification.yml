@@ -50,7 +50,7 @@ it:
         accept_terms_text: "Accetto %{terms_url} alla piattaforma DecidiTorino"
         accept_terms_text_title: "Accetto i termini per l'accesso completo alla piattaforma DecidiTorino"
         date_of_birth: Data di nascita
-        document_number: Numero del documento
+        document_number: Dati identificativi del documento
         document_number_help_title: Aiuto
         document_number_help_text_html: 'Introduci i 16 caratteri del Codice Fiscale.'
         document_type:
