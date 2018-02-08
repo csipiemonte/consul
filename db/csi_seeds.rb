@@ -28,7 +28,7 @@ Setting.create(key: 'comments_body_max_length', value: '1000')
 Setting.create(key: 'proposal_code_prefix', value: 'TOR')
 
 # Number of votes needed for proposal success
-Setting.create(key: 'votes_for_proposal_success', value: '7730')
+Setting.create(key: 'votes_for_proposal_success', value: '5000')
 
 # Months to archive proposals
 Setting.create(key: 'months_to_archive_proposals', value: '12')

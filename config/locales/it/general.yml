@@ -383,10 +383,16 @@ it:
         help: Aiuto sulle proposte
       section_footer:
         title: Aiuto sulle proposte
-        description: "Proponi ciò che vorresti che la Città realizzasse e appoggia le proposte di altre persone."
-        help_text_1: "Per creare le proposte è necessario registrarsi su DecidiTorino."
-        help_text_2: "Per appoggiare le proposte, occorre che il proprio account sia stato verificato (ovvero che si risulti residenti in Torino. Tale verifica è automatica dopo aver indicato il proprio codice fiscale ed il CAP di residenza. Occorrerà fornire il numero di cellulare per ottenere l'SMS di conferma)"
-        help_text_3: "Le proposte che raggiungono l'appoggio di 5000 residenti a Torino (con età maggiore di 16 anni) passeranno ad una valutazione tecnica dell'Amministrazione per la fattibilità. Di questa valutazione verrà dato esito pubblico."
+        description: "Proponi ciò che vorresti che la Città realizzasse e appoggia le proposte degli altri utenti."
+        help_text_1: "Per creare le proposte è necessario %{link}"
+        help_text_1_link: "registrarsi su %{org_name}"
+        help_text_2: "Per appoggiare le proposte, occorre che il proprio account sia stato certificato (ovvero che si risulti residenti a Torino e con età superiore a 16 anni)."
+        help_text_3: "Per certificare il proprio account, in modo automatico, basta essere utenti registrati e scegliere l'opzione presente nella pagina %{link}"
+        help_text_3_link: "Il mio account"
+        help_text_4: "È necessario indicare il proprio codice fiscale, la data di nascita ed il CAP di residenza. Occorrerà inoltre fornire il numero di cellulare per ottenere l'SMS con il codice di conferma."
+        help_text_5: "Le proposte che raggiungono l'appoggio di 5.000 utenti passeranno ad una valutazione tecnica dell'Amministrazione per la fattibilità. Di questa valutazione verrà dato esito pubblico."
+        help_text_6: "Ulteriori informazioni sulle proposte e sulle modalità di registrazione sono disponibili nella %{link}"
+        help_text_6_link: "pagina delle FAQ"
     new:
       form:
         submit_button: Crea proposta
@@ -781,7 +787,7 @@ it:
       description: Spazio aperto per le proposte cittadine a proposito del tipo di città nella quale vogliamo vivere.
       title: Proponi
     recommended:
-      title: Raccomandazioni che ti possono interessare
+      title: Argomenti che ti potrebbero interessare
       debates:
         title: Dibattiti consigliati
         btn_text_link: Tutti i dibattiti consigliati
@@ -802,9 +808,9 @@ it:
       user_permission_info: Con il tuo account puoi già...
       user_permission_proposal: Creare nuove proposte
       user_permission_support_proposal: Sostenere proposte*
-      user_permission_verify: Per poter compiere tutte le azioni, certifica il tuo account.
+      user_permission_verify: Per poter compiere tutte le azioni, certifica la tua utenza.
       user_permission_verify_info: "* Solamente utenti residenti."
-      user_permission_verify_my_account: Verificare account
+      user_permission_verify_my_account: Certifica la mia utenza
       user_permission_votes: Partecipare alle votazioni finali*
   invisible_captcha:
     sentence_for_humans: "Se non sei un robot, per favore ignora questo campo"

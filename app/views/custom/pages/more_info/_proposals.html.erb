@@ -5,13 +5,21 @@
     </h3>
     <p><%= t("pages.more_info.proposals.description") %></p>
     <ul class="features">
+      <li><%= t("pages.more_info.proposals.feature_1_html") %></li>
       <li>
-        <%= t("pages.more_info.proposals.feature_1",
-              link: link_to(t("pages.more_info.proposals.feature_1_link", org_name: setting['org_name']),
-                               new_user_registration_path)).html_safe %>
+        <%= t("pages.more_info.proposals.feature_2",
+              link1: link_to(t("pages.more_info.proposals.feature_2_link1", org_name: setting['org_name']),
+                               new_user_registration_path),
+              link2: link_to(t("pages.more_info.proposals.feature_2_link2"), faq_path)).html_safe %>
       </li>
-      <li><%= t("pages.more_info.proposals.feature_2_html") %></li>
       <li><%= t("pages.more_info.proposals.feature_3_html") %></li>
+      <li><%= t("pages.more_info.proposals.feature_4_html") %></li>
+      <li><%= t("pages.more_info.proposals.feature_5_html") %></li>
+      <li><%= t("pages.more_info.proposals.feature_6_html") %></li>
+      <li>
+        <%= t("pages.more_info.proposals.feature_7",
+              link: link_to(t("pages.more_info.proposals.feature_7_link"), faq_path)).html_safe %>
+      </li>
     </ul>
   </div>
 </div>
