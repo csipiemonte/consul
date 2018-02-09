@@ -55,22 +55,22 @@ it:
   welcome:
     schede:
       scheda1:
-        title: "Zona di libera discussione"
-        description: "Vi ricordiamo che l'area dibattiti è una zona di libera discussione tra utenti. Per formulare proposte di cui la Città si impegna a valutare tecnicamente la fattibilità, anche in termini di risorse, sarà prossimanente attiva, non appena approvate le regole di partecipazione, la sezione proposte dove potranno essere formulate idee e progetti da commentare ed appoggiare."
-        label: Dibattiti	 	  
-        link: Vai ai dibattiti 
+        title: Fai una proposta
+        description: "On line la nuova sezione <i>Proposte</i> dove è possibile inserire una proposta di ciò che vorresti che la Città realizzasse e dove puoi appoggiare le proposte inserite dagli altri cittadini. Ogni proposta che raggiungerà 5.000 appoggi sarà oggetto di studio di fattibilità da parte degli uffici dell'Amministrazione Comunale. Per saperne di più sulle proposte vai su %{link}"
+        label: Proposte
+        link: Vai alle proposte
       scheda2:
+        title: "Zona di libera discussione"
+        description: "Vi ricordiamo che l'area dibattiti è una zona di libera discussione tra utenti. Per formulare proposte di cui la Città si impegna a valutare tecnicamente la fattibilità, anche in termini di risorse, è attiva la sezione <i>Proposte</i> dove potranno essere formulate idee e progetti da commentare ed appoggiare."
+        label: Dibattiti
+        link: Vai ai dibattiti
+      scheda3:
         title: "Anagrafe"
         description: "Invitiamo a commentare le domande che trovate in questa pagina per meglio focalizzare le aree di possibile intervento dell’Amministrazione."
-        label: Progetti     
-        link: Vedi progetto 
-      scheda3:
-        title: Innovazione e sicurezza partecipata
-        description: "Il progetto prevede di applicare il tema della Innovazione e della Partecipazione ad una esigenza concreta dei cittadini e cittadine ovvero 'la sicurezza'."
-        label: Progetti      
-        link: Vedi progetto   
+        label: Progetti
+        link: Vedi progetto
       scheda4:
         title: "La partecipazione cittadina"
         description: "Una riflessione sulle regole per partecipare a DecidiTorino."
-        label: Progetti     
-        link: Vedi progetto                         
+        label: Progetti
+        link: Vedi progetto

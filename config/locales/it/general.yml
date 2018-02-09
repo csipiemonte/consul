@@ -323,7 +323,7 @@ it:
       geozone: Ambito di esecuzione
       proposal_external_url: Link alla documentazione aggiuntiva
       proposal_question: Domanda della proposta
-      proposal_question_example_html: "Deve essere riassunta in una domanda a cui si risponde con Sì o con No. <br>Es. 'Sei a favore di pedonalizzare via Po?'"
+      proposal_question_example_html: "Riassumi la proposta come una domanda a cui si risponde con un SI o con un NO.<br>Se non vuoi porre nessuna domanda inserirsci 10 trattini."
       proposal_responsible_name: Nome e cognome della persona che fa questa proposta
       proposal_responsible_name_note: "(individualmente o come reppresentante di un collettivo; tale dato resterà nascosto)"
       proposal_summary: Sommario della proposta
@@ -417,7 +417,7 @@ it:
         zero: Senza commenti
         one: 1 Commento
         other: "%{count} Commenti"
-      reason_for_supports_necessary: 1% della popolazione (residenti a Torino di una età maggiore di 16 anni)
+      reason_for_supports_necessary: 5.000 appoggi da residenti a Torino, di età maggiore di 16 anni
       support: Sostieni
       support_title: Sostieni questa proposta
       supports:

@@ -55,22 +55,22 @@ pt-BR:
   welcome:
     schede:
       scheda1:
-        title: "Área de discussão gratuita"
-        description: "Lembramos que a área de debates é uma área de discussão gratuita entre usuários. A fim de formular propostas para as quais a Cidade se compromete a avaliar tecnicamente sua viabilidade, também em termos de recursos, a seção proposta estará pronta logo que as regras de participação tenham sido aprovadas, onde idéias e projetos para comentar e apoiar podem seja formulado."
-        label: Debates      
-        link: Veja os debates 
+        title: "Faça uma proposta"
+        description: "Em linha, a nova seção <i>Propostas</i> onde você pode inserir uma proposta sobre o que você gostaria que a Cidade atinja e onde você possa apoiar as propostas incluídas por outros cidadãos. Cada proposta que atinja 5.000 apoios será sujeita a estudo de viabilidade pelos escritórios da Administração Municipal. Para saber mais sobre as propostas, vá para %{link}"
+        label: Propostas
+        link: Veja as propostas
       scheda2:
+        title: "Área de discussão gratuita"
+        description: "Lembramos que a área de debates é uma área de discussão gratuita entre usuários. A fim de formular propostas para as quais a Cidade se compromete a avaliar tecnicamente sua viabilidade, também em termos de recursos, a seção <i>Propostas</i> está ativa onde idéias e projetos para comentar e apoiar podem ser formulados."
+        label: Debates
+        link: Veja os debates
+      scheda3:
         title: "Cartório"
         description: "Convidamos você a comentar as perguntas que você encontra nesta página para se concentrar melhor nas áreas de intervenção de administração possível."
-        label: Processos legislativos    
-        link: Ver processos legislativos 
-      scheda3:
-        title: "Inovação e segurança compartilhada"
-        description: "O processo de legislação planeja aplicar o tema da Inovação e Participação a uma necessidade concreta de cidadãos ou 'segurança'."
-        label: Processos legislativos      
-        link: Ver processos legislativos   
+        label: Processos legislativos
+        link: Veja o processo legislativo
       scheda4:
         title: "Participação do cidadão"
         description: "Uma reflexão sobre as regras para participar do DecidiTorino."
         label: Processos legislativos     
-        link: Ver processos legislativos
+        link: Veja o processo legislativo

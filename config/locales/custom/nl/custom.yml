@@ -55,22 +55,22 @@ nl:
   welcome:
     schede:
       scheda1:
-        title: "Discussiegebied"
-        description: "We herinneren u eraan dat het debatgebied een onderwerp is van gratis discussie tussen gebruikers. Voor het formuleren van voorstellen waarvoor de Stad zich ertoe verbindt om de haalbaarheid technisch te evalueren, ook wat betreft middelen, zal het voorgestelde gedeelte spoedig gereed zijn, zodra de regels voor deelname zijn goedgekeurd, waar ideeën en projecten voor commentaar en ondersteuning kunnen worden ingediend. geformuleerd zijn."
-        label: Debatten      
-        link: Zie debatten 
+        title: Doe een voorstel
+        description: "On line de nieuwe sectie <i>Voorstellen</i> waar u een voorstel kunt invoegen van wat u wilt dat de stad bereikt en waar u de voorstellen van andere burgers kunt ondersteunen. Elk voorstel dat 5.000 steunpunten zal bereiken, zal worden onderworpen aan een haalbaarheidsstudie door de kantoren van de gemeentelijke administratie. Ga voor meer informatie over de voorstellen naar %{link}"
+        label: Voorstellen
+        link: Zie voorstellen
       scheda2:
+        title: "Discussiegebied"
+        description: "We herinneren u eraan dat het debatgebied een onderwerp is van gratis discussie tussen gebruikers. Voor het formuleren van voorstellen waarvoor de Stad zich ertoe verbindt om de haalbaarheid technisch te evalueren, ook wat betreft middelen, de sectie met voorstellen is actief waar ideeën en projecten voor commentaar en ondersteuning kunnen worden geformuleerd."
+        label: Debatten
+        link: Zie debatten
+      scheda3:
         title: "Registratiekantoor"
         description: "Wij nodigen u uit om commentaar te geven op de vragen die u op deze pagina vindt, zodat u zich beter kunt concentreren op mogelijke interventies voor beheer."
-        label: Wetgeving processen     
-        link: Zie Wetgeving processen 
-      scheda3:
-        title: "Innovatie en gedeelde veiligheid"
-        description: "Het wetgevingsproces is van plan om het thema Innovatie en Participatie toe te passen op een concrete behoefte van burgers of 'veiligheid'."
-        label: Wetgeving processen      
-        link: Zie Wetgevingprocessen   
+        label: Wetgeving processen
+        link: Zie het wetgevingsproces
       scheda4:
         title: "Burgerparticipatie"
         description: "Een reflectie op de regels voor deelname aan DecidiTorino."
         label: Wetgeving processen     
-        link: Zie Wetgevingprocessen
+        link: Zie het wetgevingsproces

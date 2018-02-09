@@ -26,47 +26,47 @@
     <div class="row">
       <div class="small-12 medium-6 column margin-bottom">
         <figure class="figure-card">
-          <%= link_to debates_path, title: t("welcome.schede.scheda1.link") do %>
-          <%= image_tag "welcome/dibatti.jpg", alt: t("welcome.schede.scheda1.title") %>
+          <%= link_to proposals_path, title: t("welcome.schede.scheda1.link") do %>
+          <%= image_tag "welcome/cambia_la_tua_citta.png", alt: t("welcome.schede.scheda1.title") %>
           <% end %>
           <figcaption>
-          <%= link_to debates_path, title: t("welcome.schede.scheda1.link") do %>
-          <span><%= t("welcome.schede.scheda1.label") %></span><br>
-          <p class="title"><%= t("welcome.schede.scheda1.title") %></p>
+          <%= link_to proposals_path, title: t("welcome.schede.scheda1.link") do %>
+            <span><%= t("welcome.schede.scheda1.label") %></span><br>
+            <p class="title"><%= t("welcome.schede.scheda1.title") %></p>
           <% end %>
           </figcaption>
         </figure>
-        <p><%= t("welcome.schede.scheda1.description") %></p>
+        <p><%= t("welcome.schede.scheda1.description", link: link_to(t("pages.more_info.title", org_name: setting['org_name']), faq_path)).html_safe %></p>
         <p>
-          <%= link_to t("welcome.schede.scheda1.link"), debates_path %>
+          <%= link_to t("welcome.schede.scheda1.link"), proposals_path %>
         </p>
-      </div>      
+      </div>
       <div class="small-12 medium-6 column margin-bottom">
         <figure class="figure-card">
-          <%= link_to "#{request.url}legislation/processes/3", title: t("welcome.schede.scheda2.link") do %>
-          <%= image_tag "welcome/anagrafe.jpg", alt: t("welcome.schede.scheda2.title") %>
+          <%= link_to debates_path, title: t("welcome.schede.scheda2.link") do %>
+          <%= image_tag "welcome/dibatti.jpg", alt: t("welcome.schede.scheda2.title") %>
           <% end %>
           <figcaption>
-          <%= link_to "#{request.url}legislation/processes/3", title: t("welcome.schede.scheda2.link") do %>
-            <span><%= t("welcome.schede.scheda2.label") %></span><br>
-            <p class="title"><%= t("welcome.schede.scheda2.title") %></p>
+          <%= link_to debates_path, title: t("welcome.schede.scheda2.link") do %>
+          <span><%= t("welcome.schede.scheda2.label") %></span><br>
+          <p class="title"><%= t("welcome.schede.scheda2.title") %></p>
           <% end %>
           </figcaption>
         </figure>
-        <p><%= t("welcome.schede.scheda2.description") %></p>
+        <p><%= t("welcome.schede.scheda2.description").html_safe %></p>
         <p>
-          <%= link_to t("welcome.schede.scheda4.link"), "#{request.url}legislation/processes/3" %>
+          <%= link_to t("welcome.schede.scheda2.link"), debates_path %>
         </p>
       </div>
     </div>
     <div class="row">
       <div class="small-12 medium-6 column margin-bottom">
         <figure class="figure-card">
-          <%= link_to "#{request.url}legislation/processes/2", title: t("welcome.schede.scheda3.link") do %>
-          <%= image_tag "welcome/sicurezza.jpg", alt: t("welcome.schede.scheda3.title") %>
+          <%= link_to "#{request.url}legislation/processes/3", title: t("welcome.schede.scheda3.link") do %>
+          <%= image_tag "welcome/anagrafe.jpg", alt: t("welcome.schede.scheda3.title") %>
           <% end %>
           <figcaption>
-          <%= link_to "#{request.url}legislation/processes/2", title: t("welcome.schede.scheda3.link") do %>
+          <%= link_to "#{request.url}legislation/processes/3", title: t("welcome.schede.scheda3.link") do %>
             <span><%= t("welcome.schede.scheda3.label") %></span><br>
             <p class="title"><%= t("welcome.schede.scheda3.title") %></p>
           <% end %>
@@ -74,7 +74,7 @@
         </figure>
         <p><%= t("welcome.schede.scheda3.description") %></p>
         <p>
-          <%= link_to t("welcome.schede.scheda4.link"), "#{request.url}legislation/processes/2" %>
+          <%= link_to t("welcome.schede.scheda3.link"), "#{request.url}legislation/processes/3" %>
         </p>
       </div>
       <div class="small-12 medium-6 column margin-bottom">
