@@ -143,7 +143,7 @@ it:
       recommendation_four: Sfrutta questo spazio a tua disposizione e delle voci che lo compongono.
       recommendation_one: Non scrivere in maiuscolo il titolo del dibattito o intere frasi. In internet il maiuscolo è considerato gridare. A nessuno piace che si alzi la voce.
       recommendation_three: "Le critiche spietate sono bene accette. Questo è uno spazio di pensiero. Però ti raccomandiamo di conservare l'eleganza e l'intelligenza, fanno del mondo un posto migliore."
-      recommendation_two: "Qualsiasi dibattito o commento che implichi una azione illegale sarà eliminato, anche quelli che abbiano l'intenzione di sabotare gli spazi di dibattito, tutto il resto è permesso."
+      recommendation_two: "Qualsiasi tema offensivo, palesemente illegale o che non rientri nella competenza comunale, verrà rimosso. Lo stesso si applica ai commenti."
       recommendations_title: Suggerimenti per creare un dibattito
       start_new: Inizia un dibattito
     show:
@@ -399,7 +399,7 @@ it:
       more_info: 'Come funzionano le proposte cittadine?'
       recommendation_one: Non scrivere in maiuscolo il titolo della proposta o intere frasi. In internet il maiuscolo è considerato gridare. A nessuno piace che si alzi la voce.
       recommendation_three: Usa bene questo spazio e le voci che lo compongono, sono a tua disposizione.
-      recommendation_two: "Qualsiasi proposta o commento che implichi una azione illegale sarà eliminato, anche quelle scritte con l'intenzione di sabotare gli spazi della proposta, tutto il resto è permesso."
+      recommendation_two: "Qualsiasi proposta offensiva, palesemente illegale o che non rientri nella competenza comunale, verrà rimossa. Lo stesso si applica ai commenti."
       recommendations_title: Suggerimenti per creare una proposta
       start_new: Crea una proposta
     notice:

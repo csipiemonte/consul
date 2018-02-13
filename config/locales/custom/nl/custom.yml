@@ -3,7 +3,7 @@ nl:
   debates:
     index:
       section_footer:
-        help_text_4: "Il titolo e il testo dei dibattiti che hanno ricevuto almeno 1 appoggio, non potranno più essere modificati dal proponente."
+        help_text_4: "De titel en de tekst van de debatten die minstens 1 ondersteuning hebben ontvangen, kunnen niet langer door de verdediger worden gewijzigd."
   devise:
     sessions:
       census_code_updated: Het gebiedsnummer bijgewerkt.
@@ -33,8 +33,19 @@ nl:
   pages:
     more_info:
       debates:
-        feature_3_html: "Il titolo e il testo dei dibattiti che hanno ricevuto almeno 1 appoggio, non potranno più essere modificati dal proponente."
-        feature_4_html: "Vi ricordiamo che l'area dibattiti è una zona di libera discussione tra utenti. Per formulare proposte di cui la Città si impegna a valutare tecnicamente la fattibilità, anche in termini di risorse, sarà prossimanente attiva, non appena approvate le regole di partecipazione, la sezione Proposte dove potranno essere formulate idee e progetti da commentare ed appoggiare."
+        feature_3_html: "De titel en de tekst van de debatten die minstens 1 ondersteuning hebben ontvangen, kunnen niet langer door de verdediger worden gewijzigd."
+        feature_4_html: "We herinneren je eraan dat het discussiegebied een onderwerp is van gratis discussie tussen gebruikers. Om voorstellen te formuleren waarvoor de Stad zich ertoe verbindt om de haalbaarheid technisch te evalueren, ook in termen van middelen, is de sectie Voorstellen actief waar ideeën en projecten kunnen worden geformuleerd voor commentaar en ondersteuning."
+      proposals:
+        feature_1_html: "De voorstellen moeten betrekking hebben op onderwerpen die verband houden met de Stad, en als ze de Administratie ertoe verplichten deze uit te voeren, moeten ze vallen onder de bevoegdheden die aan de gemeenten zijn toegekend."
+        feature_2: "Om voorstellen te maken, hebt u %{link1} nodig. In plaats daarvan moet u uw account hebben gecertificeerd (zie %{link2})."
+        feature_2_link1: "registreren op %{org_name}"
+        feature_2_link2: "pagina met veelgestelde vragen"
+        feature_3_html: "Voorstellen die <strong>de steun van 5.000 gecertificeerde gebruikers</strong> bereiken (dwz ingezetenen van Turijn zijn ouder dan 16 jaar) zullen worden onderworpen aan een haalbaarheidsstudie door de gemeentelijke administratiekantoren."
+        feature_4_html: "Als de haalbaarheidsstudie positief is, verbindt de stad zich ertoe het voorstel uit te voeren."
+        feature_5_html: "In het eerste jaar zal de stad echter, als er geen voorstel is dat 5.000 ondersteuningen bereikt, de eerste drie voorstellen beoordelen als ze meer dan 1.000 ondersteuningen overschrijden."
+        feature_6_html: "De Stad behoudt zich het recht voor om voorstellen in aanmerking te nemen die een haalbaarheidsanalyse waard zijn als deze drempels niet bereikt zullen worden op 30/6 en 31/12."
+        feature_7: "Nadere informatie over de voorstellen en hoe te registreren zijn beschikbaar in de %{link}"
+        feature_7_link: "pagina met veelgestelde vragen"
   settings:
     feature:
       proposals: Voorstellen
@@ -56,7 +67,7 @@ nl:
     schede:
       scheda1:
         title: Doe een voorstel
-        description: "On line de nieuwe sectie <i>Voorstellen</i> waar u een voorstel kunt invoegen van wat u wilt dat de stad bereikt en waar u de voorstellen van andere burgers kunt ondersteunen. Elk voorstel dat 5.000 steunpunten zal bereiken, zal worden onderworpen aan een haalbaarheidsstudie door de kantoren van de gemeentelijke administratie. Ga voor meer informatie over de voorstellen naar %{link}"
+        description: "On line de nieuwe sectie <i>Voorstellen</i> waar u een voorstel kunt invoegen van wat u wilt dat de stad bereikt en waar u de voorstellen van andere burgers kunt ondersteunen. Elk voorstel dat een vooraf bepaalde drempelwaarde voor ondersteuning bereikt (zie Veelgestelde vragen %{link1}), zal worden onderworpen aan een haalbaarheidsstudie door de kantoren van de gemeentelijke administratie. Ga voor meer informatie over de voorstellen naar %{link2}"
         label: Voorstellen
         link: Zie voorstellen
       scheda2:

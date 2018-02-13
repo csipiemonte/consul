@@ -14,7 +14,7 @@ it:
         other: "Altre informazioni di interesse"
       debates:
         title: "Dibattiti"
-        description: "Crea un tema sul quale dibattere su qualsiasi tema che intendi condividere con gli altri abitanti della tua città."
+        description: "Crea un tema sul quale dibattere su qualsiasi argomento che intendi condividere con gli altri abitanti della tua città."
         feature_1: "Per creare un dibattito è necessario %{link}"
         feature_1_link: "registrarsi su %{org_name}"
         feature_2_html: "I dibattiti possono essere valutati utilizzando i pulsanti <strong>Sono d'accordo</strong> o <strong>Non sono d'accordo</strong> che si trovano accanto a ciascuno di essi."
@@ -23,16 +23,10 @@ it:
       proposals:
         title: "Proposte"
         description: "Proponi ciò che vorresti che la Città realizzasse e appoggia le proposte degli altri utenti."
-        feature_1_html: "Le proposte devono riguardare temi inerenti la Città, e se richiedono all'Amministrazione di realizzarla devono rientrare nelle competenze attribuite ai comuni."
-        feature_2: "Per creare le proposte è necessario %{link1}, invece per appoggiarle bisogna aver certificato il proprio account (vedi la %{link2})."
-        feature_2_link1: "registrarsi su %{org_name}"
-        feature_2_link2: "pagina delle FAQ"
-        feature_3_html: "Le proposte che raggiungono <strong>l'appoggio di 5.000 utenti certificati</strong> (ovvero residenti a Torino di una età maggiore di 16 anni) saranno oggetto di studio di fattibilità da parte degli uffici dell'Amministrazione comunale."
-        feature_4_html: "Se lo studio di fattibilità è positivo la Citttà si impegna a realizzare la proposta."
-        feature_5_html: "Nel primo anno la Città valuterà comunque, qualora nessuna proposta raggiunga i 5.000  appoggi, le prime tre proposte se superano almeno i 1.000 appoggi."
-        feature_6_html: "Con riserva di prendere in considerazione le proposte comunque meritevoli di analisi di fattibilità se tali soglie non saranno raggiunte al 30/6 e al 31/12."
-        feature_7: "Ulteriori informazioni sulle proposte e sulle modalità di registrazione sono disponibili nella %{link}"
-        feature_7_link: "pagina delle FAQ"
+        feature_1: "Per creare le proposte è necessario %{link1}, invece per appoggiarle bisogna aver certificato il proprio account (vedi la %{link2})."
+        feature_1_link: "registrarsi su %{org_name}"
+        feature_2_html: "ref. custom"
+        feature_3_html: "ref. custom"
         image_alt: "Pulsante per appoggiare una proposta"
         figcaption_html: 'Pulsante per "Appoggiare" una proposta.<br>Quando raggiunge il numero di appoggi necessari passerà a votazione.'
       budgets:
@@ -58,13 +52,9 @@ it:
         button: "Visualizzare le domande frequenti (FAQ)"
         page:
           title: "Domande Frequenti"
-          description: "Usa questa pagina per risolvere le FAQ utili agli utenti del sito."
-          faq_1_title: "Non mi funziona la verifica di residenza"
-          faq_1_description: "La residenza in Torino è verificata, attivando la richiesta presente nel proprio profilo. La verifica avviene dopo aver introdotto il codice fiscale e il CAP di residenza. In alcuni casi può capitare che il codice fiscale introdotto non corrisponda a quello registrato in anagrafe, soprattutto quando si hanno doppi nomi o il codice è cambiato recentemente. In questi casi occorre segnalare l’occorrenza, fornendo, all’indirizzo email presente alla voce 'contatti' i propri dati identificativi presenti su DecidiTorino (nome utente) nonché data di nascita e codice inserito. Si verrà ricontattati una volta compresi i motivi del blocco e per chiarire come procedere."
-          faq_2_title: "Non riesco a creare la mia utenza"
-          faq_2_description: "Nel caso non si riesca a creare correttamente la propria utenza, si prega di contattare, lasciando opportuni recapiti (email e/o telefono) all'indirizzo email presente alla voce 'contatti'"
-          faq_3_title: "Contatti"
-          faq_3_description: "Per problemi legati alla registrazione e all'utilizzo della piattaforma scrivere una mail a deciditorino@comune.torino.it"
+          description: "Usa questa pagina per risolvere i tuoi dubbi sull'uso di DecidiTorino."
+          faq_1_title: "Domanda 1"
+          faq_1_description: "Descrizione di esempio della domanda 1."
       other:
         title: "Altre informazioni di interesse"
         how_to_use: "Usa %{org_name} nella tua città"

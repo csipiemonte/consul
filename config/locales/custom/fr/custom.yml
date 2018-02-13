@@ -3,7 +3,7 @@ fr:
   debates:
     index:
       section_footer:
-        help_text_4: "Il titolo e il testo dei dibattiti che hanno ricevuto almeno 1 appoggio, non potranno più essere modificati dal proponente."
+        help_text_4: "Le titre et le texte des débats ayant reçu au moins 1 support ne peuvent plus être modifiés par le promoteur."
   devise:
     sessions:
       census_code_updated: Mise à jour du numéro de zone.
@@ -33,8 +33,19 @@ fr:
   pages:
     more_info:
       debates:
-        feature_3_html: "Il titolo e il testo dei dibattiti che hanno ricevuto almeno 1 appoggio, non potranno più essere modificati dal proponente."
-        feature_4_html: "Vi ricordiamo che l'area dibattiti è una zona di libera discussione tra utenti. Per formulare proposte di cui la Città si impegna a valutare tecnicamente la fattibilità, anche in termini di risorse, sarà prossimanente attiva, non appena approvate le regole di partecipazione, la sezione Proposte dove potranno essere formulate idee e progetti da commentare ed appoggiare."
+        feature_3_html: "Le titre et le texte des débats ayant reçu au moins 1 support ne peuvent plus être modifiés par le promoteur."
+        feature_4_html: "Nous vous rappelons que la zone de discussion est un espace de discussion libre entre utilisateurs. Afin de formuler des propositions pour lesquelles la Ville s'engage à évaluer techniquement sa faisabilité, y compris en termes de ressources, la section Propositions est active où des idées et des projets à commenter et à soutenir peuvent être formulés."
+      proposals:
+        feature_1_html: "Les propositions doivent porter sur des sujets liés à la Ville et, si elles nécessitent la mise en œuvre de l'Administration, elles doivent relever des compétences attribuées aux municipalités."
+        feature_2: "Pour créer des propositions, vous avez besoin de %{link1}. Au lieu de les prendre en charge, vous devez avoir certifié votre compte (voir %{link2})."
+        feature_2_link1: "s'inscrire sur %{org_name}"
+        feature_2_link2: "FAQ"
+        feature_3_html: "Les propositions qui atteignent <strong>le soutien de 5 000 utilisateurs certifiés</strong> (c'est-à-dire les résidents de Turin âgés de plus de 16 ans) feront l'objet d'une étude de faisabilité par les administrations municipales."
+        feature_4_html: "Si l'étude de faisabilité est positive, la Ville s'engage à mettre en œuvre la proposition."
+        feature_5_html: "Au cours de la première année, cependant, la Ville évaluera, si aucune proposition n'atteint 5000 appuis, les trois premières propositions si elles dépassent au moins 1000 soutiens."
+        feature_6_html: "La Ville se réserve le droit de prendre en considération toute proposition méritant une analyse de faisabilité si ces seuils ne sont pas atteints les 30 juin et 31 décembre."
+        feature_7: "De plus amples informations sur les propositions et la procédure d'inscription sont disponibles %{link}"
+        feature_7_link: "FAQ"
   settings:
     feature:
       proposals: Propositions
@@ -56,7 +67,7 @@ fr:
     schede:
       scheda1:
         title: Faire une proposition
-        description: "En ligne la nouvelle section <i>Propositions</i> où vous pouvez insérer une proposition de ce que vous souhaitez que la Ville réalise et où vous pouvez soutenir les propositions incluses par d'autres citoyens. Chaque proposition qui atteindra 5.000 soutiens fera l'objet d'une étude de faisabilité par les bureaux de l'administration municipale. Pour en savoir plus sur les propositions, rendez-vous sur %{link}"
+        description: "En ligne la nouvelle section <i>Propositions</i> où vous pouvez insérer une proposition de ce que vous souhaitez que la Ville réalise et où vous pouvez soutenir les propositions incluses par d'autres citoyens. Toute proposition qui atteindra un seuil prédéterminé de supports (voir FAQ %{link1}) fera l'objet d'une étude de faisabilité par les bureaux de l'administration municipale. Pour en savoir plus sur les propositions, rendez-vous sur %{link2}"
         label: Propositions
         link: Voir propositions
       scheda2:

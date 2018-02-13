@@ -3,7 +3,7 @@ en:
   debates:
     index:
       section_footer:
-        help_text_4: "Il titolo e il testo dei dibattiti che hanno ricevuto almeno 1 appoggio, non potranno più essere modificati dal proponente."
+        help_text_4: "The title and the text of the debates that have received at least 1 support, can no longer be changed by the proponent."
   devise:
     sessions:
       census_code_updated: Census code updated.
@@ -33,8 +33,19 @@ en:
   pages:
     more_info:
       debates:
-        feature_3_html: "Il titolo e il testo dei dibattiti che hanno ricevuto almeno 1 appoggio, non potranno più essere modificati dal proponente."
-        feature_4_html: "Vi ricordiamo che l'area dibattiti è una zona di libera discussione tra utenti. Per formulare proposte di cui la Città si impegna a valutare tecnicamente la fattibilità, anche in termini di risorse, sarà prossimanente attiva, non appena approvate le regole di partecipazione, la sezione Proposte dove potranno essere formulate idee e progetti da commentare ed appoggiare."
+        feature_3_html: "The title and the text of the debates that have received at least 1 support, can no longer be changed by the proponent."
+        feature_4_html: "We remind you that the discussion area is an area of ​​free discussion among users. In order to formulate proposals for which the City undertakes to technically evaluate its feasibility, also in terms of resources, the Proposals section is active where ideas and projects to comment and support can be formulated."
+      proposals:
+        feature_1_html: "The proposals must concern topics related to the City, and if they require the Administration to implement it, they must fall within the competences assigned to the municipalities."
+        feature_2: "To create proposals you need %{link1}, instead to support them you must have certified your account (see %{link2})."
+        feature_2_link1: "sign up %{org_name}"
+        feature_2_link2: "FAQ page"
+        feature_3_html: "Proposals that reach <strong>the support of 5,000 certified users</strong> (ie resident in Turin aged over 16) will be subject to feasibility study by the municipal administration offices."
+        feature_4_html: "If the feasibility study is positive, the City undertakes to implement the proposal."
+        feature_5_html: "In the first year, however, the City will evaluate, if no proposal reaches 5,000 supports, the first three proposals if they exceed at least 1,000 supports."
+        feature_6_html: "The City reserves the right to take into consideration any proposals that are worthy of feasibility analysis if these thresholds will not be reached on 30/6 and 31/12."
+        feature_7: "Further information on the proposals and how to register are available in the %{link}"
+        feature_7_link: "FAQ page"
   settings:
     feature:
       proposals: Proposals
@@ -56,7 +67,7 @@ en:
     schede:
       scheda1:
         title: Make a proposal
-        description: "On line the new section <i>Proposals</i> where you can insert a proposal of what you would like the City to achieve and where you can support the proposals included by other citizens. Each proposal that will reach 5,000 supports will be subject to feasibility study by the offices of the Municipal Administration. To learn more about the proposals visit %{link}"
+        description: "On line the new section <i>Proposals</i> where you can insert a proposal of what you would like the City to achieve and where you can support the proposals included by other citizens. Any proposal that will reach a predetermined threshold of supports (see FAQ %{link1}) will be subject to feasibility study by the offices of the Municipal Administration. To learn more about the proposals visit %{link2}"
         label: Proposals
         link: See proposals
       scheda2:

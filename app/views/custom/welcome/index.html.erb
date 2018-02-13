@@ -36,7 +36,11 @@
           <% end %>
           </figcaption>
         </figure>
-        <p><%= t("welcome.schede.scheda1.description", link: link_to(t("pages.more_info.title", org_name: setting['org_name']), faq_path)).html_safe %></p>
+        <p><%= t("welcome.schede.scheda1.description",
+          link1: link_to("Perché devo far appoggiare la mia proposta?", faq_path + '#15'),
+          link2: link_to(t("pages.more_info.title", org_name: setting['org_name']), more_info_path)).html_safe %>
+          
+        </p>
         <p>
           <%= link_to t("welcome.schede.scheda1.link"), proposals_path %>
         </p>
