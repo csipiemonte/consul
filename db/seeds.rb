@@ -71,6 +71,7 @@ Setting["meta_keywords"] = nil
 
 # Feature flags
 Setting['feature.debates'] = true
+Setting['feature.proposals'] = true
 Setting['feature.spending_proposals'] = nil
 Setting['feature.polls'] = true
 Setting['feature.twitter_login'] = true
@@ -83,6 +84,8 @@ Setting['feature.legislation'] = true
 Setting['feature.user.recommendations'] = true
 Setting['feature.community'] = true
 Setting['feature.map'] = nil
+Setting['feature.allow_images'] = true
+Setting['feature.guides'] = nil
 
 # Spending proposals feature flags
 Setting['feature.spending_proposal_features.voting_allowed'] = nil
@@ -109,10 +112,13 @@ Setting['mailer_from_address'] = 'noreply@consul.dev'
 Setting['verification_offices_url'] = 'http://oficinas-atencion-ciudadano.url/'
 Setting['min_age_to_participate'] = 16
 
-# Proposal improvement url path ('/more-information/proposal-improvement')
+# Proposal improvement url path ('/help/proposal-improvement')
 Setting['proposal_improvement_path'] = nil
 
 # City map feature default configuration (Greenwich)
 Setting['map_latitude'] = 51.48
 Setting['map_longitude'] = 0.0
 Setting['map_zoom'] = 10
+
+# Related content
+Setting['related_content_score_threshold'] = -0.3

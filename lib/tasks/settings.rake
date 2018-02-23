@@ -22,6 +22,7 @@ namespace :settings do
     if answer == 'Y'
       # your code here
       setting = Setting.where(key: input_key).first
+      input_value = nil if input_value.empty?
       if setting
         setting.update(value: input_value)
         puts 'Setting updated successfuly'

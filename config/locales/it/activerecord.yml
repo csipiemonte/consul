@@ -88,6 +88,12 @@ it:
       images:
         one: "Immagine"
         other: "Immagini"
+      topic:
+        one: "Tema"
+        other: "Temi"
+      poll:
+        one: "Votazione"
+        other: "Votazioni"
     attributes:
       budget:
         name: "Nome"
@@ -105,14 +111,19 @@ it:
         title: "Titolo"
         description: "Descrizione"
         external_url: "Link alla documentazione aggiuntiva"
-        location: "Ubicazione"
         administrator_id: "Amministratore"
-        organization_name: "Se stai proponendo a nome di una organizzazione o collettivo, scrivine il nome"
-        image: "Immagine descrittiva della proposta di investimento"
+        location: "Ubicazione (facoltativo)"
+        organization_name: "Se stai proponendo a nome di una organizzazione o collettivo, o a nome di più gente, scrivine il nome"
+        image: "Immagine descrittiva della proposta di spesa"
         image_title: "Titolo dell'immagine"
       budget/investment/milestone:
         title: "Titolo"
         description: "Descrizione"
+        publication_date: "Data di pubblicazione"
+      budget/heading:
+        name: "Nome della voce"
+        price: "Quantità"
+        population: "Popolazione"
       comment:
         body: "Commento"
         user: "Utente"
@@ -238,6 +249,10 @@ it:
             attachment:
               min_image_width: "L'immagine deve essere di almeno %{required_min_width}px di larghezza"
               min_image_height: "L'immagine deve essere di almeno %{required_min_height}px di altezza"
+        map_location:
+          attributes:
+            map:
+              invalid: "La mappa non può rimanere vuota. Si prega di specificare un punto sulla mappa o di mettere una spunta sulla casella qualora la mappa non sia necessaria."
         poll/voter:
           attributes:
             document_number:
@@ -277,6 +292,10 @@ it:
             image:
               image_width: "Deve essere di %{required_width}px di larghezza"
               image_height: "Deve essere di %{required_height}px de altezza"
+        comment:
+          attributes:
+            valuation:
+              cannot_comment_valuation: 'Non è possibile commentare una valutazione'
       messages:
         record_invalid: "La certificazione non è avvenuta: %{errors}"
         restrict_dependent_destroy:

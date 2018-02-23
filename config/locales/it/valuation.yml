@@ -25,7 +25,7 @@ it:
           valuating: Valutazione in corso
           valuation_finished: Valutazione terminata
         assigned_to: "Assegnate a %{valuator}"
-        title: Progetti di investimento
+        title: Progetti di spesa
         edit: Modifica fascicolo
         valuators_assigned:
           one: Valutatore assegnato
@@ -37,7 +37,7 @@ it:
         table_actions: Azioni
       show:
         back: Indietro
-        title: Progetto di investimento
+        title: Progetto di spesa
         info: "Info sull'autore"
         by: Inviata da
         sent: Data di creazione
@@ -53,7 +53,6 @@ it:
         undefined: Non definito
         valuation_finished: Valutazione conclusa
         duration: Tempo massimo di esecuzione
-        internal_comments: Commenti interni
         responsibles: Responsabili
         assigned_admin: Amministratore assegnato
         assigned_valuators: Valutatori assegnati
@@ -68,11 +67,13 @@ it:
         undefined_feasible: Non definito
         feasible_explanation_html: Rapporto sulla fattibilità <small>(qualora lo sia, dato pubblico)</small>
         valuation_finished: Valutazione conclusa
+        valuation_finished_alert: "Confermi di voler contrassegnare questo rapporto come completato? Una volta fatto, non è possibile annullare l'azione."
+        not_feasible_alert: "Sarà inviata immediatamente all'autore del progetto una email con il rapporto di non fattibilità."
         duration_html: Tempo di esecuzione <small>(facoltativo, dato non pubblico)</small>
-        internal_comments_html: Commenti e osservazioni <small>(per i responsabili interni, dato non pubblico)</small>
         save: Salva Modifiche
       notice:
         valuate: "Fascicolo aggiornato"
+      valuation_comments: Commenti di valutazione
     spending_proposals:
       index:
         geozone_filter_all: Tutti gli ambiti di esecuzione

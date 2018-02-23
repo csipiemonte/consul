@@ -55,7 +55,7 @@ Setting.create(key: 'transparency_url', value: 'http://www.comune.torino.it/ammi
 Setting.create(key: 'opendata_url', value: nil)
 
 # Public-facing URL of the app.
-Setting.create(key: 'url', value: 'http://localhost:3000')
+Setting.create(key: 'url', value: 'https://www.deciditorino.it')
 
 # Consul installation's organization name
 Setting.create(key: 'org_name', value: 'DecidiTorino')
@@ -84,6 +84,10 @@ Setting.create(key: 'feature.legislation', value: 'true')
 Setting.create(key: 'feature.user.recommendations', value: 'true')
 Setting.create(key: 'feature.community', value: 'false')
 Setting.create(key: 'feature.map', value: 'true')
+Setting.create(key: 'feature.allow_images', value: 'true')
+
+# Se 'true', abilita una pagina che guida l'utente alla scelta fra la creazione di una proposta cittadina o di una proposta di spesa
+Setting.create(key: 'feature.guides', value: nil)
 
 # Spending proposals feature flags
 Setting.create(key: 'feature.spending_proposal_features.voting_allowed', value: nil)
@@ -117,6 +121,8 @@ Setting.create(key: 'proposal_improvement_path', value: nil)
 Setting.create(key: 'map_latitude', value: 45.073179654563646)
 Setting.create(key: 'map_longitude', value: 7.680763006210328)
 Setting.create(key: 'map_zoom', value: 12)
+
+Setting.create(key: 'related_content_score_threshold', value: -0.3)
 
 puts " ✅"
 print "Creating Geozones (Circoscrizioni)"

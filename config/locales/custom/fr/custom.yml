@@ -31,14 +31,19 @@ fr:
       sign_up: Se connecter avec SPID
       name: SPID
   pages:
-    more_info:
+    help:
       debates:
+        description: "Créez un thème pour discuter de tout sujet que vous souhaitez partager avec d'autres personnes de votre ville."
+        feature_1: "Pour créer un débat, il est nécessaire %{link}"
+        feature_1_link: "s'inscrire sur %{org}"
+        feature_2_html: "Les débats peuvent être évalués en utilisant les boutons <strong>J'accepte</strong> ou <strong>Je ne suis pas d'accord</strong> qui sont à côté de chacun d'eux."
         feature_3_html: "Le titre et le texte des débats ayant reçu au moins 1 support ne peuvent plus être modifiés par le promoteur."
         feature_4_html: "Nous vous rappelons que la zone de discussion est un espace de discussion libre entre utilisateurs. Afin de formuler des propositions pour lesquelles la Ville s'engage à évaluer techniquement sa faisabilité, y compris en termes de ressources, la section Propositions est active où des idées et des projets à commenter et à soutenir peuvent être formulés."
       proposals:
+        description: "Proposez ce que vous souhaitez que la Ville réalise et soutenez les propositions des autres utilisateurs."
         feature_1_html: "Les propositions doivent porter sur des sujets liés à la Ville et, si elles nécessitent la mise en œuvre de l'Administration, elles doivent relever des compétences attribuées aux municipalités."
         feature_2: "Pour créer des propositions, vous avez besoin de %{link1}. Au lieu de les prendre en charge, vous devez avoir certifié votre compte (voir %{link2})."
-        feature_2_link1: "s'inscrire sur %{org_name}"
+        feature_2_link1: "s'inscrire sur %{org}"
         feature_2_link2: "FAQ"
         feature_3_html: "Les propositions qui atteignent <strong>le soutien de 5 000 utilisateurs certifiés</strong> (c'est-à-dire les résidents de Turin âgés de plus de 16 ans) feront l'objet d'une étude de faisabilité par les administrations municipales."
         feature_4_html: "Si l'étude de faisabilité est positive, la Ville s'engage à mettre en œuvre la proposition."
@@ -46,6 +51,18 @@ fr:
         feature_6_html: "La Ville se réserve le droit de prendre en considération toute proposition méritant une analyse de faisabilité si ces seuils ne sont pas atteints les 30 juin et 31 décembre."
         feature_7: "De plus amples informations sur les propositions et la procédure d'inscription sont disponibles %{link}"
         feature_7_link: "FAQ"
+  proposals:
+    index:
+      section_footer:
+        help_text_1: "Per creare le proposte è necessario %{link}"
+        help_text_1_link: "registrarsi su %{org}"
+        help_text_2: "Per appoggiare le proposte, occorre che il proprio account sia stato certificato (ovvero che si risulti residenti a Torino e con età superiore a 16 anni)."
+        help_text_3: "Per certificare il proprio account, in modo automatico, basta essere utenti registrati e scegliere l'opzione presente nella pagina %{link}"
+        help_text_3_link: "Il mio account"
+        help_text_4: "Il est nécessaire d'indiquer le code fiscal, la date de naissance et le CAP de résidence. Il sera également nécessaire de fournir le numéro de portable pour obtenir le SMS avec le code de confirmation."
+        help_text_5: "Les propositions qui atteignent le soutien de 5.000 utilisateurs passeront à une évaluation technique de l'Administration pour la faisabilité. Cette évaluation sera rendue publique."
+        help_text_6: "Ulteriori informazioni sulle proposte e sulle modalità di registrazione sono disponibili nella %{link}"
+        help_text_6_link: "FAQ"
   settings:
     feature:
       proposals: Propositions

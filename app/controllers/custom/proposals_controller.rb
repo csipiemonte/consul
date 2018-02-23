@@ -1,5 +1,4 @@
 # Versione custom di 'ProposalsController', differisce in:
-# - 'include FeatureFlags', che verifica se le proposte non sono state disattivate
 # - metodo 'load_featured', adattato per non avere il box giallo con le proposte in evidenza.
 class ProposalsController < ApplicationController
   include FeatureFlags
@@ -10,6 +9,7 @@ class ProposalsController < ApplicationController
   before_action :load_categories, only: [:index, :new, :create, :edit, :map, :summary]
   before_action :load_geozones, only: [:edit, :map, :summary]
   before_action :authenticate_user!, except: [:index, :show, :map, :summary]
+  before_action :destroy_map_location_association, only: :update
 
   feature_flag :proposals
 
@@ -25,6 +25,8 @@ class ProposalsController < ApplicationController
   def show
     super
     @notifications = @proposal.notifications
+    @related_contents = Kaminari.paginate_array(@proposal.relationed_contents).page(params[:page]).per(5)
+
     redirect_to proposal_path(@proposal), status: :moved_permanently if request.path != proposal_path(@proposal)
   end
 
@@ -81,7 +83,7 @@ class ProposalsController < ApplicationController
 
     def proposal_params
       params.require(:proposal).permit(:title, :question, :summary, :description, :external_url, :video_url,
-                                       :responsible_name, :tag_list, :terms_of_service, :geozone_id,
+                                       :responsible_name, :tag_list, :terms_of_service, :geozone_id, :skip_map,
                                        image_attributes: [:id, :title, :attachment, :cached_attachment, :user_id, :_destroy],
                                        documents_attributes: [:id, :title, :attachment, :cached_attachment, :user_id, :_destroy],
                                        map_location_attributes: [:latitude, :longitude, :zoom])
@@ -130,6 +132,13 @@ class ProposalsController < ApplicationController
 
     def load_successful_proposals
       @proposal_successful_exists = Proposal.successful.exists?
+    end
+
+    def destroy_map_location_association
+      map_location = params[:proposal][:map_location_attributes]
+      if map_location && (map_location[:longitude] && map_location[:latitude]).blank? && !map_location[:id].blank?
+        MapLocation.destroy(map_location[:id])
+      end
     end
 
 end

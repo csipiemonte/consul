@@ -31,14 +31,19 @@ it:
       sign_up: Registrati con SPID
       name: SPID
   pages:
-    more_info:
+    help:
       debates:
+        description: "Crea un tema sul quale dibattere su qualsiasi argomento che intendi condividere con gli altri abitanti della tua città."
+        feature_1: "Per creare un dibattito è necessario %{link}"
+        feature_1_link: "registrarsi su %{org}"
+        feature_2_html: "I dibattiti possono essere valutati utilizzando i pulsanti <strong>Sono d'accordo</strong> o <strong>Non sono d'accordo</strong> che si trovano accanto a ciascuno di essi."
         feature_3_html: "Il titolo e il testo dei dibattiti che hanno ricevuto almeno 1 appoggio, non potranno più essere modificati dal proponente."
         feature_4_html: "Vi ricordiamo che l'area dibattiti è una zona di libera discussione tra utenti. Per formulare proposte di cui la Città si impegna a valutare tecnicamente la fattibilità, anche in termini di risorse, è attiva la sezione Proposte dove potranno essere formulate idee e progetti da commentare ed appoggiare."
       proposals:
+        description: "Proponi ciò che vorresti che la Città realizzasse e appoggia le proposte degli altri utenti."
         feature_1_html: "Le proposte devono riguardare temi inerenti la Città, e se richiedono all'Amministrazione di realizzarla devono rientrare nelle competenze attribuite ai comuni."
         feature_2: "Per creare le proposte è necessario %{link1}, invece per appoggiarle bisogna aver certificato il proprio account (vedi la %{link2})."
-        feature_2_link1: "registrarsi su %{org_name}"
+        feature_2_link1: "registrarsi su %{org}"
         feature_2_link2: "pagina delle FAQ"
         feature_3_html: "Le proposte che raggiungono <strong>l'appoggio di 5.000 utenti certificati</strong> (ovvero residenti a Torino di una età maggiore di 16 anni) saranno oggetto di studio di fattibilità da parte degli uffici dell'Amministrazione comunale."
         feature_4_html: "Se lo studio di fattibilità è positivo la Città si impegna a realizzare la proposta."
@@ -46,6 +51,18 @@ it:
         feature_6_html: "La Città si riserva di prendere in considerazione le proposte comunque meritevoli di analisi di fattibilità se tali soglie non saranno raggiunte al 30/6 e al 31/12."
         feature_7: "Ulteriori informazioni sulle proposte e sulle modalità di registrazione sono disponibili nella %{link}"
         feature_7_link: "pagina delle FAQ"
+  proposals:
+    index:
+      section_footer:
+        help_text_1: "Per creare le proposte è necessario %{link}"
+        help_text_1_link: "registrarsi su %{org}"
+        help_text_2: "Per appoggiare le proposte, occorre che il proprio account sia stato certificato (ovvero che si risulti residenti a Torino e con età superiore a 16 anni)."
+        help_text_3: "Per certificare il proprio account, in modo automatico, basta essere utenti registrati e scegliere l'opzione presente nella pagina %{link}"
+        help_text_3_link: "Il mio account"
+        help_text_4: "È necessario indicare il proprio codice fiscale, la data di nascita ed il CAP di residenza. Occorrerà inoltre fornire il numero di cellulare per ottenere l'SMS con il codice di conferma."
+        help_text_5: "Le proposte che raggiungono l'appoggio di 5.000 utenti passeranno ad una valutazione tecnica dell'Amministrazione per la fattibilità. Di questa valutazione verrà dato esito pubblico."
+        help_text_6: "Ulteriori informazioni sulle proposte e sulle modalità di registrazione sono disponibili nella %{link}"
+        help_text_6_link: "pagina delle FAQ"
   settings:
     feature:
       proposals: Proposte

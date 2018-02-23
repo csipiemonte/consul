@@ -1,3 +1,4 @@
+<!-- Versione custom, differisce nelle righe di help finali -->
 <% provide :title do %><%= t('proposals.index.title') %><% end %>
 <% content_for :header_addon do %>
   <%= render "shared/search_form",
@@ -63,7 +64,9 @@
 
       <% if @proposals.any? %>
         <div class="show-for-small-only">
-          <%= link_to t("proposals.index.start_proposal"), new_proposal_path, class: 'button expanded' %>
+          <%= link_to t("proposals.index.start_proposal"),
+                      new_proposal_guide,
+                      class: 'button expanded' %>
         </div>
       <% end %>
 
@@ -82,7 +85,7 @@
             </p>
             <p><%= t("proposals.index.section_footer.description") %></p>
             <p><%= t("proposals.index.section_footer.help_text_1",
-              link: link_to(t("proposals.index.section_footer.help_text_1_link", org_name: setting['org_name']),
+              link: link_to(t("proposals.index.section_footer.help_text_1_link", org: setting['org_name']),
                                new_user_registration_path)).html_safe %></p>
             <p><%= t("proposals.index.section_footer.help_text_2") %></p>
             <p><%= t("proposals.index.section_footer.help_text_3",
@@ -98,7 +101,9 @@
 
     <div class="small-12 medium-3 column">
       <aside class="margin-bottom">
-        <%= link_to t("proposals.index.start_proposal"), new_proposal_path, class: 'button expanded' %>
+        <%= link_to t("proposals.index.start_proposal"),
+                    new_proposal_guide,
+                    class: 'button expanded' %>
         <% if params[:retired].blank? %>
           <%= render 'categories' %>
           <%= render "shared/tag_cloud", taggable: 'proposal' %>

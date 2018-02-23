@@ -41,6 +41,7 @@ module Budgets
     def show
       @commentable = @investment
       @comment_tree = CommentTree.new(@commentable, params[:page], @current_order)
+      @related_contents = Kaminari.paginate_array(@investment.relationed_contents).page(params[:page]).per(5)
       set_comment_flags(@comment_tree.comments)
       load_investment_votes(@investment)
       @investment_ids = [@investment.id]
@@ -94,7 +95,7 @@ module Budgets
 
       def set_random_seed
         if params[:order] == 'random' || params[:order].blank?
-          seed = rand(11..99) / 10.0
+          seed = params[:random_seed] || session[:random_seed] || rand(-100000..100000)
           params[:random_seed] ||= Float(seed) rescue 0
         else
           params[:random_seed] = nil
@@ -103,8 +104,8 @@ module Budgets
 
       def investment_params
         params.require(:budget_investment)
-              .permit(:title, :description, :external_url, :heading_id, :tag_list,
-                      :organization_name, :location, :terms_of_service,
+              .permit(:title, :description, :heading_id, :tag_list,
+                      :organization_name, :location, :terms_of_service, :skip_map,
                       image_attributes: [:id, :title, :attachment, :cached_attachment, :user_id, :_destroy],
                       documents_attributes: [:id, :title, :attachment, :cached_attachment, :user_id, :_destroy],
                       map_location_attributes: [:latitude, :longitude, :zoom])
@@ -131,8 +132,7 @@ module Budgets
       end
 
       def investments
-        case @current_order
-        when 'random'
+        if @current_order == 'random'
           @investments.apply_filters_and_search(@budget, params, @current_filter)
                       .send("sort_by_#{@current_order}", params[:random_seed])
         else

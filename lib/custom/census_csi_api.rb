@@ -25,6 +25,9 @@ class CensusCsiApi
     rescue Net::HTTPFatalError => e
       err_msg = e.message
       Rails.logger.error "#{prf}Rilevato Net::HTTPFatalError, dettaglio: #{err_msg}"
+    rescue HTTPI::SSLError => e
+      err_msg = e.message
+      Rails.logger.error "#{prf}Rilevato HTTPI::SSLError, dettaglio: #{err_msg}"
     end
 
     response = Response.new(resp_body, err_msg)

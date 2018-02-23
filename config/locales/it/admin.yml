@@ -68,12 +68,12 @@ it:
         new_link: Crea nuovo bilancio
         filter: Filtro
         filters:
-          current: Aperti
+          open: Aperti
           finished: Terminati
-        budget_investments: Vedi proposte di investimento
+        budget_investments: Vedi progetti di spesa
         table_name: Nome
         table_phase: Fase
-        table_investments: Proposte di investimento
+        table_investments: Progetti di spesa
         table_edit_groups: Grupppi di voci
         table_edit_budget: Modifica
         edit_groups: Modifica grupppi di voci
@@ -84,6 +84,17 @@ it:
         notice: Bilancio partecipativo aggiornato con successo
       edit:
         title: Modifica il bilancio partecipativo
+        delete: Elimina bilancio partecipativo
+        phase: Fase
+        dates: Date
+        enabled: Abilitata
+        actions: Azioni
+        edit_phase: Modifica fase
+        active: Attiva
+        blank_dates: Senza date
+      destroy:
+        success_notice: Bilancio eliminato correttamente
+        unable_notice: "Non è possibile eliminare un bilancio con progetti associati"
       new:
         title: Nuovo bilancio partecipativo
       show:
@@ -98,7 +109,8 @@ it:
         heading: Nome della voce
         add_heading: Aggiungi voce
         amount: Importo
-        population: Popolazione
+        population: "Popolazione (facoltativo)"
+        population_help_text: "Questo dato si utilizza esclusivamente per calcolare le statistiche sulla partecipazione"
         save_heading: Salva voce
         no_heading: A questo gruppo non è stata ancora assegnata una voce.
         table_heading: Voce
@@ -108,23 +120,50 @@ it:
       winners:
         calculate: Calcola proposte vincitrici
         calculated: In elaborazione delle proposte vincitrici, può durare un minuto.
+    budget_phases:
+      edit:
+        start_date: Data de Inizio
+        end_date: Data di fine
+        summary: Sommario
+        summary_help_text: "Questo testo informerà l'utente riguardo la fase. Per mostrarlo anche se la fase non è attiva, è necessario segnare l'opzione più in basso."
+        description: Descrizione
+        description_help_text: "Questo testo apparirà in testa quando la fase è attiva"
+        enabled: Fase abilitata
+        enabled_help_text: Questa fase sarà pubblicata sul calendario delle fasi del bilancio e rimarrà attiva per altri scopi
+        save_changes: Salva modifiche
     budget_investments:
       index:
         heading_filter_all: Tutte le voci
         administrator_filter_all: Tutti gli amministratori
         valuator_filter_all: Tutti i valutatori
         tags_filter_all: Tutte le etichette
+        advanced_filters: Filtri avanzati
+        placeholder: Cerca progetti
+        sort_by:
+          placeholder: Ordinare per
+          id: ID
+          title: Titolo
+          supports: Appoggi
         filters:
-          valuation_open: Aperte
+          all: Tutti
           without_admin: Senza amministratore
-          managed: In elaborazione
-          valuating: In valutazione
+          without_valuator: Senza valutatore
+          under_valuation: In valutazione
           valuation_finished: Valutazione terminata
-          valuation_finished_feasible: Realizzabili
-          selected: Selezionate
-          winners: Vincitrici
-          all: Tutte
-        title: Proposte di investimento
+          feasible: Realizzabili
+          selected: Selezionati
+          undecided: Da decidere
+          unfeasible: Non realizzabili
+          max_per_heading: Taglio per voce
+          winners: Vincitori
+          one_filter_html: "Filtro in uso: <b><em>%{filter}</em></b>"
+          two_filters_html: "Filtri in uso: <b><em>%{filter}, %{advanced_filters}</em></b>"
+        buttons:
+          search: Cercare
+          filter: Filtrare
+        download_current_selection: "Download selezionati"
+        no_budget_investments: "Non ci sono progetti di spesa."
+        title: Progetti di spesa
         assigned_admin: Amministratore assegnato
         no_admin_assigned: Senza admin assegnato
         no_valuators_assigned: Senza valutatore
@@ -142,13 +181,13 @@ it:
         table_geozone: "Ambito di esecuzione"
         table_feasibility: "Fattibilità"
         table_valuation_finished: "Val. Ter."
-        table_selection: "Selezione"
+        table_selection: "Selezionato"
         table_incompatible: "Incompatibile"
       show:
         assigned_admin: Amministratore assegnato
         assigned_valuators: Valutatori assegnati
         classification: Classifica
-        info: '%{budget_name} - Gruppo: %{group_name} - Proposta di investimento %{id}'
+        info: '%{budget_name} - Gruppo: %{group_name} - Progetto di spesa %{id}'
         edit: Modifica
         edit_classification: Modifica classifica
         by: Autore
@@ -193,11 +232,16 @@ it:
         table_id: "ID"
         table_title: "Titolo"
         table_description: "Descrizione"
+        table_publication_date: "Data di pubblicazione"
         table_actions: "Azioni"
         delete: "Elimina milestone"
         no_milestones: "Non ci sono milestone definite"
+        image: "Immagine"
+        show_image: "Mostra immagine"
+        documents: "Documenti"
       new:
         creating: Crea milestone
+        date: Data
       edit:
         title: Modifica milestone
       create:
@@ -488,7 +532,7 @@ it:
       search:
         title: 'Valutatori: Ricerca degli utenti'
       summary:
-        title: Riepilogo della valutazione delle proposte di investimento
+        title: Riepilogo della valutazione dei progetti di spesa
         valuator_name: Valutatore
         finished_and_feasible_count: Concluse realizzabili
         finished_and_unfeasible_count: Concluse non realizzabili
@@ -942,7 +986,7 @@ it:
           proposal_votes: Voti nelle proposte
           proposals: Proposte
           budgets: Bilanci aperti
-          budget_investments: Proposte di investimento
+          budget_investments: Progetti di spesa
           spending_proposals: Proposte di investimento
           unverified_users: Utenti da verificare
           user_level_three: Utenti di livello tre
@@ -972,7 +1016,7 @@ it:
         all: Votazioni
         web_participants: Partecipanti sul sito web
         total_participants: Partecipanti totali
-        poll_questions: "Domande della votazione: %{poll}"
+        poll_questions: 'Domande della votazione: %{poll}'
         table:
           poll_name: Votazione
           question_name: Domanda

@@ -15,7 +15,7 @@
         <%= t("layouts.header.html") %>
       </p>
       <div class="small-12 medium-6 large-4 small-centered">
-        <%= link_to t("layouts.header.more_info"), more_info_path, class: "button expanded large" %>
+        <%= link_to t("shared.more_info"), help_path, class: "button expanded large" %>
       </div>
     </div>
   </div>
@@ -38,7 +38,7 @@
         </figure>
         <p><%= t("welcome.schede.scheda1.description",
           link1: link_to("Perché devo far appoggiare la mia proposta?", faq_path + '#15'),
-          link2: link_to(t("pages.more_info.title", org_name: setting['org_name']), more_info_path)).html_safe %>
+          link2: link_to(t("pages.help.title", org: setting['org_name']), help_path)).html_safe %>
           
         </p>
         <p>

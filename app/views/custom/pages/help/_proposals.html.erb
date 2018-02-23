@@ -1,0 +1,25 @@
+<div class="row section-content">
+  <div class="small-12 column">
+    <h3 id="proposals" data-magellan-target="proposals">
+      <%= t("pages.help.proposals.title") %>
+    </h3>
+    <p><%= t("pages.help.proposals.description") %></p>
+    <ul class="features">
+      <li><%= t("pages.help.proposals.feature_1_html") %></li>
+      <li>
+        <%= t("pages.help.proposals.feature_2",
+              link1: link_to(t("pages.help.proposals.feature_2_link1", org: setting['org_name']),
+                               new_user_registration_path),
+              link2: link_to(t("pages.help.proposals.feature_2_link2"), faq_path)).html_safe %>
+      </li>
+      <li><%= t("pages.help.proposals.feature_3_html") %></li>
+      <li><%= t("pages.help.proposals.feature_4_html") %></li>
+      <li><%= t("pages.help.proposals.feature_5_html") %></li>
+      <li><%= t("pages.help.proposals.feature_6_html") %></li>
+      <li>
+        <%= t("pages.help.proposals.feature_7",
+              link: link_to(t("pages.help.proposals.feature_7_link"), faq_path)).html_safe %>
+      </li>
+    </ul>
+  </div>
+</div>

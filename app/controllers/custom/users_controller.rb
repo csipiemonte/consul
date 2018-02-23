@@ -1,5 +1,5 @@
 # Controller 'UsersController' -> versione custom, differisce dalla versione originale
-# per la presenza del controllo sull'attivaziobe delle proposte.
+# per la presenza del controllo sull'attivazione delle proposte.
 class UsersController < ApplicationController
   has_filters %w{proposals debates budget_investments comments follows}, only: :show
 
@@ -90,7 +90,7 @@ class UsersController < ApplicationController
     end
 
     def all_user_comments
-      Comment.not_as_admin_or_moderator.where(user_id: @user.id)
+      Comment.not_valuations.not_as_admin_or_moderator.where(user_id: @user.id)
     end
 
     def only_active_commentables

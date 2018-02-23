@@ -34,6 +34,7 @@ it:
       twitter_login: Accesso con Twitter
       facebook_login: Accesso con Facebook
       google_login: Accesso con Google
+      proposals: Proposte
       debates: Dibattiti
       polls: Votazioni
       public_stats: Statistiche pubbliche
@@ -44,8 +45,8 @@ it:
       legislation: Legislazione
       user:
         recommendations: Suggerimenti
-      community: Communità per le proposte e per i progetti di investimento
-      map: Geolocalizzazione delle proposte e dei progetti di investimento
+      community: Communità per le proposte e per i progetti di spesa
+      map: Geolocalizzazione delle proposte e dei progetti di spesa
     map_latitude: Latitudine
     map_longitude: Longitudine
     map_zoom: Zoom

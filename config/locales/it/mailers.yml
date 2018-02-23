@@ -33,12 +33,12 @@ it:
     budget_investment_unfeasible:
       hi: "Stimato utente,"
       new_html: 'In ragione di ciò, ti invitiamo ad elaborare un <strong>nuovo progetto di spesa</strong> che sia conforme alle condizioni di questo processo. Tale operazione può essere portata a termine facendo click su: %{url}.'
-      new_href: "nuova proposta di investimento"
+      new_href: "nuovo progetto di spesa"
       reconsider_html: "Se credi che il progetto rifiutato abbia i requisiti per continuare ad essere un progetto di spesa, potrai comunicarlo, entro 48 ore, alla email deciditorino@comune.torino.it, indicando nell'oggetto della email il codice del progetto %{code}, necessario per il corretto processamento della tua richiesta."
       sincerely: "Cordiali saluti"
       signatory: "DIREZIONE GENERALE DELLA PARTECIPAZIONE CITTADINA"
       sorry: "Ci dispiace per l'inconveniente e ringraziamo di nuovo per la partecipazione."
-      subject: "La tua proposta di investimento '%{code}' è stata contrassegnata come non realizzabile"
+      subject: "Il tuo progetto di spesa '%{code}' è stato contrassegnato come non realizzabile"
       unfeasible_html: "Il Consiglio Comunale ringrazia calorosamente per la partecipazione ai <strong>Bilanci Partecipativi</strong>. Ci dispiace informarti che il tuo progetto <strong>'%{title}'</strong> resterà escluso da questo processo partecipativo per il seguente motivo:"
     proposal_notification_digest:
       info: "Di seguito ti mostriamo le nuove notifiche che hanno pubblicato gli autori delle proposte che stai sostenendo su %{org_name}."
@@ -73,7 +73,7 @@ it:
       signatory: "DIREZIONE GENERALE DELLA PARTECIPAZIONE CITTADINA"
       share: "Condividi il tuo progetto"
     budget_investment_selected:
-      subject: "Il tuo progetto di investimento '%{code}' è stato selezionato"
+      subject: "Il tuo progetto di spesa '%{code}' è stato selezionato"
       hi: "Stimato utente"
       selected_html: "Il Consiglio Comunale di Torino ti ringrazia calorosamente per la partecipazione, con la tua idea, ai <strong>Bilanci Partecipativi</strong>. Ti informiamo che il tuo progetto <strong>'%{title}'</strong> è stato selezionato e passa alla fase della votazione finale che avrà luogo dal <strong>15 maggio al 30 giugno 2017</strong>."
       share: "Per iniziare a raccogliere voti, condividi il tuo progetto di investimento sui social network. Solo così potrai vederlo realizzato!"
@@ -82,7 +82,7 @@ it:
       sincerely: "Cordiali saluti"
       signatory: "DIREZIONE GENERALE DELLA PARTECIPAZIONE CITTADINA"
     budget_investment_unselected:
-      subject: "Il tuo progetto di investimento '%{code}' non è stato selezionato"
+      subject: "Il tuo progetto di spesa '%{code}' non è stato selezionato"
       hi: "Stimato/a utente"
       unselected_html: "Il Consiglio Comunale di Torino ti ringrazia calorosamente per la partecipazione, con la tua idea, ai <strong>Bilanci Partecipativi</strong>. Ci dispiace informarti che il tuo progetto <strong>'%{title}'</strong> non è stato selezionato per la fase della votazione finale."
       participate_html: "Puoi continuare partecipando alla votazione finale votando progetti destinati a tutta la città e alla circoscrizione che scegli dal <strong>15 maggio al 30 giugno 2017.</strong>"

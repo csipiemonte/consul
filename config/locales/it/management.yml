@@ -50,9 +50,9 @@ it:
       create_spending_proposal: Crea proposta di investimento
       print_spending_proposals: Stampare le proposte di spesa
       support_spending_proposals: Appoggia le proposte di spesa
-      create_budget_investment: Crea progetti di investimento
-      print_budget_investments: Stampa i progetti di investimento
-      support_budget_investments: Appoggia i progetti di investimento
+      create_budget_investment: Crea progetti di spesa
+      print_budget_investments: Stampa i progetti di spesa
+      support_budget_investments: Appoggia i progetti di spesa
       users: Utenti
       edit_user_accounts: Modifica account utente
       user_invites: Inviti per gli utenti
@@ -62,13 +62,13 @@ it:
       support_proposals: Sostieni proposte
       vote_proposals: Partecipa alle votazioni finali
     print:
-      proposals_info: 'Fai la tua proposta su http://url.consul'
+      proposals_info: Fai la tua proposta su http://url.consul
       proposals_note: Le proposte maggiormente sostenute passeranno alla fase di votazione. Se saranno accettate dalla maggioranza, il Comune si impegnerà a realizzarle.
       proposals_title: 'Proposte:'
-      spending_proposals_info: 'Partecipa a http://url.consul'
+      spending_proposals_info: Partecipa a http://url.consul
       spending_proposals_note: I fondi per il bilancio partecipativo saranno assegnati ai progetti di investimento più votati.
       budget_investments_info: 'Partecipa a http://url.consul'
-      budget_investments_note: I bilanci partecipativi saranno investiti nelle proposte di investimento più supportate.
+      budget_investments_note: I bilanci partecipativi saranno investiti nei progetti di spesa più appoggiati.
     print_info: Stampa questa informazione
     proposals:
       alert:
