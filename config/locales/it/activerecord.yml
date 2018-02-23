@@ -37,6 +37,9 @@ it:
       manager:
         one: "Gestore"
         other: "Gestori"
+      newsletter:
+        one: "Newsletter"
+        other: "Newsletters"
       vote:
         one: "Voto"
         other: "Voti"
@@ -230,6 +233,11 @@ it:
       poll/question/answer/video:
         title: Titolo
         url: Video esterno
+      newsletter:
+        segment_recipient: Destinatari
+        subject: Oggetto
+        from: Inviato da
+        body: Contenuto della email
     errors:
       models:
         user:
@@ -249,6 +257,10 @@ it:
             attachment:
               min_image_width: "L'immagine deve essere di almeno %{required_min_width}px di larghezza"
               min_image_height: "L'immagine deve essere di almeno %{required_min_height}px di altezza"
+        newsletter:
+          attributes:
+            segment_recipient:
+              invalid: "Il segmento degli utenti non è valido"
         map_location:
           attributes:
             map:

@@ -54,14 +54,14 @@ nl:
   proposals:
     index:
       section_footer:
-        help_text_1: "Per creare le proposte è necessario %{link}"
-        help_text_1_link: "registrarsi su %{org}"
-        help_text_2: "Per appoggiare le proposte, occorre che il proprio account sia stato certificato (ovvero che si risulti residenti a Torino e con età superiore a 16 anni)."
-        help_text_3: "Per certificare il proprio account, in modo automatico, basta essere utenti registrati e scegliere l'opzione presente nella pagina %{link}"
-        help_text_3_link: "Il mio account"
+        help_text_1: "Om voorstellen te maken is het noodzakelijk %{link}"
+        help_text_1_link: "registreren op %{org}"
+        help_text_2: "Om de voorstellen te ondersteunen, is het noodzakelijk dat uw account is gecertificeerd (dwz dat u in Turijn woont en ouder bent dan 16 jaar)."
+        help_text_3: "Om uw account te certificeren, moet u automatisch alleen geregistreerde gebruikers zijn en de optie op de pagina kiezen %{link}"
+        help_text_3_link: "Mijn account"
         help_text_4: "Het is noodzakelijk om de fiscale code, de geboortedatum en het CAP of residence te vermelden. Het is ook nodig om het mobiele nummer op te geven om het sms-bericht met de bevestigingscode te ontvangen."
         help_text_5: "De voorstellen die de steun van 5000 gebruikers bereiken, gaan over op een technische evaluatie van de administratie op haalbaarheid. Aan deze beoordeling zal publieke uitkomst worden gegeven."
-        help_text_6: "Ulteriori informazioni sulle proposte e sulle modalità di registrazione sono disponibili nella %{link}"
+        help_text_6: "Nadere informatie over de voorstellen en hoe te registreren zijn beschikbaar in de %{link}"
         help_text_6_link: "pagina met veelgestelde vragen"
   settings:
     feature:

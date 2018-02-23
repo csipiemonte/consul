@@ -54,14 +54,14 @@ es:
   proposals:
     index:
       section_footer:
-        help_text_1: "Per creare le proposte è necessario %{link}"
+        help_text_1: "Para crear propuestas hay que %{link}"
         help_text_1_link: "registrarse en %{org}"
-        help_text_2: "Per appoggiare le proposte, occorre che il proprio account sia stato certificato (ovvero che si risulti residenti a Torino e con età superiore a 16 anni)."
-        help_text_3: "Per certificare il proprio account, in modo automatico, basta essere utenti registrati e scegliere l'opzione presente nella pagina %{link}"
+        help_text_2: "Para respaldar las propuestas, es necesario que su cuenta haya sido certificada (es decir, que sea residente en Turín y tenga más de 16 años)."
+        help_text_3: "Para certificar su cuenta, automáticamente, solo usuarios registrados y elija la opción en la página %{link}"
         help_text_3_link: "Mi cuenta"
         help_text_4: "Hay que indicar el código fiscal, la fecha de nacimiento y el CAP de residencia. También será necesario proporcionar el número de móvil para obtener el SMS con el código de confirmación."
         help_text_5: "Las propuestas que alcanzan el apoyo de 5.000 usuarios pasarán a una evaluación técnica de la Administración para su viabilidad. Esta evaluación tendrá un resultado público."
-        help_text_6: "Ulteriori informazioni sulle proposte e sulle modalità di registrazione sono disponibili nella %{link}"
+        help_text_6: "Más información sobre las propuestas y cómo registrarse están disponibles en la %{link}"
         help_text_6_link: "página de las preguntas frecuentes"
   settings:
     feature:

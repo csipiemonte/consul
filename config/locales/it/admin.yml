@@ -464,7 +464,9 @@ it:
       administrators: Amministratori
       managers: Gestori
       moderators: Moderatori
-      newsletter: Invio della Newsletters
+      emails: Invio delle email
+      newsletters: Newsletters
+      emails_download: Download delle email
       valuators: Valutatori
       poll_officers: Presidenti di seggio
       polls: Votazioni
@@ -513,10 +515,53 @@ it:
         delete: Elimina
       search:
         title: 'Moderatori: Ricerca degli utenti'
+    segment_recipient:
+      all_users: Tutti gli Utenti
+      administrators: Amministratori
+      proposal_authors: Utenti autori di proposte
+      investment_authors: Utenti autori di progetti di spesa negli attuali bilanci
+      feasible_and_undecided_investment_authors: Utenti autori di progetti di spesa fattibili o da decidere negli attuali bilanci
+      selected_investment_authors: Utenti autori di progetti di spesa selezionati negli attuali bilanci
+      winner_investment_authors: Utenti autori di progetti di spesa vincitori negli attuali bilanci
+      invalid_recipients_segment: "Il segmento dei destinatari non è valido"
     newsletters:
+      create_success: Newsletter creata correttamente
+      update_success: Newsletter aggiornata correttamente
+      send_success: Newsletter inviata correttamente
+      delete_success: Newsletter eliminata correttamente
       index:
         title: Invio delle newsletters
-        button: Scarica zip con la lista degli utenti
+        new_newsletter: Crea newsletter
+        subject: Oggetto
+        segment_recipient: Destinatari
+        sent: Inviata
+        actions: Azioni
+        draft: Bozza
+        edit: Modifica
+        delete: Elimina
+        preview: Anteprima
+        empty_newsletters: Non sono presenti newsletters da visualizzare
+      new:
+        title: Nuova newsletter
+      edit:
+        title: Modifica newsletter
+      show:
+        title: Anteprima della newsletter
+        send: Invia
+        affected_users: (%{n} utenti coinvolti)
+        sent_at: Inviata
+        subject: Oggetto
+        segment_recipient: Destinatari
+        from: Inviata da
+        body: Contenuto della email
+        body_help_text: Così è come gli utenti vedranno la email
+        send_alert: Confermi di voler spedire questa newsletter a %{n} utenti?
+    emails_download:
+      index:
+        title: Download delle email
+        download_segment: Download segmento
+        download_segment_help_text: Download in formato CSV
+        download_emails_button: Download della lista delle email
     valuators:
       index:
         title: Valutatori

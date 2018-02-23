@@ -53,7 +53,7 @@ class User < ActiveRecord::Base
   attr_accessor :use_redeemable_code
   attr_accessor :login
 
-  scope :administrators, -> { joins(:administrators) }
+  scope :administrators, -> { joins(:administrator) }
   scope :moderators,     -> { joins(:moderator) }
   scope :organizations,  -> { joins(:organization) }
   scope :officials,      -> { where("official_level > 0") }
@@ -110,6 +110,11 @@ class User < ActiveRecord::Base
 
   def proposal_votes(proposals)
     voted = votes.for_proposals(Array(proposals).map(&:id))
+    voted.each_with_object({}) { |v, h| h[v.votable_id] = v.value }
+  end
+
+  def legislation_proposal_votes(proposals)
+    voted = votes.for_legislation_proposals(proposals)
     voted.each_with_object({}) { |v, h| h[v.votable_id] = v.value }
   end
 
