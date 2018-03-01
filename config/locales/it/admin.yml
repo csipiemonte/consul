@@ -519,10 +519,10 @@ it:
       all_users: Tutti gli Utenti
       administrators: Amministratori
       proposal_authors: Utenti autori di proposte
-      investment_authors: Autori di progetti di spesa negli attuali bilanci
-      feasible_and_undecided_investment_authors: Autori di progetti di spesa fattibili o da decidere negli attuali bilanci
-      selected_investment_authors: Autori di progetti di spesa selezionati negli attuali bilanci
-      winner_investment_authors: Autori di progetti di spesa vincitori negli attuali bilanci
+      investment_authors: Utenti autori di progetti di spesa negli attuali bilanci
+      feasible_and_undecided_investment_authors: Utenti autori di progetti di spesa fattibili o da decidere negli attuali bilanci
+      selected_investment_authors: Utenti autori di progetti di spesa selezionati negli attuali bilanci
+      winner_investment_authors: Utenti autori di progetti di spesa vincitori negli attuali bilanci
       invalid_recipients_segment: "Il segmento dei destinatari non è valido"
     newsletters:
       create_success: Newsletter creata correttamente
@@ -559,7 +559,7 @@ it:
     emails_download:
       index:
         title: Download delle email
-        download_segment: Download segmento
+        download_segment: Download indirizzi di posta elettronica
         download_segment_help_text: Download in formato CSV
         download_emails_button: Download della lista delle email
     valuators:

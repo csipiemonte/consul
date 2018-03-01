@@ -1,4 +1,4 @@
-<!-- versione custom, differisce per la verifica sull'attivazione delle votazioni (riga 160) -->
+<!-- versione custom, differisce per la verifica sull'attivazione delle votazioni (riga 165) -->
 <% provide :title do %><%= @proposal.title %><% end %>
 <% content_for :meta_description do %><%= @proposal.summary %><% end %>
 <% provide :social_media_meta_tags do %>
@@ -107,6 +107,10 @@
           </div>
         <% end %>
 
+        <%= render 'documents/documents',
+                    documents: @proposal.documents,
+                    max_documents_allowed: Proposal.max_documents_allowed %>
+
         <%= render 'shared/tags', taggable: @proposal %>
 
         <%= render 'shared/geozone', geozonable: @proposal %>
@@ -211,11 +215,5 @@
 
   <div class="tabs-panel is-active" id="tab-comments">
     <%= render "proposals/comments" %>
-  </div>
-
-  <div class="tabs-panel" id="tab-documents">
-    <%= render 'documents/documents',
-                documents: @proposal.documents,
-                max_documents_allowed: Proposal.max_documents_allowed %>
   </div>
 </div>

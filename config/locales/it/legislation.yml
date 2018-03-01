@@ -57,6 +57,7 @@ it:
         description: In cosa consiste
         more_info: Più informazioni e contesto
       index:
+        filter: Filtro
         filters:
           open: Progetti attivi
           next: A breve
