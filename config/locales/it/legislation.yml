@@ -47,15 +47,14 @@ it:
         text_comments: Commenti
     processes:
       header:
-        view_process_information: Vedi informazione del progetto
+        additional_info: Ulteriore informazione
+        description: In cosa consiste
+        more_info: Maggiori informazioni e contesto
       proposals:
         empty_proposals: Non ci sono proposte
       debate:
         empty_questions: Non ci sono domande
         participate: Dai i tuoi contributi al dibattito iniziale partecipando ai seguenti temi.
-      header_full:
-        description: In cosa consiste
-        more_info: Più informazioni e contesto
       index:
         filter: Filtro
         filters:

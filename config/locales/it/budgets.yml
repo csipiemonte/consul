@@ -19,7 +19,7 @@ it:
         not_selected: Non si possono votare progetti irrealizzabili.
         not_enough_money_html: "Hai già assegnato il bilancio disponibile.<br><small>Ricorda che puoi %{change_ballot} in qualsiasi momento</small>"
         no_ballots_allowed: Il periodo di votazione è concluso.
-        different_heading_assigned: Hai già votato in una sezione diversa del bilancio.
+        different_heading_assigned_html: "Hai già votato progetti di un'altra voce: %{heading_link}"
         change_ballot: cambiare i tuoi voti
     groups:
       show:
