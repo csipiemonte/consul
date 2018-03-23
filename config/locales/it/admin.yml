@@ -106,6 +106,8 @@ it:
         no_groups: Non sono ancora stati creati gruppi. Ogni utente potrà votare in una sola voce di bilancio di ciascun gruppo.
         add_group: Aggiungi nuovo gruppo
         create_group: Crea gruppo
+        edit_group: Modifica gruppo
+        submit: Salva gruppo
         heading: Nome della voce
         add_heading: Aggiungi voce
         amount: Importo
@@ -117,6 +119,7 @@ it:
         table_amount: Importo
         table_population: Popolazione
         population_info: "Il campo 'Popolazione' delle voci di bilancio è usato unicamente a fini statistici, con l'obbiettivo di mostrare la percentuale di voti avuti in ciascuna voce che rappresenta un'area con popolazione. Si tratta di un dato facoltativo, può essere lasciato vuoto qualora non lo si adotti."
+        max_votable_headings: "Numero massimo di voci nelle quali un utente può votare"
       winners:
         calculate: Calcola proposte vincitrici
         calculated: In elaborazione delle proposte vincitrici, può durare un minuto.

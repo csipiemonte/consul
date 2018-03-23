@@ -770,7 +770,9 @@ it:
       organization: Le organizzazioni non possono votare.
       unfeasible: Non si possono votare le proposte non realizzabili.
       not_voting_allowed: Il periodo di votazione è concluso.
-      different_heading_assigned: È possibile appoggiare i progetti di spesa solamente di una voce
+      different_heading_assigned:
+        one: "È possibile appoggiare i progetti di spesa solamente di %{count} circoscrizione"
+        other: "È possibile appoggiare i progetti di spesa solamente di %{count} circoscrizioni"
   welcome:
     debates:
       description: Incontrarci, dibattere e condividere ciò che ci sembra importante nella nostra città.

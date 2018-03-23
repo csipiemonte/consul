@@ -74,6 +74,7 @@ it:
       notice:
         valuate: "Fascicolo aggiornato"
       valuation_comments: Commenti di valutazione
+      not_in_valuating_phase: I progetti possono essere valutati solamente durante la fase di valutazione del Bilancio
     spending_proposals:
       index:
         geozone_filter_all: Tutti gli ambiti di esecuzione

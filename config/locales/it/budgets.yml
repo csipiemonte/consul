@@ -130,7 +130,9 @@ it:
         already_added: Hai già aggiunto questo progetto di spesa
         already_supported: Hai già appoggiato questo progetto di spesa. Condividilo!
         support_title: Appoggia questo progetto
-        confirm_group: "Puoi appoggiare solamente i progetti di una voce. Se prosegui non potrai cambiare questa decisione. Sei sicuro?"
+        confirm_group:
+          one: "Puoi appoggiare solamente i progetti in %{count} circoscrizione. Se prosegui non potrai cambiare la selezione di questa circoscrizione. Sei sicuro?"
+          other: "Puoi appoggiare solamente i progetti in %{count} circoscrizioni. Se prosegui non potrai cambiare la selezione di questa circoscrizione. Sei sicuro?"
         supports:
           zero: Senzi appoggi
           one: 1 appoggio

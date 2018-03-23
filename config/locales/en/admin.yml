@@ -106,6 +106,8 @@ en:
         no_groups: No groups created yet. Each user will be able to vote in only one heading per group.
         add_group: Add new group
         create_group: Create group
+        edit_group: Edit group
+        submit: Save group
         heading: Heading name
         add_heading: Add heading
         amount: Amount
@@ -117,6 +119,7 @@ en:
         table_amount: Amount
         table_population: Population
         population_info: "Budget Heading population field is used for Statistic purposes at the end of the Budget to show for each Heading that represents an area with population what percentage voted. The field is optional so you can leave it empty if it doesn't apply."
+        max_votable_headings: "Maxium number of headings in which a user can vote"
       winners:
         calculate: Calculate Winner Investments
         calculated: Winners being calculated, it may take a minute.
