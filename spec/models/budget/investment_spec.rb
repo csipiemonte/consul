@@ -263,7 +263,52 @@ describe Budget::Investment do
     end
   end
 
-  describe "by_admin" do
+  describe "#should_show_unfeasibility_explanation?" do
+    let(:budget) { create(:budget) }
+    let(:investment) do
+      create(:budget_investment, budget: budget,
+             unfeasibility_explanation: "because of reasons",
+             valuation_finished: true,
+             feasibility: "unfeasible")
+    end
+
+    it "returns true for unfeasible investments with unfeasibility explanation and valuation finished" do
+      Budget::Phase::PUBLISHED_PRICES_PHASES.each do |phase|
+        budget.update(phase: phase)
+
+        expect(investment.should_show_unfeasibility_explanation?).to eq(true)
+      end
+    end
+
+    it "returns false in valuation has not finished" do
+      investment.update(valuation_finished: false)
+      Budget::Phase::PUBLISHED_PRICES_PHASES.each do |phase|
+        budget.update(phase: phase)
+
+        expect(investment.should_show_unfeasibility_explanation?).to eq(false)
+      end
+    end
+
+    it "returns false if not unfeasible" do
+      investment.update(feasibility: "undecided")
+      Budget::Phase::PUBLISHED_PRICES_PHASES.each do |phase|
+        budget.update(phase: phase)
+
+        expect(investment.should_show_unfeasibility_explanation?).to eq(false)
+      end
+    end
+
+    it "returns false if unfeasibility explanation blank" do
+      investment.update(unfeasibility_explanation: "")
+      Budget::Phase::PUBLISHED_PRICES_PHASES.each do |phase|
+        budget.update(phase: phase)
+
+        expect(investment.should_show_unfeasibility_explanation?).to eq(false)
+      end
+    end
+  end
+
+  describe "#by_admin" do
     it "returns investments assigned to specific administrator" do
       investment1 = create(:budget_investment, administrator_id: 33)
       create(:budget_investment)
@@ -292,6 +337,24 @@ describe Budget::Investment do
 
       expect(by_valuator.size).to eq(2)
       expect(by_valuator.sort).to eq([investment1, investment3].sort)
+    end
+  end
+
+  describe "#by_valuator_group" do
+
+    it "returns investments assigned to a valuator's group" do
+      valuator = create(:valuator)
+      valuator_group = create(:valuator_group, valuators: [valuator])
+      assigned_investment = create(:budget_investment, valuators: [valuator],
+                                                       valuator_groups: [valuator_group])
+      another_assigned_investment = create(:budget_investment, valuator_groups: [valuator_group])
+      unassigned_investment = create(:budget_investment, valuators: [valuator], valuator_groups: [])
+      create(:budget_investment, valuators: [valuator], valuator_groups: [create(:valuator_group)])
+
+      by_valuator_group = described_class.by_valuator_group(valuator.valuator_group_id)
+
+      expect(by_valuator_group.size).to eq(2)
+      expect(by_valuator_group).to contain_exactly(assigned_investment, another_assigned_investment)
     end
   end
 
@@ -343,6 +406,20 @@ describe Budget::Investment do
 
         investment2.valuators << create(:valuator)
         investment3.valuators << create(:valuator)
+
+        valuating = described_class.valuating
+
+        expect(valuating.size).to eq(1)
+        expect(valuating.first).to eq(investment2)
+      end
+
+      it "returns all investments with assigned valuator groups but valuation not finished" do
+        investment1 = create(:budget_investment)
+        investment2 = create(:budget_investment)
+        investment3 = create(:budget_investment, valuation_finished: true)
+
+        investment2.valuator_groups << create(:valuator_group)
+        investment3.valuator_groups << create(:valuator_group)
 
         valuating = described_class.valuating
 

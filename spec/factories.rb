@@ -61,6 +61,10 @@ FactoryBot.define do
     end
   end
 
+  factory :valuator_group, class: ValuatorGroup do
+    sequence(:name) { |n| "Valuator Group #{n}" }
+  end
+
   factory :identity do
     user nil
     provider "Twitter"
@@ -77,7 +81,7 @@ FactoryBot.define do
     user
     document_number
     document_type    "1"
-    date_of_birth    Date.new(1980, 12, 31)
+    date_of_birth    Time.zone.local(1980, 12, 31).to_date
     postal_code      "28013"
     terms_of_service '1'
 
@@ -638,13 +642,13 @@ FactoryBot.define do
   factory :poll_partial_result, class: 'Poll::PartialResult' do
     association :question, factory: [:poll_question, :with_answers]
     association :author, factory: :user
-    origin { 'web' }
+    origin 'web'
     answer { question.question_answers.sample.title }
   end
 
   factory :poll_recount, class: 'Poll::Recount' do
     association :author, factory: :user
-    origin { 'web' }
+    origin 'web'
   end
 
   factory :officing_residence, class: 'Officing::Residence' do
@@ -705,6 +709,10 @@ FactoryBot.define do
   factory :notification do
     user
     association :notifiable, factory: :proposal
+
+    trait :read do
+      read_at Time.current
+    end
   end
 
   factory :geozone do

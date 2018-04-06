@@ -13,6 +13,7 @@ it:
       unmark_featured: "Deselezionare 'in primo piano'"
       edit: Modifica
       configure: Configura
+      delete: Elimina
     banners:
       index:
         title: Banners
@@ -216,6 +217,13 @@ it:
           title: Vincitrice
           "true": "Si"
           "false": "No"
+        image: "Immagine"
+        see_image: "Mostra immagine"
+        no_image: "Senza immagine"
+        documents: "Documenti"
+        see_documents: "Mostra documenti (%{count})"
+        no_documents: "Senza documenti"
+        valuator_groups: "Gruppi di valutatori"
       edit:
         classification: Classifica
         compatibility: Compatibilità
@@ -229,6 +237,7 @@ it:
         tags: Tags
         tags_placeholder: "Scrivi i tags che desideri separati da virgole (,)"
         undefined: Da definire
+        user_groups: "Gruppi"
       search_unfeasible: Cerca irrealizzabili
     milestones:
       index:
@@ -526,6 +535,7 @@ it:
       feasible_and_undecided_investment_authors: Utenti autori di progetti di spesa fattibili o da decidere negli attuali bilanci
       selected_investment_authors: Utenti autori di progetti di spesa selezionati negli attuali bilanci
       winner_investment_authors: Utenti autori di progetti di spesa vincitori negli attuali bilanci
+      not_supported_on_current_budget: Utenti che non hanno appoggiato progetti degli attuali bilanci
       invalid_recipients_segment: "Il segmento dei destinatari non è valido"
     newsletters:
       create_success: Newsletter creata correttamente
@@ -573,8 +583,10 @@ it:
         description: Descrizione
         no_description: Senza descrizione
         no_valuators: Non ci sono valutatori.
+        valuator_groups: "Gruppi di valutatori"
+        group: "Gruppo"
+        no_group: "Senza gruppo"
       valuator:
-        description_placeholder: 'Descrizione (facoltativa)'
         add: Aggiungi come valutatore
         delete: Elimina
       search:
@@ -588,6 +600,30 @@ it:
         in_evaluation_count: In valutazione
         total_count: Totale
         cost: Costo totale
+      form:
+        edit_title: "Valutatori: Modifica valutatore"
+        update: "Aggiorna valutatore"
+        updated: "Valutatore aggiornato correttamente"
+      show:
+        description: "Descrizione"
+        email: "Email"
+        group: "Gruppo"
+        no_description: "Senza descrizione"
+        no_group: "Senza gruppo"
+    valuator_groups:
+      index:
+        title: "Gruppi di valutatori"
+        new: "Crea gruppo di valutatori"
+        name: "Nome"
+        members: "Componenti"
+        no_groups: "Non ci sono gruppi di valutatori"
+      show:
+        title: "Gruppo di valutatori: %{group}"
+        no_valuators: "Non ci sono valutatori assegnati a questo gruppo"
+      form:
+        name: "Nome del gruppo"
+        new: "Crea gruppo di valutatori"
+        edit: "Salva gruppo di valutatori"
     poll_officers:
       index:
         title: Presidenti di seggio

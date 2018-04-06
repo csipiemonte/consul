@@ -1,10 +1,25 @@
 it:
   management:
     account:
+      menu:
+        reset_password_email: Recupero password via email
+        reset_password_manually: Recupero password manualmente
       alert:
         unverified_user: Si possono modificare solo gli account degli utenti verificati
       show:
         title: Account utente
+      edit:
+        title: 'Modifica account utente: Recupero password'
+        back: Indietro
+        password:
+          password: Password
+          send_email: Invia email per recuperare la password
+          reset_email_send: Email inviata correttamente.
+          reseted: Password recuperata correttamente
+          random: Genera una password casuale
+          save: Salva
+          print: Stampa password
+          print_help: Dopo aver salvato la password sarà possibile stamparla.
     account_info:
       change_user: Cambiare utente
       document_number_label: 'Dati identificativi del documento:'

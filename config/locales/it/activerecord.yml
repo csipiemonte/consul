@@ -34,6 +34,9 @@ it:
       valuator:
         one: "Valutatore"
         other: "Valutatori"
+      valuator_group:
+        one: "Gruppo di Valutatori"
+        other: "Gruppi di Valutatori"
       manager:
         one: "Gestore"
         other: "Gestori"

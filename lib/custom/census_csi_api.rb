@@ -126,7 +126,7 @@ class CensusCsiApi
       day, month, year = str.match(/(\d\d?)\D(\d\d?)\D(\d\d\d?\d?)/)[1..3]
       Rails.logger.info "#{prf}day: #{day}, month: #{month}, year: #{year}"
       return nil unless day.present? && month.present? && year.present?
-      Date.new(year.to_i, month.to_i, day.to_i)
+      Time.zone.local(year.to_i, month.to_i, day.to_i).to_date
     end
 
     def postal_code

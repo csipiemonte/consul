@@ -234,11 +234,6 @@ it:
       help: Più informazioni
       my_account_link: Il mio account
       my_activity_link: Le mie attività
-      notifications: Notifiche
-      new_notifications:
-        one: Hai una nuova notifica
-        other: Hai %{count} nuove notifiche
-      no_notifications: 'Non hai nuove notifiche'
       open: aperto
       open_city_slogan_html: Esistono città governate direttamente dai suoi abitanti, che <strong>dibattono</strong> di temi verso cui nutrono preoccupazione, <strong>propongono</strong> idee per migliorare le loro vite e <strong>decidono</strong> fra tutte e tutti quelle da realizzare.
       open_city_title: La città che ami sarà la città che vuoi.
@@ -247,6 +242,12 @@ it:
       poll_questions: Votazioni
       budgets: Bilanci partecipativi
       spending_proposals: Proposte di investimento
+      notification_item:
+        new_notifications:
+          one: Hai una nuova notifica
+          other: Hai %{count} nuove notifiche
+        notifications: Notifiche
+        no_notifications: 'Non hai nuove notifiche'
     admin:
       watch_form_message: 'Hai eseguito modifiche che non sono state salvate. Confermi che vuoi abbandonare la pagina?'
   legacy_legislation:
@@ -259,19 +260,25 @@ it:
   locale: Italiano
   notifications:
     index:
-      comments_on:
-        one: "C'è un nuovo commento in"
-        other: Ci sono %{count} commenti nuovi in
       empty_notifications: Non hai nuove notifiche.
-      notifiable_hidden: Questo elemento non è più disponibile.
       mark_all_as_read: Segna tutte come lette
-      proposal_notification:
-        one: "C'è un nuovo notifica in"
-        other: Ci sono %{count} nuove notifiche in
-      replies_to:
-        one: "C'è una nuova risposta ad un tuo commento in"
-        other: Ci sono %{count} nuove risposte ad un tuo commento in
+      read: Lette
       title: Notifiche
+      unread: Nuove
+    notification:
+      action:
+        comments_on:
+          one: "C'è un nuovo commento in"
+          other: Ci sono %{count} commenti nuovi in
+        proposal_notification:
+          one: "C'è una nuova notifica in"
+          other: Ci sono %{count} nuove notifiche in
+        replies_to:
+          one: "C'è una nuova risposta ad un tuo commento in"
+          other: Ci sono %{count} nuove risposte ad un tuo commento in
+      mark_as_read: Segna come letta
+      mark_as_unread: Segna come non letta
+      notifiable_hidden: "Questo elemento non è più disponibile."
   map:
     title: "Circoscrizioni"
     proposal_for_district: "Crea una proposta per la tua circoscrizione"

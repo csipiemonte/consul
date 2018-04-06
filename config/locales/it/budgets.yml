@@ -41,6 +41,7 @@ it:
       finished: Risultati
     index:
       title: Bilanci Partecipativi
+      empty_budgets: Non ci sono bilanci partecipativi.
       section_header:
         icon_alt: Icona dei Bilanci partecipativi
         title: Bilanci partecipativi
