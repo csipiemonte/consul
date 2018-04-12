@@ -54,4 +54,7 @@ Rails.application.configure do
 
   # log level
   config.log_level = :info
+
+  # SPID logout url
+  config.spid_logout_url = '/tst_deciditorinosliv1spid_gasp_coto/logout.do'
 end

@@ -77,4 +77,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # SPID logout url
+  config.spid_logout_url = '/preprod_deciditorinosliv1spid_gasp_coto/logout.do'
 end
