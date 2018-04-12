@@ -171,6 +171,7 @@ it:
         assigned_admin: Amministratore assegnato
         no_admin_assigned: Senza admin assegnato
         no_valuators_assigned: Senza valutatore
+        no_valuation_groups: Senza gruppi valutatori
         feasibility:
           feasible: "Realizzabile (%{price})"
           unfeasible: "Irrealizzabile"
@@ -182,6 +183,7 @@ it:
         table_supports: "Appoggi"
         table_admin: "Amministratore"
         table_valuator: "Valutatore"
+        table_valuation_group: "Gruppi valutatori"
         table_geozone: "Ambito di esecuzione"
         table_feasibility: "Fattibilità"
         table_valuation_finished: "Val. Ter."

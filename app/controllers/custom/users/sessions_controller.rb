@@ -1,4 +1,7 @@
+# Custom Decidi Torino Users::SessionsController, differisce per la verifca della residenza in caso di utenza
+# certificata (check_current_user_residence) e per la chiusura della sessione SPID (after_sign_out_path_for).
 class Users::SessionsController < Devise::SessionsController
+  before_action :verify_signed_out_user, only: :destroy
 
   private
 
@@ -51,7 +54,12 @@ class Users::SessionsController < Devise::SessionsController
     end
 
     def after_sign_out_path_for(resource)
+      return Rails.application.config.spid_logout_url if @idp.present? && @idp.provider == 'shibboleth'
       request.referer.present? ? request.referer : super
+    end
+
+    def verify_signed_out_user
+      @idp = Identity.where(user_id: current_user.id).first
     end
 
     def verifying_via_email?
@@ -59,5 +67,4 @@ class Users::SessionsController < Devise::SessionsController
       stored_path = session[stored_location_key_for(resource)] || ""
       stored_path[0..5] == "/email"
     end
-
 end

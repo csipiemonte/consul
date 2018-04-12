@@ -15,7 +15,7 @@ Rails.application.configure do
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
-  config.action_mailer.asset_host = "http://#{Rails.application.secrets.server_name}"
+  config.action_mailer.asset_host = "https://#{Rails.application.secrets.server_name}"
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
@@ -51,6 +51,11 @@ Rails.application.configure do
     end
   end
 
+  config.logger = Logger.new("/var/log/rails/dev-www-deciditorino.portali.csi.it_443/#{Rails.env}.log")
+
   # log level
   config.log_level = :debug
+
+  # SPID logout url
+  config.spid_logout_url = '/dev_deciditorinosliv1spid_gasp_coto/logout.do'
 end
