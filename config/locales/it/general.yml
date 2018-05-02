@@ -487,6 +487,7 @@ it:
         description: Registrati per poter votare le proposte cittadine e le questioni per le quali il Consiglio Comunale interpella la cittadinanza. Decidi direttamente.
         help_text_1: "Le votazioni si convocano quando una proposta cittadina raggiunge l'1% di appoggi da parte dei residenti con diritto di voto. Nelle votazioni si possono includere anche questioni che il Consiglio Comunale sottopone alla decisione diretta della cittadinanza."
         help_text_2: "Per partecipare alla prossima votazione è necessario registrarsi su %{org} e verificare il proprio account. Possono votare tutte le persone residenti in città di età maggiore di 16 anni. I risultati di tutte le votazioni saranno vincolanti per il Comune."
+      no_polls: "Non sono presenti votazioni aperte."
     show:
       already_voted_in_booth: "Hai già partecipato a questa votazione presso le urne di un seggio, non è possibile votare di nuovo."
       already_voted_in_web: "Hai già partecipato a questa votazione. Se voti nuovamente, il risultato precedente sarà sovrascritto."
@@ -630,6 +631,10 @@ it:
       next_slide: Immagine seguente
     documentation: Documentazione aggiuntiva
     more_info: Più informazioni
+    view_mode:
+      title: Modalità di visualizzazione
+      cards: Anteprima
+      list: Lista
   social:
     blog: "Blog di %{org}"
     facebook: "Facebook di %{org}"

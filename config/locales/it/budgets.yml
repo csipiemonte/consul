@@ -71,11 +71,11 @@ it:
         map_location_instructions: "Naviga sulla mappa fino al punto scelto e metti il marcatore."
         map_remove_marker: "Elimina il marcatore"
         location: "Informazione aggiuntiva sulla localizzazione"
+        map_skip_checkbox: "A questo progetto non corrisponde una localizzazione concreta o non la conosco."
       index:
         title: Bilanci partecipativi
         unfeasible: Progetti di spesa non realizzabili
-        unfeasible_text: "Le proposte presentate devono incontrare una serie di criteri (legalità, concretezza, essere di competenza del Comune, non superare il massimo del bilancio; %{definitions}) per essere dichiarate realizzabili e giungere alla fase della votazione finale. Tutte le proposte che non soddisfano tali criteri sono segnate come non realizzabili e pubblicate nella lista seguente, insieme al corrispondente rapporto di non fattibilità."
-        unfeasible_text_definitions: vedi definizioni qui
+        unfeasible_text: "I progetti presentati devono incontrare una serie di criteri (legalità, concretezza, essere di competenza del Comune, non superare il massimo del bilancio) per essere dichiarati realizzabili e giungere alla fase della votazione finale. Tutti i progetti che non soddisfano tali criteri sono segnati come non realizzabili e pubblicati nella lista seguente, insieme al corrispondente rapporto di non fattibilità."
         by_heading: 'Progetti di spesa con ambito: %{heading}'
         search_form:
           button: Cerca

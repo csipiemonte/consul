@@ -80,11 +80,11 @@ it:
         edit_groups: Modifica grupppi di voci
         edit_budget: Modifica bilancio
       create:
-        notice: 'Nuovo bilancio partecipativo creato con successo!'
+        notice: 'Bilanci partecipativi creati con successo!'
       update:
-        notice: Bilancio partecipativo aggiornato con successo
+        notice: Bilanci partecipativi aggiornati
       edit:
-        title: Modifica il bilancio partecipativo
+        title: Modifica bilanci partecipativi
         delete: Elimina bilancio partecipativo
         phase: Fase
         dates: Date
@@ -188,6 +188,7 @@ it:
         table_feasibility: "Fattibilità"
         table_valuation_finished: "Val. Ter."
         table_selection: "Selezionato"
+        table_evaluation: "Mostra a valutatori"
         table_incompatible: "Incompatibile"
       show:
         assigned_admin: Amministratore assegnato

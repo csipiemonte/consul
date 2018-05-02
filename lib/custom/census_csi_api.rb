@@ -190,8 +190,7 @@ class CensusCsiApi
   def client
     @client = Savon.client(
       wsdl: Rails.application.secrets.naosrv_api_end_point,
-      basic_auth: [Rails.application.secrets.naosrv_username, Rails.application.secrets.naosrv_password],
-      ssl_verify_mode: :none # workaround per evitare i problemi originati da certificati server scaduti
+      basic_auth: [Rails.application.secrets.naosrv_username, Rails.application.secrets.naosrv_password]
     )
   end
 end
