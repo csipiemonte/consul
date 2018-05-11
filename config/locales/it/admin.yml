@@ -254,9 +254,13 @@ it:
         image: "Immagine"
         show_image: "Mostra immagine"
         documents: "Documenti"
+      form:
+        add_language: Aggiungi lingua
+        remove_language: Elimina lingua
       new:
         creating: Crea milestone
         date: Data
+        description: Descrizione
       edit:
         title: Modifica milestone
       create:
