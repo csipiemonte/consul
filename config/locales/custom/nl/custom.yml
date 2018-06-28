@@ -66,20 +66,20 @@ nl:
   welcome:
     schede:
       scheda1:
-        title: Doe een voorstel
-        description: "On line de nieuwe sectie <i>Voorstellen</i> waar u een voorstel kunt invoegen van wat u wilt dat de stad bereikt en waar u de voorstellen van andere burgers kunt ondersteunen. Elk voorstel dat een vooraf bepaalde drempelwaarde voor ondersteuning bereikt (zie Veelgestelde vragen %{link1}), zal worden onderworpen aan een haalbaarheidsstudie door de kantoren van de gemeentelijke administratie. Ga voor meer informatie over de voorstellen naar %{link2}"
-        label: Voorstellen
-        link: Zie voorstellen
+        title: "Metro Linea 2"
+        description: "De inwoners van Turijn worden uitgenodigd om hun ideeën over metrolijn 2 uit te drukken. De voorstellen en opmerkingen die op 22 juli zijn ontvangen, kunnen worden overwogen tijdens het opstellen van het voorbereidende project."
+        label: Wetgeving processen
+        link: Zie het wetgevingsproces
       scheda2:
         title: "Discussiegebied"
         description: "We herinneren u eraan dat het debatgebied een onderwerp is van gratis discussie tussen gebruikers. Voor het formuleren van voorstellen waarvoor de Stad zich ertoe verbindt om de haalbaarheid technisch te evalueren, ook wat betreft middelen, de sectie met voorstellen is actief waar ideeën en projecten voor commentaar en ondersteuning kunnen worden geformuleerd."
         label: Debatten
         link: Zie debatten
       scheda3:
-        title: "Registratiekantoor"
-        description: "Wij nodigen u uit om commentaar te geven op de vragen die u op deze pagina vindt, zodat u zich beter kunt concentreren op mogelijke interventies voor beheer."
-        label: Wetgeving processen
-        link: Zie het wetgevingsproces
+        title: Doe een voorstel
+        description: "On line de nieuwe sectie <i>Voorstellen</i> waar u een voorstel kunt invoegen van wat u wilt dat de stad bereikt en waar u de voorstellen van andere burgers kunt ondersteunen. Elk voorstel dat een vooraf bepaalde drempelwaarde voor ondersteuning bereikt (zie Veelgestelde vragen %{link1}), zal worden onderworpen aan een haalbaarheidsstudie door de kantoren van de gemeentelijke administratie. Ga voor meer informatie over de voorstellen naar %{link2}"
+        label: Voorstellen
+        link: Zie voorstellen
       scheda4:
         title: "Burgerparticipatie"
         description: "Een reflectie op de regels voor deelname aan DecidiTorino."

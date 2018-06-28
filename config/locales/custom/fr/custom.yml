@@ -66,20 +66,20 @@ fr:
   welcome:
     schede:
       scheda1:
-        title: Faire une proposition
-        description: "En ligne la nouvelle section <i>Propositions</i> où vous pouvez insérer une proposition de ce que vous souhaitez que la Ville réalise et où vous pouvez soutenir les propositions incluses par d'autres citoyens. Toute proposition qui atteindra un seuil prédéterminé de supports (voir FAQ %{link1}) fera l'objet d'une étude de faisabilité par les bureaux de l'administration municipale. Pour en savoir plus sur les propositions, rendez-vous sur %{link2}"
-        label: Propositions
-        link: Voir propositions
+        title: "Metro Linea 2"
+        description: "Les citoyens de Turin sont invités à exprimer leurs idées sur la ligne 2 du métro. Les propositions et observations reçues avant le 22 juillet peuvent être prises en compte lors de la rédaction du projet préliminaire."
+        label: "Processus législatifs"
+        link: "Voir le processus législatif"
       scheda2:
         title: "Zone de débats libres"
         description: "Nous vous rappelons que le domaine des débats est un espace de discussion libre entre utilisateurs. Afin de formuler des propositions pour lesquelles la Ville entreprend d'évaluer techniquement sa faisabilité, y compris en termes de ressources, la section <i>Propositions</i> est active où des idées et des projets à commenter et à soutenir peuvent être formulés."
         label: "Débats"
         link: "Voir débats"
       scheda3:
-        title: "Bureau d'enregistrement"
-        description: "Nous vous invitons à commenter les questions que vous trouverez sur cette page pour mieux vous concentrer sur les domaines d'intervention possibles de l'administration."
-        label: "Processus législatifs"
-        link: "Voir le processus législatif"
+        title: Faire une proposition
+        description: "En ligne la nouvelle section <i>Propositions</i> où vous pouvez insérer une proposition de ce que vous souhaitez que la Ville réalise et où vous pouvez soutenir les propositions incluses par d'autres citoyens. Toute proposition qui atteindra un seuil prédéterminé de supports (voir FAQ %{link1}) fera l'objet d'une étude de faisabilité par les bureaux de l'administration municipale. Pour en savoir plus sur les propositions, rendez-vous sur %{link2}"
+        label: Propositions
+        link: Voir propositions
       scheda4:
         title: "Participation citoyenne"
         description: "Une réflexion sur les règles de participation à DecidiTorino."

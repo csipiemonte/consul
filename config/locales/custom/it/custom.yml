@@ -66,20 +66,20 @@ it:
   welcome:
     schede:
       scheda1:
-        title: Fai una proposta
-        description: "On line la nuova sezione <i>Proposte</i> dove è possibile inserire una proposta di ciò che vorresti che la Città realizzasse e dove puoi appoggiare le proposte inserite dagli altri cittadini. Ogni proposta che raggiungerà una soglia prefissata di appoggi (vedi FAQ %{link1}) sarà oggetto di studio di fattibilità da parte degli uffici dell'Amministrazione Comunale. Per saperne di più sulle proposte vai su %{link2}"
-        label: Proposte
-        link: Vai alle proposte
+        title: "Metro Linea 2"
+        description: "I cittadini di Torino sono invitati ad esprimere le loro idee sulla linea 2 della metropolitana. Le proposte e le osservazioni che perverranno entro il 22 luglio potranno essere considerate durante la stesura del progetto preliminare."
+        label: Progetti
+        link: Vedi progetto
       scheda2:
         title: "Zona di libera discussione"
         description: "Vi ricordiamo che l'area dibattiti è una zona di libera discussione tra utenti. Per formulare proposte di cui la Città si impegna a valutare tecnicamente la fattibilità, anche in termini di risorse, è attiva la sezione <i>Proposte</i> dove potranno essere formulate idee e progetti da commentare ed appoggiare."
         label: Dibattiti
         link: Vai ai dibattiti
       scheda3:
-        title: "Anagrafe"
-        description: "Invitiamo a commentare le domande che trovate in questa pagina per meglio focalizzare le aree di possibile intervento dell’Amministrazione."
-        label: Progetti
-        link: Vedi progetto
+        title: Fai una proposta
+        description: "On line la nuova sezione <i>Proposte</i> dove è possibile inserire una proposta di ciò che vorresti che la Città realizzasse e dove puoi appoggiare le proposte inserite dagli altri cittadini. Ogni proposta che raggiungerà una soglia prefissata di appoggi (vedi FAQ %{link1}) sarà oggetto di studio di fattibilità da parte degli uffici dell'Amministrazione Comunale. Per saperne di più sulle proposte vai su %{link2}"
+        label: Proposte
+        link: Vai alle proposte
       scheda4:
         title: "La partecipazione cittadina"
         description: "Una riflessione sulle regole per partecipare a DecidiTorino."

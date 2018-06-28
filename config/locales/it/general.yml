@@ -199,7 +199,7 @@ it:
     footer:
       accessibility: Accessibilità
       conditions: "Condizioni d'uso"
-      consul: Consul
+      consul: Consul versione italiana
       consul_url: 'https://github.com/csipiemonte/consul'
       contact_us: Per ottenere assistenza tecnica entra in
       copyright: Consul, %{year}

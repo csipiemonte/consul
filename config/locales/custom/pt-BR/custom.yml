@@ -66,20 +66,20 @@ pt-BR:
   welcome:
     schede:
       scheda1:
-        title: "Faça uma proposta"
-        description: "Em linha, a nova seção <i>Propostas</i> onde você pode inserir uma proposta sobre o que você gostaria que a Cidade atinja e onde você possa apoiar as propostas incluídas por outros cidadãos. Qualquer proposta que atinja um limite predeterminado de suporte (consulte FAQ %{link1}) será sujeita a estudo de viabilidade pelos escritórios da Administração Municipal. Para saber mais sobre as propostas, vá para %{link2}"
-        label: Propostas
-        link: Veja as propostas
+        title: "Metro Linea 2"
+        description: "Os cidadãos de Turim são convidados a expressar suas idéias na linha 2 do metrô. As propostas e observações recebidas até 22 de julho podem ser consideradas durante a elaboração do projeto preliminar."
+        label: Processos legislativos
+        link: Veja o processo legislativo
       scheda2:
         title: "Área de discussão gratuita"
         description: "Lembramos que a área de debates é uma área de discussão gratuita entre usuários. A fim de formular propostas para as quais a Cidade se compromete a avaliar tecnicamente sua viabilidade, também em termos de recursos, a seção <i>Propostas</i> está ativa onde idéias e projetos para comentar e apoiar podem ser formulados."
         label: Debates
         link: Veja os debates
       scheda3:
-        title: "Cartório"
-        description: "Convidamos você a comentar as perguntas que você encontra nesta página para se concentrar melhor nas áreas de intervenção de administração possível."
-        label: Processos legislativos
-        link: Veja o processo legislativo
+        title: "Faça uma proposta"
+        description: "Em linha, a nova seção <i>Propostas</i> onde você pode inserir uma proposta sobre o que você gostaria que a Cidade atinja e onde você possa apoiar as propostas incluídas por outros cidadãos. Qualquer proposta que atinja um limite predeterminado de suporte (consulte FAQ %{link1}) será sujeita a estudo de viabilidade pelos escritórios da Administração Municipal. Para saber mais sobre as propostas, vá para %{link2}"
+        label: Propostas
+        link: Veja as propostas
       scheda4:
         title: "Participação do cidadão"
         description: "Uma reflexão sobre as regras para participar do DecidiTorino."
