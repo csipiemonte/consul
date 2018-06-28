@@ -70,7 +70,7 @@ it:
       support_budget_investments: Appoggia i progetti di spesa
       users: Utenti
       edit_user_accounts: Modifica account utente
-      user_invites: Inviti per gli utenti
+      user_invites: Spedisci inviti
     permissions:
       create_proposals: Crea nuove proposte
       debates: Partecipa ai dibattiti
@@ -141,7 +141,7 @@ it:
         label: Emails
         info: "Introdurre gli indirizzi di email separati da virgola (',')"
         submit: Spedisci inviti
-        title: Inviti per gli utenti
+        title: Spedisci inviti
       create:
         success_html: Sono stati inviati <strong>%{count} inviti</strong>.
-        title: Inviti per gli utenti
+        title: Spedisci inviti

@@ -4,7 +4,7 @@
 
   <div class="row margin-top">
     <div class="small-12 medium-9 column">
-      <%= f.select :phase, budget_phases_select_options %>
+      <%= f.select :phase, budget_phases_select_options, selected: "drafting" %>
     </div>
     <div class="small-12 medium-3 column">
       <%= f.select :currency_symbol, budget_currency_symbol_select_options %>
@@ -63,6 +63,11 @@
                     class: "button hollow" %>
       <% end %>
 
+      <% if @budget.has_winning_investments? %>
+        <%= link_to t("budgets.show.see_results"),
+                    budget_results_path(@budget),
+                    class: "button hollow margin-left" %>
+      <% end %>
       <% if @budget.persisted? %>
         <%= link_to t("admin.budgets.edit.delete"),
             admin_budget_path(@budget),

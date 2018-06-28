@@ -26,23 +26,19 @@
     <div class="row">
       <div class="small-12 medium-6 column margin-bottom">
         <figure class="figure-card">
-          <%= link_to proposals_path, title: t("welcome.schede.scheda1.link") do %>
-          <%= image_tag "welcome/cambia_la_tua_citta.png", alt: t("welcome.schede.scheda1.title") %>
+          <%= link_to "#{request.url}legislation/processes/9", title: t("welcome.schede.scheda1.link") do %>
+          <%= image_tag "welcome/metro2.jpg", alt: t("welcome.schede.scheda1.title") %>
           <% end %>
           <figcaption>
-          <%= link_to proposals_path, title: t("welcome.schede.scheda1.link") do %>
+          <%= link_to "#{request.url}legislation/processes/9", title: t("welcome.schede.scheda1.link") do %>
             <span><%= t("welcome.schede.scheda1.label") %></span><br>
             <p class="title"><%= t("welcome.schede.scheda1.title") %></p>
           <% end %>
           </figcaption>
         </figure>
-        <p><%= t("welcome.schede.scheda1.description",
-          link1: link_to("Perché devo far appoggiare la mia proposta?", faq_path + '#15'),
-          link2: link_to(t("pages.help.title", org: setting['org_name']), help_path)).html_safe %>
-          
-        </p>
+        <p><%= t("welcome.schede.scheda1.description") %></p>
         <p>
-          <%= link_to t("welcome.schede.scheda1.link"), proposals_path %>
+          <%= link_to t("welcome.schede.scheda1.link"), "#{request.url}legislation/processes/9" %>
         </p>
       </div>
       <div class="small-12 medium-6 column margin-bottom">
@@ -66,19 +62,22 @@
     <div class="row">
       <div class="small-12 medium-6 column margin-bottom">
         <figure class="figure-card">
-          <%= link_to "#{request.url}legislation/processes/3", title: t("welcome.schede.scheda3.link") do %>
-          <%= image_tag "welcome/anagrafe.jpg", alt: t("welcome.schede.scheda3.title") %>
+          <%= link_to proposals_path, title: t("welcome.schede.scheda3.link") do %>
+          <%= image_tag "welcome/cambia_la_tua_citta.png", alt: t("welcome.schede.scheda3.title") %>
           <% end %>
           <figcaption>
-          <%= link_to "#{request.url}legislation/processes/3", title: t("welcome.schede.scheda3.link") do %>
+          <%= link_to proposals_path, title: t("welcome.schede.scheda3.link") do %>
             <span><%= t("welcome.schede.scheda3.label") %></span><br>
             <p class="title"><%= t("welcome.schede.scheda3.title") %></p>
           <% end %>
           </figcaption>
         </figure>
-        <p><%= t("welcome.schede.scheda3.description") %></p>
+        <p><%= t("welcome.schede.scheda3.description",
+          link1: link_to("Perché devo far appoggiare la mia proposta?", faq_path + '#15'),
+          link2: link_to(t("pages.more_info.title", org_name: setting['org_name']), more_info_path)).html_safe %>
+        </p>
         <p>
-          <%= link_to t("welcome.schede.scheda3.link"), "#{request.url}legislation/processes/3" %>
+          <%= link_to t("welcome.schede.scheda3.link"), proposals_path %>
         </p>
       </div>
       <div class="small-12 medium-6 column margin-bottom">

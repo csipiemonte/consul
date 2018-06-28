@@ -13,6 +13,9 @@ it:
       budget/investment/milestone:
         one: "traguardo"
         other: "milestones"
+      budget/investment/status:
+        one: "Stato del progetto"
+        other: "Stati del progetto"
       comment:
         one: "Commento"
         other: "Commenti"
@@ -126,6 +129,9 @@ it:
         title: "Titolo"
         description: "Descrizione"
         publication_date: "Data di pubblicazione"
+      budget/investment/status:
+        name: "Nome"
+        description: "Descrizione (facoltativa)"
       budget/heading:
         name: "Nome della voce"
         price: "Quantità"
@@ -201,6 +207,7 @@ it:
         body: Contenuto
       legislation/process:
         title: Titolo del processo
+        summary: Sommario
         description: In cosa consiste
         additional_info: Ulteriori info
         start_date: Data di inizio
@@ -241,6 +248,14 @@ it:
         subject: Oggetto
         from: Inviato da
         body: Contenuto della email
+      widget/card:
+        label: Tag (facoltativo)
+        title: Titolo
+        description: Descrizione
+        link_text: Testo del link
+        link_url: URL del link
+      widget/feed:
+        limit: Numero di elementi
     errors:
       models:
         user:

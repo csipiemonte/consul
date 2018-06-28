@@ -36,6 +36,16 @@ it:
       groups:
         all_city: "Tutta la Città"
         districts: Distretti
+      valuator_groups:
+        culture_and_sports: Cultura e Sport
+        gender_and_diversity: Politiche di genere e diversità
+        urban_development: Sviluppo Urbano Sostenibile
+        equity_and_employment: Equità e Occupazione
+      statuses:
+        studying_project: Analizzando il progetto
+        bidding: Offerta
+        executing_project: Eseguendo il progetto
+        executed: Eseguito
     polls:
       current_poll: Votazione Aperta
       current_poll_geozone_restricted: Votazione Aperta ristretta per geozona

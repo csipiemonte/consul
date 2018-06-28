@@ -83,20 +83,20 @@ en:
   welcome:
     schede:
       scheda1:
-        title: Make a proposal
-        description: "On line the new section <i>Proposals</i> where you can insert a proposal of what you would like the City to achieve and where you can support the proposals included by other citizens. Any proposal that will reach a predetermined threshold of supports (see FAQ %{link1}) will be subject to feasibility study by the offices of the Municipal Administration. To learn more about the proposals visit %{link2}"
-        label: Proposals
-        link: See proposals
+        title: "Metro Linea 2"
+        description: "The citizens of Turin are invited to express their ideas on subway line 2. The proposals and observations received by July 22nd can be considered during the drafting of the preliminary project."
+        label: Legislation processes
+        link: See legislation process
       scheda2:
         title: "Free debates area"
         description: "We remind you that the debates area is an area of free discussion among users. In order to formulate proposals for which the City undertakes to technically evaluate its feasibility, also in terms of resources, the <i>Proposals</i> section is active where ideas and projects to comment and support can be formulated."
         label: Debates
         link: See debates
       scheda3:
-        title: "Registry office"
-        description: "We invite you to comment on the questions you find on this page to better focus on areas of possible administration intervention."
-        label: Legislation processes
-        link: See legislation process
+        title: Make a proposal
+        description: "On line the new section <i>Proposals</i> where you can insert a proposal of what you would like the City to achieve and where you can support the proposals included by other citizens. Any proposal that will reach a predetermined threshold of supports (see FAQ %{link1}) will be subject to feasibility study by the offices of the Municipal Administration. To learn more about the proposals visit %{link2}"
+        label: Proposals
+        link: See proposals
       scheda4:
         title: "Citizen participation"
         description: "A reflection on the rules for participating in DecidiTorino."

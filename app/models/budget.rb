@@ -105,6 +105,10 @@ class Budget < ActiveRecord::Base
     Budget::Phase::PUBLISHED_PRICES_PHASES.include?(phase)
   end
 
+  def valuating_or_later?
+    valuating? || publishing_prices? || balloting_or_later?
+  end
+
   def balloting_process?
     balloting? || reviewing_ballots?
   end
@@ -157,6 +161,10 @@ class Budget < ActiveRecord::Base
     investments.unselected.each do |investment|
       Mailer.budget_investment_unselected(investment).deliver_later
     end
+  end
+
+  def has_winning_investments?
+    investments.winners.any?
   end
 
   private

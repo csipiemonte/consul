@@ -319,7 +319,8 @@
 .legislation-process-new,
 .legislation-process-edit,
 .milestone-new,
-.milestone-edit {
+.milestone-edit,
+.image-form {
   @include direct-uploads;
 }
 
@@ -1349,8 +1350,7 @@
       text-decoration: none;
     }
 
-    a,
-    div {
+    a {
       display: block;
       padding: $line-height / 2;
 
@@ -1535,7 +1535,7 @@
   padding: $line-height / 4;
 }
 
-.select-district .active a {
+.select-district .is-active a {
   background: #f9f9f9;
   border-radius: rem-calc(3);
   color: $budget;
@@ -1628,7 +1628,7 @@
       z-index: 99;
     }
 
-    &.active {
+    &.is-active {
 
       h3 {
         background: $budget;

@@ -55,6 +55,8 @@ namespace :admin do
     resources :budget_phases, only: [:edit, :update]
   end
 
+  resources :budget_investment_statuses, only: [:index, :new, :create, :update, :edit, :destroy]
+
   resources :signature_sheets, only: [:index, :new, :create, :show]
 
   resources :banners, only: [:index, :new, :create, :edit, :update, :destroy] do
@@ -178,5 +180,12 @@ namespace :admin do
     resources :pages, except: [:show]
     resources :images, only: [:index, :update, :destroy]
     resources :content_blocks, except: [:show]
+  end
+
+  resource :homepage, controller: :homepage, only: [:show]
+
+  namespace :widget do
+    resources :cards
+    resources :feeds, only: [:update]
   end
 end

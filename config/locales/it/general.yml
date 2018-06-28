@@ -198,7 +198,7 @@ it:
     footer:
       accessibility: Accessibilità
       conditions: "Condizioni d'uso"
-      consul: Consul
+      consul: Consul versione italiana
       consul_url: https://github.com/csipiemonte/consul
       contact_us: Per ottenere assistenza tecnica entra in
       copyright: Consul, %{year}
@@ -235,8 +235,6 @@ it:
       my_account_link: Il mio account
       my_activity_link: Le mie attività
       open: aperto
-      open_city_slogan_html: Esistono città governate direttamente dai suoi abitanti, che <strong>dibattono</strong> di temi verso cui nutrono preoccupazione, <strong>propongono</strong> idee per migliorare le loro vite e <strong>decidono</strong> fra tutte e tutti quelle da realizzare.
-      open_city_title: La città che ami sarà la città che vuoi.
       open_gov: Governo %{open}
       proposals: Proposte
       poll_questions: Votazioni
@@ -630,7 +628,6 @@ it:
       previous_slide: Immagine precedente
       next_slide: Immagine seguente
     documentation: Documentazione aggiuntiva
-    more_info: Più informazioni
     view_mode:
       title: Modalità di visualizzazione
       cards: Anteprima
@@ -786,20 +783,21 @@ it:
         one: "È possibile appoggiare i progetti di spesa solamente di %{count} circoscrizione"
         other: "È possibile appoggiare i progetti di spesa solamente di %{count} circoscrizioni"
   welcome:
-    debates:
-      description: Incontrarci, dibattere e condividere ciò che ci sembra importante nella nostra città.
-      title: Dibatti
-    decide:
-      description: La cittadinanza decide se accettare o rifiutare le proposte più sostenute.
-      title: Decidi
-    do:
-      description: Se la proposta è accettata dalla maggioranza, il Comune la assume come propria e la mette in pratica.
-      title: Si fa
-    proposal:
-      description: Spazio aperto per le proposte cittadine a proposito del tipo di città nella quale vogliamo vivere.
-      title: Proponi
+    feed:
+      most_active:
+        debates: "Dibattiti più attivi"
+        proposals: "Proposte più attive"
+        processes: "Progetti aperti"
+      see_all_debates: Mostra tutti i dibattiti
+      see_all_proposals: Mostra tutte le proposte
+      see_all_processes: Mostra tutti i progetti
+      process_label: Progetto
+      see_process: Mostra progetto
+    cards:
+      title: In primo piano
     recommended:
       title: Argomenti che ti potrebbero interessare
+      help: "Questi suggerimenti sono generati dai tags dei dibattiti e delle proposte che stai seguendo."
       debates:
         title: Dibattiti consigliati
         btn_text_link: Tutti i dibattiti consigliati
@@ -808,6 +806,7 @@ it:
         btn_text_link: Tutte le proposte consigliate
       budget_investments:
         title: Bilanci consigliati
+      slide: "Mostra %{title}"
     verification:
       i_dont_have_an_account: Non dispongo di un account, voglio crearne uno e poi verificarlo
       i_have_an_account: Ho già un account che voglio verificare
@@ -844,3 +843,6 @@ it:
       proposal: "Proposta"
       debate: "Dibattito"
       budget_investment: "Progetto di spesa"
+  admin/widget:
+    header:
+      title: Amministrazione

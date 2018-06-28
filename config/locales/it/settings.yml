@@ -45,10 +45,14 @@ it:
       legislation: Legislazione
       user:
         recommendations: Suggerimenti
+        skip_verification: Salta la certificazione degli utenti
       community: Communità per le proposte e per i progetti di spesa
       map: Geolocalizzazione delle proposte e dei progetti di spesa
       allow_images: Permettere il caricamento e la visualizzazione di immagini
       allow_attached_documents: Permettere la creazione di documenti aggiuntivi
+      guides: Guide per creare proposte o progetti di investimento
+      public_stats: Statistiche pubbliche
+    related_content_score_threshold: Soglia del punteggio del contenuto relazionato
     map_latitude: Latitudine
     map_longitude: Longitudine
     map_zoom: Zoom

@@ -580,7 +580,7 @@ feature 'Budget Investments' do
 
       visit budget_investments_path(budget, heading_id: heading.id)
       click_link 'highest rated'
-      expect(page).to have_selector('a.active', text: 'highest rated')
+      expect(page).to have_selector('a.is-active', text: 'highest rated')
 
       within '#budget-investments' do
         expect(best_proposal.title).to appear_before(medium_proposal.title)
@@ -1216,6 +1216,27 @@ feature 'Budget Investments' do
 
   end
 
+  context "Publishing prices phase" do
+
+    background do
+      budget.update(phase: "publishing_prices")
+    end
+
+    scenario "Heading index - should show only selected investments" do
+      investment1 = create(:budget_investment, :selected, heading: heading, price: 10000)
+      investment2 = create(:budget_investment, :selected, heading: heading, price: 15000)
+      investment3 = create(:budget_investment, heading: heading, price: 30000)
+
+      visit budget_investments_path(budget, heading: heading)
+
+      within("#budget-investments") do
+        expect(page).to have_content investment1.title
+        expect(page).to have_content investment2.title
+        expect(page).not_to have_content investment3.title
+      end
+    end
+  end
+
   context "Balloting Phase" do
 
     background do
@@ -1255,7 +1276,7 @@ feature 'Budget Investments' do
       visit budget_investments_path(budget, heading_id: heading.id)
 
       click_link 'by price'
-      expect(page).to have_selector('a.active', text: 'by price')
+      expect(page).to have_selector('a.is-active', text: 'by price')
 
       within '#budget-investments' do
         expect(high_investment.title).to appear_before(mid_investment.title)
