@@ -251,6 +251,7 @@ it:
         table_title: "Titolo"
         table_description: "Descrizione"
         table_publication_date: "Data di pubblicazione"
+        table_status: Stato
         table_actions: "Azioni"
         delete: "Elimina milestone"
         no_milestones: "Non ci sono milestone definite"
@@ -260,6 +261,8 @@ it:
       form:
         add_language: Aggiungi lingua
         remove_language: Elimina lingua
+        admin_statuses: Gestiona stati dei progetti
+        no_statuses_defined: Non ci sono stati definiti
       new:
         creating: Crea milestone
         date: Data

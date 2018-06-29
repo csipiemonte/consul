@@ -74,7 +74,7 @@
         </figure>
         <p><%= t("welcome.schede.scheda3.description",
           link1: link_to("Perché devo far appoggiare la mia proposta?", faq_path + '#15'),
-          link2: link_to(t("pages.more_info.title", org_name: setting['org_name']), more_info_path)).html_safe %>
+          link2: link_to(t("pages.help.title", org: setting['org_name']), help_path)).html_safe %>
         </p>
         <p>
           <%= link_to t("welcome.schede.scheda3.link"), proposals_path %>

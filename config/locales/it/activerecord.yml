@@ -126,8 +126,9 @@ it:
         image: "Immagine descrittiva della proposta di spesa"
         image_title: "Titolo dell'immagine"
       budget/investment/milestone:
+        status_id: "Stato attuale del progetto (facoltativo)"
         title: "Titolo"
-        description: "Descrizione"
+        description: "Descrizione (facoltativa se si è assegnanato uno stato del progetto)"
         publication_date: "Data di pubblicazione"
       budget/investment/status:
         name: "Nome"

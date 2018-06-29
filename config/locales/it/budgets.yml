@@ -124,6 +124,7 @@ it:
         milestones_tab: Tracciato
         no_milestones: Non ci sono milestones definite
         milestone_publication_date: "Pubblicato il %{publication_date}"
+        milestone_status_changed: Il progetto ha cambiato lo stato
         author: Autore
         project_unfeasible_html: 'Questo progetto di investimento <strong>è stato contrassegnato come irrealizzabile</strong> e non passerà alla fase di votazione.'
         project_not_selected_html: 'Questo progetto di investimento <strong>non è stato selezionato</strong> per la fase di votazione.'
