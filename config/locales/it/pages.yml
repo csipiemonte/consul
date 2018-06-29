@@ -12,6 +12,7 @@ it:
         proposals: "Proposte"
         budgets: "Bilanci partecipativi"
         other: "Altre informazioni di interesse"
+        processes: "Progetti"
       debates:
         title: "Dibattiti"
         description: "Crea un tema sul quale dibattere su qualsiasi argomento che intendi condividere con gli altri abitanti della tua città."
@@ -46,6 +47,12 @@ it:
         feature_1_link: "registrarsi su %{org_name}"
         feature_2: "Possono votare gli utenti registrati di età maggiore di 16 anni."
         feature_3: "I risultati di tutti le votazioni saranno vincolanti per l'Amministrazione Comunale."
+      processes:
+        title: "Progetti"
+        description: "Nella sezione dei %{link} la cittadinanza partecipa all'elaborazione e alla modifica delle norme che hanno effetti sulla città, e nei dibattiti iniziali può far sentire la propria opinione sulle politiche municipali."
+        link: "progetti"
+        feature: "Per partecipare ad un progetto è necessario %{sign_up} e consultare periodicamente la pagina dei %{link} per conoscere le normative e le politiche oggetto di dibattito e di consultazione."
+        sign_up: "registrarsi su %{org}"
       faq:
         title: "Problemi tecnici?"
         description: "Leggi le FAQ per risolvere i tuoi dubbi."

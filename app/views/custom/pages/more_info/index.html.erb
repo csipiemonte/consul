@@ -26,6 +26,10 @@
         <%= render "pages/more_info/proposals" %>
       <% end %>
 
+      <% if feature?(:legislation) %>
+        <%= render "pages/more_info/processes" %>
+      <% end %>
+
       <% if feature?(:budgets) %>
         <%= render "pages/more_info/budgets" %>
       <% end %>
