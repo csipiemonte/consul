@@ -51,9 +51,9 @@ it:
         feature_3: "I risultati di tutti le votazioni sono vincolanti per l'Amministrazione Comunale."
       processes:
         title: "Progetti"
-        description: "Nella sezione dei %{link} la cittadinanza partecipa all'elaborazione e alla modifica delle norme che hanno effetti sulla città, e nei dibattiti iniziali può far sentire la propria opinione sulle politiche municipali."
-        link: "progetti"
-        feature: "Per partecipare ad un progetto è necessario %{sign_up} e consultare periodicamente la pagina dei %{link} per conoscere le normative e le politiche oggetto di dibattito e di consultazione."
+        description: "Nella sezione %{link} è possibile partecipare all'elaborazione di progetti di interesse della città e su cui l'Amministrazione sta svolgendo studi per la loro realizzazione: la consultazione pertanto consente a tutti di esprimere le proprie opinioni e contribuire con le proprie idee e riflessioni sui progetti illustrati."
+        link: "Progetti"
+        feature: "Per partecipare è necessario %{sign_up} e consultare periodicamente la pagina dei %{link} per conoscere quelli su cui è in corso un dibattito. Non è al momento necessario essere residenti a Torino, occorre solo essere registrati sulla piattaforma."
         sign_up: "registrarsi su %{org}"
       faq:
         title: "Problemi tecnici?"
