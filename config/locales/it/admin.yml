@@ -504,6 +504,7 @@ it:
       hidden_comments: Commenti nascosti
       hidden_debates: Dibattiti nascosti
       hidden_proposals: Proposte nascoste
+      hidden_proposal_notifications: Notifiche di proposte nascoste
       hidden_users: Utenti bloccati
       administrators: Amministratori
       managers: Gestori
@@ -534,6 +535,7 @@ it:
       title_profiles: Profili
       title_settings: Configurazione
       title_site_customization: Contenuto del sito
+      title_booths: Urne di votazione
       legislation: Progetti
       users: Utenti
     administrators:
@@ -939,6 +941,15 @@ it:
           without_confirmed_hide: In sospeso
         title: Domande nascoste
         no_hidden_proposals: Non sono presenti proposte nascoste.
+    proposal_notifications:
+      index:
+        filter: Filtro
+        filters:
+          all: Tutte
+          with_confirmed_hide: Confermate
+          without_confirmed_hide: In attesa
+        title: Notifiche nascoste
+        no_hidden_proposals: Non ci sono notifiche nascoste.
     settings:
       flash:
         updated: Valore aggiornato

@@ -80,25 +80,3 @@ es:
     sms:
       read:
         verification_code: "DecidiTorino - Código de verificación: "
-  welcome:
-    schede:
-      scheda1:
-        title: "Metro Linea 2"
-        description: "La ciudad de Torino invita a los ciudadanos a participar en la fase de debate público del proyecto Metro Line 2. Las propuestas y observaciones recibidas hasta el 22 de julio pueden ser consideradas durante la redacción del proyecto preliminar."
-        label: Procesos legislativos
-        link: Ver el proceso legislativo
-      scheda2:
-        title: "Área de debates libres"
-        description: "Le recordamos que el área de debates es un área de discusión libre entre los usuarios. Con el fin de formular propuestas para las cuales la Ciudad se compromete a evaluar técnicamente su viabilidad, también en términos de recursos, está activa la sección <i>Propuestas</i> donde se pueden formular ideas y proyectos para comentar y apoyar."
-        label: Debates
-        link: Ver los debates
-      scheda3:
-        title: Haz una propuesta
-        description: "En línea, la nueva sección <i>Propuestas</i> en la que se puede añadir una propuesta de lo que se desea que logre la Ciudad y donde se puede apoyar las propuestas hechas por otros ciudadanos. Cualquier propuesta que alcance un umbral predeterminado de apoyos (consulte las preguntas frecuentes %{link1}) será sujeta a un estudio de factibilidad por parte de las oficinas de la Administración Municipal. Más informaciones sobre las propuestas se encuentran en la página %{link2}"
-        label: Propuestas
-        link: Ver las propuestas
-      scheda4:
-        title: "Participacion ciudadana"
-        description: "Una reflexión sobre las reglas para participar en DecidiTorino."
-        label: Procesos legislativos
-        link: Ver el proceso legislativo

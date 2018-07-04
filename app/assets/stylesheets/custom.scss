@@ -10,11 +10,15 @@ header, header .top-bar{background: #fff!important;}
 
 header .locale{float:right;}
 
-.top-bar .top-bar-title a, .top-bar .menu > li a{ color: #204d88;}
+.top-bar .top-bar-left ul li a { color: #204d88;}
 .top-bar .menu > li .button {background: #204d88;color: #fff;}
-.top-bar .top-bar-title > a, , a.logo{     font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif !important;    font-weight: bold; font-size: 37px;}
-.top-bar .top-bar-title > a .irossa, , a.logo .irossa{color:#ca2d2d!important;}
-.top-bar-title a img{background: transparent !important;} 
+.top-bar .top-bar-left ul li a {
+    font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif !important;
+    font-weight: bold;
+    font-size: 37px;
+}
+.top-bar .top-bar-left ul li a .irossa, , a.logo .irossa{color:#ca2d2d!important;}
+.top-bar-left a img{background: transparent !important;} 
 
 header .external-links{padding-top:9px;}
 
@@ -28,20 +32,10 @@ header .external-links{padding-top:9px;}
 .footer {background:transparent;} 
 .prefooter{background-color:#fff;}
 .subfooter{background-color:#dee0e3;}
- .logo_ponmetro{width:153px;margin-right: 15px;}
- .logo_torino{width:80px;margin-right: 30px;}
- .logo_ministero{width:56px;margin-right: 30px;}
- .logo_europa{width:330px;margin-right: 30px;}
-
-
-/*home welcome*/
-figure {margin: 0;}
-.figure-card{margin-left:0;margin-right:0;margin-top:0;position:relative}
-.figure-card a h3, .figure-card a .title{color:#fff}
-.figure-card a:hover{text-decoration:none}
-.figure-card figcaption{bottom:0; color:#fff; font-family:'Franklin Gothic' !important; font-size:2.25rem; line-height:2.25rem; text-transform:uppercase; padding:0; position:absolute; width:100%}
-.figure-card figcaption h3, .figure-card figcaption .title{font-family:'Franklin Gothic' !important; font-size:1.85rem; line-height:2.25rem; opacity:0.7; background-color:#000; padding:10px;margin-bottom:0}
-.figure-card figcaption  span{background:#fff; border-radius:0.25rem; color:#000; display:inline; font-size:1.0625rem; padding:0.25rem 0.5rem; margin-left:10px}
+.logo_ponmetro{width:153px;margin-right: 15px;}
+.logo_torino{width:80px;margin-right: 30px;}
+.logo_ministero{width:56px;margin-right: 30px;}
+.logo_europa{width:330px;margin-right: 30px;}
 
 
 p {font-size: 1.0625rem; font-weight: 400; line-height: 1.625rem; margin-bottom:1rem; text-rendering: optimizeLegibility;}
@@ -53,9 +47,13 @@ p {font-size: 1.0625rem; font-weight: 400; line-height: 1.625rem; margin-bottom:
 @media screen and (max-width: 40em) {
     a.logo{ font-size: 27px;}
     a.logo, .top-bar{color: #204d88!important;}
-    .top-bar ul {padding-right: 0;}
-    .top-bar .menu>li a {background: #204d88;color: #fff; padding-left: 0.625rem;}
-    .top-bar .menu>li a, .subnavigation a{line-height:27px; padding-top: 12px;  padding-bottom: 10px;}
+    .top-bar .top-bar-right ul {padding-right: 0;}
+    .top-bar .top-bar-right .menu>li a {background: #204d88;color: #fff; padding-left: 0.625rem;}
+    .top-bar .top-bar-right .menu>li a, .subnavigation a {
+        line-height: 27px;
+        padding-top: 12px;
+        padding-bottom: 10px;
+    }
     ul.dropdown{background: #204d88;}
     .row .row {margin-left: 0;margin-right: 0;}
 
