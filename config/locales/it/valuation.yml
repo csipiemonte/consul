@@ -35,6 +35,7 @@ it:
         table_title: Titolo
         table_heading_name: Nome della voce
         table_actions: Azioni
+        no_investments: "Non ci sono progetti di spesa."
       show:
         back: Indietro
         title: Progetto di spesa
