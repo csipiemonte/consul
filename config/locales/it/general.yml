@@ -846,3 +846,10 @@ it:
   admin/widget:
     header:
       title: Amministrazione
+  annotator:
+    help:
+      alt: Seleziona il testo che vuoi commentare e fai click sul fumetto con la matita.
+      text: Per commentare questo documento è necessario %{sign_in} o %{sign_up}. Poi seleziona il testo che vuoi commentare e fai click sul fumetto con la matita.
+      text_sign_in: iniziare una sessione
+      text_sign_up: registrarsi
+      title: "Come posso commentare questo documento?"
