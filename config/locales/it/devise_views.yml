@@ -16,7 +16,7 @@ it:
       confirmation_instructions:
         confirm_link: Conferma account
         text: "È possibile confermare il tuo account di posta elettronica attraverso il seguente link:"
-        title: Benvenuti nel portale di Open Government
+        title: Benvenuto/a
         welcome: Benvenuto/a
       reset_password_instructions:
         change_link: Cambiare password

@@ -13,6 +13,13 @@ namespace :settings do
     Setting['feature.allow_attached_documents'] = true
   end
 
+  desc "Enable recommendations settings"
+  task enable_recommendations: :environment do
+    Setting['feature.user.recommendations'] = true
+    Setting['feature.user.recommendations_on_debates'] = true
+    Setting['feature.user.recommendations_on_proposals'] = true
+  end
+
   desc "Adds/Updates Setting key - value"
   task add_upd_key_value: :environment do
 

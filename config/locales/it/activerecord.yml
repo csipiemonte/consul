@@ -283,6 +283,10 @@ it:
           attributes:
             segment_recipient:
               invalid: "Il segmento degli utenti non è valido"
+        admin_notification:
+          attributes:
+            segment_recipient:
+              invalid: "Il segmento degli utenti non è valido"
         map_location:
           attributes:
             map:

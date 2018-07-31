@@ -46,6 +46,7 @@ it:
     menu:
       flagged_comments: Commenti
       flagged_debates: Dibattiti
+      flagged_investments: Progetti di spesa
       proposals: Proposte
       proposal_notifications: Notifiche di proposte
       users: Blocca utenti
@@ -68,6 +69,25 @@ it:
           created_at: Più recenti
           flags: Più segnalate
         title: Proposte
+    budget_investments:
+      index:
+        block_authors: Blocca autori
+        confirm: 'Confermi?'
+        filter: Filtro
+        filters:
+          all: Tutti
+          pending_flag_review: In attesa di revisione
+          with_ignored_flag: Segnate come esaminate
+        headers:
+          moderate: Modera
+          budget_investment: Progetti di spesa
+        hide_budget_investments: Nascondi progetti di spesa
+        ignore_flags: Segna come esaminate
+        order: Ordina per
+        orders:
+          created_at: Più recenti
+          flags: Più denunciate
+        title: Progetti di spesa
     proposal_notifications:
       index:
         block_authors: Blocca autori

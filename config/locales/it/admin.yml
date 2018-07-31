@@ -29,10 +29,17 @@ it:
         title: Titolo
         description: Descrizione
         target_url: Link
-        style: Stile
-        image: Immagine
         post_started_at: Inizio della pubblicazione
         post_ended_at: Fine della pubblicazione
+        sections_label: Sezioni nelle quali appare
+        sections:
+          homepage: Homepage
+          debates: Dibattiti
+          proposals: Proposte
+          budgets: Bilanci partecipativi
+          help_page: Pagina di aiuto
+        background_color: Colore dello sfondo
+        font_color: Colore del testo
       edit:
         editing: Modifica il banner
         form:
@@ -60,6 +67,7 @@ it:
           on_debates: Dibattiti
           on_proposals: Proposte
           on_users: Utenti
+          on_system_emails: Emails del sistema
         title: Attività dei Moderatori
         type: Tipo
         no_activity: Non ci sono attività dei moderatori.
@@ -121,6 +129,7 @@ it:
         table_population: Popolazione
         population_info: "Il campo 'Popolazione' delle voci di bilancio è usato unicamente a fini statistici, con l'obbiettivo di mostrare la percentuale di voti avuti in ciascuna voce che rappresenta un'area con popolazione. Si tratta di un dato facoltativo, può essere lasciato vuoto qualora non lo si adotti."
         max_votable_headings: "Numero massimo di voci nelle quali un utente può votare"
+        current_of_max_headings: "%{current} di %{max}"
       winners:
         calculate: Calcola proposte vincitrici
         calculated: In elaborazione delle proposte vincitrici, può durare un minuto.
@@ -159,7 +168,7 @@ it:
           selected: Selezionati
           undecided: Da decidere
           unfeasible: Non realizzabili
-          max_per_heading: Taglio per voce
+          min_total_supports: Appoggi minimi
           winners: Vincitori
           one_filter_html: "Filtro in uso: <b><em>%{filter}</em></b>"
           two_filters_html: "Filtri in uso: <b><em>%{filter}, %{advanced_filters}</em></b>"
@@ -179,18 +188,20 @@ it:
           undecided: "Da decidere"
         selected: "Selezionata"
         select: "Seleziona"
-        table_id: "ID"
-        table_title: "Titolo"
-        table_supports: "Appoggi"
-        table_admin: "Amministratore"
-        table_valuator: "Valutatore"
-        table_valuation_group: "Gruppi valutatori"
-        table_geozone: "Ambito di esecuzione"
-        table_feasibility: "Fattibilità"
-        table_valuation_finished: "Val. Ter."
-        table_selection: "Selezionato"
-        table_evaluation: "Mostra a valutatori"
-        table_incompatible: "Incompatibile"
+        list:
+          id: ID
+          title: Titolo
+          supports: Appoggi
+          admin: Amministratore
+          valuator: Valutatore
+          valuation_group: Gruppi valutatori
+          geozone: Ambito di esecuzione
+          feasibility: Fattibilità
+          valuation_finished: Val. Ter.
+          selected: Selezionato
+          visible_to_valuators: Mostra a valutatori
+          author_username: Utente autore
+          incompatible: Incompatibile
         cannot_calculate_winners: Il bilancio deve essere nelle fasi "Votazione finale", "Votazione conclusa" o "Risultati" per poter calcolare le proposte vincitrici
         see_results: "Mostra risultati"
       show:
@@ -335,6 +346,15 @@ it:
         hidden_at: 'Bloccato:'
         registered_at: 'Data di iscrizione:'
         title: Attività utente (%{user})
+    hidden_budget_investments:
+      index:
+        filter: Filtro
+        filters:
+          all: Tutti
+          with_confirmed_hide: Confermati
+          without_confirmed_hide: In attesa
+        title: Progetti di spesa nascosti
+        no_hidden_budget_investments: Non ci sono progetti di spesa nascosti
     legislation:
       processes:
         create:
@@ -397,6 +417,7 @@ it:
         form:
           custom_categories: Categorie
           custom_categories_description: "Categorie che l'utente può selezionare durante la creazione della proposta."
+          custom_categories_placeholder: Scrivi le etichette che desideri separandole con una virgola (,) e con doppi apici ("")
       draft_versions:
         create:
           notice: 'Bozza creata correttamente. <a href="%{link}">Fai click per vederla</a>'
@@ -461,7 +482,7 @@ it:
           form:
             error: Errore
         form:
-          add_option: +Aggiungi risposta chiusa
+          add_option: Aggiungi risposta chiusa
           title: Domanda
           title_placeholder: Scrivi un titolo per la domanda
           value_placeholder: Scrivi una risposta chiusa
@@ -504,13 +525,16 @@ it:
       hidden_comments: Commenti nascosti
       hidden_debates: Dibattiti nascosti
       hidden_proposals: Proposte nascoste
+      hidden_budget_investments: Progetti di spesa nascosti
       hidden_proposal_notifications: Notifiche di proposte nascoste
       hidden_users: Utenti bloccati
       administrators: Amministratori
       managers: Gestori
       moderators: Moderatori
-      emails: Invio delle email
+      messaging_users: Messaggi a utenti
       newsletters: Newsletters
+      admin_notifications: Notifiche
+      system_emails: Emails del sistema
       emails_download: Download delle email
       valuators: Valutatori
       poll_officers: Presidenti di seggio
@@ -526,9 +550,22 @@ it:
       signature_sheets: Fogli delle firme
       site_customization:
         homepage: Homepage
-        pages: Personalizzare pagine
-        images: Personalizzare immagini
-        content_blocks: Personalizzare blocchi
+        pages: Personalizza pagine
+        images: Personalizza immagini
+        content_blocks: Personalizza blocchi
+        information_texts: Personalizza testi
+        information_texts_menu:
+          debates: "Dibattiti"
+          community: "Comunità"
+          proposals: "Proposte"
+          polls: "Votazioni"
+          layouts: "Modelli"
+          mailers: "Posta"
+          management: "Gestione"
+          guides: "Guide"
+          welcome: "Benvenuto/a"
+        buttons:
+          save: "Salva modifiche"
       title_moderated_content: Contenuto moderato
       title_budgets: Bilanci
       title_polls: Votazioni
@@ -604,6 +641,53 @@ it:
         body: Contenuto della email
         body_help_text: Così è come gli utenti vedranno la email
         send_alert: Confermi di voler spedire questa newsletter a %{n} utenti?
+    admin_notifications:
+      create_success: Notifica creata correttamente
+      update_success: Notifica aggiornata correttamente
+      send_success: Notifica inviata correttamente
+      delete_success: Notifica eliminata correttamente
+      index:
+        section_title: Invio delle notifiche
+        new_notification: Crea notifica
+        title: Titolo
+        segment_recipient: Destinatari
+        sent: Inviato
+        actions: Azioni
+        draft: Bozza
+        edit: Modifica
+        delete: Elimina
+        preview: Anteprima
+        view: Mostra
+        empty_notifications: Non ci sono notifiche da mostrare
+      new:
+        section_title: Nuova notifica
+      edit:
+        section_title: Modifica notifica
+      show:
+        section_title: Anteprima della notifica
+        send: Invia notifica
+        will_get_notified: (%{n} utenti riceveranno la notifica)
+        got_notified: (%{n} utenti hanno ricevuto la notifica)
+        sent_at: Inviato
+        title: Titolo
+        body: Testo
+        link: Link
+        segment_recipient: Destinatari
+        preview_guide: "Così è come gli utenti vedranno la notifica:"
+        sent_guide: "Così è come gli utenti vedono la notifica:"
+        send_alert: Confermi di voler inviare questa notifica a %{n} utenti?
+    system_emails:
+      preview_pending:
+        action: Anteprima In attesa
+        preview_of: Anteprima di %{name}
+        pending_to_be_sent: Questo è tutto il contenuto in attesa di essere inviato
+        moderate_pending: "Modera l'invio della notifica"
+        send_pending : Invia in attesa
+        send_pending_notification: Notifiche in attesa inviate correttamente
+      proposal_notification_digest:
+        title: Sommario delle Notifiche delle Proposte
+        description: Riunisci tutte le notifiche delle proposte in un unico messaggio, per evitare di spedire troppe email.
+        preview_detail: Gli utenti riceveranno solamente le notifiche relative alle proposte che stanno seguendo.
     emails_download:
       index:
         title: Download delle email
@@ -973,6 +1057,12 @@ it:
             update: La configurazione della mappa è stata salvata con successo.
           form:
             submit: Aggiorna
+      setting: Funzionalità
+      setting_actions: Azioni
+      setting_name: Configurazione
+      setting_status: Stato
+      setting_value: Valore
+      no_description: Senza descrizione
     shared:
       booths_search:
         button: Cerca
@@ -1000,6 +1090,11 @@ it:
       image: Immagine
       show_image: Mostra immagine
       moderated_content: "Controlla il contenuto moderato dai moderatori e conferma se la moderazione ha avuto successo."
+      view: Vedi
+      proposal: Proposta
+      author: Autore
+      content: Contenuto
+      created_at: Data di creazione
     spending_proposals:
       index:
         geozone_filter_all: Tutti gli ambiti di attuazione

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180519132610) do
+ActiveRecord::Schema.define(version: 20180718115545) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,6 +29,17 @@ ActiveRecord::Schema.define(version: 20180519132610) do
 
   add_index "activities", ["actionable_id", "actionable_type"], name: "index_activities_on_actionable_id_and_actionable_type", using: :btree
   add_index "activities", ["user_id"], name: "index_activities_on_user_id", using: :btree
+
+  create_table "admin_notifications", force: :cascade do |t|
+    t.string   "title"
+    t.text     "body"
+    t.string   "link"
+    t.string   "segment_recipient"
+    t.integer  "recipients_count"
+    t.date     "sent_at"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+  end
 
   create_table "administrators", force: :cascade do |t|
     t.integer "user_id"
@@ -63,17 +74,24 @@ ActiveRecord::Schema.define(version: 20180519132610) do
   add_index "annotations", ["legacy_legislation_id"], name: "index_annotations_on_legacy_legislation_id", using: :btree
   add_index "annotations", ["user_id"], name: "index_annotations_on_user_id", using: :btree
 
+  create_table "banner_sections", force: :cascade do |t|
+    t.integer  "banner_id"
+    t.integer  "web_section_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
   create_table "banners", force: :cascade do |t|
-    t.string   "title",           limit: 80
+    t.string   "title",            limit: 80
     t.string   "description"
     t.string   "target_url"
-    t.string   "style"
-    t.string   "image"
     t.date     "post_started_at"
     t.date     "post_ended_at"
     t.datetime "hidden_at"
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.text     "background_color"
+    t.text     "font_color"
   end
 
   add_index "banners", ["hidden_at"], name: "index_banners_on_hidden_at", using: :btree
@@ -189,6 +207,9 @@ ActiveRecord::Schema.define(version: 20180519132610) do
     t.integer  "community_id"
     t.boolean  "visible_to_valuators",                        default: false
     t.integer  "valuator_group_assignments_count",            default: 0
+    t.datetime "confirmed_hide_at"
+    t.datetime "ignored_flag_at"
+    t.integer  "flags_count",                                 default: 0
   end
 
   add_index "budget_investments", ["administrator_id"], name: "index_budget_investments_on_administrator_id", using: :btree
@@ -432,6 +453,21 @@ ActiveRecord::Schema.define(version: 20180519132610) do
   add_index "geozones_polls", ["geozone_id"], name: "index_geozones_polls_on_geozone_id", using: :btree
   add_index "geozones_polls", ["poll_id"], name: "index_geozones_polls_on_poll_id", using: :btree
 
+  create_table "i18n_content_translations", force: :cascade do |t|
+    t.integer  "i18n_content_id", null: false
+    t.string   "locale",          null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.text     "value"
+  end
+
+  add_index "i18n_content_translations", ["i18n_content_id"], name: "index_i18n_content_translations_on_i18n_content_id", using: :btree
+  add_index "i18n_content_translations", ["locale"], name: "index_i18n_content_translations_on_locale", using: :btree
+
+  create_table "i18n_contents", force: :cascade do |t|
+    t.string "key"
+  end
+
   create_table "identities", force: :cascade do |t|
     t.integer  "user_id"
     t.string   "provider"
@@ -664,6 +700,7 @@ ActiveRecord::Schema.define(version: 20180519132610) do
     t.date     "sent_at"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
+    t.datetime "hidden_at"
   end
 
   create_table "notifications", force: :cascade do |t|
@@ -1147,6 +1184,8 @@ ActiveRecord::Schema.define(version: 20180519132610) do
     t.integer  "failed_email_digests_count",                default: 0
     t.text     "former_users_data_log",                     default: ""
     t.boolean  "public_interests",                          default: false
+    t.boolean  "recommended_debates",                       default: true
+    t.boolean  "recommended_proposals",                     default: true
   end
 
   add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
@@ -1256,6 +1295,12 @@ ActiveRecord::Schema.define(version: 20180519132610) do
     t.integer  "limit",      default: 3
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
+  end
+
+  create_table "web_sections", force: :cascade do |t|
+    t.text     "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   add_foreign_key "administrators", "users"

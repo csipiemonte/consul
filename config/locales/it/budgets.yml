@@ -56,11 +56,7 @@ it:
       see_results: Vedi risultati
       section_footer:
         title: Aiuto sui bilanci partecipativi
-        description: Con i bilanci partecipativi la poplazione decide a quali progetti presentati da cittadini e cittadine vada destinata una parte del bilancio municipale.
-        help_text_1: "I bilanci partecipativi sono processi nei quali la poplazione decide in maniera diretta in cosa si spende una parte del bilancio municipale. Qualsiasi persona residente maggiore di 16 anni puà proporre un progetto di spesa che si preseleziona in una fase di appoggi cittadini."
-        help_text_2: "I progetti più votati sono valutati e passano alla votazione finale nella quale si decidono le esecuzioni che realizzerà il Comune una volta che si approvino i bilanci municipali del prossimo anno."
-        help_text_3: "La presentazione dei progetti dei bilanci partecipativi avviene da gennaio per un periodo, all'incirca, di un mese e mezzo. Per partecipare e presentare proposte per tutta la città o per le circoscrizioni è necessario registrarsi su %{org} e certificare il proprio account."
-        help_text_4: "Per ottenere il maggior numero possibile di appoggi e di voti, scegli un titolo descrittivo e comprensibile del tuo progetto. Dopo hai uno spazio per sviluppare il fine della tua proposta. Fornisci tutti i dati e le motivazioni, con anche documenti e immagini, per aiutare gli altri partecipanti a comprendere meglio ciò che proponi."
+        description: Con i bilanci partecipativi la popolazione decide a quali progetti vada destinata una parte del bilancio.
     investments:
       form:
         tag_category_label: "Categorie"
@@ -126,8 +122,10 @@ it:
         milestone_publication_date: "Pubblicato il %{publication_date}"
         milestone_status_changed: Il progetto ha cambiato lo stato
         author: Autore
-        project_unfeasible_html: 'Questo progetto di investimento <strong>è stato contrassegnato come irrealizzabile</strong> e non passerà alla fase di votazione.'
-        project_not_selected_html: 'Questo progetto di investimento <strong>non è stato selezionato</strong> per la fase di votazione.'
+        project_unfeasible_html: 'Questo progetto di spesa <strong>è stato contrassegnato come irrealizzabile</strong> e non passerà alla fase di votazione.'
+        project_selected_html: 'Questo progetto di spesa <strong>è stato selezionato</strong> per la fase di votazione.'
+        project_winner: 'Progetto di spesa vincitore'
+        project_not_selected_html: 'Questo progetto di spesa <strong>non è stato selezionato</strong> per la fase di votazione.'
       wrong_price_format: Si possono includere solo caratteri numerici
       investment:
         add: Vota

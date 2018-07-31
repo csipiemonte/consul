@@ -55,7 +55,7 @@ class Users::SessionsController < Devise::SessionsController
 
     def after_sign_out_path_for(resource)
       return Rails.application.config.spid_logout_url if @idp.present? && @idp.provider == 'shibboleth'
-      request.referer.present? ? request.referer : super
+      request.referer.present? && !request.referer.match("management") ? request.referer : super
     end
 
     def verify_signed_out_user

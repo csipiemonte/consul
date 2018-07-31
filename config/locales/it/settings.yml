@@ -1,8 +1,10 @@
 it:
   settings:
     comments_body_max_length: "Lunghezza massima dei commenti"
+    comments_body_max_length_description: "In numero di caratteri"
     direct_message_max_per_day: "Numero massimo di messaggi giornalieri"
     official_level_1_name: "Funzionario pubblico di livello 1"
+    official_level_1_name_description: "Etichetta che apparirà negli utenti usuarios marcados como Nivel 1 de cargo público"
     official_level_2_name: "Funzionario pubblico di livello 2"
     official_level_3_name: "Funzionario pubblico di livello 3"
     official_level_4_name: "Funzionario pubblico di livello 4"
@@ -46,6 +48,8 @@ it:
       user:
         recommendations: Suggerimenti
         skip_verification: Salta la certificazione degli utenti
+        recommendations_on_debates: Suggerimenti nei dibattiti
+        recommendations_on_proposals: Suggerimenti nelle proposte
       community: Communità per le proposte e per i progetti di spesa
       map: Geolocalizzazione delle proposte e dei progetti di spesa
       allow_images: Permettere il caricamento e la visualizzazione di immagini

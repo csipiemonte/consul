@@ -20,6 +20,9 @@ it:
       email_on_direct_message_label: Ricevi email con messaggi privati
       email_digest_label: Ricevi un riepilogo delle notifiche sulle proposte
       official_position_badge_label: Mostra etichetta del tipo di utente
+      recommendations: Suggerimenti
+      show_debates_recommendations: "Mostra suggerimenti nell'elenco dei dibattiti"
+      show_proposals_recommendations: "Mostra suggerimenti nell'elenco delle proposte"
       title: Il mio account
       user_permission_debates: Partecipare ai dibattiti
       user_permission_info: Con il tuo account puoi già...
@@ -110,6 +113,10 @@ it:
       recommendations:
         without_results: Non esistono dibattiti relazionati con i tuoi interessi
         without_interests: Segui le proposte per ricevere suggerimenti
+        disable: "Se si nascondono i suggerimenti per i dibattiti, non saranno più mostrati. È possibile attivarli nuovamente dalla pagina 'Il mio account'"
+        actions:
+          success: "I suggerimenti dei dibattiti sono stati disattivati"
+          error: "Si è verificato un errore. Per cortesia vai alla pagina 'Il mio account' per disattivare manualmente i suggerimenti"
       search_form:
         button: Cerca
         placeholder: Ricerca dibattiti...
@@ -361,6 +368,10 @@ it:
       recommendations:
         without_results: Non esistono proposte relazionate con i tuoi interessi
         without_interests: Segui le proposte così possiamo darti qualche suggerimento
+        disable: "Se si nascondono i suggerimenti per le proposte, non saranno più mostrati. È possibile attivarli nuovamente dalla pagina 'Il mio account'"
+        actions:
+          success: "I suggerimenti delle proposte sono stati disattivati"
+          error: "Si è verificato un errore. Per cortesia vai alla pagina 'Il mio account' per disattivare manualmente i suggerimenti"
       retired_proposals: Proposte ritirate
       retired_proposals_link: "Proposte ritirate dagli autori"
       retired_links:
@@ -431,8 +442,7 @@ it:
       supports_necessary: "%{number} appoggi necessari per presa in carico"
       total_percent: 100%
       archived: "Questa proposta è stata archiviata e non può più essere sostenuta."
-      successful: "Questa proposta ha ottenuto gli appoggi necessari e andrà alla %{voting}."
-      voting: "prossima votazione"
+      successful: "Questa proposta ha ottenuto gli appoggi necessari."
     show:
       author_deleted: Utente eliminato
       code: 'Codice della proposta:'
@@ -505,7 +515,6 @@ it:
       zoom_plus: Zoom immagine
       read_more: "Leggi di più su %{answer}"
       read_less: "Leggi di meno su %{answer}"
-      participate_in_other_polls: Partecipa ad altre votazioni
       videos: "Video esterno"
       info_menu: "Informazione"
       stats_menu: "Statistiche sulla partecipazione"
@@ -632,6 +641,10 @@ it:
       title: Modalità di visualizzazione
       cards: Anteprima
       list: Lista
+    recommended_index:
+        title: Suggerimenti
+        see_more: Mostra più suggerimenti
+        hide: Nascondi suggerimenti
   social:
     blog: "Blog di %{org}"
     facebook: "Facebook di %{org}"
