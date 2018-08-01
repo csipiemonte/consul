@@ -3,6 +3,7 @@ pt-BR:
   debates:
     index:
       section_footer:
+        help_text_3: "Vi ricordiamo che l'area dibattiti è una zona di libera discussione tra utenti. Per formulare proposte di cui la Città si impegna a valutare tecnicamente la fattibilità, anche in termini di risorse, è attiva la sezione Proposte dove potranno essere formulate idee e progetti da commentare ed appoggiare."
         help_text_4: "O título e o texto dos debates que receberam pelo menos 1 apoio, não podem mais ser modificados pelo proponente."
   devise:
     sessions:
@@ -20,11 +21,22 @@ pt-BR:
       contacts: Contactos
       europa_alt: Fundos Estruturais e de Investimento Europeus
       ministero_alt: Agência de Coesão Territorial
-      ponmetro_finanziamento: Projeto aprovado pela União Européia - Fundos Estruturais e de Investimentos Europeus - Programa Operacional Metropolitan Cities 2014 - 2020      
+      ponmetro_finanziamento: Projeto aprovado pela União Européia - Fundos Estruturais e de Investimentos Europeus - Programa Operacional Metropolitan Cities 2014 - 2020
     header:
+      external_link_opendata: Dati aperti
+      external_link_opendata_url: https://opendata.consul
+      external_link_transparency: Trasparenza
+      external_link_transparency_url: https://transparency.consul
       titolo: A cidade que você ama será a cidade que deseja. 
       html: Existem cidades diretamente governadas por seus habitantes, que <strong>discutem</strong> questões que estão preocupadas, <strong>propõem</strong> idéias para melhorar suas vidas e <strong>decidem</strong> entre si e com todos aqueles que precisam ser realizados.
       more_info: Descobri DecidiTorino
+  legislation:
+    processes:
+      index:
+        section_footer:
+          help_text_1: "Nei progetti il Comune offre alla cittadinanza l'opportunità di partecipare all'elaborazione e alla modifica di una norma, di un'opera o di un progetto che interessa la città e di dare la propria opinione su iniziative che ha in previsione di realizzare."
+          help_text_2: "Pertanto le persone registrate su DecidiTorino, indipendentemente da dove risiedono, possono dare il proprio contributo alla discussione."
+          help_text_3: "I commenti sono analizzati dall'area comunale competente e tenuti in considerazione al momento della loro stesura finale."
   omniauth:
     spid:
       sign_in: Iniciar sessão com o SPID

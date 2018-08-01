@@ -5,7 +5,6 @@ it:
     general_terms: Termini e Condizioni
     help:
       title: "Scopri %{org}"
-      subtitle: "Impara tutto ciò che si può fare su questo sito."
       guide: 'Questa guida spiega ogni sezione di %{org}. Per maggiori informazioni cliccare su "Informazioni dettagliate".'
       menu:
         debates: "Dibattiti"
@@ -26,19 +25,12 @@ it:
         title: "Proposte"
         description: "En la sección de %{link} puedes plantear propuestas para que el Ayuntamiento las lleve a cabo. Las propuestas recaban apoyos, y si alcanzan los apoyos suficientes se someten a votación ciudadana. Las propuestas aprobadas en estas votaciones ciudadanas son asumidas por el Ayuntamiento y se llevan a cabo."
         link: "propuestas ciudadanas"
-        feature_html: "Para crear una propuesta hay que registrarse en %{org}. Las propuestas que consiguen el apoyo en la web del 1% de la gente con derecho a voto (%{supports} apoyos de personas mayores de 16 años empadronadas) pasan a votación. Para apoyar propuestas es necesario verificar tu cuenta."
         image_alt: "Pulsante per appoggiare una proposta"
-        figcaption_html: 'Pulsante per "Appoggiare" una proposta.<br>Quando raggiunge il numero di appoggi necessari passerà a votazione.'
+        figcaption_html: 'Pulsante per "Appoggiare" una proposta.'
       budgets:
         title: "Bilanci partecipativi"
         description: "La sezione dei %{link} serve a far sì che la gente possa decidere, in maniera diretta, a cosa destinare una parte del bilancio municipale."
         link: "bilanci partecipativi"
-        feature: "In questo processo ogni anno la gente espone, appoggia e vota i progetti. I più votati saranno finanziati con il bilancio municipale."
-        phase_1_html: "Tra gennaio e gli inizi di marzo, le persone registrate su %{org} possono <strong>presentare progetti</strong>."
-        phase_2_html: "A marzo, i proponenti devono sollecitare gli appoggi, come <strong>fase di preselezione</strong>."
-        phase_3_html: "Fra aprile e gli inizi di maggio i tecnici del Comune valutano - partendo da quelli più appoggiati - i progetti e ne verificano la fattibilità."
-        phase_4_html: "In ultimo, fra maggio e giugno, tutta la popolazione può <strong>votare i progetti</strong> che più le stanno a cuore."
-        phase_5_html: "A partire dall'approvazione dei bilanci fino all'anno seguente l'Amministrazione Comunale inizia a mettere in atto i progetti vincitori."
         image_alt: "Diverse fasi di un bilancio partecipativo"
         figcaption_html: 'Fase degli appoggi e fase della votazione dei bilanci partecipativi.'
       polls:
@@ -47,8 +39,6 @@ it:
         link: "votazioni cittadine"
         feature_1: "Per partecipare alle votazioni è necessario %{link} e certificare la propria utenza."
         feature_1_link: "registrarsi su %{org_name}"
-        feature_2: "Possono votare tutte le persone residenti, con più di 16 anni."
-        feature_3: "I risultati di tutti le votazioni sono vincolanti per l'Amministrazione Comunale."
       processes:
         title: "Progetti"
         description: "Nella sezione %{link} è possibile partecipare all'elaborazione di progetti di interesse della città e su cui l'Amministrazione sta svolgendo studi per la loro realizzazione: la consultazione pertanto consente a tutti di esprimere le proprie opinioni e contribuire con le proprie idee e riflessioni sui progetti illustrati."

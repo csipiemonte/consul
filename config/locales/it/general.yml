@@ -136,9 +136,6 @@ it:
         description: "Crea un tema sul quale dibattere su qualsiasi argomento che intendi condividere con gli altri abitanti della tua città."
         help_text_1: "Per creare un dibattito è necessario registrarsi su DecidiTorino"
         help_text_2: "I dibattiti possono essere valutati utilizzando i pulsanti Sono d'accordo o Non sono d'accordo che si trovano accanto a ciascuno di essi. Puoi anche valutare i commenti che sono già stati proposti."
-        help_text_3: "Vi ricordiamo che l'area dibattiti è una zona di libera discussione tra utenti. Per formulare proposte di cui la Città si impegna a valutare tecnicamente la fattibilità, anche in termini di risorse, sarà prossimanente attiva, non appena approvate le regole di partecipazione, la sezione proposte dove potranno essere formulate idee e progetti da commentare ed appoggiare."
-        proposals_link: proposta
-        budget_link: bilanci partecipativi
     new:
       form:
         submit_button: Inizia un dibattito
@@ -210,17 +207,11 @@ it:
       contact_us: Per ottenere assistenza tecnica entra in
       copyright: Consul, %{year}
       description: Questo portale utilizza il %{open_source} %{consul} ed è stato realizzato con fondi PON METRO.
-      faq: Assistenza tecnica
-      open_data_text: Tutti i dati del Comune sono tuoi.
-      open_data_title: Dati Aperti
       open_source: software libero
       open_source_url: http://www.gnu.org/licenses/agpl-3.0.html
       participation_text: Decidi come deve essere la città che ami.
       participation_title: Partecipazione
       privacy: Tutela della privacy e cookie
-      transparency_text: Ottieni tutte le informazioni sulla città.
-      transparency_title: Trasparenza
-      transparency_url: https://transparency.consul
     header:
       administration_menu: Admin
       administration: Amministrazione
@@ -228,10 +219,6 @@ it:
       collaborative_legislation: Progetti
       debates: Dibattiti
       external_link_blog: Blog
-      external_link_opendata: Dati aperti
-      external_link_opendata_url: https://opendata.consul
-      external_link_transparency: Trasparenza
-      external_link_transparency_url: https://transparency.consul
       locale: 'Lingua:'
       logo: DecidiTorino logo
       management: Gestire
@@ -401,9 +388,6 @@ it:
       section_footer:
         title: Aiuto sulle proposte
         description: "Proponi ciò che vorresti che la Città realizzasse e appoggia le proposte degli altri utenti."
-        help_text_1: "cfr. file custom"
-        help_text_2: "cfr. file custom"
-        help_text_3: "cfr. file custom"
     new:
       form:
         submit_button: Crea proposta
@@ -492,9 +476,7 @@ it:
         help: Aiuto sulle votazioni
       section_footer:
         title: Aiuto sulle votazioni
-        description: Registrati per poter votare le proposte cittadine e le questioni per le quali il Consiglio Comunale interpella la cittadinanza. Decidi direttamente.
-        help_text_1: "Le votazioni si convocano quando una proposta cittadina raggiunge l'1% di appoggi da parte dei residenti con diritto di voto. Nelle votazioni si possono includere anche questioni che il Consiglio Comunale sottopone alla decisione diretta della cittadinanza."
-        help_text_2: "Per partecipare alla prossima votazione è necessario registrarsi su %{org} e verificare il proprio account. Possono votare tutte le persone residenti in città di età maggiore di 16 anni. I risultati di tutte le votazioni saranno vincolanti per il Comune."
+        description: Le votazioni sono un meccanismo di partecipazione mediante il quale i cittadini con diritto di voto possono prendere decisioni direttamente.
       no_polls: "Non sono presenti votazioni aperte."
     show:
       already_voted_in_booth: "Hai già partecipato a questa votazione presso le urne di un seggio, non è possibile votare di nuovo."

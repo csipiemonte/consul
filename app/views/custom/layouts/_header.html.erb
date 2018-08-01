@@ -21,6 +21,7 @@
       <div class="top-bar-title">
         <%= link_to root_path, accesskey: "0" do %>
           <%= image_tag(image_path_for('logo_header.png'), class: 'float-left', alt: t("layouts.header.logo")) %>
+          <%= setting["org_name"] %>
         <% end %>
       </div>
 
@@ -59,7 +60,7 @@
 </header>
 <script type="text/javascript">
 $(document).ready(function() {
-    var contenitore = $(".top-bar > div.top-bar-left > ul > li > a");
+    var contenitore = $(".top-bar > .top-bar-title > a");
     var contenitore1 = $("a.logo");
     var nthChar = 6;
     var text = contenitore.text().trim();
