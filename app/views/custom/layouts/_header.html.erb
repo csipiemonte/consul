@@ -19,7 +19,7 @@
       </span>
 
       <div class="top-bar-title">
-        <%= link_to root_path, accesskey: "0" do %>
+        <%= link_to root_path, id: "logo-box", accesskey: "0" do %>
           <%= image_tag(image_path_for('logo_header.png'), class: 'float-left', alt: t("layouts.header.logo")) %>
           <%= setting["org_name"] %>
         <% end %>
@@ -73,6 +73,6 @@ $(document).ready(function() {
       contenitore.append(img).append(text_corr);
       contenitore1.append(text_corr);
     }
-    $('#responsive-menu').attr('style','display:block');
+    $('#logo-box').attr('style','display:inline-block');
 });
 </script>

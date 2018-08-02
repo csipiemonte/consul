@@ -1372,7 +1372,7 @@ it:
         header_title: Nuova testata
         submit_header: Crea testata
         card_title: Nuova card
-        submit_card: Crear card
+        submit_card: Crea card
       edit:
         header_title: Modifica card
         submit_header: Salva card
