@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [2.0.0](https://github.com/csipiemonte/consul/compare/v1.2.5...v2.0.0) - 2018-09-03
+### Added
+- Homepage: cards, header and cards seeds; customization of homepage from admin section
+- Recommendations: Debates and proposals recommendations for users
+- Configuration: Added setting on admin to skip user verification
+- Admin newsletter emails
+- New setting `feature.allow_images` to allow upload and show images for both (proposals and budget investment projects)
+- Related Content feature. Now Debates & Proposals can be related
+
 ## [1.2.5](https://github.com/csipiemonte/consul/compare/v1.2.4...v1.2.5) - 2018-07-09
 ### Changed
 - Votes to legislation proposals not only for verified users
