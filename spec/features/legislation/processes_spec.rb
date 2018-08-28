@@ -3,6 +3,7 @@ require 'rails_helper'
 feature 'Legislation' do
 
   let!(:administrator) { create(:administrator).user }
+
   shared_examples "not published permissions" do |path|
 
     let(:not_published_process) { create(:legislation_process, :not_published, title: "Process not published") }
@@ -12,7 +13,7 @@ feature 'Legislation' do
       visit send(path, not_published_process)
 
       expect(page).to have_content not_permission_message
-      expect(page).to_not have_content("Process not published")
+      expect(page).not_to have_content("Process not published")
     end
 
     it "is available for an administrator user" do
@@ -25,7 +26,7 @@ feature 'Legislation' do
 
   context 'processes home page' do
 
-    scenario 'Processes can be listed' do
+    scenario 'No processes to be listed' do
       visit legislation_processes_path
       expect(page).to have_text "There aren't open processes"
 
@@ -53,17 +54,17 @@ feature 'Legislation' do
 
       visit legislation_processes_path
       expect(page).to have_content('Process open')
-      expect(page).to_not have_content('Process next')
-      expect(page).to_not have_content('Process past')
+      expect(page).not_to have_content('Process next')
+      expect(page).not_to have_content('Process past')
 
       visit legislation_processes_path(filter: 'next')
-      expect(page).to_not have_content('Process open')
+      expect(page).not_to have_content('Process open')
       expect(page).to have_content('Process next')
-      expect(page).to_not have_content('Process past')
+      expect(page).not_to have_content('Process past')
 
       visit legislation_processes_path(filter: 'past')
-      expect(page).to_not have_content('Process open')
-      expect(page).to_not have_content('Process next')
+      expect(page).not_to have_content('Process open')
+      expect(page).not_to have_content('Process next')
       expect(page).to have_content('Process past')
     end
 
@@ -79,34 +80,34 @@ feature 'Legislation' do
 
       it "aren't listed" do
         visit legislation_processes_path
-        expect(page).to_not have_content('not published')
+        expect(page).not_to have_content('not published')
         expect(page).to have_content('published')
 
         login_as(administrator)
         visit legislation_processes_path
-        expect(page).to_not have_content('not published')
+        expect(page).not_to have_content('not published')
         expect(page).to have_content('published')
       end
 
       it "aren't listed with next filter" do
         visit legislation_processes_path(filter: 'next')
-        expect(page).to_not have_content('not published')
+        expect(page).not_to have_content('not published')
         expect(page).to have_content('next published')
 
         login_as(administrator)
         visit legislation_processes_path(filter: 'next')
-        expect(page).to_not have_content('not published')
+        expect(page).not_to have_content('not published')
         expect(page).to have_content('next published')
       end
 
       it "aren't listed with past filter" do
         visit legislation_processes_path(filter: 'past')
-        expect(page).to_not have_content('not published')
+        expect(page).not_to have_content('not published')
         expect(page).to have_content('past published')
 
         login_as(administrator)
         visit legislation_processes_path(filter: 'past')
-        expect(page).to_not have_content('not published')
+        expect(page).not_to have_content('not published')
         expect(page).to have_content('past published')
       end
     end
@@ -123,6 +124,23 @@ feature 'Legislation' do
 
         expect(page).to have_content(document.title)
       end
+
+      scenario 'show additional info button' do
+        process = create(:legislation_process, additional_info: "Text for additional info of the process")
+
+        visit legislation_process_path(process)
+
+        expect(page).to have_content("Additional information")
+        expect(page).to have_content("Text for additional info of the process")
+      end
+
+      scenario 'do not show additional info button if it is empty' do
+        process = create(:legislation_process)
+
+        visit legislation_process_path(process)
+
+        expect(page).to_not have_content("Additional information")
+      end
     end
 
     context 'debate phase' do
@@ -131,15 +149,30 @@ feature 'Legislation' do
 
         visit legislation_process_path(process)
 
-        expect(page).to have_content("This phase is not open yet")
+        expect(page).to     have_content("This phase is not open yet")
+        expect(page).to_not have_content("Participate in the debate")
       end
 
-      scenario 'open' do
+      scenario 'open without questions' do
         process = create(:legislation_process, debate_start_date: Date.current - 1.day, debate_end_date: Date.current + 2.days)
 
         visit legislation_process_path(process)
 
-        expect(page).to have_content("Participate in the debate")
+        expect(page).to_not have_content("Participate in the debate")
+        expect(page).to_not have_content("This phase is not open yet")
+      end
+
+      scenario 'open with questions' do
+        process = create(:legislation_process, debate_start_date: Date.current - 1.day, debate_end_date: Date.current + 2.days)
+        create(:legislation_question, process: process, title: "Question 1")
+        create(:legislation_question, process: process, title: "Question 2")
+
+        visit legislation_process_path(process)
+
+        expect(page).to     have_content("Question 1")
+        expect(page).to     have_content("Question 2")
+        expect(page).to     have_content("Participate in the debate")
+        expect(page).to_not have_content("This phase is not open yet")
       end
 
       include_examples "not published permissions", :debate_legislation_process_path

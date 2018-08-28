@@ -33,6 +33,8 @@
 //= require moderator_comment
 //= require moderator_debates
 //= require moderator_proposals
+//= require moderator_budget_investments
+//= require moderator_proposal_notifications
 //= require prevent_double_submission
 //= require gettext
 //= require annotator
@@ -74,6 +76,11 @@
 //= require polls
 //= require sortable
 //= require table_sortable
+//= require investment_report_alert
+//= require send_newsletter_alert
+//= require managers
+//= require globalize
+//= require send_admin_notification_alert
 
 var initialize_modules = function() {
   App.Comments.initialize();
@@ -115,6 +122,11 @@ var initialize_modules = function() {
   App.Polls.initialize();
   App.Sortable.initialize();
   App.TableSortable.initialize();
+  App.InvestmentReportAlert.initialize();
+  App.SendNewsletterAlert.initialize();
+  App.Managers.initialize();
+  App.Globalize.initialize();
+  App.SendAdminNotificationAlert.initialize();
 };
 
 $(function(){

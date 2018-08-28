@@ -3,6 +3,7 @@ en:
   debates:
     index:
       section_footer:
+        help_text_3: "Vi ricordiamo che l'area dibattiti è una zona di libera discussione tra utenti. Per formulare proposte di cui la Città si impegna a valutare tecnicamente la fattibilità, anche in termini di risorse, è attiva la sezione Proposte dove potranno essere formulate idee e progetti da commentare ed appoggiare."
         help_text_4: "The title and the text of the debates that have received at least 1 support, can no longer be changed by the proponent."
   devise:
     sessions:
@@ -20,25 +21,41 @@ en:
       contacts: Contacts
       europa_alt: European Structural and Investment Funds
       ministero_alt: Agency for Territorial Cohesion
-      ponmetro_finanziamento: PONMETRO Project      
+      ponmetro_finanziamento: PONMETRO Project
     header:
+      external_link_opendata: Dati aperti
+      external_link_opendata_url: https://opendata.consul
+      external_link_transparency: Trasparenza
+      external_link_transparency_url: https://transparency.consul
       titolo: Love the city, and it will become a city you love 
       html: There are cities that are governed directly by their inhabitants, who <strong>discuss</strong> the topics they are concerned about, <strong>propose</strong> ideas to improve their lives and <strong>decide</strong> among themselves which ones will be carried out.
       more_info: Discover DecidiTorino
+  legislation:
+    processes:
+      index:
+        section_footer:
+          help_text_1: "Nei progetti il Comune offre alla cittadinanza l'opportunità di partecipare all'elaborazione e alla modifica di una norma, di un'opera o di un progetto che interessa la città e di dare la propria opinione su iniziative che ha in previsione di realizzare."
+          help_text_2: "Pertanto le persone registrate su DecidiTorino, indipendentemente da dove risiedono, possono dare il proprio contributo alla discussione."
+          help_text_3: "I commenti sono analizzati dall'area comunale competente e tenuti in considerazione al momento della loro stesura finale."
   omniauth:
     spid:
       sign_in: Login with SPID
       sign_up: Signin with SPID
       name: SPID
   pages:
-    more_info:
+    help:
       debates:
+        description: "Create a theme to discuss on any topic you want to share with other people in your city."
+        feature_1: "To create a debate it is necessary %{link}"
+        feature_1_link: "sign up %{org}"
+        feature_2_html: "Debates can be evaluated using the <strong>I agree</strong> or <strong>I disagree</strong> buttons that are next to each of them."
         feature_3_html: "The title and the text of the debates that have received at least 1 support, can no longer be changed by the proponent."
         feature_4_html: "We remind you that the discussion area is an area of ​​free discussion among users. In order to formulate proposals for which the City undertakes to technically evaluate its feasibility, also in terms of resources, the Proposals section is active where ideas and projects to comment and support can be formulated."
       proposals:
+        description: "Propose what you would like the City to achieve and support the proposals of other users."
         feature_1_html: "The proposals must concern topics related to the City, and if they require the Administration to implement it, they must fall within the competences assigned to the municipalities."
         feature_2: "To create proposals you need %{link1}, instead to support them you must have certified your account (see %{link2})."
-        feature_2_link1: "sign up %{org_name}"
+        feature_2_link1: "sign up %{org}"
         feature_2_link2: "FAQ page"
         feature_3_html: "Proposals that reach <strong>the support of 5,000 certified users</strong> (ie resident in Turin aged over 16) will be subject to feasibility study by the municipal administration offices."
         feature_4_html: "If the feasibility study is positive, the City undertakes to implement the proposal."
@@ -46,6 +63,18 @@ en:
         feature_6_html: "The City reserves the right to take into consideration any proposals that are worthy of feasibility analysis if these thresholds will not be reached on 30/6 and 31/12."
         feature_7: "Further information on the proposals and how to register are available in the %{link}"
         feature_7_link: "FAQ page"
+  proposals:
+    index:
+      section_footer:
+        help_text_1: "To create proposals it is necessary %{link}"
+        help_text_1_link: "sign up %{org}"
+        help_text_2: "To support the proposals, it is necessary that your account has been certified (ie that you are resident in Turin and over the age of 16)."
+        help_text_3: "To certify your account, automatically, just be registered users and choose the option on the page %{link}"
+        help_text_3_link: "My account"
+        help_text_4: "It is necessary to indicate the fiscal code, the date of birth and the CAP of residence. It will also be necessary to provide the mobile number to get the SMS with the confirmation code."
+        help_text_5: "The proposals that reach the support of 5,000 users will pass to a technical evaluation of the Administration for feasibility. This assessment will be given public outcome."
+        help_text_6: "Further information on the proposals and how to register are available in the %{link}"
+        help_text_6_link: "FAQ page"
   settings:
     feature:
       proposals: Proposals
@@ -63,25 +92,3 @@ en:
     sms:
       read:
         verification_code: "DecidiTorino - Verification code: "
-  welcome:
-    schede:
-      scheda1:
-        title: "Metro Linea 2"
-        description: "The City of Torino invites citizens to participate in the public debate phase of the Metro Line 2 project. The proposals and observations received by July 22nd can be considered during the drafting of the preliminary project."
-        label: Legislation processes
-        link: See legislation process
-      scheda2:
-        title: "Free debates area"
-        description: "We remind you that the debates area is an area of free discussion among users. In order to formulate proposals for which the City undertakes to technically evaluate its feasibility, also in terms of resources, the <i>Proposals</i> section is active where ideas and projects to comment and support can be formulated."
-        label: Debates
-        link: See debates
-      scheda3:
-        title: Make a proposal
-        description: "On line the new section <i>Proposals</i> where you can insert a proposal of what you would like the City to achieve and where you can support the proposals included by other citizens. Any proposal that will reach a predetermined threshold of supports (see FAQ %{link1}) will be subject to feasibility study by the offices of the Municipal Administration. To learn more about the proposals visit %{link2}"
-        label: Proposals
-        link: See proposals
-      scheda4:
-        title: "Citizen participation"
-        description: "A reflection on the rules for participating in DecidiTorino."
-        label: Legislation processes
-        link: See legislation process

@@ -12,16 +12,17 @@ it:
       personal: Dati personali
       phone_number_label: Telefono
       public_activity_label: Rendi pubblica la mia lista di attività
-      public_interests_label: Rendi pubblici i miei interessi
-      public_interests_my_title_list: Lista degli interessi (etichette degli elementi che segui)
-      public_interests_user_title_list: Lista degli interessi (etichette degli elementi seguiti da questo utente)
-      public_interests_my_empty_list: Non stai seguendo nessun elemento.
-      public_interests_user_empty_list: Questo utente al momento non segue nessun elemento.
+      public_interests_label: Rendi pubblici i tags degli elementi che seguo
+      public_interests_my_title_list: Tags degli elementi che segui
+      public_interests_user_title_list: Tags degli elementi seguiti da questo utente
       save_changes_submit: Salva modifiche
       subscription_to_website_newsletter_label: Ricevi email con informazioni interessanti circa il sito
       email_on_direct_message_label: Ricevi email con messaggi privati
       email_digest_label: Ricevi un riepilogo delle notifiche sulle proposte
       official_position_badge_label: Mostra etichetta del tipo di utente
+      recommendations: Suggerimenti
+      show_debates_recommendations: "Mostra suggerimenti nell'elenco dei dibattiti"
+      show_proposals_recommendations: "Mostra suggerimenti nell'elenco delle proposte"
       title: Il mio account
       user_permission_debates: Partecipare ai dibattiti
       user_permission_info: Con il tuo account puoi già...
@@ -112,6 +113,10 @@ it:
       recommendations:
         without_results: Non esistono dibattiti relazionati con i tuoi interessi
         without_interests: Segui le proposte per ricevere suggerimenti
+        disable: "Se si nascondono i suggerimenti per i dibattiti, non saranno più mostrati. È possibile attivarli nuovamente dalla pagina 'Il mio account'"
+        actions:
+          success: "I suggerimenti dei dibattiti sono stati disattivati"
+          error: "Si è verificato un errore. Per cortesia vai alla pagina 'Il mio account' per disattivare manualmente i suggerimenti"
       search_form:
         button: Cerca
         placeholder: Ricerca dibattiti...
@@ -131,9 +136,6 @@ it:
         description: "Crea un tema sul quale dibattere su qualsiasi argomento che intendi condividere con gli altri abitanti della tua città."
         help_text_1: "Per creare un dibattito è necessario registrarsi su DecidiTorino"
         help_text_2: "I dibattiti possono essere valutati utilizzando i pulsanti Sono d'accordo o Non sono d'accordo che si trovano accanto a ciascuno di essi. Puoi anche valutare i commenti che sono già stati proposti."
-        help_text_3: "Vi ricordiamo che l'area dibattiti è una zona di libera discussione tra utenti. Per formulare proposte di cui la Città si impegna a valutare tecnicamente la fattibilità, anche in termini di risorse, sarà prossimanente attiva, non appena approvate le regole di partecipazione, la sezione proposte dove potranno essere formulate idee e progetti da commentare ed appoggiare."
-        proposals_link: proposta
-        budget_link: bilanci partecipativi
     new:
       form:
         submit_button: Inizia un dibattito
@@ -173,12 +175,13 @@ it:
     direct_message: il messaggio privato
     error: errore
     errors: errori
-    not_saved: ' - impossibile salvare %{resource}:'
+    not_saved_html: "hanno impedito di salvare %{resource}. <br>Si prega, per cortesia, di controllare i campi segnalati per sapere come correggerli:"
     policy: Politica della privacy
     proposal: la proposta
     proposal_notification: "la notifica"
     spending_proposal: la proposta di spesa
-    budget/investment: la proposta di investimento
+    budget/investment: il progetto di spesa
+    budget/heading: la voce di bilancio
     poll/shift: il turno
     poll/question/answer: la risposta
     user: "l'account"
@@ -200,21 +203,15 @@ it:
       accessibility: Accessibilità
       conditions: "Condizioni d'uso"
       consul: Consul versione italiana
-      consul_url: 'https://github.com/csipiemonte/consul'
+      consul_url: https://github.com/csipiemonte/consul
       contact_us: Per ottenere assistenza tecnica entra in
       copyright: Consul, %{year}
       description: Questo portale utilizza il %{open_source} %{consul} ed è stato realizzato con fondi PON METRO.
-      faq: Assistenza tecnica
-      open_data_text: Tutti i dati del Comune sono tuoi.
-      open_data_title: Dati Aperti
       open_source: software libero
-      open_source_url: 'http://www.gnu.org/licenses/agpl-3.0.html'
+      open_source_url: http://www.gnu.org/licenses/agpl-3.0.html
       participation_text: Decidi come deve essere la città che ami.
       participation_title: Partecipazione
       privacy: Tutela della privacy e cookie
-      transparency_text: Ottieni tutte le informazioni sulla città.
-      transparency_title: Trasparenza
-      transparency_url: 'https://transparency.consul'
     header:
       administration_menu: Admin
       administration: Amministrazione
@@ -222,32 +219,27 @@ it:
       collaborative_legislation: Progetti
       debates: Dibattiti
       external_link_blog: Blog
-      external_link_opendata: Dati aperti
-      external_link_opendata_url: 'https://opendata.consul'
-      external_link_transparency: Trasparenza
-      external_link_transparency_url: 'https://transparency.consul'
       locale: 'Lingua:'
       logo: DecidiTorino logo
       management: Gestire
       moderation: Moderare
       valuation: Valutare
       officing: Presidenti di seggio
-      more_info: Più informazioni
+      help: Più informazioni
       my_account_link: Il mio account
       my_activity_link: Le mie attività
-      notifications: Notifiche
-      new_notifications:
-        one: Hai una nuova notifica
-        other: Hai %{count} nuove notifiche
-      no_notifications: 'Non hai nuove notifiche'
       open: aperto
-      open_city_slogan_html: Esistono città governate direttamente dai suoi abitanti, che <strong>dibattono</strong> di temi verso cui nutrono preoccupazione, <strong>propongono</strong> idee per migliorare le loro vite e <strong>decidono</strong> fra tutte e tutti quelle da realizzare.
-      open_city_title: La città che ami sarà la città che vuoi.
       open_gov: Governo %{open}
       proposals: Proposte
       poll_questions: Votazioni
       budgets: Bilanci partecipativi
       spending_proposals: Proposte di investimento
+      notification_item:
+        new_notifications:
+          one: Hai una nuova notifica
+          other: Hai %{count} nuove notifiche
+        notifications: Notifiche
+        no_notifications: 'Non hai nuove notifiche'
     admin:
       watch_form_message: 'Hai eseguito modifiche che non sono state salvate. Confermi che vuoi abbandonare la pagina?'
   legacy_legislation:
@@ -260,18 +252,25 @@ it:
   locale: Italiano
   notifications:
     index:
-      comments_on:
-        one: "C'è un nuovo commento in"
-        other: Ci sono %{count} commenti nuovi in
       empty_notifications: Non hai nuove notifiche.
       mark_all_as_read: Segna tutte come lette
-      proposal_notification:
-        one: "C'è un nuovo notifica in"
-        other: Ci sono %{count} nuove notifiche in
-      replies_to:
-        one: "C'è una nuova risposta ad un tuo commento in"
-        other: Ci sono %{count} nuove risposte ad un tuo commento in
+      read: Lette
       title: Notifiche
+      unread: Nuove
+    notification:
+      action:
+        comments_on:
+          one: "C'è un nuovo commento in"
+          other: Ci sono %{count} commenti nuovi in
+        proposal_notification:
+          one: "C'è una nuova notifica in"
+          other: Ci sono %{count} nuove notifiche in
+        replies_to:
+          one: "C'è una nuova risposta ad un tuo commento in"
+          other: Ci sono %{count} nuove risposte ad un tuo commento in
+      mark_as_read: Segna come letta
+      mark_as_unread: Segna come non letta
+      notifiable_hidden: "Questo elemento non è più disponibile."
   map:
     title: "Circoscrizioni"
     proposal_for_district: "Crea una proposta per la tua circoscrizione"
@@ -339,6 +338,7 @@ it:
       map_location: "Localizzazione nella mappa"
       map_location_instructions: "Naviga sulla mappa fino al punto scelto e metti il marcatore."
       map_remove_marker: "Elimina il marcatore"
+      map_skip_checkbox: "Questa proposta non ha una localizzazione concreta oppure non ne sono a conoscenza."
     index:
       featured_proposals: In evidenza
       filter_topic:
@@ -355,6 +355,10 @@ it:
       recommendations:
         without_results: Non esistono proposte relazionate con i tuoi interessi
         without_interests: Segui le proposte così possiamo darti qualche suggerimento
+        disable: "Se si nascondono i suggerimenti per le proposte, non saranno più mostrati. È possibile attivarli nuovamente dalla pagina 'Il mio account'"
+        actions:
+          success: "I suggerimenti delle proposte sono stati disattivati"
+          error: "Si è verificato un errore. Per cortesia vai alla pagina 'Il mio account' per disattivare manualmente i suggerimenti"
       retired_proposals: Proposte ritirate
       retired_proposals_link: "Proposte ritirate dagli autori"
       retired_links:
@@ -384,15 +388,6 @@ it:
       section_footer:
         title: Aiuto sulle proposte
         description: "Proponi ciò che vorresti che la Città realizzasse e appoggia le proposte degli altri utenti."
-        help_text_1: "Per creare le proposte è necessario %{link}"
-        help_text_1_link: "registrarsi su %{org_name}"
-        help_text_2: "Per appoggiare le proposte, occorre che il proprio account sia stato certificato (ovvero che si risulti residenti a Torino e con età superiore a 16 anni)."
-        help_text_3: "Per certificare il proprio account, in modo automatico, basta essere utenti registrati e scegliere l'opzione presente nella pagina %{link}"
-        help_text_3_link: "Il mio account"
-        help_text_4: "È necessario indicare il proprio codice fiscale, la data di nascita ed il CAP di residenza. Occorrerà inoltre fornire il numero di cellulare per ottenere l'SMS con il codice di conferma."
-        help_text_5: "Le proposte che raggiungono l'appoggio di 5.000 utenti passeranno ad una valutazione tecnica dell'Amministrazione per la fattibilità. Di questa valutazione verrà dato esito pubblico."
-        help_text_6: "Ulteriori informazioni sulle proposte e sulle modalità di registrazione sono disponibili nella %{link}"
-        help_text_6_link: "pagina delle FAQ"
     new:
       form:
         submit_button: Crea proposta
@@ -431,8 +426,7 @@ it:
       supports_necessary: "%{number} appoggi necessari per presa in carico"
       total_percent: 100%
       archived: "Questa proposta è stata archiviata e non può più essere sostenuta."
-      successful: "Questa proposta ha ottenuto gli appoggi necessari e andrà alla %{voting}."
-      voting: "prossima votazione"
+      successful: "Questa proposta ha ottenuto gli appoggi necessari."
     show:
       author_deleted: Utente eliminato
       code: 'Codice della proposta:'
@@ -482,9 +476,8 @@ it:
         help: Aiuto sulle votazioni
       section_footer:
         title: Aiuto sulle votazioni
-        description: Registrati per poter votare le proposte cittadine e le questioni per le quali il Consiglio Comunale interpella la cittadinanza. Decidi direttamente.
-        help_text_1: "Le votazioni si convocano quando una proposta cittadina raggiunge l'1% di appoggi da parte dei residenti con diritto di voto. Nelle votazioni si possono includere anche questioni che il Consiglio Comunale sottopone alla decisione diretta della cittadinanza."
-        help_text_2: "Per partecipare alla prossima votazione è necessario registrarsi su %{org} e verificare il proprio account. Possono votare tutte le persone residenti in città di età maggiore di 16 anni. I risultati di tutte le votazioni saranno vincolanti per il Comune."
+        description: Le votazioni sono un meccanismo di partecipazione mediante il quale i cittadini con diritto di voto possono prendere decisioni direttamente.
+      no_polls: "Non sono presenti votazioni aperte."
     show:
       already_voted_in_booth: "Hai già partecipato a questa votazione presso le urne di un seggio, non è possibile votare di nuovo."
       already_voted_in_web: "Hai già partecipato a questa votazione. Se voti nuovamente, il risultato precedente sarà sovrascritto."
@@ -504,7 +497,6 @@ it:
       zoom_plus: Zoom immagine
       read_more: "Leggi di più su %{answer}"
       read_less: "Leggi di meno su %{answer}"
-      participate_in_other_polls: Partecipa ad altre votazioni
       videos: "Video esterno"
       info_menu: "Informazione"
       stats_menu: "Statistiche sulla partecipazione"
@@ -572,13 +564,14 @@ it:
     collective: Collettivo
     flag: Segnala come inadeguato
     follow: "Segui"
+    following: "Seguendo"
     follow_entity: "Segui %{entity}"
     followable:
       budget_investment:
         create:
-          notice_html: "Adesso stai seguendo questo progetto di investimento! </br> Ti saranno notificate le modifiche man mano che si realizzano per tenerti aggiornato."
+          notice_html: "Adesso stai seguendo questo progetto di spesa! </br> Ti saranno notificate le modifiche man mano che si realizzano per tenerti aggiornato."
         destroy:
-          notice_html: "Hai smesso di seguire questo progetto di investimento! </br> Non riceverai più le notifiche relazionate con questo progetto."
+          notice_html: "Hai smesso di seguire questo progetto di spesa! </br> Non riceverai più le notifiche relazionate con questo progetto."
       proposal:
         create:
           notice_html: "Adesso stai seguendo questa proposta cittadina! </br> Ti saranno notificate le modifiche man mano che si realizzano per tenerti aggiornato."
@@ -598,10 +591,10 @@ it:
         see_all: "Mostra tutti"
       budget_investment:
         found:
-          one: "Esiste una proposta di investimento con la parola '%{query}', puoi parteciparvi invece di aprirne una nuova."
-          other: "Esistono proposte di investimento con la parola '%{query}', puoi parteciparvi invece di aprirne una nuova."
-        message: "Visualizzata %{limit} di %{count} proposte di investimento che contengono la parola '%{query}'"
-        see_all: "Mostra tutte"
+          one: "Esiste un progetto di spesa con la parola '%{query}', puoi parteciparvi invece di crearne uno nuovo."
+          other: "Esistono progetti di spesa con la parola '%{query}', puoi parteciparvi invece di crearne uno nuovo."
+        message: "Visualizzati %{limit} di %{count} progetti di spesa che contengono la parola '%{query}'"
+        see_all: "Mostra tutti"
       proposal:
         found:
           one: "Esiste una proposta con la parola '%{query}', puoi parteciparvi invece di aprirne una nuova."
@@ -616,7 +609,6 @@ it:
     target_blank_html: " (si apre in una nuova finestra)"
     you_are_in: "Ti trovi in"
     unflag: Annulla denuncia
-    unfollow: "Smetti di seguire"
     unfollow_entity: "Smetti di seguire %{entity}"
     outline:
       budget: Bilanci partecipativi
@@ -626,6 +618,15 @@ it:
     orbit:
       previous_slide: Immagine precedente
       next_slide: Immagine seguente
+    documentation: Documentazione aggiuntiva
+    view_mode:
+      title: Modalità di visualizzazione
+      cards: Anteprima
+      list: Lista
+    recommended_index:
+        title: Suggerimenti
+        see_more: Mostra più suggerimenti
+        hide: Nascondi suggerimenti
   social:
     blog: "Blog di %{org}"
     facebook: "Facebook di %{org}"
@@ -717,7 +718,7 @@ it:
       deleted: Eliminato
       deleted_debate: Questo dibattito è stato eliminato
       deleted_proposal: Questa proposta è stata eliminata
-      deleted_budget_investment: Questa proposta di investimento è stata eliminata
+      deleted_budget_investment: Questo progetto di spesa è stato eliminato
       proposals: Proposte
       debates: Dibattiti
       budget_investments: Progetti dei bilanci partecipativi
@@ -743,6 +744,7 @@ it:
       no_private_messages: "Questo utente non accetta messaggi privati."
       private_activity: Questo utente ha deciso di non pubblicare la lista delle sue attività.
       send_private_message: "Invia un messaggio privato"
+      delete_alert: "Confermi l'eliminazione del progetto di spesa? Questa azione non potrà essere annullata"
     proposals:
       send_notification: "Invia notifica"
       retire: "Ritira"
@@ -768,26 +770,29 @@ it:
       not_voting_allowed: Il periodo di votazione è concluso.
     budget_investments:
       not_logged_in: È necessario %{signin} o %{signup} per proseguire.
-      not_verified: Le proposte di investimento possono essere sostenute solamente da utenti verificati, %{verify_account}.
+      not_verified: I progetti di spesa possono essere sostenuti solamente da utenti certificati, %{verify_account}.
       organization: Le organizzazioni non possono votare.
       unfeasible: Non si possono votare le proposte non realizzabili.
       not_voting_allowed: Il periodo di votazione è concluso.
-      different_heading_assigned: È possibile appoggiare le proposte solamente in una circoscrizione
+      different_heading_assigned:
+        one: "È possibile appoggiare i progetti di spesa solamente di %{count} circoscrizione"
+        other: "È possibile appoggiare i progetti di spesa solamente di %{count} circoscrizioni"
   welcome:
-    debates:
-      description: Incontrarci, dibattere e condividere ciò che ci sembra importante nella nostra città.
-      title: Dibatti
-    decide:
-      description: La cittadinanza decide se accettare o rifiutare le proposte più sostenute.
-      title: Decidi
-    do:
-      description: Se la proposta è accettata dalla maggioranza, il Comune la assume come propria e la mette in pratica.
-      title: Si fa
-    proposal:
-      description: Spazio aperto per le proposte cittadine a proposito del tipo di città nella quale vogliamo vivere.
-      title: Proponi
+    feed:
+      most_active:
+        debates: "Dibattiti più attivi"
+        proposals: "Proposte più attive"
+        processes: "Progetti aperti"
+      see_all_debates: Mostra tutti i dibattiti
+      see_all_proposals: Mostra tutte le proposte
+      see_all_processes: Mostra tutti i progetti
+      process_label: Progetto
+      see_process: Mostra progetto
+    cards:
+      title: In primo piano
     recommended:
       title: Argomenti che ti potrebbero interessare
+      help: "Questi suggerimenti sono generati dai tags dei dibattiti e delle proposte che stai seguendo."
       debates:
         title: Dibattiti consigliati
         btn_text_link: Tutti i dibattiti consigliati
@@ -796,6 +801,7 @@ it:
         btn_text_link: Tutte le proposte consigliate
       budget_investments:
         title: Bilanci consigliati
+      slide: "Mostra %{title}"
     verification:
       i_dont_have_an_account: Non dispongo di un account, voglio crearne uno e poi verificarlo
       i_have_an_account: Ho già un account che voglio verificare
@@ -815,3 +821,30 @@ it:
   invisible_captcha:
     sentence_for_humans: "Se non sei un robot, per favore ignora questo campo"
     timestamp_error_message: "Sei stato troppo rapido. Per favore, invia nuovamente i dati."
+  related_content:
+    title: "Contenuto relazionato"
+    add: "Aggiungere contenuto relazionato"
+    label: "Link al contenuto relazionato"
+    placeholder: "%{url}"
+    help: "È possibile introdurre qualunque link di %{models} che risieda in %{org}."
+    submit: "Aggiungi"
+    error: "Link non valido. Si ricorda che il link deve iniziare per %{url}."
+    error_itself: "Link non valido. Non è possibile relazionare un contenuto con se stesso."
+    success: "Hai aggiunto un nuovo contenuto relazionato"
+    is_related: "Si tratta di contenuto relazionato?"
+    score_positive: "Sì"
+    score_negative: "No"
+    content_title:
+      proposal: "Proposta"
+      debate: "Dibattito"
+      budget_investment: "Progetto di spesa"
+  admin/widget:
+    header:
+      title: Amministrazione
+  annotator:
+    help:
+      alt: Seleziona il testo che vuoi commentare e fai click sul fumetto con la matita.
+      text: Per commentare questo documento è necessario %{sign_in} o %{sign_up}. Poi seleziona il testo che vuoi commentare e fai click sul fumetto con la matita.
+      text_sign_in: iniziare una sessione
+      text_sign_up: registrarsi
+      title: "Come posso commentare questo documento?"

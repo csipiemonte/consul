@@ -3,50 +3,42 @@ it:
     census_terms: "Per confermare la tua utenza (account) devi avere almeno 16 anni ed essere registrato, dopo aver fornito le informazioni richieste in precedenza, che saranno verificate. Accettando il processo di verifica, acconsenti anche alla verifica di tali informazioni, ed autorizzi i metodi di contatto indicati. I dati forniti saranno acquisiti e memorizzati in un archivio, come menzionato in precedenza nei termini e nelle condizioni d'uso del portale."
     conditions: "Condizioni d'uso"
     general_terms: Termini e Condizioni
-    more_info:
-      title: "Scopri %{org_name}"
-      subtitle: "Impara tutto ciò che si può fare su questo sito."
-      guide: 'Questa guida spiega ogni sezione di %{org_name}. Per maggiori informazioni cliccare su "Informazioni dettagliate".'
+    help:
+      title: "Scopri %{org}"
+      guide: 'Questa guida spiega ogni sezione di %{org}. Per maggiori informazioni cliccare su "Informazioni dettagliate".'
       menu:
         debates: "Dibattiti"
         proposals: "Proposte"
         budgets: "Bilanci partecipativi"
+        polls: "Votazioni"
         other: "Altre informazioni di interesse"
         processes: "Progetti"
       debates:
         title: "Dibattiti"
-        description: "Crea un tema sul quale dibattere su qualsiasi argomento che intendi condividere con gli altri abitanti della tua città."
-        feature_1: "Per creare un dibattito è necessario %{link}"
-        feature_1_link: "registrarsi su %{org_name}"
-        feature_2_html: "I dibattiti possono essere valutati utilizzando i pulsanti <strong>Sono d'accordo</strong> o <strong>Non sono d'accordo</strong> che si trovano accanto a ciascuno di essi."
+        description: "En la sección de %{link} puedes exponer y compartir tu opinión con otras personas sobre temas que te preocupan relacionados con la ciudad. También es un espacio donde generar ideas que a través de las otras secciones de %{org} lleven a actuaciones concretas por parte del Ayuntamiento."
+        link: "dibattiti cittadini"
+        feature_html: "Puedes abrir debates, comentarlos y valorarlos con los botones de <strong>Estoy de acuerdo</strong> o <strong>No estoy de acuerdo</strong>. Para ello tienes que %{link}."
+        feature_link: "registrarte en %{org}"
         image_alt: "Pulsanti per la valutazione dei dibattiti"
         figcaption: "Pulsanti 'Sono d'accordo' e 'Non sono d'accordo' per la valutazione dei dibattiti."
       proposals:
         title: "Proposte"
-        description: "Proponi ciò che vorresti che la Città realizzasse e appoggia le proposte degli altri utenti."
-        feature_1: "Per creare le proposte è necessario %{link1}, invece per appoggiarle bisogna aver certificato il proprio account (vedi la %{link2})."
-        feature_1_link: "registrarsi su %{org_name}"
-        feature_2_html: "ref. custom"
-        feature_3_html: "ref. custom"
+        description: "En la sección de %{link} puedes plantear propuestas para que el Ayuntamiento las lleve a cabo. Las propuestas recaban apoyos, y si alcanzan los apoyos suficientes se someten a votación ciudadana. Las propuestas aprobadas en estas votaciones ciudadanas son asumidas por el Ayuntamiento y se llevan a cabo."
+        link: "propuestas ciudadanas"
         image_alt: "Pulsante per appoggiare una proposta"
-        figcaption_html: 'Pulsante per "Appoggiare" una proposta.<br>Quando raggiunge il numero di appoggi necessari passerà a votazione.'
+        figcaption_html: 'Pulsante per "Appoggiare" una proposta.'
       budgets:
         title: "Bilanci partecipativi"
-        description: "Nei primi sei mesi di ogni anno puoi decidere come spendere parte del bilancio."
-        feature_1: "Per presentare un progetto di spesa è necesario %{link} e verificare il proprio account."
-        feature_1_link: "registrarsi su %{org_name}"
-        feature_2_html: "In primo luogo inizia la <strong>fase di accettazione</strong> dei progetti di spesa."
-        feature_3_html: "Dopo segue una <strong>fase di appoggi</strong> per dare priorità alle questioni più interessanti, i bilanci più appoggiati saranno valutati dal Consiglio Comunale che ne verificherà la fattibilità ed il costo."
-        feature_4_html: "In ultimo c'è una <strong>fase di votazione</strong> nella quale si decide in quale progetto investire questa parte del blancio."
+        description: "La sezione dei %{link} serve a far sì che la gente possa decidere, in maniera diretta, a cosa destinare una parte del bilancio municipale."
+        link: "bilanci partecipativi"
         image_alt: "Diverse fasi di un bilancio partecipativo"
         figcaption_html: 'Fase degli appoggi e fase della votazione dei bilanci partecipativi.'
       polls:
         title: "Votazioni"
-        description: "Le proposte cittadine che raggiungono l'1% di appoggi saranno sottoposte a votazione."
-        feature_1: "Per partecipare alla prossima votazione è necessario %{link} e verificare il proprio account."
+        description: "La sezione delle %{link} si attiva ogni volta che una proposta raggiunge 5.000 appoggi e passa a votazione, o quando l'Amministrazione Comunale chiede alla cittadinanza di decidere a proposito di un certo tema."
+        link: "votazioni cittadine"
+        feature_1: "Per partecipare alle votazioni è necessario %{link} e certificare la propria utenza."
         feature_1_link: "registrarsi su %{org_name}"
-        feature_2: "Possono votare gli utenti registrati di età maggiore di 16 anni."
-        feature_3: "I risultati di tutti le votazioni saranno vincolanti per l'Amministrazione Comunale."
       processes:
         title: "Progetti"
         description: "Nella sezione %{link} è possibile partecipare all'elaborazione di progetti di interesse della città e su cui l'Amministrazione sta svolgendo studi per la loro realizzazione: la consultazione pertanto consente a tutti di esprimere le proprie opinioni e contribuire con le proprie idee e riflessioni sui progetti illustrati."
@@ -68,9 +60,9 @@ it:
       how_to_use:
         text: |-
           Utilizzalo nella tua città o aiutaci a migliorarlo, è software libero.
-          
+
           Questo portale di Governo Aperto usa il software libero [CONSUL](https://github.com/consul/consul 'github consul'), con [licenza AGPLv3](http://www.gnu.org/licenses/agpl-3.0.html 'AGPLv3 gnu' ), in poche parole significa che qualsiasi persona può liberamente usare il codice, copiarlo, vederlo nel dettaglio, modificarlo, e ridistribuirlo con le modifiche che desidera, a condizione che altri possano fare la medesima cosa. Tutto questo perché crediamo che la cultura, quando è libera, è migliore e si arrichisce di continuo.
-          
+
           Se sei un programmatore, puoi prendere visione del codice e aiutarci a migliorare il [portale CONSUL](https://github.com/consul/consul 'github consul').
       titles:
         how_to_use: Utilizzalo nella tua città
@@ -78,7 +70,7 @@ it:
     titles:
       accessibility: Accesibilità
       conditions: "Condizioni d'uso"
-      more_info: "Scopri %{org_name}"
+      help: "Scopri %{org}"
       privacy: Politica della Privacy
     verify:
       code: Codice che hai ricevuto nella lettera

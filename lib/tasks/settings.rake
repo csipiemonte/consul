@@ -8,6 +8,18 @@ namespace :settings do
     per_page_code_setting.destroy if per_page_code_setting.present?
   end
 
+  desc "Create new Attached Documents feature setting"
+  task create_attached_documents_setting: :environment do
+    Setting['feature.allow_attached_documents'] = true
+  end
+
+  desc "Enable recommendations settings"
+  task enable_recommendations: :environment do
+    Setting['feature.user.recommendations'] = true
+    Setting['feature.user.recommendations_on_debates'] = true
+    Setting['feature.user.recommendations_on_proposals'] = true
+  end
+
   desc "Adds/Updates Setting key - value"
   task add_upd_key_value: :environment do
 
@@ -22,6 +34,7 @@ namespace :settings do
     if answer == 'Y'
       # your code here
       setting = Setting.where(key: input_key).first
+      input_value = nil if input_value.empty?
       if setting
         setting.update(value: input_value)
         puts 'Setting updated successfuly'

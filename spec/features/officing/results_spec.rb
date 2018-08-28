@@ -3,6 +3,7 @@ require 'rails_helper'
 feature 'Officing Results' do
 
   background do
+    travel_to Time.now # TODO: use `freeze_time` after migrating to Rails 5.
     @poll_officer = create(:poll_officer)
     @officer_assignment = create(:poll_officer_assignment, :final, officer: @poll_officer)
     @poll = @officer_assignment.booth_assignment.poll
@@ -15,6 +16,10 @@ feature 'Officing Results' do
     create(:poll_question_answer, title: 'Tomorrow', question: @question_2)
 
     login_as(@poll_officer.user)
+  end
+
+  after do
+    travel_back
   end
 
   scenario 'Only polls where user is officer for results are accessible' do
@@ -34,9 +39,9 @@ feature 'Officing Results' do
       click_link 'Total recounts and results'
     end
 
-    expect(page).to_not have_content(not_allowed_poll_1.name)
-    expect(page).to_not have_content(not_allowed_poll_2.name)
-    expect(page).to_not have_content(not_allowed_poll_3.name)
+    expect(page).not_to have_content(not_allowed_poll_1.name)
+    expect(page).not_to have_content(not_allowed_poll_2.name)
+    expect(page).not_to have_content(not_allowed_poll_3.name)
     expect(page).to have_content(@poll.name)
 
     visit new_officing_poll_result_path(not_allowed_poll_1)
@@ -55,7 +60,7 @@ feature 'Officing Results' do
       click_link 'Add results'
     end
 
-    expect(page).to_not have_content('Your results')
+    expect(page).not_to have_content('Your results')
 
     booth_name = @officer_assignment.booth_assignment.booth.name
     select booth_name, from: 'officer_assignment_id'
@@ -113,7 +118,7 @@ feature 'Officing Results' do
       click_link "See results"
     end
 
-    expect(page).to_not have_content('7777')
+    expect(page).not_to have_content('7777')
     within("#white_results") { expect(page).to have_content('6') }
     within("#null_results")  { expect(page).to have_content('7') }
     within("#total_results") { expect(page).to have_content('8') }

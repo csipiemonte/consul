@@ -16,7 +16,7 @@ it:
       confirmation_instructions:
         confirm_link: Conferma account
         text: "È possibile confermare il tuo account di posta elettronica attraverso il seguente link:"
-        title: Benvenuti nel portale di Open Government
+        title: Benvenuto/a
         welcome: Benvenuto/a
       reset_password_instructions:
         change_link: Cambiare password
@@ -33,9 +33,9 @@ it:
         unlock_link: Sbloccare la mia utenza
     menu:
       login_items:
-        login: Accedere
-        logout: Scollegarsi
-        signup: Registrarsi
+        login: Accedi
+        logout: Scollegati
+        signup: Registrati
     organizations:
       registrations:
         new:
@@ -46,8 +46,8 @@ it:
           phone_number_label: Numero Telefono
           responsible_name_label: Nome e cognome della persona responsabile del collettivo
           responsible_name_note: "Sarà la persona che rappresenta l'associazione/collettivo in noe della quale sono presentate le proposte"
-          submit: Registrarsi
-          title: Registrarsi come organizzazione / collettivo
+          submit: Registrati
+          title: Registrati come organizzazione / collettivo
         success:
           back_to_index: "Ho capito, torna alla pagina principale"
           instructions_1_html: "Tra breve <b>ti contatteremo</b> per verificare che rappresenti realmente questo collettivo."
@@ -70,11 +70,11 @@ it:
         login_label: Email o nome utente
         password_label: Password che userai per accedere a questo sito web
         remember_me: Ricordami
-        submit: Login
-        title: Login
+        submit: Accedi
+        title: Accedi
     shared:
       links:
-        login: Login
+        login: Accedi
         new_confirmation: "Non hai ricevuto le istruzioni per confermare l'account?"
         new_password: 'Hai dimenticato la password?'
         new_unlock: 'Non hai ricevuto le istruzioni per eseguire lo sblocco?'
@@ -112,7 +112,7 @@ it:
           password_confirmation_label: Ripeti la password
           password_label: Password (minimo 8 caratteri)
           redeemable_code: Codice di verifica (nel caso si abbia ricevuto il codice per lettera)
-          submit: Registrarsi
+          submit: Registrati
           terms: Registrandoti accetti le %{terms}
           terms_link: condizioni di uso
           terms_title: Registrandoti accetti le condizioni di uso

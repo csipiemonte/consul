@@ -1,59 +1,123 @@
 it:
   settings:
     comments_body_max_length: "Lunghezza massima dei commenti"
+    comments_body_max_length_description: "In numero di caratteri"
     direct_message_max_per_day: "Numero massimo di messaggi giornalieri"
     official_level_1_name: "Funzionario pubblico di livello 1"
+    official_level_1_name_description: "Etichetta che apparirà sugli utenti contrassegnati come funzionari pubblici di livello 1"
     official_level_2_name: "Funzionario pubblico di livello 2"
+    official_level_2_name_description: "Etichetta che apparirà sugli utenti contrassegnati come funzionari pubblici di livello 2"
     official_level_3_name: "Funzionario pubblico di livello 3"
+    official_level_3_name_description: "Etichetta che apparirà sugli utenti contrassegnati come funzionari pubblici di livello 3"
     official_level_4_name: "Funzionario pubblico di livello 4"
+    official_level_4_name_description: "Etichetta che apparirà sugli utenti contrassegnati come funzionari pubblici di livello 4"
     official_level_5_name: "Funzionario pubblico di livello 5"
+    official_level_5_name_description: "Etichetta che apparirà sugli utenti contrassegnati come funzionari pubblici di livello 5"
     max_ratio_anon_votes_on_debates: "Percentuale massima di voti anonimi per ogni dibattito"
-    max_votes_for_proposal_edit: "Numero di voti necessari per non poter più modificare una proposta"
+    max_ratio_anon_votes_on_debates_description: "Si considerano voti anonimi quelli dati da utenti registrati con un account non ancora certificato"
+    max_votes_for_proposal_edit: "Numero di appoggi ricevuti i quali una proposta non è più modificabile"
+    max_votes_for_proposal_edit_description: "A partire da questo numero di appoggi l'autore di una proposta non potrà più modificarla"
     max_votes_for_debate_edit: "Numero di voti necessari per non poter più modificare un dibattito"
+    max_votes_for_debate_edit_description: "A partire da questo numero di voti l'autore di un dibattito non potrà più modificarlo"
     proposal_code_prefix: "Prefisso per i codici delle proposta"
+    proposal_code_prefix_description: "Questo prefisso apparirà nelle proposte prima della data di creazione e del suo ID"
     proposal_notification_minimum_interval_in_days: "Intervallo minimo in giorni per la notifica di una proposta"
-    votes_for_proposal_success: "Numero di voti necessari per approvare una proposta"
+    votes_for_proposal_success: "Numero di appoggi necessari per approvare una proposta"
+    votes_for_proposal_success_description: "Quando una proposta raggiunge questo numero di appoggi non ne potrà ricevere altri, perché tale proposta è considerata di successo"
     months_to_archive_proposals: "Mesi per archiviare le proposte"
+    months_to_archive_proposals_description: "Trascorsi questo numero di mesi le proposte sono archiviate e non potranno più ricevere appoggi"
     email_domain_for_officials: "Dominio di posta elettronica per funzionari pubblici"
+    email_domain_for_officials_description: "Tutti gli utenti che si registrano con un indirizzo di posta elettronica appartenente a tale dominio avranno, in automatico, certificato il proprio account"
     per_page_code_head: "Codice da inserire in ogni pagina (<head>)"
+    per_page_code_head_description: "Il codice indicato apparirà nel tag <head>. Questa funzionalità è utile per inserire scripts personalizzati, analitycs..."
     per_page_code_body: "Codice da inserire in ogni pagina (<body>)"
+    per_page_code_body_description: "Il codice indicato apparirà nel tag <body>. Questa funzionalità è utile per inserire scripts personalizados, analitycs..."
     twitter_handle: "Utente Twitter"
+    twitter_handle_description: "Se specificato, apparirà a piè di pagina"
     twitter_hashtag: "Hashtag per Twitter"
+    twitter_hashtag_description: "Hashtag che sarà riportato nelle condivisioni via Twitter"
     facebook_handle: "Utente Facebook"
+    facebook_handle_description: "Se specificato, apparirà a piè di pagina"
     youtube_handle: "Utente Youtube"
+    youtube_handle_description: "Se specificato, apparirà a piè di pagina"
     telegram_handle: "Utente Telegram"
+    telegram_handle_description: "Se specificato, apparirà a piè di pagina"
     instagram_handle: "Utente Instagram"
+    instagram_handle_description: "Se specificato, apparirà a piè di pagina"
+    url: "URL principale"
+    url_description: "URL principale del sito web"
+    org_name: "Nome dell'organizzazione"
+    org_name_description: "Nome dell'organizzazione a cui fa riferimento il sito web"
+    place_name: "Luogo"
+    place_name_description: "Nome della tua città"
+    related_content_score_threshold: Soglia del punteggio del contenuto relazionato
+    related_content_score_threshold_description: Nascondi il contenuto che gli utenti segnano come non relazionato
+    map_latitude: "Latitudine"
+    map_latitude_description: "Latitudine della posizione mostrata sulla mappa"
+    map_longitude: "Longitudine"
+    map_longitude_description: "Longitudine della posizione mostrata sulla mappa"
+    map_zoom: "Zoom"
+    map_zoom_description: "Zoom della posizione mostrata sulla mappa"
+    mailer_from_name: "Nominativo del mittente"
+    mailer_from_name_description: "È il nome che apparirà nelle email inviate dall'applicazione"
+    mailer_from_address: "Email del mittente"
+    mailer_from_address_description: "È l'indirizzo di posta elettronica che sarà contenuto nelle email inviate dall'applicazione"
+    meta_title: "Titolo del sito"
+    meta_title_description: "Titolo del sito, impiegato per migliorare la Search Engine Optimization"
+    meta_description: "Descrizione del sito"
+    meta_description_description: 'Descrizione del sito <meta name="description">, impiegata per migliorare la Search Engine Optimization'
+    meta_keywords: "Parole chiave"
+    meta_keywords_description: 'Parole chiave <meta name="keywords">, impiegate per migliorare la Search Engine Optimization'
+    min_age_to_participate: "Età minima necessaria per partecipare"
+    min_age_to_participate_description: "Gli utenti che hanno compiuto l'età indicata potranno partecipare a tutti i processi"
+    analytics_url: "URL per le statistiche esterne"
     blog_url: "URL del Blog"
     transparency_url: "URL per la trasparenza"
     opendata_url: "URL per Open Data"
-    url: "URL principale"
-    org_name: "Nome dell'organizzazione"
-    place_name: "Luogo"
-    feature:
-      budgets: Bilanci partecipativi
-      twitter_login: Accesso con Twitter
-      facebook_login: Accesso con Facebook
-      google_login: Accesso con Google
-      debates: Dibattiti
-      polls: Votazioni
-      public_stats: Statistiche pubbliche
-      signature_sheets: Fogli delle firme
-      spending_proposals: Progetti di investimento
-      spending_proposal_features:
-        voting_allowed: Votazioni sui progetti di investimento
-      legislation: Legislazione
-      user:
-        recommendations: Suggerimenti
-      community: Communità per le proposte e per i progetti di investimento
-      map: Geolocalizzazione delle proposte e dei progetti di investimento
-    map_latitude: Latitudine
-    map_longitude: Longitudine
-    map_zoom: Zoom
-    mailer_from_name: Nominativo del mittente
-    mailer_from_address: Email del mittente
-    meta_title: "Titolo del sito (SEO)"
-    meta_description: "Descrizione del sito (SEO)"
-    meta_keywords: "Parole chiave (SEO)"
-    verification_offices_url: URL degli uffici di verifica
-    min_age_to_participate: Età minima necessaria per partecipare
+    verification_offices_url: "URL degli uffici di verifica"
     proposal_improvement_path: Informazioni su come migliorare le proposte
+    feature:
+      budgets: "Bilanci partecipativi"
+      budgets_description: "Con i bilanci partecipativi la popolazione decide a quali progetti presentati dai cittadini e dalla cittadina va destinata una parte del bilancio municipale"
+      twitter_login: "Accesso con Twitter"
+      twitter_login_description: "Per consentire agli utenti di accedere con il proprio account di Twitter"
+      facebook_login: "Accesso con Facebook"
+      facebook_login_description: "Per consentire agli utenti di accedere con il proprio account di Facebook"
+      google_login: "Accesso con Google"
+      google_login_description: "Per consentire agli utenti di accedere con il proprio account di Google"
+      proposals: "Proposte"
+      proposals_description: "Le proposte dei cittadini sono un'opportunità per residenti e collettivi di decidere direttamente su questioni inerenti la città"
+      debates: "Dibattiti"
+      debates_description: "Lo spazio per i dibattiti dei cittadini è volto a permettere a chiunque di esporre le questioni che li riguardano e su cui vogliono condividere punti di vista con altre persone"
+      polls: "Votazioni"
+      polls_description: "Le votazioni sono un meccanismo di partecipazione mediante il quale i cittadini con diritto di voto possono prendere decisioni direttamente"
+      signature_sheets: "Fogli delle firme"
+      signature_sheets_description: "Permette di aggiungere, dal pannello di Amministrazione, le firme raccolte di persona a proposte e a progetti di spesa di bilanci partecipativi"
+      legislation: "Legislazione collaborativa"
+      legislation_description: "Nei progetti, ai cittadini viene offerta l'opportunità di partecipare all'elaborazione e alla modifica dei regolamenti che riguardano la città e di esprimere la propria opinione su determinate azioni che si prevede di svolgere."
+      spending_proposals: "Proposte di investimento"
+      spending_proposals_description: "⚠️ NOTA: Esta funcionalidad ha sido sustituida por Presupuestos Participativos y desaparecerá en nuevas versiones"
+      spending_proposal_features:
+        voting_allowed: "Votazioni sui progetti di investimento"
+        voting_allowed_description: "⚠️ NOTA: Esta funcionalidad ha sido sustituida por Pesupuestos Participativos y desaparecerá en nuevas versiones"
+      user:
+        recommendations: "Suggerimenti"
+        recommendations_description: "Nella homepage sono mostrati agli utenti i suggerimenti ricavati a partire dai tags associati agli elementi (proposte, etc) che stanno seguendo"
+        skip_verification: "Disabilita la certificazione degli utenti"
+        skip_verification_description: "Disabilita la certificazione degli utenti, di conseguenza tutti gli utenti registrati sul sito potranno partecipare a tutti i processi"
+        recommendations_on_debates: "Suggerimenti nei dibattiti"
+        recommendations_on_debates_description: "Nella pagina dei dibattiti, abilita la visualizzazione agli utenti dei suggerimenti ricavati a partire dai tags associati agli elementi (proposte, etc) che stanno seguendo"
+        recommendations_on_proposals: "Suggerimenti nelle proposte"
+        recommendations_on_proposals_description: "Nella pagina delle proposte, abilita la visualizzazione agli utenti dei suggerimenti ricavati a partire dai tags associati agli elementi (proposte, etc) che stanno seguendo"
+      community: "Communità nelle proposte e nei progetti di spesa"
+      community_description: "Attiva la sezione della comunità nelle proposte e nei progetti di spesa dei Bilanci partecipativi"
+      map: "Geolocalizzazione delle proposte e dei progetti di spesa"
+      map_description: "Attiva la geolocalizzazione delle proposte e dei progetti di spesa"
+      allow_images: "Caricamento e visualizzazione delle immagini"
+      allow_images_description: "Consente o meno agli utenti di caricare immagini durante la creazione di proposte e di progetti di spesa dei Bilanci partecipativi"
+      allow_attached_documents: "Creazione di documenti aggiuntivi"
+      allow_attached_documents_description: "Consente o meno agli utenti di allegare documenti durante la creazione di proposte e di progetti di spesa dei Bilanci partecipativi"
+      guides: "Guide per creare proposte o progetti di investimento"
+      guides_description: "Attiva una guida delle differenze fra le proposte e i progetti di spesa solo se è presente un bilancio partecipativo attivo"
+      public_stats: "Statistiche pubbliche"
+      public_stats_description: "Mostra le statistiche pubbliche nel pannello di Amministrazione"

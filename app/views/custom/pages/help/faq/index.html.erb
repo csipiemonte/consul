@@ -1,0 +1,152 @@
+<% content_for :canonical do %>
+  <%= render "shared/canonical", href: faq_url %>
+<% end %>
+
+<div class="row margin-top">
+  <div class="menu small-12 medium-3 column">
+    <%= back_link_to %>
+
+    <ul class="menu vertical margin-top">
+      <li><a href="#1"><strong>Non mi funziona la verifica di residenza</strong></a></li>
+      <li><a href="#2"><strong>Non riesco a creare la mia utenza</strong></a></li>
+      <li><a href="#3"><strong>Come mi registro a DecidiTorino?</strong></a></li>
+      <li><a href="#4"><strong>Come posso passare a utente certificato?</strong></a></li>
+      <li><a href="#5"><strong>Cosa posso fare senza essere registrato al portale?</strong></a></li>
+      <li><a href="#6"><strong>Cosa posso fare con la registrazione base?</strong></a></li>
+      <li><a href="#7"><strong>Cosa posso fare se sono utente certificato?</strong></a></li>
+      <li><a href="#8"><strong>Che differenza c'è tra dibattiti e proposte?</strong></a></li>
+      <li><a href="#9"><strong>Perché le proposte possono essere sostenute solo dai residenti a Torino?</strong></a></li>
+      <li><a href="#10"><strong>Non voglio iscrivermi con le mie credenziali dei social, posso?</strong></a></li>
+      <li><a href="#11"><strong>Cosa vuol dire registrarsi con le proprie credenziali social?</strong></a></li>
+      <li><a href="#12"><strong>A cosa servono i dibattiti?</strong></a></li>
+      <li><a href="#13"><strong>Come introduco una proposta?</strong></a></li>
+      <li><a href="#14"><strong>Come posso divulgare e far appoggiare la mia proposta?</strong></a></li>
+      <li><a href="#15"><strong>Perché devo far appoggiare la mia proposta?</strong></a></li>
+      <li><a href="#16"><strong>Oltre a commentare e appoggiare le proposte, sono disponibili altre funzionalità?</strong></a></li>
+      <li><a href="#17"><strong>Posso segnalare una proposta o un tema di discussione come inappropriato?</strong></a></li>
+      <li><a href="#18"><strong>Come partecipo alla sezione sui progetti della Città?</strong></a></li>
+      <li><a href="#19"><strong>C'è un atto comunale che parla di DecidiTorino?</strong></a></li>
+      <li><a href="#20"><strong>Dove si trova il software open source di DecidiTorino?</strong></a></li>
+      <li><a href="#21"><strong>Contatti</strong></a></li>
+    </ul>
+  </div>
+
+  <div class="text small-12 medium-9 column">
+    <h1 class="clear"><%= t("pages.help.faq.page.title") %></h1>
+    <p><%= t("pages.help.faq.page.description") %></p>
+
+    <h2 id="1">Non mi funziona la verifica di residenza</h2>
+    <p>La residenza in Torino è verificata, attivando la richiesta presente nel proprio profilo. La verifica avviene dopo aver introdotto il codice fiscale e il CAP di residenza. In alcuni casi può capitare che il codice fiscale introdotto non corrisponda a quello registrato in anagrafe, soprattutto quando si hanno doppi nomi o il codice è cambiato recentemente. In questi casi occorre segnalare l'occorrenza, fornendo, all'indirizzo email presente alla voce <a href="#21">Contatti</a> i propri dati identificativi presenti su DecidiTorino (nome utente) nonché data di nascita e codice inserito. Si verrà ricontattati una volta compresi i motivi del blocco e per chiarire come procedere.</p>
+
+    <h2 id="2">Non riesco a creare la mia utenza</h2>
+    <p>Nel caso non si riesca a creare correttamente la propria utenza, si prega di contattare, lasciando opportuni recapiti (email e/o telefono) all'indirizzo email presente alla voce <a href="#21">Contatti</a>.</p>
+
+    <h2 id="3">Come mi registro a DecidiTorino?</h2>
+    <p>Registrarsi è facile: basta accedere alla funzione <strong>Registrarsi</strong> nel menu di navigazione, verrà presentato un modulo che richiede di indicare un nome (o uno pseudonimo) che verrà riportato in tutti i tuoi interventi sul sito, una email e la password che scegli (ti verrà richiesto di inserirla 2 volte per sicurezza).</p>
+
+    <p>Alla email indicata viene inviato un messaggio che contiene un collegamento (link): basterà cliccare su quel link per confermare la propria identità. Nella pagina che viene visualizzata si troverà inoltre il link (un bottone verde che riporta la dicitura <strong>Certifica la mia utenza</strong>) utilizzabile da chi, essendo residente a Torino e maggiore di 16 anni, può passare a utente certificato (vedi la domanda successiva).</p>
+
+    <h2 id="4">Come posso passare a utente certificato?</h2>
+    <p>Se si è residenti a Torino e si hanno più di 16 anni, si può richiedere il passaggio ad utente certificato (per conoscere cosa può fare in più l'utente certificato, consultare la faq <a href="#7">Cosa posso fare se sono utente certificato?</a>).</p>
+
+    <p>Ciò può avvenire, al primo accesso, cliccando sul bottone <strong>Certifica la mia utenza</strong> o anche successivamente, selezionando nella prima pagina del portale, dopo aver effettuato l'accesso, <strong>Il mio account</strong> e poi <strong>Certifica la mia utenza</strong>.</p>
+
+    <p>Si dovranno quindi inserire il proprio codice fiscale, la data di nascita, il CAP ed un numero di cellulare. Se la verifica anagrafica conferma la residenza e l'età, viene inviato al numero di cellulare indicato un codice che dovrà essere inserito per confermare definitivamente l'iscrizione come utente certificato.</p>
+
+    <h2 id="5">Cosa posso fare senza essere registrato al portale?</h2>
+    <p>Si può consultare deciditorino.it senza essere registrati. Si potranno così leggere tutte le sezioni del sito, ma non si potrà intervenire e scrivere all'interno delle sezioni. Chi vuole intervenire con commenti o proposte dovrà pertanto registrarsi scegliendo una delle modalità disponibili.</p>
+
+    <h2 id="6">Cosa posso fare con la registrazione base?</h2>
+    <p>L'utente base può creare, commentare ed appoggiare i dibattiti e creare le proposte, partecipare nella sezione dei progetti dell'Amministrazione. Per appoggiare le proposte degli altri utenti, occorre essere utente certificato (vedi faq  <a href="#4">Come posso passare a utente certificato?</a>).</p>
+
+    <h2 id="7">Cosa posso fare se sono utente certificato?</h2>
+    <p>L'utente certificato, ovvero chi, attraverso l'apposita funzionalità presente nel portale (vedi faq <a href="#4">Come posso passare a utente certificato?</a>), ha dimostrato di essere residente a Torino e di avere più di 16 anni, può, oltre alle funzioni dell'utente base, appoggiare le proposte degli altri utenti.</p>
+
+    <h2 id="8">Che differenza c'è tra dibattiti e proposte?</h2>
+    <p>La sezione <strong>Dibattiti</strong>, aperta a tutti gli utenti registrati, è uno spazio di libera discussione su temi di interesse degli utenti. I dibattiti possono essere il luogo dove si raccolgono le prime idee per poter poi formulare, se lo si ritiene, una proposta articolata nella sezione dedicata.</p>
+
+    <p>La sezione <strong>Proposte</strong> consente di articolare un progetto utile (o un suggerimento, un'idea, una inziativa...) che viene sottoposto a tutti gli utenti che possono sostenere la proposta con il loro appoggio esplicito. Se la proposta raccoglie una soglia minima (vedi faq <a href="#15">Perché devo far appoggiare la mia proposta?</a>) la Città si impegna a verificarne la fattibilità e, se positiva, ad attuarla. Ogni anno vi sono 2 periodi nei quali possono essere presentate e valutate le proposte (dal 1/1 al 30/6 e dal 1/7 al 31/12).</p>
+
+    <h2 id="9">Perché le proposte possono essere sostenute solo dai residenti a Torino?</h2>
+    <p>Le proposte possono essere presentate da tutti gli utenti registrati. La valutazione è al momento riservata ai soli residenti. Non appena sarà possibile certificare anche l'utenza dei non residenti, attraverso ad esempio l'utenza SPID con certificazione della residenza/domicilio, la Città verificherà la possibilità di estendere tale funzionalità anche ai non residenti che comunque sono interessati a Torino (ad esempio perché vi lavorano o vi studiano).</p>
+
+    <h2 id="10">Non voglio iscrivermi con le mie credenziali dei social, posso?</h2>
+    <p>Certamente. L'accesso tramite le tue credenziali social è una delle possibilità presentate. Ci si può registrare semplicemente indicando una email alla quale verrà inviato un messaggio per confermare l'iscrizione.</p>
+
+    <h2 id="11">Cosa vuol dire registrarsi con le proprie credenziali social?</h2>
+    <p>Utilizzare le proprie credenziali social è uno dei possibili modi di iscriversi al portale. In questo caso si viene reindirizzati sul social prescelto dove si introducono le proprie credenziali, il social verifica la correttezza e comunica a DecidiTorino che l'utente ha inserito l'esatta combinazione utente/password ed è stato pertanto riconosciuto. <strong>Nessun dato, ad eccezione dell'indirizzo email, viene passato dai social a DecidiTorino</strong>, solo una conferma che l'utente che ha iniziato la sessione ha inserito credenziali corrette.</p>
+
+    <h2 id="12">A cosa servono i dibattiti?</h2>
+    <p>I dibattiti sono un punto di libera discussione, su un determinato argomento. Non sono un sistema di comunicazione verso l'Amministrazione, ma uno spazio di discussione a disposizione di tutti. &Egrave; possibile commentare il tema proposto e esprimere il proprio accordo o disaccordo sia a livello del tema del dibattito sia sui singoli commenti.</p>
+
+    <p>Non ci si deve pertanto necessariamente attendere che vi siano interventi dell'Amministrazione.</p>
+
+    <p>Nel caso si voglia comunicare con l'Amministrazione Comunale, occorre rifarsi ai canali già disponibili, come l'email o i recapiti tradizionali, si veda la pagina contatti del Comune di Torino <a href="http://www.comune.torino.it/amm_com/" target="_blank">http://www.comune.torino.it/amm_com/</a> o le pagine Facebook <a href="https://www.facebook.com/cittaditorino" target="_blank">https://www.facebook.com/cittaditorino</a> o Twitter <a href="https://twitter.com/twitorino" target="_blank">https://twitter.com/twitorino</a> della Città.</p>
+
+    <p>Quando un dibattito inizia a ricevere appoggi (positivi o negativi), il testo iniziale non può essere più modificato.</p>
+
+    <h2 id="13">Come introduco una proposta?</h2>
+    <p>Per introdurre una proposta è sufficiente essere registrati su DecidiTorino (vedi faq <a href="#3">Come mi registro a DecidiTorino?</a>).</p>
+
+    <p>La proposta deve concretarsi in una idea, un progetto, un suggerimento riferito al miglioramento della vita in città; se si tratta di una iniziativa che richiede un intervento realizzativo del Comune, l'ambito deve essere di competenza del Comune stesso per poter essere realizzato.</p>
+
+    <p>La proposta si compone di:</p>
+    <ul>
+      <li>Un titolo (il più chiaro e conciso possibile!).</li>
+      <li>La domanda della proposta, ovvero un testo che riassuma la proposta sotto forma di domanda e alla quale si può rispondere con un SI o con un NO. Se non volete porre una domanda inserite 10 trattini.</li>
+      <li>Un sommario al max di 200 caratteri (il cui inizio apparirà nella pagina che elenca le proposte).</li>
+      <li>Un testo per esteso, che apparirà quando si seleziona la proposta nella pagina dedicata alla proposta.</li>
+      <li>Un'immagine descrittiva, se disponibile.</li>
+      <li>Un link a video YouTube o Vimeo o a documentazione aggiuntiva.</li>
+      <li>Un eventuale posizionamento sulla mappa, se la proposta si riferisce ad una specifica zona.</li>
+      <li>L'indicazione se l'ambito di applicazione della proposta riguarda la Città nel suo insieme, o si riferisce ad una specifica Circoscrizione.</li>
+      <li>Etichette (tag) che consentono di catalogare al meglio tale proposta in modo da renderla facilmente ritrovabile: si possono scegliere tra le etichette disponibili o inserirne una propria. Si possono inserire più etichette, separandole da un punto e virgola.</li>
+      <li>Occorre infine accettare esplicitamente le clausole di privacy e le condizioni d'uso del portale.</li>
+    </ul>
+
+    <h2 id="14">Come posso divulgare e far appoggiare la mia proposta?</h2>
+    <p>Una volta inserita una proposta, è compito del proponente promuoverla, invitando ad appoggiarla e a commentarla attraverso un'opera di comunicazione verso i propri contatti e la propria rete sociale.</p>
+
+    <p>L'importante dunque è stimolare la partecipazione che non potrà che rendere la proposta più visibile e la aiuterà, di certo, ad essere migliorata e a raggiungere pertanto l'obiettivo di essere presa in considerazione.</p>
+
+    <h2 id="15">Perché devo far appoggiare la mia proposta?</h2>
+    <p>Le proposte sono progetti articolati che richiedono un minimo di consenso per essere prese in considerazione in ordine alla loro fattibilità concreta (in termini tecnici e di risorse necessarie).</p>
+
+    <p>Le proposte possono essere presentate in 2 periodi dell'anno: dal 1/1 al 30/6 e dal 1/7 al 31/12.</p>
+
+    <p>Possono essere appoggiate, ovvero sostenute dagli utenti certificati. Farlo è semplice: basta selezionare il bottone <trong>Sostieni</strong>. Una proposta non può essere appoggiata due volte dallo stesso utente. Non è possibile revocare l'appoggio dato.</p>
+
+    <p>La Città si impegna a valutare la fattibilità delle proposte che raccolgono, in uno dei periodi di pubblicazione suindicato, almeno 5 mila appoggi. Le proposte che raggiungono i 5 mila appoggi vengono valutate sotto il profilo tecnico e delle risorse necessarie e viene formulata una risposta pubblica sulla fattibilità. Se la valutazione è positiva l'Amministrazione si impegna ad attuarla. In questa prima fase sperimentale il limite di 5 mila appoggi deve intendersi come una soglia non vincolante, tant'è che se nessuna proposta la raggiunge, la Città valuterà le prime tre che hanno superato almeno 1.000 appoggi. Sarà poi un regolamento comunale, sulla base di questi primi mesi di esperienza di partecipazione, a valutare quali soglie effettivamente introdurre. Nulla toglie che, nel corso della raccolta di appoggi, le proposte più interessanti possano essere già esaminate dalla Città ed accolte anche senza il raggiungimento della soglia minima.</p>
+
+    <p>Inoltre qualora la proposta sia palesemente illegale o non rientri nella competenza comunale, verrà rimossa.</p>
+
+    <h2 id="16">Oltre a commentare e appoggiare le proposte, sono disponibili altre funzionalità?</h2>
+    <p>La piattaforma DecidiTorino, utilizza il software open source messo a disposizione dalla Città di Madrid. Le funzioni sono in continuo aggiornamento e man mano che Madrid le rende disponibili alla comunità open source queste vengono riportate nella versione di DecidiTorino, non appena tecnicamente possibile.</p>
+
+    <p>Di seguito alcune funzionalità:</p>
+    <ul>
+      <li>La creazione di un ulteriore spazio di discussione, oltre ai commenti, su temi specifici riguardanti la proposta. Attraverso il tasto <strong>Accedi alla comunità</strong> presente nella pagina di dettaglio della proposta, si potranno inserire uno o più temi di discussione relativi alla proposta stessa. In questo caso la discussione avviene solo all'interno della funzione "Comunità" e non appare nei commenti generali della proposta.</li>
+      <li>&Egrave; possibile "seguire" una proposta cliccando <strong>Segui</strong> nell'area CONDIVIDI sotto i loghi dei social. In questo modo si rimane informati circa l'evoluzione della proposta nello spazio "Le mie attività". In caso di novità sulle proposte seguite, il campanello posto nel menu si evidenzia.</li>
+      <li>Per smettere di seguire una proposta cliccare sul bottone <strong>Smetti di seguire</strong>.</li>
+      <li>&Egrave; possibile notificare un messaggio a tutti gli utenti che hanno appoggiato o che seguono la proposta; l'azione è attivabile da chi ha inserito la proposta selezionando <strong>Invia Notifica</strong>. Si può mandare un messaggio di notifica ogni tre giorni.</li>
+    </ul>
+
+    <h2 id="17">Posso segnalare una proposta o un tema di discussione come inappropriato?</h2>
+    <p>Certo. Basta selezionare la proposta o il dibattito, si arriva nella pagina dedicata che subito sotto il titolo (della proposta o del dibattito) ha una riga che riporta l'identificativo utente, la data, la presenza di commenti e una icona a forma di bandierina di segnalazione. Selezionando quest'ultima, la piattaforma recepisce la segnalazione di argomento o proposta inappropriata per le successive valutazione del caso e che potrebbe portare alla rimozione dell'argomento o proposta. La bandiera da grigia diventa rossa (viene anche visualizzato un messaggio), per confermare l'avvenuto inoltro. &Egrave; possibile rimuovere la segnalazione, cliccando nuovamente sulla bandierina che ritorna grigia e con un messaggio di avvenuta rimozione della segnalazione.</p>
+
+    <h2 id="18">Come partecipo alla sezione sui progetti della Città?</h2>
+    <p>La Città sottopone alla valutazione e discussione alcuni progetti che sono in elaborazione o in fase di studio,  ovvero non sono ancora stati approvati con atti ufficiali. Si può partecipare al processo di discussione commentando tali progetti, inserendo delle proposte e appoggiando le proposte inserite dagli utenti. La partecipazione è aperta a tutti gli utenti registrati, indipendentemente dalla loro residenza.</p>
+
+    <h2 id="19">C'è un atto comunale che parla di DecidiTorino?</h2>
+    <p>La delibera n. 2018 00152/27 <a href="http://www.comune.torino.it/giunta_comune/intracom/htdocs/2018/2018_00152.pdf" target="_blank">http://www.comune.torino.it/giunta_comune/intracom/htdocs/2018/2018_00152.pdf</a> indica le modalità temporanee per l'uso della piattaforma, in attesa del Regolamento Comunale.</p>
+
+    <h2 id="20">Dove si trova il software open source di DecidiTorino?</h2>
+    <p>DecidiTorino utilizza il software open source dell'analogo servizio della Città di Madrid <a href="https://decide.madrid.es/" target="_blank">https://decide.madrid.es</a></p>
+
+    <p>Il codice attuale è pubblicato su GitHub all'indirizzo: <a href="https://github.com/csipiemonte/consul" target="_blank">https://github.com/csipiemonte/consul</a></p>
+
+    <h2 id="21">Contatti</h2>
+    <p>Per problemi legati alla registrazione e all'utilizzo della piattaforma scrivere una mail a deciditorino@comune.torino.it</p>
+
+  </div>
+</div>

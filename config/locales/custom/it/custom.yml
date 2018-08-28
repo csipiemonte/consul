@@ -3,6 +3,7 @@ it:
   debates:
     index:
       section_footer:
+        help_text_3: "Vi ricordiamo che l'area dibattiti è una zona di libera discussione tra utenti. Per formulare proposte di cui la Città si impegna a valutare tecnicamente la fattibilità, anche in termini di risorse, è attiva la sezione Proposte dove potranno essere formulate idee e progetti da commentare ed appoggiare."
         help_text_4: "Il titolo e il testo dei dibattiti che hanno ricevuto almeno 1 appoggio, non potranno più essere modificati dal proponente."
   devise:
     sessions:
@@ -22,23 +23,39 @@ it:
       ministero_alt: Agenzia per la coesione territoriale
       ponmetro_finanziamento: "Progetto cofinanziato dall'Unione Europea - Fondi Strutturali di Investimento Europei - Programma Operativo Città Metropolitane 2014-2020"
     header:
+      external_link_opendata: Dati aperti
+      external_link_opendata_url: https://opendata.consul
+      external_link_transparency: Trasparenza
+      external_link_transparency_url: https://transparency.consul
       titolo: La città che ami sarà la città che vuoi. 
       html: Esistono città governate direttamente dai loro abitanti, che <strong>dibattono</strong> di temi verso cui nutrono preoccupazione, <strong>propongono</strong> idee per migliorare le loro vite e <strong>decidono</strong> fra tutte e tutti quelle da realizzare.
       more_info: Scopri DecidiTorino
+  legislation:
+    processes:
+      index:
+        section_footer:
+          help_text_1: "Nei progetti il Comune offre alla cittadinanza l'opportunità di partecipare all'elaborazione e alla modifica di una norma, di un'opera o di un progetto che interessa la città e di dare la propria opinione su iniziative che ha in previsione di realizzare."
+          help_text_2: "Pertanto le persone registrate su DecidiTorino, indipendentemente da dove risiedono, possono dare il proprio contributo alla discussione."
+          help_text_3: "I commenti sono analizzati dall'area comunale competente e tenuti in considerazione al momento della loro stesura finale."
   omniauth:
     spid:
       sign_in: Entra con SPID
       sign_up: Registrati con SPID
       name: SPID
   pages:
-    more_info:
+    help:
       debates:
+        description: "Crea un tema sul quale dibattere su qualsiasi argomento che intendi condividere con gli altri abitanti della tua città."
+        feature_1: "Per creare un dibattito è necessario %{link}"
+        feature_1_link: "registrarsi su %{org}"
+        feature_2_html: "I dibattiti possono essere valutati utilizzando i pulsanti <strong>Sono d'accordo</strong> o <strong>Non sono d'accordo</strong> che si trovano accanto a ciascuno di essi."
         feature_3_html: "Il titolo e il testo dei dibattiti che hanno ricevuto almeno 1 appoggio, non potranno più essere modificati dal proponente."
         feature_4_html: "Vi ricordiamo che l'area dibattiti è una zona di libera discussione tra utenti. Per formulare proposte di cui la Città si impegna a valutare tecnicamente la fattibilità, anche in termini di risorse, è attiva la sezione Proposte dove potranno essere formulate idee e progetti da commentare ed appoggiare."
       proposals:
+        description: "Proponi ciò che vorresti che la Città realizzasse e appoggia le proposte degli altri utenti."
         feature_1_html: "Le proposte devono riguardare temi inerenti la Città, e se richiedono all'Amministrazione di realizzarla devono rientrare nelle competenze attribuite ai comuni."
         feature_2: "Per creare le proposte è necessario %{link1}, invece per appoggiarle bisogna aver certificato il proprio account (vedi la %{link2})."
-        feature_2_link1: "registrarsi su %{org_name}"
+        feature_2_link1: "registrarsi su %{org}"
         feature_2_link2: "pagina delle FAQ"
         feature_3_html: "Le proposte che raggiungono <strong>l'appoggio di 5.000 utenti certificati</strong> (ovvero residenti a Torino di una età maggiore di 16 anni) saranno oggetto di studio di fattibilità da parte degli uffici dell'Amministrazione comunale."
         feature_4_html: "Se lo studio di fattibilità è positivo la Città si impegna a realizzare la proposta."
@@ -46,6 +63,18 @@ it:
         feature_6_html: "La Città si riserva di prendere in considerazione le proposte comunque meritevoli di analisi di fattibilità se tali soglie non saranno raggiunte al 30/6 e al 31/12."
         feature_7: "Ulteriori informazioni sulle proposte e sulle modalità di registrazione sono disponibili nella %{link}"
         feature_7_link: "pagina delle FAQ"
+  proposals:
+    index:
+      section_footer:
+        help_text_1: "Per creare le proposte è necessario %{link}"
+        help_text_1_link: "registrarsi su %{org}"
+        help_text_2: "Per appoggiare le proposte, occorre che il proprio account sia stato certificato (ovvero che si risulti residenti a Torino e con età superiore a 16 anni)."
+        help_text_3: "Per certificare il proprio account, in modo automatico, basta essere utenti registrati e scegliere l'opzione presente nella pagina %{link}"
+        help_text_3_link: "Il mio account"
+        help_text_4: "È necessario indicare il proprio codice fiscale, la data di nascita ed il CAP di residenza. Occorrerà inoltre fornire il numero di cellulare per ottenere l'SMS con il codice di conferma."
+        help_text_5: "Le proposte che raggiungono l'appoggio di 5.000 utenti passeranno ad una valutazione tecnica dell'Amministrazione per la fattibilità. Di questa valutazione verrà dato esito pubblico."
+        help_text_6: "Ulteriori informazioni sulle proposte e sulle modalità di registrazione sono disponibili nella %{link}"
+        help_text_6_link: "pagina delle FAQ"
   settings:
     feature:
       proposals: Proposte
@@ -63,25 +92,3 @@ it:
     sms:
       read:
         verification_code: "DecidiTorino - Codice di verifica: "
-  welcome:
-    schede:
-      scheda1:
-        title: "Metro Linea 2"
-        description: "La Città di Torino invita i cittadini a partecipare alla fase di dibattito pubblico del progetto Linea 2 della Metropolitana. Le proposte e le osservazioni che perverranno entro il 22 luglio potranno essere considerate durante la stesura del progetto preliminare."
-        label: Progetti
-        link: Vedi progetto
-      scheda2:
-        title: "Zona di libera discussione"
-        description: "Vi ricordiamo che l'area dibattiti è una zona di libera discussione tra utenti. Per formulare proposte di cui la Città si impegna a valutare tecnicamente la fattibilità, anche in termini di risorse, è attiva la sezione <i>Proposte</i> dove potranno essere formulate idee e progetti da commentare ed appoggiare."
-        label: Dibattiti
-        link: Vai ai dibattiti
-      scheda3:
-        title: Fai una proposta
-        description: "On line la nuova sezione <i>Proposte</i> dove è possibile inserire una proposta di ciò che vorresti che la Città realizzasse e dove puoi appoggiare le proposte inserite dagli altri cittadini. Ogni proposta che raggiungerà una soglia prefissata di appoggi (vedi FAQ %{link1}) sarà oggetto di studio di fattibilità da parte degli uffici dell'Amministrazione Comunale. Per saperne di più sulle proposte vai su %{link2}"
-        label: Proposte
-        link: Vai alle proposte
-      scheda4:
-        title: "La partecipazione cittadina"
-        description: "Una riflessione sulle regole per partecipare a DecidiTorino."
-        label: Progetti
-        link: Vedi progetto

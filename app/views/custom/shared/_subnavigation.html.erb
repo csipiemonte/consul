@@ -1,3 +1,4 @@
+<!-- versione custom, differisce per la diversa valorizzazione degli accesskey -->
 <div class="small-12 medium-9 column">
   <ul>
     <% if feature?(:debates) %>
@@ -53,11 +54,11 @@
       </li>
     <% end %>
     <li>
-      <%= link_to t("layouts.header.more_info"),
-                    more_info_path,
+      <%= link_to t("layouts.header.help"),
+                    help_path,
                     accesskey: "6",
-                    class: ("active" if current_page?(more_info_path)),
-                    title: t("shared.go_to_page") + t("layouts.header.more_info") %>
+                    class: ("is-active" if current_page?(help_path)),
+                    title: t("shared.go_to_page") + t("layouts.header.help") %>
     </li>
   </ul>
 </div>

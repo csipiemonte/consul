@@ -1,13 +1,13 @@
 it:
   documents:
-    tab: Documenti
-    no_documents: Non sono presenti documenti allegati
+    title: Documenti
     max_documents_allowed_reached_html: 'Hai raggiunto il numero massimo di documenti consentiti! <strong>Se ne deve eliminare uno per poter allegarne un altro.</strong>'
     form:
       title: Documenti
       title_placeholder: Aggiungi un titolo descrittivo del documento
       attachment_label: Seleziona un documento
       delete_button: Elimina documento
+      cancel_button: Annulla
       note: 'È possibile allegare fino ad un massimo di %{max_documents_allowed} documenti nei formati: %{accepted_content_types}, e di dimensione fino a %{max_file_size} MB per file.'
       add_new_document: Aggiungi nuovo documento
     actions:
@@ -17,7 +17,7 @@ it:
         confirm: "Confermi l'eliminazione del documento? Non è possibile annullare questa operazione!"
     buttons:
       download_document: Download file
-      destroy_document: Elimina
+      destroy_document: Elimina documento
     errors:
       messages:
         in_between: deve stare fra %{min} e %{max}

@@ -19,10 +19,10 @@ feature "Admin custom pages" do
       visit admin_root_path
 
       within("#side_menu") do
-        click_link "Custom Pages"
+        click_link "Custom pages"
       end
 
-      expect(page).to_not have_content "An example custom page"
+      expect(page).not_to have_content "An example custom page"
 
       click_link "Create new page"
 
@@ -44,7 +44,7 @@ feature "Admin custom pages" do
       visit admin_root_path
 
       within("#side_menu") do
-        click_link "Custom Pages"
+        click_link "Custom pages"
       end
 
       click_link "An example custom page"
@@ -63,8 +63,8 @@ feature "Admin custom pages" do
     custom_page = create(:site_customization_page, title: "An example custom page")
     visit edit_admin_site_customization_page_path(custom_page)
 
-    click_button "Delete page"
+    click_link "Delete page"
 
-    expect(page).to_not have_content("An example custom page")
+    expect(page).not_to have_content("An example custom page")
   end
 end

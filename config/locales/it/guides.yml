@@ -1,0 +1,18 @@
+it:
+  guides:
+    title: "Hai un'idea per %{org}?"
+    subtitle: "Scegli ciò che vuoi creare"
+    budget_investment:
+      title: "Un progetto di spesa"
+      feature_1_html: "Sono idee su come spendere parte del <strong>bilancio comunale</strong>"
+      feature_2_html: "I progetti di spesa si presentano <strong>fra gennaio e marzo</strong>"
+      feature_3_html: "Se riceve appoggi, è fattibile ed è di competenza comunale, passa a votazione"
+      feature_4_html: "Se la cittadinanza approva i progetti, si fanno realtà"
+      new_button: Voglio creare un progetto di spesa
+    proposal:
+      title: "Una proposta cittadina"
+      feature_1_html: "Sono idee su qualsiasi azione che possa realizzare l'Amministrazione Comunale"
+      feature_2_html: "Necessitano <strong>%{votes} appoggi</strong> su %{org} per passare a votazione"
+      feature_3_html: "Si attivano in qualsiasi momento; hanno <strong>un anno</strong> per raccogliere gli appoggi"
+      feature_4_html: "Se approvato in una votazione, l'Amministrazione Comunale accetta la proposta"
+      new_button: Voglio creare una proposta

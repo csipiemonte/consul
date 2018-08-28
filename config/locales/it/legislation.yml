@@ -47,16 +47,16 @@ it:
         text_comments: Commenti
     processes:
       header:
-        view_process_information: Vedi informazione del progetto
+        additional_info: Ulteriore informazione
+        description: In cosa consiste
+        more_info: Maggiori informazioni e contesto
       proposals:
         empty_proposals: Non ci sono proposte
       debate:
         empty_questions: Non ci sono domande
         participate: Dai i tuoi contributi al dibattito iniziale partecipando ai seguenti temi.
-      header_full:
-        description: In cosa consiste
-        more_info: Più informazioni e contesto
       index:
+        filter: Filtro
         filters:
           open: Progetti attivi
           next: A breve
@@ -71,9 +71,6 @@ it:
         section_footer:
           title: Aiuto sui progetti
           description: "Partecipa ai dibattiti e ai progetti precedenti l'approvazione di una norma, di un'opera o di un progetto comunale. La tua opinione sarà tenuta in considerazione da parte del Comune."
-          help_text_1: "Nei progetti il Comune offre alla cittadinanza l'opportunità di partecipare all'elaborazione e alla modifica di una norma, di un'opera o di un progetto che interessa la città e di dare la propria opinione su iniziative che ha in previsione di realizzare."
-          help_text_2: "Pertanto le persone registrate su DecidiTorino, indipendentemente da dove risiedono, possono dare il proprio contributo alla discussione."
-          help_text_3: "I commenti sono analizzati dall'area comunale competente e tenuti in considerazione al momento della loro stesura finale. "
       phase_not_open:
         not_open: Questa fase del progetto non è stata ancora aperta
       phase_empty:

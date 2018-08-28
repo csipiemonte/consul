@@ -3,16 +3,21 @@ require 'rails_helper'
 feature 'Residence' do
   let(:officer) { create(:poll_officer) }
 
+  background do
+    travel_to Time.now # TODO: use `freeze_time` after migrating to Rails 5.
+  end
+
+  after do
+    travel_back
+  end
+
   feature "Officers without assignments" do
 
     scenario "Can not access residence verification" do
       login_as(officer.user)
       visit officing_root_path
 
-      within("#side_menu") do
-        click_link "Validate document"
-      end
-
+      expect(page).not_to have_link("Validate document")
       expect(page).to have_content("You don't have officing shifts today")
 
       create(:poll_officer_assignment, officer: officer, date: 1.day.from_now)
@@ -51,7 +56,10 @@ feature 'Residence' do
         click_link "Validate document"
       end
 
-      click_button 'Validate document'
+      within("#new_residence") do
+        click_button "Validate document"
+      end
+
       expect(page).to have_content(/\d errors? prevented the verification of this document/)
     end
 

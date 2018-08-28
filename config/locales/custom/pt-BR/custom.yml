@@ -3,6 +3,7 @@ pt-BR:
   debates:
     index:
       section_footer:
+        help_text_3: "Vi ricordiamo che l'area dibattiti è una zona di libera discussione tra utenti. Per formulare proposte di cui la Città si impegna a valutare tecnicamente la fattibilità, anche in termini di risorse, è attiva la sezione Proposte dove potranno essere formulate idee e progetti da commentare ed appoggiare."
         help_text_4: "O título e o texto dos debates que receberam pelo menos 1 apoio, não podem mais ser modificados pelo proponente."
   devise:
     sessions:
@@ -20,25 +21,41 @@ pt-BR:
       contacts: Contactos
       europa_alt: Fundos Estruturais e de Investimento Europeus
       ministero_alt: Agência de Coesão Territorial
-      ponmetro_finanziamento: Projeto aprovado pela União Européia - Fundos Estruturais e de Investimentos Europeus - Programa Operacional Metropolitan Cities 2014 - 2020      
+      ponmetro_finanziamento: Projeto aprovado pela União Européia - Fundos Estruturais e de Investimentos Europeus - Programa Operacional Metropolitan Cities 2014 - 2020
     header:
+      external_link_opendata: Dati aperti
+      external_link_opendata_url: https://opendata.consul
+      external_link_transparency: Trasparenza
+      external_link_transparency_url: https://transparency.consul
       titolo: A cidade que você ama será a cidade que deseja. 
       html: Existem cidades diretamente governadas por seus habitantes, que <strong>discutem</strong> questões que estão preocupadas, <strong>propõem</strong> idéias para melhorar suas vidas e <strong>decidem</strong> entre si e com todos aqueles que precisam ser realizados.
       more_info: Descobri DecidiTorino
+  legislation:
+    processes:
+      index:
+        section_footer:
+          help_text_1: "Nei progetti il Comune offre alla cittadinanza l'opportunità di partecipare all'elaborazione e alla modifica di una norma, di un'opera o di un progetto che interessa la città e di dare la propria opinione su iniziative che ha in previsione di realizzare."
+          help_text_2: "Pertanto le persone registrate su DecidiTorino, indipendentemente da dove risiedono, possono dare il proprio contributo alla discussione."
+          help_text_3: "I commenti sono analizzati dall'area comunale competente e tenuti in considerazione al momento della loro stesura finale."
   omniauth:
     spid:
       sign_in: Iniciar sessão com o SPID
       sign_up: Inscrever-se com o SPID
       name: SPID
   pages:
-    more_info:
+    help:
       debates:
+        description: "Crie um tema para discutir sobre qualquer tópico que você deseja compartilhar com outras pessoas em sua cidade."
+        feature_1: "Para criar um debate é necessário %{link}"
+        feature_1_link: "registre-se em %{org}"
+        feature_2_html: "Os debates podem ser avaliados usando os botões <strong>Eu concordo</strong> ou <strong>Não concordo</strong> que estão ao lado de cada um deles."
         feature_3_html: "O título e o texto dos debates que receberam pelo menos 1 apoio, não podem mais ser modificados pelo proponente."
         feature_4_html: "Lembramos que a área de discussão é uma área de discussão gratuita entre usuários. A fim de formular propostas para as quais a Cidade se compromete a avaliar tecnicamente sua viabilidade, também em termos de recursos, a seção Propostas é ativa onde idéias e projetos para comentar e apoiar podem ser formulados."
       proposals:
+        description: "Proponha o que você gostaria que a Cidade alcançasse e apoiasse as propostas de outros usuários."
         feature_1_html: "As propostas devem referir-se a tópicos relacionados à Cidade e, se exigem que a Administração a implemente, devem pertencer às competências atribuídas aos municípios."
         feature_2: "Para criar propostas, você precisa de %{link1}, em vez disso, para apoiá-los, você deve ter certificado sua conta (veja %{link2})."
-        feature_2_link1: "registre-se em %{org_name}"
+        feature_2_link1: "registre-se em %{org}"
         feature_2_link2: "página de FAQ"
         feature_3_html: "As propostas que atinjam <strong>o suporte de 5.000 usuários certificados</strong> (ou seja, residente em Turim com mais de 16 anos) serão sujeitas a um estudo de viabilidade pelos escritórios da administração municipal."
         feature_4_html: "Se o estudo de viabilidade for positivo, a Cidade compromete-se a implementar a proposta."
@@ -46,6 +63,18 @@ pt-BR:
         feature_6_html: "A cidade reserva-se o direito de levar em consideração as propostas que merecem análise de viabilidade se esses limiares não forem alcançados em 30/6 e 31/12."
         feature_7: "Mais informações sobre as propostas e sobre o registro estão disponíveis no %{link}"
         feature_7_link: "página de FAQ"
+  proposals:
+    index:
+      section_footer:
+        help_text_1: "Para criar propostas é necessário %{link}"
+        help_text_1_link: "registre-se em %{org}"
+        help_text_2: "Para apoiar as propostas, é necessário que sua conta tenha sido certificada (ou seja, você é residente em Turim e com mais de 16 anos)."
+        help_text_3: "Para certificar sua conta, automaticamente, seja apenas usuários registrados e escolha a opção na página %{link}"
+        help_text_3_link: "Minha conta"
+        help_text_4: "É necessário indicar o código fiscal, a data de nascimento e o CAP de residência. Também será necessário fornecer o número de celular para obter o SMS com o código de confirmação."
+        help_text_5: "As propostas que chegam ao suporte de 5.000 usuários passarão a uma avaliação técnica da Administração para viabilidade. Esta avaliação terá resultados públicos."
+        help_text_6: "Mais informações sobre as propostas e sobre o registro estão disponíveis no %{link}"
+        help_text_6_link: "página de FAQ"
   settings:
     feature:
       proposals: Propostas
@@ -63,25 +92,3 @@ pt-BR:
     sms:
       read:
         verification_code: "DecidiTorino - Código de verificação: "
-  welcome:
-    schede:
-      scheda1:
-        title: "Metro Linea 2"
-        description: "A cidade de Turim convida os cidadãos a participar da fase de debate público do projeto da Linha 2 do Metrô. As propostas e observações recebidas até 22 de julho podem ser consideradas durante a elaboração do projeto preliminar."
-        label: Processos legislativos
-        link: Veja o processo legislativo
-      scheda2:
-        title: "Área de discussão gratuita"
-        description: "Lembramos que a área de debates é uma área de discussão gratuita entre usuários. A fim de formular propostas para as quais a Cidade se compromete a avaliar tecnicamente sua viabilidade, também em termos de recursos, a seção <i>Propostas</i> está ativa onde idéias e projetos para comentar e apoiar podem ser formulados."
-        label: Debates
-        link: Veja os debates
-      scheda3:
-        title: "Faça uma proposta"
-        description: "Em linha, a nova seção <i>Propostas</i> onde você pode inserir uma proposta sobre o que você gostaria que a Cidade atinja e onde você possa apoiar as propostas incluídas por outros cidadãos. Qualquer proposta que atinja um limite predeterminado de suporte (consulte FAQ %{link1}) será sujeita a estudo de viabilidade pelos escritórios da Administração Municipal. Para saber mais sobre as propostas, vá para %{link2}"
-        label: Propostas
-        link: Veja as propostas
-      scheda4:
-        title: "Participação do cidadão"
-        description: "Uma reflexão sobre as regras para participar do DecidiTorino."
-        label: Processos legislativos     
-        link: Veja o processo legislativo
