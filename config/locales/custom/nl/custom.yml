@@ -55,18 +55,21 @@ nl:
         description: "Stel voor wat u wilt dat de stad bereikt en ondersteun de voorstellen van andere gebruikers."
         feature_1_html: "De voorstellen moeten betrekking hebben op onderwerpen die verband houden met de Stad, en als ze de Administratie ertoe verplichten deze uit te voeren, moeten ze vallen onder de bevoegdheden die aan de gemeenten zijn toegekend."
         feature_2: "Om voorstellen te maken, hebt u %{link1} nodig. In plaats daarvan moet u uw account hebben gecertificeerd (zie %{link2})."
+        feature_2_no_verification: "Pour créer des propositions, vous avez besoin de %{link1}."
         feature_2_link1: "registreren op %{org}"
         feature_2_link2: "pagina met veelgestelde vragen"
         feature_3_html: "Voorstellen die <strong>de steun van 5.000 gecertificeerde gebruikers</strong> bereiken (dwz ingezetenen van Turijn zijn ouder dan 16 jaar) zullen worden onderworpen aan een haalbaarheidsstudie door de gemeentelijke administratiekantoren."
+        feature_3_html_no_verification: "Voorstellen die de steun van 5.000 gebruikers bereiken zullen worden onderworpen aan een haalbaarheidsstudie door de gemeentelijke administratiekantoren."
         feature_4_html: "Als de haalbaarheidsstudie positief is, verbindt de stad zich ertoe het voorstel uit te voeren."
         feature_5_html: "In het eerste jaar zal de stad echter, als er geen voorstel is dat 5.000 ondersteuningen bereikt, de eerste drie voorstellen beoordelen als ze meer dan 1.000 ondersteuningen overschrijden."
         feature_6_html: "De Stad behoudt zich het recht voor om voorstellen in aanmerking te nemen die een haalbaarheidsanalyse waard zijn als deze drempels niet bereikt zullen worden op 30/6 en 31/12."
-        feature_7: "Nadere informatie over de voorstellen en hoe te registreren zijn beschikbaar in de %{link}"
+        feature_7: "Nadere informatie zijn beschikbaar in de %{link}"
         feature_7_link: "pagina met veelgestelde vragen"
   proposals:
     index:
       section_footer:
         help_text_1: "Om voorstellen te maken is het noodzakelijk %{link}"
+        help_text_1_no_verification: "Om voorstellen te maken is het noodzakelijk %{link}"
         help_text_1_link: "registreren op %{org}"
         help_text_2: "Om de voorstellen te ondersteunen, is het noodzakelijk dat uw account is gecertificeerd (dwz dat u in Turijn woont en ouder bent dan 16 jaar)."
         help_text_3: "Om uw account te certificeren, moet u automatisch alleen geregistreerde gebruikers zijn en de optie op de pagina kiezen %{link}"

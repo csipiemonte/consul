@@ -102,13 +102,19 @@
               <strong><%= t("proposals.index.section_footer.title") %></strong>
             </p>
             <p><%= t("proposals.index.section_footer.description") %></p>
-            <p><%= t("proposals.index.section_footer.help_text_1",
-              link: link_to(t("proposals.index.section_footer.help_text_1_link", org: setting['org_name']),
+            <% if feature?('user.skip_verification') %>
+              <p><%= t("proposals.index.section_footer.help_text_1_no_verification",
+                link: link_to(t("proposals.index.section_footer.help_text_1_link", org: setting['org_name']),
                                new_user_registration_path)).html_safe %></p>
-            <p><%= t("proposals.index.section_footer.help_text_2") %></p>
-            <p><%= t("proposals.index.section_footer.help_text_3",
-              link: link_to(t("proposals.index.section_footer.help_text_3_link"), account_path)).html_safe %></p>
-            <p><%= t("proposals.index.section_footer.help_text_4") %></p>
+            <% else %>
+              <p><%= t("proposals.index.section_footer.help_text_1",
+                link: link_to(t("proposals.index.section_footer.help_text_1_link", org: setting['org_name']),
+                               new_user_registration_path)).html_safe %></p>
+              <p><%= t("proposals.index.section_footer.help_text_2") %></p>
+              <p><%= t("proposals.index.section_footer.help_text_3",
+                link: link_to(t("proposals.index.section_footer.help_text_3_link"), account_path)).html_safe %></p>
+              <p><%= t("proposals.index.section_footer.help_text_4") %></p>
+            <% end %>
             <p><%= t("proposals.index.section_footer.help_text_5") %></p>
             <p><%= t("proposals.index.section_footer.help_text_6",
               link: link_to(t("proposals.index.section_footer.help_text_6_link"), faq_path)).html_safe %></p>

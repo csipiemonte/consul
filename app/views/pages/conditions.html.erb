@@ -49,7 +49,9 @@
 	  <p>Gli utenti dovranno completare la registrazione seguendo le istruzioni ricevute all'indirizzo di email indicato. </p>
 	  <p>DecidiTorino consente inoltre l'identificazione degli utenti direttamente tramite i profili dei più diffusi social e delle credenziali del <a href="https://www.spid.gov.it/" target="_blank">Sistema Pubblico di Identità Digitale SPID</a>.</p>
 	  <p>L'utilizzo di dati falsi, ovvero l'utilizzo di identità altrui, sarà perseguito legalmente (art. 494 del Codice Penale).</p>
-    <p>Le proposte possono essere appoggiate solo dai residenti in Torino, maggiori di 16 anni. L'utente dovrà far verificare tali condizioni con una operazione automatica svolta da DecidiTorino sull'anagrafe di Torino, dopo aver introdotto il proprio codice fiscale, la data di nascita, il codice di avviamento postale (CAP) e un numero di cellulare. Si precisa che nessun dato del richiedente viene fornito a video. Sul cellulare si otterrà un codice per completare la registrazione e passare ad utente 'certificato'.</p>
+    <% unless feature?('user.skip_verification') %>
+      <p>Le proposte possono essere appoggiate solo dai residenti in Torino, maggiori di 16 anni. L'utente dovrà far verificare tali condizioni con una operazione automatica svolta da DecidiTorino sull'anagrafe di Torino, dopo aver introdotto il proprio codice fiscale, la data di nascita, il codice di avviamento postale (CAP) e un numero di cellulare. Si precisa che nessun dato del richiedente viene fornito a video. Sul cellulare si otterrà un codice per completare la registrazione e passare ad utente 'certificato'.</p>
+    <% end %>
     <p> Qualsiasi contenuto, in qualsiasi forma, inserito dall'utente o dall'Amministrazione è considerato inserito con licenza <a href="https://it.wikipedia.org/wiki/Italian_Open_Data_License" target="_blank" title="(apre una nuova finestra)">IODL 2.0 (Italian Open Data Licence)</a>, salvi i casi in cui essi non siano stati esplicitamente indicati come coperti dal diritto di proprietà intellettuale e/o industriale.</p>
     <p>L'utente potrà interagire con DecidiTorino attraverso:</p>
 
@@ -65,7 +67,7 @@
     <p>All'interno di questa sezione è possibile:</p>
     <ul>
       <li>Creare una proposta. Ogni utente, anche con livello di autenticazione base, può inserire una o più proposte. Le proposte sono pubblicate automaticamente.</li>
-      <li>Appoggiare le proposte già presenti. Il numero di appoggi ricevuti è pubblicato accanto ad ogni proposta. Ogni utente potrà appoggiare la stessa proposta una volta sola. L'appoggio è solo in positivo, e può essere espresso solo da utenti certificati come residenti in Torino e maggiori di 16 anni. Se la proposta, entro un tempo stabilito dal suo inserimento, riceve il numero minimo di appoggi indicato accanto alla stessa, questa passerà alla valutazione tecnica dell'Amministrazione per essere realizzata. I risultati della valutazione sono pubblici.</li>
+      <li>Appoggiare le proposte già presenti. Il numero di appoggi ricevuti è pubblicato accanto ad ogni proposta. Ogni utente potrà appoggiare la stessa proposta una volta sola. L'appoggio è solo in positivo<% unless feature?('user.skip_verification') %>, e può essere espresso solo da utenti certificati come residenti in Torino e maggiori di 16 anni<% end %>. Se la proposta, entro un tempo stabilito dal suo inserimento, riceve il numero minimo di appoggi indicato accanto alla stessa, questa passerà alla valutazione tecnica dell'Amministrazione per essere realizzata. I risultati della valutazione sono pubblici.</li>
       <li>Commentare le proposte già presenti. Ogni proposta può essere commentata dagli altri utenti, argomentando le ragioni dell'appoggio o introducendo migliorie.</li>
     </ul>
 

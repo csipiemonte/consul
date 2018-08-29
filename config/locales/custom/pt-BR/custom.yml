@@ -55,19 +55,22 @@ pt-BR:
         description: "Proponha o que você gostaria que a Cidade alcançasse e apoiasse as propostas de outros usuários."
         feature_1_html: "As propostas devem referir-se a tópicos relacionados à Cidade e, se exigem que a Administração a implemente, devem pertencer às competências atribuídas aos municípios."
         feature_2: "Para criar propostas, você precisa de %{link1}, em vez disso, para apoiá-los, você deve ter certificado sua conta (veja %{link2})."
+        feature_2_no_verification: "Para criar e apoiar propostas, você precisa de %{link1}."
         feature_2_link1: "registre-se em %{org}"
         feature_2_link2: "página de FAQ"
         feature_3_html: "As propostas que atinjam <strong>o suporte de 5.000 usuários certificados</strong> (ou seja, residente em Turim com mais de 16 anos) serão sujeitas a um estudo de viabilidade pelos escritórios da administração municipal."
+        feature_3_html_no_verification: "As propostas que atinjam o suporte de 5.000 usuários certificados serão sujeitas a um estudo de viabilidade pelos escritórios da administração municipal."
         feature_4_html: "Se o estudo de viabilidade for positivo, a Cidade compromete-se a implementar a proposta."
         feature_5_html: "No primeiro ano, no entanto, a Cidade avaliará, se nenhuma proposta chegar a 5.000 apoios, as três primeiras propostas se excederem pelo menos 1.000 apoios."
         feature_6_html: "A cidade reserva-se o direito de levar em consideração as propostas que merecem análise de viabilidade se esses limiares não forem alcançados em 30/6 e 31/12."
-        feature_7: "Mais informações sobre as propostas e sobre o registro estão disponíveis no %{link}"
+        feature_7: "Mais informações estão disponíveis no %{link}"
         feature_7_link: "página de FAQ"
   proposals:
     index:
       section_footer:
         help_text_1: "Para criar propostas é necessário %{link}"
         help_text_1_link: "registre-se em %{org}"
+        help_text_1_no_verification:  "Para criar e apoiar propostas é necessário %{link}"
         help_text_2: "Para apoiar as propostas, é necessário que sua conta tenha sido certificada (ou seja, você é residente em Turim e com mais de 16 anos)."
         help_text_3: "Para certificar sua conta, automaticamente, seja apenas usuários registrados e escolha a opção na página %{link}"
         help_text_3_link: "Minha conta"

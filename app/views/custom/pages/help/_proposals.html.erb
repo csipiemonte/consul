@@ -6,13 +6,22 @@
     <p><%= t("pages.help.proposals.description") %></p>
     <ul class="features">
       <li><%= t("pages.help.proposals.feature_1_html") %></li>
-      <li>
-        <%= t("pages.help.proposals.feature_2",
+      <% if feature?('user.skip_verification') %>
+        <li>
+          <%= t("pages.help.proposals.feature_2_no_verification",
+              link1: link_to(t("pages.help.proposals.feature_2_link1", org: setting['org_name']),
+                               new_user_registration_path)).html_safe %>
+        </li>
+        <li><%= t("pages.help.proposals.feature_3_html_no_verification") %></li>
+      <% else %>
+        <li>
+          <%= t("pages.help.proposals.feature_2",
               link1: link_to(t("pages.help.proposals.feature_2_link1", org: setting['org_name']),
                                new_user_registration_path),
               link2: link_to(t("pages.help.proposals.feature_2_link2"), faq_path)).html_safe %>
-      </li>
-      <li><%= t("pages.help.proposals.feature_3_html") %></li>
+        </li>
+        <li><%= t("pages.help.proposals.feature_3_html") %></li>
+      <% end %>
       <li><%= t("pages.help.proposals.feature_4_html") %></li>
       <li><%= t("pages.help.proposals.feature_5_html") %></li>
       <li><%= t("pages.help.proposals.feature_6_html") %></li>

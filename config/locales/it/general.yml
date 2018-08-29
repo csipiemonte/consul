@@ -225,7 +225,7 @@ it:
       moderation: Moderare
       valuation: Valutare
       officing: Presidenti di seggio
-      help: Più informazioni
+      help: Scopri DecidiTorino
       my_account_link: Il mio account
       my_activity_link: Le mie attività
       open: aperto
@@ -542,7 +542,7 @@ it:
       author_type: "Per categoria dell'autore"
       author_type_blank: 'Scegli una categoria'
       date: 'Per data'
-      date_placeholder: 'DD/MM/AAAA'
+      date_placeholder: 'GG/MM/AAAA'
       date_range_blank: 'Scegli una data'
       date_1: 'Ultime 24 ore'
       date_2: 'Ultima settimana'
@@ -613,7 +613,7 @@ it:
     outline:
       budget: Bilanci partecipativi
       searcher: Cerca
-    go_to_page: "Vai alla pagina di "
+    go_to_page: "Vai alla pagina "
     share: Condividi
     orbit:
       previous_slide: Immagine precedente

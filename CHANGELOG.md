@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## [2.0.0](https://github.com/csipiemonte/consul/compare/v1.2.5...v2.0.0) - 2018-09-03
+## [1.3.0](https://github.com/csipiemonte/consul/compare/v1.2.5...v1.3.0) - 2018-08-30
 ### Added
 - Homepage: cards, header and cards seeds; customization of homepage from admin section
 - Recommendations: Debates and proposals recommendations for users

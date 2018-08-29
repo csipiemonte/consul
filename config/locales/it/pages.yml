@@ -5,7 +5,7 @@ it:
     general_terms: Termini e Condizioni
     help:
       title: "Scopri %{org}"
-      guide: 'Questa guida spiega ogni sezione di %{org}. Per maggiori informazioni cliccare su "Informazioni dettagliate".'
+      guide: 'Questa guida spiega a cosa servono e come funzionano le sezioni di %{org}.'
       menu:
         debates: "Dibattiti"
         proposals: "Proposte"
@@ -47,8 +47,8 @@ it:
         sign_up: "registrarsi su %{org}"
       faq:
         title: "Problemi tecnici?"
-        description: "Leggi le FAQ per risolvere i tuoi dubbi."
-        button: "Visualizzare le domande frequenti (FAQ)"
+        description: "Leggi le domande frequenti per risolvere i tuoi dubbi."
+        button: "Visualizzare le domande frequenti"
         page:
           title: "Domande Frequenti"
           description: "Usa questa pagina per risolvere i tuoi dubbi sull'uso di DecidiTorino."
