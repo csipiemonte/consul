@@ -1159,7 +1159,7 @@ it:
         delete: Elimina
       geozone:
         name: Nome
-        external_code: Codice externo
+        external_code: Codice esterno
         census_code: Numero
         coordinates: Coordinate
       errors:

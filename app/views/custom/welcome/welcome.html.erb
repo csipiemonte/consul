@@ -1,8 +1,11 @@
-<!-- versione custom, aggiunto controllo su attivazione votazioni -->
+<!-- versione custom, differisce per:
+  - righe varie: gestione del parametro 'feature.user.skip_verification'
+  - riga 20: aggiunto controllo su attivazione votazioni
+  - riga 41: rimossa la fase della verifica tramite lettera cartacea-->
 <h2><%= t("welcome.welcome.title") %></h2>
 
 <div class="user-permissions">
-  <p><%= t("welcome.welcome.user_permission_info") %></p>
+  <p><% unless feature?('user.skip_verification') %><%= t("welcome.welcome.user_permission_info") %><% else %><%= t("welcome.welcome.user_permission_info_no_verification") %><% end %></p>
   <ul>
     <li><span class="icon-check"></span>&nbsp;<%= t("welcome.welcome.user_permission_debates") %></li>
     <li><span class="icon-check"></span>&nbsp;<%= t("welcome.welcome.user_permission_proposal") %></li>
@@ -12,7 +15,7 @@
       <% else %>
         <span class="icon-x"></span>
       <% end %>
-      <%= t("welcome.welcome.user_permission_support_proposal") %>
+      <%= t("welcome.welcome.user_permission_support_proposal") %><% unless feature?('user.skip_verification') %>*<% end %>
     </li>
     <% if feature?(:polls) %>
     <li>
@@ -21,29 +24,33 @@
       <% else %>
         <span class="icon-x"></span>
       <% end %>
-      <%= t("welcome.welcome.user_permission_votes") %>
+      <%= t("welcome.welcome.user_permission_votes") %><% unless feature?('user.skip_verification') %>*<% end %>
     </li>
     <% end %>
   </ul>
 
-  <p>
-    <span><%= t("welcome.welcome.user_permission_verify_info") %></span>
-  </p>
+  <% unless feature?('user.skip_verification') %>
+    <p>
+      <span><%= t("welcome.welcome.user_permission_verify_info") %></span>
+    </p>
 
-  <p>
-    <%= t("welcome.welcome.user_permission_verify") %>
-  </p>
+    <p>
+      <%= t("welcome.welcome.user_permission_verify") %>
+    </p>
 
-  <% if current_user.level_three_verified? %>
-    <p class="already-verified">
-      <span class="icon-check"></span>
-      <%= t("account.show.verified_account") %>
+    <% if current_user.level_two_or_three_verified? %>
+     <p class="already-verified">
+        <span class="icon-check"></span>
+        <%= t("account.show.verified_account") %>
+      </p>
+    <% else %>
+      <%= link_to(t("welcome.welcome.user_permission_verify_my_account"), verification_path, class: "button success radius expand") %>
+    <% end %>
+
+    <p class="text-center">
+      <%= link_to t("welcome.welcome.go_to_index"), root_path %>
     </p>
   <% else %>
-    <%= link_to(t("welcome.welcome.user_permission_verify_my_account"), verification_path, class: "button success radius expand") %>
+    <%= link_to t("welcome.welcome.go_to_home"), root_path %>
   <% end %>
-
-  <p class="text-center">
-    <%= link_to t("welcome.welcome.go_to_index"), root_path %>
-  </p>
 </div>

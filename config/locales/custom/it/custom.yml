@@ -1,5 +1,8 @@
 ﻿---
 it:
+  account:
+    show:
+      user_permission_info_no_verification: "Con il tuo account puoi:"
   debates:
     index:
       section_footer:
@@ -95,3 +98,7 @@ it:
     sms:
       read:
         verification_code: "DecidiTorino - Codice di verifica: "
+  welcome:
+    welcome:
+      go_to_home: Continua
+      user_permission_info_no_verification: "Con il tuo account puoi:"

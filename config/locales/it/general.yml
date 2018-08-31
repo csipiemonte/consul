@@ -27,11 +27,11 @@ it:
       user_permission_debates: Partecipare ai dibattiti
       user_permission_info: Con il tuo account puoi già...
       user_permission_proposal: Creare nuove proposte
-      user_permission_support_proposal: Sostenere le proposte*
+      user_permission_support_proposal: Sostenere le proposte
       user_permission_title: Partecipazione
       user_permission_verify: Per poter eseguire tutte le azioni occorre certificare la propria utenza.
       user_permission_verify_info: "* Solo per i residenti a Torino certificati."
-      user_permission_votes: Partecipare alle votazioni finali*
+      user_permission_votes: Partecipare alle votazioni finali
       username_label: Nome utente
       verified_account: Utenza certificata
       verify_my_account: Certifica la mia utenza
@@ -813,11 +813,11 @@ it:
       user_permission_debates: Partecipare ai dibattiti
       user_permission_info: Con il tuo account puoi già...
       user_permission_proposal: Creare nuove proposte
-      user_permission_support_proposal: Sostenere proposte*
+      user_permission_support_proposal: Sostenere proposte
       user_permission_verify: Per poter compiere tutte le azioni, certifica la tua utenza.
       user_permission_verify_info: "* Solamente utenti residenti."
       user_permission_verify_my_account: Certifica la mia utenza
-      user_permission_votes: Partecipare alle votazioni finali*
+      user_permission_votes: Partecipare alle votazioni finali
   invisible_captcha:
     sentence_for_humans: "Se non sei un robot, per favore ignora questo campo"
     timestamp_error_message: "Sei stato troppo rapido. Per favore, invia nuovamente i dati."

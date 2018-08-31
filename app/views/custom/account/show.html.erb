@@ -1,3 +1,8 @@
+<!-- versione custom, differisce per:
+ - riga 9: modifica dello user concesso solo a chi si autentica sulla basa dati locale
+ - riga 167: voce delle votazioni visualizzata in base a flag
+ - riga 190: rimossa la fase della verifica tramite lettera cartacea
+ - righe varie: gestione del parametro 'feature.user.skip_verification'-->
 <div class="row account">
   <div class="small-12 column">
     <div class="float-right text-right">
@@ -146,7 +151,7 @@
         <div class="user-permissions small-12 medium-5 column">
           <h2><%= t("account.show.user_permission_title") %></h2>
 
-          <p><%= t("account.show.user_permission_info") %></p>
+          <p><% unless feature?('user.skip_verification') %><%= t("account.show.user_permission_info") %><% else %><%= t("account.show.user_permission_info_no_verification") %><% end %></p>
 
           <ul>
             <li><span class="icon-check"></span>&nbsp;<%= t("account.show.user_permission_debates") %></li>
@@ -157,33 +162,43 @@
               <% else %>
                 <span class="icon-x"></span>
               <% end %>
-              <%= t("account.show.user_permission_support_proposal") %>
+              <%= t("account.show.user_permission_support_proposal") %><% unless feature?('user.skip_verification') %>*<% end %>
             </li>
+            <% if feature?(:polls) %>
+            <li>
+              <% if current_user.level_three_verified? %>
+                <span class="icon-check"></span>
+              <% else %>
+                <span class="icon-x"></span>
+              <% end %>
+              <%= t("account.show.user_permission_votes") %><% unless feature?('user.skip_verification') %>*<% end %>
+            </li>
+            <% end %>
           </ul>
 
-          <p>
-            <span><%= t("account.show.user_permission_verify_info") %></span>
-          </p>
-          <p>
-            <%= t("account.show.user_permission_verify") %>
-          </p>
+          <% unless feature?('user.skip_verification') %>
+            <p>
+              <span><%= t("account.show.user_permission_verify_info") %></span>
+            </p>
+            <p>
+              <%= t("account.show.user_permission_verify") %>
+            </p>
 
-          <% unless @account.organization? %>
-            <div>
-              <span class="verify-account">
+            <% unless @account.organization? %>
+              <div>
+                <span class="verify-account">
+                  <% if current_user.level_two_or_three_verified? %>
+                    <p class="already-verified">
+                      <span class="icon-check"></span>
+                      <%= t("account.show.verified_account") %>
+                    </p>
+                  <% else %>
+                    <%= link_to t("account.show.verify_my_account"), verification_path, class: "button success" %>
+                  <% end %>
 
-                <!-- OSSERVAZIONE: eliminare il presente file custom al momento della attivazione della fase 3 del processo di autenticazione. -->
-                <% if current_user.level_two_or_three_verified? %>
-                  <p class="already-verified">
-                    <span class="icon-check"></span>
-                    <%= t("account.show.verified_account") %>
-                  </p>
-                <% else %>
-                  <%= link_to t("account.show.verify_my_account"), verification_path, class: "button success" %>
-                <% end %>
-
-              </span>
-            </div>
+                </span>
+              </div>
+            <% end %>
           <% end %>
         </div>
       </div>
