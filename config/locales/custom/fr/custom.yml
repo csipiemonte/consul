@@ -46,6 +46,7 @@ fr:
       sign_up: Se connecter avec SPID
       name: SPID
   pages:
+    census_terms: "Per confermare la tua utenza (account) devi avere almeno 16 anni ed essere registrato, dopo aver fornito le informazioni richieste in precedenza, che saranno verificate. Accettando il processo di verifica, acconsenti anche alla verifica di tali informazioni, ed autorizzi i metodi di contatto indicati. I dati forniti saranno acquisiti e memorizzati in un archivio, come menzionato in precedenza nei termini e nelle condizioni d'uso del portale."
     help:
       debates:
         description: "Créez un thème pour discuter de tout sujet que vous souhaitez partager avec d'autres personnes de votre ville."

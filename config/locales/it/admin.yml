@@ -1307,6 +1307,11 @@ it:
         content_block:
           body: Contenuto
           name: Nome
+          names:
+            top_links: Link superiori
+            footer: Piè di pagina
+            subnavigation_left: Navigazione principale sinistra 
+            subnavigation_right: Navigazione principale destra
       images:
         index:
           title: Personalizza immagini
