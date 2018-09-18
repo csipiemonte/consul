@@ -34,7 +34,21 @@ Rails.application.configure do
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default_url_options = { host: Rails.application.secrets.server_name }
   config.action_mailer.asset_host = "http://#{Rails.application.secrets.server_name}"
+
+  # SMTP configuration to deliver emails
+  # Uncomment the following block of code and add your SMTP service credentials
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: Rails.application.secrets.smtp_address,
+    port: Rails.application.secrets.smtp_port
+  #   domain:               'example.com',
+  #   user_name:            '<username>',
+  #   password:             '<password>',
+  #   authentication:       'plain',
+  #   enable_starttls_auto: true
+  }
 
   # Randomize the order test cases are executed.
   config.active_support.test_order = :random
@@ -54,6 +68,9 @@ Rails.application.configure do
 
   # log level
   config.log_level = :info
+
+  # Use default logging formatter so that PID and timestamp are not suppressed.
+  config.log_formatter = ::Logger::Formatter.new
 
   # SPID logout url
   config.spid_logout_url = '/tst_deciditorinosliv1spid_gasp_coto/logout.do'

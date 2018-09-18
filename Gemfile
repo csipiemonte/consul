@@ -6,7 +6,7 @@ gem 'acts-as-taggable-on', '~> 5.0.0'
 gem 'acts_as_votable', '~> 0.11.1'
 gem 'ahoy_matey', '~> 1.6.0'
 gem 'ancestry', '~> 3.0.1'
-gem 'autoprefixer-rails', '~> 8.2.0'
+gem 'autoprefixer-rails', '~> 9.1.4'
 gem 'browser', '~> 2.5.2'
 gem 'cancancan', '~> 2.1.2'
 gem 'ckeditor', '~> 4.2.3'
@@ -51,7 +51,7 @@ gem 'sprockets', '~> 3.7.2'
 gem 'turbolinks', '~> 2.5.3'
 gem 'turnout', '~> 2.4.0'
 gem 'uglifier', '~> 4.1.2'
-gem 'unicorn', '~> 5.4.0'
+gem 'unicorn', '~> 5.4.1'
 gem 'whenever', '~> 0.10.0', require: false
 gem 'globalize', '~> 5.0.0'
 gem 'globalize-accessors', '~> 0.2.1'
@@ -87,13 +87,13 @@ end
 group :development do
   gem 'capistrano', '~> 3.10.1', require: false
   gem 'capistrano-bundler', '~> 1.2', require: false
-  gem 'capistrano-rails', '~> 1.3.1', require: false
+  gem 'capistrano-rails', '~> 1.4.0', require: false
   gem 'capistrano3-delayed-job', '~> 1.7.3'
-  gem 'mdl', '~> 0.4.0', require: false
+  gem 'mdl', '~> 0.5.0', require: false
   gem 'rubocop', '~> 0.54.0', require: false
   gem 'rubocop-rspec', '~> 1.24.0', require: false
   gem 'rvm1-capistrano3', '~> 1.4.0', require: false
-  gem 'scss_lint', '~> 0.54.0', require: false
+  gem 'scss_lint', '~> 0.55.0', require: false
   gem 'web-console', '~> 3.3.0'
 end
 

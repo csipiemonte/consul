@@ -15,7 +15,24 @@ Rails.application.configure do
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default_url_options = { host: Rails.application.secrets.server_name }
   config.action_mailer.asset_host = "https://#{Rails.application.secrets.server_name}"
+
+  # Deliver emails to a development mailbox at /letter_opener
+  # config.action_mailer.delivery_method = :letter_opener
+
+  # SMTP configuration to deliver emails
+  # Uncomment the following block of code and add your SMTP service credentials
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: Rails.application.secrets.smtp_address,
+    port: Rails.application.secrets.smtp_port
+  #   domain:               'example.com',
+  #   user_name:            '<username>',
+  #   password:             '<password>',
+  #   authentication:       'plain',
+  #   enable_starttls_auto: true
+  }
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
@@ -55,6 +72,9 @@ Rails.application.configure do
 
   # log level
   config.log_level = :debug
+
+  # Use default logging formatter so that PID and timestamp are not suppressed.
+  config.log_formatter = ::Logger::Formatter.new
 
   # SPID logout url
   config.spid_logout_url = '/dev_deciditorinosliv1spid_gasp_coto/logout.do'
