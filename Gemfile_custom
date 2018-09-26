@@ -5,4 +5,8 @@
 #
 
 gem 'omniauth-shibboleth', '~> 1.3.0'
+
+# gem aggiunta per la compilazione delle risorse statiche (JS, CSS, immagini, etc),
+# si tratta di un workaround per non installare Node.js come indicato tra i prerequisiti
+# cfr. https://consul_docs.gitbooks.io/docs/en/getting_started/prerequisites/linux.html
 gem 'therubyracer', platform: :ruby

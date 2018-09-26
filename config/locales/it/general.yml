@@ -412,7 +412,6 @@ it:
         zero: Senza commenti
         one: 1 Commento
         other: "%{count} Commenti"
-      reason_for_supports_necessary: 5.000 appoggi da residenti a Torino, di età maggiore di 16 anni
       support: Sostieni
       support_title: Sostieni questa proposta
       supports:
@@ -470,6 +469,9 @@ it:
       geozone_restricted: "Circoscrizioni"
       geozone_info: 'Possono partecipare le persone residenti in: '
       already_answer: "Hai già partecipato a questa votazione"
+      not_logged_in: "È necessario iniziare la sessione o registrarsi per poter partecipare"
+      unverified: "Per cortesia certifica il tuo account per poter partecipare"
+      cant_answer: "Questa votazione non è disponibile nella tua zona"
       section_header:
         icon_alt: Icona delle Votazioni
         title: Votazioni

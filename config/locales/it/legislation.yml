@@ -82,7 +82,7 @@ it:
         key_dates: Date chiave
         debate_dates: Dibattito iniziale
         draft_publication_date: Pubblicazione bozza
-        allegations_dates: Allegati
+        allegations_dates: Commenti
         result_publication_date: Pubblicazione risultati
         proposals_dates: Proposte
     questions:

@@ -1,8 +1,11 @@
-# versione custom, differisce dall'originale alla riga 34, 'false' per permettere di rispondere anche agli utenti non certificati
+# versione custom, differisce dall'originale alla riga 38, 'false' per permettere di rispondere anche agli utenti non certificati
 class Legislation::Question < ActiveRecord::Base
   acts_as_paranoid column: :hidden_at
   include ActsAsParanoidAliases
   include Notifiable
+
+  translates :title, touch: true
+  globalize_accessors
 
   belongs_to :author, -> { with_hidden }, class_name: 'User', foreign_key: 'author_id'
   belongs_to :process, class_name: 'Legislation::Process', foreign_key: 'legislation_process_id'
@@ -12,7 +15,7 @@ class Legislation::Question < ActiveRecord::Base
   has_many :answers, class_name: 'Legislation::Answer', foreign_key: 'legislation_question_id', dependent: :destroy, inverse_of: :question
   has_many :comments, as: :commentable, dependent: :destroy
 
-  accepts_nested_attributes_for :question_options, reject_if: proc { |attributes| attributes[:value].blank? }, allow_destroy: true
+  accepts_nested_attributes_for :question_options, reject_if: proc { |attributes| attributes.all? { |k, v| v.blank? } }, allow_destroy: true
 
   validates :process, presence: true
   validates :title, presence: true

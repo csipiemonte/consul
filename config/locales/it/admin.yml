@@ -373,7 +373,7 @@ it:
           enabled: Abilitato
           process: Progetto
           debate_phase: Fase del dibattito
-          allegations_phase: Fase di redazione
+          allegations_phase: Fase dei commenti
           proposals_phase: Fase delle proposte
           start: Inizio
           end: Fine
@@ -659,8 +659,10 @@ it:
         empty_notifications: Non ci sono notifiche da mostrare
       new:
         section_title: Nuova notifica
+        submit_button: Crea notifica
       edit:
         section_title: Modifica notifica
+        submit_button: Aggiorna notifica
       show:
         section_title: Anteprima della notifica
         send: Invia notifica
