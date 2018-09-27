@@ -85,7 +85,8 @@ it:
   settings:
     feature:
       proposals: Proposte
-      spid_login: Accesso con SPID
+      shibboleth_login: "Accesso con SPID"
+      shibboleth_login_description: "Per consentire agli utenti di accedere con il proprio account SPID (autenticazione Shibboleth)"
   verification:
     residence:
       new:
