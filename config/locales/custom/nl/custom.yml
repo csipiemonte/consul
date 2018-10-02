@@ -83,10 +83,12 @@ nl:
         help_text_6: "Nadere informatie over de voorstellen en hoe te registreren zijn beschikbaar in de %{link}"
         help_text_6_link: "pagina met veelgestelde vragen"
   settings:
+    direct_message_max_per_day: "Numero massimo di messaggi giornalieri"
     feature:
       proposals: Voorstellen
       shibboleth_login: "Accesso con SPID"
       shibboleth_login_description: "Per consentire agli utenti di accedere con il proprio account SPID (autenticazione Shibboleth)"
+    proposal_notification_minimum_interval_in_days: "Intervallo minimo in giorni per la notifica di una proposta"
   verification:
     residence:
       new:

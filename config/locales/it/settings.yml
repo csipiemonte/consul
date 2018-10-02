@@ -2,7 +2,6 @@ it:
   settings:
     comments_body_max_length: "Lunghezza massima dei commenti"
     comments_body_max_length_description: "In numero di caratteri"
-    direct_message_max_per_day: "Numero massimo di messaggi giornalieri"
     official_level_1_name: "Funzionario pubblico di livello 1"
     official_level_1_name_description: "Etichetta che apparirà sugli utenti contrassegnati come funzionari pubblici di livello 1"
     official_level_2_name: "Funzionario pubblico di livello 2"
@@ -21,7 +20,6 @@ it:
     max_votes_for_debate_edit_description: "A partire da questo numero di voti l'autore di un dibattito non potrà più modificarlo"
     proposal_code_prefix: "Prefisso per i codici delle proposta"
     proposal_code_prefix_description: "Questo prefisso apparirà nelle proposte prima della data di creazione e del suo ID"
-    proposal_notification_minimum_interval_in_days: "Intervallo minimo in giorni per la notifica di una proposta"
     votes_for_proposal_success: "Numero di appoggi necessari per approvare una proposta"
     votes_for_proposal_success_description: "Quando una proposta raggiunge questo numero di appoggi non ne potrà ricevere altri, perché tale proposta è considerata di successo"
     months_to_archive_proposals: "Mesi per archiviare le proposte"
@@ -121,3 +119,5 @@ it:
       guides_description: "Attiva una guida delle differenze fra le proposte e i progetti di spesa solo se è presente un bilancio partecipativo attivo"
       public_stats: "Statistiche pubbliche"
       public_stats_description: "Mostra le statistiche pubbliche nel pannello di Amministrazione"
+      help_page: "Pagina di 'Scopri DecidiTorino'"
+      help_page_description: "Mostra la voce di menu 'Scopri DecidiTorino' che conduce ad una pagina nella quale sono illustrate le funzionalità abilitate."
