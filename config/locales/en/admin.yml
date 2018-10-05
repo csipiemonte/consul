@@ -394,6 +394,12 @@ en:
           back: Back
           title: Create new collaborative legislation process
           submit_button: Create process
+        proposals:
+          select_order: Sort by
+          orders:
+            id: Id
+            title: Title
+            supports: Supports
         process:
           title: Process
           comments: Comments
@@ -411,6 +417,11 @@ en:
         index:
           title: Proposals
           back: Back
+          id: Id
+          title: Title
+          supports: Supports
+          select: Select
+          selected: Selected
         form:
           custom_categories: Categories
           custom_categories_description: Categories that users can select creating the proposal.
@@ -1349,11 +1360,11 @@ en:
         page:
           created_at: Created at
           status: Status
-          title: Title
           updated_at: Updated at
           status_draft: Draft
           status_published: Published
-          locale: Language
+          title: Title
+          slug: Slug
     homepage:
       title: Homepage
       description: The active modules appear in the homepage in the same order as here.

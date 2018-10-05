@@ -395,6 +395,12 @@ it:
           back: Indietro
           title: Crea nuovo progetto di legislazione collaborativa
           submit_button: Crea progetto
+        proposals:
+          select_order: Ordina per
+          orders:
+            id: Id
+            title: Titolo
+            supports: Appoggi
         process:
           title: Progetto
           comments: Commenti
@@ -412,6 +418,11 @@ it:
         index:
           title: Proposte
           back: Indietro
+          id: Id
+          title: Titolo
+          supports: Appoggi
+          select: Seleziona
+          selected: Selezionato
         form:
           custom_categories: Categorie
           custom_categories_description: "Categorie che l'utente può selezionare durante la creazione della proposta."
@@ -1350,11 +1361,11 @@ it:
         page:
           created_at: Creata
           status: Stato
-          title: Titolo
           updated_at: Ultimo aggiornamento
           status_draft: Bozza
           status_published: Pubblicata
-          locale: Lingua
+          title: Titolo
+          slug: Slug
     homepage:
       title: Homepage
       description: I moduli attivi appariranno sulla homepage nello stesso ordine mostrato qui.

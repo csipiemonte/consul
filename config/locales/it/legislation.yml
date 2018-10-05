@@ -52,6 +52,9 @@ it:
         more_info: Maggiori informazioni e contesto
       proposals:
         empty_proposals: Non ci sono proposte
+        filters:
+          random: Aleatorie
+          winners: Selezionate
       debate:
         empty_questions: Non ci sono domande
         participate: Dai i tuoi contributi al dibattito iniziale partecipando ai seguenti temi.
@@ -120,4 +123,3 @@ it:
       form:
         tags_label: "Categorie"
       not_verified: "Per votare le proposte %{verify_account}."
-      closed: "Questo processo è terminato e non può più raccogliere voti."

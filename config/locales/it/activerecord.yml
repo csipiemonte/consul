@@ -76,6 +76,9 @@ it:
       legislation/process:
         one: "Progetto"
         other: "Progetti"
+      legislation/proposal:
+        one: "Proposta"
+        other: "Proposte"
       legislation/draft_versions:
         one: "Versione in bozza"
         other: "Versioni in bozza"
