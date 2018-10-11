@@ -104,7 +104,7 @@ it:
       form:
         submit_button: Invia codice
       show:
-        email_title: Emails
+        email_title: Email
         explanation: In Anagrafe disponiamo dei seguenti dati, seleziona dove vuoi che ti sia spedito il codice di conferma.
         phone_title: Telefono
         title: Informazione disponibile

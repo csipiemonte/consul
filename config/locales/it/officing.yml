@@ -34,7 +34,7 @@ it:
         results_list: "I tuoi risultati"
         see_results: "Vedi risultati"
       index:
-        no_results: "Non ci sono risultati"
+        no_results: "Nessun risultato"
         results: Risultati
         table_answer: Risposta
         table_votes: Voti

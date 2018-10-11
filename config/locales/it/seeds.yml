@@ -32,7 +32,6 @@ it:
       environment: Ambiente
     budgets:
       budget: Bilancio Partecipativo
-      currency: €
       groups:
         all_city: "Tutta la Città"
         districts: Distretti

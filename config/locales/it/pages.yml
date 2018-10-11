@@ -45,8 +45,6 @@ it:
         title: "Progetti"
         description: "Nella sezione %{link} è possibile partecipare all'elaborazione di progetti di interesse della città e su cui l'Amministrazione sta svolgendo studi per la loro realizzazione: la consultazione pertanto consente a tutti di esprimere le proprie opinioni e contribuire con le proprie idee e riflessioni sui progetti illustrati."
         link: "Progetti"
-        feature: "Per partecipare è necessario %{sign_up} e consultare periodicamente la pagina dei %{link} per conoscere quelli su cui è in corso un dibattito. Non è al momento necessario essere residenti a Torino, occorre solo essere registrati sulla piattaforma."
-        sign_up: "registrarsi su %{org}"
       faq:
         title: "Problemi tecnici?"
         description: "Leggi le domande frequenti per risolvere i tuoi dubbi."
@@ -62,9 +60,9 @@ it:
       how_to_use:
         text: |-
           Utilizzalo nella tua città o aiutaci a migliorarlo, è software libero.
-
+          
           Questo portale di Governo Aperto usa il software libero [CONSUL](https://github.com/consul/consul 'github consul'), con [licenza AGPLv3](http://www.gnu.org/licenses/agpl-3.0.html 'AGPLv3 gnu' ), in poche parole significa che qualsiasi persona può liberamente usare il codice, copiarlo, vederlo nel dettaglio, modificarlo, e ridistribuirlo con le modifiche che desidera, a condizione che altri possano fare la medesima cosa. Tutto questo perché crediamo che la cultura, quando è libera, è migliore e si arrichisce di continuo.
-
+          
           Se sei un programmatore, puoi prendere visione del codice e aiutarci a migliorare il [portale CONSUL](https://github.com/consul/consul 'github consul').
       titles:
         how_to_use: Utilizzalo nella tua città

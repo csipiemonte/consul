@@ -55,6 +55,9 @@ nl:
         feature_2_html: "Debatten kunnen worden geëvalueerd met de knoppen <strong>Ik ga akkoord</strong> of <strong>Ik niet akkoord</strong> naast elk ervan."
         feature_3_html: "De titel en de tekst van de debatten die minstens 1 ondersteuning hebben ontvangen, kunnen niet langer door de verdediger worden gewijzigd."
         feature_4_html: "We herinneren je eraan dat het discussiegebied een onderwerp is van gratis discussie tussen gebruikers. Om voorstellen te formuleren waarvoor de Stad zich ertoe verbindt om de haalbaarheid technisch te evalueren, ook in termen van middelen, is de sectie Voorstellen actief waar ideeën en projecten kunnen worden geformuleerd voor commentaar en ondersteuning."
+      processes:
+        feature: "Per partecipare è necessario %{sign_up} e consultare periodicamente la pagina dei %{link} per conoscere quelli su cui è in corso un dibattito. Non è al momento necessario essere residenti a Torino, occorre solo essere registrati sulla piattaforma."
+        sign_up: "registrarsi su %{org}"
       proposals:
         description: "Stel voor wat u wilt dat de stad bereikt en ondersteun de voorstellen van andere gebruikers."
         feature_1_html: "De voorstellen moeten betrekking hebben op onderwerpen die verband houden met de Stad, en als ze de Administratie ertoe verplichten deze uit te voeren, moeten ze vallen onder de bevoegdheden die aan de gemeenten zijn toegekend."

@@ -7,7 +7,6 @@ it:
       title_placeholder: Aggiungi un titolo descrittivo del documento
       attachment_label: Seleziona un documento
       delete_button: Elimina documento
-      cancel_button: Annulla
       note: 'È possibile allegare fino ad un massimo di %{max_documents_allowed} documenti nei formati: %{accepted_content_types}, e di dimensione fino a %{max_file_size} MB per file.'
       add_new_document: Aggiungi nuovo documento
     actions:
@@ -16,9 +15,9 @@ it:
         alert: Non è stato possibile eliminare il documento.
         confirm: "Confermi l'eliminazione del documento? Non è possibile annullare questa operazione!"
     buttons:
-      download_document: Download file
+      download_document: Scarica file
       destroy_document: Elimina documento
     errors:
       messages:
-        in_between: deve stare fra %{min} e %{max}
-        wrong_content_type: Il tipo di contenuto %{content_type} del file non coincide con nessuno dei tipi di contenuto accettati %{accepted_content_types}
+        in_between: deve essere tra %{min} e %{max}
+        wrong_content_type: il contenuto %{content_type} non corrisponde ad alcuna delle tipologie accettate %{accepted_content_types}

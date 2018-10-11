@@ -36,7 +36,7 @@ it:
     twitter_hashtag_description: "Hashtag che sarà riportato nelle condivisioni via Twitter"
     facebook_handle: "Utente Facebook"
     facebook_handle_description: "Se specificato, apparirà a piè di pagina"
-    youtube_handle: "Utente Youtube"
+    youtube_handle: "Utente YouTube"
     youtube_handle_description: "Se specificato, apparirà a piè di pagina"
     telegram_handle: "Utente Telegram"
     telegram_handle_description: "Se specificato, apparirà a piè di pagina"

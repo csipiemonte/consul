@@ -55,6 +55,9 @@ it:
         feature_2_html: "I dibattiti possono essere valutati utilizzando i pulsanti <strong>Sono d'accordo</strong> o <strong>Non sono d'accordo</strong> che si trovano accanto a ciascuno di essi."
         feature_3_html: "Il titolo e il testo dei dibattiti che hanno ricevuto almeno 1 appoggio, non potranno più essere modificati dal proponente."
         feature_4_html: "Vi ricordiamo che l'area dibattiti è una zona di libera discussione tra utenti. Per formulare proposte di cui la Città si impegna a valutare tecnicamente la fattibilità, anche in termini di risorse, è attiva la sezione Proposte dove potranno essere formulate idee e progetti da commentare ed appoggiare."
+      processes:
+        feature: "Per partecipare è necessario %{sign_up} e consultare periodicamente la pagina dei %{link} per conoscere quelli su cui è in corso un dibattito. Non è al momento necessario essere residenti a Torino, occorre solo essere registrati sulla piattaforma."
+        sign_up: "registrarsi su %{org}"
       proposals:
         description: "Proponi ciò che vorresti che la Città realizzasse e appoggia le proposte degli altri utenti."
         feature_1_html: "Le proposte devono riguardare temi inerenti la Città, e se richiedono all'Amministrazione di realizzarla devono rientrare nelle competenze attribuite ai comuni."

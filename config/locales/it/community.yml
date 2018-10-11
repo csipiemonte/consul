@@ -3,21 +3,21 @@ it:
     sidebar:
       title: Comunità
       description:
-        proposal: Partecipa alla comunità di utenti di questa proposta.
-        investment: Partecipa alla comunità di utenti di questo progetto di spesa.
+        proposal: Partecipa alla comunità degli utenti di questa proposta.
+        investment: Partecipa alla comunità degli utenti di questo progetto di investimento.
       button_to_access: Accedi alla comunità
     show:
       title:
         proposal: Comunità della proposta
         investment: Comunità del bilancio partecipativo
       description:
-        proposal: Partecipa alla comunità di questa proposta. Una comunità attiva può aiutare a migliorare il contenuto della proposta così come può aumentare la sua diffusione allo scopo di ricevere più appoggi.
-        investment: Partecipa alla comunità di questo progetto di spesa. Una comunità attiva può aiutare a migliorare il contenuto del progetto di investimento così come può aumentare la sua diffusione allo scopo di ricevere più appoggi.
+        proposal: Partecipa alla comunità di questa proposta. Una comunità attiva può aiutare a migliorare il contenuto della proposta e incrementare la sua diffusione per ottenere maggior supporto.
+        investment: Partecipa alla comunità di questo progetto di investimento. Una comunità attiva può aiutare a migliorare il contenuto del progetto di investimento e incrementare la sua diffusione per ottenere maggior supporto.
       create_first_community_topic:
-        first_theme_not_logged_in: Al momento non ci sono temi disponibili, partecipa alla creazione del primo.
+        first_theme_not_logged_in: Al momento non ci sono temi disponibili, partecipa creando il primo.
         first_theme: Crea il primo tema della comunità
         sub_first_theme: "Per creare un tema è necessario %{sign_in} o %{sign_up}."
-        sign_in: "iniziare la sessione"
+        sign_in: "accedere"
         sign_up: "registrarsi"
       tab:
         participants: Partecipanti
@@ -28,9 +28,9 @@ it:
         edit: Modifica tema
         destroy: Elimina tema
         comments:
-          zero: Senza commenti
-          one: 1 Commento
-          other: "%{count} Commenti"
+          zero: Nessun commento
+          one: 1 commento
+          other: "%{count} commenti"
       author: Autore
       back: Torna a %{community} %{proposal}
     topic:
@@ -57,4 +57,4 @@ it:
         recommendation_three: Usa bene questo spazio e le voci che lo compongono, sono a tua disposizione.
   topics:
     show:
-      login_to_comment: È necessario %{signin} o %{signup} per commentare.
+      login_to_comment: È necessario %{signin} o %{signup} per lasciare un commento.

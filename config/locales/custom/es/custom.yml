@@ -55,6 +55,9 @@ es:
         feature_2_html: "Los debates se pueden evaluar utilizando los botones <strong>Estoy de acuerdo</strong> o <strong>No estoy de acuerdo</strong> que están al lado de cada uno de ellos."
         feature_3_html: "El título y el texto de los debates que han recibido al menos 1 apoyo, ya no pueden ser modificados por el proponente."
         feature_4_html: "Le recordamos que el área de discusión es un área de discusión libre entre los usuarios. Con el fin de formular propuestas para las cuales la Ciudad se compromete a evaluar técnicamente su viabilidad, también en términos de recursos, la sección de Propuestas está activa donde se pueden formular ideas y proyectos para comentar y apoyar."
+      processes:
+        feature: "Per partecipare è necessario %{sign_up} e consultare periodicamente la pagina dei %{link} per conoscere quelli su cui è in corso un dibattito. Non è al momento necessario essere residenti a Torino, occorre solo essere registrati sulla piattaforma."
+        sign_up: "registrarsi su %{org}"
       proposals:
         description: "Proponga lo que le gustaría que la Ciudad logre y respalde las propuestas de otros usuarios."
         feature_1_html: "Las propuestas deben referirse a temas relacionados con la Ciudad, y si requieren que el Ayuntamiento lo implemente, deben estar dentro de las competencias asignadas a los municipios."

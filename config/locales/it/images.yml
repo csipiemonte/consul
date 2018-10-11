@@ -6,7 +6,7 @@ it:
       title_placeholder: "Aggiungi un titolo descrittivo dell'immagine"
       attachment_label: Seleziona una immagine
       delete_button: Elimina immagine
-      note: 'È possibile allegare una immagine nei formati: %{accepted_content_types}, di dimensione fino a %{max_file_size} MB per file.'
+      note: "È possibile allegare una immagine nei formati: %{accepted_content_types}, di dimensione fino a %{max_file_size} MB per file."
       add_new_image: Aggiungi immagine
       admin_title: "Immagine"
       admin_alt_text: "Testo alternativo per l'immagine"

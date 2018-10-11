@@ -48,12 +48,12 @@ it:
       deleted: Questo commento è stato eliminato
       moderator: Moderatore
       responses:
-        zero: Senza risposte
-        one: 1 Risposta
-        other: "%{count} Risposte"
+        zero: Nessuna risposta
+        one: 1 risposta
+        other: "%{count} risposte"
       user_deleted: Utente rimosso
       votes:
-        zero: Senza voti
+        zero: Nessun voto
         one: 1 voto
         other: "%{count} voti"
     form:
@@ -80,11 +80,11 @@ it:
         submit_button: Inizia un dibattito
     debate:
       comments:
-        zero: Senza commenti
+        zero: Nessuna commento
         one: 1 commento
-        other: "%{count} Commenti"
+        other: "%{count} commenti"
       votes:
-        zero: Senza voti
+        zero: Nessun voto
         one: 1 voto
         other: "%{count} voti"
     edit:
@@ -151,7 +151,7 @@ it:
     show:
       author_deleted: Utente eliminato
       comments:
-        zero: Senza commenti
+        zero: Nessun commento
         one: 1 commento
         other: "%{count} commenti"
       comments_title: Commenti
@@ -180,7 +180,7 @@ it:
     proposal: la proposta
     proposal_notification: "la notifica"
     spending_proposal: la proposta di spesa
-    budget/investment: il progetto di spesa
+    budget/investment: il progetto di investimento
     budget/heading: la voce di bilancio
     poll/shift: il turno
     poll/question/answer: la risposta
@@ -278,18 +278,18 @@ it:
     start_proposal: Crea una proposta
   omniauth:
     facebook:
-      sign_in: Entra con Facebook
+      sign_in: Accedi con Facebook
       sign_up: Registrati con Facebook
       name: Facebook
     finish_signup:
       title: "Dettagli aggiuntivi del tuo account"
-      username_warning: "Dovuto alla modifica del processo usato per la connessione ai social networks è possibile che il tuo nome utente appaia come 'già in uso', anche se prima lo usavi per accedere al sito. Se si verifica tale situazione, per favore scegli un altro nome utente."
+      username_warning: "Dovuto alla modifica del processo usato per la connessione ai social network è possibile che il tuo nome utente appaia come 'già in uso', anche se prima lo usavi per accedere al sito. Se si verifica tale situazione, per favore scegli un altro nome utente."
     google_oauth2:
-      sign_in: Entra con Google
+      sign_in: Accedi con Google
       sign_up: Registrati con Google
       name: Google
     twitter:
-      sign_in: Entra con Twitter
+      sign_in: Accedi con Twitter
       sign_up: Registrati con Twitter
       name: Twitter
     info_sign_in: "Entra con:"
@@ -378,7 +378,7 @@ it:
       select_order: Ordina per
       select_order_long: 'Stai vedendo le proposte'
       start_proposal: Crea una proposta
-      title: Proposte
+      title: Proposte cittadine
       top: Top della settimana
       top_link_proposals: Proposte più appoggiate per categoria
       section_header:
@@ -415,7 +415,7 @@ it:
       support: Sostieni
       support_title: Sostieni questa proposta
       supports:
-        zero: Senza appoggi
+        zero: Nessun appoggio
         one: 1 appoggio
         other: "%{count} appoggi"
       votes:
@@ -430,9 +430,9 @@ it:
       author_deleted: Utente eliminato
       code: 'Codice della proposta:'
       comments:
-        zero: Senza commenti
-        one: 1 Commento
-        other: "%{count} Commenti"
+        zero: Nessun commento
+        one: 1 commento
+        other: "%{count} commenti"
       comments_tab: Commenti
       edit_proposal_link: Modifica proposta
       flag: Questa proposta è stata definita inadeguata da molti utenti.
@@ -444,7 +444,7 @@ it:
       share: Condividi
       send_notification: Invia notifica
       no_notifications: "Questa proposta non ha notifiche."
-      embed_video_title: "Video in %{proposal}"
+      embed_video_title: "Video su %{proposal}"
       title_external_url: "Documentazione aggiuntiva"
       title_video_url: "Video esterno"
       author: Autore
@@ -467,7 +467,7 @@ it:
       participate_button_expired: "Votazione terminata"
       no_geozone_restricted: "Tutta la città"
       geozone_restricted: "Circoscrizioni"
-      geozone_info: 'Possono partecipare le persone residenti in: '
+      geozone_info: "Possono partecipare le persone residenti in: "
       already_answer: "Hai già partecipato a questa votazione"
       not_logged_in: "È necessario iniziare la sessione o registrarsi per poter partecipare"
       unverified: "Per cortesia certifica il tuo account per poter partecipare"
@@ -487,7 +487,7 @@ it:
       cant_answer_not_logged_in: "È necessario %{signin} o %{signup} per partecipare."
       comments_tab: Commenti
       login_to_comment: È necessario %{signin} o %{signup} per commentare.
-      signin: iniziare la sessione
+      signin: accedere
       signup: registrarsi
       cant_answer_verify_html: "Per cortesia %{verify_link} per poter rispondere."
       verify_link: "certifica il tuo account"
@@ -505,8 +505,8 @@ it:
       results_menu: "Risultati della votazione"
       stats:
         title: "Dati sulla partecipazione"
-        total_participation: "Partecipazione totale"
-        total_votes: "Nº totale di voti emessi"
+        total_participation: "Totale partecipazione"
+        total_votes: "Totale complessivo di voti dati"
         votes: "VOTI"
         web: "WEB"
         booth: "URNE"
@@ -516,7 +516,7 @@ it:
         null_votes: "Nulli"
       results:
         title: "Domande"
-        most_voted_answer: 'Risposta più votata: '
+        most_voted_answer: "Risposta più votata: "
   poll_questions:
     create_question: "Crea domanda"
     show:
@@ -571,9 +571,9 @@ it:
     followable:
       budget_investment:
         create:
-          notice_html: "Adesso stai seguendo questo progetto di spesa! </br> Ti saranno notificate le modifiche man mano che si realizzano per tenerti aggiornato."
+          notice_html: "Adesso stai seguendo questo progetto di investimento! </br> Ti saranno notificate le modifiche man mano che si realizzano per tenerti aggiornato."
         destroy:
-          notice_html: "Hai smesso di seguire questo progetto di spesa! </br> Non riceverai più le notifiche relazionate con questo progetto."
+          notice_html: "Hai smesso di seguire questo progetto di investimento! </br> Non riceverai più le notifiche relazionate con questo progetto."
       proposal:
         create:
           notice_html: "Adesso stai seguendo questa proposta cittadina! </br> Ti saranno notificate le modifiche man mano che si realizzano per tenerti aggiornato."
@@ -593,10 +593,10 @@ it:
         see_all: "Mostra tutti"
       budget_investment:
         found:
-          one: "Esiste un progetto di spesa con la parola '%{query}', puoi parteciparvi invece di crearne uno nuovo."
-          other: "Esistono progetti di spesa con la parola '%{query}', puoi parteciparvi invece di crearne uno nuovo."
-        message: "Visualizzati %{limit} di %{count} progetti di spesa che contengono la parola '%{query}'"
-        see_all: "Mostra tutti"
+          one: "Esiste una proposta di investimento con la parola '%{query}', puoi parteciparvi invece di aprirne una nuova."
+          other: "Esistono proposte di investimento con la parola '%{query}', puoi parteciparvi invece di aprirne una nuova."
+        message: "Visualizzate %{limit} di %{count} proposte di investimento che contengono la parola '%{query}'"
+        see_all: "Mostra tutte"
       proposal:
         found:
           one: "Esiste una proposta con la parola '%{query}', puoi parteciparvi invece di aprirne una nuova."
@@ -651,7 +651,7 @@ it:
     index:
       title: Bilanci partecipativi
       unfeasible: Proposte di investimento non realizzabili
-      by_geozone: 'Proposte di investimento con ambito: %{geozone}'
+      by_geozone: "Proposte di investimento con ambito: %{geozone}"
       search_form:
         button: Cerca
         placeholder: Proposte di investimento...
@@ -720,7 +720,7 @@ it:
       deleted: Eliminato
       deleted_debate: Questo dibattito è stato eliminato
       deleted_proposal: Questa proposta è stata eliminata
-      deleted_budget_investment: Questo progetto di spesa è stato eliminato
+      deleted_budget_investment: Questa proposta di investimento è stata eliminata
       proposals: Proposte
       debates: Dibattiti
       budget_investments: Progetti dei bilanci partecipativi
@@ -772,7 +772,7 @@ it:
       not_voting_allowed: Il periodo di votazione è concluso.
     budget_investments:
       not_logged_in: È necessario %{signin} o %{signup} per proseguire.
-      not_verified: I progetti di spesa possono essere sostenuti solamente da utenti certificati, %{verify_account}.
+      not_verified: I progetti di investimento possono essere sostenuti solamente da utenti certificati, %{verify_account}.
       organization: Le organizzazioni non possono votare.
       unfeasible: Non si possono votare le proposte non realizzabili.
       not_voting_allowed: Il periodo di votazione è concluso.
@@ -839,7 +839,7 @@ it:
     content_title:
       proposal: "Proposta"
       debate: "Dibattito"
-      budget_investment: "Progetto di spesa"
+      budget_investment: "Proposta di investimento"
   admin/widget:
     header:
       title: Amministrazione
@@ -847,6 +847,6 @@ it:
     help:
       alt: Seleziona il testo che vuoi commentare e fai click sul fumetto con la matita.
       text: Per commentare questo documento è necessario %{sign_in} o %{sign_up}. Poi seleziona il testo che vuoi commentare e fai click sul fumetto con la matita.
-      text_sign_in: iniziare una sessione
+      text_sign_in: accedere
       text_sign_up: registrarsi
       title: "Come posso commentare questo documento?"

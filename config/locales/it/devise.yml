@@ -39,9 +39,9 @@ it:
     registrations:
       destroyed: "Il tuo account è stato rimosso come richiesto."
       signed_up: "Benvenuto! Identificazione avvenuta con successo."
-      signed_up_but_inactive: "La registrazione si è conclusa con successo, però non è stato possibile iniziare la sessione perché l'account non è stato attivato."
-      signed_up_but_locked: "La registrazione si è conclusa con successo, però non è stato possibile iniziare la sessione perché l'account è bloccato."
-      signed_up_but_unconfirmed: "Ti è stato inviato un messaggio di posta con un link di conferma. Per cortesia visita il link per attivare il tuo account."
+      signed_up_but_inactive: "La registrazione è avvenuta con successo, ma non è stato possibile accedere perché l’account non è stato attivato."
+      signed_up_but_locked: "La registrazione è avvenuta con successo, ma non è stato possibile accedere perché l’account è bloccato."
+      signed_up_but_unconfirmed: "Ti è stato inviato un messaggio di posta contenente un link di conferma. Per cortesia, clicca sul link per attivare il tuo account."
       update_needs_confirmation: "Hai modificato con successo il tuo account, ciò nonostante dobbiamo verificare il tuo nuovo indirizzo email. Per cortesia controlla la tua casella di posta e visita il link che ti abbiamo spedito per completare la conferma del tuo nuovo indirizzo email."
       updated: "Account aggiornato con successo."
     sessions:
@@ -50,16 +50,16 @@ it:
       already_signed_out: "Hai terminato correttamente la sessione."
     unlocks:
       send_instructions: "Fra qualche istante riceverai una email con le istruzioni per sbloccare l'account."
-      send_paranoid_instructions: "Se il tuo account è presente, fra qualche istante riceverai una email con le istruzioni per sbloccare l'account."
-      unlocked: "L'account è stato sbloccato. Per continuare, per favore, iniziare una nuova sessione."
+      send_paranoid_instructions: "Se disponi di un account, tra qualche minuto riceverai una email contenente le istruzioni per sbloccarlo."
+      unlocked: "Il tuo account è stato sbloccato. Per favore, accedi per continuare."
   errors:
     messages:
       already_confirmed: "sei già stato confermato, per favore prova ad iniziare la sessione."
-      confirmation_period_expired: "è necessario essere confermati in %{period}, per favore richiedilo nuovamente."
+      confirmation_period_expired: "è necessario provvedere alla conferma entro %{period}; per favore, esegui nuovamente la richiesta."
       expired: "è scaduto, per favore richiedilo nuovamente."
       not_found: "non è stato trovato."
       not_locked: "non era bloccato."
       not_saved:
-        one: "1 errore non ha consentito il salvataggio di questo %{resource}. Si prega, per cortesia, di controllare i campi segnalati per sapere come correggerli:"
-        other: "%{count} errori hanno impedito di salvare questo %{resource}. Si prega, per cortesia, di controllare i campi segnalati per sapere come correggerli:"
-      equal_to_current_password: "non deve essere identica alla password attuale"
+        one: "1 errore ha impedito a questa %{resource} di essere salvata. Si prega di verificare i campi contrassegnati per capire come correggerli:"
+        other: "%{count} errori hanno impedito a questa %{resource} di essere salvata. Si prega di verificare i campi contrassegnati per capire come correggerli:"
+      equal_to_current_password: "deve essere diversa dalla password attuale."

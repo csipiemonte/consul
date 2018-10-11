@@ -8,8 +8,8 @@ it:
         one: "Bilancio partecipativo"
         other: "Bilanci partecipativi"
       budget/investment:
-        one: "Investimento"
-        other: "Investimenti"
+        one: "Progetto di investimento"
+        other: "Progetti di investimento"
       budget/investment/milestone:
         one: "traguardo"
         other: "milestones"
@@ -38,14 +38,14 @@ it:
         one: "Valutatore"
         other: "Valutatori"
       valuator_group:
-        one: "Gruppo di Valutatori"
-        other: "Gruppi di Valutatori"
+        one: "Gruppo di valutatori"
+        other: "Gruppi di valutatori"
       manager:
         one: "Gestore"
         other: "Gestori"
       newsletter:
         one: "Newsletter"
-        other: "Newsletters"
+        other: "Newsletter"
       vote:
         one: "Voto"
         other: "Voti"
@@ -62,8 +62,8 @@ it:
         one: "Proposta cittadina"
         other: "Proposte cittadine"
       spending_proposal:
-        one: "Proposta di spesa"
-        other: "Proposte di spesa"
+        one: "Progetto d’investimento"
+        other: "Progetti d’investimento"
       site_customization/page:
         one: Pagina personalizzata
         other: Pagine personalizzate
@@ -71,8 +71,8 @@ it:
         one: Immagine personalizzata
         other: Immagini personalizzate
       site_customization/content_block:
-        one: Blocco di contenuto proprio
-        other: Blocchi di contenuto proprio
+        one: Blocco di contenuto personalizzato
+        other: Blocchi di contenuto personalizzati
       legislation/process:
         one: "Progetto"
         other: "Progetti"
@@ -112,12 +112,12 @@ it:
     attributes:
       budget:
         name: "Nome"
-        description_accepting: "Descrizione durante la fase della Accettazione"
-        description_reviewing: "Descrizione durante la fase della Verifica"
-        description_selecting: "Descrizione durante la fase della Ricerca di appoggi"
-        description_valuating: "Descrizione durante la fase della Valutazione"
-        description_balloting: "Descrizione durante la fase del Voto"
-        description_reviewing_ballots: "Descrizione durante la fase della Verifica del voto"
+        description_accepting: "Descrizione durante la fase di Accettazione"
+        description_reviewing: "Descrizione durante la fase di Verifica"
+        description_selecting: "Descrizione durante la fase di Ricerca di appoggi"
+        description_valuating: "Descrizione durante la fase di Valutazione"
+        description_balloting: "Descrizione durante la fase di Voto"
+        description_reviewing_ballots: "Descrizione durante la fase di Verifica dei voti"
         description_finished: "Descrizione durante la fase della Approvazione del Bilancio / Risultati"
         phase: "Fase"
         currency_symbol: "Valuta"
@@ -128,9 +128,9 @@ it:
         external_url: "Link alla documentazione aggiuntiva"
         administrator_id: "Amministratore"
         location: "Ubicazione (facoltativo)"
-        organization_name: "Se stai proponendo a nome di una organizzazione o collettivo, o a nome di più gente, scrivine il nome"
-        image: "Immagine descrittiva della proposta di spesa"
-        image_title: "Titolo dell'immagine"
+        organization_name: "Se presenti una proposta a nome di un collettivo o di un’organizzazione, ovvero per conto di più persone, indicane il nome"
+        image: "Immagine descrittiva della proposta di investimento"
+        image_title: "Titolo dell’immagine"
       budget/investment/milestone:
         status_id: "Stato attuale del progetto (facoltativo)"
         title: "Titolo"
@@ -192,7 +192,7 @@ it:
         external_url: "Link alla documentazione aggiuntiva"
       signature_sheet:
         signable_type: "Tipo Foglio firme"
-        signable_id: "ID Proposta"
+        signable_id: "ID Proposta cittadina/Proposta investimento"
         document_numbers: "Numero di documenti"
       site_customization/page:
         content: Contenuto
@@ -240,10 +240,10 @@ it:
         text: Commento
       document:
         title: Titolo
-        attachment: File allegato
+        attachment: Allegato
       image:
         title: Titolo
-        attachment: File allegato
+        attachment: Allegato
       poll/question/answer:
         title: Risposta
         description: Descrizione
@@ -280,31 +280,31 @@ it:
         image:
           attributes:
             attachment:
-              min_image_width: "L'immagine deve essere di almeno %{required_min_width}px di larghezza"
-              min_image_height: "L'immagine deve essere di almeno %{required_min_height}px di altezza"
+              min_image_width: "La Larghezza dell’immagine dev’essere pari ad almeno %{required_min_width}px"
+              min_image_height: "L’altezza dell’immagine dev’essere pari ad almeno %{required_min_height}px"
         newsletter:
           attributes:
             segment_recipient:
-              invalid: "Il segmento degli utenti non è valido"
+              invalid: "Il segmento dei destinatari è errato"
         admin_notification:
           attributes:
             segment_recipient:
-              invalid: "Il segmento degli utenti non è valido"
+              invalid: "Il segmento dei destinatari è errato"
         map_location:
           attributes:
             map:
-              invalid: "La mappa non può rimanere vuota. Si prega di specificare un punto sulla mappa o di mettere una spunta sulla casella qualora la mappa non sia necessaria."
+              invalid: "La posizione sulla mappa non può essere lasciata in bianco. Posiziona un segnaposto o seleziona l’apposita spunta se la geolocalizzazione non è necessaria."
         poll/voter:
           attributes:
             document_number:
-              not_in_census: "Il documento non è presente negli archivi istituzionali"
+              not_in_census: "Il documento non è presente in anagrafe"
               has_voted: "L'utente ha già votato"
         legislation/process:
           attributes:
             end_date:
-              invalid_date_range: deve essere uguale o successiva alla data di inizio
+              invalid_date_range: deve avere data uguale o successiva alla data d’inizio
             debate_end_date:
-              invalid_date_range: deve essere uguale o successiva alla data di inizio del dibattito
+              invalid_date_range: deve avere data uguale o successiva alla data d’inizio del dibattito
             allegations_end_date:
               invalid_date_range: deve essere uguale o successiva alla data di inizio degli allegati
         proposal:
@@ -322,7 +322,7 @@ it:
         signature:
           attributes:
             document_number:
-              not_in_census: 'Il documento non è stato verificato negli archivi istituzionali'
+              not_in_census: 'Il documento non è stato verificato in Anagrafe'
               already_voted: 'Proposta già votata'
         site_customization/page:
           attributes:
@@ -340,5 +340,5 @@ it:
       messages:
         record_invalid: "La certificazione non è avvenuta: %{errors}"
         restrict_dependent_destroy:
-          has_one: Non è possibile eliminare il registro per la presenza di un %{record} dipendente
-          has_many: Non è possibile eliminare il registro per la presenza di %{record} dipendenti
+          has_one: "Non è possibile eliminare il documento perché esiste un %{record} subordinato"
+          has_many: "Non è possibile eliminare il documento perché esistono %{record} subordinati"
