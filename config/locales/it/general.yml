@@ -249,7 +249,6 @@ it:
       text_sign_in: iniziare la sessione
       text_sign_up: registrarti
       title: 'Come posso commentare questo documento?'
-  locale: Italiano
   notifications:
     index:
       empty_notifications: Non hai nuove notifiche.
