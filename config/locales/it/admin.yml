@@ -567,7 +567,6 @@ it:
           community: "Comunità"
           proposals: "Proposte"
           polls: "Votazioni"
-          layouts: "Modelli"
           mailers: "Posta"
           management: "Gestione"
           guides: "Guide"
@@ -1319,7 +1318,7 @@ it:
           names:
             top_links: Link superiori
             footer: Piè di pagina
-            subnavigation_left: Navigazione principale sinistra 
+            subnavigation_left: Navigazione principale sinistra
             subnavigation_right: Navigazione principale destra
       images:
         index:

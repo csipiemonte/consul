@@ -23,6 +23,7 @@ namespace :settings do
   desc "Enable Help page"
   task enable_help_page: :environment do
     Setting['feature.help_page'] = true
+  end
 
   desc "Adds/Updates Setting key - value"
   task add_upd_key_value: :environment do

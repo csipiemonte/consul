@@ -91,9 +91,6 @@ Setting.create(key: 'feature.user.recommendations_on_proposals', value: 'true')
 Setting.create(key: 'feature.user.skip_verification', value: 'true')
 Setting.create(key: 'feature.help_page', value: 'true')
 
-# Se 'true', abilita una pagina che guida l'utente alla scelta fra la creazione di una proposta cittadina o di una proposta di spesa
-Setting.create(key: 'feature.guides', value: nil)
-
 # Spending proposals feature flags
 Setting.create(key: 'feature.spending_proposal_features.voting_allowed', value: nil)
 
