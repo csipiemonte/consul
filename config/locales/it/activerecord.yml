@@ -185,11 +185,17 @@ it:
         geozone_restricted: "Ristretta per circoscrizioni"
         summary: "Sommario"
         description: "Descrizione"
+      poll/translation:
+        name: "Nome"
+        summary: "Sommario"
+        description: "Descrizione"
       poll/question:
         title: "Domanda"
         summary: "Sommario"
         description: "Descrizione"
         external_url: "Link alla documentazione aggiuntiva"
+      poll/question/translation:
+        title: "Domanda"
       signature_sheet:
         signable_type: "Tipo Foglio firme"
         signable_id: "ID Proposta cittadina/Proposta investimento"
@@ -205,6 +211,10 @@ it:
         more_info_flag: Mostra in ulteriore pagina informativa
         print_content_flag: Bottone di stampa
         locale: Lingua
+      site_customization/page/translation:
+        title: Titolo
+        subtitle: Sottotitolo
+        content: Contenuto
       site_customization/image:
         name: Nome
         image: Immagine
@@ -225,12 +235,21 @@ it:
         allegations_start_date: Data di inizio degli allegati
         allegations_end_date: Data di fine degli allegati
         result_publication_date: Data di pubblicazione del risultato finale
+      legislation/process/translation:
+        title: Titolo del progetto
+        summary: Sommario
+        description: In cosa consiste
+        additional_info: Informazione aggiuntiva
       legislation/draft_version:
         title: Titolo della versione
         body: Testo
         changelog: Modifiche
         status: Stato
         final_version: Versione finale
+      legislation/draft_version/translation:
+        title: Titolo della versione
+        body: Testo
+        changelog: Modifiche
       legislation/question:
         title: Titolo
         question_options: Risposte
@@ -247,6 +266,9 @@ it:
       poll/question/answer:
         title: Risposta
         description: Descrizione
+      poll/question/answer/translation:
+        title: Risposta
+        description: Descrizione
       poll/question/answer/video:
         title: Titolo
         url: Video esterno
@@ -255,12 +277,25 @@ it:
         subject: Oggetto
         from: Inviato da
         body: Contenuto della email
+      admin_notification:
+        segment_recipient: Destinatari
+        title: Titolo
+        link: Link
+        body: Testo
+      admin_notification/translation:
+        title: Titolo
+        body: Testo
       widget/card:
         label: Tag (facoltativo)
         title: Titolo
         description: Descrizione
         link_text: Testo del link
         link_url: URL del link
+      widget/card/translation:
+        label: Tag (facoltativo)
+        title: Titolo
+        description: Descrizione
+        link_text: Testo del link
       widget/feed:
         limit: Numero di elementi
     errors:
