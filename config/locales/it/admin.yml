@@ -641,6 +641,9 @@ it:
         title: Anteprima della newsletter
         send: Invia
         affected_users: (%{n} utenti coinvolti)
+        sent_emails:
+          one: 1 email inviata
+          other: "%{count} email inviate"
         sent_at: Inviata
         subject: Oggetto
         segment_recipient: Destinatari

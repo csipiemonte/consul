@@ -450,6 +450,9 @@ it:
     update:
       form:
         submit_button: Salva modifiche
+    share:
+      message: "Ho appoggiato la proposta %{summary} in %{org}. Se ti interessa, sostienila anche tu!"
+      message_mobile: "Ho appoggiato la proposta %{summary} in %{handle}. Se ti interessa, sostienila anche tu!"
   polls:
     all: "Tutte"
     no_dates: "senza data assegnata"
