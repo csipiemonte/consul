@@ -180,7 +180,7 @@ it:
     proposal: la proposta
     proposal_notification: "la notifica"
     spending_proposal: la proposta di spesa
-    budget/investment: il progetto di investimento
+    budget/investment: il progetto di spesa
     budget/heading: la voce di bilancio
     poll/shift: il turno
     poll/question/answer: la risposta
@@ -573,9 +573,9 @@ it:
     followable:
       budget_investment:
         create:
-          notice_html: "Adesso stai seguendo questo progetto di investimento! </br> Ti saranno notificate le modifiche man mano che si realizzano per tenerti aggiornato."
+          notice_html: "Adesso stai seguendo questo progetto di spesa! </br> Ti saranno notificate le modifiche man mano che si realizzano per tenerti aggiornato."
         destroy:
-          notice_html: "Hai smesso di seguire questo progetto di investimento! </br> Non riceverai più le notifiche relazionate con questo progetto."
+          notice_html: "Hai smesso di seguire questo progetto di spesa! </br> Non riceverai più le notifiche relazionate con questo progetto."
       proposal:
         create:
           notice_html: "Adesso stai seguendo questa proposta cittadina! </br> Ti saranno notificate le modifiche man mano che si realizzano per tenerti aggiornato."
@@ -595,10 +595,10 @@ it:
         see_all: "Mostra tutti"
       budget_investment:
         found:
-          one: "Esiste una proposta di investimento con la parola '%{query}', puoi parteciparvi invece di aprirne una nuova."
-          other: "Esistono proposte di investimento con la parola '%{query}', puoi parteciparvi invece di aprirne una nuova."
-        message: "Visualizzate %{limit} di %{count} proposte di investimento che contengono la parola '%{query}'"
-        see_all: "Mostra tutte"
+          one: "Esiste un progetto di spesa con la parola '%{query}', puoi partecipare a quello invece di aprirne uno nuovo."
+          other: "Esistono progetti di spesa con la parola '%{query}', puoi partecipare a quelli invece di aprirne uno nuovo."
+        message: "Visualizzati %{limit} di %{count} progetti di spesa che contengono la parola '%{query}'"
+        see_all: "Mostra tutti"
       proposal:
         found:
           one: "Esiste una proposta con la parola '%{query}', puoi parteciparvi invece di aprirne una nuova."
@@ -628,9 +628,9 @@ it:
       cards: Anteprima
       list: Lista
     recommended_index:
-        title: Suggerimenti
-        see_more: Mostra più suggerimenti
-        hide: Nascondi suggerimenti
+      title: Suggerimenti
+      see_more: Mostra più suggerimenti
+      hide: Nascondi suggerimenti
   social:
     blog: "Blog di %{org}"
     facebook: "Facebook di %{org}"
@@ -722,7 +722,7 @@ it:
       deleted: Eliminato
       deleted_debate: Questo dibattito è stato eliminato
       deleted_proposal: Questa proposta è stata eliminata
-      deleted_budget_investment: Questa proposta di investimento è stata eliminata
+      deleted_budget_investment: Questo progetto di spesa è stato eliminato
       proposals: Proposte
       debates: Dibattiti
       budget_investments: Progetti dei bilanci partecipativi
@@ -774,7 +774,7 @@ it:
       not_voting_allowed: Il periodo di votazione è concluso.
     budget_investments:
       not_logged_in: È necessario %{signin} o %{signup} per proseguire.
-      not_verified: I progetti di investimento possono essere sostenuti solamente da utenti certificati, %{verify_account}.
+      not_verified: I progetti di spesa possono essere sostenuti solamente da utenti certificati, %{verify_account}.
       organization: Le organizzazioni non possono votare.
       unfeasible: Non si possono votare le proposte non realizzabili.
       not_voting_allowed: Il periodo di votazione è concluso.
@@ -841,7 +841,7 @@ it:
     content_title:
       proposal: "Proposta"
       debate: "Dibattito"
-      budget_investment: "Proposta di investimento"
+      budget_investment: "Progetto di spesa"
   admin/widget:
     header:
       title: Amministrazione
@@ -851,4 +851,4 @@ it:
       text: Per commentare questo documento è necessario %{sign_in} o %{sign_up}. Poi seleziona il testo che vuoi commentare e fai click sul fumetto con la matita.
       text_sign_in: accedere
       text_sign_up: registrarsi
-      title: "Come posso commentare questo documento?"
+      title: 'Come posso commentare questo documento?'

@@ -7,7 +7,7 @@ it:
     general_terms: Termini e Condizioni
     help:
       title: "Scopri %{org}"
-      guide: 'Questa guida spiega a cosa servono e come funzionano le sezioni di %{org}.'
+      guide: "Questa guida spiega a cosa servono e come funzionano le sezioni di %{org}."
       menu:
         debates: "Dibattiti"
         proposals: "Proposte"
@@ -70,23 +70,32 @@ it:
       title: Tutela della privacy e cookie
       subtitle: AVISO DE PROTECCIÓN DE DATOS
       info_items:
-        - text: La navegación por la informacion disponible en el Portal de Gobierno Abierto es anónima.
-        - text: Para utilizar los servicios contenidos en el Portal de Gobierno Abierto el usuario deberá darse de alta y proporcionar previamente los datos de carácter personal segun la informacion especifica que consta en cada tipo de alta.
-        - text: 'Los datos aportados serán incorporados y tratados por el Ayuntamiento de acuerdo con la descripción del fichero siguiente:'
-        - subitems:
-          - field: 'Nombre del fichero/tratamiento:'
-            description: NOMBRE DEL FICHERO
-          - field: 'Finalidad del fichero/tratamiento:'
-            description: Gestionar los procesos participativos para el control de la habilitación de las personas que participan en los mismos y recuento meramente numérico y estadístico de los resultados derivados de los procesos de participación ciudadana
-          - field: 'Órgano responsable:'
-            description: ÓRGANO RESPONSABLE
-        - text: El interesado podrá ejercer los derechos de acceso, rectificación, cancelación y oposición, ante el órgano responsable indicado todo lo cual se informa en el cumplimiento del artículo 5 de la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal.
-        - text: Como principio general, este sitio web no comparte ni revela información obtenida, excepto cuando haya sido autorizada por el usuario, o la informacion sea requerida por la autoridad judicial, ministerio fiscal o la policia judicial, o se de alguno de los supuestos regulados en el artículo 11 de la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal.
+        - 
+          text: La navegación por la informacion disponible en el Portal de Gobierno Abierto es anónima.
+        - 
+          text: Para utilizar los servicios contenidos en el Portal de Gobierno Abierto el usuario deberá darse de alta y proporcionar previamente los datos de carácter personal segun la informacion especifica que consta en cada tipo de alta.
+        - 
+          text: 'Los datos aportados serán incorporados y tratados por el Ayuntamiento de acuerdo con la descripción del fichero siguiente:'
+        - 
+          subitems:
+            - 
+              field: 'Nombre del fichero/tratamiento:'
+              description: NOMBRE DEL FICHERO
+            - 
+              field: 'Finalidad del fichero/tratamiento:'
+              description: Gestionar los procesos participativos para el control de la habilitación de las personas que participan en los mismos y recuento meramente numérico y estadístico de los resultados derivados de los procesos de participación ciudadana.
+            - 
+              field: 'Órgano responsable:'
+              description: ÓRGANO RESPONSABLE
+        - 
+          text: El interesado podrá ejercer los derechos de acceso, rectificación, cancelación y oposición, ante el órgano responsable indicado todo lo cual se informa en el cumplimiento del artículo 5 de la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal.
+        - 
+          text: Como principio general, este sitio web no comparte ni revela información obtenida, excepto cuando haya sido autorizada por el usuario, o la informacion sea requerida por la autoridad judicial, ministerio fiscal o la policia judicial, o se de alguno de los supuestos regulados en el artículo 11 de la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal.
     accessibility:
       title: Accessibilità
       description: |-
         Per accessibilità web si intende la possibilità di accesso al Web e a tutti i suoi contenuti da parte di tutte le persone, indipendentemente dalle disabilità (fisiche, intellettuali o tecniche) che possano presentare o che derivino dal contesto di utilizzo (disabilità tecnologiche o ambientali).
-
+        
         Quando i siti web sono stati progettati tenendo in conto dell'accessibilità', tutti gli utenti possono arrivare in modo paritario ai contenuti, per esempio:
       examples:
         - Inserendo un testo alternativo alle immagini, gli utenti non vedenti o con problemi di vista possono usare speciali lettori per ottenere l'informazione.
@@ -101,17 +110,23 @@ it:
           key_header: Tasto
           page_header: Pagina
           rows:
-            - key_column: 0
+            -
+              key_column: 0
               page_column: Inizio
-            - key_column: 1
+            -
+              key_column: 1
               page_column: Dibattiti
-            - key_column: 2
+            -
+              key_column: 2
               page_column: Proposte
-            - key_column: 3
+            -
+              key_column: 3
               page_column: Votazioni
-            - key_column: 4
+            -
+              key_column: 4
               page_column: Progetti
-            - key_column: 5
+            -
+              key_column: 5
               page_column: Bilanci partecipativi
         browser_table:
           description: 'A seconda del sistema operativo e del browser che si utilizza, la combinazione dei tasti sarà la seguente:'
@@ -119,15 +134,20 @@ it:
           browser_header: Browser
           key_header: Combinazione dei tasti
           rows:
-            - browser_column: Edge
+            -
+              browser_column: Edge
               key_column: ALT + tasto scelta rapida e poi ENTER
-            - browser_column: Firefox
+            -
+              browser_column: Firefox
               key_column: ALT + MAIUSCOLE + tasto scelta rapida
-            - browser_column: Chrome
+            -
+              browser_column: Chrome
               key_column: ALT + tasto scelta rapida (se è un MAC, CTRL + ALT + tasto scelta rapida)
-            - browser_column: Safari
+            -
+              browser_column: Safari
               key_column: ALT + tasto scelta rapida (se è un MAC, CMD + tasto scelta rapida)
-            - browser_column: Opera
+            -
+              browser_column: Opera
               key_column: MAIUSCOLE + ESC + tasto scelta rapida
       textsize:
         title: Dimensione del testo
@@ -136,22 +156,29 @@ it:
           browser_header: Browser
           action_header: Operazione da eseguire
           rows:
-            - browser_column: Edge
+            -
+              browser_column: Edge
               action_column: Impostazioni e altro (icona) > Zoom
-            - browser_column: Firefox
+            -
+              browser_column: Firefox
               action_column: Apri menu (icona) > Reimposta il livello di zoom
-            - browser_column: Chrome
+            -
+              browser_column: Chrome
               action_column: Personalizza e controlla Google Chrome (icona) > Dimensioni dei caratteri
-            - browser_column: Safari
+            -
+              browser_column: Safari
               action_column: Visualizzazione > aumenta/riduci
-            - browser_column: Opera
+            -
+              browser_column: Opera
               action_column: Vedi > scala
         browser_shortcuts_table:
           description: 'Un altro modo per modificare la dimensione del testo è quello di impiegare le combinazioni di tasti di scelta rapida definite nei browser, in particolare la combinazione di tasti:'
           rows:
-            - shortcut_column: CTRL e + (CMD e + in MAC)
+            -
+              shortcut_column: CTRL e + (CMD e + in MAC)
               description_column: per aumentare la dimensione del testo
-            - shortcut_column: CTRL e - (CMD e - in MAC)
+            -
+              shortcut_column: CTRL e - (CMD e - in MAC)
               description_column: per ridurre la dimensione del testo
       compatibility:
         title: Compatibilità con gli standard e progetto visuale

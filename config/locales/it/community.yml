@@ -4,7 +4,7 @@ it:
       title: Comunità
       description:
         proposal: Partecipa alla comunità degli utenti di questa proposta.
-        investment: Partecipa alla comunità degli utenti di questo progetto di investimento.
+        investment: Partecipa alla comunità degli utenti di questo progetto di spesa.
       button_to_access: Accedi alla comunità
     show:
       title:
@@ -12,7 +12,7 @@ it:
         investment: Comunità del bilancio partecipativo
       description:
         proposal: Partecipa alla comunità di questa proposta. Una comunità attiva può aiutare a migliorare il contenuto della proposta e incrementare la sua diffusione per ottenere maggior supporto.
-        investment: Partecipa alla comunità di questo progetto di investimento. Una comunità attiva può aiutare a migliorare il contenuto del progetto di investimento e incrementare la sua diffusione per ottenere maggior supporto.
+        investment: Partecipa alla comunità di questo progetto di spesa. Una comunità attiva può aiutare a migliorare il contenuto del progetto di investimento e incrementare la sua diffusione per ottenere maggior supporto.
       create_first_community_topic:
         first_theme_not_logged_in: Al momento non ci sono temi disponibili, partecipa creando il primo.
         first_theme: Crea il primo tema della comunità

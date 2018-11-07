@@ -80,7 +80,7 @@ it:
       proposals_info: Fai la tua proposta su https://www.deciditorino.it/
       proposals_title: 'Proposte:'
       spending_proposals_info: Partecipa a https://www.deciditorino.it/
-      budget_investments_info: 'Partecipa a https://www.deciditorino.it/'
+      budget_investments_info: Partecipa a https://www.deciditorino.it/
     print_info: Stampa questa informazione
     proposals:
       alert:
@@ -103,6 +103,7 @@ it:
         unverified_user: Utente non verificato
       create: Crea nuovo progetto
       filters:
+        heading: Concetto
         unfeasible: Progetti non realizzabili
       print:
         print_button: Stampa

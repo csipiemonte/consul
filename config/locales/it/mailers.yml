@@ -73,7 +73,7 @@ it:
       thanks: "Grazie ancora per aver partecipato."
       sincerely: "Cordiali saluti"
     budget_investment_unselected:
-      subject: "La tua proposta di investimento '%{code}' non è stata selezionata"
+      subject: "Il tuo progetto di spesa '%{code}' non è stato selezionato"
       hi: "Gentile utente,"
       thanks: "Grazie ancora per aver partecipato."
       sincerely: "Cordiali saluti"

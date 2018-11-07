@@ -8,8 +8,8 @@ it:
         one: "Bilancio partecipativo"
         other: "Bilanci partecipativi"
       budget/investment:
-        one: "Progetto di investimento"
-        other: "Progetti di investimento"
+        one: "Progetto di spesa"
+        other: "Progetti di spesa"
       budget/investment/milestone:
         one: "traguardo"
         other: "milestones"
@@ -62,8 +62,8 @@ it:
         one: "Proposta cittadina"
         other: "Proposte cittadine"
       spending_proposal:
-        one: "Progetto d’investimento"
-        other: "Progetti d’investimento"
+        one: "Progetto di investimento"
+        other: "Progetti di spesa"
       site_customization/page:
         one: Pagina personalizzata
         other: Pagine personalizzate
@@ -107,8 +107,8 @@ it:
         one: "Votazione"
         other: "Votazioni"
       proposal_notification:
-        one: "Notifica di una proposta"
-        other: "Notifiche di proposte"
+        one: "Notifica della proposta"
+        other: "Notifiche della proposta"
     attributes:
       budget:
         name: "Nome"
@@ -129,12 +129,12 @@ it:
         administrator_id: "Amministratore"
         location: "Ubicazione (facoltativo)"
         organization_name: "Se presenti una proposta a nome di un collettivo o di un’organizzazione, ovvero per conto di più persone, indicane il nome"
-        image: "Immagine descrittiva della proposta di investimento"
+        image: "Immagine descrittiva del progetto di spesa"
         image_title: "Titolo dell’immagine"
       budget/investment/milestone:
         status_id: "Stato attuale del progetto (facoltativo)"
         title: "Titolo"
-        description: "Descrizione (facoltativa se si è assegnanato uno stato del progetto)"
+        description: "Descrizione (facoltativa se c'è uno stato assegnanato)"
         publication_date: "Data di pubblicazione"
       budget/investment/status:
         name: "Nome"
@@ -198,7 +198,7 @@ it:
         title: "Domanda"
       signature_sheet:
         signable_type: "Tipo Foglio firme"
-        signable_id: "ID Proposta cittadina/Proposta investimento"
+        signable_id: "ID Proposta cittadina/Progetto di spesa"
         document_numbers: "Numero di documenti"
       site_customization/page:
         content: Contenuto

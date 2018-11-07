@@ -25,7 +25,7 @@ it:
           valuating: Valutazione in corso
           valuation_finished: Valutazione terminata
         assigned_to: "Assegnate a %{valuator}"
-        title: Proposte di investimento
+        title: Progetti di spesa
         edit: Modifica fascicolo
         valuators_assigned:
           one: Valutatore assegnato
@@ -38,7 +38,7 @@ it:
         no_investments: "Non ci sono progetti di spesa."
       show:
         back: Indietro
-        title: Proposta di investimento
+        title: Progetto di spesa
         info: "Info sull'autore"
         by: Inviata da
         sent: Data di creazione

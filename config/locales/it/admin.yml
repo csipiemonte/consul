@@ -82,17 +82,17 @@ it:
         budget_investments: Gestisci progetti di spesa
         table_name: Nome
         table_phase: Fase
-        table_investments: Proposte di investimento
+        table_investments: Progetti di spesa
         table_edit_groups: Grupppi di voci
         table_edit_budget: Modifica
         edit_groups: Modifica grupppi di voci
         edit_budget: Modifica bilancio
       create:
-        notice: 'Nuova campagna di bilanci partecipativi creata con successo!'
+        notice: 'Bilanci partecipativi creati con successo!'
       update:
-        notice: Campagna di bilanci partecipativi aggiornata
+        notice: Bilanci partecipativi aggiornati
       edit:
-        title: Modifica campagna di bilanci partecipativi
+        title: Modifica bilanci partecipativi
         delete: Elimina bilancio partecipativo
         phase: Fase
         dates: Date
@@ -131,8 +131,8 @@ it:
         max_votable_headings: "Numero massimo di voci che un utente può votare"
         current_of_max_headings: "%{current} di %{max}"
       winners:
-        calculate: Calcola proposte vincitrici
-        calculated: In elaborazione delle proposte vincitrici, può durare un minuto.
+        calculate: Calcola progetti vincitori
+        calculated: Elaborazione dei progetti vincitori in corso, può durare un minuto.
         recalculate: Ricalcola proposte vincitrici
     budget_phases:
       edit:
@@ -159,13 +159,13 @@ it:
           title: Titolo
           supports: Appoggi
         filters:
-          all: Tutte
+          all: Tutti
           without_admin: Senza amministratore
           without_valuator: Senza valutatore
           under_valuation: In valutazione
           valuation_finished: Valutazione terminata
           feasible: Realizzabili
-          selected: Selezionate
+          selected: Selezionati
           undecided: Da decidere
           unfeasible: Non realizzabili
           min_total_supports: Appoggi minimi
@@ -173,11 +173,10 @@ it:
           one_filter_html: "Filtro in uso: <b><em>%{filter}</em></b>"
           two_filters_html: "Filtri in uso: <b><em>%{filter}, %{advanced_filters}</em></b>"
         buttons:
-          search: Cerca
           filter: Filtra
         download_current_selection: "Download selezionati"
-        no_budget_investments: "Non ci sono progetti di investimento."
-        title: Proposte di investimento
+        no_budget_investments: "Non ci sono progetti di spesa."
+        title: Progetti di spesa
         assigned_admin: Amministratore assegnato
         no_admin_assigned: Nessun amministratore assegnato
         no_valuators_assigned: Nessun valutatore
@@ -208,7 +207,7 @@ it:
         assigned_admin: Amministratore assegnato
         assigned_valuators: Valutatori assegnati
         classification: Classifica
-        info: "%{budget_name} - Gruppo: %{group_name} - Proposta di investimento %{id}"
+        info: "%{budget_name} - Gruppo: %{group_name} - Progetto di spesa %{id}"
         edit: Modifica
         edit_classification: Modifica classifica
         by: Autore
@@ -372,7 +371,7 @@ it:
         form:
           enabled: Abilitato
           process: Progetto
-          debate_phase: Fase del dibattito
+          debate_phase: Fase iniziale
           allegations_phase: Fase dei commenti
           proposals_phase: Fase delle proposte
           start: Inizio
@@ -416,12 +415,12 @@ it:
           proposals: Proposte
       proposals:
         index:
+          title: Titolo
           back: Indietro
           id: Id
-          title: Titolo
           supports: Appoggi
           select: Seleziona
-          selected: Selezionato
+          selected: Selezionata
         form:
           custom_categories: Categorie
           custom_categories_description: "Categorie che l'utente può selezionare durante la creazione della proposta."
@@ -569,7 +568,6 @@ it:
           polls: "Votazioni"
           mailers: "Posta"
           management: "Gestione"
-          guides: "Guide"
           welcome: "Benvenuto/a"
         buttons:
           save: "Salva modifiche"
@@ -650,7 +648,7 @@ it:
         from: Indirizzo di posta elettronica che apparirà come mittente della newsletter
         body: Contenuto della email
         body_help_text: Così è come gli utenti vedranno la email
-        send_alert: Confermi di voler spedire questa newsletter a %{n} utenti?
+        send_alert: 'Confermi di voler spedire questa newsletter a %{n} utenti?'
     admin_notifications:
       create_success: Notifica creata correttamente
       update_success: Notifica aggiornata correttamente
@@ -687,20 +685,19 @@ it:
         segment_recipient: Destinatari
         preview_guide: "Così è come gli utenti vedranno la notifica:"
         sent_guide: "Così è come gli utenti vedono la notifica:"
-        send_alert: Confermi di voler inviare questa notifica a %{n} utenti?
+        send_alert: 'Confermi di voler inviare questa notifica a %{n} utenti?'
     system_emails:
       preview_pending:
-        action: Anteprima In attesa
+        action: Anteprima in attesa
         preview_of: Anteprima di %{name}
         pending_to_be_sent: Questo è tutto il contenuto in attesa di essere inviato
         moderate_pending: "Modera l'invio della notifica"
-        send_pending : Invia in attesa
+        send_pending: Invia in attesa
         send_pending_notification: Notifiche in attesa inviate correttamente
       proposal_notification_digest:
         title: Sommario delle Notifiche delle Proposte
         description: Riunisci tutte le notifiche delle proposte in un unico messaggio, per evitare di spedire troppe email.
         preview_detail: Gli utenti riceveranno solamente le notifiche relative alle proposte che stanno seguendo.
-        send_alert: 'Confermi di volere inviare questa newsletter a %{n} utenti?'
     emails_download:
       index:
         title: Scarica email
@@ -724,7 +721,7 @@ it:
       search:
         title: 'Valutatori: Ricerca utenti'
       summary:
-        title: Riepilogo della valutazione delle proposte di investimento
+        title: Riepilogo della valutazione dei progetti di spesa
         valuator_name: Valutatore
         finished_and_feasible_count: Concluse realizzabili
         finished_and_unfeasible_count: Concluse non realizzabili
@@ -738,6 +735,7 @@ it:
         updated: "Valutatore aggiornato correttamente"
       show:
         description: "Descrizione"
+        email: "Email"
         group: "Gruppo"
         no_description: "Senza descrizione"
         no_group: "Senza gruppo"
@@ -795,6 +793,7 @@ it:
         search_officer_placeholder: Cerca presidente di seggio
         search_officer_text: Cerca il presidente di seggio per assegnare un turno
         select_date: "Seleziona giorno"
+        no_voting_days: "I giorni di votazione sono conclusi"
         select_task: "Seleziona incarico"
         table_shift: "Turno"
         table_email: "Email"
@@ -1073,7 +1072,7 @@ it:
       setting_name: Configurazione
       setting_status: Stato
       setting_value: Valore
-      no_description: Nessuna descrizione
+      no_description: "Nessuna descrizione"
     shared:
       booths_search:
         button: Cerca
@@ -1225,7 +1224,7 @@ it:
           proposal_votes: Voti nelle proposte
           proposals: Proposte
           budgets: Bilanci aperti
-          budget_investments: Proposte di investimento
+          budget_investments: Progetti di spesa
           spending_proposals: Proposte di investimento
           unverified_users: Utenti da verificare
           user_level_three: Utenti di livello tre
@@ -1367,6 +1366,7 @@ it:
           title: Titolo
           slug: Slug
     homepage:
+      title: Titolo
       description: I moduli attivi appariranno sulla homepage nello stesso ordine mostrato qui.
       header_title: Testata
       no_header: Non ci sono testate.
@@ -1381,6 +1381,7 @@ it:
         link_url: URL del link
       feeds:
         proposals: Proposte
+        debates: Dibattiti
         processes: Progetti
       new:
         header_title: Nuova testata
@@ -1393,5 +1394,5 @@ it:
         card_title: Modifica card
         submit_card: Salva card
     translations:
-      add_language: Aggiungi lingua
       remove_language: Elimina lingua
+      add_language: Aggiungi lingua

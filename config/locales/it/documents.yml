@@ -7,6 +7,7 @@ it:
       title_placeholder: Aggiungi un titolo descrittivo del documento
       attachment_label: Seleziona un documento
       delete_button: Elimina documento
+      cancel_button: Annulla
       note: 'È possibile allegare fino ad un massimo di %{max_documents_allowed} documenti nei formati: %{accepted_content_types}, e di dimensione fino a %{max_file_size} MB per file.'
       add_new_document: Aggiungi nuovo documento
     actions:
