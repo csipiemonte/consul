@@ -174,6 +174,15 @@ it:
       investment_proyects: "Vedi l'elenco completo dei progetti di spesa"
       unfeasible_investment_proyects: "Vedi l'elenco dei progetti di spesa non realizzabili"
       not_selected_investment_proyects: "Vedi l'elenco dei progetti di spesa non selezionati per la votazione finale"
+    executions:
+      link: "Continuazione"
+      page_title: "%{budget} - Continuazione dei progetti"
+      heading: "Continuazione dei progetti"
+      heading_selection_title: "Ambito di attuazione"
+      no_winner_investments: "In questo stato non ci sono progetti di spesa vincitori"
+      filters:
+        label: "Stato attuale del progetto"
+        all: "Tutti (%{count})"
     phases:
       errors:
         dates_range_invalid: "La data di inizio non può essere uguale o successiva a quella di fine"

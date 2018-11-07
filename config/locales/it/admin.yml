@@ -87,6 +87,7 @@ it:
         table_edit_budget: Modifica
         edit_groups: Modifica grupppi di voci
         edit_budget: Modifica bilancio
+        no_budgets: "Non sono presenti bilanci aperti."
       create:
         notice: 'Bilanci partecipativi creati con successo!'
       update:
@@ -566,6 +567,7 @@ it:
           community: "Comunità"
           proposals: "Proposte"
           polls: "Votazioni"
+          layouts: "Modelli"
           mailers: "Posta"
           management: "Gestione"
           welcome: "Benvenuto/a"
