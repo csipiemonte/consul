@@ -57,6 +57,7 @@ en:
       section_footer:
         title: Help with participatory budgets
         description: With the participatory budgets the citizens decide to which projects is destined a part of the budget.
+      milestones: Milestones
     investments:
       form:
         tag_category_label: "Categories"
@@ -163,7 +164,7 @@ en:
       heading: "Participatory budget results"
       heading_selection_title: "By district"
       spending_proposal: Proposal title
-      ballot_lines_count: Times selected
+      ballot_lines_count: Votes
       hide_discarded_link: Hide discarded
       show_all_link: Show all
       price: Price

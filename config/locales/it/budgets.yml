@@ -57,6 +57,7 @@ it:
       section_footer:
         title: Aiuto sui bilanci partecipativi
         description: Con i bilanci partecipativi la popolazione decide a quali progetti vada destinata una parte del bilancio.
+      milestones: Continuazione dei progetti
     investments:
       form:
         tag_category_label: "Categorie"
