@@ -812,7 +812,7 @@ it:
       question: 'Hai un account in %{org_name}?'
       title: Certifica account
     welcome:
-      go_to_index: Adesso no, continua
+      go_to_index: Continua
       title: Inizia a partecipare
       user_permission_debates: Partecipare ai dibattiti
       user_permission_info: Con il tuo account puoi già...

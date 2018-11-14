@@ -107,5 +107,4 @@ es:
         verification_code: "DecidiTorino - Código de verificación: "
   welcome:
     welcome:
-      go_to_home: Continua
       user_permission_info_no_verification: "Con il tuo account puoi:"
