@@ -6,7 +6,7 @@ gem 'acts-as-taggable-on', '~> 5.0.0'
 gem 'acts_as_votable', '~> 0.11.1'
 gem 'ahoy_matey', '~> 1.6.0'
 gem 'ancestry', '~> 3.0.2'
-gem 'autoprefixer-rails', '~> 8.6.5' # si usa la v. 8.6.5 perche' e' l'ultima versione compatibile con therubyracer (cfr. Gemfile_custom)
+gem 'autoprefixer-rails', '~> 9.1.4'
 gem 'browser', '~> 2.5.3'
 gem 'cancancan', '~> 2.3.0'
 gem 'ckeditor', '~> 4.2.3'

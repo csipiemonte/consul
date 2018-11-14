@@ -61,7 +61,7 @@ GEM
       activerecord (>= 3.2.0)
     arel (6.0.4)
     ast (2.4.0)
-    autoprefixer-rails (8.6.5)
+    autoprefixer-rails (9.1.4)
       execjs
     babel-source (5.8.35)
     babel-transpiler (0.7.0)
@@ -453,9 +453,6 @@ GEM
       tins (~> 1.0)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
-    therubyracer (0.12.3)
-      libv8 (~> 3.16.14.15)
-      ref
     thor (0.19.4)
     thread_safe (0.3.6)
     tilt (2.0.8)
@@ -574,7 +571,6 @@ DEPENDENCIES
   spring (~> 2.0.1)
   spring-commands-rspec (~> 1.0.4)
   sprockets (~> 3.7.2)
-  therubyracer
   turbolinks (~> 2.5.3)
   turnout (~> 2.4.0)
   uglifier (~> 4.1.19)
