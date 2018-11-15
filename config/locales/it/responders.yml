@@ -22,7 +22,7 @@ it:
       update:
         notice: "%{resource_name} aggiornato con successo."
         debate: "Dibattito aggiornato correttamente."
-        poll: "Votazione aggiornata ccorrettamente."
+        poll: "Votazione aggiornata correttamente."
         poll_booth: "Seggio aggiornato correttamente."
         proposal: "Proposta aggiornata correttamente."
         spending_proposal: "Proposta di investimento aggiornata correttamente."

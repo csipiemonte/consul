@@ -38,7 +38,7 @@ it:
       polls:
         title: "Votazioni"
         description: "La sezione delle %{link} si attiva ogni volta che una proposta raggiunge 5.000 appoggi e passa a votazione, o quando l'Amministrazione Comunale chiede alla cittadinanza di decidere a proposito di un certo tema."
-        link: "votazioni cittadine"
+        link: "Votazioni"
         feature_1: "Per partecipare alle votazioni è necessario %{link} e certificare la propria utenza."
         feature_1_link: "registrarsi su %{org_name}"
       processes:
