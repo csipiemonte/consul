@@ -1,3 +1,7 @@
+<!-- versione custom, differisce per:
+  - righe 39, verifica attivazione votazioni e icona di spunta (posso votare dopo certificazione)
+  - riga 47, rimossa verifica tramite codice ricevuto in una lettera cartacea
+-->
 <div class="verification account row">
   <%track_event(category: "verification", action: "success_sms" )%>
   <div class="small-12 column">
@@ -32,16 +36,15 @@
           <li><span class="icon-check"></span>&nbsp;<%= t("verification.user_permission_debates") %></li>
           <li><span class="icon-check"></span>&nbsp;<%= t("verification.user_permission_proposal") %></li>
           <li><span class="icon-check"></span>&nbsp;<%= t("verification.user_permission_support_proposal") %></li>
+          <% if feature?(:polls) %>
+            <li><span class="icon-check"></span>&nbsp;<%= t("verification.user_permission_votes") %></li>
+          <% end %>
         </ul>
       </div>
 
       <%= link_to t("verification.letter.new.go_to_index"), root_path, class: "button warning" %>
     </div>
     <div class="small-12 medium-8 column">
-
     </div>
-    
-  <!-- OSSERVAZIONE: eliminare il presente file custom al momento della attivazione della fase 3 del processo di autenticazione. -->
-
   </div>
 </div>

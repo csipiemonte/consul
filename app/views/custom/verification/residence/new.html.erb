@@ -1,3 +1,9 @@
+<!-- versione custom, differisce per:
+  - righe 38, verifica attivazione votazioni e icona di spunta (posso votare dopo certificazione)
+  - riga 51, select popolata solo con il codice fiscale
+  - riga 69, lunghezza massima del codice fiscale
+  - riga 86, lunghezza massima del CAP
+-->
 <div class="verification account row">
   <%track_event(category: "verification", action: "start_census" )%>
   <div class="small-12 column">
@@ -29,8 +35,9 @@
         <li><span class="icon-check"></span>&nbsp;<%= t("verification.user_permission_debates") %></li>
         <li><span class="icon-check"></span>&nbsp;<%= t("verification.user_permission_proposal") %></li>
         <li><span class="icon-check"></span>&nbsp;<%= t("verification.user_permission_support_proposal") %></li>
-        <!-- rimuovere il commento quando polls=active -->
-        <!--li><span class="icon-x"></span>&nbsp;<%= t("verification.user_permission_votes") %></li-->
+        <% if feature?(:polls) %>
+          <li><span class="icon-check"></span>&nbsp;<%= t("verification.user_permission_votes") %></li>
+        <% end %>
       </ul>
     </div>
 
