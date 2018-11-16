@@ -52,7 +52,7 @@ Setting.create(key: 'telegram_handle', value: 'comunetorino')
 Setting.create(key: 'instagram_handle', value: 'cittaditorino')
 Setting.create(key: 'blog_url', value: nil)
 Setting.create(key: 'transparency_url', value: 'http://www.comune.torino.it/amministrazionetrasparente/')
-Setting.create(key: 'opendata_url', value: nil)
+Setting.create(key: 'opendata_url', value: 'http://aperto.comune.torino.it/')
 
 # Public-facing URL of the app.
 Setting.create(key: 'url', value: 'https://www.deciditorino.it')

@@ -1,7 +1,7 @@
 <!-- versione custom, differisce per:
  - riga 9: modifica dello user concesso solo a chi si autentica sulla basa dati locale
  - riga 167: voce delle votazioni visualizzata in base a flag
- - riga 190: rimossa la fase della verifica tramite lettera cartacea
+ - righe 169 e 190: rimossa la fase della verifica tramite lettera cartacea
  - righe varie: gestione del parametro 'feature.user.skip_verification'-->
 <div class="row account">
   <div class="small-12 column">
@@ -166,7 +166,7 @@
             </li>
             <% if feature?(:polls) %>
             <li>
-              <% if current_user.level_three_verified? %>
+              <% if current_user.level_two_or_three_verified? %>
                 <span class="icon-check"></span>
               <% else %>
                 <span class="icon-x"></span>

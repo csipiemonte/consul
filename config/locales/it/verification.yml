@@ -99,7 +99,7 @@ it:
     user_permission_info: Dopo aver verificato i tuoi dati potrai...
     user_permission_proposal: Creare nuove proposte
     user_permission_support_proposal: Sostenere le proposte
-    user_permission_votes: Partecipare alle votazioni finali*
+    user_permission_votes: Partecipare alle votazioni finali
     verified_user:
       form:
         submit_button: Invia codice
