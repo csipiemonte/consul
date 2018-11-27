@@ -373,6 +373,8 @@ it:
           enabled: Abilitato
           process: Progetto
           debate_phase: Fase iniziale
+          draft_phase: Fase delle bozze
+          draft_phase_description: Se questa fase è attiva, il progetto non sarà visibile nella pagina dei progetti. Permette di mostrare l'anteprima del progetto e creare il contenuto prima dell'inizio.
           allegations_phase: Fase dei commenti
           proposals_phase: Fase delle proposte
           start: Inizio
@@ -585,6 +587,7 @@ it:
     administrators:
       index:
         title: Amministratori
+        id: ID Amministratore
         name: Nome
         email: Email
         no_administrators: Non ci sono amministratori.

@@ -1,132 +1,149 @@
-<!-- versione custom, differisce nel tbody di riga 32 (aggiunta verifica attivazione delle sezioni) -->
-<% provide :title do %><%= t('pages.titles.accessibility') %><% end %>
+<!-- versione custom, differisce nel tbody di riga 43 e successive (aggiunta verifica attivazione delle sezioni) -->
+<% provide :title do %><%= t("pages.titles.accessibility") %><% end %>
 <% content_for :canonical do %>
   <%= render "shared/canonical", href: page_url("accessibility") %>
 <% end %>
 
 <div class="row">
-<div class="small-12 column">
+  <div class="small-12 column">
 
-  <h1><%= t('.title') %></h1>
-  <%= simple_format(t('.description')) %>
+    <h1><%= t("pages.accessibility.title") %></h1>
+    <%= simple_format(t("pages.accessibility.description")) %>
 
-  <ul>
-    <% t('.examples').each do |example| %>
-      <li><%= example %></li>
-    <% end %>
-  </ul>
+    <ul>
+      <% t("pages.accessibility.examples").each do |example| %>
+        <li><%= example %></li>
+      <% end %>
+    </ul>
 
-  <h2><%= t('.keyboard_shortcuts.title') %></h2>
+    <h2><%= t("pages.accessibility.keyboard_shortcuts.title") %></h2>
 
-  <p><%= t('.keyboard_shortcuts.navigation_table.description') %></p>
+    <p><%= t("pages.accessibility.keyboard_shortcuts.navigation_table.description") %></p>
 
-  <div class="small-12 medium-6">
-    <table>
-      <caption class="show-for-sr"><%= t('.keyboard_shortcuts.navigation_table.caption') %></caption>
-      <thead>
-        <tr>
-          <th scope="col" class="text-center"><%= t('.keyboard_shortcuts.navigation_table.key_header') %></th>
-          <th scope="col"><%= t('.keyboard_shortcuts.navigation_table.page_header') %></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="text-center">0</td>
-          <td>Inizio</td>
-        </tr>
-        <% if feature?(:debates) %>
-        <tr>
-          <td class="text-center">1</td>
-          <td><%= t("layouts.header.debates") %></td>
-        </tr>
-        <% end %>
-        <% if feature?(:proposals) %>
+    <div class="small-12 medium-6">
+      <table>
+        <caption class="show-for-sr">
+          <%= t("pages.accessibility.keyboard_shortcuts.navigation_table.caption") %>
+        </caption>
+        <thead>
           <tr>
-            <td class="text-center">2</td>
-            <td><%= t("layouts.header.proposals") %></td>
+            <th scope="col" class="text-center">
+              <%= t("pages.accessibility.keyboard_shortcuts.navigation_table.key_header") %>
+            </th>
+            <th scope="col">
+              <%= t("pages.accessibility.keyboard_shortcuts.navigation_table.page_header") %>
+            </th>
           </tr>
-        <% end %>
-        <% if feature?(:polls) %>
-        <tr>
-          <td class="text-center">3</td>
-          <td><%= t("layouts.header.poll_questions") %></td>
-        </tr>
-        <% end %>
-        <% if feature?(:legislation) %>
-        <tr>
-          <td class="text-center">4</td>
-          <td><%= t("layouts.header.collaborative_legislation") %></td>
-        </tr>
-        <% end %>
-        <% if feature?(:budgets) %>
-        <tr>
-          <td class="text-center">5</td>
-          <td><%= t("layouts.header.budgets") %></td>
-        </tr>
-        <% end %>
-        <tr>
-          <td class="text-center">6</td>
-          <td><%= t("layouts.header.more_info") %></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <p><%= t('.keyboard_shortcuts.browser_table.description') %></p>
-
-  <div class="small-12 medium-6">
-    <table>
-      <caption class="show-for-sr"><%= t('.keyboard_shortcuts.browser_table.caption') %></caption>
-      <thead>
-        <tr>
-          <th scope="col"><%= t('.keyboard_shortcuts.browser_table.browser_header') %></th>
-          <th scope="col"><%= t('.keyboard_shortcuts.browser_table.key_header') %></th>
-        </tr>
-      </thead>
-      <tbody>
-        <% t('.keyboard_shortcuts.browser_table.rows').each do |row| %>
+        </thead>
+        <tbody>
           <tr>
-            <td><%= row[:browser_column] %></td>
-            <td><%= row[:key_column] %></td>
+            <td class="text-center">0</td>
+            <td>Inizio</td>
           </tr>
-        <% end %>
-      </tbody>
-    </table>
-  </div>
+          <% if feature?(:debates) %>
+            <tr>
+              <td class="text-center">1</td>
+              <td><%= t("layouts.header.debates") %></td>
+            </tr>
+          <% end %>
+          <% if feature?(:proposals) %>
+            <tr>
+              <td class="text-center">2</td>
+              <td><%= t("layouts.header.proposals") %></td>
+            </tr>
+          <% end %>
+          <% if feature?(:polls) %>
+            <tr>
+              <td class="text-center">3</td>
+              <td><%= t("layouts.header.poll_questions") %></td>
+            </tr>
+          <% end %>
+          <% if feature?(:legislation) %>
+            <tr>
+              <td class="text-center">4</td>
+              <td><%= t("layouts.header.collaborative_legislation") %></td>
+            </tr>
+          <% end %>
+          <% if feature?(:budgets) %>
+            <tr>
+              <td class="text-center">5</td>
+              <td><%= t("layouts.header.budgets") %></td>
+            </tr>
+          <% end %>
+          <% if feature?(:help_page) %>
+            <tr>
+              <td class="text-center">6</td>
+              <td><%= t("layouts.header.more_info") %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
 
-  <h2><%= t('.textsize.title') %></h2>
-  <p><%= t('.textsize.browser_settings_table.description') %></p>
+    <p><%= t("pages.accessibility.keyboard_shortcuts.browser_table.description") %></p>
 
-  <div class="small-12 medium-6">
-    <table>
-      <thead>
-        <tr>
-          <th scope="col"><%= t('.textsize.browser_settings_table.browser_header') %></th>
-          <th scope="col"><%= t('.textsize.browser_settings_table.action_header') %></th>
-        </tr>
-      </thead>
-      <tbody>
-        <% t('.textsize.browser_settings_table.rows').each do |row| %>
+    <div class="small-12 medium-6">
+      <table>
+        <caption class="show-for-sr">
+          <%= t("pages.accessibility.keyboard_shortcuts.browser_table.caption") %>
+        </caption>
+        <thead>
           <tr>
-            <td><%= row[:browser_column] %></td>
-            <td><%= row[:action_column] %></td>
+            <th scope="col">
+              <%= t("pages.accessibility.keyboard_shortcuts.browser_table.browser_header") %>
+            </th>
+            <th scope="col">
+              <%= t("pages.accessibility.keyboard_shortcuts.browser_table.key_header") %>
+            </th>
           </tr>
-        <% end %>
-      </tbody>
-    </table>
-  </div>
+        </thead>
+        <tbody>
+          <% t("pages.accessibility.keyboard_shortcuts.browser_table.rows").each do |row| %>
+            <tr>
+              <td><%= row[:browser_column] %></td>
+              <td><%= row[:key_column] %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
 
-  <p><%= t('.textsize.browser_shortcuts_table.description') %></p>
+    <h2><%= t("pages.accessibility.textsize.title") %></h2>
+    <p><%= t("pages.accessibility.textsize.browser_settings_table.description") %></p>
 
-  <ul>
-    <% t('.textsize.browser_shortcuts_table.rows').each do |row| %>
-      <li><code><%= row[:shortcut_column] %></code> <%= row[:description_column] %></li>
-    <% end  %>
-  </ul>
+    <div class="small-12 medium-6">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">
+              <%= t("pages.accessibility.textsize.browser_settings_table.browser_header") %>
+            </th>
+            <th scope="col">
+              <%= t("pages.accessibility.textsize.browser_settings_table.action_header") %>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <% t("pages.accessibility.textsize.browser_settings_table.rows").each do |row| %>
+            <tr>
+              <td><%= row[:browser_column] %></td>
+              <td><%= row[:action_column] %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
 
-  <h2><%= t('.compatibility.title') %></h2>
+    <p><%= t("pages.accessibility.textsize.browser_shortcuts_table.description") %></p>
 
-  <p><%= t('.compatibility.description_html') %></p>
+    <ul>
+      <% t("pages.accessibility.textsize.browser_shortcuts_table.rows").each do |row| %>
+        <li><code><%= row[:shortcut_column] %></code> <%= row[:description_column] %></li>
+      <% end %>
+    </ul>
 
+    <h2><%= t("pages.accessibility.compatibility.title") %></h2>
+
+    <p><%= t("pages.accessibility.compatibility.description_html") %></p>
   </div>
 </div>

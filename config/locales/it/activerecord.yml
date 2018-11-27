@@ -231,6 +231,8 @@ it:
         end_date: Data di fine
         debate_start_date: Data di inizio del dibattito
         debate_end_date: Data di fine del dibattito
+        draft_start_date: Data di inizio della bozza
+        draft_end_date: Data di fine della bozza
         draft_publication_date: Data di pubblicazione della bozza
         allegations_start_date: Data di inizio degli allegati
         allegations_end_date: Data di fine degli allegati
@@ -337,9 +339,11 @@ it:
         legislation/process:
           attributes:
             end_date:
-              invalid_date_range: deve avere data uguale o successiva alla data d’inizio
+              invalid_date_range: deve avere data uguale o successiva alla data d'inizio
             debate_end_date:
-              invalid_date_range: deve avere data uguale o successiva alla data d’inizio del dibattito
+              invalid_date_range: deve avere data uguale o successiva alla data d'inizio del dibattito
+            draft_end_date:
+              invalid_date_range: deve essere uguale o successiva alla data di inizio della bozza
             allegations_end_date:
               invalid_date_range: deve essere uguale o successiva alla data di inizio degli allegati
         proposal:
