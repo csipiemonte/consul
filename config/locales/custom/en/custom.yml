@@ -12,6 +12,14 @@ en:
     sessions:
       census_code_updated: Census code updated.
       user_not_resident: You are no longer registered in Torino.
+  devise_views:
+    users:
+      registrations:
+        new:
+          terms: Con la registrazione dichiaro di aver preso visione dell'%{terms_privacy}, acconsento al trattamento dei miei dati personali e accetto le %{terms}.
+          terms_privacy_link: "informativa"
+          terms_link: "condizioni d'uso"
+          terms_title: Con la registrazione dichiaro di aver preso visione dell'informativa, acconsento al trattamento dei miei dati personali e accetto le condizioni d'uso.
   errors:
     messages:
       sms_deliver: Errors occurred in the verification of the mobile. Please try again later.

@@ -12,6 +12,14 @@ fr:
     sessions:
       census_code_updated: Mise à jour du numéro de zone.
       user_not_resident: "Vous n'êtes plus résident à Turin."
+  devise_views:
+    users:
+      registrations:
+        new:
+          terms: Con la registrazione dichiaro di aver preso visione dell'%{terms_privacy}, acconsento al trattamento dei miei dati personali e accetto le %{terms}.
+          terms_privacy_link: "informativa"
+          terms_link: "condizioni d'uso"
+          terms_title: Con la registrazione dichiaro di aver preso visione dell'informativa, acconsento al trattamento dei miei dati personali e accetto le condizioni d'uso.
   errors:
     messages:
       sms_deliver: Les erreurs rencontrées lors de la vérification de votre numéro de téléphone, veuillez réessayer plus tard.

@@ -176,7 +176,7 @@ it:
     error: errore
     errors: errori
     not_saved_html: "hanno impedito di salvare %{resource}. <br>Si prega, per cortesia, di controllare i campi segnalati per sapere come correggerli:"
-    policy: Politica della privacy
+    policy: Trattamento dati personali
     proposal: la proposta
     proposal_notification: "la notifica"
     spending_proposal: la proposta di spesa
@@ -211,7 +211,7 @@ it:
       open_source_url: http://www.gnu.org/licenses/agpl-3.0.html
       participation_text: Decidi come deve essere la città che ami.
       participation_title: Partecipazione
-      privacy: Tutela della privacy e cookie
+      privacy: Trattamento dati personali
     header:
       administration_menu: Admin
       administration: Amministrazione

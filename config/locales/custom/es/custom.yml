@@ -12,6 +12,14 @@ es:
     sessions:
       census_code_updated: Actualizado el número de distrito.
       user_not_resident: Ya no estás empadronado en Torino.
+  devise_views:
+    users:
+      registrations:
+        new:
+          terms: Con la registrazione dichiaro di aver preso visione dell'%{terms_privacy}, acconsento al trattamento dei miei dati personali e accetto le %{terms}.
+          terms_privacy_link: "informativa"
+          terms_link: "condizioni d'uso"
+          terms_title: Con la registrazione dichiaro di aver preso visione dell'informativa, acconsento al trattamento dei miei dati personali e accetto le condizioni d'uso.
   errors:
     messages:
       sms_deliver: Errores ocuridos en la verificación del móvil. Por favor, intentalo otra vez más tarde.

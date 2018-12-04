@@ -67,8 +67,8 @@ it:
       titles:
         how_to_use: Utilizzalo nella tua città
     privacy:
-      title: Tutela della privacy e cookie
-      subtitle: AVISO DE PROTECCIÓN DE DATOS
+      title: Trattamento dati personali
+      subtitle: Informativa art. 13 del Regolamento europeo UE 670/2016
       info_items:
         - 
           text: La navegación por la informacion disponible en el Portal de Gobierno Abierto es anónima.
@@ -187,7 +187,7 @@ it:
       accessibility: Accesibilità
       conditions: "Condizioni d'uso"
       help: "Scopri %{org}"
-      privacy: Politica della Privacy
+      privacy: Trattamento dati personali
     verify:
       code: Codice che hai ricevuto nella lettera
       email: Email

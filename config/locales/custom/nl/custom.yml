@@ -12,6 +12,14 @@ nl:
     sessions:
       census_code_updated: Het gebiedsnummer bijgewerkt.
       user_not_resident: U bent niet langer in Turijn woonachtig.
+  devise_views:
+    users:
+      registrations:
+        new:
+          terms: Con la registrazione dichiaro di aver preso visione dell'%{terms_privacy}, acconsento al trattamento dei miei dati personali e accetto le %{terms}.
+          terms_privacy_link: "informativa"
+          terms_link: "condizioni d'uso"
+          terms_title: Con la registrazione dichiaro di aver preso visione dell'informativa, acconsento al trattamento dei miei dati personali e accetto le condizioni d'uso.
   errors:
     messages:
       sms_deliver: Fouten bij het verifiëren van uw telefoonnummer, probeer het later opnieuw.

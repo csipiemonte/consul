@@ -37,8 +37,11 @@
 
       <%= f.label :terms_of_service do %>
         <%= f.check_box :terms_of_service, title: t('devise_views.users.registrations.new.terms_title'), label: false %>
-        <span class="checkbox">
+        <span class="checkbox" style="display: inline">
           <%= t("devise_views.users.registrations.new.terms",
+              terms_privacy: link_to(t("devise_views.users.registrations.new.terms_privacy_link"), "/privacy",
+              title: t('shared.target_blank_html'),
+              target: "_blank"),
               terms: link_to(t("devise_views.users.registrations.new.terms_link"), "/conditions",
               title: t('shared.target_blank_html'),
               target: "_blank")).html_safe %>
