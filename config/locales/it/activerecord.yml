@@ -10,12 +10,12 @@ it:
       budget/investment:
         one: "Progetto di spesa"
         other: "Progetti di spesa"
-      budget/investment/milestone:
+      milestone:
         one: "traguardo"
         other: "milestones"
-      budget/investment/status:
-        one: "Stato del progetto"
-        other: "Stati del progetto"
+      milestone/status:
+        one: "Stato della prosecuzione"
+        other: "Stati della prosecuzione"
       comment:
         one: "Commento"
         other: "Commenti"
@@ -82,9 +82,6 @@ it:
       legislation/draft_versions:
         one: "Versione in bozza"
         other: "Versioni in bozza"
-      legislation/draft_texts:
-        one: "Bozza"
-        other: "Bozze"
       legislation/questions:
         one: "Domanda"
         other: "Domande"
@@ -128,15 +125,15 @@ it:
         external_url: "Link alla documentazione aggiuntiva"
         administrator_id: "Amministratore"
         location: "Ubicazione (facoltativo)"
-        organization_name: "Se presenti una proposta a nome di un collettivo o di un’organizzazione, ovvero per conto di più persone, indicane il nome"
+        organization_name: "Se presenti una proposta a nome di un collettivo o di un'organizzazione, ovvero per conto di più persone, indicane il nome"
         image: "Immagine descrittiva del progetto di spesa"
-        image_title: "Titolo dell’immagine"
-      budget/investment/milestone:
+        image_title: "Titolo dell'immagine"
+      milestone:
         status_id: "Stato attuale del progetto (facoltativo)"
         title: "Titolo"
         description: "Descrizione (facoltativa se c'è uno stato assegnanato)"
         publication_date: "Data di pubblicazione"
-      budget/investment/status:
+      milestone/status:
         name: "Nome"
         description: "Descrizione (facoltativa)"
       budget/heading:

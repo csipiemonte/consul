@@ -106,15 +106,15 @@ it:
       present: deve restare in bianco
       confirmation: non coincide
       empty: non può restare vuoto
-      equal_to: deve essere uguale a %{count}
+      equal_to: "deve essere uguale a %{count}"
       even: deve essere pari
       exclusion: è riservato
-      greater_than: deve essere maggiore di %{count}
-      greater_than_or_equal_to: deve essere maggiore o uguale a %{count}
+      greater_than: "deve essere maggiore di %{count}"
+      greater_than_or_equal_to: "deve essere maggiore o uguale a %{count}"
       inclusion: non è incluso nella lista
       invalid: non è valido
-      less_than: deve essere minore di %{count}
-      less_than_or_equal_to: deve essere minore o uguale a %{count}
+      less_than: "deve essere minore di %{count}"
+      less_than_or_equal_to: "deve essere minore o uguale a %{count}"
       model_invalid: "La validazione non si è conclusa: %{errors}"
       not_a_number: non è un numero
       not_an_integer: deve essere un intero
@@ -122,19 +122,19 @@ it:
       required: deve essere presente
       taken: è già in uso
       too_long:
-        one: è troppo lungo (massimo %{count} caratteri)
-        other: è troppo lungo (massimo %{count} caratteri)
+        one: "è troppo lungo (massimo %{count} caratteri)"
+        other: "è troppo lungo (massimo %{count} caratteri)"
       too_short:
-        one: è troppo corto (minimo %{count} caratteri)
-        other: è troppo corto (minimo %{count} caratteri)
+        one: "è troppo corto (minimo %{count} caratteri)"
+        other: "è troppo corto (minimo %{count} caratteri)"
       wrong_length:
-        one: lunghezza errata (dovrebbe essere di %{count} caratteri)
-        other: lunghezza errata (dovrebbe essere di %{count} caratteri)
+        one: "lunghezza errata (dovrebbe essere di %{count} caratteri)"
+        other: "lunghezza errata (dovrebbe essere di %{count} caratteri)"
       other_than: deve essere diverso da %{count}
     template:
       body: 'Ci sono stati problemi con i seguenti campi:'
       header:
-        one: Non è stato possibile salvare questo/a %{model} perché si è verificato 1 errore
+        one: "Non è stato possibile salvare questo/a %{model} perché si è verificato 1 errore"
         other: "Non è stato possibile salvare questo/a %{model} perché si sono verificati %{count} errori"
   helpers:
     select:

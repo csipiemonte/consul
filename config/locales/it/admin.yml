@@ -286,24 +286,24 @@ it:
         notice: Milestone eliminata con successo
     statuses:
       index:
-        title: Stato dei progetti
-        empty_statuses: Non è stato creato alcun stato del progetto
-        new_status: Crea nuovo stato del progetto
+        title: Stati della prosecuzione
+        empty_statuses: Non è stato creato alcun stato della prosecuzione
+        new_status: Crea nuovo stato della prosecuzione
         table_name: Nome
         table_description: Descrizione
         table_actions: Azioni
         delete: Elimina
         edit: Modifica
       edit:
-        title: Modifica stato del progetto
+        title: Modifica stato della prosecuzione
       update:
-        notice: Stato del progetto modificato con successo
+        notice: Stato della prosecuzione modificato con successo
       new:
-        title: Crea stato del progetto
+        title: Crea stato della prosecuzione
       create:
-        notice: Stato del progetto creato con successo
+        notice: Stato della prosecuzione creato con successo
       delete:
-        notice: Stato del progetto eliminato con successo
+        notice: Stato della prosecuzione eliminato con successo
     comments:
       index:
         filter: Filtro
@@ -413,7 +413,7 @@ it:
           status_planned: A breve
         subnav:
           info: Informazione
-          draft_texts: Redazione
+          draft_versions: Redazione
           questions: Dibattito
           proposals: Proposte
       proposals:
@@ -1031,7 +1031,7 @@ it:
       search:
         title: Cerca Organizzazioni
         no_results: Non sono state trovate organizzazioni.
-    proposals:
+    hidden_proposals:
       index:
         filter: Filtro
         filters:
