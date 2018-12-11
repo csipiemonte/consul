@@ -79,4 +79,3 @@ Ver fichero [CONTRIBUTING_ES.md](CONTRIBUTING_ES.md)
 ## Desarrollo en local con Docker
 
 Puedes leer la guía en [https://consul_docs.gitbooks.io/docs/content/es/getting_started/docker.html](https://consul_docs.gitbooks.io/docs/content/es/getting_started/docker.html)
-

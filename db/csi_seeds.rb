@@ -71,6 +71,7 @@ Setting.create(key: 'meta_keywords', value: 'citizen participation, open governm
 # Feature flags
 Setting.create(key: 'feature.debates', value: 'true')
 Setting.create(key: 'feature.proposals', value: 'true')
+Setting.create(key: 'feature.featured_proposals', value: 'true')
 Setting.create(key: 'feature.spending_proposals', value: nil)
 Setting.create(key: 'feature.polls', value: nil)
 Setting.create(key: 'feature.twitter_login', value: 'true')
@@ -116,6 +117,9 @@ Setting.create(key: 'mailer_from_address', value: 'noreply@deciditorino.it')
 Setting.create(key: 'verification_offices_url', value: 'http://oficinas-atencion-ciudadano.url/')
 Setting.create(key: 'min_age_to_participate', value: '16')
 
+# Featured proposals
+Setting.create(key: 'featured_proposals_number', value: '3')
+
 # Proposal improvement url path ('/more-information/proposal-improvement')
 Setting.create(key: 'proposal_improvement_path', value: nil)
 
@@ -138,6 +142,14 @@ Geozone.create(name: "Barriera di Milano - Regio Parco - Barca - Bertolla - Falc
 Geozone.create(name: "Aurora - Vanchiglia - Sassi - Madonna del Pilone", census_code: "7", html_map_coordinates: "242, 106, 268, 114, 282, 131, 310, 141, 251, 221, 242, 219, 236, 210, 236, 187, 217, 158, 200, 163, 187, 144, 159, 130, 171, 112, 188, 116, 203, 136, 233, 115, 240, 107")
 Geozone.create(name: "San Salvario - Cavoretto - Borgo Po - Nizza Millefonti - Lingotto - Filadelfia", census_code: "8", html_map_coordinates: "172, 172, 190, 180, 212, 161, 234, 190, 232, 213, 240, 223, 240, 225, 233, 236, 195, 253, 178, 248, 166, 266, 139, 265, 137, 259, 124, 254, 121, 263, 104, 253, 144, 205, 152, 210, 172, 170")
 
+puts " ✅"
+print "Creating WebSection"
+
+WebSection.create(name: 'homepage')
+WebSection.create(name: 'debates')
+WebSection.create(name: 'proposals')
+WebSection.create(name: 'budgets')
+WebSection.create(name: 'help_page')
 
 puts " ✅"
 print "Creating Users"

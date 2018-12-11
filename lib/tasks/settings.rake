@@ -25,6 +25,12 @@ namespace :settings do
     Setting['feature.help_page'] = true
   end
 
+  desc "Enable Featured proposals"
+  task enable_featured_proposals: :environment do
+    Setting['feature.featured_proposals'] = true
+    Setting['featured_proposals_number'] = 3
+  end
+
   desc "Adds/Updates Setting key - value"
   task add_upd_key_value: :environment do
 
