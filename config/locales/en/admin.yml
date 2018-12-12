@@ -1,4 +1,6 @@
 en:
+  true_value: 'Yes'
+  false_value: 'No'
   admin:
     header:
       title: Administration
@@ -128,9 +130,13 @@ en:
         table_heading: Heading
         table_amount: Amount
         table_population: Population
+        table_allow_custom_contents: Custom content allowed
         population_info: "Budget Heading population field is used for Statistic purposes at the end of the Budget to show for each Heading that represents an area with population what percentage voted. The field is optional so you can leave it empty if it doesn't apply."
         max_votable_headings: "Maximum number of headings in which a user can vote"
         current_of_max_headings: "%{current} of %{max}"
+        allow_content_block: Allow content block
+        latitude: Latitude
+        longitude: Longitude
       winners:
         calculate: Calculate Winner Investments
         calculated: Winners being calculated, it may take a minute.
@@ -220,8 +226,6 @@ en:
         tags: Tags
         user_tags: User tags
         undefined: Undefined
-        milestone: Milestone
-        new_milestone: Create new milestone
         compatibility:
           title: Compatibility
           "true": Incompatible
@@ -269,6 +273,8 @@ en:
         image: "Image"
         show_image: "Show image"
         documents: "Documents"
+        milestone: Milestone
+        new_milestone: Create new milestone
       form:
         admin_statuses: Admin investment statuses
         no_statuses_defined: There are no defined investment statuses yet
@@ -576,6 +582,8 @@ en:
           welcome: "Welcome"
         buttons:
           save: "Save"
+          content_block:
+            update: "Update Block"
       title_moderated_content: Moderated content
       title_budgets: Budgets
       title_polls: Polls

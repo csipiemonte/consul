@@ -1,4 +1,6 @@
 it:
+  true_value: 'Si'
+  false_value: 'No'
   admin:
     header:
       title: Amministrazione
@@ -131,6 +133,7 @@ it:
         population_info: "Il campo popolazione tra le Voci di Bilancio è utilizzato a scopo Statistico al termine del Bilancio per evidenziare la percentuale di votanti relativa a ciascuna Voce rappresentativa di un’area abitata. Il campo è facoltativo e perciò può essere lasciato vuoto se non pertinente."
         max_votable_headings: "Numero massimo di voci che un utente può votare"
         current_of_max_headings: "%{current} di %{max}"
+        allow_content_block: Consente blocco di contenuti
       winners:
         calculate: Calcola progetti vincitori
         calculated: Elaborazione dei progetti vincitori in corso, può durare un minuto.
@@ -220,8 +223,6 @@ it:
         tags: Tags
         user_tags: "Tags dell'utente"
         undefined: Da definire
-        milestone: Tracciato
-        new_milestone: Crea nuova milestone
         compatibility:
           title: Compatibilità
           "true": Incompatibile
@@ -269,6 +270,8 @@ it:
         image: "Immagine"
         show_image: "Mostra immagine"
         documents: "Documenti"
+        milestone: Milestone
+        new_milestone: Crea nuova milestone
       form:
         admin_statuses: Gestiona stati dei progetti
         no_statuses_defined: Non ci sono stati definiti
@@ -575,6 +578,8 @@ it:
           welcome: "Benvenuto/a"
         buttons:
           save: "Salva modifiche"
+          content_block:
+            update: "Aggiorna Blocco"
       title_moderated_content: Contenuto moderato
       title_budgets: Bilanci
       title_polls: Votazioni
