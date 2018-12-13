@@ -129,7 +129,7 @@ it:
         image: "Immagine descrittiva del progetto di spesa"
         image_title: "Titolo dell'immagine"
       milestone:
-        status_id: "Stato attuale del progetto (facoltativo)"
+        status_id: "Stato attuale (facoltativo)"
         title: "Titolo"
         description: "Descrizione (facoltativa se c'è uno stato assegnanato)"
         publication_date: "Data di pubblicazione"
@@ -239,6 +239,7 @@ it:
         summary: Sommario
         description: In cosa consiste
         additional_info: Informazione aggiuntiva
+        milestones_summary: Milestone del progetto
       legislation/draft_version:
         title: Titolo della versione
         body: Testo

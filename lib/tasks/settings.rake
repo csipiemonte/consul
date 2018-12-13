@@ -31,6 +31,11 @@ namespace :settings do
     Setting['featured_proposals_number'] = 3
   end
 
+  desc "Create new period to calculate hot_score"
+  task create_hot_score_period_setting: :environment do
+    Setting['hot_score_period_in_days'] = 31
+  end
+
   desc "Adds/Updates Setting key - value"
   task add_upd_key_value: :environment do
 

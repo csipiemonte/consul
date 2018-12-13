@@ -129,6 +129,7 @@ Setting.create(key: 'map_longitude', value: 7.680763006210328)
 Setting.create(key: 'map_zoom', value: 12)
 
 Setting.create(key: 'related_content_score_threshold', value: -0.3)
+Setting.create(key: 'hot_score_period_in_days', value: 31)
 
 puts " ✅"
 print "Creating Geozones (Circoscrizioni)"

@@ -87,6 +87,7 @@ it:
         draft_publication_date: Pubblicazione bozza
         allegations_dates: Commenti
         result_publication_date: Pubblicazione risultati
+        milestones_date: Milestone
         proposals_dates: Proposte
     questions:
       comments:

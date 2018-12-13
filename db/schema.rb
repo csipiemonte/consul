@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181109111037) do
+ActiveRecord::Schema.define(version: 20181121123512) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -176,11 +176,14 @@ ActiveRecord::Schema.define(version: 20181109111037) do
   create_table "budget_investment_milestone_translations", force: :cascade do |t|
     t.integer  "budget_investment_milestone_id", null: false
     t.string   "locale",                         null: false
-    t.string   "title"
-    t.text     "description"
     t.datetime "created_at",                     null: false
     t.datetime "updated_at",                     null: false
+    t.string   "title"
+    t.text     "description"
   end
+
+  add_index "budget_investment_milestone_translations", ["budget_investment_milestone_id"], name: "index_6770e7675fe296cf87aa0fd90492c141b5269e0b", using: :btree
+  add_index "budget_investment_milestone_translations", ["locale"], name: "index_budget_investment_milestone_translations_on_locale", using: :btree
 
   create_table "budget_investment_milestones", force: :cascade do |t|
     t.integer  "investment_id"
@@ -627,6 +630,7 @@ ActiveRecord::Schema.define(version: 20181109111037) do
     t.text     "summary"
     t.text     "description"
     t.text     "additional_info"
+    t.text     "milestones_summary"
   end
 
   add_index "legislation_process_translations", ["legislation_process_id"], name: "index_199e5fed0aca73302243f6a1fca885ce10cdbb55", using: :btree

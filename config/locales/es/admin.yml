@@ -273,7 +273,7 @@ es:
         milestone: Seguimiento
         new_milestone: Crear nuevo hito
       form:
-        admin_statuses: Gestionar estados de proyectos
+        admin_statuses: Gestionar estados
         no_statuses_defined: No hay estados definidos
       new:
         creating: Crear hito
@@ -419,6 +419,7 @@ es:
           draft_versions: Redacción
           questions: Debate
           proposals: Propuestas
+          milestones: Seguimiento
       proposals:
         index:
           title: Título
@@ -516,6 +517,9 @@ es:
           comments_count: Número de comentarios
         question_option_fields:
           remove_option: Eliminar
+      milestones:
+        index:
+          title: Seguimiento
     managers:
       index:
         title: Gestores
@@ -532,6 +536,7 @@ es:
       admin: Menú de administración
       banner: Gestionar banners
       poll_questions: Preguntas
+      proposals: Propuestas
       proposals_topics: Temas de propuestas
       budgets: Presupuestos participativos
       geozones: Gestionar distritos
@@ -1036,6 +1041,13 @@ es:
       search:
         title: Buscar Organizaciones
         no_results: No se han encontrado organizaciones.
+    proposals:
+      index:
+        title: Propuestas
+        id: ID
+        author: Autor
+        milestones: Hitos
+        no_proposals: No hay propuestas.
     hidden_proposals:
       index:
         filter: Filtro

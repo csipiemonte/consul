@@ -106,7 +106,7 @@ it:
       orders:
         confidence_score: Valutati meglio
         created_at: Più recenti
-        hot_score: Più attivi oggi
+        hot_score: Più attivi
         most_commented: Più commentati
         relevance: Più rilevanti
         recommendations: Consigliati
@@ -346,7 +346,7 @@ it:
       orders:
         confidence_score: Più sostenute
         created_at: Nuove
-        hot_score: Più attive oggi
+        hot_score: Più attive
         most_commented: Più commentate
         relevance: Più rilevanti
         archival_date: Archiviate
@@ -437,6 +437,7 @@ it:
       flag: Questa proposta è stata definita inadeguata da molti utenti.
       login_to_comment: È necessario %{signin} o %{signup} per commentare.
       notifications_tab: Notifiche
+      milestones_tab: Milestone
       retired_warning: "L'autore di questa proposta ritiene che non debba più continuare a ricevere appoggi."
       retired_warning_link_to_explanation: Verifica la spiegazione prima di appoggiarla.
       retired: "Proposta ritirata dall'autore"

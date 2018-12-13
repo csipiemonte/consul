@@ -273,7 +273,7 @@ it:
         milestone: Milestone
         new_milestone: Crea nuova milestone
       form:
-        admin_statuses: Gestiona stati dei progetti
+        admin_statuses: Gestione stati
         no_statuses_defined: Non ci sono stati definiti
       new:
         creating: Crea milestone
@@ -419,6 +419,7 @@ it:
           draft_versions: Redazione
           questions: Dibattito
           proposals: Proposte
+          milestones: Milestone
       proposals:
         index:
           title: Titolo
@@ -516,6 +517,9 @@ it:
           comments_count: Numero di commenti
         question_option_fields:
           remove_option: Elimina
+      milestones:
+        index:
+          title: Milestone
     managers:
       index:
         title: Gestori
@@ -532,6 +536,7 @@ it:
       admin: Menu di amministrazione
       banner: Banners
       poll_questions: Domande
+      proposals: Proposte
       proposals_topics: Temi delle proposte
       budgets: Bilanci partecipativi
       geozones: Circoscrizioni
@@ -1036,6 +1041,13 @@ it:
       search:
         title: Cerca Organizzazioni
         no_results: Non sono state trovate organizzazioni.
+    proposals:
+      index:
+        title: Proposte
+        id: ID
+        author: Autore
+        milestones: Milestone
+        no_proposals: Non sono presenti proposte.
     hidden_proposals:
       index:
         filter: Filtro
