@@ -62,7 +62,7 @@ feature 'Budget Investments' do
     investments.each do |investment|
       within('#budget-investments') do
         expect(page).to     have_link investment.title
-        expect(page).to_not have_content(investment.description)
+        expect(page).not_to have_content(investment.description)
       end
     end
 
@@ -90,6 +90,22 @@ feature 'Budget Investments' do
     end
     within("#budget_investment_#{investment_with_image.id}") do
       expect(page).to have_css("img[alt='#{investment_with_image.image.title}']")
+    end
+  end
+
+  scenario 'Index should show a map if heading has coordinates defined', :js do
+    create(:budget_investment, heading: heading)
+    visit budget_investments_path(budget, heading_id: heading.id)
+    within("#sidebar") do
+      expect(page).to have_css(".map_location")
+    end
+
+    unlocated_heading = create(:budget_heading, name: "No Map", price: 500, group: group,
+                               longitude: nil, latitude: nil)
+    create(:budget_investment, heading: unlocated_heading)
+    visit budget_investments_path(budget, heading_id: unlocated_heading.id)
+    within("#sidebar") do
+      expect(page).not_to have_css(".map_location")
     end
   end
 
@@ -886,6 +902,7 @@ feature 'Budget Investments' do
 
           expect(page).to have_content(investment.formatted_price)
           expect(page).to have_content(investment.price_explanation)
+          expect(page).to have_link("See price explanation")
 
           if budget.finished?
             investment.update(winner: true)
@@ -904,6 +921,7 @@ feature 'Budget Investments' do
 
           expect(page).not_to have_content(investment.formatted_price)
           expect(page).not_to have_content(investment.price_explanation)
+          expect(page).not_to have_link("See price explanation")
 
           visit budget_investments_path(budget)
 
@@ -925,6 +943,7 @@ feature 'Budget Investments' do
 
           expect(page).not_to have_content(investment.formatted_price)
           expect(page).not_to have_content(investment.price_explanation)
+          expect(page).not_to have_link("See price explanation")
 
           visit budget_investments_path(budget)
 
@@ -1448,7 +1467,7 @@ feature 'Budget Investments' do
         expect(page).to have_content "€#{sp2.price}"
 
         expect(page).not_to have_content sp3.title
-        expect(page).not_to have_content "#{sp3.price}"
+        expect(page).not_to have_content "€#{sp3.price}"
       end
 
       within("#budget_group_#{group.id}") do
