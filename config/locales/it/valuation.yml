@@ -16,7 +16,8 @@ it:
         table_phase: Fase
         table_assigned_investments_valuation_open: Progetti di investimento assegnate in valutazione
         table_actions: Azioni
-        evaluate: Valutare
+        evaluate: Valuta
+        no_budgets: "Non ci sono bilanci"
     budget_investments:
       index:
         headings_filter_all: Tutte le voci

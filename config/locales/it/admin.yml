@@ -923,6 +923,8 @@ it:
         create_question: "Crea domanda per la votazione"
         table_proposal: "Proposta"
         table_question: "Domanda"
+        table_poll: "Votazione"
+        poll_not_assigned: "Votazione non assegnata"
       edit:
         title: "Modifica domanda cittadina"
       new:
