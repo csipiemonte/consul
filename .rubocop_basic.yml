@@ -18,6 +18,9 @@ AllCops:
 Layout/IndentationConsistency:
   EnforcedStyle: rails
 
+Layout/IndentationWidth:
+  Enabled: true
+
 Layout/EndOfLine:
   EnforcedStyle: lf
 
@@ -26,6 +29,9 @@ Layout/TrailingBlankLines:
 
 Layout/TrailingWhitespace:
   Enabled: true
+
+Metrics/LineLength:
+  Max: 100
 
 RSpec/NotToNot:
   Enabled: true

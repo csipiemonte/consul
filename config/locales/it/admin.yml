@@ -151,9 +151,11 @@ it:
         amount: "Importo"
         population: "Popolazione (facoltativo)"
         population_info: "Il campo popolazione tra le Voci di Bilancio è utilizzato unicamente a scopo statistico, per evidenziare la percentuale di votanti relativa a ciascuna voce rappresentativa di un'area abitata. Il campo è facoltativo e perciò può essere lasciato vuoto se non pertinente."
-        latitude: "Latitudine"
-        longitude: "Longitudine"
+        latitude: "Latitudine (facoltativa)"
+        longitude: "Longitudine (facoltativa)"
+        coordinates_info: "Se si aggiungono i campi latitudine e longitudine, nella pagina dei progetti di questa voce apparirà una mappa, centrata sulle coordinate indicate."
         allow_content_block: "Permetti blocco di contenuti"
+        content_blocks_info: "Se si consente il blocco di contenuti, si avrà la possibilità di creare, dalla sezione Configurazione > Blocchi personalizzati, blocchi di contenuto relativi a questa voce. Questo contenuto apparirà nella pagina dei progetti di questa voce."
         create: "Crea nuova voce"
         edit: "Modifica voce"
         submit: "Salva voce"
@@ -1301,6 +1303,7 @@ it:
         title: Notifiche delle proposte
         total: Totale
         proposals_with_notifications: Proposte con notifiche
+        not_available: "Questa proposta non è più disponibile"
       polls:
         title: Statistiche delle votazioni
         all: Votazioni
