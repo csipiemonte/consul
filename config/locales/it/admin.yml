@@ -117,7 +117,7 @@ it:
       headings_edit: "Modifica Voci"
       headings_manage: "Organizza voci"
       max_votable_headings: "Numero massimo di voci nelle quali un utente può votare"
-      no_groups: "Non è ancora stato creato alcun gruppo. Ogni utente potrà votare per un'unica voce di ciascun gruppo."
+      no_groups: "Non è presente alcun gruppo."
       amount:
         one: "È presente 1 Gruppo di voci di bilancio"
         other: "Sono presenti %{count} gruppi di voci di bilancio"
@@ -133,9 +133,11 @@ it:
         edit: "Modifica gruppo"
         name: "Nome del gruppo"
         submit: "Salva gruppo"
+      index:
+        back: "Torna ai bilanci"
     budget_headings:
       name: "Nome"
-      no_headings: "Non è ancora stata creata alcuna voce. Ogni utente potrà votare per un'unica voce di ciascun gruppo."
+      no_headings: "Non è presente alcuna voce."
       amount:
         one: "È presente 1 voce di bilancio"
         other: "Sono presenti  %{count} voci di bilancio"
@@ -159,6 +161,8 @@ it:
         create: "Crea nuova voce"
         edit: "Modifica voce"
         submit: "Salva voce"
+      index:
+        back: "Torna ai gruppi"
     budget_phases:
       edit:
         start_date: Data di inizio
@@ -1345,10 +1349,9 @@ it:
         title: Verifiche incomplete
     site_customization:
       content_blocks:
-        information: Informazioni sui blocchi di contenuto
-        about: "È possibile creare blocchi di HTML da incorporare nell'intestazione o nel piè di pagina dell'applicazione DecidiTorino."
-        top_links_html: "I <strong>blocchi dell'intestazione (top_links)</strong> sono blocchi di link che devono essere creati seguendo questo formato:"
-        footer_html: "I <strong>blocci di piè di pagina (footer)</strong> hanno formato libero e si possono impiegare per salvare impronte Javascript, contenuto CSS o contenuto HTML personalizzato."
+        information: "Informazioni sui blocchi di contenuto"
+        about: "È possibile creare blocchi di contenuto HTML da posizionare in punti diversi della pagina."
+        html_format: "Un blocco di contenuto è un gruppo di link, e deve essere nel seguente formato:"
         no_blocks: "Non ci sono blocchi di testo."
         create:
           notice: Blocco creato con successo

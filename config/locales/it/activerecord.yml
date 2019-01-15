@@ -65,14 +65,14 @@ it:
         one: "Progetto di investimento"
         other: "Progetti di spesa"
       site_customization/page:
-        one: Pagina personalizzata
-        other: Pagine personalizzate
+        one: Pagina
+        other: Pagine
       site_customization/image:
         one: Immagine personalizzata
         other: Immagini personalizzate
       site_customization/content_block:
-        one: Blocco di contenuto personalizzato
-        other: Blocchi di contenuto personalizzati
+        one: Blocco
+        other: Blocchi
       legislation/process:
         one: "Progetto"
         other: "Progetti"
