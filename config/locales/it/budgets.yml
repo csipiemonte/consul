@@ -135,8 +135,8 @@ it:
         already_supported: Hai già appoggiato questo progetto di investimento. Condividilo!
         support_title: Appoggia questo progetto
         confirm_group:
-          one: "Puoi appoggiare solamente i progetti in %{count} circoscrizione. Se prosegui non potrai cambiare la selezione di questa circoscrizione. Sei sicuro?"
-          other: "Puoi appoggiare solamente i progetti in %{count} circoscrizioni. Se prosegui non potrai cambiare la selezione di questa circoscrizione. Sei sicuro?"
+          one: "Puoi appoggiare solamente i progetti in %{count} circoscrizione. Se prosegui non potrai cambiare la selezione di questa circoscrizione. Sei sicuro/a?"
+          other: "Puoi appoggiare solamente i progetti in %{count} circoscrizioni. Se prosegui non potrai cambiare la selezione di questa circoscrizione. Sei sicuro/a?"
         supports:
           zero: Senzi appoggi
           one: 1 appoggio

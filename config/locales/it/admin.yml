@@ -332,6 +332,30 @@ it:
         notice: Stato della prosecuzione creato con successo
       delete:
         notice: Stato della prosecuzione eliminato con successo
+    progress_bars:
+      manage: "Modifica barre di avanzamento"
+      index:
+        title: "Barre di avanzamento"
+        no_progress_bars: "Non sono presenti barre di avanzamento"
+        new_progress_bar: "Crea nuova barra di avanzamento"
+        primary: "Barra di avanzamento principale"
+        table_id: "ID"
+        table_kind: "Tipo"
+        table_title: "Titolo"
+        table_percentage: "Avanzamento"
+      new:
+        creating: "Crea barra di avanzamento"
+      edit:
+        title:
+          primary: "Modifica la barra di avanzamento principale"
+          secondary: "Modifica la barra di avanzamento %{title}"
+      create:
+        notice: "Barra di avanzamento creata con successo!"
+      update:
+        notice: "Barra di avanzamento aggiornata"
+      delete:
+        notice: "Barra di avanzamento eliminata correttamente"
+
     comments:
       index:
         filter: Filtro
@@ -1163,6 +1187,7 @@ it:
       author: Autore
       content: Contenuto
       created_at: Data di creazione
+      delete: Elimina
     spending_proposals:
       index:
         geozone_filter_all: Tutti gli ambiti di attuazione
