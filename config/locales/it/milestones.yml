@@ -2,6 +2,7 @@ it:
   milestones:
     index:
       no_milestones: Non sono state definite milestone
+      progress: Avanzamento
     show:
       publication_date: "Pubblicato il %{publication_date}"
       status_changed: Il progetto è cambiato di stato

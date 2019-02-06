@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190103132925) do
+ActiveRecord::Schema.define(version: 20190205131722) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -666,6 +666,8 @@ ActiveRecord::Schema.define(version: 20190103132925) do
     t.date     "draft_end_date"
     t.boolean  "draft_phase_enabled",        default: false
     t.boolean  "homepage_enabled",           default: false
+    t.text     "background_color"
+    t.text     "font_color"
   end
 
   add_index "legislation_processes", ["allegations_end_date"], name: "index_legislation_processes_on_allegations_end_date", using: :btree
@@ -1309,15 +1311,15 @@ ActiveRecord::Schema.define(version: 20190103132925) do
   add_index "taggings", ["taggable_id", "taggable_type", "context"], name: "index_taggings_on_taggable_id_and_taggable_type_and_context", using: :btree
 
   create_table "tags", force: :cascade do |t|
-    t.string  "name",                        limit: 40
-    t.integer "taggings_count",                         default: 0
-    t.integer "debates_count",                          default: 0
-    t.integer "proposals_count",                        default: 0
-    t.integer "spending_proposals_count",               default: 0
+    t.string  "name",                        limit: 160
+    t.integer "taggings_count",                          default: 0
+    t.integer "debates_count",                           default: 0
+    t.integer "proposals_count",                         default: 0
+    t.integer "spending_proposals_count",                default: 0
     t.string  "kind"
-    t.integer "budget/investments_count",               default: 0
-    t.integer "legislation/proposals_count",            default: 0
-    t.integer "legislation/processes_count",            default: 0
+    t.integer "budget/investments_count",                default: 0
+    t.integer "legislation/proposals_count",             default: 0
+    t.integer "legislation/processes_count",             default: 0
   end
 
   add_index "tags", ["debates_count"], name: "index_tags_on_debates_count", using: :btree
@@ -1520,10 +1522,14 @@ ActiveRecord::Schema.define(version: 20190103132925) do
     t.string   "link_text"
     t.string   "link_url"
     t.string   "label"
-    t.boolean  "header",      default: false
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
+    t.boolean  "header",                     default: false
+    t.datetime "created_at",                                 null: false
+    t.datetime "updated_at",                                 null: false
+    t.integer  "site_customization_page_id"
+    t.integer  "columns",                    default: 4
   end
+
+  add_index "widget_cards", ["site_customization_page_id"], name: "index_widget_cards_on_site_customization_page_id", using: :btree
 
   create_table "widget_feeds", force: :cascade do |t|
     t.string   "kind"

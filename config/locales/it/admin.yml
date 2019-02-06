@@ -439,6 +439,9 @@ it:
           homepage: Descrizione
           homepage_description: Qui è possibile illustrare il contenuto del progetto
           homepage_enabled: Homepage attivata
+          banner_title: Colori del titolo
+          banner_background_color: Colore di sfondo
+          banner_font_color: Colore del testo
         index:
           create: Nuovo progetto
           delete: Elimina
@@ -913,11 +916,13 @@ it:
         table_location: "Ubicazione"
     polls:
       index:
-        title: "Elenco delle votazioni attive"
+        title: "Elenco delle votazioni"
         no_polls: "Non ci sono votazioni in programma."
         create: "Crea votazione"
         name: "Nome"
         dates: "Date"
+        start_date: "Data di apertura"
+        closing_date: "Data di chiusura"
         geozone_restricted: "Ristretta alle circoscrizioni"
       new:
         title: "Nuova votazione"
@@ -1448,6 +1453,23 @@ it:
           status_published: Pubblicata
           title: Titolo
           slug: Slug
+          cards_title: Tarjetas
+          see_cards: Ver tarjetas
+        cards:
+          cards_title: Cards
+          create_card: Crea card
+          no_cards: Non sono presenti cards.
+          title: Titolo
+          description: Descrizione
+          link_text: Testo del link
+          link_url: URL del link
+          columns_help: "Larghezza della card in numero di colonne. Per i dispositivi mobile è sempre pari al 100%."
+          create:
+            notice: "Card creata con successo!"
+          update:
+            notice: "Card aggiornata con successo"
+          destroy:
+            notice: "Card eliminata con successo"
     homepage:
       title: Titolo
       description: I moduli attivi appariranno sulla homepage nello stesso ordine mostrato qui.
