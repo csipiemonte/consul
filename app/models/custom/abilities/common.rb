@@ -1,4 +1,4 @@
-# versione custom, differisce dall'originale alla riga 63, per permettere anche agli utenti non certificati
+# versione custom, differisce dall'originale alla riga 67, per permettere anche agli utenti non certificati
 # di appoggiare le proposte legate ai progetti. 
 module Abilities
   class Common
@@ -94,9 +94,6 @@ module Abilities
       end
 
       can [:create, :show], ProposalNotification, proposal: { author_id: user.id }
-
-      can :create, Annotation
-      can [:update, :destroy], Annotation, user_id: user.id
 
       can [:create], Topic
       can [:update, :destroy], Topic, author_id: user.id

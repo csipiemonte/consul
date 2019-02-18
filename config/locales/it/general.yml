@@ -181,6 +181,7 @@ it:
     proposal_notification: "la notifica"
     spending_proposal: la proposta di spesa
     budget/investment: il progetto di spesa
+    budget/group: il gruppo delle voci di bilancio
     budget/heading: la voce di bilancio
     poll/shift: il turno
     poll/question/answer: la risposta
@@ -242,13 +243,6 @@ it:
         no_notifications: 'Non hai nuove notifiche'
     admin:
       watch_form_message: 'Hai eseguito modifiche che non sono state salvate. Confermi che vuoi abbandonare la pagina?'
-  legacy_legislation:
-    help:
-      alt: Seleziona il testo che intendi commentare e fai click sul bottone con la matita.
-      text: Per commentare questo documento devi %{sign_in} o %{sign_up}. Dopo seleziona il testo che vuoi commentare e fai click sul bottone con la matita.
-      text_sign_in: iniziare la sessione
-      text_sign_up: registrarti
-      title: 'Come posso commentare questo documento?'
   notifications:
     index:
       empty_notifications: Non hai nuove notifiche.
@@ -332,7 +326,7 @@ it:
       proposal_video_url_note: Puoi aggiungere un link a YouTube o a Vimeo
       tag_category_label: "Tags"
       tags_instructions: "Etichetta questa proposta. Puoi scegliere fra le categorie che ti sono presentate o puoi introdurre quelle che desideri"
-      tags_label: Temi
+      tags_label: Tags
       tags_placeholder: "Scrivi i tags che desideri separandoli con una virgola (',')"
       map_location: "Localizzazione nella mappa"
       map_location_instructions: "Naviga sulla mappa fino al punto scelto e metti il marcatore."
@@ -452,8 +446,7 @@ it:
       form:
         submit_button: Salva modifiche
     share:
-      message: "Ho appoggiato la proposta %{summary} in %{org}. Se ti interessa, sostienila anche tu!"
-      message_mobile: "Ho appoggiato la proposta %{summary} in %{handle}. Se ti interessa, sostienila anche tu!"
+      message: "Ho appoggiato la proposta %{summary} in %{handle}. Se ti interessa, sostienila anche tu!"
   polls:
     all: "Tutte"
     no_dates: "senza data assegnata"
@@ -462,11 +455,9 @@ it:
     index:
       filters:
         current: "Aperte"
-        incoming: "A breve"
         expired: "Terminate"
       title: "Votazioni"
       participate_button: "Partecipa a questa votazione"
-      participate_button_incoming: "Più informazioni"
       participate_button_expired: "Votazione terminata"
       no_geozone_restricted: "Tutta la città"
       geozone_restricted: "Circoscrizioni"
@@ -494,11 +485,10 @@ it:
       signup: registrarsi
       cant_answer_verify_html: "Per cortesia %{verify_link} per poter rispondere."
       verify_link: "certifica il tuo account"
-      cant_answer_incoming: "Questa votazione non è ancora iniziata."
       cant_answer_expired: "Questa votazione è terminata."
       cant_answer_wrong_geozone: "Questa votazione non è disponibile per la tua circoscrizione."
       more_info_title: "Più informazioni"
-      documents: Documentazione
+      documents: Documenti
       zoom_plus: Zoom immagine
       read_more: "Leggi di più su %{answer}"
       read_less: "Leggi di meno su %{answer}"
@@ -760,7 +750,7 @@ it:
     anonymous: Troppi voti anonimi, per poter votare %{verify_account}.
     comment_unauthenticated: È necessario %{signin} o %{signup} per poter votare.
     disagree: "Non sono d'accordo"
-    organizations: Le organizzazioni non possono votare
+    organizations: Le organizzazioni non possono votare.
     signin: iniziare la sessione
     signup: registrarsi
     supports: Appoggi
@@ -780,8 +770,8 @@ it:
       unfeasible: Non si possono votare le proposte non realizzabili.
       not_voting_allowed: Il periodo di votazione è concluso.
       different_heading_assigned:
-        one: "È possibile appoggiare i progetti di spesa solamente di %{count} circoscrizione"
-        other: "È possibile appoggiare i progetti di spesa solamente di %{count} circoscrizioni"
+        one: "È possibile appoggiare i progetti di spesa solamente di %{count} circoscrizione. Hai già dato appoggi in %{supported_headings}."
+        other: "È possibile appoggiare i progetti di spesa solamente di %{count} circoscrizioni. Hai già dato appoggi in %{supported_headings}."
   welcome:
     feed:
       most_active:

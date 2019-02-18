@@ -48,8 +48,8 @@ module BudgetsHelper
   end
 
   def css_for_ballot_heading(heading)
-    return '' if current_ballot.blank?
-    current_ballot.has_lines_in_heading?(heading) ? 'is-active' : ''
+    return "" if current_ballot.blank? || @current_filter == "unfeasible"
+    current_ballot.has_lines_in_heading?(heading) ? "is-active" : ""
   end
 
   def current_ballot
@@ -89,5 +89,11 @@ module BudgetsHelper
     else
       t("admin.budgets.winners.recalculate")
     end
+  end
+
+  def display_support_alert?(investment)
+    current_user &&
+    !current_user.voted_in_group?(investment.group) &&
+    investment.group.headings.count > 1
   end
 end

@@ -48,7 +48,7 @@ it:
         other: "Gestori"
       newsletter:
         one: "Newsletter"
-        other: "Newsletter"
+        other: "Newsletters"
       vote:
         one: "Voto"
         other: "Voti"
@@ -65,7 +65,7 @@ it:
         one: "Proposta cittadina"
         other: "Proposte cittadine"
       spending_proposal:
-        one: "Progetto di investimento"
+        one: "Proposta di investimento"
         other: "Progetti di spesa"
       site_customization/page:
         one: Pagina
@@ -148,7 +148,7 @@ it:
         secondary: "Secondaria"
       budget/heading:
         name: "Nome della voce"
-        price: "Quantità"
+        price: "Costo"
         population: "Popolazione"
       comment:
         body: "Commento"
@@ -214,7 +214,7 @@ it:
         slug: Slug
         status: Stato
         title: Titolo
-        updated_at: ultimo aggiornamento
+        updated_at: Ultimo aggiornamento
         more_info_flag: Mostra in ulteriore pagina informativa
         print_content_flag: Bottone di stampa
         locale: Lingua
@@ -244,6 +244,8 @@ it:
         allegations_start_date: Data di inizio degli allegati
         allegations_end_date: Data di fine degli allegati
         result_publication_date: Data di pubblicazione del risultato finale
+        background_color: Colore di sfondo
+        font_color: Colore del testo
       legislation/process/translation:
         title: Titolo del progetto
         summary: Sommario
@@ -277,7 +279,7 @@ it:
         title: Risposta
         description: Descrizione
       poll/question/answer/translation:
-        title: Titolo
+        title: Risposta
         description: Descrizione
       poll/question/answer/video:
         title: Titolo

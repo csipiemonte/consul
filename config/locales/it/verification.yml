@@ -36,7 +36,7 @@ it:
         user_permission_info: Con il tuo profilo puoi...
       update:
         flash:
-          success: Il tuo account è già stato verificato
+          success: Codice corretto. Il tuo account è già stato certificato
     redirect_notices:
       already_verified: Il tuo account è già stato verificato
       email_already_sent: Ti è stata già spedita una email con un link per la conferma, se non la trovi puoi richiedere qui un nuovo invio

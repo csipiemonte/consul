@@ -62,7 +62,7 @@ it:
       create_proposal: Crea proposta
       print_proposals: Stampa proposte
       support_proposals: Sostieni proposte
-      create_spending_proposal: Crea proposta di investimento
+      create_spending_proposal: Crea una proposta di spesa
       print_spending_proposals: Stampare le proposte di spesa
       support_spending_proposals: Appoggia le proposte di spesa
       create_budget_investment: Crea progetti di spesa
@@ -84,7 +84,7 @@ it:
     print_info: Stampa questa informazione
     proposals:
       alert:
-        unverified_user: "L'utente non è stato verificato"
+        unverified_user: Utente non certificato
       create_proposal: Crea proposta
       print:
         print_button: Stampa
@@ -108,12 +108,12 @@ it:
       print:
         print_button: Stampa
       search_results:
-        one: " contiene la parola '%{search_term}'"
-        other: " contengono la parola '%{search_term}'"
+        one: " che contiene '%{search_term}'"
+        other: " che contengono '%{search_term}'"
     spending_proposals:
       alert:
-        unverified_user: "L'utente non è stato verificato"
-      create: Crea proposta di investimento
+        unverified_user: Utente non certificato
+      create: Crea una proposta di spesa
       filters:
         unfeasible: Proposte di investimento non realizzabili
         by_geozone: "Proposte di investimento con ambito: %{geozone}"

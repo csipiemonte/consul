@@ -66,7 +66,7 @@ it:
       sorry: "Ci dispiace per l'inconveniente e ringraziamo di nuovo per la partecipazione."
       subject: "Il tuo progetto di spesa '%{code}' è stato contrassegnato come non realizzabile"
     budget_investment_selected:
-      subject: "La tua proposta di investimento '%{code}' è stata selezionata"
+      subject: "Il tuo progetto di spesa '%{code}' è stato selezionato"
       hi: "Gentile utente,"
       share: "Inizia a raccogliere voti, condividi il tuo progetto di investimento sui social network. Solo così potrai vederlo realizzato!"
       share_button: "Condividi il tuo progetto di investimento"

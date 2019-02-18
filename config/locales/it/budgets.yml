@@ -24,10 +24,10 @@ it:
     groups:
       show:
         title: Seleziona una opzione
-        unfeasible_title: Progetti irrealizzabili
+        unfeasible_title: Progetti di spesa irrealizzabili
         unfeasible: Mostra i progetti irrealizzabili
-        unselected_title: Proposte non selezionate per la votazione finale
-        unselected: Mostra le proposte non selezionate per la votazione finale
+        unselected_title: Progetti non selezionati per la votazione finale
+        unselected: Mostra i progetti non selezionati per la votazione finale
     phase:
       drafting: Bozza (Non visibile pubblicamente)
       informing: Informazione
@@ -61,7 +61,7 @@ it:
     investments:
       form:
         tag_category_label: "Categorie"
-        tags_instructions: "Aggiungi tag a questa proposta. Puoi scegliere tra le categorie proposte o introdurre quelle che desideri"
+        tags_instructions: "Aggiungi un tag a questo progetto. Puoi scegliere tra le categorie proposte o introdurre quelle che desideri"
         tags_label: Tags
         tags_placeholder: "Scrivi i tags che desideri separandoli con il carattere virgola (',')"
         map_location: "Localizzazione nella mappa"
@@ -71,9 +71,9 @@ it:
         map_skip_checkbox: "A questo progetto non corrisponde una localizzazione concreta o non la conosco."
       index:
         title: Bilanci partecipativi
-        unfeasible: Proposte di investimento non realizzabili
+        unfeasible: Progetti di spesa non realizzabili
         unfeasible_text: "I progetti presentati devono incontrare una serie di criteri (legalità, concretezza, essere di competenza del Comune, non superare il massimo del bilancio) per essere dichiarati realizzabili e giungere alla fase della votazione finale. Tutti i progetti che non soddisfano tali criteri sono segnati come non realizzabili e pubblicati nella lista seguente, insieme al corrispondente rapporto di non fattibilità."
-        by_heading: 'Proposte di investimento con ambito: %{heading}'
+        by_heading: 'Progetti di spesa con ambito: %{heading}'
         search_form:
           button: Cerca
           placeholder: Cerca progetti di spesa...
@@ -85,7 +85,7 @@ it:
           my_ballot: I miei voti
           voted_html:
             one: "<strong>Hai votat una progetto per un valore di %{amount_spent}</strong>"
-            other: "<strong>Hai votato %{count} proposte per un valore di %{amount_spent}</strong>"
+            other: "<strong>Hai votato %{count} progetti per un valore di %{amount_spent}</strong>"
           voted_info: È possibile %{link} in qualsiasi momento fino alla chiusura di questa fase. Non è necessario spendere tutto il denaro a tua disposizione.
           voted_info_link: cambiare i tuoi voti
           different_heading_assigned_html: "Hai già sostenuto i progetti di un'altra sezione del bilancio: %{heading_link}"
@@ -106,8 +106,7 @@ it:
           confidence_score: Meglio valutati
           price: Per costo
       share:
-        message: "Ho presentato il progetto %{title} su %{org}. Presenta anche tu un progetto!"
-        message_mobile: "Ho presentato il progetto %{title} su %{handle}. Presenta anche tu un progetto!"
+        message: "Ho presentato il progetto %{title} su %{handle}. Presenta anche tu un progetto!"
       show:
         author_deleted: Utente eliminato
         price_explanation: Rapporto di costo
@@ -116,7 +115,7 @@ it:
         location_html: 'Ubicazione: <strong>%{location}</strong>'
         organization_name_html: 'Proposto a nome di: <strong>%{name}</strong>'
         share: Condividi
-        title: Proposta di investimento
+        title: Progetto di spesa
         supports: Appoggi
         votes: Voti
         price: Costo
@@ -132,7 +131,7 @@ it:
       investment:
         add: Vota
         already_added: Hai già aggiunto questo progetto di spesa
-        already_supported: Hai già appoggiato questo progetto di investimento. Condividilo!
+        already_supported: Hai già appoggiato questo progetto di spesa. Condividilo!
         support_title: Appoggia questo progetto
         confirm_group:
           one: "Puoi appoggiare solamente i progetti in %{count} circoscrizione. Se prosegui non potrai cambiare la selezione di questa circoscrizione. Sei sicuro/a?"
@@ -154,20 +153,20 @@ it:
     show:
       group: Gruppo
       phase: Fase attuale
-      unfeasible_title: Progetti irrealizzabili
+      unfeasible_title: Progetti di spesa irrealizzabili
       unfeasible: Mostra i progetti irrealizzabili
-      unselected_title: Proposte non selezionate per la votazione finale
-      unselected: Mostra le proposte non selezionate per la votazione finale
+      unselected_title: Progetti non selezionati per la votazione finale
+      unselected: Mostra i progetti non selezionati per la votazione finale
       see_results: Mostra risultati
     results:
       link: Risultati
       page_title: "%{budget} - Risultati"
       heading: "Risultati bilanci partecipativi"
       heading_selection_title: "Ambito di esecuzione"
-      spending_proposal: Titolo
+      spending_proposal: Titolo della proposta
       ballot_lines_count: Voti
-      hide_discarded_link: Nascondi scartate
-      show_all_link: Mostra tutte
+      hide_discarded_link: Nascondi scartati
+      show_all_link: Mostra tutti
       price: Prezzo totale
       amount_available: Bilancio disponibile
       accepted: 'Progetto di spesa accettato: '

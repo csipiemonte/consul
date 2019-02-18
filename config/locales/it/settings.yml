@@ -14,7 +14,7 @@ it:
     official_level_5_name_description: "Etichetta che apparirà sugli utenti contrassegnati come funzionari pubblici di livello 5"
     max_ratio_anon_votes_on_debates: "Percentuale massima di voti anonimi per ogni dibattito"
     max_ratio_anon_votes_on_debates_description: "Si considerano voti anonimi quelli dati da utenti registrati con un account non ancora certificato"
-    max_votes_for_proposal_edit: "Numero di voti ricevuti i quali una proposta non è più modificabile"
+    max_votes_for_proposal_edit: "Numero di appoggi ricevuti i quali una proposta non è più modificabile"
     max_votes_for_proposal_edit_description: "A partire da questo numero di appoggi l'autore di una proposta non potrà più modificarla"
     max_votes_for_debate_edit: "Numero di voti necessari per non poter più modificare un dibattito"
     max_votes_for_debate_edit_description: "A partire da questo numero di voti l'autore di un dibattito non potrà più modificarlo"
@@ -25,7 +25,7 @@ it:
     votes_for_proposal_success: "Numero di appoggi necessari per approvare una Proposta"
     votes_for_proposal_success_description: "Quando una proposta raggiunge questo numero di appoggi non ne potrà ricevere altri, perché tale proposta è considerata di successo"
     months_to_archive_proposals: "Mesi per archiviare le proposte"
-    months_to_archive_proposals_description: Trascorso questo numero di mesi le proposte sono archiviate e non potranno più ricevere appoggi
+    months_to_archive_proposals_description: "Trascorso questo numero di mesi le proposte sono archiviate e non potranno più ricevere appoggi"
     email_domain_for_officials: "Dominio di posta elettronica per funzionari pubblici"
     email_domain_for_officials_description: "Tutti gli utenti che si registrano con un indirizzo di posta elettronica appartenente a tale dominio avranno, in automatico, certificato il proprio account"
     per_page_code_head: "Codice da inserire in ogni pagina (<head>)"

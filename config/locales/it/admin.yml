@@ -43,7 +43,7 @@ it:
       edit:
         editing: Modifica banner
         form:
-          submit_button: Salva Modifiche
+          submit_button: Salva modifiche
       errors:
         form:
           error:
@@ -68,7 +68,7 @@ it:
           on_proposals: Proposte
           on_users: Utenti
           on_system_emails: Email di sistema
-        title: Attività dei Moderatori
+        title: Attività dei moderatori
         type: Tipo
         no_activity: Non ci sono attività dei moderatori.
     budgets:
@@ -87,7 +87,7 @@ it:
         table_edit_budget: Modifica
         edit_groups: Modifica grupppi di voci
         edit_budget: Modifica bilancio
-        no_budgets: "Non sono presenti bilanci aperti."
+        no_budgets: "Non sono presenti bilanci partecipativi."
       create:
         notice: 'Bilanci partecipativi creati con successo!'
       update:
@@ -110,7 +110,7 @@ it:
       winners:
         calculate: Calcola progetti vincitori
         calculated: Elaborazione dei progetti vincitori in corso, può durare un minuto.
-        recalculate: Ricalcola proposte vincitrici
+        recalculate: Ricalcola progetti vincitori
     budget_groups:
       name: "Nome"
       headings_name: "Voci"
@@ -182,11 +182,6 @@ it:
         tags_filter_all: Tutte le etichette
         advanced_filters: Filtri avanzati
         placeholder: Cerca progetti
-        sort_by:
-          placeholder: Ordina per
-          id: ID
-          title: Titolo
-          supports: Appoggi
         filters:
           all: Tutti
           without_admin: Senza amministratore
@@ -214,7 +209,7 @@ it:
           feasible: "Realizzabile (%{price})"
           unfeasible: "Irrealizzabile"
           undecided: "Da decidere"
-        selected: "Selezionata"
+        selected: "Selezionato"
         select: "Seleziona"
         list:
           id: ID
@@ -257,7 +252,7 @@ it:
           "true": Selezionato
           "false": Non selezionato
         winner:
-          title: Vincitrice
+          title: Vincitore
           "true": "Si"
           "false": "No"
         image: "Immagine"
@@ -355,7 +350,6 @@ it:
         notice: "Barra di avanzamento aggiornata"
       delete:
         notice: "Barra di avanzamento eliminata correttamente"
-
     comments:
       index:
         filter: Filtro
@@ -440,16 +434,13 @@ it:
           homepage_description: Qui è possibile illustrare il contenuto del progetto
           homepage_enabled: Homepage attivata
           banner_title: Colori del titolo
-          banner_background_color: Colore di sfondo
-          banner_font_color: Colore del testo
+          color_help: Formato esadecimale
         index:
           create: Nuovo progetto
           delete: Elimina
           title: Progetti di legislazione collaborativa
           filters:
             open: Aperti
-            next: A breve
-            past: Passati
             all: Tutti
         new:
           back: Indietro
@@ -460,12 +451,12 @@ it:
           orders:
             id: Id
             title: Titolo
-            supports: Appoggi
+            supports: Appoggi totali
         process:
           title: Progetto
           comments: Commenti
           status: Stato
-          creation_date: Data creazione
+          creation_date: Data di creazione
           status_open: Aperto
           status_closed: Chiuso
           status_planned: A breve
@@ -484,7 +475,7 @@ it:
           title: Titolo
           back: Indietro
           id: Id
-          supports: Appoggi
+          supports: Appoggi totali
           select: Seleziona
           selected: Selezionata
         form:
@@ -586,7 +577,7 @@ it:
         email: Email
         no_managers: Non ci sono gestori.
       manager:
-        add: Aggiungi come Gestore
+        add: Aggiungi come gestore
         delete: Elimina
       search:
         title: 'Gestori: Ricerca degli utenti'
@@ -656,9 +647,9 @@ it:
     administrators:
       index:
         title: Amministratori
-        id: ID Amministratore
         name: Nome
         email: Email
+        id: ID Amministratore
         no_administrators: Non ci sono amministratori.
       administrator:
         add: Aggiungi come Amministratore
@@ -875,6 +866,7 @@ it:
       flash:
         create: "Aggiunto turno del presidente di seggio"
         destroy: "Eliminato turno del presidente di seggio"
+        unable_to_destroy: "Non è possibile eliminare i turni che hanno risultati o riconteggi associati"
         date_missing: "Si deve selezionare una data"
       vote_collection: Raccogliere Voti
       recount_scrutiny: Riconteggio & Scrutinio
@@ -1347,7 +1339,7 @@ it:
         table:
           poll_name: Votazione
           question_name: Domanda
-          origin_web: Partecipanti Web
+          origin_web: Partecipanti sul sito
           origin_total: Partecipanti Totali
     tags:
       create: Crea argomento
@@ -1379,7 +1371,7 @@ it:
         title: Verifiche incomplete
     site_customization:
       content_blocks:
-        information: "Informazioni sui blocchi di contenuto"
+        information: Informazioni sui blocchi di contenuto
         about: "È possibile creare blocchi di contenuto HTML da posizionare in punti diversi della pagina."
         html_format: "Un blocco di contenuto è un gruppo di link, e deve essere nel seguente formato:"
         no_blocks: "Non ci sono blocchi di testo."
@@ -1471,7 +1463,7 @@ it:
           destroy:
             notice: "Card eliminata con successo"
     homepage:
-      title: Titolo
+      title: Homepage
       description: I moduli attivi appariranno sulla homepage nello stesso ordine mostrato qui.
       header_title: Testata
       no_header: Non ci sono testate.

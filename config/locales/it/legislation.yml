@@ -47,7 +47,7 @@ it:
         text_comments: Commenti
     processes:
       header:
-        additional_info: Ulteriore informazione
+        additional_info: Ulteriori informazioni
         description: In cosa consiste
         more_info: Maggiori informazioni e contesto
       proposals:
@@ -62,10 +62,8 @@ it:
         filter: Filtro
         filters:
           open: Progetti attivi
-          next: A breve
           past: Terminati
         no_open_processes: Non ci sono progetti attivi
-        no_next_processes: Non ci sono progetti pianificati
         no_past_processes: Non ci sono progetti terminati
         section_header:
           icon_alt: Icona dei Progetti

@@ -87,7 +87,7 @@ en:
         table_edit_budget: Edit
         edit_groups: Edit headings groups
         edit_budget: Edit budget
-        no_budgets: "There are no open budgets."
+        no_budgets: "There are no budgets."
       create:
         notice: New participatory budget created successfully!
       update:
@@ -182,11 +182,6 @@ en:
         tags_filter_all: All tags
         advanced_filters: Advanced filters
         placeholder: Search projects
-        sort_by:
-          placeholder: Sort by
-          id: ID
-          title: Title
-          supports: Supports
         filters:
           all: All
           without_admin: Without assigned admin
@@ -439,16 +434,13 @@ en:
           homepage_description: Here you can explain the content of the process
           homepage_enabled: Homepage enabled
           banner_title: Header colors
-          banner_background_color: Background colour
-          banner_font_color: Font colour
+          color_help: Hexadecimal format
         index:
           create: New process
           delete: Delete
           title: Legislation processes
           filters:
             open: Open
-            next: Next
-            past: Past
             all: All
         new:
           back: Back
@@ -459,7 +451,7 @@ en:
           orders:
             id: Id
             title: Title
-            supports: Supports
+            supports: Total supports
         process:
           title: Process
           comments: Comments
@@ -484,7 +476,7 @@ en:
           back: Back
           id: Id
           title: Title
-          supports: Supports
+          supports: Total supports
           select: Select
           selected: Selected
         form:
@@ -875,6 +867,7 @@ en:
       flash:
         create: "Shift added"
         destroy: "Shift removed"
+        unable_to_destroy: "Shifts with associated results or recounts cannot be deleted"
         date_missing: "A date must be selected"
       vote_collection: Collect Votes
       recount_scrutiny: Recount & Scrutiny

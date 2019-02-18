@@ -72,7 +72,7 @@ it:
         valuation_finished_alert: "Confermi di voler contrassegnare questo rapporto come completato? Una volta fatto, non è possibile annullare l'azione."
         not_feasible_alert: "Sarà inviata immediatamente all'autore del progetto una email con il rapporto di non fattibilità."
         duration_html: Tempo di esecuzione <small>(facoltativo, dato non pubblico)</small>
-        save: Salva Modifiche
+        save: Salva modifiche
       notice:
         valuate: "Fascicolo aggiornato"
       valuation_comments: Commenti di valutazione
@@ -93,7 +93,7 @@ it:
         association_name: Associazione
         by: Inviata da
         sent: Data di creazione
-        geozone: Ambito
+        geozone: Ambito di realizzazione
         dossier: Fascicolo
         edit_dossier: Modifica fascicolo
         price: Costo

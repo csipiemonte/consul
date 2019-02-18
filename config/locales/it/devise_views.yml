@@ -91,7 +91,7 @@ it:
         delete_form:
           erase_reason_label: Motivo della cancellazione
           info: Non è possibile annullare questa operazione. Una volta disicritto, non potrai più eseguire il login con la tua utenza attuale.
-          info_reason: Se vuoi, scrivi il perché intendi cancellarti (facoltativo)
+          info_reason: Se vuoi, scrivi il perché intendi cancellarti (facoltativo).
           submit: Cancellare il mio account
           title: Cancellare il mio account
         edit:

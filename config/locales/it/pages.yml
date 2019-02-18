@@ -59,9 +59,9 @@ it:
       how_to_use:
         text: |-
           Utilizzalo nella tua città o aiutaci a migliorarlo, è software libero.
-          
+
           Questo portale di Governo Aperto usa il software libero [CONSUL](https://github.com/consul/consul 'github consul'), con [licenza AGPLv3](http://www.gnu.org/licenses/agpl-3.0.html 'AGPLv3 gnu' ), in poche parole significa che qualsiasi persona può liberamente usare il codice, copiarlo, vederlo nel dettaglio, modificarlo, e ridistribuirlo con le modifiche che desidera, a condizione che altri possano fare la medesima cosa. Tutto questo perché crediamo che la cultura, quando è libera, è migliore e si arrichisce di continuo.
-          
+
           Se sei un programmatore, puoi prendere visione del codice e aiutarci a migliorare il [portale CONSUL](https://github.com/consul/consul 'github consul').
       titles:
         how_to_use: Utilizzalo nella tua città
@@ -86,15 +86,11 @@ it:
             - 
               field: 'Órgano responsable:'
               description: ÓRGANO RESPONSABLE
-        - 
-          text: El interesado podrá ejercer los derechos de acceso, rectificación, cancelación y oposición, ante el órgano responsable indicado todo lo cual se informa en el cumplimiento del artículo 5 de la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal.
-        - 
-          text: Como principio general, este sitio web no comparte ni revela información obtenida, excepto cuando haya sido autorizada por el usuario, o la informacion sea requerida por la autoridad judicial, ministerio fiscal o la policia judicial, o se de alguno de los supuestos regulados en el artículo 11 de la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal.
     accessibility:
       title: Accessibilità
       description: |-
         Per accessibilità web si intende la possibilità di accesso al Web e a tutti i suoi contenuti da parte di tutte le persone, indipendentemente dalle disabilità (fisiche, intellettuali o tecniche) che possano presentare o che derivino dal contesto di utilizzo (disabilità tecnologiche o ambientali).
-        
+
         Quando i siti web sono stati progettati tenendo in conto dell'accessibilità', tutti gli utenti possono arrivare in modo paritario ai contenuti, per esempio:
       examples:
         - Inserendo un testo alternativo alle immagini, gli utenti non vedenti o con problemi di vista possono usare speciali lettori per ottenere l'informazione.
