@@ -440,7 +440,7 @@ it:
           delete: Elimina
           title: Progetti di legislazione collaborativa
           filters:
-            open: Aperti
+            open: Attivi
             all: Tutti
         new:
           back: Indietro
@@ -456,7 +456,8 @@ it:
           title: Progetto
           comments: Commenti
           status: Stato
-          creation_date: Data di creazione
+          start_date: Data di apertura
+          end_date: Data di chiusura
           status_open: Aperto
           status_closed: Chiuso
           status_planned: A breve
@@ -480,7 +481,7 @@ it:
           selected: Selezionata
         form:
           custom_categories: Categorie
-          custom_categories_description: "Categorie che l'utente può selezionare durante la creazione della proposta."
+          custom_categories_description: "Categorie che l'utente può selezionare durante la creazione della proposta. Massimo 160 caratteri per categoria."
           custom_categories_placeholder: Scrivi le etichette che desideri separandole con una virgola (,) e con doppi apici ("")
       draft_versions:
         create:
