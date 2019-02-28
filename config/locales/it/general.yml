@@ -219,7 +219,6 @@ it:
       available_locales: Lingue disponibili
       collaborative_legislation: Progetti
       debates: Dibattiti
-      external_link_blog: Blog
       locale: 'Lingua:'
       logo: DecidiTorino logo
       management: Gestire
@@ -398,8 +397,6 @@ it:
         guide: "Condividila perché la gente inizi a sostenerla."
         edit: "Prima di pubblicarla potrai modificare il testo a tuo piacimento."
         view_proposal: Adesso no, vai alla proposta
-      improve_info: "Migliora la tua campagna e ottieni più appoggi"
-      improve_info_link: "Vedi più informazioni"
       already_supported: 'Hai sostenuto questa proposta, condividila!'
       comments:
         zero: Senza commenti
@@ -623,7 +620,6 @@ it:
       see_more: Mostra più suggerimenti
       hide: Nascondi suggerimenti
   social:
-    blog: "Blog di %{org}"
     facebook: "Facebook di %{org}"
     twitter: "Twitter di %{org}"
     youtube: "YouTube di %{org}"

@@ -94,12 +94,12 @@ en:
         help_text_6: "Further information on the proposals and how to register are available in the %{link}"
         help_text_6_link: "FAQ page"
   settings:
-    direct_message_max_per_day: "Numero massimo di messaggi giornalieri"
     feature:
       proposals: Proposals
       shibboleth_login: "Accesso con SPID"
       shibboleth_login_description: "Per consentire agli utenti di accedere con il proprio account SPID (autenticazione Shibboleth)"
-    proposal_notification_minimum_interval_in_days: "Intervallo minimo in giorni per la notifica di una proposta"
+    transparency_url: "URL per la trasparenza"
+    opendata_url: "URL per Open Data"
   verification:
     residence:
       new:

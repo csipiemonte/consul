@@ -761,9 +761,46 @@ it:
         send_pending: Invia in attesa
         send_pending_notification: Notifiche in attesa inviate correttamente
       proposal_notification_digest:
-        title: Sommario delle Notifiche delle Proposte
-        description: Riunisci tutte le notifiche delle proposte in un unico messaggio, per evitare di spedire troppe email.
-        preview_detail: Gli utenti riceveranno solamente le notifiche relative alle proposte che stanno seguendo.
+        title: "Sommario delle notifiche delle proposte"
+        description: "Riunisci tutte le notifiche delle proposte in un unico messaggio, per evitare di spedire troppe email."
+        preview_detail: "Gli utenti riceveranno solamente le notifiche relative alle proposte che stanno seguendo."
+      budget_investment_created:
+        title: "Progetto di spesa creato"
+        description: "Inviato quando un utente crea un progetto di bilanci partecipativi."
+      budget_investment_selected:
+        title: "Progetto di spesa selezionato"
+        description: "Inviato all'autore del progetto di bilanci partecipativi che è stato selezionato."
+      budget_investment_unfeasible:
+        title: "Progetto di spesa non realizzabile"
+        description: "Inviato all'autore del progetto di bilanci partecipativi che è stato contrassegnato come non realizzabile."
+      budget_investment_unselected:
+        title: "Progetto di spesa non selezionato"
+        description: "Inviato all'autore del progetto di bilanci partecipativi che non è stato selezionato per la fase di votazione."
+      comment:
+        title: "Commento"
+        description: "Inviato all'autore quando riceve un commento."
+      reply:
+        title: "Risposta"
+        description: "Inviato all'autore del commento quando riceve una risposta."
+      direct_message_for_receiver:
+        title: "Messaggio privato ricevuto"
+        description: "Inviato al destinatario di un messaggio privato."
+      direct_message_for_sender:
+        title: "Messaggio privato inviato"
+        description: "Inviato al mittente di un messaggio privato."
+      email_verification:
+        title: "Verifica tramite email"
+        description: "Inviato al nuovo utente registrato allo scopo di verificare il suo account."
+      user_invite:
+        title: "Invito di utenti"
+        description: "Inviato alla persona che è stata invitata a registrarsi su DecidiTorino."
+      edit_info: "Puoi modificare questa email nel"
+      message_title: "Titolo del messaggio"
+      message_body: "Questo è un eesempio di contenuto del messaggio."
+      alert:
+        no_investments: "Non è stato creato nessun progetto di spesa. È necessario un qualche esempio per poter mostrare l'anteprima della email."
+        no_comments: "Non è stato creato nessun commento. È necessario un qualche esempio per poter mostrare l'anteprima della email."
+        no_replies: "Non è stato creata nessuna risposta. È necessario un qualche esempio per poter mostrare l'anteprima della email."
     emails_download:
       index:
         title: Scarica email
@@ -1133,10 +1170,6 @@ it:
       flash:
         updated: Valore aggiornato
       index:
-        banners: Stile banner
-        banner_imgs: Immagini banner
-        no_banners_images: Non ci sono immagini del banner
-        no_banners_styles: Non ci sono stili del banner
         title: Configurazione globale
         update_setting: Aggiorna
         feature_flags: Funzionalità

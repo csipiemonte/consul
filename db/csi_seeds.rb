@@ -50,7 +50,6 @@ Setting.create(key: 'facebook_handle', value: 'cittaditorino')
 Setting.create(key: 'youtube_handle', value: 'youtorino')
 Setting.create(key: 'telegram_handle', value: 'comunetorino')
 Setting.create(key: 'instagram_handle', value: 'cittaditorino')
-Setting.create(key: 'blog_url', value: nil)
 Setting.create(key: 'transparency_url', value: 'http://www.comune.torino.it/amministrazionetrasparente/')
 Setting.create(key: 'opendata_url', value: 'http://aperto.comune.torino.it/')
 
@@ -59,9 +58,6 @@ Setting.create(key: 'url', value: 'https://www.deciditorino.it')
 
 # Consul installation's organization name
 Setting.create(key: 'org_name', value: 'DecidiTorino')
-
-# Consul installation place name (City, Country...)
-Setting.create(key: 'place_name', value: 'Torino')
 
 # Meta tags for SEO
 Setting.create(key: 'meta_title', value: 'DecidiTorino')
@@ -95,16 +91,6 @@ Setting.create(key: 'feature.help_page', value: 'true')
 # Spending proposals feature flags
 Setting.create(key: 'feature.spending_proposal_features.voting_allowed', value: nil)
 
-# Banner styles
-Setting.create(key: 'banner-style.banner-style-one', value: 'Banner style 1')
-Setting.create(key: 'banner-style.banner-style-two', value: 'Banner style 2')
-Setting.create(key: 'banner-style.banner-style-three', value: 'Banner style 3')
-
-# Banner images
-Setting.create(key: 'banner-img.banner-img-one', value: 'Banner image 1')
-Setting.create(key: 'banner-img.banner-img-two', value: 'Banner image 2')
-Setting.create(key: 'banner-img.banner-img-three', value: 'Banner image 3')
-
 # Proposal notifications
 Setting.create(key: 'proposal_notification_minimum_interval_in_days', value: '3')
 Setting.create(key: 'direct_message_max_per_day', value: '3')
@@ -119,9 +105,6 @@ Setting.create(key: 'min_age_to_participate', value: '16')
 
 # Featured proposals
 Setting.create(key: 'featured_proposals_number', value: '3')
-
-# Proposal improvement url path ('/more-information/proposal-improvement')
-Setting.create(key: 'proposal_improvement_path', value: nil)
 
 # City map feature default configuration (Greenwich)
 Setting.create(key: 'map_latitude', value: 45.073179654563646)
