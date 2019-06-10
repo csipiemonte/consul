@@ -1,4 +1,4 @@
-class Legislation::Proposal < ActiveRecord::Base
+class Legislation::Proposal < ApplicationRecord
   include ActsAsParanoidAliases
   include Flaggable
   include Taggable
@@ -22,8 +22,8 @@ class Legislation::Proposal < ActiveRecord::Base
   acts_as_votable
   acts_as_paranoid column: :hidden_at
 
-  belongs_to :process, class_name: 'Legislation::Process', foreign_key: 'legislation_process_id'
-  belongs_to :author, -> { with_hidden }, class_name: 'User', foreign_key: 'author_id'
+  belongs_to :process, class_name: "Legislation::Process", foreign_key: "legislation_process_id"
+  belongs_to :author, -> { with_hidden }, class_name: "User", foreign_key: "author_id"
   belongs_to :geozone
   has_many :comments, as: :commentable
 
@@ -59,13 +59,13 @@ class Legislation::Proposal < ActiveRecord::Base
   end
 
   def searchable_values
-    { title              => 'A',
-      question           => 'B',
-      author.username    => 'B',
-      tag_list.join(' ') => 'B',
-      geozone.try(:name) => 'B',
-      summary            => 'C',
-      description        => 'D'}
+    { title              => "A",
+      question           => "B",
+      author.username    => "B",
+      tag_list.join(" ") => "B",
+      geozone.try(:name) => "B",
+      summary            => "C",
+      description        => "D"}
   end
 
   def self.search(terms)
@@ -120,7 +120,7 @@ class Legislation::Proposal < ActiveRecord::Base
   end
 
   def code
-    "#{Setting['proposal_code_prefix']}-#{created_at.strftime('%Y-%m')}-#{id}"
+    "#{Setting["proposal_code_prefix"]}-#{created_at.strftime("%Y-%m")}-#{id}"
   end
 
   def after_commented
@@ -136,11 +136,11 @@ class Legislation::Proposal < ActiveRecord::Base
   end
 
   def after_hide
-    tags.each{ |t| t.decrement_custom_counter_for('LegislationProposal') }
+    tags.each{ |t| t.decrement_custom_counter_for("LegislationProposal") }
   end
 
   def after_restore
-    tags.each{ |t| t.increment_custom_counter_for('LegislationProposal') }
+    tags.each{ |t| t.increment_custom_counter_for("LegislationProposal") }
   end
 
   protected

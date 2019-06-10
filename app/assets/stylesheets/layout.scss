@@ -2655,6 +2655,17 @@ table {
   }
 }
 
+.leaflet-container {
+
+  .leaflet-control-attribution {
+    background: rgba(255, 255, 255, 0.9) !important;
+  }
+
+  a {
+    color: $link !important;
+  }
+}
+
 // 24. Homepage
 // ------------
 
@@ -2766,15 +2777,15 @@ table {
   display: inline-block;
   height: rem-calc(120);
   overflow: hidden;
+  width: 100%;
 
   @include breakpoint(medium) {
     height: rem-calc(96);
   }
 
   img {
-    margin-left: rem-calc(-15);
     max-width: none;
-    width: rem-calc(120);
+    width: 100%;
   }
 }
 

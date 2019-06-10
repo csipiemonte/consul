@@ -1,4 +1,4 @@
-<!-- differisce dall'originale per il colore rosso dato all'ultima 'i' di Decidi -->
+<!-- differisce dall'originale per la presenza del nome dell'applicazione (riga 24) e per la formattazione che si esegue con il codice js -->
 <header>
 
   <div class="top-links">
@@ -20,7 +20,7 @@
 
       <div class="top-bar-title">
         <%= link_to root_path, id: "logo-box", accesskey: "0" do %>
-          <%= image_tag(image_path_for('logo_header.png'), class: 'float-left', alt: t("layouts.header.logo")) %>
+          <%= image_tag(image_path_for("logo_header.png"), class: "float-left", alt: t("layouts.header.logo")) %>
           <%= setting["org_name"] %>
         <% end %>
       </div>
@@ -56,8 +56,8 @@
       </div>
     </div>
   </div>
-
 </header>
+
 <script type="text/javascript">
 $(document).ready(function() {
     var contenitore = $(".top-bar > .top-bar-title > a");

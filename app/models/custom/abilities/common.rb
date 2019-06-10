@@ -1,4 +1,4 @@
-# versione custom, differisce dall'originale alla riga 67, per permettere anche agli utenti non certificati
+# versione custom, differisce dall'originale alla riga 89, per permettere anche agli utenti non certificati
 # di appoggiare le proposte legate ai progetti. 
 module Abilities
   class Common
@@ -18,6 +18,26 @@ module Abilities
       can :update, Proposal do |proposal|
         proposal.editable_by?(user)
       end
+      can :publish, Proposal do |proposal|
+        proposal.draft? && proposal.author.id == user.id && !proposal.retired?
+      end
+      can :dashboard, Proposal do |proposal|
+        proposal.author.id == user.id
+      end
+      can :manage_polls, Proposal do |proposal|
+        proposal.author.id == user.id
+      end
+      can :manage_mailing, Proposal do |proposal|
+        proposal.author.id == user.id
+      end
+      can :manage_poster, Proposal do |proposal|
+        proposal.author.id == user.id
+      end
+
+      can :results, Poll do |poll|
+        poll.related&.author&.id == user.id
+      end
+
       can [:retire_form, :retire], Proposal, author_id: user.id
 
       can :read, Legislation::Proposal
@@ -28,7 +48,7 @@ module Abilities
 
       can :create, Comment
       can :create, Debate
-      can :create, Proposal
+      can [:create, :created], Proposal
       can :create, Legislation::Proposal
 
       can :suggest, Debate
@@ -53,7 +73,9 @@ module Abilities
 
       can [:create, :destroy], Follow
 
-      can [:destroy], Document, documentable: { author_id: user.id }
+      can [:destroy], Document do |document|
+        document.documentable.try(:author_id) == user.id
+      end
 
       can [:destroy], Image, imageable: { author_id: user.id }
 
@@ -68,7 +90,9 @@ module Abilities
       can :vote_featured, Legislation::Proposal
 
       if user.level_two_or_three_verified?
-        can :vote, Proposal
+        can :vote, Proposal do |proposal|
+          proposal.published?
+        end
         can :vote_featured, Proposal
         can :vote, SpendingProposal
         can :create, SpendingProposal

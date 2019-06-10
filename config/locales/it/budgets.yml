@@ -10,7 +10,8 @@ it:
         voted_html:
           one: "Hai votato <span>un</span> progetto."
           other: "Hai votato <span>%{count}</span> progetti."
-        voted_info_html: "Puoi cambiarei tuoi voti in qualsiasi momento fino alla chiusura di questa fase.<br> Non c'è bisogno che spendi tutto il denaro disponibile."
+        voted_info_html: "I tuoi voti sono confermati!"
+        voted_info_2: "Però puoi cambiarli in qualsiasi momento fino alla chiusura di questa fase."
         zero: Non hai ancora votato un progetto di spesa.
       reasons_for_not_balloting:
         not_logged_in: È necessario %{signin} o %{signup} per continuare.
@@ -21,6 +22,7 @@ it:
         no_ballots_allowed: Il periodo di votazione è concluso.
         different_heading_assigned_html: "Hai già votato progetti di un'altra voce: %{heading_link}"
         change_ballot: cambiare i tuoi voti
+        casted_offline: Hai già partecipato di persona
     groups:
       show:
         title: Seleziona una opzione
@@ -72,7 +74,7 @@ it:
       index:
         title: Bilanci partecipativi
         unfeasible: Progetti di spesa non realizzabili
-        unfeasible_text: "I progetti presentati devono incontrare una serie di criteri (legalità, concretezza, essere di competenza del Comune, non superare il massimo del bilancio) per essere dichiarati realizzabili e giungere alla fase della votazione finale. Tutti i progetti che non soddisfano tali criteri sono segnati come non realizzabili e pubblicati nella lista seguente, insieme al corrispondente rapporto di non fattibilità."
+        unfeasible_text: "I progetti presentati devono incontrare una serie di criteri (legalità, concretezza, non superare i fondi a disposizione) per essere dichiarati realizzabili e giungere alla fase della votazione finale. Tutti i progetti che non soddisfano tali criteri sono segnati come non realizzabili e pubblicati nella lista seguente, insieme al corrispondente rapporto di non fattibilità."
         by_heading: 'Progetti di spesa con ambito: %{heading}'
         search_form:
           button: Cerca
@@ -90,7 +92,7 @@ it:
           voted_info_link: cambiare i tuoi voti
           different_heading_assigned_html: "Hai già sostenuto i progetti di un'altra sezione del bilancio: %{heading_link}"
           change_ballot: "Se modifichi la tua opinione puoi cancellare i tuoi voti in %{check_ballot} e iniziare nuovamente."
-          check_ballot_link: "controllare i miei voti"
+          check_ballot_link: "controllare e confermare i miei voti"
           zero: Non hai ancora votato alcun progetto di spesa in questo ambito del bilancio.
           verified_only: "Per creare un nuovo progetto di spesa %{verify}."
           verify_account: "certifica il tuo account"
@@ -111,9 +113,9 @@ it:
         author_deleted: Utente eliminato
         price_explanation: Rapporto di costo
         unfeasibility_explanation: Rapporto di infattibilità
-        code_html: 'Codice progetto di spesa: <strong>%{code}</strong>'
-        location_html: 'Ubicazione: <strong>%{location}</strong>'
-        organization_name_html: 'Proposto a nome di: <strong>%{name}</strong>'
+        code_html: "Codice progetto di spesa: <strong>%{code}</strong>"
+        location_html: "Ubicazione: <strong>%{location}</strong>"
+        organization_name_html: "Proposto a nome di: <strong>%{name}</strong>"
         share: Condividi
         title: Progetto di spesa
         supports: Appoggi
@@ -122,10 +124,10 @@ it:
         comments_tab: Commenti
         milestones_tab: Milestone
         author: Autore
-        project_unfeasible_html: 'Questo progetto di spesa <strong>è stato contrassegnato come irrealizzabile</strong> e non passerà alla fase di votazione.'
-        project_selected_html: 'Questo progetto di spesa <strong>è stato selezionato</strong> per la fase di votazione.'
-        project_winner: 'Progetto di spesa vincitore'
-        project_not_selected_html: 'Questo progetto di spesa <strong>non è stato selezionato</strong> per la fase di votazione.'
+        project_unfeasible_html: "Questo progetto di spesa <strong>è stato contrassegnato come irrealizzabile</strong> e non passerà alla fase di votazione."
+        project_selected_html: "Questo progetto di spesa <strong>è stato selezionato</strong> per la fase di votazione."
+        project_winner: "Progetto di spesa vincitore"
+        project_not_selected_html: "Questo progetto di spesa <strong>non è stato selezionato</strong> per la fase di votazione."
         see_price_explanation: Vedi rapporto di costo
       wrong_price_format: Si possono includere solo caratteri numerici
       investment:
@@ -142,10 +144,10 @@ it:
           other: "%{count} appoggi"
         give_support: Appoggia
       header:
-        check_ballot: Controllo i miei voti
+        check_ballot: Controllare e confermare i miei voti
         different_heading_assigned_html: "Hai già sostenuto progetti di un'altra sezione del bilancio: %{heading_link}"
         change_ballot: "Se cambi opinione puoi eliminare i tuoi voti in %{check_ballot} e iniziare nuovamente."
-        check_ballot_link: "controlla i miei voti"
+        check_ballot_link: "controllare e confermare i miei voti"
         price: "Questa voce dispone di un bilancio di"
     progress_bar:
       assigned: "Hai assegnato: "

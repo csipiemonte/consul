@@ -53,6 +53,8 @@ Rails.application.configure do
   # Checks for improperly declared sprockets dependencies.
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
+  # Suppress logger output for asset requests.
+  config.assets.quiet = true
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
@@ -62,11 +64,14 @@ Rails.application.configure do
   config.after_initialize do
     Bullet.enable = true
     Bullet.bullet_logger = true
-    if ENV['BULLET']
+    if ENV["BULLET"]
       Bullet.rails_logger = true
       Bullet.add_footer = true
     end
   end
+  # Use an evented file watcher to asynchronously detect changes in source code,
+  # routes, locales, etc. This feature depends on the listen gem.
+  # config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   config.logger = Logger.new("/var/log/rails/dev-www-deciditorino.portali.csi.it_443/#{Rails.env}.log")
 

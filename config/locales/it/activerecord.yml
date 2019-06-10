@@ -61,6 +61,9 @@ it:
       poll/officer:
         one: "presidente di seggio"
         other: "presidenti di seggio"
+      poll/ballot_sheet:
+        one: Scheda elettorale
+        other: Schede elettorali
       proposal:
         one: "Proposta cittadina"
         other: "Proposte cittadine"
@@ -108,7 +111,16 @@ it:
         other: "Votazioni"
       proposal_notification:
         one: "Notifica della proposta"
-        other: "Notifiche della proposta"
+        other: "Notifiche delle proposte"
+      dashboard/action:
+        one: Azione del pannello di controllo delle proposte
+        other: Azioni del pannello di controllo delle proposte
+      dashboard/administrator_task:
+        one: Task
+        other: Tasks
+      link:
+        one: Link
+        other: Link
     attributes:
       budget:
         name: "Nome"
@@ -131,6 +143,11 @@ it:
         organization_name: "Se presenti una proposta a nome di un collettivo o di un'organizzazione, ovvero per conto di più persone, indicane il nome"
         image: "Immagine descrittiva del progetto di spesa"
         image_title: "Titolo dell'immagine"
+      geozone:
+        name: Nome
+        external_code: "Codice esterno (facoltativo)"
+        census_code: "Codice demografico (facoltativo)"
+        html_map_coordinates: "Coordinate HTML <map> (facoltativo)"
       milestone:
         status_id: "Stato attuale (facoltativo)"
         title: "Titolo"
@@ -203,6 +220,10 @@ it:
         external_url: "Link alla documentazione aggiuntiva"
       poll/question/translation:
         title: "Domanda"
+      poll/ballot_sheet:
+        data: Dati in CSV
+        poll_id: Votazione
+        officer_assignment_id: Turno
       signature_sheet:
         signable_type: "Tipo Foglio firme"
         signable_id: "ID Proposta cittadina/Progetto di spesa"
@@ -229,20 +250,25 @@ it:
         name: Nome
         locale: Lingua
         body: Contenuto
+      banner:
+        background_color: Colore di sfondo
+        font_color: Colore del testo
       legislation/process:
         title: Titolo del processo
         summary: Sommario
         description: In cosa consiste
         additional_info: Ulteriori info
-        start_date: Data di inizio
-        end_date: Data di fine
-        debate_start_date: Data di inizio del dibattito
-        debate_end_date: Data di fine del dibattito
-        draft_start_date: Data di inizio della bozza
-        draft_end_date: Data di fine della bozza
+        start_date: Inizio
+        end_date: Fine
+        debate_start_date: Inizio
+        debate_end_date: Fine
+        draft_start_date: Inizio
+        draft_end_date: Fine
         draft_publication_date: Data di pubblicazione della bozza
-        allegations_start_date: Data di inizio degli allegati
-        allegations_end_date: Data di fine degli allegati
+        allegations_start_date: Inizio
+        allegations_end_date: Fine
+        proposals_phase_start_date: Inizio
+        proposals_phase_end_date: Fine
         result_publication_date: Data di pubblicazione del risultato finale
         background_color: Colore di sfondo
         font_color: Colore del testo
@@ -311,6 +337,24 @@ it:
         link_text: Testo del link
       widget/feed:
         limit: Numero di elementi
+      dashboard/action:
+        title: Titolo
+        short_description: Breve descrizione
+        description: Descrizione
+        link: Link esterno
+        request_to_administrators: Includere nella risorsa un pulsante per inviare un sollecito della risorsa agli amministratori
+        day_offset: Dopo quanti giorni dalla creazione della proposta si desidera che diventi attiva?
+        required_supports: Quanto appoggi deve ricevere la proposta perché si attivi?
+        order: È possibile introdurre la posizione impiegata per mostrare all'utente tale azione all'interno dell'elenco delle azioni
+        active: Attiva
+        action_type: Tipo
+      dashboard/administrator_task:
+        source: Fonte
+        user: Eseguito da
+        executed_at: Eseguito il
+      link:
+        label: Titolo
+        url: Link
     errors:
       models:
         user:
@@ -356,7 +400,7 @@ it:
             draft_end_date:
               invalid_date_range: deve essere uguale o successiva alla data di inizio della bozza
             allegations_end_date:
-              invalid_date_range: deve essere uguale o successiva alla data di inizio degli allegati
+              invalid_date_range: deve essere uguale o successiva alla data di inizio della fase dei commenti
         proposal:
           attributes:
             tag_list:
@@ -372,8 +416,8 @@ it:
         signature:
           attributes:
             document_number:
-              not_in_census: 'Il documento non è stato verificato in Anagrafe'
-              already_voted: 'Proposta già votata'
+              not_in_census: "Il documento non è stato verificato in Anagrafe"
+              already_voted: "Proposta già votata"
         site_customization/page:
           attributes:
             slug:
@@ -386,9 +430,10 @@ it:
         comment:
           attributes:
             valuation:
-              cannot_comment_valuation: 'Non è possibile commentare una valutazione'
+              cannot_comment_valuation: "Non è possibile commentare una valutazione"
       messages:
         record_invalid: "La certificazione non è avvenuta: %{errors}"
+        another_poll_active: Per questo periodo è già presente un altro sondaggio attivo.
         restrict_dependent_destroy:
           has_one: "Non è possibile eliminare il documento perché esiste un %{record} subordinato"
           has_many: "Non è possibile eliminare il documento perché esistono %{record} subordinati"

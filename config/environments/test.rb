@@ -61,6 +61,14 @@ Rails.application.configure do
 
   config.cache_store = :null_store
 
+  config.after_initialize do
+    Bullet.enable = true
+    Bullet.bullet_logger = true
+    if ENV["BULLET"]
+      Bullet.raise = true # raise an error if n+1 query occurs
+    end
+  end
+
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   config.force_ssl = true
 

@@ -1,6 +1,7 @@
 # Custom Decidi Torino Users::RegistrationsController, differisce per la chiusura della sessione SPID (delete).
 class Users::RegistrationsController < Devise::RegistrationsController
   prepend_before_action :authenticate_scope!, only: [:edit, :update, :destroy, :finish_signup, :do_finish_signup]
+  before_action :configure_permitted_parameters
 
   invisible_captcha only: [:create], honeypot: :address, scope: :user
 
@@ -68,6 +69,10 @@ class Users::RegistrationsController < Devise::RegistrationsController
       params.require(:user).permit(:username, :email, :password,
                                    :password_confirmation, :terms_of_service, :locale,
                                    :redeemable_code)
+    end
+
+    def configure_permitted_parameters
+      devise_parameter_sanitizer.permit(:account_update, keys: [:email])
     end
 
     def erase_params

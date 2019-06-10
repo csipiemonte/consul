@@ -64,7 +64,7 @@ it:
       new:
         email_label: Email
         send_submit: Ricevere istruzioni
-        title: 'Hai dimenticato la password?'
+        title: "Hai dimenticato la password?"
     sessions:
       new:
         login_label: Email o nome utente
@@ -76,10 +76,10 @@ it:
       links:
         login: Accedi
         new_confirmation: "Non hai ricevuto le istruzioni per confermare l'account?"
-        new_password: 'Hai dimenticato la password?'
-        new_unlock: 'Non hai ricevuto le istruzioni per eseguire lo sblocco?'
+        new_password: "Hai dimenticato la password?"
+        new_unlock: "Non hai ricevuto le istruzioni per eseguire lo sblocco?"
         signin_with_provider: Entra con %{provider}
-        signup: 'Non hai un account? %{signup_link}'
+        signup: "Non hai un account? %{signup_link}"
         signup_link: Registrati
     unlocks:
       new:
@@ -103,11 +103,11 @@ it:
           password_confirmation_label: Conferma password nuova
           password_label: Password nuova
           update_submit: Aggiorna
-          waiting_for: 'In attesa di conferma di:'
+          waiting_for: "In attesa di conferma di:"
         new:
           cancel: Annulla login
           email_label: Email
-          organization_signup: 'Rappresenti una organizzazione o un collettivo? %{signup_link}'
+          organization_signup: "Rappresenti una organizzazione o un collettivo? %{signup_link}"
           organization_signup_link: Registrati qui
           password_confirmation_label: Ripeti la password
           password_label: Password (minimo 8 caratteri)

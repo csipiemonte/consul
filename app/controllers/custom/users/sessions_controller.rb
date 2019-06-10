@@ -10,7 +10,9 @@ class Users::SessionsController < Devise::SessionsController
         check_current_user_residence if current_user.document_number
       end
 
-      if !verifying_via_email? && resource.show_welcome_screen?
+      if current_user.poll_officer?
+        new_officing_booth_path
+      elsif !verifying_via_email? && resource.show_welcome_screen?
         welcome_path
       else
         super
