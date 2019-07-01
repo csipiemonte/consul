@@ -28,10 +28,6 @@ it:
     months_to_archive_proposals_description: "Trascorso questo numero di mesi le proposte sono archiviate e non potranno più ricevere appoggi"
     email_domain_for_officials: "Dominio di posta elettronica per funzionari pubblici"
     email_domain_for_officials_description: "Tutti gli utenti che si registrano con un indirizzo di posta elettronica appartenente a tale dominio avranno, in automatico, certificato il proprio account"
-    per_page_code_head: "Codice da inserire in ogni pagina (<head>)"
-    per_page_code_head_description: "Il codice indicato apparirà nel tag <head>. Questa funzionalità è utile per inserire scripts personalizzati, analitycs..."
-    per_page_code_body: "Codice da inserire in ogni pagina (<body>)"
-    per_page_code_body_description: "Il codice indicato apparirà nel tag <body>. Questa funzionalità è utile per inserire scripts personalizados, analitycs..."
     twitter_handle: "Utente Twitter"
     twitter_handle_description: "Se specificato, apparirà a piè di pagina"
     twitter_hashtag: "Hashtag per Twitter"
@@ -52,12 +48,6 @@ it:
     related_content_score_threshold_description: In base al punteggio dei voti in un contenuto correlato, nasconde il contenuto che gli utenti contrassegnano come non correlato
     hot_score_period_in_days: "Periodo (giorni) usato per il filtro 'Più Attivi'"
     hot_score_period_in_days_description: "Il filtro 'Più Attivi' usato in diverse sezioni si baserà sui voti ricevuti negli ultimi X giorni"
-    map_latitude: "Latitudine"
-    map_latitude_description: "Latitudine della posizione mostrata sulla mappa"
-    map_longitude: "Longitudine"
-    map_longitude_description: "Longitudine della posizione mostrata sulla mappa"
-    map_zoom: "Zoom"
-    map_zoom_description: "Zoom della posizione mostrata sulla mappa"
     mailer_from_name: "Nominativo del mittente"
     mailer_from_name_description: "È il nome che apparirà come mittente delle email inviate dall'applicazione"
     mailer_from_address: "Email del mittente"
@@ -71,11 +61,27 @@ it:
     min_age_to_participate: "Età minima necessaria per partecipare"
     min_age_to_participate_description: "Gli utenti che hanno compiuto l'età indicata potranno partecipare a tutti i processi per i quali è necessario disporre di una utenza certificata"
     analytics_url: "URL per le statistiche esterne"
-    verification_offices_url: "URL degli uffici di verifica"
     proposal_notification_minimum_interval_in_days: "Periodo minimo (in giorni) per permettere agli autori di proposte di inviare nuove notifiche di una proposta"
     proposal_notification_minimum_interval_in_days_description: "Il numero di giorni nei quali un utente può inviare una notifica a tutti coloro che appoggiano la sua proposta"
     direct_message_max_per_day: "Numero massimo di messaggi diretti giornalieri"
     direct_message_max_per_day_description: "Numero massimo di messaggi diretti che un utente può inviare giornalmente"
+    proposals:
+      successful_proposal_id: Propuesta exitosa
+      successful_proposal_id_description: Esta propuesta se utiliza como referencia de una propuesta exitosa en número de apoyos y se mostrará en el gráfico del panel de control
+      poll_short_title: Encuestas
+      poll_short_title_description: Breve descripción de la funcionalidad de encuestas. Permite a los usuarios crear encuestas sobre una propuesta.
+      poll_description: Descripción encuestas
+      poll_description_description: Descripción detallada de la funcionalidad de encuestas
+      poll_link: Enlace de información adicional
+      poll_link_description: Añade un enlace de información adicional a la funcionalidad de encuestas del panel de control
+      email_short_title: Correo electrónico
+      email_short_title_description: Breve descripción de la funcionalidad de correo electrónico. Permite a los usuarios enviar un email para difundir su propuesta
+      email_description: Descripción correo electrónico
+      email_description_description: Descripción detallada de la funcionalidad de correo electrónico
+      poster_short_title: Póster
+      poster_short_title_description: Breve descripción de la funcionalidad de póster. Permite a los usuarios descargar un póster en formato PDF para difundir su propuesta
+      poster_description: Descripción póster
+      poster_description_description: Descripción detallada de la funcionalidad de póster
     feature:
       budgets: "Bilanci partecipativi"
       budgets_description: "Con i bilanci partecipativi la popolazione decide a quali progetti presentati dai cittadini e dalla cittadina va destinata una parte del bilancio municipale"
@@ -125,3 +131,26 @@ it:
       public_stats_description: "Mostra le statistiche pubbliche nel pannello di Amministrazione"
       help_page: "Pagina di 'Scopri DecidiTorino'"
       help_page_description: 'Mostra la voce di menu "Scopri DecidiTorino" che conduce ad una pagina nella quale sono illustrate le funzionalità abilitate. È anche possibile creare pagine e menu personalizzati nelle sezioni "Pagine personalizzate" e "Blocchi personalizzati"'
+    map:
+      latitude: "Latitudine"
+      latitude_description: "Latitudine della posizione mostrata sulla mappa"
+      longitude: "Longitudine"
+      longitude_description: "Longitudine della posizione mostrata sulla mappa"
+      zoom: "Zoom"
+      zoom_description: "Zoom della posizione mostrata sulla mappa"
+    process:
+      debates: "Debates"
+      debates_description: "El espacio de debates ciudadanos está dirigido a que cualquier persona pueda exponer temas que le preocupan y sobre los que quiera compartir puntos de vista con otras personas"
+      proposals: "Propuestas"
+      proposals_description: "Las propuestas ciudadanas son una oportunidad para que los vecinos y colectivos decidan directamente cómo quieren que sea su sociedad, después de conseguir los apoyos suficientes y de someterse a votación ciudadana"
+      polls: "Votaciones"
+      polls_description: "Las votaciones ciudadanas son un mecanismo de participación por el que la ciudadanía con derecho a voto puede tomar decisiones de forma directa"
+      budgets: "Presupuestos participativos"
+      budgets_description: "Con los presupuestos participativos la ciudadanía decide a qué proyectos presentados por los vecinos y vecinas va destinada una parte del presupuesto"
+      legislation: "Legislación"
+      legislation_description: "En los procesos participativos se ofrece a la ciudadanía la oportunidad de participar en la elaboración y modificación de normativa que afecta a la sociedad y de dar su opinión sobre ciertas actuaciones que se tiene previsto llevar a cabo"
+    html:
+      per_page_code_head: "Codice da inserire in ogni pagina (<head>)"
+      per_page_code_head_description: "Il codice indicato apparirà nel tag <head>. Questa funzionalità è utile per inserire scripts personalizzati, analitycs..."
+      per_page_code_body: "Codice da inserire in ogni pagina (<body>)"
+      per_page_code_body_description: "Il codice indicato apparirà nel tag <body>. Questa funzionalità è utile per inserire scripts personalizados, analitycs..."

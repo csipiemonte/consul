@@ -8,13 +8,13 @@ it:
       delete_button: Elimina immagine
       note: "È possibile allegare una immagine nei formati: %{accepted_content_types}, di dimensione fino a %{max_file_size} MB per file."
       add_new_image: Aggiungi immagine
+      title_placeholder: "Aggiungi una didascalia all'immagine"
       admin_title: "Immagine"
       admin_alt_text: "Testo alternativo per l'immagine"
     actions:
       destroy:
         notice: "L'immagine è stata eliminata con successo."
         alert: "Non è stato possibile eliminare l'immagine."
-        confirm: "Confermi l'eliminazione dell'immagine? Non è possibile annullare l'operazione!"
     errors:
       messages:
         in_between: deve stare fra %{min} e %{max}

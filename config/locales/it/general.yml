@@ -67,7 +67,7 @@ it:
       most_commented: Più commentati
     select_order: Ordina per
     show:
-      return_to_commentable: 'Torna a '
+      return_to_commentable: "Torna a "
   comments_helper:
     comment_button: Pubblica commento
     comment_link: Commenta
@@ -200,6 +200,21 @@ it:
       firefox: Firefox
       ie: Abbiamo rilevato che stai navigando con il browser Internet Explorer. Per una esperienza migliore ti consigliamo di usare %{firefox} o %{chrome}.
       ie_title: Questo sito web non è ottimizzato per il tuo browser
+    dashboard:
+      proposal_header:
+        published: Pubblicata
+        draft: Bozza
+        retired: Ritirata
+      proposal_totals:
+        active_resources: Risorse attive
+        community: Partecipanti nella tua comunità
+        show_proposal: Vedi proposta
+        preview_proposal: Anteprima proposta
+        current_goal: Obiettivo attuale
+        supports:
+          zero: Senza appoggi
+          one: 1 Appoggio
+          other: "Appoggi"
     footer:
       accessibility: Accessibilità
       conditions: "Condizioni d'uso"
@@ -219,7 +234,7 @@ it:
       available_locales: Lingue disponibili
       collaborative_legislation: Progetti
       debates: Dibattiti
-      locale: 'Lingua:'
+      locale: "Lingua:"
       logo: DecidiTorino logo
       management: Gestire
       moderation: Moderare
@@ -241,7 +256,7 @@ it:
         notifications: Notifiche
         no_notifications: 'Non hai nuove notifiche'
     admin:
-      watch_form_message: 'Hai eseguito modifiche che non sono state salvate. Confermi che vuoi abbandonare la pagina?'
+      watch_form_message: "Hai eseguito modifiche che non sono state salvate. Confermi che vuoi abbandonare la pagina?"
   notifications:
     index:
       empty_notifications: Non hai nuove notifiche.
@@ -291,6 +306,17 @@ it:
     create:
       form:
         submit_button: Crea proposte
+    created:
+      title: Congratulazioni! Hai completato il primo passo.
+      motivation: "È importante pianificare la campagna di lancio della tua proposta perché abbia successo. I primi giorni sono decisivi."
+      motivation_2_html: "<strong>Se necessiti di consigli per preparare la pubblicazione lascia la tua proposta in bozza e ti guideremo.</strong>"
+      publish: No, voglio pubblicare la proposta ora
+      dashboard: Si, desidero aiuto e renderò pubblica la proposta più tardi
+      preview_title: Così è come si presenterà la tua proposta al momento della pubblicazione
+    share:
+      improve_it: Migliora la tua campagna e ottieni più appoggi.
+      dashboard: Più informazioni
+      message: "Ho appoggiato la proposta %{title} in %{handle}. Se ti interessa, appoggiala anche tu!"
     edit:
       editing: Modifica proposta
       form:
@@ -368,7 +394,7 @@ it:
         one: " che contiene <strong>'%{search_term}'</strong>"
         other: " che contengono <strong>'%{search_term}'</strong>"
       select_order: Ordina per
-      select_order_long: 'Stai vedendo le proposte'
+      select_order_long: "Stai vedendo le proposte"
       start_proposal: Crea una proposta
       title: Proposte cittadine
       top: Top della settimana
@@ -383,7 +409,7 @@ it:
     new:
       form:
         submit_button: Crea proposta
-      more_info: 'Come funzionano le proposte cittadine?'
+      more_info: "Come funzionano le proposte cittadine?"
       recommendation_one: Non scrivere in maiuscolo il titolo della proposta o intere frasi. In internet il maiuscolo è considerato gridare. A nessuno piace che si alzi la voce.
       recommendation_three: Usa bene questo spazio e le voci che lo compongono, sono a tua disposizione.
       recommendation_two: "Qualsiasi proposta offensiva, palesemente illegale o che non rientri nella competenza comunale, verrà rimossa. Lo stesso si applica ai commenti."
@@ -391,13 +417,14 @@ it:
       start_new: Crea una proposta
     notice:
       retired: Proposta ritirata
+      published: La proposta è stata pubblicata
     proposal:
       created: "Hai creato una proposta!"
       share:
         guide: "Condividila perché la gente inizi a sostenerla."
         edit: "Prima di pubblicarla potrai modificare il testo a tuo piacimento."
         view_proposal: Adesso no, vai alla proposta
-      already_supported: 'Hai sostenuto questa proposta, condividila!'
+      already_supported: "Hai sostenuto questa proposta, condividila!"
       comments:
         zero: Senza commenti
         one: 1 Commento
@@ -418,13 +445,13 @@ it:
       successful: "Questa proposta ha ottenuto gli appoggi necessari."
     show:
       author_deleted: Utente eliminato
-      code: 'Codice della proposta:'
+      code: "Codice della proposta:"
       comments:
         zero: Nessun commento
         one: 1 commento
         other: "%{count} commenti"
       comments_tab: Commenti
-      edit_proposal_link: Modifica proposta
+      dashboard_proposal_link: Pannello di controllo
       flag: Questa proposta è stata definita inadeguata da molti utenti.
       login_to_comment: È necessario %{signin} o %{signup} per commentare.
       notifications_tab: Notifiche
@@ -433,17 +460,150 @@ it:
       retired_warning_link_to_explanation: Verifica la spiegazione prima di appoggiarla.
       retired: "Proposta ritirata dall'autore"
       share: Condividi
-      send_notification: Invia notifica
       no_notifications: "Questa proposta non ha notifiche."
       embed_video_title: "Video su %{proposal}"
       title_external_url: "Documentazione aggiuntiva"
       title_video_url: "Video esterno"
       author: Autore
+      draft: "Proposta in bozza. Non può ancora ricevere appoggi, né apparire nell'elenco delle proposte."
     update:
       form:
         submit_button: Salva modifiche
-    share:
-      message: "Ho appoggiato la proposta %{summary} in %{handle}. Se ti interessa, sostienila anche tu!"
+  dashboard:
+    menu:
+      my_proposal: Modifica la mia proposta
+      progress: Avanzamento
+      resources: Risorse
+      community: Comunità
+      polls: Sondaggi
+      mailing: Email
+      poster: Manifesto
+      recommended_actions: Azioni consigliate
+    form:
+      request: Sollecita
+    create_request:
+      success: La petizione è stata inviata correttamente. Sarai contattato il prima possibile per informarti a riguardo.
+      archived: Questa proposta è archiviata e non può sollecitare risorse.
+    progress:
+      title: Grafico
+      group_by_month: Mensile
+      group_by_week: Settimanale
+      group_by_date: Giornaliero
+      progress: Avanzamento raggiunto
+      supports: Appoggi
+      success: Avanzamento ideale
+      new_action: Nuovo
+    index:
+      title: Modifica
+      edit_proposal_link: Modifica proposta
+      publish: Pubblica proposta
+      retire: Ritira proposta
+    new_request:
+      links: Link
+    resources:
+      available_resources: Risorse disponibili
+    resource:
+      required_days: "%{days} giorni necessari"
+      required_supports: "%{supports} appoggi necessari"
+      and: y
+      view_resource: Mostra risorsa
+      resource_requested: Risorsa richiesta
+      request_resource: Richiedi risorsa
+      resource_locked: Risorsa bloccata
+    recommended_actions:
+      title: Azioni consigliate
+      goto_proposed_actions: Vai alle azioni consigliate
+      see_proposed_actions: Mostra tutte le azioni consigliate
+      hide_proposed_actions: Nascondi azioni consigliate
+      pending_title: In attesa
+      show_description: Mostra descrizione
+      without_pending_actions: Non ci sono azioni consigliate in attesa
+      done_title: Realizzate
+      without_done_actions: Non ci sono azioni consigliates realizzate
+    next_goal:
+      title: Obiettivo
+      see_complete_course: Mostra percorso completo
+      hide_course: Nascondi percorso
+    goal:
+      target_supports:
+        one: Ottieni %{count} appoggio alla tua proposta
+        other: Ottieni %{count} appoggi alla tua proposta
+      days:
+        one: "%{count} giorno"
+        other: "%{count} giorni"
+      locked_resource: Risorsa bloccata
+      ideal_time: Tempo ideale
+    community:
+      access_community: Accedi alla communità
+      latest_activity: "Ultima attività della communità: %{at}"
+      participants: Partecipanti
+      debates: Dibattiti
+      comments: Commenti
+      latest_comments: Ultimi messaggi
+    polls:
+      index:
+        title: Sondaggi
+        create: Crea sondaggio
+        count:
+          one: Hai creato %{count} sondaggio.
+          other: Hai creato %{count} sondaggi.
+        links: Link
+        additiontal_information: Informazione aggiuntiva
+      new:
+        title: Nuovo sondaggio
+        submit: Crea sondaggio
+      edit:
+        submit: Aggiorna sondaggio
+      poll:
+        responses:
+          one: "%{count} risposta"
+          other: "%{count} risposte"
+        view_results: Mostra risultati
+        edit_poll: Modifica sondaggio
+        show_results: Mostra risultati
+        show_results_help: Se aggiungi la spunta a questa casella i risultati saranno pubblici e consultabili da tutti gli utenti
+      form:
+        add_question: Aggiungi domanda
+      question_fields:
+        remove_question: Bozza domanda
+        add_answer: Aggiungi risposta
+      question_answer_fields:
+        remove_answer: Bozza risposta
+    poster:
+      index:
+        title: Anteprima del manifesto
+        poster_title: "Non rimanere a guardare,"
+        poster_subtitle: "appoggiami! ;)"
+        intro_text_html:
+          "<strong>Sto partecipando a %{org}</strong> con la mia proposta e solamente con il tuo contributo potrò ottenere
+           l'appoggio necessario per realizzare la città che tutti vogliamo."
+        proposal_code: "Codice della proposta: %{code}"
+        support: Appoggia la mia proposta
+        footer_html: "<strong>Entra in %{link} e appoggia questa proposta.</strong> Dobbiamo essere in tanti. Decidi anche tu. Grazie!"
+      new:
+        title: Manifesto della tua proposta
+      options:
+        preview: Anteprima
+        download: Scarica
+    mailing:
+      index:
+        title: Anteprima della email
+      new:
+        title: Modello di email da condividere
+      mailing_options:
+        send: Invia a %{address}
+        preview: Anteprima
+      create:
+        sent: Email inviata
+    mailer:
+      forward:
+        subtitle_html: "Se mi appoggi, <br>ce la faremo."
+        support_button: Appoggia questa proposta
+        share_in: Condividi su
+        hi: "Ciao!"
+        introduction: "Ti scrivo per dirti che sto partecipando a %{org}, la piattaforma che permette di decidere che città vogliamo. E per raggiungere questo scopo, ho creato la mia proposta e ora ho bisogno del tuo appoggio! Però non ti preoccupare perché è molto semplice."
+        support: "Basta fare click sul bottone che vedrai accanto alla scritta 'Appoggia questa proposta' e potrai prendere visione dei dettagli della proposta prima di sostenerla. Solamente le proposte che raggiungono l'appoggio massimo saranno realizzate da parte dell'Amministrazione Comunale, e ho pensato che tu mi potresti aiutare ad arrivarci!"
+        share: "E poi sarebbe fantastico se potessi condividere la mia proposta con i tuoi amici, i tuoi familiari e i tuoi contatti!"
   polls:
     all: "Tutte"
     no_dates: "senza data assegnata"
@@ -507,8 +667,9 @@ it:
       results:
         title: "Domande"
         most_voted_answer: "Risposta più votata: "
+    poll_header:
+      back_to_proposal: Torna alla proposta
   poll_questions:
-    create_question: "Crea domanda"
     show:
       vote_answer: "Vota %{answer}"
       voted: "Hai votato %{answer}"
@@ -524,29 +685,29 @@ it:
     show:
       back: "Torna a la mia attività"
   shared:
-    edit: 'Modifica'
-    save: 'Salva'
+    edit: "Modifica"
+    save: "Salva"
     delete: Elimina
     "yes": "Sì"
     "no": "No"
     search_results: "Risultati della ricerca"
     advanced_search:
       author_type: "Per categoria dell'autore"
-      author_type_blank: 'Scegli una categoria'
-      date: 'Per data'
-      date_placeholder: 'GG/MM/AAAA'
-      date_range_blank: 'Scegli una data'
-      date_1: 'Ultime 24 ore'
-      date_2: 'Ultima settimana'
-      date_3: 'Ultimo mese'
-      date_4: 'Ultimo anno'
-      date_5: 'Personalizzata'
-      from: 'Da'
-      general: 'Con il testo'
-      general_placeholder: 'Scrivi il testo'
-      search: 'Filtra'
-      title: 'Ricerca avanzata'
-      to: 'A'
+      author_type_blank: "Scegli una categoria"
+      date: "Per data"
+      date_placeholder: "GG/MM/AAAA"
+      date_range_blank: "Scegli una data"
+      date_1: "Ultime 24 ore"
+      date_2: "Ultima settimana"
+      date_3: "Ultimo mese"
+      date_4: "Ultimo anno"
+      date_5: "Personalizzata"
+      from: "Da"
+      general: "Con il testo"
+      general_placeholder: "Scrivi il testo"
+      search: "Filtra"
+      title: "Ricerca avanzata"
+      to: "A"
     author_info:
       author_deleted: Utente eliminato
     back: Indietro
@@ -628,7 +789,7 @@ it:
     instagram: "Instagram di %{org}"
   spending_proposals:
     form:
-      association_name_label: 'Se proponi a nome di una associazione o collettivo aggiungi il nome qui'
+      association_name_label: "Se proponi a nome di una associazione o collettivo aggiungi il nome qui"
       association_name: "Nome dell'associazione"
       description: Descrizione dettagliata
       external_url: Link alla documentazione aggiuntiva
@@ -654,7 +815,7 @@ it:
         unfeasible: Non realizzabili
       start_spending_proposal: Crea una proposta di investimento
     new:
-      more_info: 'Come funzionano i bilanci partecipativi?'
+      more_info: "Come funzionano i bilanci partecipativi?"
       recommendation_one: È fondamentale che si faccia riferimento ad una voce di bilancio.
       recommendation_three: Cerca di descrivere in maniera dettagliata la proposta affinché la squadra di governo incaricata di analizzarla abbia il minor numero di dubbi.
       recommendation_two: Qualsiasi proposta o commento che implichi azioni illegali sarà eliminata.
@@ -662,7 +823,7 @@ it:
       start_new: Crea una proposta di spesa
     show:
       author_deleted: Utente eliminato
-      code: 'Codice della proposta:'
+      code: "Codice della proposta:"
       share: Condividi
     wrong_price_format: Si possono includere solo caratteri numerici
     spending_proposal:
@@ -711,6 +872,7 @@ it:
       deleted_proposal: Questa proposta è stata eliminata
       deleted_budget_investment: Questo progetto di spesa è stato eliminato
       proposals: Proposte
+      proposals_status: Stato
       debates: Dibattiti
       budget_investments: Progetti dei bilanci partecipativi
       comments: Commenti
@@ -737,10 +899,12 @@ it:
       send_private_message: "Invia un messaggio privato"
       delete_alert: "Confermi l'eliminazione del progetto di spesa? Questa azione non potrà essere annullata"
     proposals:
-      send_notification: "Invia notifica"
-      retire: "Ritira"
       retired: "Ritirata"
+      draft: Bozza
+      published: Pubblicata
       see: "Vedi proposta"
+      actions: Azioni
+      retired_help_text: Cruscotto non disponibile per le proposte ritirate
   votes:
     agree: "Sono d'accordo"
     anonymous: Troppi voti anonimi, per poter votare %{verify_account}.
@@ -796,16 +960,17 @@ it:
     verification:
       i_dont_have_an_account: Non dispongo di un account, voglio crearne uno e poi verificarlo
       i_have_an_account: Ho già un account che voglio verificare
-      question: 'Hai un account in %{org_name}?'
+      question: "Hai un account in %{org_name}?"
       title: Certifica account
     welcome:
       go_to_index: Continua
+      start_using_consul: Vai alla pagina iniziale
       title: Inizia a partecipare
       user_permission_debates: Partecipare ai dibattiti
       user_permission_info: Con il tuo account puoi già...
       user_permission_proposal: Creare nuove proposte
       user_permission_support_proposal: Sostenere proposte
-      user_permission_verify: Per poter compiere tutte le azioni, certifica la tua utenza.
+      user_permission_verify: "Per poter compiere le seguenti azioni, certifica la tua utenza."
       user_permission_verify_info: "* Solamente utenti residenti."
       user_permission_verify_my_account: Certifica la mia utenza
       user_permission_votes: Partecipare alle votazioni finali
@@ -838,4 +1003,25 @@ it:
       text: Per commentare questo documento è necessario %{sign_in} o %{sign_up}. Poi seleziona il testo che vuoi commentare e fai click sul fumetto con la matita.
       text_sign_in: accedere
       text_sign_up: registrarsi
-      title: 'Come posso commentare questo documento?'
+      title: "Come posso commentare questo documento?"
+  links:
+    form:
+      delete_button: Elimina
+      cancel_button: Annulla
+    nested_links:
+      title: Link
+      note: Aggiungi i link che possano essere di interesse.
+      add_new_link: Aggiungi nuovo link
+    link_fields:
+      label_placeholder: Titolo del link
+      url_placeholder: Indirizzo del link
+  communities:
+    show:
+      send_notification: Invia messaggio alla Communità
+      author: Autore
+      surveys: Sondaggi
+      complete_survey: Completa il sondaggio
+    subnav:
+      surveys: Sondaggi
+    poll:
+      take_part: Partecipa dal %{from} al %{to}

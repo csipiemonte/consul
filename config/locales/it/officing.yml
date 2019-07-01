@@ -16,6 +16,28 @@ it:
         no_polls: Non si dispone dei permessi per il riconteggio finale nelle votazioni recenti
         select_poll: Seleziona votazione
         add_results: Aggiungi risultati
+    poll_budgets:
+      see_ballot_sheets: Vedi la lista delle schede elettorali
+      index:
+        title: "%{poll_budget} - Elenco delle schede elettorali"
+        ballot_sheet: "Scheda elettorale %{id}"
+        ballot_sheet_name: Nome
+        ballot_sheet_author: Autore
+        ballot_sheet_creation_date: Data di creazione
+        empty_results: Non sono ancora state caricate le schede elettorali
+      new:
+        title: "%{poll_budget} - Nuova scheda elettorale"
+        booth: Urna
+        select_booth: Scegli urna
+        csv_data: Dati in CSV
+        submit: Salva
+      show:
+        created_at: Data di creazione
+        author: Autore
+        data: Dati in CSV
+    booth:
+      new:
+        title: "Scegli la tua urna"
     results:
       flash:
         create: "Dati salvati"
@@ -51,7 +73,6 @@ it:
         submit: Valida documento
         error_verifying_census: "Non è stato possibile verificare il documento in Anagrafe."
         form_errors: evitaron verificar este documento
-        no_assignments: "Oggi non hai turno come presidente di seggio"
     voters:
       new:
         title: Votazioni

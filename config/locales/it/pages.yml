@@ -51,8 +51,6 @@ it:
         page:
           title: "Domande Frequenti"
           description: "Usa questa pagina per risolvere i tuoi dubbi sull'uso di DecidiTorino."
-          faq_1_title: "Domanda 1"
-          faq_1_description: "Descrizione di esempio della domanda 1."
       other:
         title: "Altre informazioni di interesse"
         how_to_use: "Usa %{org_name} nella tua città"
@@ -68,24 +66,6 @@ it:
     privacy:
       title: Trattamento dati personali
       subtitle: Informativa art. 13 del Regolamento europeo UE 670/2016
-      info_items:
-        - 
-          text: La navegación por la informacion disponible en el Portal de Gobierno Abierto es anónima.
-        - 
-          text: Para utilizar los servicios contenidos en el Portal de Gobierno Abierto el usuario deberá darse de alta y proporcionar previamente los datos de carácter personal segun la informacion especifica que consta en cada tipo de alta.
-        - 
-          text: 'Los datos aportados serán incorporados y tratados por el Ayuntamiento de acuerdo con la descripción del fichero siguiente:'
-        - 
-          subitems:
-            - 
-              field: 'Nombre del fichero/tratamiento:'
-              description: NOMBRE DEL FICHERO
-            - 
-              field: 'Finalidad del fichero/tratamiento:'
-              description: Gestionar los procesos participativos para el control de la habilitación de las personas que participan en los mismos y recuento meramente numérico y estadístico de los resultados derivados de los procesos de participación ciudadana.
-            - 
-              field: 'Órgano responsable:'
-              description: ÓRGANO RESPONSABLE
     accessibility:
       title: Accessibilità
       description: |-
@@ -124,7 +104,7 @@ it:
               key_column: 5
               page_column: Bilanci partecipativi
         browser_table:
-          description: 'A seconda del sistema operativo e del browser che si utilizza, la combinazione dei tasti sarà la seguente:'
+          description: "A seconda del sistema operativo e del browser che si utilizza, la combinazione dei tasti sarà la seguente:"
           caption: Combinazione dei tasti in funzione del sistema operativo e del browser
           browser_header: Browser
           key_header: Combinazione dei tasti
@@ -167,7 +147,7 @@ it:
               browser_column: Opera
               action_column: Vedi > scala
         browser_shortcuts_table:
-          description: 'Un altro modo per modificare la dimensione del testo è quello di impiegare le combinazioni di tasti di scelta rapida definite nei browser, in particolare la combinazione di tasti:'
+          description: "Un altro modo per modificare la dimensione del testo è quello di impiegare le combinazioni di tasti di scelta rapida definite nei browser, in particolare la combinazione di tasti:"
           rows:
             -
               shortcut_column: CTRL e + (CMD e + in MAC)
@@ -186,8 +166,8 @@ it:
     verify:
       code: Codice che hai ricevuto nella lettera
       email: Email
-      info: 'Per verificare la tua utenza, introduci i dati forniti durante la registrazione:'
-      info_code: 'Ora introduci il codice che hai ricevuto nella lettera:'
+      info: "Per verificare la tua utenza, introduci i dati forniti durante la registrazione:"
+      info_code: "Ora introduci il codice che hai ricevuto nella lettera:"
       password: Password
       submit: Verifica il mio account
       title: Verifica il tuo account

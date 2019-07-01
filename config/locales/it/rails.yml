@@ -86,7 +86,7 @@ it:
         one: 1 mese
         other: "%{count} mesi"
       x_years:
-        one: '%{count} anno'
+        one: "%{count} anno"
         other: "%{count} anni"
       x_seconds:
         one: 1 secondo
@@ -132,7 +132,7 @@ it:
         other: "lunghezza errata (dovrebbe essere di %{count} caratteri)"
       other_than: deve essere diverso da %{count}
     template:
-      body: 'Ci sono stati problemi con i seguenti campi:'
+      body: "Ci sono stati problemi con i seguenti campi:"
       header:
         one: "Non è stato possibile salvare questo/a %{model} perché si è verificato 1 errore"
         other: "Non è stato possibile salvare questo/a %{model} perché si sono verificati %{count} errori"
