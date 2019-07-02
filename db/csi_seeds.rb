@@ -1,4 +1,4 @@
-require 'database_cleaner'
+require "database_cleaner"
 
 DatabaseCleaner.clean_with :truncation
 
@@ -6,113 +6,134 @@ print "Creating Settings"
 
 # Names for the moderation console, as a hint for moderators
 # to know better how to assign users with official positions
-Setting.create(key: 'official_level_1_name', value: 'Impiegati pubblici')
-Setting.create(key: 'official_level_2_name', value: 'Organizzazione Municipale')
-Setting.create(key: 'official_level_3_name', value: 'Direttori generali')
-Setting.create(key: 'official_level_4_name', value: 'Assessori')
-Setting.create(key: 'official_level_5_name', value: 'Sindaco')
+Setting.create(key: "official_level_1_name", value: "Impiegati pubblici")
+Setting.create(key: "official_level_2_name", value: "Organizzazione Municipale")
+Setting.create(key: "official_level_3_name", value: "Direttori generali")
+Setting.create(key: "official_level_4_name", value: "Assessori")
+Setting.create(key: "official_level_5_name", value: "Sindaco")
 
 # Max percentage of allowed anonymous votes on a debate
-Setting.create(key: 'max_ratio_anon_votes_on_debates', value: '50')
+Setting.create(key: "max_ratio_anon_votes_on_debates", value: "50")
 
 # Max votes where a debate is still editable
-Setting.create(key: 'max_votes_for_debate_edit', value: '1')
+Setting.create(key: "max_votes_for_debate_edit", value: "1")
 
 # Max votes where a proposal is still editable
-Setting.create(key: 'max_votes_for_proposal_edit', value: '1')
+Setting.create(key: "max_votes_for_proposal_edit", value: "1")
 
 # Max length for comments
-Setting.create(key: 'comments_body_max_length', value: '1000')
+Setting.create(key: "comments_body_max_length", value: "1000")
 
 # Prefix for the Proposal codes
-Setting.create(key: 'proposal_code_prefix', value: 'TOR')
+Setting.create(key: "proposal_code_prefix", value: "TOR")
 
 # Number of votes needed for proposal success
-Setting.create(key: 'votes_for_proposal_success', value: '5000')
+Setting.create(key: "votes_for_proposal_success", value: "5000")
 
 # Months to archive proposals
-Setting.create(key: 'months_to_archive_proposals', value: '12')
+Setting.create(key: "months_to_archive_proposals", value: "12")
 
 # Users with this email domain will automatically be marked as level 1 officials
 # Emails under the domain's subdomains will also be included
-Setting.create(key: 'email_domain_for_officials', value: '')
+Setting.create(key: "email_domain_for_officials", value: "")
 
 # Code to be included at the top (inside <head>) of every page (useful for tracking)
-Setting.create(key: 'per_page_code_head', value: '')
+Setting.create(key: "html.per_page_code_head", value: "")
 
 # Code to be included at the top (inside <body>) of every page
-Setting.create(key: 'per_page_code_body', value: '')
+Setting.create(key: "html.per_page_code_body", value: "")
 
 # Social settings
-Setting.create(key: 'twitter_handle', value: '@twitorino')
-Setting.create(key: 'twitter_hashtag', value: '#deciditorino')
-Setting.create(key: 'facebook_handle', value: 'cittaditorino')
-Setting.create(key: 'youtube_handle', value: 'youtorino')
-Setting.create(key: 'telegram_handle', value: 'comunetorino')
-Setting.create(key: 'instagram_handle', value: 'cittaditorino')
-Setting.create(key: 'transparency_url', value: 'http://www.comune.torino.it/amministrazionetrasparente/')
-Setting.create(key: 'opendata_url', value: 'http://aperto.comune.torino.it/')
+Setting.create(key: "twitter_handle", value: "@twitorino")
+Setting.create(key: "twitter_hashtag", value: "#deciditorino")
+Setting.create(key: "facebook_handle", value: "cittaditorino")
+Setting.create(key: "youtube_handle", value: "youtorino")
+Setting.create(key: "telegram_handle", value: "comunetorino")
+Setting.create(key: "instagram_handle", value: "cittaditorino")
+Setting.create(key: "transparency_url", value: "http://www.comune.torino.it/amministrazionetrasparente/")
+Setting.create(key: "opendata_url", value: "http://aperto.comune.torino.it/")
 
 # Public-facing URL of the app.
-Setting.create(key: 'url', value: 'https://www.deciditorino.it')
+Setting.create(key: "url", value: "https://www.deciditorino.it")
 
 # Consul installation's organization name
-Setting.create(key: 'org_name', value: 'DecidiTorino')
+Setting.create(key: "org_name", value: "DecidiTorino")
 
 # Meta tags for SEO
-Setting.create(key: 'meta_title', value: 'DecidiTorino')
-Setting.create(key: 'meta_description', value: 'Citizen Participation and Open Government Application')
-Setting.create(key: 'meta_keywords', value: 'citizen participation, open government')
+Setting.create(key: "meta_title", value: "DecidiTorino")
+Setting.create(key: "meta_description", value: "Citizen Participation and Open Government Application")
+Setting.create(key: "meta_keywords", value: "citizen participation, open government")
+
+Setting.create(key: "process.debates", value: "true")
+Setting.create(key: "process.proposals", value: "true")
+Setting.create(key: "process.polls", value: "true")
+Setting.create(key: "process.budgets", value: "true")
+Setting.create(key: "process.legislation", value: "true")
 
 # Feature flags
-Setting.create(key: 'feature.debates', value: 'true')
-Setting.create(key: 'feature.proposals', value: 'true')
-Setting.create(key: 'feature.featured_proposals', value: 'true')
-Setting.create(key: 'feature.spending_proposals', value: nil)
-Setting.create(key: 'feature.polls', value: nil)
-Setting.create(key: 'feature.twitter_login', value: 'true')
-Setting.create(key: 'feature.facebook_login', value: 'true')
-Setting.create(key: 'feature.google_login', value: 'true')
-Setting.create(key: 'feature.shibboleth_login', value: nil)
-Setting.create(key: 'feature.public_stats', value: 'true')
-Setting.create(key: 'feature.budgets', value: 'true')
-Setting.create(key: 'feature.signature_sheets', value: 'true')
-Setting.create(key: 'feature.legislation', value: 'true')
-Setting.create(key: 'feature.user.recommendations', value: 'true')
-Setting.create(key: 'feature.community', value: 'false')
-Setting.create(key: 'feature.map', value: 'true')
-Setting.create(key: 'feature.allow_images', value: 'true')
-Setting.create(key: 'feature.allow_attached_documents', value: 'true')
-Setting.create(key: 'feature.user.recommendations_on_debates', value: 'true')
-Setting.create(key: 'feature.user.recommendations_on_proposals', value: 'true')
-Setting.create(key: 'feature.user.skip_verification', value: 'true')
-Setting.create(key: 'feature.help_page', value: 'true')
+# Setting.create(key: "feature.debates", value: "true")
+# Setting.create(key: "feature.proposals", value: "true")
+Setting.create(key: "feature.featured_proposals", value: nil)
+Setting.create(key: "feature.spending_proposals", value: nil)
+# Setting.create(key: "feature.polls", value: nil)
+Setting.create(key: "feature.twitter_login", value: "true")
+Setting.create(key: "feature.facebook_login", value: "true")
+Setting.create(key: "feature.google_login", value: "true")
+Setting.create(key: "feature.shibboleth_login", value: nil)
+Setting.create(key: "feature.public_stats", value: "true")
+# Setting.create(key: "feature.budgets", value: "true")
+Setting.create(key: "feature.signature_sheets", value: "true")
+# Setting.create(key: "feature.legislation", value: "true")
+Setting.create(key: "feature.user.recommendations", value: "true")
+Setting.create(key: "feature.community", value: "false")
+Setting.create(key: "feature.map", value: "true")
+Setting.create(key: "feature.allow_images", value: "true")
+Setting.create(key: "feature.allow_attached_documents", value: "true")
+Setting.create(key: "feature.user.recommendations_on_debates", value: "true")
+Setting.create(key: "feature.user.recommendations_on_proposals", value: "true")
+Setting.create(key: "feature.user.skip_verification", value: "true")
+Setting.create(key: "feature.help_page", value: "true")
 
 # Spending proposals feature flags
-Setting.create(key: 'feature.spending_proposal_features.voting_allowed', value: nil)
+Setting.create(key: "feature.spending_proposal_features.voting_allowed", value: nil)
 
 # Proposal notifications
-Setting.create(key: 'proposal_notification_minimum_interval_in_days', value: '3')
-Setting.create(key: 'direct_message_max_per_day', value: '3')
+Setting.create(key: "proposal_notification_minimum_interval_in_days", value: "3")
+Setting.create(key: "direct_message_max_per_day", value: "3")
 
 # Email settings
-Setting.create(key: 'mailer_from_name', value: 'DecidiTorino')
-Setting.create(key: 'mailer_from_address', value: 'noreply@deciditorino.it')
+Setting.create(key: "mailer_from_name", value: "DecidiTorino")
+Setting.create(key: "mailer_from_address", value: "noreply@deciditorino.it")
 
 # Verification settings
-Setting.create(key: 'verification_offices_url', value: 'http://oficinas-atencion-ciudadano.url/')
-Setting.create(key: 'min_age_to_participate', value: '16')
+Setting.create(key: "min_age_to_participate", value: "16")
 
 # Featured proposals
-Setting.create(key: 'featured_proposals_number', value: '3')
+Setting.create(key: "featured_proposals_number", value: "3")
 
 # City map feature default configuration (Greenwich)
-Setting.create(key: 'map_latitude', value: 45.073179654563646)
-Setting.create(key: 'map_longitude', value: 7.680763006210328)
-Setting.create(key: 'map_zoom', value: 12)
+Setting.create(key: "map_latitude", value: 45.073179654563646)
+Setting.create(key: "map_longitude", value: 7.680763006210328)
+Setting.create(key: "map_zoom", value: 12)
 
-Setting.create(key: 'related_content_score_threshold', value: -0.3)
-Setting.create(key: 'hot_score_period_in_days', value: 31)
+Setting.create(key: "related_content_score_threshold", value: -0.3)
+Setting.create(key: "hot_score_period_in_days", value: 31)
+
+Setting.create(key: "homepage.widgets.feeds.proposals", value: "true")
+Setting.create(key: "homepage.widgets.feeds.debates", value: "true")
+Setting.create(key: "homepage.widgets.feeds.processes", value: "true")
+
+Setting.create(key: "proposals.successful_proposal_id", value: nil)
+Setting.create(key: "proposals.poll_short_title", value: nil)
+Setting.create(key: "proposals.poll_description", value: nil)
+Setting.create(key: "proposals.poll_link", value: nil)
+Setting.create(key: "proposals.email_short_title", value: nil)
+Setting.create(key: "proposals.email_description", value: nil)
+
+Setting.create(key: "dashboard.emails", value: nil)
+
+# Default custom pages
+# load Rails.root.join("db", "pages.rb")
 
 puts " ✅"
 print "Creating Geozones (Circoscrizioni)"
@@ -129,18 +150,20 @@ Geozone.create(name: "San Salvario - Cavoretto - Borgo Po - Nizza Millefonti - L
 puts " ✅"
 print "Creating WebSection"
 
-WebSection.create(name: 'homepage')
-WebSection.create(name: 'debates')
-WebSection.create(name: 'proposals')
-WebSection.create(name: 'budgets')
-WebSection.create(name: 'help_page')
+WebSection.create(name: "homepage")
+WebSection.create(name: "debates")
+WebSection.create(name: "proposals")
+WebSection.create(name: "budgets")
+WebSection.create(name: "help_page")
 
 puts " ✅"
 print "Creating Users"
 
 # Default admin user (change password after first deploy to a server!)
 if Administrator.count == 0
-  admin = User.create!(username: 'DecidiTorino', email: 'admin@deciditorino.it', password: '12345678', password_confirmation: '12345678', confirmed_at: Time.current, terms_of_service: "1")
+  admin = User.create!(username: "DecidiTorino", email: "admin@deciditorino.it", password: "12345678",
+  	                   password_confirmation: "12345678", confirmed_at: Time.current,
+  	                   terms_of_service: "1")
   admin.create_administrator
 end
 

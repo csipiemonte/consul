@@ -8,7 +8,7 @@ it:
         alert:
           failure: Si è verificato un problema durante la spedizione della email al tuo indirizzo
         flash:
-          success: 'Ti abbiamo spedito una mail di conferma al tuo indirizzo di posta: %{email}'
+          success: "Ti abbiamo spedito una mail di conferma al tuo indirizzo di posta: %{email}"
       show:
         alert:
           failure: Codice di verifica non corretto
@@ -19,7 +19,6 @@ it:
         unconfirmed_code: Non hai ancora inserito il codice di conferma
       create:
         flash:
-          offices: Sportello per il Cittadino
           success_html: Prima delle votazioni riceverai una lettera con le istruzioni per verificare il tuo account.<br> Ricorda che puoi evitare la spedizione effettuando la verifica di persona in uno qualsiasi degli %{offices}.
       edit:
         see_all: Vedi proposte
@@ -27,10 +26,9 @@ it:
       errors:
         incorrect_code: Codice di verifica errato
       new:
-        explanation: 'Per partecipare alle votazioni finali puoi:'
+        explanation: "Per partecipare alle votazioni finali puoi:"
         go_to_index: Vai a DecidiTorino
-        office: Eseguire la verifica di persona in qualsiasi %{office}
-        offices: Sportello per il Cittadino
+        office: Eseguire la verifica di persona in qualsiasi Sportello per il Cittadino
         send_letter: Richiedere una lettera per posta
         title: 'Congratulazioni!'
         user_permission_info: Con il tuo profilo puoi...
@@ -52,7 +50,7 @@ it:
         date_of_birth: Data di nascita
         document_number: Dati identificativi del documento
         document_number_help_title: Aiuto
-        document_number_help_text_html: 'Introduci i 16 caratteri del Codice Fiscale.'
+        document_number_help_text_html: "Introduci i 16 caratteri del Codice Fiscale."
         document_type:
           passport: Passaporto
           residence_card: Carta di residenza
@@ -60,8 +58,7 @@ it:
         document_type_label: Tipo di documento
         error_not_allowed_age: "No hai l'età minima per partecipare"
         error_not_allowed_postal_code: Per completare la certificazione devi essere residente a Torino. Nel campo CAP si può inserire 10100 o un valore compreso fra 10121 e 10156. 
-        error_verifying_census: Non è stato possibile verificare in Anagrafe i tuoi dati. Per favore, conferma la correttezza dei tuoi dati chiamando il Comune o recandoti in uno degli %{offices}.
-        error_verifying_census_offices: sportello per il Cittadino
+        error_verifying_census: Non è stato possibile verificare in Anagrafe i tuoi dati. Per favore, conferma la correttezza dei tuoi dati chiamando il Comune o recandoti ad uno Sportello per il Cittadino.
         form_errors: hanno impedito la certificazione della residenza
         postal_code: CAP
         postal_code_note: Per completare la certificazione devi essere residente a Torino. Nel campo CAP si può inserire 10100 o un valore compreso fra 10121 e 10156.
@@ -75,7 +72,7 @@ it:
       edit:
         confirmation_code: Inserisci il codice ricevuto sul tuo telefonino
         resend_sms_link: Richiedere un nuovo codice
-        resend_sms_text: 'Non hai ricevuto un SMS con il codice di conferma?'
+        resend_sms_text: "Non hai ricevuto un SMS con il codice di conferma?"
         submit_button: Invia
         title: SMS di conferma
       new:

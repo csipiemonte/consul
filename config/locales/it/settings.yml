@@ -66,43 +66,33 @@ it:
     direct_message_max_per_day: "Numero massimo di messaggi diretti giornalieri"
     direct_message_max_per_day_description: "Numero massimo di messaggi diretti che un utente può inviare giornalmente"
     proposals:
-      successful_proposal_id: Propuesta exitosa
-      successful_proposal_id_description: Esta propuesta se utiliza como referencia de una propuesta exitosa en número de apoyos y se mostrará en el gráfico del panel de control
-      poll_short_title: Encuestas
-      poll_short_title_description: Breve descripción de la funcionalidad de encuestas. Permite a los usuarios crear encuestas sobre una propuesta.
-      poll_description: Descripción encuestas
-      poll_description_description: Descripción detallada de la funcionalidad de encuestas
-      poll_link: Enlace de información adicional
-      poll_link_description: Añade un enlace de información adicional a la funcionalidad de encuestas del panel de control
-      email_short_title: Correo electrónico
-      email_short_title_description: Breve descripción de la funcionalidad de correo electrónico. Permite a los usuarios enviar un email para difundir su propuesta
-      email_description: Descripción correo electrónico
-      email_description_description: Descripción detallada de la funcionalidad de correo electrónico
-      poster_short_title: Póster
-      poster_short_title_description: Breve descripción de la funcionalidad de póster. Permite a los usuarios descargar un póster en formato PDF para difundir su propuesta
-      poster_description: Descripción póster
-      poster_description_description: Descripción detallada de la funcionalidad de póster
+      successful_proposal_id: Proposta di successo
+      successful_proposal_id_description: Si utilizza questa proposta come riferimento per una proposta di successo per numero di appoggi e sarà visualizzata nella grafica del pannello di controllo
+      poll_short_title: Sondaggi
+      poll_short_title_description: Breve descrizione della funzionalità dei sondaggi. Consente agli utenti di creare sondaggi riguardo una proposta.
+      poll_description: Descrizione sondaggi
+      poll_description_description: Descrizione dettagliata della funzionalità dei sondaggi
+      poll_link: Link di informazione aggiuntiva
+      poll_link_description: Aggiungi un link di informazione aggiuntiva alla funzionalità dei sondaggi del panello di controllo
+      email_short_title: Posta elettronica
+      email_short_title_description: Breve descrizione della funzionalità di posta elettronica. Consente agli utenti di inviare una email per diffondere la loro proposta.
+      email_description: Descrizione posta elettronica
+      email_description_description: Descrizione dettagliata della funzionalità di posta elettronica
+      poster_short_title: Manifesto
+      poster_short_title_description: Breve descrizione della funzionalità di manifesto. Consente agli utenti di scaricare un manifesto in formato PDF per diffondere la loro proposta.
+      poster_description: Descrizione manifesto
+      poster_description_description: Descrizione dettagliata della funzionalità di manifesto
     feature:
-      budgets: "Bilanci partecipativi"
-      budgets_description: "Con i bilanci partecipativi la popolazione decide a quali progetti presentati dai cittadini e dalla cittadina va destinata una parte del bilancio municipale"
       twitter_login: "Accesso con Twitter"
       twitter_login_description: "Per consentire agli utenti di accedere con il proprio account di Twitter"
       facebook_login: "Accesso con Facebook"
       facebook_login_description: "Per consentire agli utenti di accedere con il proprio account di Facebook"
       google_login: "Accesso con Google"
       google_login_description: "Per consentire agli utenti di accedere con il proprio account di Google"
-      proposals: "Proposte"
-      proposals_description: "Le proposte dei cittadini sono un'opportunità per residenti e collettivi di decidere direttamente su questioni inerenti la città"
       featured_proposals: "Proposte in evidenza"
       featured_proposals_description: "Visualizza le proposte in evidenza nella pagina principale delle proposte"
-      debates: "Dibattiti"
-      debates_description: "Lo spazio per i dibattiti dei cittadini è volto a permettere a chiunque di esporre le questioni che li riguardano e su cui vogliono condividere punti di vista con altre persone"
-      polls: "Votazioni"
-      polls_description: "Le votazioni sono un meccanismo di partecipazione mediante il quale i cittadini con diritto di voto possono prendere decisioni direttamente"
       signature_sheets: "Fogli delle firme"
       signature_sheets_description: "Permette di aggiungere, dal pannello di Amministrazione, le firme raccolte di persona a proposte e a progetti di spesa di bilanci partecipativi"
-      legislation: "Progetti"
-      legislation_description: "Nei progetti, ai cittadini viene offerta l'opportunità di partecipare all'elaborazione e alla modifica dei regolamenti che riguardano la città e di esprimere la propria opinione su determinate azioni che si prevede di svolgere."
       spending_proposals: "Proposte di investimento"
       spending_proposals_description: "⚠️ NOTA: Esta funcionalidad ha sido sustituida por Presupuestos Participativos y desaparecerá en nuevas versiones"
       spending_proposal_features:
@@ -139,16 +129,16 @@ it:
       zoom: "Zoom"
       zoom_description: "Zoom della posizione mostrata sulla mappa"
     process:
-      debates: "Debates"
-      debates_description: "El espacio de debates ciudadanos está dirigido a que cualquier persona pueda exponer temas que le preocupan y sobre los que quiera compartir puntos de vista con otras personas"
-      proposals: "Propuestas"
-      proposals_description: "Las propuestas ciudadanas son una oportunidad para que los vecinos y colectivos decidan directamente cómo quieren que sea su sociedad, después de conseguir los apoyos suficientes y de someterse a votación ciudadana"
-      polls: "Votaciones"
-      polls_description: "Las votaciones ciudadanas son un mecanismo de participación por el que la ciudadanía con derecho a voto puede tomar decisiones de forma directa"
-      budgets: "Presupuestos participativos"
-      budgets_description: "Con los presupuestos participativos la ciudadanía decide a qué proyectos presentados por los vecinos y vecinas va destinada una parte del presupuesto"
-      legislation: "Legislación"
-      legislation_description: "En los procesos participativos se ofrece a la ciudadanía la oportunidad de participar en la elaboración y modificación de normativa que afecta a la sociedad y de dar su opinión sobre ciertas actuaciones que se tiene previsto llevar a cabo"
+      debates: "Dibattiti"
+      debates_description: "Lo spazio per i dibattiti dei cittadini è volto a permettere a chiunque di esporre le questioni che li riguardano e su cui vogliono condividere punti di vista con altre persone"
+      proposals: "Proposte"
+      proposals_description: "Le proposte dei cittadini sono un'opportunità per residenti e collettivi di decidere direttamente su questioni inerenti la città"
+      polls: "Votazioni"
+      polls_description: "Le votazioni sono un meccanismo di partecipazione mediante il quale i cittadini con diritto di voto possono prendere decisioni direttamente"
+      budgets: "Bilanci partecipativi"
+      budgets_description: "Con i bilanci partecipativi la popolazione decide a quali progetti presentati dai cittadini e dalle cittadine vada destinata una parte del bilancio municipale"
+      legislation: "Progetti"
+      legislation_description: "Nei progetti, ai cittadini viene offerta l'opportunità di partecipare all'elaborazione e alla modifica dei regolamenti che riguardano la città e di esprimere la propria opinione su determinate azioni che si prevede di svolgere."
     html:
       per_page_code_head: "Codice da inserire in ogni pagina (<head>)"
       per_page_code_head_description: "Il codice indicato apparirà nel tag <head>. Questa funzionalità è utile per inserire scripts personalizzati, analitycs..."
