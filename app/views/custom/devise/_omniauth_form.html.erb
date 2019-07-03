@@ -35,7 +35,7 @@
 
       <% if feature? :shibboleth_login %>
         <div class="small-12 medium-6 large-4 column end">
-          <%= link_to t("omniauth.spid.name"), user_omniauth_authorize_path(:shibboleth),
+          <%= link_to t("omniauth.spid.name"), user_shibboleth_omniauth_authorize_path,
                       title: t("omniauth.spid.sign_in"),
                       class: "button-spid button expanded" %>
         </div>
@@ -80,7 +80,7 @@
 
       <% if feature? :shibboleth_login %>
         <div class="small-12 medium-6 large-4 column end">
-          <%= link_to t("omniauth.spid.name"), user_omniauth_authorize_path(:shibboleth),
+          <%= link_to t("omniauth.spid.name"), user_shibboleth_omniauth_authorize_path,
                       title: t("omniauth.spid.sign_up"),
                       class: "button-spid button expanded" %>
         </div>

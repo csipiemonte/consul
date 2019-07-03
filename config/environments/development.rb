@@ -87,13 +87,16 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   # config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
-  config.logger = Logger.new("/var/log/rails/dev-www-deciditorino.portali.csi.it_443/#{Rails.env}.log")
+  logger = ActiveSupport::Logger.new("/var/log/rails/dev-www-deciditorino.portali.csi.it_443/#{Rails.env}.log")
 
   # log level
   config.log_level = :debug
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  logger.formatter = config.log_formatter
+  config.logger = ActiveSupport::TaggedLogging.new(logger)
 
   # SPID logout url
   config.spid_logout_url = '/dev_deciditorinosliv1spid_gasp_coto/logout.do'

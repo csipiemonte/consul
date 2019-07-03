@@ -14,6 +14,7 @@ Rails.application.configure do
   # using autoload_paths will not load needed classes from specified paths.
   # The solution to this, is to ask Rails to eager load classes.
   config.eager_load_paths += ["#{config.root}/lib"]
+
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
@@ -57,9 +58,6 @@ Rails.application.configure do
 
   # Use a different logger for distributed setups.
   # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
-
-  # TODO - specificare il path corretto dei log di preproduction
-  # config.logger = Logger.new("/var/log/rails/tst-www-deciditorino.portali.csi.it_443/#{Rails.env}.log", 5, 100*1048576)
 
   # Use a different cache store in production.
   config.cache_store = :dalli_store, { value_max_bytes: 2000000 }
