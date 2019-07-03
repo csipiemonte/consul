@@ -43,4 +43,4 @@ require_relative "dev_seeds/legislation_proposals"
 require_relative "dev_seeds/milestones"
 require_relative "dev_seeds/pages"
 
-log "All dev seeds created successfuly ?"
+log "All dev seeds created successfuly 👍"
