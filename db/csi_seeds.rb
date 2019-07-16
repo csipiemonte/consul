@@ -127,8 +127,8 @@ Setting.create(key: "proposals.email_description", value: nil)
 
 Setting.create(key: "dashboard.emails", value: nil)
 
-# Default custom pages - disabilitato, logica nelle views
-# load Rails.root.join("db", "pages.rb")
+# Default custom pages
+load Rails.root.join("db", "pages.rb")
 
 puts " ✅"
 print "Creating Geozones (Circoscrizioni)"

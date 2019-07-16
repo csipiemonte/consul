@@ -6,8 +6,17 @@ Rails.application.configure do
   # since you don't have to restart the web server when you make code changes.
   config.cache_classes = true
 
-  # Do not eager load code on boot.
+  # Eager load code on boot. This eager loads most of Rails and
+  # your application in memory, allowing both threaded web servers
+  # and those relying on copy on write to perform better.
+  # Rake tasks automatically ignore this option for performance.
   config.eager_load = true
+
+  # Because autoloading is disabled in production environments with Rails 5,
+  # using autoload_paths will not load needed classes from specified paths.
+  # The solution to this, is to ask Rails to eager load classes.
+  config.eager_load_paths += ["#{config.root}/lib"]
+  config.eager_load_paths += ["#{config.root}/lib/custom"]
 
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = false
