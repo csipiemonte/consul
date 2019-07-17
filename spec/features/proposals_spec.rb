@@ -1,7 +1,7 @@
 # coding: utf-8
 require "rails_helper"
 
-feature "Proposals" do
+describe "Proposals" do
 
   it_behaves_like "milestoneable",
                   :proposal,
@@ -107,7 +107,7 @@ feature "Proposals" do
       proposal_with_image = create(:proposal)
       image = create(:image, imageable: proposal_with_image)
 
-      visit proposals_path(proposal)
+      visit proposals_path(id: proposal)
 
       within("#proposal_#{proposal.id}") do
         expect(page).not_to have_css("div.with-image")
@@ -125,9 +125,7 @@ feature "Proposals" do
 
     expect(page).to have_content proposal.title
     expect(page).to have_content proposal.code
-    expect(page).to have_content "Proposal question"
     expect(page).to have_content "Proposal description"
-    expect(page).to have_content "http://external_documention.es"
     expect(page).to have_content proposal.author.name
     expect(page).to have_content I18n.l(proposal.created_at.to_date)
     expect(page).to have_selector(avatar(proposal.author.name))
@@ -180,6 +178,28 @@ feature "Proposals" do
     end
   end
 
+  context "Show on mobile screens" do
+    let!(:window_size) { Capybara.current_window.size }
+
+    before do
+      Capybara.current_window.resize_to(640, 480)
+    end
+
+    after do
+      Capybara.current_window.resize_to(*window_size)
+    end
+
+    scenario "Show support button sticky at bottom", :js do
+      proposal = create(:proposal)
+      visit proposal_path(proposal)
+
+      within("#proposal_sticky") do
+        expect(page).to have_css(".is-stuck")
+        expect(page).not_to have_css(".is-anchored")
+      end
+    end
+  end
+
   context "Embedded video" do
 
     scenario "Show YouTube video" do
@@ -219,10 +239,8 @@ feature "Proposals" do
     visit new_proposal_path
 
     fill_in "proposal_title", with: "Help refugees"
-    fill_in "proposal_question", with: "¿Would you like to give assistance to war refugees?"
     fill_in "proposal_summary", with: "In summary, what we want is..."
     fill_in "proposal_description", with: "This is very important because..."
-    fill_in "proposal_external_url", with: "http://rescue.org/refugees"
     fill_in "proposal_video_url", with: "https://www.youtube.com/watch?v=yPQfcG-eimk"
     fill_in "proposal_responsible_name", with: "Isabel Garcia"
     fill_in "proposal_tag_list", with: "Refugees, Solidarity"
@@ -240,10 +258,8 @@ feature "Proposals" do
     click_link "Not now, go to my proposal"
 
     expect(page).to have_content "Help refugees"
-    expect(page).to have_content "¿Would you like to give assistance to war refugees?"
     expect(page).to have_content "In summary, what we want is..."
     expect(page).to have_content "This is very important because..."
-    expect(page).to have_content "http://rescue.org/refugees"
     expect(page).to have_content "https://www.youtube.com/watch?v=yPQfcG-eimk"
     expect(page).to have_content author.name
     expect(page).to have_content "Refugees"
@@ -258,10 +274,8 @@ feature "Proposals" do
     visit new_proposal_path
     fill_in "proposal_title", with: "I am a bot"
     fill_in "proposal_subtitle", with: "This is the honeypot field"
-    fill_in "proposal_question", with: "This is a question"
     fill_in "proposal_summary", with: "This is the summary"
     fill_in "proposal_description", with: "This is the description"
-    fill_in "proposal_external_url", with: "http://google.com/robots.txt"
     fill_in "proposal_responsible_name", with: "Some other robot"
     check "proposal_terms_of_service"
 
@@ -280,10 +294,8 @@ feature "Proposals" do
 
     visit new_proposal_path
     fill_in "proposal_title", with: "I am a bot"
-    fill_in "proposal_question", with: "This is a question"
     fill_in "proposal_summary", with: "This is the summary"
     fill_in "proposal_description", with: "This is the description"
-    fill_in "proposal_external_url", with: "http://google.com/robots.txt"
     fill_in "proposal_responsible_name", with: "Some other robot"
     check "proposal_terms_of_service"
 
@@ -300,10 +312,8 @@ feature "Proposals" do
 
     visit new_proposal_path
     fill_in "proposal_title", with: "Help refugees"
-    fill_in "proposal_question", with: "¿Would you like to give assistance to war refugees?"
     fill_in "proposal_summary", with: "In summary, what we want is..."
     fill_in "proposal_description", with: "This is very important because..."
-    fill_in "proposal_external_url", with: "http://rescue.org/refugees"
     fill_in "proposal_responsible_name", with: "Isabel Garcia"
     fill_in "proposal_responsible_name", with: "Isabel Garcia"
     check "proposal_terms_of_service"
@@ -325,10 +335,8 @@ feature "Proposals" do
     expect(page).not_to have_selector("#proposal_responsible_name")
 
     fill_in "proposal_title", with: "Help refugees"
-    fill_in "proposal_question", with: "¿Would you like to give assistance to war refugees?"
     fill_in "proposal_summary", with: "In summary, what we want is..."
     fill_in "proposal_description", with: "This is very important because..."
-    fill_in "proposal_external_url", with: "http://rescue.org/refugees"
     check "proposal_terms_of_service"
 
     click_button "Create proposal"
@@ -355,10 +363,8 @@ feature "Proposals" do
 
     visit new_proposal_path
     fill_in "proposal_title", with: "Testing an attack"
-    fill_in "proposal_question", with: "¿Would you like to give assistance to war refugees?"
     fill_in "proposal_summary", with: "In summary, what we want is..."
     fill_in "proposal_description", with: "<p>This is <script>alert('an attack');</script></p>"
-    fill_in "proposal_external_url", with: "http://rescue.org/refugees"
     fill_in "proposal_responsible_name", with: "Isabel Garcia"
     check "proposal_terms_of_service"
 
@@ -380,7 +386,6 @@ feature "Proposals" do
 
     visit new_proposal_path
     fill_in "proposal_title", with: "Testing auto link"
-    fill_in "proposal_question", with: "Should I stay or should I go?"
     fill_in "proposal_summary", with: "In summary, what we want is..."
     fill_in "proposal_description", with: "<p>This is a link www.example.org</p>"
     fill_in "proposal_responsible_name", with: "Isabel Garcia"
@@ -403,7 +408,6 @@ feature "Proposals" do
 
     visit new_proposal_path
     fill_in "proposal_title", with: "Testing auto link"
-    fill_in "proposal_question", with: "Should I stay or should I go?"
     fill_in "proposal_summary", with: "In summary, what we want is..."
     fill_in "proposal_description", with: js_injection_string
     fill_in "proposal_responsible_name", with: "Isabel Garcia"
@@ -440,15 +444,7 @@ feature "Proposals" do
       login_as(author)
 
       visit new_proposal_path
-
-      fill_in "proposal_title", with: "Help refugees"
-      fill_in "proposal_question", with: "¿Would you like to give assistance to war refugees?"
-      fill_in "proposal_summary", with: "In summary, what we want is..."
-      fill_in "proposal_description", with: "This is very important because..."
-      fill_in "proposal_external_url", with: "http://rescue.org/refugees"
-      fill_in "proposal_video_url", with: "https://www.youtube.com/watch?v=yPQfcG-eimk"
-      fill_in "proposal_responsible_name", with: "Isabel Garcia"
-      check "proposal_terms_of_service"
+      fill_in_proposal
 
       click_button "Create proposal"
 
@@ -470,10 +466,8 @@ feature "Proposals" do
       visit new_proposal_path
 
       fill_in "proposal_title", with: "Help refugees"
-      fill_in "proposal_question", with: "¿Would you like to give assistance to war refugees?"
       fill_in "proposal_summary", with: "In summary, what we want is..."
       fill_in "proposal_description", with: "This is very important because..."
-      fill_in "proposal_external_url", with: "http://rescue.org/refugees"
       fill_in "proposal_video_url", with: "https://www.youtube.com/watch?v=yPQfcG-eimk"
       fill_in "proposal_responsible_name", with: "Isabel Garcia"
       check "proposal_terms_of_service"
@@ -629,10 +623,8 @@ feature "Proposals" do
     expect(page).to have_current_path(edit_proposal_path(proposal))
 
     fill_in "proposal_title", with: "End child poverty"
-    fill_in "proposal_question", with: "¿Would you like to give assistance to war refugees?"
     fill_in "proposal_summary", with: "Basically..."
     fill_in "proposal_description", with: "Let's do something to end child poverty"
-    fill_in "proposal_external_url", with: "http://rescue.org/refugees"
     fill_in "proposal_responsible_name", with: "Isabel Garcia"
 
     click_button "Save changes"
@@ -654,7 +646,7 @@ feature "Proposals" do
     expect(page).to have_content error_message
   end
 
-  feature "Proposal index order filters" do
+  describe "Proposal index order filters" do
 
     scenario "Default order is hot_score", :js do
       create_featured_proposals
@@ -839,14 +831,14 @@ feature "Proposals" do
     end
   end
 
-  feature "Archived proposals" do
+  describe "Archived proposals" do
 
-    scenario "show on archived tab" do
+    scenario "show on proposals list" do
       create_featured_proposals
       archived_proposals = create_archived_proposals
 
       visit proposals_path
-      click_link "archived"
+      click_link "Archived proposals"
 
       within("#proposals-list") do
         archived_proposals.each do |proposal|
@@ -914,7 +906,7 @@ feature "Proposals" do
         expect(page).not_to have_content(archived_proposal.title)
       end
 
-      click_link "archived"
+      click_link "Archived proposals"
 
       within("#featured-proposals") do
         expect(page).to have_content(featured_proposal.title)
@@ -932,7 +924,7 @@ feature "Proposals" do
       create(:proposal, :archived, title: "Some votes").update_column(:confidence_score, 25)
 
       visit proposals_path
-      click_link "archived"
+      click_link "Archived proposals"
 
       within("#proposals-list") do
         expect(all(".proposal")[0].text).to match "Most voted"
@@ -941,6 +933,96 @@ feature "Proposals" do
       end
     end
 
+  end
+
+  context "Selected Proposals" do
+    let!(:selected_proposal)     { create(:proposal, :selected) }
+    let!(:not_selected_proposal) { create(:proposal) }
+
+    scenario "do not show in index by default" do
+      visit proposals_path
+
+      expect(page).to have_selector("#proposals .proposal", count: 1)
+      expect(page).to have_content not_selected_proposal.title
+      expect(page).not_to have_content selected_proposal.title
+    end
+
+    scenario "show in selected proposals list" do
+      visit proposals_path
+      click_link "View selected proposals"
+
+      expect(page).to have_selector("#proposals .proposal", count: 1)
+      expect(page).to have_content selected_proposal.title
+      expect(page).not_to have_content not_selected_proposal.title
+    end
+
+    scenario "show a selected proposal message in show view" do
+      visit proposal_path(selected_proposal)
+
+      within("aside") { expect(page).not_to have_content "SUPPORTS" }
+      within("aside") { expect(page).to have_content "Selected proposal" }
+    end
+
+    scenario "do not show featured proposal in selected proposals list" do
+      Setting["feature.featured_proposals"] = true
+      create_featured_proposals
+
+      visit proposals_path
+
+      expect(page).to have_selector("#proposals .proposal-featured")
+      expect(page).to have_selector("#featured-proposals")
+
+      click_link "View selected proposals"
+
+      expect(page).not_to have_selector("#proposals .proposal-featured")
+      expect(page).not_to have_selector("#featured-proposals")
+    end
+
+    scenario "do not show recommented proposal in selected proposals list" do
+      create(:proposal, title: "Recommended", cached_votes_up: 10, tag_list: "Economy")
+
+      user = create(:user)
+      create(:follow, followable: create(:proposal, tag_list: "Economy"), user: user)
+
+      login_as(user)
+      visit proposals_path
+
+      expect(page).to have_css(".recommendation", count: 1)
+      expect(page).to have_link "Recommended"
+      expect(page).to have_link "See more recommendations"
+
+      click_link "View selected proposals"
+
+      expect(page).not_to have_css ".recommendation"
+      expect(page).not_to have_link "Recommended"
+      expect(page).not_to have_link "See more recommendations"
+    end
+
+    scenario "do not show order links in selected proposals list" do
+      visit proposals_path
+
+      expect(page).to have_css  "ul.submenu"
+      expect(page).to have_link "most active"
+      expect(page).to have_link "highest rated"
+      expect(page).to have_link "newest"
+
+      click_link "View selected proposals"
+
+      expect(page).not_to have_css  "ul.submenu"
+      expect(page).not_to have_link "most active"
+      expect(page).not_to have_link "highest rated"
+      expect(page).not_to have_link "newest"
+    end
+
+    scenario "show archived proposals in selected proposals list" do
+      archived_proposal = create(:proposal, :selected, :archived)
+
+      visit proposals_path
+      expect(page).not_to have_content archived_proposal.title
+
+      click_link "View selected proposals"
+      expect(page).to have_content archived_proposal.title
+    end
   end
 
   context "Search" do
@@ -1564,7 +1646,7 @@ feature "Proposals" do
 
     context "By geozone" do
 
-      background do
+      before do
         @california = Geozone.create(name: "California")
         @new_york   = Geozone.create(name: "New York")
 
@@ -1753,7 +1835,7 @@ feature "Proposals" do
 
 end
 
-feature "Successful proposals" do
+describe "Successful proposals" do
 
   scenario "Successful proposals do not show support buttons in index" do
     successful_proposals = create_successful_proposals
@@ -1762,8 +1844,8 @@ feature "Successful proposals" do
 
     successful_proposals.each do |proposal|
       within("#proposal_#{proposal.id}_votes") do
-        expect(page).not_to have_css(".supports")
-        expect(page).to have_content "This proposal has reached the required supports"
+        expect(page).not_to have_link "Support"
+        expect(page).to have_content "100% / 100%"
       end
     end
   end
@@ -1774,8 +1856,8 @@ feature "Successful proposals" do
     successful_proposals.each do |proposal|
       visit proposal_path(proposal)
       within("#proposal_#{proposal.id}_votes") do
-        expect(page).not_to have_css(".supports")
-        expect(page).to have_content "This proposal has reached the required supports"
+        expect(page).not_to have_link "Support"
+        expect(page).to have_content "100% / 100%"
       end
     end
   end
@@ -1833,9 +1915,7 @@ feature "Successful proposals" do
 
       fill_in "proposal_title", with: "Help refugees"
       fill_in "proposal_summary", with: "In summary what we want is..."
-      fill_in "proposal_question", with: "Would you like to?"
       fill_in "proposal_description", with: "This is very important because..."
-      fill_in "proposal_external_url", with: "http://rescue.org/refugees"
       fill_in "proposal_video_url", with: "https://www.youtube.com/watch?v=yPQfcG-eimk"
       fill_in "proposal_tag_list", with: "Refugees, Solidarity"
       check "proposal_terms_of_service"

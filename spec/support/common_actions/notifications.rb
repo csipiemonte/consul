@@ -17,14 +17,17 @@ module Notifications
     login_as(proposal.author)
     visit root_path
 
-    click_link "My activity"
+    click_link "My content"
 
     within("#proposal_#{proposal.id}") do
-      click_link proposal.title
+      click_link "Dashboard"
     end
 
-    click_link "Access the community"
-    click_link "Send message to the community"
+    within("#side_menu") do
+      click_link "Message to users"
+    end
+
+    click_link "Send message to proposal supporters"
 
     fill_in "proposal_notification_title", with: "Thanks for supporting proposal: #{proposal.title}"
     fill_in "proposal_notification_body", with: "Please share it with others! #{proposal.summary}"

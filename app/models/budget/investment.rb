@@ -1,7 +1,9 @@
 class Budget
+  require "csv"
   class Investment < ApplicationRecord
     SORTING_OPTIONS = {id: "id", title: "title", supports: "cached_votes_up"}.freeze
 
+    include ActiveModel::Dirty
     include Rails.application.routes.url_helpers
     include Measurable
     include Sanitizable
@@ -13,9 +15,6 @@ class Budget
     include Imageable
     include Mappable
     include Documentable
-    documentable max_documents_allowed: 3,
-                 max_file_size: 3.megabytes,
-                 accepted_content_types: [ "application/pdf" ]
 
     acts_as_votable
     acts_as_paranoid column: :hidden_at
@@ -26,6 +25,8 @@ class Budget
     include Flaggable
     include Milestoneable
     include Randomizable
+
+    extend DownloadSettings::BudgetInvestmentCsv
 
     belongs_to :author, -> { with_hidden }, class_name: "User", foreign_key: "author_id"
     belongs_to :heading
@@ -41,6 +42,11 @@ class Budget
 
     has_many :comments, -> {where(valuation: false)}, as: :commentable, class_name: "Comment"
     has_many :valuations, -> {where(valuation: true)}, as: :commentable, class_name: "Comment"
+
+    has_many :tracker_assignments, dependent: :destroy
+    has_many :trackers, through: :tracker_assignments
+
+    delegate :name, :email, to: :author, prefix: true
 
     validates :title, presence: true
     validates :author, presence: true
@@ -91,6 +97,8 @@ class Budget
     scope :by_admin,          ->(admin_id)    { where(administrator_id: admin_id) }
     scope :by_tag,            ->(tag_name)    { tagged_with(tag_name) }
     scope :by_valuator,       ->(valuator_id) { where("budget_valuator_assignments.valuator_id = ?", valuator_id).joins(:valuator_assignments) }
+    scope :by_tracker,        ->(tracker_id) { where("budget_tracker_assignments.tracker_id = ?",
+                                                     tracker_id).joins(:tracker_assignments) }
     scope :by_valuator_group, ->(valuator_group_id) { where("budget_valuator_group_assignments.valuator_group_id = ?", valuator_group_id).joins(:valuator_group_assignments) }
 
     scope :for_render, -> { includes(:heading) }
@@ -99,6 +107,7 @@ class Budget
     after_save :recalculate_heading_winners
     before_validation :set_responsible_name
     before_validation :set_denormalized_ids
+    after_update :change_log
 
     def comments_count
       comments.count
@@ -113,7 +122,7 @@ class Budget
     end
 
     def self.scoped_filter(params, current_filter)
-      budget  = Budget.find_by(slug: params[:budget_id]) || Budget.find_by(id: params[:budget_id])
+      budget  = Budget.find_by_slug_or_id params[:budget_id]
       results = Investment.by_budget(budget)
 
       results = results.where("cached_votes_up + physical_votes >= ?",
@@ -122,6 +131,7 @@ class Budget
                               params[:max_total_supports])                 if params[:max_total_supports].present?
       results = results.where(group_id: params[:group_id])                 if params[:group_id].present?
       results = results.by_tag(params[:tag_name])                          if params[:tag_name].present?
+      results = results.by_tag(params[:milestone_tag_name])                if params[:milestone_tag_name].present?
       results = results.by_heading(params[:heading_id])                    if params[:heading_id].present?
       results = results.by_valuator(params[:valuator_id])                  if params[:valuator_id].present?
       results = results.by_valuator_group(params[:valuator_group_id])      if params[:valuator_group_id].present?
@@ -377,6 +387,12 @@ class Budget
       milestones.published.with_status.order_by_publication_date.last&.status_id
     end
 
+    def admin_and_valuator_users_associated
+      valuator_users = (valuator_groups.map(&:valuators) + valuators).flatten
+      all_users = valuator_users << administrator
+      all_users.compact.uniq
+    end
+
     private
 
       def set_denormalized_ids
@@ -384,5 +400,18 @@ class Budget
         self.budget_id ||= heading.try(:group).try(:budget_id)
       end
 
+      def change_log
+        self.changed.each do |field|
+          unless field == "updated_at"
+            log = Budget::Investment::ChangeLog.new
+            log.field = field
+            log.author_id = User.current_user.id unless User.current_user.nil?
+            log.investment_id = self.id
+            log.new_value = self.send field
+            log.old_value = self.send "#{field}_was"
+            !log.save
+          end
+        end
+      end
   end
 end

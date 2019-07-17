@@ -1,4 +1,4 @@
-<!-- versione custom, differisce per la diversa valorizzazione degli accesskey -->
+<!-- versione custom, differisce alla riga 38 (title alla sezione legislation) -->
 <div class="small-12 medium-9 column">
   <ul>
     <%= raw content_block("subnavigation_left", I18n.locale) %>
@@ -13,13 +13,13 @@
       </li>
     <% end %>
     <% if feature?(:proposals) %>
-    <li>
-      <%= layout_menu_link_to t("layouts.header.proposals"),
+      <li>
+        <%= layout_menu_link_to t("layouts.header.proposals"),
                                 proposals_path,
                                 controller.class == ProposalsController,
                                 accesskey: "2",
                                 title: t("shared.go_to_page") + t("layouts.header.proposals") %>
-    </li>
+      </li>
     <% end %>
     <% if feature?(:polls) %>
       <li>
@@ -37,14 +37,6 @@
                                 controller.class.parent == Legislation,
                                 accesskey: "4",
                                 title: t("shared.go_to_page") + t("layouts.header.collaborative_legislation") %>
-      </li>
-    <% end %> 
-    <% if feature?(:spending_proposals) %>
-      <li>
-        <%= layout_menu_link_to t("layouts.header.spending_proposals"),
-                                  spending_proposals_path,
-                                  controller_name == "spending_proposals",
-                                  accesskey: "s" %>
       </li>
     <% end %>
     <% if feature?(:budgets) %>

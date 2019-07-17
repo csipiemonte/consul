@@ -1,8 +1,8 @@
 require "rails_helper"
 
-feature "Admin hidden proposals" do
+describe "Admin hidden proposals" do
 
-  background do
+  before do
     admin = create(:administrator)
     login_as(admin.user)
   end
@@ -22,8 +22,6 @@ feature "Admin hidden proposals" do
     expect(page).to have_content(proposal.title)
     expect(page).to have_content(proposal.summary)
     expect(page).to have_content(proposal.description)
-    expect(page).to have_content(proposal.question)
-    expect(page).to have_content(proposal.external_url)
     expect(page).to have_content(proposal.video_url)
   end
 

@@ -1,12 +1,11 @@
+require "csv"
+
 class Legislation::Process < ApplicationRecord
   include ActsAsParanoidAliases
   include Taggable
   include Milestoneable
   include Imageable
   include Documentable
-  documentable max_documents_allowed: 3,
-               max_file_size: 3.megabytes,
-               accepted_content_types: [ "application/pdf" ]
 
   acts_as_paranoid column: :hidden_at
   acts_as_taggable_on :customs
@@ -18,9 +17,11 @@ class Legislation::Process < ApplicationRecord
   translates :milestones_summary, touch: true
   translates :homepage,           touch: true
   include Globalizable
+  extend DownloadSettings::LegislationProcessCsv
 
   PHASES_AND_PUBLICATIONS = %i[homepage_phase draft_phase debate_phase allegations_phase
-                               proposals_phase draft_publication result_publication].freeze
+                               proposals_phase people_proposals_phase draft_publication
+                               result_publication].freeze
 
   CSS_HEX_COLOR = /\A#?(?:[A-F0-9]{3}){1,2}\z/i
 
@@ -34,6 +35,8 @@ class Legislation::Process < ApplicationRecord
                                           foreign_key: "legislation_process_id", dependent: :destroy
   has_many :proposals, -> { order(:id) }, class_name: "Legislation::Proposal",
                                           foreign_key: "legislation_process_id", dependent: :destroy
+  has_many :people_proposals, -> { order(:id) }, class_name: "Legislation::PeopleProposal",
+                                          foreign_key: "legislation_process_id", dependent: :destroy
 
   validates_translation :title, presence: true
   validates :start_date, presence: true
@@ -45,6 +48,8 @@ class Legislation::Process < ApplicationRecord
   validates :allegations_start_date, presence: true, if: :allegations_end_date?
   validates :allegations_end_date, presence: true, if: :allegations_start_date?
   validates :proposals_phase_end_date, presence: true, if: :proposals_phase_start_date?
+  validates :people_proposals_phase_end_date, presence: true,
+              if: :people_proposals_phase_start_date?
   validate :valid_date_ranges
   validates :background_color, format: { allow_blank: true, with: CSS_HEX_COLOR }
   validates :font_color, format: { allow_blank: true, with: CSS_HEX_COLOR }
@@ -57,6 +62,10 @@ class Legislation::Process < ApplicationRecord
   scope :not_in_draft, -> { where("draft_phase_enabled = false or (draft_start_date IS NOT NULL and
                                    draft_end_date IS NOT NULL and (draft_start_date > ? or
                                    draft_end_date < ?))", Date.current, Date.current) }
+
+  def past?
+    end_date < Date.current
+  end
 
   def homepage_phase
     Legislation::Process::Phase.new(start_date, end_date, homepage_enabled)
@@ -78,6 +87,11 @@ class Legislation::Process < ApplicationRecord
   def proposals_phase
     Legislation::Process::Phase.new(proposals_phase_start_date,
                                     proposals_phase_end_date, proposals_phase_enabled)
+  end
+
+  def people_proposals_phase
+    Legislation::Process::Phase.new(people_proposals_phase_start_date,
+                                    people_proposals_phase_end_date, people_proposals_phase_enabled)
   end
 
   def draft_publication
@@ -112,6 +126,20 @@ class Legislation::Process < ApplicationRecord
     end
   end
 
+  def get_last_draft_version
+    Legislation::DraftVersion.where(process: self, status: "published").last
+  end
+
+  def get_annotations_from_draft
+    Legislation::Annotation.where(legislation_draft_version_id: get_last_draft_version)
+  end
+
+  def get_best_annotation_comments
+    Comment.where(commentable_id: get_annotations_from_draft,
+                  commentable_type: "Legislation::Annotation", ancestry: nil)
+      .order("cached_votes_up - cached_votes_down DESC")
+  end
+
   private
 
     def valid_date_ranges
@@ -129,5 +157,4 @@ class Legislation::Process < ApplicationRecord
         errors.add(:allegations_end_date, :invalid_date_range)
       end
     end
-
 end

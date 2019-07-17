@@ -25,16 +25,12 @@ module AdminHelper
   end
 
   def moderated_sections
-    ["hidden_proposals", "debates", "comments", "hidden_users", "activity",
+    ["hidden_proposals", "hidden_debates", "hidden_comments", "hidden_users", "activity",
      "hidden_budget_investments"]
   end
 
   def menu_budgets?
     controller_name.starts_with?("budget")
-  end
-
-  def menu_budget?
-    ["spending_proposals"].include?(controller_name)
   end
 
   def menu_polls?
@@ -56,7 +52,7 @@ module AdminHelper
   end
 
   def menu_customization?
-    ["pages", "banners", "information_texts"].include?(controller_name) ||
+    ["pages", "banners", "information_texts", "documents"].include?(controller_name) ||
     menu_homepage? || menu_pages?
   end
 
@@ -81,7 +77,9 @@ module AdminHelper
   end
 
   def admin_select_options
-    Administrator.all.order("users.username asc").includes(:user).collect { |v| [ v.name, v.id ] }
+    Administrator.with_user
+                 .collect { |v| [ v.description_or_name, v.id ] }
+                 .sort_by { |a| a[0] }
   end
 
   def admin_submit_action(resource)

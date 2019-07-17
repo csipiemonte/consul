@@ -1,24 +1,30 @@
 class Admin::BudgetInvestmentsController < Admin::BaseController
   include FeatureFlags
   include CommentableActions
+  include DownloadSettingsHelper
+  include ChangeLogHelper
 
   feature_flag :budgets
 
   has_orders %w[oldest], only: [:show, :edit]
   has_filters %w[all], only: [:index, :toggle_selection]
 
-  before_action :load_budget
+  before_action :load_budget, except: :show_investment_log
   before_action :load_investment, only: [:show, :edit, :update, :toggle_selection]
   before_action :load_ballot, only: [:show, :index]
   before_action :parse_valuation_filters
   before_action :load_investments, only: [:index, :toggle_selection]
+  before_action :load_change_log, only: [:show]
 
   def index
+    load_tags
     respond_to do |format|
       format.html
       format.js
       format.csv do
-        send_data Budget::Investment::Exporter.new(@investments).to_csv,
+        send_data to_csv(@investments, Budget::Investment),
+                  type: "text/csv",
+                  disposition: "attachment",
                   filename: "budget_investments.csv"
       end
     end
@@ -32,6 +38,7 @@ class Admin::BudgetInvestmentsController < Admin::BaseController
     load_admins
     load_valuators
     load_valuator_groups
+    load_trackers
     load_tags
   end
 
@@ -45,6 +52,7 @@ class Admin::BudgetInvestmentsController < Admin::BaseController
       load_admins
       load_valuators
       load_valuator_groups
+      load_trackers
       load_tags
       render :edit
     end
@@ -83,23 +91,29 @@ class Admin::BudgetInvestmentsController < Admin::BaseController
       params.require(:budget_investment)
             .permit(:title, :description, :external_url, :heading_id, :administrator_id, :tag_list,
                     :valuation_tag_list, :incompatible, :visible_to_valuators, :selected,
-                    valuator_ids: [], valuator_group_ids: [])
+                    :milestone_tag_list, tracker_ids: [], valuator_ids: [], valuator_group_ids: [])
     end
 
     def load_budget
-      @budget = Budget.includes(:groups).find(params[:budget_id])
+      @budget = Budget.find_by_slug_or_id! params[:budget_id]
     end
 
     def load_investment
-      @investment = Budget::Investment.by_budget(@budget).find(params[:id])
+      @investment = @budget.investments.find(params[:id])
     end
 
     def load_admins
-      @admins = Administrator.includes(:user).all
+      @admins = @budget.administrators.includes(:user).all
+    end
+
+    def load_trackers
+      @trackers = @budget.trackers.includes(:user).all.order(description: :asc)
+                    .order("users.email ASC")
     end
 
     def load_valuators
-      @valuators = Valuator.includes(:user).all.order(description: :asc).order("users.email ASC")
+      @valuators = @budget.valuators.includes(:user).all.order(description: :asc)
+                     .order("users.email ASC")
     end
 
     def load_valuator_groups
@@ -125,5 +139,9 @@ class Admin::BudgetInvestmentsController < Admin::BaseController
           params[:valuator_id] = id
         end
       end
+    end
+
+    def load_change_log
+      @logs = Budget::Investment::ChangeLog.by_investment(@investment.id)
     end
 end

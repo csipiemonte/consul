@@ -414,6 +414,15 @@ code {
   word-break: break-all;
 }
 
+.content-type {
+  white-space: nowrap;
+  padding-right: $line-height;
+
+  label {
+    margin-left: 0 !important;
+  }
+}
+
 // 02. Sidebar
 // -----------
 
@@ -579,6 +588,17 @@ code {
   max-height: rem-calc(65);
   overflow: hidden;
   max-width: rem-calc(700);
+
+  &:hover {
+    max-height: rem-calc(1000);
+    transition: max-height 0.9s;
+  }
+}
+
+.log-value {
+  max-height: rem-calc(65);
+  overflow: hidden;
+  max-width: rem-calc(200);
 
   &:hover {
     max-height: rem-calc(1000);
@@ -766,6 +786,10 @@ code {
   font-weight: bold;
 }
 
+.hidden {
+  display: none;
+}
+
 table {
 
   .callout {
@@ -774,6 +798,15 @@ table {
     margin: 0;
     padding: 0 $line-height / 2;
   }
+}
+
+.info-type {
+  background-color: #ccf5ff;
+  padding: 15px;
+}
+
+.margin-description {
+  margin-top: rem-calc(20);
 }
 
 // 07. Legislation
@@ -1246,6 +1279,44 @@ table {
       color: #000;
       content: "\76";
     }
+  }
+}
+
+.columns-selector {
+
+  span[class^="icon-"] {
+    vertical-align: middle;
+  }
+}
+
+.columns-selector-wrapper {
+  background: $light-gray;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+
+  &.hidden {
+    display: none;
+  }
+
+  .column-selector-item {
+    display: inline-block;
+
+    &.hidden {
+      display: none;
+    }
+
+    label {
+      font-size: 17px;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+.column-selecteable {
+
+  .hidden {
+    display: none;
   }
 }
 

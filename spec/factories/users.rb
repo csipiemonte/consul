@@ -6,6 +6,7 @@ FactoryBot.define do
     password            "judgmentday"
     terms_of_service    "1"
     confirmed_at        { Time.current }
+    date_of_birth       { 20.years.ago }
     public_activity     true
 
     trait :incomplete_verification do
@@ -63,6 +64,10 @@ FactoryBot.define do
   end
 
   factory :moderator do
+    user
+  end
+
+  factory :tracker do
     user
   end
 

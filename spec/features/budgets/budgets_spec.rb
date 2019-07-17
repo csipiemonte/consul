@@ -1,10 +1,34 @@
 require "rails_helper"
 
-feature "Budgets" do
+describe "Budgets" do
 
   let(:budget)             { create(:budget) }
   let(:level_two_user)     { create(:user, :level_two) }
   let(:allowed_phase_list) { ["balloting", "reviewing_ballots", "finished"] }
+
+  context "Load" do
+
+    before { budget.update(slug: "budget_slug") }
+
+    scenario "finds budget by slug" do
+      visit budget_path("budget_slug")
+
+      expect(page).to have_content budget.name
+    end
+
+    scenario "raises an error if budget slug is not found" do
+      expect do
+        visit budget_path("wrong_budget")
+      end.to raise_error ActiveRecord::RecordNotFound
+    end
+
+    scenario "raises an error if budget id is not found" do
+      expect do
+        visit budget_path(0)
+      end.to raise_error ActiveRecord::RecordNotFound
+    end
+
+  end
 
   context "Index" do
 
@@ -120,13 +144,13 @@ feature "Budgets" do
         expect(page).to have_content "#{heading.name} €1,000,000"
 
         expect(page).to have_link "List of all investment projects",
-                                   href: budget_url(budget)
+                                   href: budget_path(budget)
 
         expect(page).to have_link "List of all unfeasible investment projects",
-                                   href: budget_url(budget, filter: "unfeasible")
+                                   href: budget_path(budget, filter: "unfeasible")
 
         expect(page).to have_link "List of all investment projects not selected for balloting",
-                                   href: budget_url(budget, filter: "unselected")
+                                   href: budget_path(budget, filter: "unselected")
 
         expect(page).to have_css("div.map")
       end
@@ -258,7 +282,7 @@ feature "Budgets" do
     let(:group)   { create(:budget_group, budget: budget) }
     let(:heading) { create(:budget_heading, group: group) }
 
-    background do
+    before do
       Setting["feature.map"] = true
     end
 
@@ -468,7 +492,7 @@ feature "Budgets" do
 
     let(:admin) { create(:administrator).user }
 
-    background do
+    before do
       logout
       budget.update(phase: "drafting")
       create(:budget)
@@ -505,7 +529,7 @@ feature "Budgets" do
 
   context "Accepting" do
 
-    background do
+    before do
       budget.update(phase: "accepting")
     end
 

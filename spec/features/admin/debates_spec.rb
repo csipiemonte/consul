@@ -1,25 +1,33 @@
 require "rails_helper"
 
-feature "Admin debates" do
+describe "Admin debates" do
 
   scenario "Disabled with a feature flag" do
     Setting["process.debates"] = nil
     admin = create(:administrator)
     login_as(admin.user)
 
-    expect{ visit admin_debates_path }.to raise_exception(FeatureFlags::FeatureDisabled)
+    expect{ visit admin_hidden_debates_path }.to raise_exception(FeatureFlags::FeatureDisabled)
 
     Setting["process.debates"] = true
   end
 
-  background do
+  before do
     admin = create(:administrator)
     login_as(admin.user)
   end
 
+  scenario "Show debate" do
+    debate = create(:debate)
+    visit admin_debate_path(debate)
+
+    expect(page).to have_content(debate.title)
+    expect(page).to have_content(debate.description)
+  end
+
   scenario "Restore" do
     debate = create(:debate, :hidden)
-    visit admin_debates_path
+    visit admin_hidden_debates_path
 
     click_link "Restore"
 
@@ -31,7 +39,7 @@ feature "Admin debates" do
 
   scenario "Confirm hide" do
     debate = create(:debate, :hidden)
-    visit admin_debates_path
+    visit admin_hidden_debates_path
 
     click_link "Confirm moderation"
 
@@ -43,22 +51,22 @@ feature "Admin debates" do
   end
 
   scenario "Current filter is properly highlighted" do
-    visit admin_debates_path
+    visit admin_hidden_debates_path
     expect(page).not_to have_link("Pending")
     expect(page).to have_link("All")
     expect(page).to have_link("Confirmed")
 
-    visit admin_debates_path(filter: "Pending")
+    visit admin_hidden_debates_path(filter: "Pending")
     expect(page).not_to have_link("Pending")
     expect(page).to have_link("All")
     expect(page).to have_link("Confirmed")
 
-    visit admin_debates_path(filter: "all")
+    visit admin_hidden_debates_path(filter: "all")
     expect(page).to have_link("Pending")
     expect(page).not_to have_link("All")
     expect(page).to have_link("Confirmed")
 
-    visit admin_debates_path(filter: "with_confirmed_hide")
+    visit admin_hidden_debates_path(filter: "with_confirmed_hide")
     expect(page).to have_link("All")
     expect(page).to have_link("Pending")
     expect(page).not_to have_link("Confirmed")
@@ -68,15 +76,15 @@ feature "Admin debates" do
     create(:debate, :hidden, title: "Unconfirmed debate")
     create(:debate, :hidden, :with_confirmed_hide, title: "Confirmed debate")
 
-    visit admin_debates_path(filter: "pending")
+    visit admin_hidden_debates_path(filter: "pending")
     expect(page).to have_content("Unconfirmed debate")
     expect(page).not_to have_content("Confirmed debate")
 
-    visit admin_debates_path(filter: "all")
+    visit admin_hidden_debates_path(filter: "all")
     expect(page).to have_content("Unconfirmed debate")
     expect(page).to have_content("Confirmed debate")
 
-    visit admin_debates_path(filter: "with_confirmed_hide")
+    visit admin_hidden_debates_path(filter: "with_confirmed_hide")
     expect(page).not_to have_content("Unconfirmed debate")
     expect(page).to have_content("Confirmed debate")
   end
@@ -85,7 +93,7 @@ feature "Admin debates" do
     per_page = Kaminari.config.default_per_page
     (per_page + 2).times { create(:debate, :hidden, :with_confirmed_hide) }
 
-    visit admin_debates_path(filter: "with_confirmed_hide", page: 2)
+    visit admin_hidden_debates_path(filter: "with_confirmed_hide", page: 2)
 
     click_on("Restore", match: :first, exact: true)
 

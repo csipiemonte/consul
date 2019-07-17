@@ -14,7 +14,7 @@ class UsersController < ApplicationController
   private
 
     def set_activity_counts
-      @activity_counts = HashWithIndifferentAccess.new(
+      @activity_counts = ActiveSupport::HashWithIndifferentAccess.new(
                           proposals: (Setting['feature.proposals'] ? Proposal.where(author_id: @user.id).count : 0),
                           debates: (Setting["process.debates"] ? Debate.where(author_id: @user.id).count : 0),
                           budget_investments: (Setting["process.budgets"] ? Budget::Investment.where(author_id: @user.id).count : 0),

@@ -15,6 +15,7 @@ class User < ApplicationRecord
   has_one :administrator
   has_one :moderator
   has_one :valuator
+  has_one :tracker
   has_one :manager
   has_one :poll_officer, class_name: "Poll::Officer"
   has_one :organization
@@ -23,15 +24,18 @@ class User < ApplicationRecord
   has_many :identities, dependent: :destroy
   has_many :debates, -> { with_hidden }, foreign_key: :author_id
   has_many :proposals, -> { with_hidden }, foreign_key: :author_id
+  has_many :people_proposals, -> { with_hidden }, foreign_key: :author_id
   has_many :budget_investments, -> { with_hidden }, foreign_key: :author_id, class_name: "Budget::Investment"
   has_many :comments, -> { with_hidden }
-  has_many :spending_proposals, foreign_key: :author_id
   has_many :failed_census_calls
   has_many :notifications
   has_many :direct_messages_sent,     class_name: "DirectMessage", foreign_key: :sender_id
   has_many :direct_messages_received, class_name: "DirectMessage", foreign_key: :receiver_id
   has_many :legislation_answers, class_name: "Legislation::Answer", dependent: :destroy, inverse_of: :user
   has_many :follows
+  has_many :budget_rol_assignments
+  has_many :budgets, through: :budget_rol_assignments
+  has_many :votation_set_answers
   belongs_to :geozone
 
   validates :username, presence: true, if: :username_required?
@@ -55,6 +59,8 @@ class User < ApplicationRecord
   scope :moderators,     -> { joins(:moderator) }
   scope :organizations,  -> { joins(:organization) }
   scope :officials,      -> { where("official_level > 0") }
+  scope :male,           -> { where(gender: "male") }
+  scope :female,         -> { where(gender: "female") }
   scope :newsletter,     -> { where(newsletter: true) }
   scope :for_render,     -> { includes(:organization) }
   scope :by_document,    ->(document_type, document_number) do
@@ -69,6 +75,13 @@ class User < ApplicationRecord
   scope :by_username_email_or_document_number, ->(search_string) do
     string = "%#{search_string}%"
     where("username ILIKE ? OR email ILIKE ? OR document_number ILIKE ?", string, string, string)
+  end
+  scope :between_ages, -> (from, to) do
+    where(
+      "date_of_birth > ? AND date_of_birth < ?",
+      to.years.ago.beginning_of_year,
+      from.years.ago.end_of_year
+    )
   end
 
   before_validation :clean_document_number
@@ -108,11 +121,6 @@ class User < ApplicationRecord
     voted.each_with_object({}) { |v, h| h[v.votable_id] = v.value }
   end
 
-  def spending_proposal_votes(spending_proposals)
-    voted = votes.for_spending_proposals(spending_proposals)
-    voted.each_with_object({}) { |v, h| h[v.votable_id] = v.value }
-  end
-
   def budget_investment_votes(budget_investments)
     voted = votes.for_budget_investments(budget_investments)
     voted.each_with_object({}) { |v, h| h[v.votable_id] = v.value }
@@ -128,9 +136,7 @@ class User < ApplicationRecord
   end
 
   def headings_voted_within_group(group)
-    Budget::Heading.joins(:translations)
-                   .order("name")
-                   .where(id: voted_investments.by_group(group).pluck(:heading_id))
+    Budget::Heading.where(id: voted_investments.by_group(group).pluck(:heading_id))
   end
 
   def voted_investments
@@ -147,6 +153,10 @@ class User < ApplicationRecord
 
   def valuator?
     valuator.present?
+  end
+
+  def tracker?
+    tracker.present?
   end
 
   def manager?
@@ -346,6 +356,15 @@ class User < ApplicationRecord
   def interests
     followables = follows.map(&:followable)
     followables.compact.map { |followable| followable.tags.map(&:name) }.flatten.compact.uniq
+  end
+
+
+  def self.current_user
+    Thread.current[:user]
+  end
+
+  def self.current_user=(user)
+    Thread.current[:user] = user
   end
 
   def send_devise_notification(notification, *args)

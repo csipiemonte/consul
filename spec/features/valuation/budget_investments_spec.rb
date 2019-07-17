@@ -1,14 +1,38 @@
 require "rails_helper"
 
-feature "Valuation budget investments" do
+describe "Valuation budget investments" do
 
   let(:budget) { create(:budget, :valuating) }
   let(:valuator) do
     create(:valuator, user: create(:user, username: "Rachel", email: "rachel@valuators.org"))
   end
 
-  background do
+  before do
     login_as(valuator.user)
+  end
+
+  context "Load" do
+
+    before { budget.update(slug: "budget_slug") }
+
+    scenario "finds investment using budget slug" do
+      visit valuation_budget_budget_investments_path("budget_slug")
+
+      expect(page).to have_content budget.name
+    end
+
+    scenario "raises an error if budget slug is not found" do
+      expect do
+        visit valuation_budget_budget_investments_path("wrong_budget")
+      end.to raise_error ActiveRecord::RecordNotFound
+    end
+
+    scenario "raises an error if budget id is not found" do
+      expect do
+        visit valuation_budget_budget_investments_path(0)
+      end.to raise_error ActiveRecord::RecordNotFound
+    end
+
   end
 
   scenario "Disabled with a feature flag" do
@@ -23,7 +47,7 @@ feature "Valuation budget investments" do
     expect(page).to have_link "Valuation", href: valuation_root_path
   end
 
-  feature "Index" do
+  describe "Index" do
     scenario "Index shows budget investments assigned to current valuator" do
       investment1 = create(:budget_investment, :visible_to_valuators, budget: budget)
       investment2 = create(:budget_investment, :visible_to_valuators, budget: budget)
@@ -209,7 +233,7 @@ feature "Valuation budget investments" do
     end
   end
 
-  feature "Show" do
+  describe "Show" do
     let(:administrator) do
       create(:administrator, user: create(:user, username: "Ana", email: "ana@admins.org"))
     end
@@ -222,7 +246,7 @@ feature "Valuation budget investments" do
                                  administrator: administrator,)
     end
 
-    background do
+    before do
       investment.valuators << [valuator, second_valuator]
     end
 
@@ -230,9 +254,9 @@ feature "Valuation budget investments" do
       investment.update(visible_to_valuators: true)
       visit valuation_budget_budget_investments_path(budget)
 
-
       click_link investment.title
 
+      expect(page).to have_content("Investment preview")
       expect(page).to have_content(investment.title)
       expect(page).to have_content(investment.description)
       expect(page).to have_content(investment.author.name)
@@ -254,6 +278,7 @@ feature "Valuation budget investments" do
 
       visit valuation_budget_budget_investment_path(budget, investment)
 
+      expect(page).to have_content("Investment preview")
       expect(page).to have_content(investment.title)
       expect(page).to have_content(investment.description)
       expect(page).to have_content(investment.author.name)
@@ -278,9 +303,25 @@ feature "Valuation budget investments" do
       }.to raise_error "Not Found"
     end
 
+    scenario "preview is visible" do
+      logout
+      login_as create(:administrator).user
+
+      visit valuation_budget_budget_investment_path(budget, investment)
+
+      expect(page).to have_content("Investment preview")
+      expect(page).to have_content(investment.title)
+      expect(page).to have_content(investment.description)
+      expect(page).to have_content(investment.author.name)
+      expect(page).to have_content(investment.heading.name)
+      expect(page).to have_content("1234")
+      expect(page).to have_content("Unfeasible")
+      expect(page).to have_content("It is impossible")
+      expect(page).to have_content("Ana (ana@admins.org)")
+    end
   end
 
-  feature "Valuate" do
+  describe "Valuate" do
     let(:admin) { create(:administrator) }
     let(:investment) do
       group = create(:budget_group, budget: budget)
@@ -289,7 +330,7 @@ feature "Valuation budget investments" do
                                  administrator: admin)
     end
 
-    background do
+    before do
       investment.valuators << valuator
     end
 
@@ -427,7 +468,7 @@ feature "Valuation budget investments" do
     end
 
     context "Reopen valuation" do
-      background do
+      before do
         investment.update(
           valuation_finished: true,
           feasibility: "feasible",

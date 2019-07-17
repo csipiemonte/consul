@@ -7,10 +7,6 @@ eu:
       name: "Izena"
     budget_headings:
       name: "Izena"
-    budget_investments:
-      show:
-        image: "Irudia"
-        documents: "Dokumentuak"
     milestones:
       index:
         image: "Irudia"
@@ -32,8 +28,6 @@ eu:
       index:
         name: Izena
         email: E-mail
-    menu:
-      poll_questions: Galderak
     administrators:
       index:
         name: Izena

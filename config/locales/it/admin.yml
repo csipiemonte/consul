@@ -4,7 +4,7 @@ it:
       title: Amministrazione
     actions:
       actions: Azioni
-      confirm: "Sei sicuro?"
+      confirm: 'Sei sicuro?'
       confirm_hide: Conferma moderazione
       hide: Nascondi
       hide_author: "Nascondi l'autore"
@@ -26,7 +26,7 @@ it:
           all: Tutti
           with_active: Attivi
           with_inactive: Inattivi
-        preview: Anteprima
+        preview: Anteprima del bilancio
       banner:
         title: Titolo
         description: Descrizione
@@ -91,7 +91,7 @@ it:
         admin_ballots: Organizza urne
         no_budgets: "Non sono presenti bilanci partecipativi."
       create:
-        notice: "Bilanci partecipativi creati con successo!"
+        notice: 'Bilanci partecipativi creati con successo!'
       update:
         notice: Bilanci partecipativi aggiornati
       edit:
@@ -104,9 +104,29 @@ it:
         edit_phase: Modifica fase
         active: Attiva
         blank_dates: Le date risultano vuote
+        administrators:
+          zero: "Seleziona amministratori"
+          one: "1 amministratore selezionato"
+          other: "%{count} amministratori selezionati"
+        valuators:
+          zero: "Seleziona valutatori"
+          one: "1 valutatore selezionato"
+          other: "%{count} valutatori selezionati"
+        trackers:
+          zero: "Seleziona gestori d'avanzamento"
+          one: "1 gestore d'avanzamento selezionato"
+          other: "%{count} gestori d'avanzamento selezionati"
+        empty_administrators: "Non sono presenti amministratori"
+        empty_valuators: "Non sono presenti valutatori"
+        empty_trackers: "Non sono presenti gestori d'avanzamento"
+        name: "Nome"
+        selected: "Selezionato"
+        cancel: "Annulla"
+        save: "Salva"
       destroy:
         success_notice: Bilancio eliminato correttamente
         unable_notice: "Non è possibile eliminare un bilancio con progetti associati"
+        unable_notice_polls: Non è possibile eliminare un bilancio con una votazione associata
       new:
         title: Nuovo bilancio partecipativo
       winners:
@@ -207,7 +227,6 @@ it:
         assigned_admin: Amministratore assegnato
         no_admin_assigned: Nessun amministratore assegnato
         no_valuators_assigned: Nessun valutatore
-        no_valuation_groups: Senza gruppi valutatori
         feasibility:
           feasible: "Realizzabile"
           unfeasible: "Irrealizzabile"
@@ -229,8 +248,10 @@ it:
           author_username: Utente autore
           incompatible: Incompatibile
           price: Costo
+          author: Autore
         cannot_calculate_winners: Il bilancio deve essere nelle fasi "Votazione finale", "Votazione conclusa" o "Risultati" per poter calcolare le proposte vincitrici
         see_results: "Mostra risultati"
+        milestone_tags_filter_all: "Tutti i tags di avanzamento"
       show:
         assigned_admin: Amministratore assegnato
         assigned_valuators: Valutatori assegnati
@@ -245,7 +266,6 @@ it:
         dossier: Rapporto
         edit_dossier: Modifica rapporto
         tags: Tags
-        user_tags: "Tags dell'utente"
         undefined: Da definire
         compatibility:
           title: Compatibilità
@@ -259,13 +279,9 @@ it:
           title: Vincitore
           "true": "Si"
           "false": "No"
-        image: "Immagine"
-        see_image: "Mostra immagine"
-        no_image: "Senza immagine"
-        documents: "Documenti"
-        see_documents: "Mostra documenti (%{count})"
-        no_documents: "Senza documenti"
         valuator_groups: "Gruppi di valutatori"
+        preview: Anteprima
+        assigned_trackers: "Gestori d'avanzamento assegnati"
       edit:
         classification: Classifica
         compatibility: Compatibilità
@@ -280,37 +296,12 @@ it:
         tags_placeholder: "Scrivi i tags che desideri separati da virgole (,)"
         undefined: Da definire
         user_groups: "Gruppi"
+        assigned_trackers: "Gestori d'avanzamento"
+        milestone_tags: Tags d'Avanzamento
       search_unfeasible: Cerca irrealizzabili
     milestones:
       index:
-        table_id: "ID"
-        table_title: "Titolo"
-        table_description: "Descrizione"
-        table_publication_date: "Data di pubblicazione"
-        table_status: Stato
-        table_actions: "Azioni"
-        delete: "Elimina milestone"
-        no_milestones: "Non ci sono milestone definite"
-        image: "Immagine"
-        show_image: "Mostra immagine"
-        documents: "Documenti"
-        milestone: Milestone
-        new_milestone: Crea nuova milestone
-      form:
-        admin_statuses: Gestione stati
-        no_statuses_defined: Non ci sono stati definiti
-      new:
-        creating: Crea milestone
-        date: Data
-        description: Descrizione
-      edit:
-        title: Modifica milestone
-      create:
-        notice: "Nuova milestone creata con successo!"
-      update:
-        notice: Milestone aggiornata
-      delete:
-        notice: Milestone eliminata con successo
+        milestone_tags: Tags di Avanzamento
     statuses:
       index:
         title: Stati della prosecuzione
@@ -355,6 +346,18 @@ it:
       delete:
         notice: "Barra di avanzamento eliminata correttamente"
     comments:
+      index:
+        id: "ID"
+        content: "Contenuto"
+        author: "Autore"
+        commentable_type: "Tipo"
+        link: "Scarica commenti"
+        title: Commenti
+        no_comments: Non sono presenti commenti.
+        hidden_debate: Dibattito nascosto
+        hidden_proposal: Proposta nascosta
+        table_link: "Link"
+    hidden_comments:
       index:
         filter: Filtro
         filters:
@@ -401,13 +404,13 @@ it:
         edit:
           editing: Modifica azione per il cruscotto delle proposte
           back: "Torna all'elenco"
+        delete:
+          success: Azione eliminata con successo
         form:
           submit_button: Salva
           help_text: Inserire 0 per non prendere in considerazione tale valore
-          published_proposal: Per proposte pubblicate?
+          published_proposal: 'Per proposte pubblicate?'
           published_proposal_help_text: "Aggiungi la spunta per creare l'azione solo per le proposte pubblicate"
-        delete:
-          success: Azione eliminata con successo
       administrator_tasks:
         index:
           description: "Le risorse pubblicate nella barra di avanzamento delle proposte possono includere un bottone per inviare un sollecito agli amministratori. Qui di seguito sono elencati i solleciti degli utenti."
@@ -431,6 +434,13 @@ it:
           success: Il task è stato contrassegnato come risolto
     debates:
       index:
+        id: ID
+        author: Autore
+        title: Dibattiti
+        no_debates: Non sono presenti dibattiti.
+        link: "Scarica dibattiti"
+    hidden_debates:
+      index:
         filter: Filtro
         filters:
           all: Tutti
@@ -438,6 +448,23 @@ it:
           without_confirmed_hide: In sospeso
         title: Dibattiti nascosti
         no_hidden_debates: Non sono presenti dibattiti nascosti.
+    documents:
+      new:
+        title: "Carica un documento"
+        label_attachment: "Seleziona un documento"
+        submit_button: "Carica documento"
+      index:
+        new_link: "Carica un documento"
+        no_documents: "Non sono presenti documenti."
+        title: "Documenti"
+        format: "Formato"
+        size: "Dimensione"
+        url: "URL"
+      create:
+        success_notice: "Documento creato correttamente"
+        unable_notice: "Documento non valido"
+      destroy:
+        success_notice: "Documento eliminato correttamente"
     hidden_users:
       index:
         filter: Filtro
@@ -502,6 +529,7 @@ it:
           filters:
             open: Attivi
             all: Tutti
+          link: "Scarica progetti di legislazione collaborativa"
         new:
           back: Indietro
           title: Crea nuovo progetto di legislazione collaborativa

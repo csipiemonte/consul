@@ -3,8 +3,6 @@ FactoryBot.define do
     sequence(:title)     { |n| "Proposal #{n} title" }
     sequence(:summary)   { |n| "In summary, what we want is... #{n}" }
     description          "Proposal description"
-    question             "Proposal question"
-    external_url         "http://external_documention.es"
     video_url            "https://youtu.be/nhuNb0XtRhQ"
     responsible_name     "John Snow"
     terms_of_service     "1"
@@ -33,6 +31,10 @@ FactoryBot.define do
 
     trait :archived do
       created_at { 25.months.ago }
+    end
+
+    trait :selected do
+      selected true
     end
 
     trait :with_hot_score do
@@ -64,6 +66,10 @@ FactoryBot.define do
 
     trait :published do
       published_at { Time.current }
+    end
+
+    trait :with_milestone_tags do
+      after(:create) { |proposal| proposal.milestone_tags << create(:tag, :milestone) }
     end
   end
 

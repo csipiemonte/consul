@@ -1,3 +1,5 @@
+require "csv"
+
 class Proposal < ApplicationRecord
   include Rails.application.routes.url_helpers
   include Flaggable
@@ -15,9 +17,6 @@ class Proposal < ApplicationRecord
   include Mappable
   include Notifiable
   include Documentable
-  documentable max_documents_allowed: 3,
-               max_file_size: 3.megabytes,
-               accepted_content_types: [ "application/pdf" ]
   include EmbedVideosHelper
   include Relationable
   include Milestoneable
@@ -37,15 +36,19 @@ class Proposal < ApplicationRecord
   has_many :dashboard_actions, through: :dashboard_executed_actions, class_name: "Dashboard::Action"
   has_many :polls, as: :related
 
+  extend DownloadSettings::ProposalCsv
+  delegate :name, :email, to: :author, prefix: true
+
+  extend DownloadSettings::ProposalCsv
+  delegate :name, :email, to: :author, prefix: true
+
   validates :title, presence: true
-  validates :question, presence: true
   validates :summary, presence: true
   validates :author, presence: true
   validates :responsible_name, presence: true, unless: :skip_user_verification?
 
   validates :title, length: { in: 4..Proposal.title_max_length }
   validates :description, length: { maximum: Proposal.description_max_length }
-  validates :question, length: { in: 10..Proposal.question_max_length }
   validates :responsible_name, length: { in: 6..Proposal.responsible_name_max_length }, unless: :skip_user_verification?
   validates :retired_reason, inclusion: { in: RETIRE_OPTIONS, allow_nil: true }
 
@@ -76,6 +79,8 @@ class Proposal < ApplicationRecord
   scope :successful,               -> { where("cached_votes_up >= ?", Proposal.votes_needed_for_success) }
   scope :unsuccessful,             -> { where("cached_votes_up < ?", Proposal.votes_needed_for_success) }
   scope :public_for_api,           -> { all }
+  scope :selected,                 -> { where(selected: true) }
+  scope :not_selected,             -> { where(selected: false) }
   scope :not_supported_by_user,    ->(user) { where.not(id: user.find_voted_items(votable_type: "Proposal").compact.map(&:id)) }
   scope :published,                -> { where.not(published_at: nil) }
   scope :draft,                    -> { where(published_at: nil) }
@@ -117,7 +122,6 @@ class Proposal < ApplicationRecord
 
   def searchable_values
     { title              => "A",
-      question           => "B",
       author.username    => "B",
       tag_list.join(" ") => "B",
       geozone.try(:name) => "B",

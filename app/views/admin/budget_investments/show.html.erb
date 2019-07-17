@@ -5,10 +5,19 @@
 
 <%= render "written_by_author" %>
 
-<%= link_to t("admin.budget_investments.show.edit"),
-            edit_admin_budget_budget_investment_path(@budget, @investment,
-                                                Budget::Investment.filter_params(params).to_h) unless @budget.finished? %>
+<h2 class="inline-block"><%= t("admin.budget_investments.show.preview") %></h2>
+<div class="float-right">
+  <%= link_to t("admin.budget_investments.show.edit"),
+              edit_admin_budget_budget_investment_path(
+                @budget,
+                @investment,
+                Budget::Investment.filter_params(params).to_h
+              ),
+              class: "button hollow" unless @budget.finished? %>
+</div>
 
+<hr>
+<%= render partial: "/budgets/investments/investment_detail", locals: {investment: @investment, preview: true} %>
 <hr>
 
 <h2 id="classification"><%= t("admin.budget_investments.show.classification") %></h2>
@@ -41,6 +50,15 @@
   <% end %>
 </p>
 
+<p id="assigned_trackers">
+  <strong><%= t("admin.budget_investments.show.assigned_trackers") %>:</strong>
+  <% if @investment.trackers.any? %>
+    <%= @investment.trackers.collect(&:name_and_email).join(", ") %>
+  <% else %>
+    <%= t("admin.budget_investments.show.undefined") %>
+  <% end %>
+</p>
+
 <p>
   <%= link_to t("admin.budget_investments.show.edit_classification"),
                 edit_admin_budget_budget_investment_path(@budget, @investment,
@@ -57,4 +75,6 @@
 
 <%= render "valuation/budget_investments/valuation_comments" %>
 
-<%= render "admin/milestones/milestones", milestoneable: @investment %>
+<%= render "admin/change_logs/change_log", logs: @logs %>
+
+<%= render "tracking/milestones/milestones", milestoneable: @investment %>

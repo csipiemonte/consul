@@ -5,6 +5,7 @@ describe Budget do
   let(:budget) { create(:budget) }
 
   it_behaves_like "sluggable", updatable_slug_trait: :drafting
+  it_behaves_like "reportable"
 
   describe "name" do
     before do
@@ -97,33 +98,55 @@ describe Budget do
       expect(budget).to be_finished
     end
 
-    it "balloting_or_later?" do
-      budget.phase = "drafting"
-      expect(budget).not_to be_balloting_or_later
+    describe "#valuating_or_later?" do
+      it "returns false before valuating" do
+        budget.phase = "selecting"
+        expect(budget).not_to be_valuating_or_later
+      end
 
-      budget.phase = "accepting"
-      expect(budget).not_to be_balloting_or_later
+      it "returns true while valuating" do
+        budget.phase = "valuating"
+        expect(budget).to be_valuating_or_later
+      end
 
-      budget.phase = "reviewing"
-      expect(budget).not_to be_balloting_or_later
+      it "returns true after valuating" do
+        budget.phase = "publishing_prices"
+        expect(budget).to be_valuating_or_later
+      end
+    end
 
-      budget.phase = "selecting"
-      expect(budget).not_to be_balloting_or_later
+    describe "#publishing_prices_or_later?" do
+      it "returns false before publishing prices" do
+        budget.phase = "valuating"
+        expect(budget).not_to be_publishing_prices_or_later
+      end
 
-      budget.phase = "valuating"
-      expect(budget).not_to be_balloting_or_later
+      it "returns true while publishing prices" do
+        budget.phase = "publishing_prices"
+        expect(budget).to be_publishing_prices_or_later
+      end
 
-      budget.phase = "publishing_prices"
-      expect(budget).not_to be_balloting_or_later
+      it "returns true after publishing prices" do
+        budget.phase = "balloting"
+        expect(budget).to be_publishing_prices_or_later
+      end
+    end
 
-      budget.phase = "balloting"
-      expect(budget).to be_balloting_or_later
+    describe "#balloting_or_later?" do
+      it "returns false before balloting" do
+        budget.phase = "publishing_prices"
+        expect(budget).not_to be_balloting_or_later
+      end
 
-      budget.phase = "reviewing_ballots"
-      expect(budget).to be_balloting_or_later
+      it "returns true while balloting" do
+        budget.phase = "balloting"
+        expect(budget).to be_balloting_or_later
+      end
 
-      budget.phase = "finished"
-      expect(budget).to be_balloting_or_later
+      it "returns true after balloting" do
+        budget.phase = "finished"
+        expect(budget).to be_balloting_or_later
+      end
     end
   end
 
@@ -281,6 +304,48 @@ describe Budget do
       I18n.locale = :en
 
       expect(budget.formatted_amount(1000.00)).to eq ("€1,000")
+    end
+  end
+
+  describe "#milestone_tags" do
+    let(:investment1) { build(:budget_investment, :winner) }
+    let(:investment2) { build(:budget_investment, :winner) }
+    let(:investment3) { build(:budget_investment) }
+
+    it "returns an empty array if not investments milestone_tags" do
+      budget.investments << investment1
+
+      expect(budget.milestone_tags).to eq([])
+    end
+
+    it "returns array of investments milestone_tags" do
+      investment1.milestone_tag_list = "tag1"
+      investment1.save
+      budget.investments << investment1
+
+      expect(budget.milestone_tags).to eq(["tag1"])
+    end
+
+    it "returns uniq list of investments milestone_tags" do
+      investment1.milestone_tag_list = "tag1"
+      investment1.save
+      investment2.milestone_tag_list = "tag1"
+      investment2.save
+      budget.investments << investment1
+      budget.investments << investment2
+
+      expect(budget.milestone_tags).to eq(["tag1"])
+    end
+
+    it "returns tags only for winner investments" do
+      investment1.milestone_tag_list = "tag1"
+      investment1.save
+      investment3.milestone_tag_list = "tag2"
+      investment3.save
+      budget.investments << investment1
+      budget.investments << investment3
+
+      expect(budget.milestone_tags).to eq(["tag1"])
     end
   end
 end

@@ -1,6 +1,6 @@
 require "rails_helper"
 
-feature "Polls" do
+describe "Polls" do
   let!(:proposal) { create(:proposal, :draft) }
 
   before do
@@ -153,6 +153,34 @@ feature "Polls" do
     end
   end
 
+  scenario "Can destroy poll without responses", :js do
+    poll = create(:poll, related: proposal)
+
+    visit proposal_dashboard_polls_path(proposal)
+
+    within("#poll_#{poll.id}") do
+      accept_confirm { click_link "Delete survey" }
+    end
+
+    expect(page).to have_content("Survey deleted successfully")
+    expect(page).not_to have_content(poll.name)
+  end
+
+  scenario "Can't destroy poll with responses", :js  do
+    poll = create(:poll, related: proposal)
+    create(:poll_question, poll: poll)
+    create(:poll_voter, poll: poll)
+
+    visit proposal_dashboard_polls_path(proposal)
+
+    within("#poll_#{poll.id}") do
+      accept_confirm { click_link "Delete survey" }
+    end
+
+    expect(page).to have_content("You cannot destroy a survey that has responses")
+    expect(page).to have_content(poll.name)
+  end
+
   scenario "View results not available for upcoming polls" do
     poll = create(:poll, related: proposal, starts_at: 1.week.from_now)
 
@@ -195,6 +223,19 @@ feature "Polls" do
     page.driver.browser.switch_to.window page.driver.browser.window_handles.last do
       expect(page).to have_current_path(results_proposal_poll_path(proposal, poll))
     end
+  end
+
+  scenario "Enable and disable results", :js do
+    create(:poll, related: proposal)
+
+    visit proposal_dashboard_polls_path(proposal)
+    check "Show results"
+
+    expect(find_field("Show results")).to be_checked
+
+    uncheck "Show results"
+
+    expect(find_field("Show results")).not_to be_checked
   end
 
   scenario "Poll card" do

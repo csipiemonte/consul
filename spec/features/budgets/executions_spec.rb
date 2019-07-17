@@ -1,8 +1,8 @@
 require "rails_helper"
 
-feature "Executions" do
+describe "Executions" do
 
-  let(:budget)  { create(:budget, phase: "finished") }
+  let(:budget)  { create(:budget, :finished) }
   let(:group)   { create(:budget_group, budget: budget) }
   let(:heading) { create(:budget_heading, group: group) }
 
@@ -10,6 +10,22 @@ feature "Executions" do
   let!(:investment2) { create(:budget_investment, :winner,       heading: heading) }
   let!(:investment4) { create(:budget_investment, :winner,       heading: heading) }
   let!(:investment3) { create(:budget_investment, :incompatible, heading: heading) }
+
+  scenario "finds budget by id or slug" do
+    budget.update(slug: "budget_slug")
+
+    visit budget_executions_path("budget_slug")
+    within(".budgets-stats") { expect(page).to have_content budget.name }
+
+    visit budget_executions_path(budget)
+    within(".budgets-stats") { expect(page).to have_content budget.name }
+
+    visit budget_executions_path("budget_slug")
+    within(".budgets-stats") { expect(page).to have_content budget.name }
+
+    visit budget_executions_path(budget)
+    within(".budgets-stats") { expect(page).to have_content budget.name }
+  end
 
   scenario "only displays investments with milestones" do
     create(:milestone, milestoneable: investment1)
@@ -53,7 +69,7 @@ feature "Executions" do
     click_link "See results"
     click_link "Milestones"
 
-    expect(page).not_to have_content("No winner investments in this state")
+    expect(page).to have_content("No winner investments in this state")
 
     select "Executed (0)", from: "status"
 
@@ -219,6 +235,52 @@ feature "Executions" do
       select "Bidding (0)", from: "status"
       expect(page).not_to have_content(investment1.title)
     end
+
+    scenario "by milestone tag, only display tags for winner investments", :js do
+      create(:milestone, milestoneable: investment1, status: status1)
+      create(:milestone, milestoneable: investment2, status: status2)
+      create(:milestone, milestoneable: investment3, status: status2)
+      investment1.milestone_tag_list.add("tag1", "tag2")
+      investment1.save
+      investment2.milestone_tag_list.add("tag2")
+      investment2.save
+      investment3.milestone_tag_list.add("tag2")
+      investment3.save
+
+      visit budget_path(budget)
+
+      click_link "See results"
+      click_link "Milestones"
+
+      expect(page).to have_content(investment1.title)
+      expect(page).to have_content(investment2.title)
+
+      select "tag2 (2)", from: "milestone_tag"
+
+      expect(page).to have_content(investment1.title)
+      expect(page).to have_content(investment2.title)
+
+      select "Studying the project (1)", from: "status"
+
+      expect(page).to have_content(investment1.title)
+      expect(page).not_to have_content(investment2.title)
+
+      select "Bidding (1)", from: "status"
+
+      expect(page).not_to have_content(investment1.title)
+      expect(page).to have_content(investment2.title)
+
+      select "tag1 (1)", from: "milestone_tag"
+
+      expect(page).not_to have_content(investment1.title)
+      expect(page).not_to have_content(investment2.title)
+
+      select "All (2)", from: "milestone_tag"
+
+      expect(page).not_to have_content(investment1.title)
+      expect(page).to have_content(investment2.title)
+    end
+
   end
 
   context "Heading Order" do

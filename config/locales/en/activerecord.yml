@@ -1,4 +1,8 @@
 en:
+  attributes:
+    results_enabled: "Show results"
+    stats_enabled: "Show stats"
+    advanced_stats_enabled: "Show advanced stats"
   activerecord:
     models:
       activity:
@@ -67,9 +71,6 @@ en:
       proposal:
         one: "Citizen proposal"
         other: "Citizen proposals"
-      spending_proposal:
-        one: "Investment project"
-        other: "Investment projects"
       site_customization/page:
         one: Custom page
         other: Custom pages
@@ -79,6 +80,9 @@ en:
       site_customization/content_block:
         one: Custom content block
         other: Custom content blocks
+      document:
+        one: Document
+        other: Documents
       legislation/process:
         one: "Process"
         other: "Processes"
@@ -133,6 +137,9 @@ en:
         description_finished: "Description when the budget is finished"
         phase: "Phase"
         currency_symbol: "Currency"
+        budget_milestone_tags: "Milestone tags"
+        budget_valuation_tags: "Valuation tags"
+        help_link: "Help link"
       budget/investment:
         heading_id: "Heading"
         title: "Title"
@@ -180,6 +187,7 @@ en:
         title: "Title"
         question: "Question"
         description: "Description"
+        selected: "Mark as selected"
         terms_of_service: "Terms of service"
       user:
         login: "Email or username"
@@ -195,13 +203,6 @@ en:
       organization:
         name: "Name of organisation"
         responsible_name: "Person responsible for the group"
-      spending_proposal:
-        administrator_id: "Administrator"
-        association_name: "Association name"
-        description: "Description"
-        external_url: "Link to additional documentation"
-        geozone_id: "Scope of operation"
-        title: "Title"
       poll:
         name: "Name"
         starts_at: "Start Date"
@@ -354,6 +355,11 @@ en:
       link:
         label: Title
         url: Link
+      valuator:
+        description: Description
+        valuator_group_id: Valuator group
+        can_comment: Can create comments
+        can_edit_dossier: Can edit dossiers
     errors:
       models:
         user:

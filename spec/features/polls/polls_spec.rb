@@ -1,6 +1,6 @@
 require "rails_helper"
 
-feature "Polls" do
+describe "Polls" do
 
   context "Concerns" do
     it_behaves_like "notifiable in-app", Poll
@@ -114,7 +114,7 @@ feature "Polls" do
 
       visit polls_path
 
-      expect(page).to have_link("Poll with stats", href: stats_poll_path(poll))
+      expect(page).to have_link("Poll with stats", href: stats_poll_path(poll.slug))
     end
 
     scenario "Poll title link to results if enabled" do
@@ -122,13 +122,23 @@ feature "Polls" do
 
       visit polls_path
 
-      expect(page).to have_link("Poll with results", href: results_poll_path(poll))
+      expect(page).to have_link("Poll with results", href: results_poll_path(poll.slug))
     end
   end
 
   context "Show" do
     let(:geozone) { create(:geozone) }
     let(:poll) { create(:poll, summary: "Summary", description: "Description") }
+
+    scenario "Visit path with id" do
+      visit poll_path(poll.id)
+      expect(page).to have_current_path(poll_path(poll.id))
+    end
+
+    scenario "Visit path with slug" do
+      visit poll_path(poll.slug)
+      expect(page).to have_current_path(poll_path(poll.slug))
+    end
 
     scenario "Show answers with videos" do
       question = create(:poll_question, poll: poll)
@@ -221,11 +231,12 @@ feature "Polls" do
 
       visit poll_path(expired_poll)
 
-      expect(page).to have_content("Luke")
-      expect(page).to have_content("Leia")
-      expect(page).not_to have_link("Luke")
-      expect(page).not_to have_link("Leia")
-
+      within("#poll_question_#{question.id}_answers") do
+        expect(page).to have_content("Luke")
+        expect(page).to have_content("Leia")
+        expect(page).not_to have_link("Luke")
+        expect(page).not_to have_link("Leia")
+      end
       expect(page).to have_content("This poll has finished")
     end
 
@@ -241,10 +252,12 @@ feature "Polls" do
 
       visit poll_path(poll)
 
-      expect(page).to have_content("Vader")
-      expect(page).to have_content("Palpatine")
-      expect(page).not_to have_link("Vader")
-      expect(page).not_to have_link("Palpatine")
+      within("#poll_question_#{question.id}_answers") do
+        expect(page).to have_content("Vader")
+        expect(page).to have_content("Palpatine")
+        expect(page).not_to have_link("Vader")
+        expect(page).not_to have_link("Palpatine")
+      end
     end
 
     scenario "Level 2 users reading a same-geozone poll" do
@@ -258,8 +271,10 @@ feature "Polls" do
       login_as(create(:user, :level_two, geozone: geozone))
       visit poll_path(poll)
 
-      expect(page).to have_link("Han Solo")
-      expect(page).to have_link("Chewbacca")
+      within("#poll_question_#{question.id}_answers") do
+        expect(page).to have_link("Han Solo")
+        expect(page).to have_link("Chewbacca")
+      end
     end
 
     scenario "Level 2 users reading a all-geozones poll" do
@@ -270,8 +285,10 @@ feature "Polls" do
       login_as(create(:user, :level_two))
       visit poll_path(poll)
 
-      expect(page).to have_link("Han Solo")
-      expect(page).to have_link("Chewbacca")
+      within("#poll_question_#{question.id}_answers") do
+        expect(page).to have_link("Han Solo")
+        expect(page).to have_link("Chewbacca")
+      end
     end
 
     scenario "Level 2 users who have already answered" do
@@ -284,8 +301,10 @@ feature "Polls" do
       login_as user
       visit poll_path(poll)
 
-      expect(page).to have_link("Han Solo")
-      expect(page).to have_link("Chewbacca")
+      within("#poll_question_#{question.id}_answers") do
+        expect(page).to have_link("Han Solo")
+        expect(page).to have_link("Chewbacca")
+      end
     end
 
     scenario "Level 2 users answering", :js do
@@ -301,10 +320,12 @@ feature "Polls" do
       login_as user
       visit poll_path(poll)
 
-      click_link "Han Solo"
+      within("#poll_question_#{question.id}_answers") do
+        click_link "Han Solo"
 
-      expect(page).not_to have_link("Han Solo")
-      expect(page).to have_link("Chewbacca")
+        expect(page).not_to have_link("Han Solo")
+        expect(page).to have_link("Chewbacca")
+      end
     end
 
     scenario "Level 2 users changing answer", :js do
@@ -320,15 +341,17 @@ feature "Polls" do
       login_as user
       visit poll_path(poll)
 
-      click_link "Han Solo"
+      within("#poll_question_#{question.id}_answers") do
+        click_link "Han Solo"
 
-      expect(page).not_to have_link("Han Solo")
-      expect(page).to have_link("Chewbacca")
+        expect(page).not_to have_link("Han Solo")
+        expect(page).to have_link("Chewbacca")
 
-      click_link "Chewbacca"
+        click_link "Chewbacca"
 
-      expect(page).not_to have_link("Chewbacca")
-      expect(page).to have_link("Han Solo")
+        expect(page).not_to have_link("Chewbacca")
+        expect(page).to have_link("Han Solo")
+      end
     end
 
     scenario "Level 2 votes, signs out, signs in, votes again", :js do
@@ -343,26 +366,33 @@ feature "Polls" do
 
       login_as user
       visit poll_path(poll)
-      click_link "Han Solo"
 
-      expect(page).not_to have_link("Han Solo")
-      expect(page).to have_link("Chewbacca")
+      within("#poll_question_#{question.id}_answers") do
+        click_link "Han Solo"
 
-      click_link "Sign out"
-      login_as user
-      visit poll_path(poll)
-      click_link "Han Solo"
-
-      expect(page).not_to have_link("Han Solo")
-      expect(page).to have_link("Chewbacca")
+        expect(page).not_to have_link("Han Solo")
+        expect(page).to have_link("Chewbacca")
+      end
 
       click_link "Sign out"
       login_as user
       visit poll_path(poll)
-      click_link "Chewbacca"
+      within("#poll_question_#{question.id}_answers") do
+        click_link "Han Solo"
 
-      expect(page).not_to have_link("Chewbacca")
-      expect(page).to have_link("Han Solo")
+        expect(page).not_to have_link("Han Solo")
+        expect(page).to have_link("Chewbacca")
+      end
+
+      click_link "Sign out"
+      login_as user
+      visit poll_path(poll)
+      within("#poll_question_#{question.id}_answers") do
+        click_link "Chewbacca"
+
+        expect(page).not_to have_link("Chewbacca")
+        expect(page).to have_link("Han Solo")
+      end
     end
   end
 
@@ -422,7 +452,18 @@ feature "Polls" do
       expect(page).to have_content("Questions")
 
       visit stats_poll_path(poll)
+
       expect(page).to have_content("Participation data")
+      expect(page).not_to have_content "Advanced statistics"
+    end
+
+    scenario "Advanced stats enabled" do
+      poll = create(:poll, :expired, stats_enabled: true, advanced_stats_enabled: true)
+
+      visit stats_poll_path(poll)
+
+      expect(page).to have_content "Participation data"
+      expect(page).to have_content "Advanced statistics"
     end
 
     scenario "Don't show poll results and stats if not enabled" do
@@ -482,5 +523,20 @@ feature "Polls" do
       expect(page).not_to have_content("Poll results")
       expect(page).not_to have_content("Participation statistics")
     end
+
+    scenario "Generates navigation links for polls without a slug" do
+      poll = create(:poll, :expired, results_enabled: true, stats_enabled: true)
+      poll.update_column(:slug, nil)
+
+      visit poll_path(poll)
+
+      expect(page).to have_link "Participation statistics"
+      expect(page).to have_link "Poll results"
+
+      click_link "Poll results"
+
+      expect(page).to have_link "Information"
+    end
+
   end
 end

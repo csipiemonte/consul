@@ -51,7 +51,9 @@ class ProposalsController < ApplicationController
     discard_draft
     discard_archived
     load_retired
+    load_selected
     load_featured
+    remove_archived_from_order_links
   end
 
   def vote
@@ -96,8 +98,8 @@ class ProposalsController < ApplicationController
   private
 
     def proposal_params
-      params.require(:proposal).permit(:title, :question, :summary, :description, :external_url,
-                                       :video_url, :responsible_name, :tag_list, :terms_of_service,
+      params.require(:proposal).permit(:title, :summary, :description, :video_url,
+                                       :responsible_name, :tag_list, :terms_of_service,
                                        :geozone_id, :skip_map, image_attributes: image_attributes,
                                        documents_attributes: [:id, :title, :attachment,
                                        :cached_attachment, :user_id, :_destroy],
@@ -127,7 +129,9 @@ class ProposalsController < ApplicationController
     end
 
     def discard_archived
-      @resources = @resources.not_archived unless @current_order == "archival_date"
+      unless @current_order == "archival_date" || params[:selected].present?
+        @resources = @resources.not_archived
+      end
     end
 
     def load_retired
@@ -136,6 +140,14 @@ class ProposalsController < ApplicationController
         @resources = @resources.where(retired_reason: params[:retired]) if Proposal::RETIRE_OPTIONS.include?(params[:retired])
       else
         @resources = @resources.not_retired
+      end
+    end
+
+    def load_selected
+      if params[:selected].present?
+        @resources = @resources.selected
+      else
+        @resources = @resources.not_selected
       end
     end
 
@@ -149,6 +161,10 @@ class ProposalsController < ApplicationController
           @resources = @resources.where("proposals.id NOT IN (?)", @featured_proposals.map(&:id))
         end
       end
+    end
+
+    def remove_archived_from_order_links
+      @valid_orders.delete("archival_date")
     end
 
     def set_view

@@ -1,4 +1,8 @@
 it:
+  attributes:
+    results_enabled: "Vedi risultati"
+    stats_enabled: "Vedi statistiche"
+    advanced_stats_enabled: "Vedi statistiche avanzate"
   activerecord:
     models:
       activity:
@@ -67,9 +71,6 @@ it:
       proposal:
         one: "Proposta cittadina"
         other: "Proposte cittadine"
-      spending_proposal:
-        one: "Proposta di investimento"
-        other: "Progetti di spesa"
       site_customization/page:
         one: Pagina
         other: Pagine
@@ -79,6 +80,9 @@ it:
       site_customization/content_block:
         one: Blocco
         other: Blocchi
+      document:
+        one: Documento
+        other: Documenti
       legislation/process:
         one: "Progetto"
         other: "Progetti"
@@ -122,6 +126,8 @@ it:
         one: Link
         other: Link
     attributes:
+      administrator:
+        description: Descrizione
       budget:
         name: "Nome"
         description_accepting: "Descrizione durante la fase di Accettazione"
@@ -133,6 +139,9 @@ it:
         description_finished: "Descrizione durante la fase della Approvazione del Bilancio / Risultati"
         phase: "Fase"
         currency_symbol: "Valuta"
+        budget_milestone_tags: "Tags di avanzamento"
+        budget_valuation_tags: "Tags di valutazione"
+        help_link: "Link di aiuto"
       budget/investment:
         heading_id: "Voce di bilancio"
         title: "Titolo"
@@ -180,6 +189,7 @@ it:
         title: "Titolo"
         question: "Domanda"
         description: "Descrizione"
+        selected: "Segna come selezionata"
         terms_of_service: "Termini di servizio"
       user:
         login: "Email o nome utente"
@@ -195,13 +205,6 @@ it:
       organization:
         name: "Nome dell'organizzazione"
         responsible_name: "Persona responsabile del collettivo"
-      spending_proposal:
-        administrator_id: "Amministratore"
-        association_name: "Nome dell'associazione"
-        description: "Descrizione"
-        external_url: "Link alla documentazione aggiuntiva"
-        geozone_id: "Ambito di attuazione"
-        title: "Titolo"
       poll:
         name: "Nome"
         starts_at: "Data di apertura"
@@ -343,18 +346,22 @@ it:
         description: Descrizione
         link: Link esterno
         request_to_administrators: Includere nella risorsa un pulsante per inviare un sollecito della risorsa agli amministratori
-        day_offset: Dopo quanti giorni dalla creazione della proposta si desidera che diventi attiva?
-        required_supports: Quanto appoggi deve ricevere la proposta perché si attivi?
+        day_offset: 'Dopo quanti giorni dalla creazione della proposta si vuole che diventi attiva?'
+        required_supports: 'Quanti appoggi deve ricevere la proposta perché diventi attiva?'
         order: È possibile introdurre la posizione impiegata per mostrare all'utente tale azione all'interno dell'elenco delle azioni
         active: Attiva
         action_type: Tipo
       dashboard/administrator_task:
         source: Fonte
         user: Eseguito da
-        executed_at: Eseguito il
       link:
         label: Titolo
         url: Link
+      valuator:
+        description: Descrizione
+        valuator_group_id: Gruppo di valutazione
+        can_comment: È possibile lasciare un commento
+        can_edit_dossier: È possibile modificare i dossier
     errors:
       models:
         user:

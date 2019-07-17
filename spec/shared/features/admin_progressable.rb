@@ -1,11 +1,11 @@
 shared_examples "admin_progressable" do |factory_name, path_name|
   let!(:progressable) { create(factory_name) }
 
-  feature "Manage progress bars" do
+  describe "Manage progress bars" do
     let(:progressable_path) { send(path_name, *resource_hierarchy_for(progressable)) }
 
     let(:path) do
-      polymorphic_path([:admin, *resource_hierarchy_for(progressable.progress_bars.new)])
+      polymorphic_path([:tracking, *resource_hierarchy_for(progressable.progress_bars.new)])
     end
 
     context "Index" do

@@ -9,6 +9,22 @@
       </li>
     <% end %>
 
+    <% if feature?(:debates) %>
+      <li class="section-title <%= "is-active" if controller_name == "debates" %>">
+        <%= link_to admin_debates_path do %>
+          <span class="icon-debates"></span>
+          <strong><%= t("admin.menu.debates") %></strong>
+        <% end %>
+      </li>
+    <% end %>
+
+    <li class="section-title <%= "is-active" if controller_name == "comments" %>">
+      <%= link_to admin_comments_path do %>
+        <span class="icon-comments"></span>
+        <strong><%= t("admin.menu.comments") %></strong>
+      <% end %>
+    </li>
+
     <% if feature?(:polls) %>
       <li class="section-title <%= "is-active" if menu_polls? %>">
         <%= link_to admin_polls_path do %>
@@ -74,20 +90,6 @@
       </li>
     <% end %>
 
-    <% if feature?(:spending_proposals) %>
-      <li class="section-title">
-        <a href="#">
-          <span class="icon-budget"></span>
-          <strong><%= t("admin.menu.title_budgets") %></strong>
-        </a>
-        <ul <%= "class=is-active" if menu_budget? %>>
-          <li <%= "class=is-active" if controller_name == "spending_proposals" %>>
-            <%= link_to t("admin.menu.spending_proposals"), admin_spending_proposals_path %>
-          </li>
-        </ul>
-      </li>
-    <% end %>
-
     <% messages_sections = %w(newsletters emails_download admin_notifications system_emails) %>
     <% messages_menu_active = messages_sections.include?(controller_name) %>
     <li class="section-title" <%= "class=is-active" if messages_menu_active %>>
@@ -134,6 +136,11 @@
         <li <%= "class=is-active" if controller_name == "information_texts" %>>
           <%= link_to t("admin.menu.site_customization.information_texts"), admin_site_customization_information_texts_path %>
         </li>
+
+        <li <%= "class=is-active" if controller_name == "documents" %>>
+          <%= link_to t("admin.menu.site_customization.documents"),
+                      admin_site_customization_documents_path %>
+        </li>
       </ul>
     </li>
 
@@ -150,8 +157,8 @@
         <% end %>
 
         <% if feature?(:debates) %>
-          <li <%= "class=is-active" if controller_name == "debates" %>>
-            <%= link_to t("admin.menu.hidden_debates"), admin_debates_path %>
+          <li <%= "class=is-active" if controller_name == "hidden_debates" %>>
+            <%= link_to t("admin.menu.hidden_debates"), admin_hidden_debates_path %>
           </li>
         <% end %>
 
@@ -161,8 +168,8 @@
           </li>
         <% end %>
 
-        <li <%= "class=is-active" if controller_name == "comments" %>>
-          <%= link_to t("admin.menu.hidden_comments"), admin_comments_path %>
+        <li <%= "class=is-active" if controller_name == "hidden_comments" %>>
+          <%= link_to t("admin.menu.hidden_comments"), admin_hidden_comments_path %>
         </li>
 
         <li <%= "class=is-active" if controller_name == "proposal_notifications" %>>
@@ -205,6 +212,10 @@
           <%= link_to t("admin.menu.valuators"), admin_valuators_path %>
         </li>
 
+        <li <%= "class=is-active" if controller_name == "trackers" %>>
+          <%= link_to t("admin.menu.trackers"), admin_trackers_path %>
+        </li>
+
         <li <%= "class=is-active" if controller_name == "managers" %>>
           <%= link_to t("admin.menu.managers"), admin_managers_path %>
         </li>
@@ -219,6 +230,50 @@
       <%= link_to admin_stats_path do %>
         <span class="icon-stats"></span><%= t("admin.menu.stats") %>
       <% end %>
+    </li>
+
+    <li class="section-title">
+      <a href="#">
+        <span class="icon-arrow-down"></span>
+        <strong><%= t("admin.menu.download_settings.title") %></strong>
+      </a>
+      <ul <%= "class=is-active" if controller_name == "download_settings" %>>
+
+        <% if feature?(:debates) %>
+          <li <%= "class=is-active" if !@download_resource.nil? && @download_resource == "debates" %>>
+            <%= link_to t("admin.menu.download_settings.debates"), admin_edit_download_settings_path(resource: "debates") %>
+          </li>
+        <% end %>
+
+        <% if feature?(:proposals) %>
+          <li <%= "class=is-active" if !@download_resource.nil? && @download_resource == "proposals" %>>
+            <%= link_to t("admin.menu.download_settings.proposals"), admin_edit_download_settings_path(resource: "proposals") %>
+          </li>
+        <% end %>
+
+        <% if feature?(:legislation) %>
+          <li <%= "class=is-active" if !@download_resource.nil? && @download_resource == "legislation_processes" %>>
+            <%= link_to t("admin.menu.download_settings.legislation_processes"), admin_edit_download_settings_path(resource: "legislation_processes") %>
+          </li>
+        <% end %>
+
+        <% if feature?(:budgets) %>
+          <li <%= "class=is-active" if !@download_resource.nil? && @download_resource == "budget_investments" %>>
+            <%= link_to t("admin.menu.download_settings.budget_investments"), admin_edit_download_settings_path(resource: "budget_investments") %>
+          </li>
+        <% end %>
+
+        <% if feature?(:budgets) %>
+          <li <%= "class=is-active" if !@download_resource.nil? && @download_resource == "budget_investments" %>>
+            <%= link_to t("admin.menu.download_settings.budget_investments_milestones"), admin_edit_download_settings_path(resource: "budget_investments", config: 1) %>
+          </li>
+        <% end %>
+
+        <li <%= "class=is-active" if !@download_resource.nil? && @download_resource == "comments" %>>
+          <%= link_to t("admin.menu.download_settings.comments"), admin_edit_download_settings_path(resource: "comments") %>
+        </li>
+
+      </ul>
     </li>
 
     <li class="section-title">
