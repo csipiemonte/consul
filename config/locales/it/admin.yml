@@ -113,12 +113,12 @@ it:
           one: "1 valutatore selezionato"
           other: "%{count} valutatori selezionati"
         trackers:
-          zero: "Seleziona gestori d'avanzamento"
-          one: "1 gestore d'avanzamento selezionato"
-          other: "%{count} gestori d'avanzamento selezionati"
+          zero: "Seleziona gestori di tracciamento"
+          one: "1 gestore di tracciamento selezionato"
+          other: "%{count} gestori di tracciamento selezionati"
         empty_administrators: "Non sono presenti amministratori"
         empty_valuators: "Non sono presenti valutatori"
-        empty_trackers: "Non sono presenti gestori d'avanzamento"
+        empty_trackers: "Non sono presenti gestori di tracciamento"
         name: "Nome"
         selected: "Selezionato"
         cancel: "Annulla"
@@ -251,7 +251,7 @@ it:
           author: Autore
         cannot_calculate_winners: Il bilancio deve essere nelle fasi "Votazione finale", "Votazione conclusa" o "Risultati" per poter calcolare le proposte vincitrici
         see_results: "Mostra risultati"
-        milestone_tags_filter_all: "Tutti i tags di avanzamento"
+        milestone_tags_filter_all: "Tutti i tags di tracciamento"
       show:
         assigned_admin: Amministratore assegnato
         assigned_valuators: Valutatori assegnati
@@ -281,7 +281,7 @@ it:
           "false": "No"
         valuator_groups: "Gruppi di valutatori"
         preview: Anteprima
-        assigned_trackers: "Gestori d'avanzamento assegnati"
+        assigned_trackers: "Gestori di tracciamento assegnati"
       edit:
         classification: Classifica
         compatibility: Compatibilità
@@ -296,12 +296,12 @@ it:
         tags_placeholder: "Scrivi i tags che desideri separati da virgole (,)"
         undefined: Da definire
         user_groups: "Gruppi"
-        assigned_trackers: "Gestori d'avanzamento"
-        milestone_tags: Tags d'Avanzamento
+        assigned_trackers: "Gestori di tracciamento"
+        milestone_tags: Tags di Tracciamento
       search_unfeasible: Cerca irrealizzabili
     milestones:
       index:
-        milestone_tags: Tags di Avanzamento
+        milestone_tags: Tags di Tracciamento
     statuses:
       index:
         title: Stati della prosecuzione
@@ -565,8 +565,6 @@ it:
           back: Indietro
           id: Id
           supports: Appoggi totali
-          select: Seleziona
-          selected: Selezionata
         form:
           custom_categories: Categorie
           custom_categories_description: "Categorie che l'utente può selezionare durante la creazione della proposta. Massimo 160 caratteri."
@@ -701,16 +699,17 @@ it:
       officials: Incarichi pubblici
       organizations: Organizzazioni
       settings: Configurazione globale
-      spending_proposals: Proposte di investimento
       stats: Statistiche
       signature_sheets: Fogli firma
       site_customization:
+        documents: Documenti
         homepage: Homepage
         pages: Pagine personalizzate
         images: Immagini personalizzate
         content_blocks: Blocchi personalizzati
         information_texts: Testi personalizzati
         information_texts_menu:
+          basic: "Personalizzazione base"
           debates: "Dibattiti"
           community: "Comunità"
           proposals: "Proposte"
@@ -724,21 +723,32 @@ it:
           content_block:
             update: "Aggiorna Blocco"
       title_moderated_content: Contenuto moderato
-      title_budgets: Bilanci
       title_profiles: Profili
       title_settings: Configurazione
       title_site_customization: Contenuto del sito
       title_booths: Urne di votazione
       legislation: Progetti
       users: Utenti
+      trackers: "Gestori di tracciamento"
       dashboard: Barra di avanzamento delle proposte
       administrator_tasks: Risorse con solleciti
       dashboard_actions: Risorse e azioni
+      download_settings:
+        title: "Configurazione del download"
+        debates: "Dibattiti"
+        proposals: "Proposte"
+        legislation_processes: "Progetti"
+        budget_investments: "Bilanci partecipativi"
+        comments: "Commenti"
+        budget_investments_milestones: "Bilanci partecipativi (Avanzamento)"
+      debates: "Dibattiti"
+      comments: "Commenti"
     administrators:
       index:
         title: Amministratori
         name: Nome
         email: Email
+        description: Descrizione
         id: ID Amministratore
         no_administrators: Non ci sono amministratori.
       administrator:
@@ -747,6 +757,9 @@ it:
         restricted_removal: "Spiacenti, non è possibile rimuovere se stessi dagli amministratori"
       search:
         title: "Amministratori: Ricerca utenti"
+      form:
+        edit_title: "Modifica amministratore"
+        updated: "Amministratore aggiornato correttamente"
     moderators:
       index:
         title: Moderatori
@@ -761,6 +774,7 @@ it:
     segment_recipient:
       all_users: Tutti gli Utenti
       administrators: Amministratori
+      all_proposal_authors: Utenti autori di proposte (comprese quelle archiviate e ritirate)
       proposal_authors: Utenti autori di proposte
       investment_authors: Utenti autori di progetti di spesa negli attuali bilanci
       feasible_and_undecided_investment_authors: Utenti autori di progetti di spesa fattibili o da decidere negli attuali bilanci
@@ -788,6 +802,8 @@ it:
       new:
         title: Nuova newsletter
         from: Indirizzo di posta elettronica che apparirà come mittente della newsletter
+        header_footer_help_text_html: "L'intestazione e il piè di pagina sono gli stessi in tutte le email, li si può modificare in <code>app/views/layouts/mailer_header</code> e in <code>app/views/layouts/mailer_footer</code>.<br>È possibile sostituire l'immagine dell'intestazione in %{link}."
+        image_link: "personalizza immagini"
       edit:
         title: Modifica newsletter
       show:
@@ -803,7 +819,7 @@ it:
         from: Indirizzo di posta elettronica che apparirà come mittente della newsletter
         body: Contenuto della email
         body_help_text: Così è come gli utenti vedranno la email
-        send_alert: "Confermi di voler spedire questa newsletter a %{n} utenti?"
+        send_alert: 'Confermi di voler spedire questa newsletter a %{n} utenti?'
     admin_notifications:
       create_success: Notifica creata correttamente
       update_success: Notifica aggiornata correttamente
@@ -840,7 +856,7 @@ it:
         segment_recipient: Destinatari
         preview_guide: "Così è come gli utenti vedranno la notifica:"
         sent_guide: "Così è come gli utenti vedono la notifica:"
-        send_alert: "Confermi di voler inviare questa notifica a %{n} utenti?"
+        send_alert: 'Confermi di voler inviare questa notifica a %{n} utenti?'
     system_emails:
       preview_pending:
         action: Anteprima in attesa
@@ -883,13 +899,17 @@ it:
       user_invite:
         title: "Invito di utenti"
         description: "Inviato alla persona che è stata invitata a registrarsi su DecidiTorino."
+      evaluation_comment:
+        title: "Nuovo commento di valutazione"
+        description: "Inviato ad amministratori e valutatori del bilancio."
       edit_info: "Puoi modificare questa email nel"
       message_title: "Titolo del messaggio"
       message_body: "Questo è un eesempio di contenuto del messaggio."
       alert:
-        no_investments: "Non è stato creato nessun progetto di spesa. È necessario un qualche esempio per poter mostrare l'anteprima della email."
-        no_comments: "Non è stato creato nessun commento. È necessario un qualche esempio per poter mostrare l'anteprima della email."
-        no_replies: "Non è stato creata nessuna risposta. È necessario un qualche esempio per poter mostrare l'anteprima della email."
+        no_investments: "Non è stato creato alcun progetto di spesa. È necessario un qualche esempio per poter mostrare l'anteprima della email."
+        no_comments: "Non è stato creato alcun commento. È necessario un qualche esempio per poter mostrare l'anteprima della email."
+        no_replies: "Non è stato creata alcuna risposta. È necessario un qualche esempio per poter mostrare l'anteprima della email."
+        no_evaluation_comments: "Non è stato creato alcun commento di valutazione. È necessario un qualche esempio per poter mostrare l'anteprima della email."
     emails_download:
       index:
         title: Scarica email
@@ -907,30 +927,25 @@ it:
         valuator_groups: "Gruppi di valutatori"
         group: "Gruppo"
         no_group: "Nessun gruppo"
+        abilities: "Permessi"
+        can_comment: "Può commentare"
+        can_edit_dossier: "Può modificare i dossier"
       valuator:
         add: Aggiungi come valutatore
         delete: Elimina
       search:
         title: "Valutatori: Ricerca utenti"
-      summary:
-        title: Riepilogo della valutazione dei progetti di spesa
-        valuator_name: Valutatore
-        finished_and_feasible_count: Concluse realizzabili
-        finished_and_unfeasible_count: Concluse non realizzabili
-        finished_count: Concluse
-        in_evaluation_count: In valutazione
-        total_count: Totale
-        cost: Costo totale
       form:
         edit_title: "Valutatori: Modifica valutatore"
-        update: "Aggiorna valutatore"
         updated: "Valutatore aggiornato correttamente"
       show:
         description: "Descrizione"
         email: "Email"
         group: "Gruppo"
+        abilities: "Permessi"
         no_description: "Senza descrizione"
         no_group: "Senza gruppo"
+        no_abilities: "Senza permessi"
     valuator_groups:
       index:
         title: "Gruppi di valutatori"
@@ -958,6 +973,7 @@ it:
         email_placeholder: Cerca utente per email
         search: Cerca
         user_not_found: Utente non trovato
+        help: "Per aggiungere o eliminare Presidenti di seggio utilizza lo strumento di ricerca presente qui sotto."
     poll_officer_assignments:
       index:
         officers_title: "Elenco dei presidenti di seggio assegnati"
@@ -1043,7 +1059,7 @@ it:
     polls:
       index:
         title: "Elenco delle votazioni"
-        no_polls: "Non ci sono votazioni in programma."
+        no_polls: "Non sono presenti votazioni."
         create: "Crea votazione"
         name: "Nome"
         dates: "Date"
@@ -1052,10 +1068,6 @@ it:
         geozone_restricted: "Ristretta alle circoscrizioni"
       new:
         title: "Nuova votazione"
-        show_results_and_stats: "Mostra risultati e statistiche"
-        show_results: "Mostra risultati"
-        show_stats: "Mostra statistiche"
-        results_and_stats_reminder: "Mettendo la spunta su questi box i risultati e/o le statistiche di questa votazione saranno di dominio pubblico e potranno essere visti da tutti gli utenti."
         submit_button: "Crea votazione"
       edit:
         title: "Modifica votazione"
@@ -1074,6 +1086,10 @@ it:
       flash:
         question_added: "Domanda aggiunta a questa votazione"
         error_on_question_added: "Non si è potuto assegnare la domanda"
+      destroy:
+        alert: "Questa azione eliminerà la votazione e tutte le domande associate."
+        success_notice: "Votazione eliminata correttamente"
+        unable_notice: "Non è possibile eliminare votazioni che hanno voti"
     questions:
       index:
         title: "Domande delle votazioni"
@@ -1155,7 +1171,7 @@ it:
       result:
         table_whites: "Schede totalmente bianche"
         table_nulls: "Schede nulle"
-        table_total: "Schede totali"
+        table_total: "Schede valide"
         table_answer: Risposta
         table_votes: Voti
       results_by_booth:
@@ -1186,7 +1202,7 @@ it:
         edit: "Modifica urna"
     officials:
       edit:
-        destroy: Elimina condizione di "Carica Pubblica"
+        destroy: Elimina condizione di 'Carica Pubblica'
         title: "Carica Pubblica: Modifica utente"
       flash:
         official_destroyed: "Dati salvati: l'utente non è più una Carica Pubblica"
@@ -1243,9 +1259,16 @@ it:
         id: ID
         author: Autore
         milestones: Milestone
+        select: Seleziona
+        selected: Selezionata
         no_proposals: Non sono presenti proposte.
+        link: "Scarica proposte"
       show:
         create_question: Aggiungere questa proposta ad una votazione
+      form:
+        update: Aggiorna proposta cittadina
+      update:
+        notice: Proposta aggiornata correttamente
     hidden_proposals:
       index:
         filter: Filtro
@@ -1271,6 +1294,7 @@ it:
         title: Configurazione globale
         update_setting: Aggiorna
         participation_processes: "Processi partecipativi"
+        images_and_documents: "Immagini e documenti"
         feature_flags: Funzionalità
         features:
           enabled: "Funzionalità attivata"
@@ -1279,7 +1303,7 @@ it:
           disable: "Disattiva"
         map:
           title: Configurazione della mappa
-          help: Qui puoi personalizzare come la mappa viene visualizzata dagli utenti. Trascina il segnaposto o clicca in qualunque punto della mappa, imposta lo zoom desiderato e clicca sul tasto "Aggiorna".
+          help: Qui puoi personalizzare come la mappa viene visualizzata dagli utenti. Trascina il segnaposto o clicca in qualunque punto della mappa, imposta lo zoom desiderato e clicca sul tasto 'Aggiorna'.
           flash:
             update: Configurazione della mappa aggiornata con successo.
           form:
@@ -1308,9 +1332,6 @@ it:
       proposal_search:
         button: Cerca
         placeholder: Cerca proposte per titolo, codice, descrizione o domanda
-      spending_proposal_search:
-        button: Cerca
-        placeholder: Cerca proposte per titolo o descrizione
       user_search:
         button: Cerca
         placeholder: Cerca utente per nome o email
@@ -1329,62 +1350,8 @@ it:
       created_at: Data di creazione
       delete: Elimina
       color_help: Formato esadecimale
-    spending_proposals:
-      index:
-        geozone_filter_all: Tutti gli ambiti di attuazione
-        administrator_filter_all: Tutti gli amministratori
-        valuator_filter_all: Tutti i valutatori
-        tags_filter_all: Tutti i tags
-        filters:
-          valuation_open: Aperte
-          without_admin: Senza amministratore
-          managed: In elaborazione
-          valuating: In valutazione
-          valuation_finished: Valutazione terminata
-          all: Tutte
-        title: Proposte di investimento per bilanci partecipativi
-        assigned_admin: Amministratore assegnato
-        no_admin_assigned: Senza admin assegnato
-        no_valuators_assigned: Senza valutatore
-        summary_link: "Sommario delle proposte"
-        valuator_summary_link: "Sommario dei valutatori"
-        feasibility:
-          feasible: "Realizzabile (%{price})"
-          not_feasible: "Non realizzabile"
-          undefined: "Non definito"
-      show:
-        assigned_admin: Amministratore assegnato
-        assigned_valuators: Valutatori assegnati
-        back: Indietro
-        classification: Classifica
-        heading: "Proposta di investimento %{id}"
-        edit: Modifica
-        edit_classification: Modifica classifica
-        association_name: Associazione
-        by: Autore
-        sent: Data
-        geozone: Ambito
-        dossier: Rapporto
-        edit_dossier: Modifica rapporto
-        tags: Tags
-        undefined: Da definire
-      edit:
-        classification: Classifica
-        assigned_valuators: Valutatori
-        submit_button: Aggiorna
-        tags: Tags
-        tags_placeholder: "Scrivi i tags che desideri separati da virgole (,)"
-        undefined: Non definito
-      summary:
-        title: Sommario delle proposte di investimento
-        title_proposals_with_supports: Sommario per le proposte che hanno superato la fase degli appoggi
-        geozone_name: Ambito della città
-        finished_and_feasible_count: Terminate realizzabili
-        finished_and_unfeasible_count: Terminate non realizzabili
-        finished_count: Terminate
-        in_evaluation_count: In valutazione
-        total_count: Totale
-        cost_for_geozone: Costo totale
+      show_results_and_stats: "Vedi risultati e statistiche"
+      results_and_stats_reminder: "Mettendo la spunta su questi box i risultati e/o le statistiche di questa votazione saranno di dominio pubblico e potranno essere visti da tutti gli utenti."
     geozones:
       index:
         title: Zone
@@ -1438,6 +1405,10 @@ it:
           one: "È presente %{count} firma non valida"
           other: "Sono presenti %{count} firme non valide"
         unverified_error: (Non verificate in Anagrafe)
+        voted:
+          zero: "Non sono presenti voti associati alle firme verificate."
+          one: "È presente %{count} voto associato alle firme verificate."
+          other: "Sono presenti %{count} voti associati alle firme verificate."
         loading: "Sono ancora presenti firme in corso di verifica presso l'Anagrafe, per cortesia aggiorna la pagina fra qualche istante"
     stats:
       show:
@@ -1451,7 +1422,6 @@ it:
           proposals: Proposte
           budgets: Bilanci aperti
           budget_investments: Progetti di spesa
-          spending_proposals: Proposte di investimento
           unverified_users: Utenti da verificare
           user_level_three: Utenti di livello tre
           user_level_two: Utenti di livello due
@@ -1460,13 +1430,34 @@ it:
           verified_users_who_didnt_vote_proposals: Utenti verificati che non hanno votato proposte
           visits: Visite
           votes: Voti
-        spending_proposals_title: Proposte di investimento
         budgets_title: Bilanci partecipativi
-        visits_title: Visite
+        participatory_budgets: Bilanci Partecipativi
         direct_messages: Messaggi diretti
         proposal_notifications: Notifiche di proposte
         incomplete_verifications: Verifiche incomplete
         polls: Votazioni
+      graph:
+        debate_created: Dibattiti
+        visit: Visite
+        level_2_user: Utenti livello 2
+        proposal_created: Proposte Cittaadine
+      budgets:
+        no_data_before_balloting_phase: "Non sono presenti dati da visualizzare fino a quando non sarà aperta la fase di votazione."
+        title: "Bilanci partecipativi - Statistiche di partecipazione"
+        supporting_phase: Fase degli appoggi
+        balloting_phase: Votazione finale
+      budget_balloting:
+        title: "Statistiche votazione finale"
+        vote_count: Voti
+        participant_count: Partecipanti
+        votes_per_heading: Voti per voce
+        participants_per_district: Partecipanti per distretto
+      budget_supporting:
+        title: "Statistiche fase degli appoggi"
+        headings: Voci
+        users: Utenti
+        vote_count: Voti
+        participant_count: Partecipanti
       direct_messages:
         title: Messaggi diretti
         total: Totale
@@ -1583,6 +1574,7 @@ it:
           see_page: Vedi pagina
         new:
           title: Pagina nuova
+          slug_help_html: "Testo che identifica questa pagina all'interno della URL, per esempio <code>https://www.deciditorino.it/slug-della-pagina</code>"
         page:
           created_at: Creata
           status: Stato
@@ -1639,3 +1631,36 @@ it:
     translations:
       remove_language: Elimina lingua
       add_language: Aggiungi lingua
+    change_log:
+      title: "Cronologia"
+      id: "ID"
+      field: "Campo"
+      new_value: "Valore nuovo"
+      old_value: "Valore precedente"
+      edited_at: "Modificato il"
+      edited_by: "Modificato da"
+      actions: "Azioni"
+      empty: "Non sono presenti modifiche registrate"
+    trackers:
+      index:
+        title: Gestori di tracciamento
+        name: Nome
+        email: Email
+        description: Descrizione
+        no_description: Senza descrizione
+        no_trackers: Non sono presenti gestori di tracciamento.
+      tracker:
+        add: "Aggiungi gestore di tracciamento"
+      form:
+        update: "Aggiorna gestore"
+        updated: "Gestore di tracciamento aggiornato correttamente."
+        edit_title: "Gestori di tracciamento: Modifica gestore"
+      show:
+        email: Email
+        description: Descrizione
+        no_description: Senza descrizione.
+      search:
+        title: Gestori di tracciamento
+    progress_bars:
+      index:
+        title: "Barre di avanzamento"
