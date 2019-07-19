@@ -80,6 +80,9 @@ nl:
         feature_6_html: "De Stad behoudt zich het recht voor om voorstellen in aanmerking te nemen die een haalbaarheidsanalyse waard zijn als deze drempels niet bereikt zullen worden op 30/6 en 31/12."
         feature_7: "Nadere informatie zijn beschikbaar in de %{link}"
         feature_7_link: "pagina met veelgestelde vragen"
+    titles:
+      accessibility: Accesibilità
+      conditions: "Condizioni d'uso"
   proposals:
     index:
       section_footer:

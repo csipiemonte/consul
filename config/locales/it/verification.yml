@@ -72,7 +72,7 @@ it:
       edit:
         confirmation_code: Inserisci il codice ricevuto sul tuo telefonino
         resend_sms_link: Richiedere un nuovo codice
-        resend_sms_text: "Non hai ricevuto un SMS con il codice di conferma?"
+        resend_sms_text: 'Non hai ricevuto un SMS con il codice di conferma?'
         submit_button: Invia
         title: SMS di conferma
       new:

@@ -5,7 +5,6 @@ it:
     menu:
       title: Valutazione
       budgets: Bilanci partecipativi
-      spending_proposals: Progetti di investimento
     budgets:
       index:
         title: Bilanci partecipativi
@@ -58,6 +57,7 @@ it:
         responsibles: Responsabili
         assigned_admin: Amministratore assegnato
         assigned_valuators: Valutatori assegnati
+        preview: Anteprima del bilancio
       edit:
         dossier: Fascicolo
         price_html: "Costo (%{currency}) <small>(dato pubblico)</small>"
@@ -77,52 +77,3 @@ it:
         valuate: "Fascicolo aggiornato"
       valuation_comments: Commenti di valutazione
       not_in_valuating_phase: I progetti possono essere valutati solamente durante la fase di valutazione del Bilancio
-    spending_proposals:
-      index:
-        geozone_filter_all: Tutti gli ambiti di esecuzione
-        filters:
-          valuation_open: Aperte
-          valuating: In valutazione
-          valuation_finished: Valutazione conclusa
-        title: Progetti di investimento per bilanci partecipativi
-        edit: Modifica
-      show:
-        back: Indietro
-        heading: Progetto di investimento
-        info: "Info sull'autore"
-        association_name: Associazione
-        by: Inviata da
-        sent: Data di creazione
-        geozone: Ambito di realizzazione
-        dossier: Fascicolo
-        edit_dossier: Modifica fascicolo
-        price: Costo
-        price_first_year: Costo nel primo anno
-        currency: "€"
-        feasibility: Fattibilità
-        feasible: Realizzabile
-        not_feasible: Non realizzabile
-        undefined: Da definire
-        valuation_finished: Relazione conclusa
-        time_scope: Tempo massimo di esecuzione
-        internal_comments: Commenti interni
-        responsibles: Responsabili
-        assigned_admin: Amministratore assegnato
-        assigned_valuators: Valutatori assegnati
-      edit:
-        dossier: Fascicolo
-        price_html: "Costo (%{currency}) <small>(dato pubblico)</small>"
-        price_first_year_html: "Costo nel primo anno (%{currency}) <small>(facoltativo, privato)</small>"
-        currency: "€"
-        price_explanation_html: Relazione di spesa <small>(facoltativo, dato pubblico)</small>
-        feasibility: Fattibilità
-        feasible: Realizzabile
-        not_feasible: Non realizzabile
-        undefined_feasible: Non definito
-        feasible_explanation_html: "Relazione di non fattibilità <small>(qualora lo sia, dato pubblico)</small>"
-        valuation_finished: Fascicolo concluso
-        time_scope_html: Tempo di esecuzione <small>(facoltativo, dato non pubblico)</small>
-        internal_comments_html: Commenti e osservazioni <small>(per i responsabili interni, dato non pubblico)</small>
-        save: Salva modifiche
-      notice:
-        valuate: "Fascicolo aggiornato"

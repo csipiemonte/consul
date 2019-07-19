@@ -80,6 +80,9 @@ it:
         feature_6_html: "La Città si riserva di prendere in considerazione le proposte comunque meritevoli di analisi di fattibilità se tali soglie non saranno raggiunte al 30/6 e al 31/12."
         feature_7: "Ulteriori informazioni sono disponibili nella pagina delle %{link}"
         feature_7_link: "Domande Frequenti"
+    titles:
+      accessibility: Accesibilità
+      conditions: "Condizioni d'uso"
   proposals:
     index:
       section_footer:

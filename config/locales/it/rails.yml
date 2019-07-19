@@ -48,10 +48,6 @@ it:
       - ottobre
       - novembre
       - dicembre
-    order:
-      - :day
-      - :month
-      - :year
   datetime:
     distance_in_words:
       about_x_hours:
@@ -86,7 +82,7 @@ it:
         one: 1 mese
         other: "%{count} mesi"
       x_years:
-        one: "%{count} anno"
+        one: '%{count} anno'
         other: "%{count} anni"
       x_seconds:
         one: 1 secondo

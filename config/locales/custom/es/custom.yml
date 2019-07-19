@@ -80,6 +80,9 @@ es:
         feature_6_html: "La Ciudad se reserva el derecho de tomar en consideración cualquier propuesta que valga la pena analizar si estos umbrales no se alcanzarán el 30/6 y el 31/12."
         feature_7: "Más información están disponibles en la %{link}"
         feature_7_link: "página de las preguntas frecuentes"
+    titles:
+      accessibility: Accesibilità
+      conditions: "Condizioni d'uso"
   proposals:
     index:
       section_footer:

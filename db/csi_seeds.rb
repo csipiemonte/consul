@@ -37,11 +37,6 @@ Setting.create(key: "months_to_archive_proposals", value: "12")
 # Emails under the domain's subdomains will also be included
 Setting.create(key: "email_domain_for_officials", value: "")
 
-# Code to be included at the top (inside <head>) of every page (useful for tracking)
-Setting.create(key: "html.per_page_code_head", value: "")
-
-# Code to be included at the top (inside <body>) of every page
-Setting.create(key: "html.per_page_code_body", value: "")
 
 # Social settings
 Setting.create(key: "twitter_handle", value: "@twitorino")
@@ -64,31 +59,6 @@ Setting.create(key: "meta_title", value: "DecidiTorino")
 Setting.create(key: "meta_description", value: "Citizen Participation and Open Government Application")
 Setting.create(key: "meta_keywords", value: "citizen participation, open government")
 
-Setting.create(key: "process.debates", value: "true")
-Setting.create(key: "process.proposals", value: "true")
-Setting.create(key: "process.polls", value: "true")
-Setting.create(key: "process.budgets", value: "true")
-Setting.create(key: "process.legislation", value: "true")
-
-# Feature flags
-Setting.create(key: "feature.featured_proposals", value: nil)
-Setting.create(key: "feature.spending_proposals", value: nil)
-Setting.create(key: "feature.twitter_login", value: "true")
-Setting.create(key: "feature.facebook_login", value: "true")
-Setting.create(key: "feature.google_login", value: "true")
-Setting.create(key: "feature.shibboleth_login", value: nil)
-Setting.create(key: "feature.public_stats", value: "true")
-Setting.create(key: "feature.signature_sheets", value: "true")
-Setting.create(key: "feature.user.recommendations", value: "true")
-Setting.create(key: "feature.community", value: "false")
-Setting.create(key: "feature.map", value: "true")
-Setting.create(key: "feature.allow_images", value: "true")
-Setting.create(key: "feature.allow_attached_documents", value: "true")
-Setting.create(key: "feature.user.recommendations_on_debates", value: "true")
-Setting.create(key: "feature.user.recommendations_on_proposals", value: "true")
-Setting.create(key: "feature.user.skip_verification", value: "true")
-Setting.create(key: "feature.help_page", value: "true")
-
 # Spending proposals feature flags
 Setting.create(key: "feature.spending_proposal_features.voting_allowed", value: nil)
 
@@ -106,17 +76,8 @@ Setting.create(key: "min_age_to_participate", value: "16")
 # Featured proposals
 Setting.create(key: "featured_proposals_number", value: "3")
 
-# City map feature default configuration (Greenwich)
-Setting.create(key: "map_latitude", value: 45.073179654563646)
-Setting.create(key: "map_longitude", value: 7.680763006210328)
-Setting.create(key: "map_zoom", value: 12)
-
 Setting.create(key: "related_content_score_threshold", value: -0.3)
 Setting.create(key: "hot_score_period_in_days", value: 31)
-
-Setting.create(key: "homepage.widgets.feeds.proposals", value: "true")
-Setting.create(key: "homepage.widgets.feeds.debates", value: "true")
-Setting.create(key: "homepage.widgets.feeds.processes", value: "true")
 
 Setting.create(key: "proposals.successful_proposal_id", value: nil)
 Setting.create(key: "proposals.poll_short_title", value: nil)

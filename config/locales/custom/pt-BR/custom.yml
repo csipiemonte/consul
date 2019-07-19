@@ -80,6 +80,9 @@ pt-BR:
         feature_6_html: "A cidade reserva-se o direito de levar em consideração as propostas que merecem análise de viabilidade se esses limiares não forem alcançados em 30/6 e 31/12."
         feature_7: "Mais informações estão disponíveis no %{link}"
         feature_7_link: "página de FAQ"
+    titles:
+      accessibility: Accesibilità
+      conditions: "Condizioni d'uso"
   proposals:
     index:
       section_footer:

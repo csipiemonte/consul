@@ -1,3 +1,4 @@
+<!-- versione custome statica, differisce da quella in db/pages per la presenza del controllo sull'attivazione del flag che disabilita il processo di cerificazione della utenza. -->
 <% provide :title do %><%= t("pages.titles.conditions") %><% end %>
 <% content_for :canonical do %>
   <%= render "shared/canonical", href: page_url("conditions") %>

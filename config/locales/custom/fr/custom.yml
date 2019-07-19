@@ -80,6 +80,9 @@ fr:
         feature_6_html: "La Ville se réserve le droit de prendre en considération toute proposition méritant une analyse de faisabilité si ces seuils ne sont pas atteints les 30 juin et 31 décembre."
         feature_7: "De plus amples informations sont disponibles %{link}"
         feature_7_link: "FAQ"
+    titles:
+      accessibility: Accesibilità
+      conditions: "Condizioni d'uso"
   proposals:
     index:
       section_footer:

@@ -20,6 +20,7 @@ it:
       index:
         title: Commenti
         comments_about: Commenti su
+        comment_about: "Commento su:"
         see_in_context: Mostra nel contesto
         comments_count:
           one: "%{count} commento"
@@ -96,6 +97,10 @@ it:
         form:
           leave_comment: Lascia la tua risposta
       question:
+        total:
+          zero: Non sono presenti dibattiti
+          one: "%{count} dibattito"
+          other: "%{count} dibattiti"
         comments:
           zero: Senza commenti
           one: "%{count} commento"
@@ -123,3 +128,22 @@ it:
       form:
         tags_label: "Categorie"
       not_verified: "Per votare le proposte %{verify_account}."
+      process_title: Progetto di legislazione collaborativa
+      total:
+        zero: Non sono presenti proposte
+        one: "%{count} proposta"
+        other: "%{count} proposte"
+    summary:
+      title: Sommario
+      votes: voti
+      debates_phase: Fase dei dibattiti
+      proposal_phase: Fase delle proposte
+      comments_phase: Fase dei commenti al testo
+      comments:
+        zero: Non sono presenti commenti
+        one: "%{count} commento"
+        other: "%{count} commenti"
+      most_voted_comments: "Commenti più votati:"
+      no_allegation: Non sono presenti commenti al testo.
+      version: versione
+      process_empty: Il progetto non ha alcuna fase.

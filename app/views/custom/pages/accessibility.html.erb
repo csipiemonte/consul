@@ -1,4 +1,4 @@
-<!-- versione custom, differisce nel tbody di riga 43 e successive (aggiunta verifica attivazione delle sezioni) -->
+<!-- versione custome statica, differisce da quella in db/pages per la presenza del controllo sull'attivazione delle sezioni -->
 <% provide :title do %><%= t("pages.titles.accessibility") %><% end %>
 <% content_for :canonical do %>
   <%= render "shared/canonical", href: page_url("accessibility") %>

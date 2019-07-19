@@ -60,11 +60,6 @@ it:
     meta_keywords_description: 'Parole chiave <meta name="keywords">, impiegate per migliorare la Search Engine Optimization'
     min_age_to_participate: "Età minima necessaria per partecipare"
     min_age_to_participate_description: "Gli utenti che hanno compiuto l'età indicata potranno partecipare a tutti i processi per i quali è necessario disporre di una utenza certificata"
-    analytics_url: "URL per le statistiche esterne"
-    proposal_notification_minimum_interval_in_days: "Periodo minimo (in giorni) per permettere agli autori di proposte di inviare nuove notifiche di una proposta"
-    proposal_notification_minimum_interval_in_days_description: "Il numero di giorni nei quali un utente può inviare una notifica a tutti coloro che appoggiano la sua proposta"
-    direct_message_max_per_day: "Numero massimo di messaggi diretti giornalieri"
-    direct_message_max_per_day_description: "Numero massimo di messaggi diretti che un utente può inviare giornalmente"
     proposals:
       successful_proposal_id: Proposta di successo
       successful_proposal_id_description: Si utilizza questa proposta come riferimento per una proposta di successo per numero di appoggi e sarà visualizzata nella grafica del pannello di controllo
@@ -75,13 +70,18 @@ it:
       poll_link: Link di informazione aggiuntiva
       poll_link_description: Aggiungi un link di informazione aggiuntiva alla funzionalità dei sondaggi del panello di controllo
       email_short_title: Posta elettronica
-      email_short_title_description: Breve descrizione della funzionalità di posta elettronica. Consente agli utenti di inviare una email per diffondere la loro proposta.
+      email_short_title_description: 'Breve descrizione della funzionalità di posta elettronica. Consente agli utenti di inviare una email per diffondere la loro proposta. Il contenuto della email è memorizzato nel file "/app/views/dashboard/mailer/forward.html.erb"'
       email_description: Descrizione posta elettronica
       email_description_description: Descrizione dettagliata della funzionalità di posta elettronica
       poster_short_title: Manifesto
-      poster_short_title_description: Breve descrizione della funzionalità di manifesto. Consente agli utenti di scaricare un manifesto in formato PDF per diffondere la loro proposta.
+      poster_short_title_description: 'Breve descrizione della funzionalità di manifesto. Consente agli utenti di scaricare un manifesto in formato PDF per diffondere la loro proposta. Il contenuto del poster è memorizzato nel file "/app/views/dashboard/poster/index.pdf.erb"'
       poster_description: Descrizione manifesto
       poster_description_description: Descrizione dettagliata della funzionalità di manifesto
+    analytics_url: "URL per le statistiche esterne"
+    proposal_notification_minimum_interval_in_days: "Periodo minimo (in giorni) per permettere agli autori di proposte di inviare nuove notifiche di una proposta"
+    proposal_notification_minimum_interval_in_days_description: "Il numero di giorni nei quali un utente può inviare una notifica a tutti coloro che appoggiano la sua proposta"
+    direct_message_max_per_day: "Numero massimo di messaggi diretti giornalieri"
+    direct_message_max_per_day_description: "Numero massimo di messaggi diretti che un utente può inviare ogni giorno"
     feature:
       twitter_login: "Accesso con Twitter"
       twitter_login_description: "Per consentire agli utenti di accedere con il proprio account di Twitter"
@@ -93,11 +93,6 @@ it:
       featured_proposals_description: "Visualizza le proposte in evidenza nella pagina principale delle proposte"
       signature_sheets: "Fogli delle firme"
       signature_sheets_description: "Permette di aggiungere, dal pannello di Amministrazione, le firme raccolte di persona a proposte e a progetti di spesa di bilanci partecipativi"
-      spending_proposals: "Proposte di investimento"
-      spending_proposals_description: "⚠️ NOTA: Esta funcionalidad ha sido sustituida por Presupuestos Participativos y desaparecerá en nuevas versiones"
-      spending_proposal_features:
-        voting_allowed: "Votazioni di preselezione sulle proposte di investimento"
-        voting_allowed_description: "⚠️ NOTA: Esta funcionalidad ha sido sustituida por Pesupuestos Participativos y desaparecerá en nuevas versiones"
       user:
         recommendations: "Suggerimenti"
         recommendations_description: "Nella homepage sono mostrati agli utenti i suggerimenti ricavati a partire dai tags associati agli elementi (proposte, etc) che stanno seguendo"
@@ -121,6 +116,8 @@ it:
       public_stats_description: "Mostra le statistiche pubbliche nel pannello di Amministrazione"
       help_page: "Pagina di 'Scopri DecidiTorino'"
       help_page_description: 'Mostra la voce di menu "Scopri DecidiTorino" che conduce ad una pagina nella quale sono illustrate le funzionalità abilitate. È anche possibile creare pagine e menu personalizzati nelle sezioni "Pagine personalizzate" e "Blocchi personalizzati"'
+      valuation_comment_notification: "Notifica commenti di valutazione"
+      valuation_comment_notification_description: "In presenza di un nuovo commento di valutazione, invia una email a tutti gli utenti associati ad un bilancio partecipativo tranne all'autore del commento"
     map:
       latitude: "Latitudine"
       latitude_description: "Latitudine della posizione mostrata sulla mappa"
@@ -144,3 +141,25 @@ it:
       per_page_code_head_description: "Il codice indicato apparirà nel tag <head>. Questa funzionalità è utile per inserire scripts personalizzati, analitycs..."
       per_page_code_body: "Codice da inserire in ogni pagina (<body>)"
       per_page_code_body_description: "Il codice indicato apparirà nel tag <body>. Questa funzionalità è utile per inserire scripts personalizados, analitycs..."
+    uploads:
+      images:
+        min_width: "Larghezza minima dell'immagine"
+        min_width_description: "Larghezza minima consentita nel caricamento di una immagine (in pixel)"
+        min_height: "Altezza minima dell'immagine"
+        min_height_description: "Altezza minima consentita nel caricamento di una immagine (in pixel)"
+        max_size: "Dimensione massima dell'immagine"
+        max_size_description: "Dimensione massima consentita nel caricamento di una immagine (in Megabytes/MB)"
+        content_types: "Tipi di immagini consentiti"
+        content_types_description: "Seleziona i tipi consentiti per le immagini caricate"
+        title:
+          min_length: "Lunghezza minima del titolo dell'immagine"
+          min_length_description: "Il titolo è fornito dall'utente quando si carica un'immagine (si usa come attributo HTML alt)"
+          max_length: "Lunghezza massima del titolo dell'immagine"
+          max_length_description: "Il titolo è fornito dall'utente quando si carica un'immagine (si usa come attributo HTML alt)"
+      documents:
+        max_amount: "Numero massimo di documenti"
+        max_amount_description: "Numero massimo di documenti che è possibile aggiungere ad una proposta, ad un progetto di spesa..."
+        max_size: "Dimensione massima del documento"
+        max_size_description: "Dimensione massima consentita nel caricamento di un documento (in Megabytes/MB)"
+        content_types: "Tipi di documenti consentiti"
+        content_types_description: "Seleziona i tipi consentiti per i documenti caricati"

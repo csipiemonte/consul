@@ -65,7 +65,7 @@ it:
         how_to_use: Utilizzalo nella tua città
     privacy:
       title: Trattamento dati personali
-      subtitle: Informativa art. 13 del Regolamento europeo UE 670/2016
+      subtitle: "Informativa art. 13 del Regolamento europeo UE 670/2016"
     accessibility:
       title: Accessibilità
       description: |-
@@ -159,10 +159,7 @@ it:
         title: Compatibilità con gli standard e progetto visuale
         description_html: 'Tutte le pagine di questo sito web rispettano le <strong>Norme di Accessibilità</strong> o Principi Generali del Progetto Accessibile stabiliti dal Gruppo di Lavoro <abbr title="Web Accessibility Initiative" lang="en">WAI</abbr> appartenente al W3C e sono conformi alle prescrizioni italiane di cui alla Legge 4/2004.'
     titles:
-      accessibility: Accesibilità
-      conditions: "Condizioni d'uso"
       help: "Scopri %{org}"
-      privacy: Trattamento dati personali
     verify:
       code: Codice che hai ricevuto nella lettera
       email: Email

@@ -1,0 +1,92 @@
+es:
+  tracking:
+    header:
+      title: Tracciamento
+    menu:
+      title: Tracciamento
+      budgets: Bilanci partecipativi
+    budgets:
+      index:
+        title: Bilanci partecipativi
+        table_name: Nome
+        table_phase: Fase
+        table_assigned_investments_tracking_open: Prop. Inv. assegnate al tracciamento
+        table_actions: Azioni
+        tracking: Tracciamento
+        no_budgets: "Non sono presenti bilanci"
+    budget_investments:
+      index:
+        assigned_to: "Assegnate a %{tracker}"
+        title: Progetti di spesa
+        edit: Modifica tracciamento
+        table_id: ID
+        table_title: Titolo
+        table_heading_name: Nome della voce
+        table_actions: Azioni
+        no_investments: "Non sono presenti progetti di spesa."
+      show:
+        title: Progetto di spesa
+        info: Dati di invio
+        by: Inviata da
+        sent: Data di creazione
+        heading: Voce
+        undefined: Da definire
+        responsibles: Responsabili
+        assigned_admin: Amministratore assegnato
+    milestones:
+      index:
+        table_id: "ID"
+        table_title: "Titolo"
+        table_description: "Descrizione"
+        table_publication_date: "Data di pubblicazione"
+        table_status: Stato
+        table_actions: "Azioni"
+        delete: "Elimina milestone"
+        no_milestones: "Non sono presenti milestone definite"
+        image: "Immagine"
+        show_image: "Vedi immagine"
+        documents: "Documenti"
+        milestone: Tracciamento
+        new_milestone: Crea nuova milestone
+      form:
+        admin_statuses: Gestisci stati
+        no_statuses_defined: Non sono presenti stati definiti
+      new:
+        creating: Crea milestone
+        date: Data
+        description: Descrizione
+      edit:
+        title: Modifica milestone
+      create:
+        notice: "Nuova milestone creata con successo!"
+      update:
+        notice: Milestone aggiornata
+      delete:
+        notice: Milestone eliminata correttamente
+    progress_bars:
+      manage: "Gestisci barre di avanzamento"
+      index:
+        title: "Barre di avanzamento"
+        no_progress_bars: "Non sono presenti barre di avanzamento"
+        new_progress_bar: "Crea nuova barra di avanzamento"
+        primary: "Barra di avanzamento principale"
+        table_id: "ID"
+        table_kind: "Tipo"
+        table_title: "Titolo"
+        table_percentage: "Avanzamento"
+      new:
+        creating: "Crea barra di avanzamento"
+      edit:
+        title:
+          primary: "Modifica barra di avanzamento principale"
+          secondary: "Modifica barra di avanzamento %{title}"
+      create:
+        notice: "Barra di avanzamento creata con successo!"
+      update:
+        notice: "Barra di avanzamento aggiornata"
+      delete:
+        notice: "Barra di avanzamento eliminata correttamente"
+  trackers:
+    budget_investments:
+      show:
+        assigned_trackers: "Gestori di avanzamento assegnati"

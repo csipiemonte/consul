@@ -80,6 +80,9 @@ en:
         feature_6_html: "The City reserves the right to take into consideration any proposals that are worthy of feasibility analysis if these thresholds will not be reached on 30/6 and 31/12."
         feature_7: "Further information are available in the %{link}"
         feature_7_link: "FAQ page"
+    titles:
+      accessibility: Accesibilità
+      conditions: "Condizioni d'uso"
   proposals:
     index:
       section_footer:

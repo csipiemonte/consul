@@ -36,7 +36,7 @@ it:
     document_type_label: Tipo di documento
     document_verifications:
       already_verified: Questo account utente è già stato verificato.
-      has_no_account_html: Per creare un account, vai a %{link} e fai click su <b>"Registrati"</b> nella parte superiore destra dello schermo.
+      has_no_account_html: Per creare un account, vai a %{link} e fai click su <b>'Registrati'</b> nella parte superiore destra dello schermo.
       link: DecidiTorino
       in_census_has_following_permissions: "Questo utente può partecipare con le seguenti autorizzazioni:"
       not_in_census: Questo documento non è registrato.
@@ -62,9 +62,6 @@ it:
       create_proposal: Crea proposta
       print_proposals: Stampa proposte
       support_proposals: Sostieni proposte
-      create_spending_proposal: Crea una proposta di spesa
-      print_spending_proposals: Stampare le proposte di spesa
-      support_spending_proposals: Appoggia le proposte di spesa
       create_budget_investment: Crea progetti di spesa
       print_budget_investments: Stampa i progetti di spesa
       support_budget_investments: Appoggia i progetti di spesa
@@ -79,7 +76,6 @@ it:
     print:
       proposals_info: Fai la tua proposta su https://www.deciditorino.it/
       proposals_title: "Proposte:"
-      spending_proposals_info: Partecipa a https://www.deciditorino.it/
       budget_investments_info: Partecipa a https://www.deciditorino.it/
     print_info: Stampa questa informazione
     proposals:
@@ -110,18 +106,6 @@ it:
       search_results:
         one: " che contiene '%{search_term}'"
         other: " che contengono '%{search_term}'"
-    spending_proposals:
-      alert:
-        unverified_user: Utente non certificato
-      create: Crea una proposta di spesa
-      filters:
-        unfeasible: Proposte di investimento non realizzabili
-        by_geozone: "Proposte di investimento con ambito: %{geozone}"
-      print:
-        print_button: Stampa
-      search_results:
-        one: " che contiene '%{search_term}'"
-        other: " che contengono '%{search_term}'"
     sessions:
       signed_out: Disconnesso correttamente.
       signed_out_managed_user: Sessione utente disconnessa correttamente.
@@ -136,7 +120,7 @@ it:
       erased_notice: Account utente eliminato.
       erased_by_manager: "Eliminata dal gestore: %{manager}"
       erase_account_link: Elimina account
-      erase_account_confirm: "Sei sicuro di che voler cancellare l'account? Questa azione non può essere annullata"
+      erase_account_confirm: 'Sei sicuro di che voler cancellare questo account? Questa azione non può essere annullata'
       erase_warning: Questa azione non può essere annullata. Si prega di assicurarsi di voler cancellare realmente questo account.
       erase_submit: Elimina account
     user_invites:
