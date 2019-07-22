@@ -1,3 +1,4 @@
+# Versione custom, i valori a cui sono impostati i settings sono riferiti all'installazione di DecidiTorino
 class Setting < ApplicationRecord
   validates :key, presence: true, uniqueness: true
 
@@ -136,32 +137,39 @@ class Setting < ApplicationRecord
         "official_level_4_name": I18n.t("seeds.settings.official_level_4_name"),
         "official_level_5_name": I18n.t("seeds.settings.official_level_5_name"),
         "max_ratio_anon_votes_on_debates": 50,
-        "max_votes_for_debate_edit": 1000,
-        "max_votes_for_proposal_edit": 1000,
+        # Max votes where a debate is still editable
+        "max_votes_for_debate_edit": 1,
+        # Max votes where a proposal is still editable
+        "max_votes_for_proposal_edit": 1,
         "max_votes_for_people_proposal_edit": 1000,
+        # Max length for comments
         "comments_body_max_length": 1000,
-        "proposal_code_prefix": "CONSUL",
-        "votes_for_proposal_success": 10000,
+        "proposal_code_prefix": "TOR",
+        # Number of votes needed for proposal success
+        "votes_for_proposal_success": 5000,
+        # Months to archive proposals
         "months_to_archive_proposals": 12,
         # Users with this email domain will automatically be marked as level 1 officials
         # Emails under the domain's subdomains will also be included
         "email_domain_for_officials": "",
-        "facebook_handle": nil,
-        "instagram_handle": nil,
-        "telegram_handle": nil,
-        "twitter_handle": nil,
-        "twitter_hashtag": nil,
-        "youtube_handle": nil,
-        "url": "http://example.com", # Public-facing URL of the app.
+        "facebook_handle": "cittaditorino",
+        "instagram_handle": "cittaditorino",
+        "telegram_handle": "comunetorino",
+        "twitter_handle": "@twitorino",
+        "twitter_hashtag": "#deciditorino",
+        "youtube_handle": "youtorino",
+        "transparency_url": "http://www.comune.torino.it/amministrazionetrasparente/",
+        "opendata_url": "http://aperto.comune.torino.it/",
+        "url": "https://www.deciditorino.it", # Public-facing URL of the app.
         # CONSUL installation's organization name
-        "org_name": "CONSUL",
-        "meta_title": nil,
-        "meta_description": nil,
-        "meta_keywords": nil,
+        "org_name": "DecidiTorino",
+        "meta_title": "DecidiTorino",
+        "meta_description": "Citizen Participation and Open Government Application",
+        "meta_keywords": "citizen participation, open government",
         "proposal_notification_minimum_interval_in_days": 3,
         "direct_message_max_per_day": 3,
-        "mailer_from_name": "CONSUL",
-        "mailer_from_address": "noreply@consul.dev",
+        "mailer_from_name": "DecidiTorino",
+        "mailer_from_address": "noreply@deciditorino.it",
         "min_age_to_participate": 16,
         "hot_score_period_in_days": 31,
         "related_content_score_threshold": -0.3,

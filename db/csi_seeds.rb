@@ -1,120 +1,4 @@
-require "database_cleaner"
-
-DatabaseCleaner.clean_with :truncation
-
-print "Creating Settings"
-
-# Names for the moderation console, as a hint for moderators
-# to know better how to assign users with official positions
-Setting.create(key: "official_level_1_name", value: "Impiegati pubblici")
-Setting.create(key: "official_level_2_name", value: "Organizzazione Municipale")
-Setting.create(key: "official_level_3_name", value: "Direttori generali")
-Setting.create(key: "official_level_4_name", value: "Assessori")
-Setting.create(key: "official_level_5_name", value: "Sindaco")
-
-# Max percentage of allowed anonymous votes on a debate
-Setting.create(key: "max_ratio_anon_votes_on_debates", value: "50")
-
-# Max votes where a debate is still editable
-Setting.create(key: "max_votes_for_debate_edit", value: "1")
-
-# Max votes where a proposal is still editable
-Setting.create(key: "max_votes_for_proposal_edit", value: "1")
-
-# Max length for comments
-Setting.create(key: "comments_body_max_length", value: "1000")
-
-# Prefix for the Proposal codes
-Setting.create(key: "proposal_code_prefix", value: "TOR")
-
-# Number of votes needed for proposal success
-Setting.create(key: "votes_for_proposal_success", value: "5000")
-
-# Months to archive proposals
-Setting.create(key: "months_to_archive_proposals", value: "12")
-
-# Users with this email domain will automatically be marked as level 1 officials
-# Emails under the domain's subdomains will also be included
-Setting.create(key: "email_domain_for_officials", value: "")
-
-
-# Social settings
-Setting.create(key: "twitter_handle", value: "@twitorino")
-Setting.create(key: "twitter_hashtag", value: "#deciditorino")
-Setting.create(key: "facebook_handle", value: "cittaditorino")
-Setting.create(key: "youtube_handle", value: "youtorino")
-Setting.create(key: "telegram_handle", value: "comunetorino")
-Setting.create(key: "instagram_handle", value: "cittaditorino")
-Setting.create(key: "transparency_url", value: "http://www.comune.torino.it/amministrazionetrasparente/")
-Setting.create(key: "opendata_url", value: "http://aperto.comune.torino.it/")
-
-# Public-facing URL of the app.
-Setting.create(key: "url", value: "https://www.deciditorino.it")
-
-# Consul installation's organization name
-Setting.create(key: "org_name", value: "DecidiTorino")
-
-# Meta tags for SEO
-Setting.create(key: "meta_title", value: "DecidiTorino")
-Setting.create(key: "meta_description", value: "Citizen Participation and Open Government Application")
-Setting.create(key: "meta_keywords", value: "citizen participation, open government")
-
-# Spending proposals feature flags
-Setting.create(key: "feature.spending_proposal_features.voting_allowed", value: nil)
-
-# Proposal notifications
-Setting.create(key: "proposal_notification_minimum_interval_in_days", value: "3")
-Setting.create(key: "direct_message_max_per_day", value: "3")
-
-# Email settings
-Setting.create(key: "mailer_from_name", value: "DecidiTorino")
-Setting.create(key: "mailer_from_address", value: "noreply@deciditorino.it")
-
-# Verification settings
-Setting.create(key: "min_age_to_participate", value: "16")
-
-# Featured proposals
-Setting.create(key: "featured_proposals_number", value: "3")
-
-Setting.create(key: "related_content_score_threshold", value: -0.3)
-Setting.create(key: "hot_score_period_in_days", value: 31)
-
-Setting.create(key: "proposals.successful_proposal_id", value: nil)
-Setting.create(key: "proposals.poll_short_title", value: nil)
-Setting.create(key: "proposals.poll_description", value: nil)
-Setting.create(key: "proposals.poll_link", value: nil)
-Setting.create(key: "proposals.email_short_title", value: nil)
-Setting.create(key: "proposals.email_description", value: nil)
-
-Setting.create(key: "dashboard.emails", value: nil)
-
-# Default custom pages
-load Rails.root.join("db", "pages.rb")
-
-puts " ✅"
-print "Creating Geozones (Circoscrizioni)"
-
-Geozone.create(name: "Centro - Crocetta", census_code: "1", html_map_coordinates: "159, 132, 134, 183, 136, 190, 134, 195, 151, 206, 172, 169, 188, 178, 199, 165, 188, 148, 177, 146, 159, 132")
-Geozone.create(name: "Santa Rita - Mirafiori Nord - Mirafiori Sud", census_code: "2", html_map_coordinates: "89, 180, 117, 188, 127, 187, 134, 189, 131, 196, 143, 203, 101, 254, 122, 266, 126, 256, 138, 262, 138, 266, 132, 284, 126, 282, 115, 285, 107, 281, 105, 280, 94, 276, 91, 283, 86, 282, 74, 276, 65, 277, 58, 271, 39, 266, 40, 258, 52, 261, 63, 235, 53, 238, 23, 219, 19, 211, 21, 209, 27, 213, 31, 207, 70, 232, 73, 218, 77, 219, 80, 208, 84, 202, 79, 200, 80, 198, 87, 190, 89, 181")
-Geozone.create(name: "San Paolo - Cenisia - Pozzo Strada - Cit Turin - Borgata Lesna", census_code: "3", html_map_coordinates: "62, 144, 152, 142, 137, 187, 125, 185, 115, 187, 90, 179, 89, 173, 76, 175, 70, 173, 65, 171, 66, 164, 74, 162, 73, 158, 67, 156, 66, 150, 59, 149, 61, 144")
-Geozone.create(name: "San Donato - Campidoglio - Parella", census_code: "4", html_map_coordinates: "82, 99, 80, 110, 75, 115, 72, 116, 69, 123, 62, 143, 154, 139, 167, 112, 133, 109, 131, 119, 75, 90, 82, 99")
-Geozone.create(name: "Borgo Vittoria - Madonna di Campagna - Lucento - Vallette", census_code: "5", html_map_coordinates: "92, 62, 76, 89, 126, 115, 136, 105, 168, 111, 200, 61, 144, 52, 130, 68, 123, 67")
-Geozone.create(name: "Barriera di Milano - Regio Parco - Barca - Bertolla - Falchera - Rebaudengo - Villaretto", census_code: "6", html_map_coordinates: "136, 38, 145, 48, 165, 41, 172, 55, 183, 52, 192, 61, 198, 61, 200, 70, 172, 111, 187, 113, 203, 132, 231, 115, 234, 103, 248, 104, 262, 108, 281, 89, 258, 73, 254, 44, 232, 40, 227, 33, 237, 17, 225, 14, 223, 23, 197, 28, 171, 13, 155, 12, 148, 20, 138, 18, 143, 30")
-Geozone.create(name: "Aurora - Vanchiglia - Sassi - Madonna del Pilone", census_code: "7", html_map_coordinates: "242, 106, 268, 114, 282, 131, 310, 141, 251, 221, 242, 219, 236, 210, 236, 187, 217, 158, 200, 163, 187, 144, 159, 130, 171, 112, 188, 116, 203, 136, 233, 115, 240, 107")
-Geozone.create(name: "San Salvario - Cavoretto - Borgo Po - Nizza Millefonti - Lingotto - Filadelfia", census_code: "8", html_map_coordinates: "172, 172, 190, 180, 212, 161, 234, 190, 232, 213, 240, 223, 240, 225, 233, 236, 195, 253, 178, 248, 166, 266, 139, 265, 137, 259, 124, 254, 121, 263, 104, 253, 144, 205, 152, 210, 172, 170")
-
-puts " ✅"
-print "Creating WebSection"
-
-WebSection.create(name: "homepage")
-WebSection.create(name: "debates")
-WebSection.create(name: "proposals")
-WebSection.create(name: "budgets")
-WebSection.create(name: "help_page")
-
-puts " ✅"
-print "Creating Users"
-
+# coding: utf-8
 # Default admin user (change password after first deploy to a server!)
 if Administrator.count == 0
   admin = User.create!(username: "DecidiTorino", email: "admin@deciditorino.it", password: "12345678",
@@ -123,24 +7,63 @@ if Administrator.count == 0
   admin.create_administrator
 end
 
+Setting.reset_defaults
+
+WebSection.create(name: "homepage")
+WebSection.create(name: "debates")
+WebSection.create(name: "proposals")
+WebSection.create(name: "budgets")
+WebSection.create(name: "help_page")
+
+# Default custom pages
+load Rails.root.join("db", "pages.rb")
+
+puts " ✅"
+print "Creating Geozones (Circoscrizioni)"
+
+Geozone.create(name: "Centro - Crocetta",
+	           external_code: "001", census_code: "01",
+	           html_map_coordinates: "159, 132, 134, 183, 136, 190, 134, 195, 151, 206, 172, 169, 188, 178, 199, 165, 188, 148, 177, 146, 159, 132")
+Geozone.create(name: "Santa Rita - Mirafiori Nord - Mirafiori Sud",
+	           external_code: "002", census_code: "02",
+	           html_map_coordinates: "89, 180, 117, 188, 127, 187, 134, 189, 131, 196, 143, 203, 101, 254, 122, 266, 126, 256, 138, 262, 138, 266, 132, 284, 126, 282, 115, 285, 107, 281, 105, 280, 94, 276, 91, 283, 86, 282, 74, 276, 65, 277, 58, 271, 39, 266, 40, 258, 52, 261, 63, 235, 53, 238, 23, 219, 19, 211, 21, 209, 27, 213, 31, 207, 70, 232, 73, 218, 77, 219, 80, 208, 84, 202, 79, 200, 80, 198, 87, 190, 89, 181")
+Geozone.create(name: "San Paolo - Cenisia - Pozzo Strada - Cit Turin - Borgata Lesna",
+	           external_code: "003", census_code: "03",
+	           html_map_coordinates: "62, 144, 152, 142, 137, 187, 125, 185, 115, 187, 90, 179, 89, 173, 76, 175, 70, 173, 65, 171, 66, 164, 74, 162, 73, 158, 67, 156, 66, 150, 59, 149, 61, 144")
+Geozone.create(name: "San Donato - Campidoglio - Parella",
+	           external_code: "004", census_code: "04",
+	           html_map_coordinates: "82, 99, 80, 110, 75, 115, 72, 116, 69, 123, 62, 143, 154, 139, 167, 112, 133, 109, 131, 119, 75, 90, 82, 99")
+Geozone.create(name: "Borgo Vittoria - Madonna di Campagna - Lucento - Vallette",
+	           external_code: "005", census_code: "05",
+	           html_map_coordinates: "92, 62, 76, 89, 126, 115, 136, 105, 168, 111, 200, 61, 144, 52, 130, 68, 123, 67")
+Geozone.create(name: "Barriera di Milano - Regio Parco - Barca - Bertolla - Falchera - Rebaudengo - Villaretto",
+	           external_code: "006", census_code: "06",
+	           html_map_coordinates: "136, 38, 145, 48, 165, 41, 172, 55, 183, 52, 192, 61, 198, 61, 200, 70, 172, 111, 187, 113, 203, 132, 231, 115, 234, 103, 248, 104, 262, 108, 281, 89, 258, 73, 254, 44, 232, 40, 227, 33, 237, 17, 225, 14, 223, 23, 197, 28, 171, 13, 155, 12, 148, 20, 138, 18, 143, 30")
+Geozone.create(name: "Aurora - Vanchiglia - Sassi - Madonna del Pilone",
+	           external_code: "007", census_code: "07",
+	           html_map_coordinates: "242, 106, 268, 114, 282, 131, 310, 141, 251, 221, 242, 219, 236, 210, 236, 187, 217, 158, 200, 163, 187, 144, 159, 130, 171, 112, 188, 116, 203, 136, 233, 115, 240, 107")
+Geozone.create(name: "San Salvario - Cavoretto - Borgo Po - Nizza Millefonti - Lingotto - Filadelfia",
+	           external_code: "008", census_code: "08",
+	           html_map_coordinates: "172, 172, 190, 180, 212, 161, 234, 190, 232, 213, 240, 223, 240, 225, 233, 236, 195, 253, 178, 248, 166, 266, 139, 265, 137, 259, 124, 254, 121, 263, 104, 253, 144, 205, 152, 210, 172, 170")
 
 puts " ✅"
 print "Creating Tags Categories"
 
-ActsAsTaggableOn::Tag.category.create!(name:  "Associazioni")
-ActsAsTaggableOn::Tag.category.create!(name:  "Cultura")
-ActsAsTaggableOn::Tag.category.create!(name:  "Sport")
-ActsAsTaggableOn::Tag.category.create!(name:  "Diritti Sociali")
-ActsAsTaggableOn::Tag.category.create!(name:  "Economia")
-ActsAsTaggableOn::Tag.category.create!(name:  "Lavoro")
-ActsAsTaggableOn::Tag.category.create!(name:  "Equità")
-ActsAsTaggableOn::Tag.category.create!(name:  "Sostenibilità")
-ActsAsTaggableOn::Tag.category.create!(name:  "Partecipazione")
-ActsAsTaggableOn::Tag.category.create!(name:  "Mobilità")
-ActsAsTaggableOn::Tag.category.create!(name:  "Salute")
-ActsAsTaggableOn::Tag.category.create!(name:  "Trasparenza")
-ActsAsTaggableOn::Tag.category.create!(name:  "Sicurezza e Emergenze")
-ActsAsTaggableOn::Tag.category.create!(name:  "Ambiente")
+ActsAsTaggableOn::Tag.category.create!(name: I18n.t("seeds.categories.associations"))
+ActsAsTaggableOn::Tag.category.create!(name: I18n.t("seeds.categories.culture"))
+ActsAsTaggableOn::Tag.category.create!(name: I18n.t("seeds.categories.sports"))
+ActsAsTaggableOn::Tag.category.create!(name: I18n.t("seeds.categories.social_rights"))
+ActsAsTaggableOn::Tag.category.create!(name: I18n.t("seeds.categories.economy"))
+ActsAsTaggableOn::Tag.category.create!(name: I18n.t("seeds.categories.employment"))
+ActsAsTaggableOn::Tag.category.create!(name: I18n.t("seeds.categories.equity"))
+ActsAsTaggableOn::Tag.category.create!(name: I18n.t("seeds.categories.sustainability"))
+ActsAsTaggableOn::Tag.category.create!(name: I18n.t("seeds.categories.participation"))
+ActsAsTaggableOn::Tag.category.create!(name: I18n.t("seeds.categories.mobility"))
+ActsAsTaggableOn::Tag.category.create!(name: I18n.t("seeds.categories.media"))
+ActsAsTaggableOn::Tag.category.create!(name: I18n.t("seeds.categories.health"))
+ActsAsTaggableOn::Tag.category.create!(name: I18n.t("seeds.categories.transparency"))
+ActsAsTaggableOn::Tag.category.create!(name: I18n.t("seeds.categories.security_emergencies"))
+ActsAsTaggableOn::Tag.category.create!(name: I18n.t("seeds.categories.environment"))
 
 puts " ✅"
 puts "All CSI seeds created successfuly 👍"
