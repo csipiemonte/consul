@@ -20,9 +20,9 @@ namespace :dashboards do
   desc "Basic templates with Dashboard::Actions recommended"
   task create_basic_dashboard_actions_template: :environment do
     Dashboard::Action.create(title: "Kit di diffusione",
-                             description: "<p>Qui hai a disposizione un manuale che ti può aiutare nel diffondere la tua "\
+                             description: "<p>Hai qui a disposizione un manuale che ti può aiutare nel diffondere la tua "\
                              "proposta e nel far sì che abbia il maggior successo possibile. È fondamentale "\
-                             "seguire la proposta per sostenerla. Questo documento aiuta a "\
+                             "seguire la proposta per sostenerla. Questo documento ti aiuta a "\
                              "tenere una strategia corretta nella comunicazione. È possibile scaricarlo in formato "\
                              "pdf, oppure lo si può leggere online.</p>\r\n",
                              request_to_administrators: false,
@@ -46,15 +46,15 @@ namespace :dashboards do
                              short_description: "Saranno loro il tuo primo e più importante appoggio",
                              published_proposal: false)
     Dashboard::Action.create(title: "Fai sì che la tua campagna abbia la migliore immagine",
-                             description: "<p>L'inserire una fotografia o un video alla tu proposta "\
+                             description: "<p>L'abbinare una fotografia o un video alla tua proposta "\
                              "porta un numero di appoggi fino a 6 volte superiore rispetto alle proposte che ne sono "\
                              "sprovvisti! È fondamentale scegliere la miglior immagine possibile e, "\
-                             "ancor meglio, se l'immagine ritrae le persone coinvolte nella proposta! "\
+                             "ancor meglio, se l'immagine ritrae le persone coinvolte dalla proposta! "\
                              "Inoltre, qui ti riportiamo alcuni consigli più tecnici da applicare "\
-                             "nella scelta della foto per la tua proposta. "\
+                             "nella scelta della foto. "\
                              "Segui i consigli e vedrai il risultato:<br />\r\n- Le foto di animali e di "\
                              "persone funzionano di più.<br />\r\n- Le foto grandi "\
-                             "hanno una resa migliore, però - attezione - l'immagine può avere una dimensione massima di 1Mb! "\
+                             "hanno una resa migliore, però - attenzione - l'immagine può avere una dimensione massima di 1Mb! "\
                              "<br />\r\n- La foto deve essere generica "\
                              "e non deve avere contenuto specifico.</p>\r\n",
                              request_to_administrators: false,
@@ -69,7 +69,7 @@ namespace :dashboards do
                              description: "<p>È importante andare al sodo. Fai partecipi tutti "\
                              "della tua proposta. Concentrati sulla soluzione, sul beneficio o su "\
                              "quello che si deve risolvere. Assegna un'indicazione geografica alla tua proposta cittadina. "\
-                             "Qui di seguito trovi alcuni esempi che puoi seguire nella scelta del titolo per la tua "\
+                             "Qui di seguito trovi alcuni esempi per la scelta del titolo della tua "\
                              "proposta:<br />\r\n- 'Vogliamo San Salvario pulito e "\
                              "vivibile'<br />\r\n- 'No alla chiusura dei  "\
                              "Murazzi'<br />\r\n- 'Stop all'immondizia in Borgo Filadelfia' "\
@@ -82,14 +82,14 @@ namespace :dashboards do
                              order: 1,
                              active: true,
                              action_type: 0,
-                             short_description: "Sii conciso e diretto affinché la tua proposta "\
-                             "si comprenda immediatamente",
+                             short_description: "Sii conciso e diretto per far sì che la tua proposta "\
+                             "sia compresa immediatamente",
                              published_proposal: false)
     Dashboard::Action.create(title: "Esprimi sempre il tuo ringraziamento",
                              description: "<p>Sia che ti venga offerto l'appoggio sia che ti venga negato, "\
                              "ringrazia sempre. Inoltre, il mostrare la tua gratitudine servirà per "\
                              "creare una comunicazione nuova che potrebbe attrarre altre persone "\
-                             "verso la tua proposta e, per conseguenza, aumentarne gli appoggi.</p>\r\n",
+                             "verso la tua proposta e, di conseguenza, aumentarne gli appoggi.</p>\r\n",
                              request_to_administrators: false,
                              day_offset: 3,
                              required_supports: 0,
@@ -117,12 +117,12 @@ namespace :dashboards do
                              short_description: "Crea un incontro per condividere la tua proposta.",
                              published_proposal: false)
     Dashboard::Action.create(title: "Crea un sondaggio personalizato",
-                             description: "<p>I sondaggi servono per risolvere i dubbi, chiedere "\
+                             description: "<p>I sondaggi servono per risolvere i dubbi, domandare "\
                              "l'opinione, migliorare la proposta ed anche per creare una comunità "\
                              "intorno alla quale fare crescere la proposta in termini di appoggi, dopo averla "\
                              "conclusa, affinata e "\
                              "pubblicata.<br />\r\n<br />\r\nQuesta idea è facilmente abbinabile "\
-                             "all'organizzazione di un incontro o di un evento che serve per illustrare a "\
+                             "all'organizzazione di un incontro o di un evento che serva ad illustrare a "\
                              "tutti i tuoi contatti, amici e familiari la proposta e "\
                              "l'importanza che riveste l'appoggiarla per poter raggiungere "\
                              "gli obbiettivi prefissati.</p>\r\n",
@@ -136,7 +136,7 @@ namespace :dashboards do
                              published_proposal: false)
     Dashboard::Action.create(title: "Coinvolgi nel tuo proposito le attività commerciali del tuo quartiere",
                              description: "<p>Se pensi che la tua proposta possa influenzare direttamente "\
-                             "le attività commerciali del quartiere e possa in qualche maniera contribuire la migliorarne la situazione, "\
+                             "le attività commerciali del quartiere e possa, in qualche maniera, contribuire a migliorarne la situazione, "\
                              "mettiti in contatto con i proprietari o con i gestori delle attività "\
                              "e racconta loro la tua proposta affinché "\
                              "ti aiutino ad ottenere voti. Insieme a te, anche loro vinceranno!</p>\r\n",
@@ -156,10 +156,10 @@ namespace :dashboards do
                              "dispongono di questa opzione. Ti consigliamo di usare, nei tuoi post, "\
                              "gli stessi hashtags per poter creare, "\
                              "su di essi, il tuo contenuto. Fai una ricerca o chiedi "\
-                             "aiuto per sapere quali usare e quali sono inerenti alla tua proposta. "\
+                             "aiuto per sapere quali usare e quali sono inerenti la tua proposta. "\
                              "Qui di seguito riportiamo alcuni esempi o idee di "\
                              "hashtags centrati su diversi ambiti sociali che potrebbero "\
-                             "andare bene per la tua proposta. Però l'ideale è quello di usarne di altri più "\
+                             "andare bene. Però l'ideale è quello di usarne di altri più "\
                              "pertinenti al tema della tua proposta.<br /></p>\r\n",
                              request_to_administrators: false,
                              day_offset: 6,
@@ -171,10 +171,10 @@ namespace :dashboards do
                              published_proposal: false)
     Dashboard::Action.create(title: "Coinvolgi nel tuo proposito le ONG o i centri sociali del tuo quartiere",
                              description: "<p>Se pensi che la tua proposta possa influenzare direttamente il "\
-                             "miglioramento della qualità della vita delle persone che vivono le tuo quartiere "\
-                             "o località, comprese quelle con meno risorse finanziarie ed i gruppi di persone "\
-                             "più svantaggiati o a rischio di esclusione sociale, mettiti in contatto con "\
-                             "le ONG ed i Centri Sociali vicini sul territorio e racconta loro "\
+                             "miglioramento della qualità della vita delle persone che vivono nel tuo quartiere "\
+                             "o località, comprese quelle con meno risorse finanziarie, ed i gruppi di persone "\
+                             "più svantaggiate o a rischio di esclusione sociale, mettiti in contatto con "\
+                             "le ONG ed i Centri Sociali presenti sul territorio e racconta loro "\
                              "la tua proposta perché ti aiutino ad ottenere voti. Saranno felicissimi "\
                              "di collaborare!</p>\r\n",
                              request_to_administrators: false,
@@ -183,12 +183,12 @@ namespace :dashboards do
                              order: 11,
                              active: true,
                              action_type: 0,
-                             short_description: "Racconta la tua proposta a tutti coloro a cui potrebbe "\
-                             "interessare",
+                             short_description: "Racconta la tua proposta a tutti i potenziali "\
+                             "interessati",
                              published_proposal: false)
     Dashboard::Action.create(title: "Conosci qualche influencer?",
-                             description: "<p>Un 'influencer' è un individuo che ha "\
-                             "numerose persone che lo seguono sui canali social. Per questo motivo, se ne "\
+                             description: "<p>Un 'influencer' è un individuo seguito da "\
+                             "numerose persone sui suoi canali social. Per questo motivo, se ne "\
                              "conosci uno o sei amico di qualcuno che utilizza attivamente i suoi "\
                              "profili social per ricavarne un certo tornaconto, "\
                              "hai la grande opportunità di descrivergli la tua proposta e "\
@@ -206,7 +206,7 @@ namespace :dashboards do
     Dashboard::Action.create(title: "Chiedi gli appoggi di persona",
                              description: "<p>Anche se abbiamo a portata di mano mezzi capaci di "\
                              "giungere in un istante a centinaia e a migliaia di persone, nulla funziona "\
-                             "meglio che chiedere l'appoggio di persona. È 34 volte più efficace rispetto "\
+                             "meglio di chiedere l'appoggio di persona. È 34 volte più efficace rispetto "\
                              "alla richiesta via email!</p>\r\n",
                              request_to_administrators: false,
                              day_offset: 1,
@@ -234,15 +234,15 @@ namespace :dashboards do
                              action_type: 0,
                              short_description: "È molto importante sapere cosa dirai e come",
                              published_proposal: false)
-    Dashboard::Action.create(title: "Segnala i tuoi piani prima della pubblicazione",
+    Dashboard::Action.create(title: "Fai conoscere i tuoi piani prima della pubblicazione",
                              description: "<p>Non è necessario disporre della proposta completamente creata "\
                              "o già pubblicata per iniziare a parlarne. Di fatto, "\
                              "ti consigliamo di creare alcuni post nei tuoi social network e "\
                              "di iniziare a discuterne con i tuoi amici e con i tuoi familiari prima che veda la "\
                              "luce. È quella che viene definita una campagna 'teaser' e serve per creare "\
                              "aspettativa su di un qualcosa che arriverà molto presto.<br />\r\n "\
-                             "<br />\r\nPer questo ti consigliamo di includere messaggi di questo "\
-                             "tipo nei post che pubblicherai sui social ntworks. In pratica, puoi "\
+                             "<br />\r\nTi consigliamo di includere messaggi di questo "\
+                             "tipo nei post che pubblicherai sui social networks. In pratica, puoi "\
                              "copiare questi testi e usarli come desideri:<br />\r\n- 'Molto "\
                              "presto creerò una proposta per migliorare la "\
                              "città di Torino, e più che mai avrò bisogno del vostro appoggio. "\
@@ -265,57 +265,57 @@ namespace :dashboards do
                              "di cui hai bisogno. Anche le comunità ed i gruppi (privati "\
                              "o aperti) di Facebook a Torino sono un buon luogo dove "\
                              "cercare nuovi appoggi e alleati nel cammino verso la "\
-                             "meta.<br />\r\n<br />\r\nPara ello, busca y selecciona bien "\
-                             "aquellas comunidades y grupos ya creados en Facebook que son más "\
-                             "afines a la naturaleza de tu propuesta. Por ejemplo si tu "\
-                             "propuesta versa sobre 'mejorar un parque público', seguramente "\
-                             "encuentres el apoyo que necesitas en ciclistas, grupos de "\
-                             "running, colectivos y personas cercanas al parque, etc. "\
-                             "Solicita unirte a ellos, y una vez estés dentro, publica allí tu "\
-                             "propuesta informándoles de ella y pidiéndoles respetuosamente, "\
-                             "su apoyo en la mejora de vuestra ciudad. Ten en cuenta siempre "\
-                             "cómo enfocar tu mensaje para que sea lo más acorde al grupo en el "\
-                             "que publicas y a también a sus intereses. Piensa que al final se "\
-                             "trata de obtener apoyos de personas que no conoces, y ella, "\
-                             "también debe entender cuál es el beneficio que obtiene por "\
-                             "ayudarte. Y desde luego, en ningún caso, debe percibir tu "\
-                             "petición como 'spam' o intrusiva, así que ten tacto al pedir "\
-                             "tus apoyos.</p>\r\n",
+                             "meta.<br />\r\n<br />\r\nPer questo, cerca e seleziona bene "\
+                             "quelle comunità e gruppi presenti su Facebook che sono più "\
+                             "affini alla natura della tua proposta. Per esempio, se la tua "\
+                             "proposta verte su 'migliorare un parco pubblico', sicuramente "\
+                             "potrai trovare supporto in ciclisti, gruppi di "\
+                             "runners, collettivi e persone adiacenti al parco, etc. "\
+                             "Chiedi di unirti a loro, e una volta dentro, pubblica lì la tua "\
+                             "proposta corredandola di informazioni e chiedendo - educatamente - ai membri del gruppo "\
+                             "l'appoggio nel miglioramento della città. Tieni presente sempre "\
+                             "come focalizzare il tuo messaggio per renderlo appropriato al gruppo - "\
+                             "e ai relativi interessi - nel quale pubblichi i post. Pensa che alla fine si "\
+                             "tratta di ottenere appoggi da persone sconosciute che, da par loro, "\
+                             "devono comprendere quale è il beneficio che si ottiene aiutandoti. "\
+                             "E per certo, in nessun caso, la tua richiesta deve essere intrusiva o "\
+                             "percepita come 'spam', ragion per cui devi avere tatto nel chiedere "\
+                             "gli appoggi.</p>\r\n",
                              request_to_administrators: false,
                              day_offset: 9,
                              required_supports: 0,
                              order: 13,
                              active: true,
                              action_type: 0,
-                             short_description: "¿Sabes a cuántas personas podrías llegar "\
-                             "con estos grupos?",
+                             short_description: "Sai a quante persone potresti arrivare "\
+                             "con questi gruppi?",
                              published_proposal: false)
-    Dashboard::Action.create(title: "Analiza con detenimiento otras propuestas",
-                             description: "<p>Parece una obviedad pero asegúrate de hacerlo. "\
-                             "Antes de que tu propuesta vea la luz, fíjate en cómo lo han hecho "\
-                             "otros ciudadanos y ciudadanas a la hora de crear la suya: "\
-                             "fotografía, mensajes, título... Habrá algunas que te gusten más "\
-                             "y menos, mejor o peor expuestas; tú debes analizarlas y quedarte "\
-                             "con lo mejor de cada una para implantarlo a la tuya propia.<br /> "\
-                             "\r\n<br />\r\nAquí te dejamos estos ejemplos de las más destacadas "\
-                             "hasta el momento para que veas cómo lo han hecho. ¡Si ellos han "\
-                             "conseguido los apoyos necesarios o están a punto, tú también puedes!",
+    Dashboard::Action.create(title: "Dai un'occhiata più da vicino ad altre proposte",
+                             description: "<p>Può sembrare ovvio ma assicurati di farlo. "\
+                             "Prima che la tua proposta veda la luce, guarda come l'hanno fatto "\
+                             "gli altri cittadini e cittadine quando hanno creato la loro: "\
+                             "fotografia, messaggi, titolo... Ce ne saranno alcune che ti piacciono di più e altre "\
+                             "e di meno, alcune esposte meglio e altre peggio; devi analizzarle e ricavare "\
+                             "il meglio di ognuna per poi impiantarlo nella tua.<br /> "\
+                             "\r\n<br />\r\nQui di seguito trovi alcuni esempi di quelle ora in evidenza "\
+                             "perché tu possa vedere come hanno fatto. Se loro sono riusciti "\
+                             "ad ottenere gli appoggi necessari o sono sul punto di raggiungerli, anche tu puoi!",
                              request_to_administrators: false,
                              day_offset: 10,
                              required_supports: 0,
                              order: 14,
                              active: true,
                              action_type: 0,
-                             short_description: "Antes de publicar tu propuesta, mira cómo "\
-                             "lo han hecho otros",
+                             short_description: "Prima di pubblicare la tua proposta, guarda come "\
+                             "l'hanno fatto gli altri",
                              published_proposal: false)
-    Dashboard::Action.create(title: "Utiliza whatsapp para difundir ",
-                             description: "<p>¡Tus amigos, familiares, tu entorno cercano te "\
-                             "apoyarán para que tu propuesta se lleve a cabo. ¡No olvides copiar "\
-                             "el enlace de tu propuesta e incluirlo en tu mensaje para que "\
-                             "puedan ir directamente a apoyarte! Compártelo en todos tus grupos "\
-                             ", pégalo a todos tus contactos de manera personal y "\
-                             "¡obtendrás resultados más rápidamente!</p>\r\n",
+    Dashboard::Action.create(title: "Usa Whatsapp per la diffusione",
+                             description: "<p>I tuoi amici, la tua famiglia, i tuoi vicini "\
+                             "daranno il loro appoggio affinché la tua proposta sia compiuta. Non dimenticare di copiare "\
+                             "il link della tua proposta e di includerlo nel testo del messaggio, servirà ai destinatari per "\
+                             "giungere velocemente alla proposta e poterla così appoggiare! Condividilo su tutti i tuoi gruppi, "\
+                             "mandalo con messaggi personali a tutti i tuoi contatti e "\
+                             "otterrai risultati più rapidamente!</p>\r\n",
                              request_to_administrators: false,
                              day_offset: 0,
                              required_supports: 0,
@@ -325,203 +325,203 @@ namespace :dashboards do
                              short_description: "Whatsapp o Telegram sono grandi "\
                              "strumenti per ottenere appoggi immediati.",
                              published_proposal: true)
-    Dashboard::Action.create(title: "Utiliza tus redes sociales",
-                             description: "<p>En la fase de precampaña ya te invitamos a "\
-                             "utilizar tus redes sociales, ¡son el mejor medio para llegar al "\
-                             "máximo de personas! Además, también te hemos dado un KIT de "\
-                             "imágenes para que puedas comunicar tu propuesta. Ahora además, "\
-                             "te aconsejamos que, directamente, copies y pegues el enlace de tu "\
-                             "propuesta en tus perfiles sociales para que la gente pueda "\
-                             "acceder y apoyarte.</p>\r\n",
+    Dashboard::Action.create(title: "Usa i social networks",
+                             description: "<p>Già nella fase precedente la campagna ti invitiamo a "\
+                             "impiegare i social networks, sono il mezzo migliore per arrivare al numero "\
+                             "massimo di persone! Inoltre, ti abbiamo anche fornito un KIT di "\
+                             "immagini da usare nella diffusione della tua proposta. Di più adesso "\
+                             "ti suggeriamo di copiare ed incollare il link della tua "\
+                             "proposta sui tuoi profili social per consentire alla gente di "\
+                             "accedere e di appoggiarti.</p>\r\n",
                              request_to_administrators: false,
                              day_offset: 0,
                              required_supports: 0,
                              order: 16,
                              active: true,
                              action_type: 0,
-                             short_description: "Copia y pega el enlace de tu propuesta en "\
-                             "tus perfiles sociales.",
+                             short_description: "Copia e incolla il link della tua proposta sui "\
+                             "tuoi profili social.",
                              published_proposal: true)
-    Dashboard::Action.create(title: "Continúa pidiendo apoyo a nuevos embajadores de tu propuesta",
-                             description: "<p>Tu propuesta para mejorar la ciudad puede mejorar "\
-                             "también la vida de muchas personas incluidas aquellas que "\
-                             "regentan bares, fruterías, peluquerías, o que ayudan a otros "\
-                             "como ONG's, Centros Sociales, Asociaciones de Vecinos... Piensa a "\
-                             "quién podría interesarle apoyar tu propuesta, cuéntale todo con "\
-                             "detalle y ¡verás cómo logras muchos más apoyos de los que "\
-                             "esperabas!</p>\r\n",
+    Dashboard::Action.create(title: "Continua a chiedere supporto a nuovi ambasciatori della tua proposta",
+                             description: "<p>La tua proposta di miglioramento della città potrebbe anche migliorare "\
+                             "la vita di molte persone incluso quelle che "\
+                             "gestiscono bar e attività commerciali, o quelle che aiutano gli altri "\
+                             "come le ONG, i Centri Sociali, le Associazioni di Vicinato... Pensa a "\
+                             "chi potrebbe interessare appoggiare la tua proposta, descrivigli tutto nel "\
+                             "dettaglio e vedrai che otterrai più appoggi di quelli che "\
+                             "speravi!</p>\r\n",
                              request_to_administrators: false,
                              day_offset: 1,
                              required_supports: 0,
                              order: 18,
                              active: true,
                              action_type: 0,
-                             short_description: "Comercios, negocios locales, Centros Sociales, "\
-                             "Colectivos...",
+                             short_description: "Negozi, imprese locali, Centri Sociali, "\
+                             "collettivi...",
                              published_proposal: true)
-    Dashboard::Action.create(title: "Pide que te dejen colocar carteles",
-                             description: "<p>Seguro que te llevas genial con esos dueños de "\
-                             "negocios, comercios, tiendas, centros sociales y cívicos, "\
-                             "asociaciones... de tu barrio. ¡Pídeles que te permitan colocar en "\
-                             "sus instalaciones y locales algún cartel informando de tu propuesta "\
-                             "para que todo el que pase por allí pueda apoyarte y contárselo a "\
-                             "otras personas!<br />\r\n<br />\r\nPara ello, puedes decírselo "\
-                             "personalmente o recurrir a los nuevos recursos. Cuando logres los "\
-                             "apoyos necesarios (si no los tienes ya), verás que a tu "\
-                             "disposición hemos puesto un recurso 'Póster' para que puedas "\
-                             "descargarlo e imprimirlo o imprimirlo directamente desde esta "\
-                             "herramienta. Una vez lo tengas, pide permiso, y pégalo en "\
-                             "distintos lugares para que todo el que pase por allí puedan saber "\
-                             "de tu propuesta y entrar en la plataforma para apoyarte.</p>\r\n",
+    Dashboard::Action.create(title: "Chiedi che ti lascino appendere manifesti",
+                             description: "<p>Sicuramente sei in buoni rapporti con i proprietari/responsabili di "\
+                             "imprese, attività commerciali, negozi, centri sociali e civili, "\
+                             "associazioni... del tuo quartiere. Chiedi loro il permesso di affiggere, nei "\
+                             "loro locali e nelle loro strutture, il manifesto della tua proposta "\
+                             "per permettere a tutti coloro che passano di lì di sostenerla e di diffonderla presso "\
+                             "altre persone!<br />\r\n<br />\r\nA tal fine, puoi dirlo "\
+                             "di persone o ricorrere alla nuove risorse. Una volta ottenuti gli "\
+                             "appoggi necessari (se non li hai già), vedrai che abbiamo messo a tua "\
+                             "disposizione una risorsa 'Manifesto' che puoi "\
+                             "scaricare e stampare, o stampare direttamente da questo "\
+                             "strumento. Una volta nelle tue mani, chiedi permesso e appendilo in "\
+                             "luoghi differenti perché quelli che transitano di lì possano venire a conoscenza "\
+                             "della tua proposta ed entrare nel portale per appoggiarti.</p>\r\n",
                              request_to_administrators: false,
                              day_offset: 1,
                              required_supports: 0,
                              order: 19,
                              active: true,
                              action_type: 0,
-                             short_description: "¿Imaginas tu propuesta visible por todas partes?",
+                             short_description: "Immagini la tua proposta visibile ovunque?",
                              published_proposal: true)
-    Dashboard::Action.create(title: "Aplica las acciones que tienes pendientes",
-                             description: "<p>Es hora de llevar un paso más allá las acciones "\
-                             "que te aconsejamos mientras tu propuesta estaba en borrador. Si no "\
-                             "las conoces es el momento de que las repases con atención. El "\
-                             "primer día de campaña es muy importante. Tu propuesta, por estar "\
-                             "entre las nuevas publicadas, tiene más atención hoy ¡Aprovecha "\
-                             "y difunde! </p>\r\n",
+    Dashboard::Action.create(title: "Applica le azioni che hai in sospeso",
+                             description: "<p>È il momento di fare un passo avanti nella sequenza delle azioni "\
+                             "che ti abbiamo suggerito quando la tua proposta era in bozza. Se non "\
+                             "le ricordi è il momento di rivederle con attenzione. Il "\
+                             "primo giorno della campagna è molto importante. La tua proposta si trova "\
+                             "fra quelle di nuova pubblicazione, e per questo oggi ha maggior risalto: approfittane "\
+                             "e diffondi! </p>\r\n",
                              request_to_administrators: false,
                              day_offset: 0,
                              required_supports: 0,
                              order: 15,
                              active: true,
                              action_type: 0,
-                             short_description: "Encontrarás todas las acciones en la página "\
-                             "de \"Acciones recomendadas\" en tu Panel de Propuesta. Recuerda "\
-                             "utilizarlas habitualmente para lograr nuevos apoyos.",
+                             short_description: "Troverai tutte le azioni nella pagina "\
+                             "\"Azioni consigliate\" nel Pannello della Proposta. Ricorda "\
+                             "di usarle frequentemente per raccogliere nuovi appoggi.",
                              published_proposal: true)
-    Dashboard::Action.create(title: "Pide a tu gente que comparta tu propuesta",
-                             description: "<p>¡Cuanta más gente conozca tu propuesta mejor! No "\
-                             "te cortes en pedir a tus amigos, familiares y contactos que "\
-                             "compartan ellos también tu iniciativa en sus redes sociales. ¡La "\
-                             "unión hace la fuerza!<br />\r\n<br />\r\nEn la fase de precampaña "\
-                             "ya te invitamos a utilizar tus redes sociales, ¡son el mejor medio "\
-                             "para llegar al máximo de personas! Además, también te hemos dado "\
-                             "un KIT de imágenes para que puedas comunicar tu propuesta. Y si "\
-                             "quieres, también puedes pasarles a ellos este KIT para que "\
-                             "publiquen las imágenes y capten apoyos para ti a través de sus "\
-                             "perfiles personales.<br />\r\n </p>\r\n",
+    Dashboard::Action.create(title: "Chiedi alla gente che ti sta vicino di condividere la tua proposta",
+                             description: "<p>Quanta più gente conosce la tua proposta, meglio è! Non "\
+                             "vergognarti di chiedere ai tuoi amici, familiari e contatti di "\
+                             "condividere essi stessi la tua iniziativa sui loro social networks. "\
+                             "L'unione fa la forza!<br />\r\n<br />\r\nTi abbiamo già invitato "\
+                             "ad usare i social networks nella fase precedente la campagna, sono il mezzo migliore "\
+                             "per arrivare al numero massimo di persone! Inoltre, ti abbiamo anche fornito "\
+                             "un KIT di immagini per la diffusione della tua proposta. E, se "\
+                             "lo desideri, puoi dare il KIT ai tuoi amici, familiari e contatti "\
+                             "perché pubblichino le immagini e catturino appoggi per te attraverso i loro "\
+                             "profili personali.<br />\r\n </p>\r\n",
                              request_to_administrators: false,
                              day_offset: 3,
                              required_supports: 0,
                              order: 21,
                              active: true,
                              action_type: 0,
-                             short_description: "Pídeles que la muevan en sus redes sociales",
+                             short_description: "Chiedi loro che la diffondano sui loro social networks",
                              published_proposal: true)
-    Dashboard::Action.create(title: "Tus vecinos son una gran comunidad para pedir apoyo",
-                             description: "<p>El lugar en el que vives es el sitio idóneo para "\
-                             "pedir apoyo ya que conoces a tus vecinos y de manera personal "\
-                             "puedes pedirles que te ayuden, es sencillo y efectivo.<br />\r\n "\
-                             "<br />\r\nPara ello, puedes decírselo personalmente, pegar un "\
-                             "cartel en tu portal o convocar una reunión en tu casa para los "\
-                             "interesados. Verás que dispones del recurso  'Cartel ' para que "\
-                             "puedas descargarlo e imprimirlo. Si es necesario ayúdales para "\
-                             "que se hagan un usuario en la plataforma Decide. Si has convocado "\
-                             "una reunión, y vienen a  tu casa o llevas contigo un ordenador, "\
-                             "tableta o móvil con Internet, les puede echar una mano para que se "\
-                             "registren como nuevo usuario y te apoyen.</p>\r\n\r\n<p> </p>\r\n",
+    Dashboard::Action.create(title: "I tuoi vicini sono un'ottima comunità a cui chiedere supporto",
+                             description: "<p>Il luogo dove vivi è il posto adatto per "\
+                             "ottenere supporto dal momento che conosci i tuoi vicini e puoi chiedere loro "\
+                             "di aiutarti.<br />\r\n "\
+                             "<br />\r\nA tal fine, lo si può dire di persona, oppure affiggendo un "\
+                             "manifesto nell'androne o, ancora, convocando una riunione a casa tua per coloro "\
+                             "che sono interessati. Vedrai che hai a disposizione la risorsa 'Manifesto ' da "\
+                             "scaricare e stampare. Se è necesario, aiutali a "\
+                             "registrarsi sul portale DecidiTorino. Se hai convocato "\
+                             "una riunione a casa tua, con un PC, "\
+                             "un tablet o uno smartphone connessi ad Internet, puoi dar loro una mano a "\
+                             "registrarsi come nuovi utenti, e poi ad appoggiare la proposta.</p>\r\n\r\n<p> </p>\r\n",
                              request_to_administrators: false,
                              day_offset: 4,
                              required_supports: 0,
                              order: 22,
                              active: true,
                              action_type: 0,
-                             short_description: "Deja un cartel en tu portal o convoca una reunión",
+                             short_description: "Lascia un manifesto nell'androne o convoca una riunione",
                              published_proposal: true)
-    Dashboard::Action.create(title: "Imprime tu propuesta y repártela",
-                             description: "<p>Estás pidiéndoles su apoyo y es normal que ellos "\
-                             "te pidan más información. Lo mejor es que no les reclames demasiado "\
-                             "en primera instancia. Haz unas copias del resumen de tu propuesta, "\
-                             "y entrégaselas a quien consideres oportuno. Las personas solemos "\
-                             "interesarnos y apoyar aquello cuyo carácter parece serio y "\
-                             "meditado. Por ello, te aconsejamos que redactes tu propuesta "\
-                             "brevemente e imprimas varias copias para que todos aquellos que "\
-                             "deseen saber más, puedan leer en sus casas y entender con "\
-                             "tranquilidad, de qué trata realmente.</p>\r\n",
+    Dashboard::Action.create(title: "Stampa la tua proposta e distribuiscila",
+                             description: "<p>Stai chiedendo il loro appoggio ed è normale che vogliano avere "\
+                             "più informazioni. Sulle prime è meglio non chiedere "\
+                             "troppo. Fai qualche copia del sommario della tua proposta, "\
+                             "e consegnala a coloro che ipotizzi possano essere interessati. Le persone sono solite "\
+                             "interessarsi ed appoggiare le cose che hanno carattere serio e "\
+                             "ponderato. A tal proposito, ti suggeriamo di scrivere un sunto della tua proposta "\
+                             "e di stamparlo in diverse copie da dare alle persone maggiormente "\
+                             "interessate, che potranno leggerlo a casa con tranquillità e capire "\
+                             "di cosa si tratta realmente.</p>\r\n",
                              request_to_administrators: false,
                              day_offset: 2,
                              required_supports: 0,
                              order: 20,
                              active: true,
                              action_type: 0,
-                             short_description: "La gente confía más cuando tiene información "\
-                             "suficiente",
+                             short_description: "La gente ha maggiore fiducia quando dispone di sufficiente "\
+                             "informazione",
                              published_proposal: true)
-    Dashboard::Action.create(title: "Crea tarjetas de visita adaptándolas para "\
-                             "difundir tu propuesta",
-                             description: "<p>¿Sabes cuánto cuesta hacer 500 tarjetas para "\
-                             "presentar tu propuesta y captar nuevos apoyos de manera inmediata? "\
-                             "Esta cantidad de tarjetas puede costar a partir de 7,25€. Busca "\
-                             "la página web que más confianza te dé o imprimelas en una "\
-                             "copistería, y pide a todo el mundo que te ayude a distribuirlas: "\
-                             "amigos y familiares, vecinos, compañeros de trabajo, gente del "\
-                             "barrio... ¡a quien tú quieras! No importa que no conozcas a la "\
-                             "gente a la cual solicitas el apoyo para tu propuesta, ¡quien menos "\
-                             "lo esperes te puede ayudar! Pero debes ponérselo fácil, por eso: "\
-                             "añade el título y el identificador de tu propuesta en la tarjeta, "\
-                             "el enlace a la web decide.madrid.es y tu nombre ¡y no te olvides de "\
-                             "pedirles a todos/as que te apoyen, no sólo que visiten "\
-                             "el link!</p>\r\n",
+    Dashboard::Action.create(title: "Crea biglietti da visita adattandoli per "\
+                             "diffondere la tua proposta",
+                             description: "<p>Sai quanto costa stampare 500 biglietti da visita per "\
+                             "presentare la tua proposta e catturare subito nuovi appoggi? "\
+                             "Una simile quantità di biglietti da visita ha un prezzo a partire da € 7,25. Stampa "\
+                             "i biglietti su un sito Internet o in una "\
+                             "copisteria, e chiedi aiuto a tutti per la distribuzione: "\
+                             "amici e familiari, vicini di casa, colleghi di lavoro, gente del "\
+                             "quartiere... a chi vuoi tu! Non importa che tu non conosca la "\
+                             "gente a cui richiedi il supporto per la tua proposta, chi meno "\
+                             "te l'aspetti ti può aiutare! Però devi fare le cose facili: "\
+                             "sul biglietto da visita precisa il titolo e l'identificativo della tua proposta, "\
+                             "il link del sito web www.deciditorino.it ed il tuo nome, e non dimenticare di "\
+                             "chiedere a tutti/e che non si limitino a visitare la pagina ma anche a darti "\
+                             "il loro appoggio!</p>\r\n",
                              request_to_administrators: false,
                              day_offset: 5,
                              required_supports: 0,
                              order: 23,
                              active: true,
                              action_type: 0,
-                             short_description: "Es una manera directa y diferente de llegar a "\
-                             "más gente",
+                             short_description: "È un modo diretto e differente di arrivare a "\
+                             "più gente",
                              published_proposal: true)
-    Dashboard::Action.create(title: "Pide que te apoyen en tu trabajo",
-                             description: "<p>No dudes en hacerles saber de la creación de "\
-                             "tu propuesta y de la necesidad de su apoyo por su parte para "\
-                             "lograr hacerla realidad. En ellos y ellas, encontrarás una fuente "\
-                             "de apoyo enorme que puede extenderse más allá si logras que hablen "\
-                             "de la propuesta en sus entornos personales, por eso vale la pena "\
-                             "hacer el esfuerzo durante un sólo día y no resultar demasiado "\
-                             "insistente. <br />\r\n<br />\r\nPara ello, puedes contarles "\
-                             "personalmente la motivación que te llevó a publicar la propuesta "\
-                             "o explicarlo en grupo en los momentos de descanso. También pedir "\
-                             "permiso a tu jefe/a para enviar un email a todos solicitando el "\
-                             "apoyo. Puedes utilizar las tarjetas de visita o el cártel que ya "\
-                             "conoces. Una vez lo tengas, pide permiso, y pégalo en distintos "\
-                             "lugares como la entrada del baño, la zona de descanso... </p>\r\n",
+    Dashboard::Action.create(title: "Chiedi che ti supportino nel tuo lavoro",
+                             description: "<p>Sentiti libero di far loro conoscere la creazione della "\
+                             "tua proposta e la necessità, da parte loro, di sostenerla per "\
+                             "trasformarla in realtà. Troverai in loro una enorme fonte "\
+                             "di supporto che può diventare più ampia se la proposta "\
+                             "ha diffusione nei loro ambienti personali, per questo vale la pena "\
+                             "concentrare lo sforzo in un solo giorno per non risultare troppo "\
+                             "insistente. <br />\r\n<br />\r\nA tal fine, puoi comunicare "\
+                             "di persona la motivazione che ti porta a pubblicare la proposta "\
+                             "o puoi spiegarlo in gruppo nei momenti di pausa. Fatti anche dare dal tuo/a capo/a "\
+                             "il permesso di inviare una email a tutti i colleghi di lavoro per chiedere "\
+                             "l'appoggio. Puoi usare i biglietti da visita o il manifesto che conosci già. "\
+                             "Se te lo concedono, appendi il manifesto in diversi "\
+                             "luoghi come l'entrata del bagno, l'area caffè... </p>\r\n",
                              request_to_administrators: false,
                              day_offset: 6,
                              required_supports: 0,
                              order: 24,
                              active: true,
                              action_type: 0,
-                             short_description: "Apóyate en tus compañeros y compañeras de "\
-                             "trabajo, ¡son cruciales!",
+                             short_description: "Appoggiati ai tuoi colleghi e colleghe di "\
+                             "lavoro, sono decisivi!",
                              published_proposal: true)
-    Dashboard::Action.create(title: "Manual Diez claves",
-                             description: "<p>En estos momentos tu propuesta aún esta en modo "\
-                             "borrador, es un momento perfecto para leerte este resumen que "\
-                             "trata cómo publicar una propuesta ciudadana y empezar ya a reunir "\
-                             "apoyos. Aunque ya habrás superado alguno de los pasos que repasa "\
-                             "este artículo, como por ejemplo hacerte usuario/a, hay muchos "\
-                             "otros que te pueden muy útiles, ya que incorporan recomendaciones. "\
-                             "Es el caso de los consejos para conseguir una mejor redacción o "\
-                             "con qué archivos podrías complementar la información que estás "\
-                             "introduciendo en el formulario. ¡Échale un vistazo!</p>\r\n",
+    Dashboard::Action.create(title: "Manuale Dieci chiavi",
+                             description: "<p>Al momento la tua proposta è ancora in "\
+                             "bozza, quindi puoi leggere questo riassunto che "\
+                             "illustra come pubblicare una proposta e iniziare la raccolta "\
+                             "degli appoggi. Sebbene tu abbia già compiuto alcuni dei passi che elenca "\
+                             "questo artico, come per esempio quello per la creazione di un account, ce ne sono "\
+                             "molti altri che ti possono tornare utili per i suggerimenti presenti. "\
+                             "È il caso dei consigli per migliorare la stesura o "\
+                             "con quali file potresti integrare i dati che stai "\
+                             "immettendo nel form. Dacci uno sguardo!</p>\r\n",
                              request_to_administrators: true,
                              day_offset: 0,
                              required_supports: 0,
                              order: 0,
                              active: true,
                              action_type: 1,
-                             short_description: "Recomendaciones antes de publicar",
+                             short_description: "Consigli precedenti la pubblicazione",
                              published_proposal: false)
-    Dashboard::Action.create(title: "Mailing masivo",
+    Dashboard::Action.create(title: "Mailing massivo",
                              description: "",
                              request_to_administrators: true,
                              day_offset: 0,
@@ -531,7 +531,7 @@ namespace :dashboards do
                              action_type: 1,
                              short_description: "",
                              published_proposal: true)
-    Dashboard::Action.create(title: "Píldora de vídeo",
+    Dashboard::Action.create(title: "Pillola video",
                              description: "",
                              request_to_administrators: false,
                              day_offset: 0,
@@ -541,25 +541,25 @@ namespace :dashboards do
                              action_type: 1,
                              short_description: "",
                              published_proposal: true)
-    Dashboard::Action.create(title: "Imágenes para tus perfiles",
-                             description: "<p>Algunos ejemplos para inspirarte o incluir en los "\
-                             "perfiles que tengas activos en redes sociales. Se trata de cambiar "\
-                             "temporalmente la imágen típica de tu usuario o el banner general "\
-                             "en tu espacio de perfil, por otra que anuncie que tienes una "\
-                             "propuesta en decide y que buscas apoyo. Puedes utilizar alguno de "\
-                             "ellos,  crear tu mismo/a el slogan que mejor te vaya e ir "\
-                             "cambiandolos regularmente. Es un espacio muy agradecido ya que "\
-                             "cualquier persona que te conozca lo verá sin tener que hacer "\
-                             "tanto esfuerzo por tu parte.</p>\r\n",
+    Dashboard::Action.create(title: "Immagini per i tuoi profili",
+                             description: "<p>Alcuni esempi per darti ispirazione o da inserire nei "\
+                             "profili dei tuoi social networks. Si tratta di sostituire "\
+                             "temporaneamente l'immagine associata al tuo utente o il banner generale "\
+                             "proprio dello spazio del profilo, inserendone un'altra nella quale si pubblicizza "\
+                             "la proposta presente in www.deciditorino.it e la ricerca di appoggi associata. Puoi impiegare "\
+                             "uno di quelli presenti, oppure creare lo slogan che più ti piace e che cambierai "\
+                             "di frequente. È una azione semplice, con poco sforzo da parte tua, "\
+                             "e sarà vista da tutte le persone "\
+                             "che ti conoscono.</p>\r\n",
                              request_to_administrators: false,
                              day_offset: 1,
                              required_supports: 0,
                              order: 2,
                              active: true,
                              action_type: 1,
-                             short_description: "Ejemplos para incluir en tus Redes Sociales",
+                             short_description: "Esempio di inserimento sui tuoi Social Networks",
                              published_proposal: true)
-    Dashboard::Action.create(title: "Mención en RRSS del Ayuntamiento",
+    Dashboard::Action.create(title: "Menzione sui Social Networks del Comune",
                              description: "",
                              request_to_administrators: true,
                              day_offset: 0,
@@ -567,10 +567,10 @@ namespace :dashboards do
                              order: 3,
                              active: true,
                              action_type: 1,
-                             short_description: "Una difusión específica en las redes "\
-                                                "del Ayuntamiento",
+                             short_description: "Una diffusione specifica sui canali "\
+                                                "del Comune",
                              published_proposal: true)
-    Dashboard::Action.create(title: "Decide Corner",
+    Dashboard::Action.create(title: "Decidi Corner",
                              description: "",
                              request_to_administrators: true,
                              day_offset: 0,
@@ -580,7 +580,7 @@ namespace :dashboards do
                              action_type: 1,
                              short_description: "",
                              published_proposal: true)
-    Dashboard::Action.create(title: "1 día en portada",
+    Dashboard::Action.create(title: "1 giorno sul portale",
                              description: "",
                              request_to_administrators: true,
                              day_offset: 0,
@@ -590,7 +590,7 @@ namespace :dashboards do
                              action_type: 1,
                              short_description: "",
                              published_proposal: true)
-    Dashboard::Action.create(title: "Anuncio en Facebook",
+    Dashboard::Action.create(title: "Annuncio su Facebook",
                              description: "",
                              request_to_administrators: true,
                              day_offset: 0,
