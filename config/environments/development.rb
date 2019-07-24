@@ -42,7 +42,7 @@ Rails.application.configure do
 
   # Deliver emails to a development mailbox at /letter_opener
   # config.action_mailer.delivery_method = :letter_opener
-
+  # config.action_mailer.perform_caching = false
   # SMTP configuration to deliver emails
   # Uncomment the following block of code and add your SMTP service credentials
   config.action_mailer.delivery_method = :smtp

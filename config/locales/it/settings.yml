@@ -116,6 +116,10 @@ it:
       public_stats_description: "Mostra le statistiche pubbliche nel pannello di Amministrazione"
       help_page: "Pagina di 'Scopri DecidiTorino'"
       help_page_description: 'Mostra la voce di menu "Scopri DecidiTorino" che conduce ad una pagina nella quale sono illustrate le funzionalità abilitate. È anche possibile creare pagine e menu personalizzati nelle sezioni "Pagine personalizzate" e "Blocchi personalizzati"'
+      remote_translations: "Traduzioni in remoto"
+      remote_translations_description: "Mostra un bottone che consente agli utenti di richiedere la traduzione di una pagina non ancora tradotta nella lua lingua."
+      translation_interface: "Interfaccia di traduzione"
+      translation_interface_description: "Mostra l'interfaccia di traduzione manuale per consentire agli utenti di introdurre i contenuti in tutte le lingue disponibili sull'applicazione così come loro lo desiderano. Questa opzione ha effetto solamente sulle pagine dell'applicazione visibili dagli utenti, mentre nel cruscotto dell'Administrator è sempre attiva."
       valuation_comment_notification: "Notifica commenti di valutazione"
       valuation_comment_notification_description: "In presenza di un nuovo commento di valutazione, invia una email a tutti gli utenti associati ad un bilancio partecipativo tranne all'autore del commento"
     map:

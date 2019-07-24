@@ -1,5 +1,8 @@
 <!-- differisce dall'originale per la presenza del nome dell'applicazione (riga 24) e per la formattazione che si esegue con il codice js -->
 <header>
+  <% if display_remote_translation_info?(@remote_translations, I18n.locale) %>
+    <%= render "shared/remote_translations_button", remote_translations: @remote_translations %>
+  <% end %>
 
   <div class="top-links">
     <div class="row">

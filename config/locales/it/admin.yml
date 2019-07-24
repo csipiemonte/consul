@@ -413,23 +413,23 @@ it:
           published_proposal_help_text: "Aggiungi la spunta per creare l'azione solo per le proposte pubblicate"
       administrator_tasks:
         index:
-          description: "Le risorse pubblicate nella barra di avanzamento delle proposte possono includere un bottone per inviare un sollecito agli amministratori. Qui di seguito sono elencati i solleciti degli utenti."
-          title: Risorse con solleciti
+          description: "Le risorse pubblicate nella barra di avanzamento delle proposte possono includere un bottone mediante il quale richiederle agli amministratori. Qui di seguito sono elencate le richieste degli utenti."
+          title: Risorse richieste
           solve: Risolvi
-          no_records: Non sono presenti risorse con solleciti
+          no_records: Non sono presenti risorse richieste
           source: Proposta
-          resource: Risorsa con sollecito
+          resource: Risorsa richiesta
           filter: Filtro
           filters:
             pending: In attesa
-            done: Risolti
+            done: Risolte
         edit:
           back: "Torna all'elenco dei task in attesa"
           solving: Risolvi task in attesa
         form:
           solve: Segna come risolta
           proposal: Proposta
-          request: Risorsa con sollecito
+          request: Risorsa richiesta
         update:
           success: Il task è stato contrassegnato come risolto
     debates:
@@ -731,7 +731,7 @@ it:
       users: Utenti
       trackers: "Gestori di tracciamento"
       dashboard: Barra di avanzamento delle proposte
-      administrator_tasks: Risorse con solleciti
+      administrator_tasks: Risorse richieste
       dashboard_actions: Risorse e azioni
       download_settings:
         title: "Configurazione del download"
@@ -1332,6 +1332,9 @@ it:
       proposal_search:
         button: Cerca
         placeholder: Cerca proposte per titolo, codice, descrizione o domanda
+      debate_search:
+        button: Cerca
+        placeholder: Cerca dibattiti per titolo o per descrizione
       user_search:
         button: Cerca
         placeholder: Cerca utente per nome o email
@@ -1479,13 +1482,13 @@ it:
           origin_web: Partecipanti sul sito
           origin_total: Partecipanti Totali
     tags:
-      create: Crea argomento
-      destroy: Elimina argomento
+      create: Crea tema
+      destroy: Elimina tema
       index:
-        add_tag: Aggiungi un nuovo argomento di proposta
-        title: Argomenti di proposta
-        topic: Argomento
-        help: "Quando un utente crea una proposta, i seguenti argomenti sono suggeriti come tag predefiniti."
+        add_tag: Aggiungi un nuovo tema per le proposte
+        title: Temi delle proposte
+        topic: Tema
+        help: "Quando un utente crea una proposta, i seguenti temi sono suggeriti come tag predefiniti."
       name:
         placeholder: Scrivi il nome
     users:
@@ -1628,9 +1631,6 @@ it:
         submit_header: Salva card
         card_title: Modifica card
         submit_card: Salva card
-    translations:
-      remove_language: Elimina lingua
-      add_language: Aggiungi lingua
     change_log:
       title: "Cronologia"
       id: "ID"

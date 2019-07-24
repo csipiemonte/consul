@@ -1,3 +1,6 @@
+# require "database_cleaner"
+# DatabaseCleaner.clean_with :truncation
+
 # coding: utf-8
 # Default admin user (change password after first deploy to a server!)
 if Administrator.count == 0

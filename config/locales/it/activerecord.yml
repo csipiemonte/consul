@@ -152,6 +152,9 @@ it:
         organization_name: "Se presenti una proposta a nome di un collettivo o di un'organizzazione, ovvero per conto di più persone, indicane il nome"
         image: "Immagine descrittiva del progetto di spesa"
         image_title: "Titolo dell'immagine"
+      budget/investment/translation:
+        title: "Titolo"
+        description: "Descrizione"
       geozone:
         name: Nome
         external_code: "Codice esterno (facoltativo)"
@@ -183,7 +186,10 @@ it:
         author: "Autore"
         description: "Opinione"
         terms_of_service: "Termini di servizio"
-        title: "Titolo"
+        title: "Titolo del dibattito"
+      debate/translation:
+        title: "Titolo del dibattito"
+        description: "Testo iniziale del dibattito"
       proposal:
         author: "Autore"
         title: "Titolo"
@@ -191,6 +197,11 @@ it:
         description: "Descrizione"
         selected: "Segna come selezionata"
         terms_of_service: "Termini di servizio"
+      proposal/translation:
+        title: "Titolo della proposta"
+        description: "Descrizione della proposta"
+        summary: "Sommario della proposta"
+        retired_explanation: "Spiegazione"
       user:
         login: "Email o nome utente"
         email: "Email"
@@ -345,7 +356,7 @@ it:
         short_description: Breve descrizione
         description: Descrizione
         link: Link esterno
-        request_to_administrators: Includere nella risorsa un pulsante per inviare un sollecito della risorsa agli amministratori
+        request_to_administrators: Includere nella risorsa un bottone per richiederla agli amministratori
         day_offset: 'Dopo quanti giorni dalla creazione della proposta si vuole che diventi attiva?'
         required_supports: 'Quanti appoggi deve ricevere la proposta perché diventi attiva?'
         order: È possibile introdurre la posizione impiegata per mostrare all'utente tale azione all'interno dell'elenco delle azioni
@@ -439,6 +450,7 @@ it:
             valuation:
               cannot_comment_valuation: "Non è possibile commentare una valutazione"
       messages:
+        translations_too_short: È obbligatorio fornire almeno una traduzione
         record_invalid: "La certificazione non è avvenuta: %{errors}"
         another_poll_active: Per questo periodo è già presente un altro sondaggio attivo.
         restrict_dependent_destroy:

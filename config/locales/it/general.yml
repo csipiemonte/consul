@@ -101,7 +101,6 @@ it:
         submit_button: Salva modifiche
       show_link: Vedi dibattito
     form:
-      debate_text: Testo iniziale del dibattito
       debate_title: Titolo del dibattito
       tags_instructions: Etichetta questo dibattito.
       tags_label: Temi
@@ -333,7 +332,6 @@ it:
       warning: "Se prosegui la tua proposta potrà continuare a ricevere appoggi, però non sarà più presente nella lista principale, e comparirà un messaggio per avvertire tutti gli utenti che l'autore ha deciso di togliere la proposta dalla raccolta degli appoggi."
       retired_reason_label: Motivo per il quale si ritira la proposta
       retired_reason_blank: Selezione una opzione
-      retired_explanation_label: Motivazione
       retired_explanation_placeholder: Spiega brevemente il perché credi che questa proposta non debba più ricevere appoggi
       submit_button: Ritira la proposta
     retire_options:
@@ -492,7 +490,7 @@ it:
       request: Sollecita
     create_request:
       success: La petizione è stata inviata correttamente. Sarai contattato il prima possibile per informarti a riguardo.
-      archived: Questa proposta è archiviata e non può sollecitare risorse.
+      archived: Questa proposta è archiviata e non può richiedere risorse.
     progress:
       title: Grafico
       group_by_month: Mensile
@@ -824,6 +822,14 @@ it:
         legislation_process: "Scarica progetti"
         budget: "Scarica bilanci"
         investments: "Scarica progetti"
+    translations:
+      select_language_prompt: Seleziona lingua
+      remove_language: Elimina lingua
+      add_language: Aggiungi lingua
+      languages_in_use_html:
+        zero: "<span class='js-languages-count'>0</span> lingue in uso"
+        one: "<span class='js-languages-count'>1</span> lingua in uso"
+        other: "<span class='js-languages-count'>%{count}</span> lingue in uso"
   social:
     facebook: "Facebook di %{org}"
     twitter: "Twitter di %{org}"
@@ -1032,3 +1038,9 @@ it:
     title: Tipo di priorità
     borda: Votazione con il metodo di Borda
     dowdall: Votazione con il metodo di Dowdall
+  remote_translations:
+    text: Il contenuto di questa pagina non è disponible nella tua lingua
+    all_remote_translations_enqueued_text: "A breve, con l'aggiornamento della pagina, potrà vedere tutti i contenuti nella sua lingua"
+    create:
+      enqueue_remote_translation: Le traduzioni sono state richieste correttamente.
+    button: Tradurre pagina
