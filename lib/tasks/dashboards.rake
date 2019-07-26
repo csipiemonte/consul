@@ -116,7 +116,7 @@ namespace :dashboards do
                              action_type: 0,
                              short_description: "Crea un incontro per condividere la tua proposta.",
                              published_proposal: false)
-    Dashboard::Action.create(title: "Crea un sondaggio personalizato",
+    Dashboard::Action.create(title: "Crea un sondaggio personalizzato",
                              description: "<p>I sondaggi servono per risolvere i dubbi, domandare "\
                              "l'opinione, migliorare la proposta ed anche per creare una comunità "\
                              "intorno alla quale fare crescere la proposta in termini di appoggi, dopo averla "\
@@ -480,7 +480,7 @@ namespace :dashboards do
                              short_description: "È un modo diretto e differente di arrivare a "\
                              "più gente",
                              published_proposal: true)
-    Dashboard::Action.create(title: "Chiedi che ti supportino nel tuo lavoro",
+    Dashboard::Action.create(title: "Chiedi appoggio sul posto di lavoro",
                              description: "<p>Sentiti libero di far loro conoscere la creazione della "\
                              "tua proposta e la necessità, da parte loro, di sostenerla per "\
                              "trasformarla in realtà. Troverai in loro una enorme fonte "\

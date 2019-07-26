@@ -4,15 +4,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## [1.4.0](https://github.com/csipiemonte/consul/compare/v1.3.3...v1.4.0) - 2019-07-gg
+## [1.4.0](https://github.com/csipiemonte/consul/compare/v1.3.3...v1.4.0) - 2019-07-26
 
 ### Added
 
+- **Admin:** Add document uploads from admin sectio
 - **Admin:** Improve Admin settings section
 - **Admin:** Add download's dashboard
 - **Dashboard:** Add proposal's dashboard
 - **Milestones:** Add progress bars to milestones public view
-- **Proposals:** Add rake to move external\_url to description
+
+### Changed
+- Privacy and census_terms moved to DB
 
 ## [1.3.3](https://github.com/csipiemonte/consul/compare/v1.3.2...v1.3.3) - 2018-12-14
 
