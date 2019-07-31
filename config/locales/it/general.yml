@@ -197,6 +197,8 @@ it:
     document: il documento
     topic: Tema
     image: Immagine
+    local_census_record: "la registrazione dell'anagrafe locale"
+    local_census_records/import: "l'importazione delle registrazioni dell'anagrafe locale"
   geozones:
     none: Tutta la città
   layouts:

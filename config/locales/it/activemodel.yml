@@ -4,6 +4,9 @@ it:
       verification:
         residence: "Residenza"
         sms: "SMS"
+      local_census_records/import:
+        one: Import dati anagrafici
+        other: Import dati anagrafici
     attributes:
       verification:
         residence:
@@ -20,3 +23,12 @@ it:
         document_type: "Tipo documento"
         document_number: "Numero documento"
         year_of_birth: "Anno di nascita"
+      local_census_records/import:
+        file: File
+    errors:
+      models:
+        local_census_records/import:
+          attributes:
+            file:
+              extension: "Il formato del file non è corretto. I formati consentiti del file sono: %{valid_extensions}."
+              headers: "Le intestazioni del file non sono corrette. Le intestazioni del file devono avere i seguenti nomi: %{required_headers}."

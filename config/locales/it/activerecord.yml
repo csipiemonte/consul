@@ -125,6 +125,9 @@ it:
       link:
         one: Link
         other: Link
+      local_census_record:
+        one: Dato anagrafico
+        other: Dati anagrafici
     attributes:
       administrator:
         description: Descrizione
@@ -373,6 +376,11 @@ it:
         valuator_group_id: Gruppo di valutazione
         can_comment: È possibile lasciare un commento
         can_edit_dossier: È possibile modificare i dossier
+      local_census_record:
+        document_type: Tipo di documento
+        document_number: Numero del documento
+        date_of_birth: Data di nascita
+        postal_code: CAP
     errors:
       models:
         user:

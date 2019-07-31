@@ -743,6 +743,7 @@ it:
         budget_investments_milestones: "Bilanci partecipativi (Avanzamento)"
       debates: "Dibattiti"
       comments: "Commenti"
+      local_census_records: Gestione anagrafe locale
     administrators:
       index:
         title: Amministratori
@@ -1311,6 +1312,12 @@ it:
           how_to_enable: 'Per visualizzata la mappa agli utenti è necessario attivare "Geolocalizzazione delle proposte e dei progetti di spesa" nella sezione "Funzionalità".'
         dashboard:
           title: Barra di avanzamento delle proposte
+        remote_census:
+          title: Configurazione Anagrafe Remota
+          how_to_enable: "Per configurare la connessione con l'Anagrafe remota è necessario attivare 'Configurare la connessione con Anagrafe remota' nella sezione 'Funzionalità'."
+      remote_census_general_name: Dati Generali
+      remote_census_request_name: Dati Richiesta
+      remote_census_response_name: Dati Risposta
       setting: Funzionalità
       setting_actions: Azioni
       setting_name: Configurazione
@@ -1394,13 +1401,19 @@ it:
         new: Nuovo foglio delle firme
       new:
         title: Nuovo foglio delle firme
-        document_numbers_note: "Introdurre i numeri separati da virgole (,)"
+        document_numbers_note: "Introdurre i numeri separati da punto e virgola (;)"
         submit: Crea foglio delle firme
+        text_help:
+          required_fields_note: "Per certificare un utente l'applicazione ha bisogno di: Codice Fiscale"
+          date_of_birth_note: ", Data di nascita (dd/mm/yyyy)"
+          postal_code_note: " e CAP"
+          required_fields_structure_note: "I campi richiesti per ciascun utente devono essere separati da virgole e ogni utente deve essere separato da un punto e virgola."
+          example_text: "Esempio: "
       show:
         created_at: Creato
         author: Autore
-        documents: Documenti
-        document_count: "Numero di documenti:"
+        users: Utenti
+        signature_count: "Numero di firme:"
         verified:
           one: "È presente %{count} firma valida"
           other: "Sono presenti %{count} firme valide"
@@ -1664,3 +1677,42 @@ it:
     progress_bars:
       index:
         title: "Barre di avanzamento"
+    local_census_records:
+      index:
+        title: Gestione anagrafe locale
+        create: Crea nuova registrazione in anagrafe locale
+        no_local_census_records: Non sono presenti registrazioni di anagrafe locale
+        document_type: Tipo di documento
+        document_number: Numero di documento
+        date_of_birth: Data di nascita
+        postal_code: CAP
+        search:
+          placeholder: Ricerca per numero di documento
+          search: Ricerca
+        import: Importa CSV
+      form:
+        date_of_birth: Data di nascita
+      new:
+        creating: Creazione di una nuova registrazione in anagrafe locale
+      create:
+        notice: Nuova registrazione in anagrafe locale creata correttamente!
+      edit:
+        editing: Modifica registrazione in anagrafe locale
+      update:
+        notice: Registrazione in anagrafe locale aggiornata correttamente!
+      destroy:
+        notice: Registrazione in anagrafe locale eliminata correttamente!
+      imports:
+        new:
+          title: Registrazioni in anagrafe locale
+          subtitle: Importa file CSV
+        create:
+          notice: Importazione delle registrazioni in anagrafe locale eseguito correttamente!
+        show:
+          title: Gestione anagrafe locale
+          subtitle: Risultati del processo di import
+          import: Importa altro file
+          errored: Righe non corrette
+          created: Registrazioni create
+        local_census_records:
+          no_records_found: La ricerca di registrazioni non ha prodotto risultati.
