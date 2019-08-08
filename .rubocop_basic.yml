@@ -14,6 +14,15 @@ AllCops:
   # to ignore them, so only the ones explicitly set in this file are enabled.
   DisabledByDefault: true
 
+Capybara/FeatureMethods:
+  Enabled: true
+  EnabledMethods:
+    - scenario
+    - xscenario
+
+FactoryBot/AttributeDefinedStatically:
+  Enabled: true
+
 Layout/IndentationConsistency:
   EnforcedStyle: rails
 
@@ -37,6 +46,21 @@ Lint/UselessAssignment:
 
 Metrics/LineLength:
   Max: 110
+
+Rails/ActionFilter:
+  Enabled: true
+
+Rails/ApplicationJob:
+  Enabled: true
+
+Rails/ApplicationRecord:
+  Enabled: true
+
+Rails/HttpPositionalArguments:
+  Enabled: true
+
+Rails/RelativeDateConstant:
+  Enabled: true
 
 RSpec/NotToNot:
   Enabled: true
