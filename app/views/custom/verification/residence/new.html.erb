@@ -1,11 +1,11 @@
 <!-- versione custom, differisce per:
-  - righe 38, verifica attivazione votazioni e icona di spunta (posso votare dopo certificazione)
+  - riga 38, verifica attivazione votazioni e icona di spunta (posso votare dopo certificazione)
   - riga 51, select popolata solo con il codice fiscale
   - riga 69, lunghezza massima del codice fiscale
   - riga 86, lunghezza massima del CAP
 -->
 <div class="verification account row">
-  <%track_event(category: "verification", action: "start_census" )%>
+  <% track_event(category: "verification", action: "start_census") %>
   <div class="small-12 column">
 
     <div class="text-center">
@@ -83,7 +83,7 @@
         <%= f.label t("verification.residence.new.postal_code") %>
         <p class="help-text" id="postal-code-help-text"><%= t("verification.residence.new.postal_code_note") %></p>
         <div class="medium-6">
-          <%= f.text_field :postal_code, label: false, maxlength: 5, aria: {describedby: "postal-code-help-text"} %>
+          <%= f.text_field :postal_code, label: false, maxlength: 5, aria: { describedby: "postal-code-help-text" } %>
         </div>
       </div>
 

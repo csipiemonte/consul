@@ -1,5 +1,6 @@
 it:
   mailers:
+    title: "DecidiTorino"
     no_reply: "Questo messaggio è stato inviato da un indirizzo di posta elettronica che non accetta risposte."
     comment:
       hi: Salve

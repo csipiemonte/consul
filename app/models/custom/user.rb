@@ -46,7 +46,7 @@ class User < ApplicationRecord
 
   validate :validate_username_length
 
-  validates :official_level, inclusion: {in: 0..5}
+  validates :official_level, inclusion: { in: 0..5 }
   validates :terms_of_service, acceptance: { allow_nil: false }, on: :create
 
   validates_associated :organization, message: false
@@ -138,7 +138,7 @@ class User < ApplicationRecord
 
   def comment_flags(comments)
     comment_flags = flags.for_comments(comments)
-    comment_flags.each_with_object({}){ |f, h| h[f.flaggable_id] = true }
+    comment_flags.each_with_object({}) { |f, h| h[f.flaggable_id] = true }
   end
 
   def voted_in_group?(group)
@@ -381,7 +381,6 @@ class User < ApplicationRecord
     followables = follows.map(&:followable)
     followables.compact.map { |followable| followable.tags.map(&:name) }.flatten.compact.uniq
   end
-
 
   def self.current_user
     Thread.current[:user]

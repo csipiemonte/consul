@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <%= render "layouts/common_head", default_title: setting['org_name'] %>
+    <%= render "layouts/common_head", default_title: "Gobierno abierto" %>
     <%= render "layouts/meta_tags" %>
     <%= setting["html.per_page_code_head"].try(:html_safe) %>
   </head>
@@ -13,7 +13,6 @@
         <h1 class="logo margin">
           <%= link_to root_path do %>
             <%= image_tag(image_path_for("logo_header.png"), class: "float-left", alt: t("layouts.header.logo")) %>
-            <%= setting['org_name'] %>
           <% end %>
         </h1>
       </div>

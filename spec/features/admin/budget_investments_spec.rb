@@ -33,7 +33,7 @@ describe "Admin budget investments" do
     end
 
     scenario "Disabled with a feature flag" do
-      expect{ visit admin_budgets_path }.to raise_exception(FeatureFlags::FeatureDisabled)
+      expect { visit admin_budgets_path }.to raise_exception(FeatureFlags::FeatureDisabled)
     end
 
   end
@@ -503,7 +503,7 @@ describe "Admin budget investments" do
       valuating.valuators.push(create(:valuator))
       valuated.valuators.push(create(:valuator))
 
-      query_params = {budget_id: budget.id, advanced_filters: ["under_valuation"]}
+      query_params = { budget_id: budget.id, advanced_filters: ["under_valuation"] }
 
       visit admin_budget_budget_investments_path(query_params)
 
@@ -687,7 +687,6 @@ describe "Admin budget investments" do
                                  administrator: administrator)
       create(:budget_investment, budget: budget, title: "More hospitals")
 
-
       visit admin_budget_budget_investments_path(budget_id: budget.id)
 
       expect(page).to have_css(".budget_investment", count: 3)
@@ -766,7 +765,6 @@ describe "Admin budget investments" do
       create(:budget_investment, budget: budget, title: "More hospitals",
                                  administrator: administrator)
       create(:budget_investment, budget: budget, title: "More hostals")
-
 
       visit admin_budget_budget_investments_path(budget_id: budget.id)
 
@@ -1824,7 +1822,7 @@ describe "Admin budget investments" do
       visit admin_budget_budget_investments_path(budget)
 
       cookies = page.driver.browser.manage.all_cookies
-      cookie = cookies.find{|cookie| cookie[:name] == "investments-columns"}
+      cookie = cookies.find { |cookie| cookie[:name] == "investments-columns" }
       cookie_value = cookie[:value]
 
       expect(cookie_value).to eq("id,title,supports,admin,valuator,geozone," +
@@ -1878,17 +1876,16 @@ describe "Admin budget investments" do
       end
 
       cookies = page.driver.browser.manage.all_cookies
-      cookie = cookies.find{|cookie| cookie[:name] == "investments-columns"}
+      cookie = cookies.find { |cookie| cookie[:name] == "investments-columns" }
       cookie_value = cookie[:value]
 
       expect(cookie_value).to eq("id,supports,admin,geozone," +
         "feasibility,valuation_finished,visible_to_valuators,selected,incompatible,author")
 
-
       visit admin_budget_budget_investments_path(budget)
 
       cookies = page.driver.browser.manage.all_cookies
-      cookie = cookies.find{|cookie| cookie[:name] == "investments-columns"}
+      cookie = cookies.find { |cookie| cookie[:name] == "investments-columns" }
       cookie_value = cookie[:value]
 
       expect(cookie_value).to eq("id,supports,admin,geozone,feasibility,valuation_finished," +

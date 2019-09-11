@@ -1,3 +1,5 @@
+"use strict"
+
 App.AdvancedSearch =
 
   advanced_search_terms: ->
@@ -17,14 +19,11 @@ App.AdvancedSearch =
 
   init_calendar: ->
     locale = $("#js-locale").data("current-locale")
-    if locale == "en"
-      locale = ""
 
     $(".js-calendar").datepicker
-      regional: locale
       maxDate: "+0d"
-    $(".js-calendar-full").datepicker
-      regional: locale
+    $(".js-calendar-full").datepicker()
+    $.datepicker.setDefaults($.datepicker.regional[locale])
 
   initialize: ->
     App.AdvancedSearch.init_calendar()

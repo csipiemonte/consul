@@ -1,3 +1,5 @@
+"use strict"
+
 i18n = {
   es: {
     "Comments": "Comentarios",
@@ -19,7 +21,7 @@ i18n = {
   }
 }
 
-window.Gettext = (key) ->
+window.Gettext = ->
   gettext: (key) ->
     locale_id = $("html").attr("lang")
     locale    = i18n[locale_id]

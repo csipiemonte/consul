@@ -1,4 +1,4 @@
-_t = (key) -> new Gettext().gettext(key)
+"use strict"
 
 App.LegislationAnnotatable =
 
@@ -17,17 +17,12 @@ App.LegislationAnnotatable =
     return
 
   highlight: (colour) ->
-    if window.getSelection
-      # IE9 and non-IE
-      try
-        if !document.execCommand("BackColor", false, colour)
-          App.LegislationAnnotatable.makeEditableAndHighlight colour
-      catch ex
+    try
+      if !document.execCommand("BackColor", false, colour)
         App.LegislationAnnotatable.makeEditableAndHighlight colour
-    else if document.selection and document.selection.createRange
-      # IE <= 8 case
-      range = document.selection.createRange()
-      range.execCommand "BackColor", false, colour
+    catch
+      App.LegislationAnnotatable.makeEditableAndHighlight colour
+
     return
 
   remove_highlight: ->
@@ -88,11 +83,11 @@ App.LegislationAnnotatable =
     return window.innerWidth <= 652
 
   viewerExtension: (viewer) ->
-    viewer._onHighlightMouseover = (event) ->
+    viewer._onHighlightMouseover = ->
       return
 
   customShow: (position) ->
-    $(@element).html ""
+    $(this.element).html ""
     # Clean comments section and open it
     $("#comments-box").html ""
     App.LegislationAllegations.show_comments()
@@ -103,15 +98,15 @@ App.LegislationAnnotatable =
       method: "GET"
       url: "#{annotation_url}/annotations/new"
       dataType: "script").done (->
-        $("#new_legislation_annotation #legislation_annotation_quote").val(@annotation.quote)
-        $("#new_legislation_annotation #legislation_annotation_ranges").val(JSON.stringify(@annotation.ranges))
+        $("#new_legislation_annotation #legislation_annotation_quote").val(this.annotation.quote)
+        $("#new_legislation_annotation #legislation_annotation_ranges").val(JSON.stringify(this.annotation.ranges))
         $("#comments-box").css({ top: position.top - $(".calc-comments").offset().top })
 
         unless  $("[data-legislation-open-phase]").data("legislation-open-phase") == false
           App.LegislationAnnotatable.highlight("#7fff9a")
           $("#comments-box textarea").focus()
 
-          $("#new_legislation_annotation").on("ajax:complete", (e, data, status, xhr) ->
+          $("#new_legislation_annotation").on("ajax:complete", (e, data) ->
             App.LegislationAnnotatable.app.destroy()
             if data.status == 200
               App.LegislationAnnotatable.remove_highlight()
@@ -132,7 +127,7 @@ App.LegislationAnnotatable =
     editor.show = App.LegislationAnnotatable.customShow
 
   scrollToAnchor: ->
-    annotationsLoaded: (annotations) ->
+    annotationsLoaded: ->
       anchor = $(location).attr("hash")
       if anchor && anchor.startsWith("#annotation")
         ann_id = anchor.split("-")[-1..]
@@ -165,7 +160,7 @@ App.LegislationAnnotatable =
 
       checkExist = setInterval((->
         if $("span[data-annotation-id='#{last_annotation.id}']").length
-          for annotation in annotations
+          annotations.forEach (annotation) ->
             ann_weight = App.LegislationAnnotatable.propotionalWeight(annotation.weight, max_weight)
             el = $("span[data-annotation-id='#{annotation.id}']")
             el.addClass("weight-#{ann_weight}")
@@ -187,10 +182,8 @@ App.LegislationAnnotatable =
     current_user_id = $("html").data("current-user-id")
 
     $(".legislation-annotatable").each ->
-      $this          = $(this)
-      ann_type       = "legislation_draft_version"
-      ann_id         = $this.data("legislation-draft-version-id")
-      base_url       = $this.data("legislation-annotatable-base-url")
+      ann_id   = $(this).data("legislation-draft-version-id")
+      base_url = $(this).data("legislation-annotatable-base-url")
 
       App.LegislationAnnotatable.app = new annotator.App()
         .include ->
@@ -209,7 +202,4 @@ App.LegislationAnnotatable =
 
       App.LegislationAnnotatable.app.start().then ->
         App.LegislationAnnotatable.app.ident.identity = current_user_id
-
-        options = {}
-        options["legislation_draft_version_id"] = ann_id
-        App.LegislationAnnotatable.app.annotations.load(options)
+        App.LegislationAnnotatable.app.annotations.load(legislation_draft_version_id: ann_id)

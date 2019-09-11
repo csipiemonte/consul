@@ -1,3 +1,5 @@
+"use strict"
+
 App.Votes =
 
   hoverize: (votes) ->
@@ -15,4 +17,3 @@ App.Votes =
     App.Votes.hoverize "div.supports"
     App.Votes.hoverize "div.debate-questions"
     App.Votes.hoverize "div.comment-footer"
-    false

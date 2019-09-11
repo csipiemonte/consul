@@ -1,3 +1,5 @@
+"use strict"
+
 App.Comments =
 
   add_comment: (parent_id, response_html) ->
@@ -10,7 +12,7 @@ App.Comments =
     $("##{parent_id} .comment-children:first").prepend($(response_html))
     this.update_comments_count()
 
-  update_comments_count: (parent_id) ->
+  update_comments_count: ->
     $(".js-comments-count").each ->
       new_val = $(this).text().trim().replace /\d+/, (match) -> parseInt(match, 10) + 1
       $(this).text(new_val)
@@ -40,12 +42,9 @@ App.Comments =
 
   initialize: ->
     $("body .js-add-comment-link").each ->
-      $this = $(this)
-
-      unless $this.data("initialized") is "yes"
-        $this.on("click", ->
-          id = $(this).data().id
-          App.Comments.toggle_form(id)
+      unless $(this).data("initialized") is "yes"
+        $(this).on("click", ->
+          App.Comments.toggle_form($(this).data().id)
           false
         ).data "initialized", "yes"
 

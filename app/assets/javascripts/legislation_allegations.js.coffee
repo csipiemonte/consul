@@ -1,3 +1,5 @@
+"use strict"
+
 App.LegislationAllegations =
 
   toggle_comments: ->
@@ -18,7 +20,7 @@ App.LegislationAllegations =
           App.LegislationAllegations.toggle_comments()
 
     $(".js-toggle-allegations").on
-      click: (e) ->
+      click: ->
         # Toggle comments when the section title is visible
         if !App.LegislationAnnotatable.isMobile()
           if $(this).find(".draft-panel .panel-title:visible").length == 0

@@ -1,14 +1,25 @@
 class Budget
   class Phase < ApplicationRecord
-    PHASE_KINDS = %w(drafting informing accepting reviewing selecting valuating publishing_prices balloting
-                reviewing_ballots finished).freeze
-    PUBLISHED_PRICES_PHASES = %w(publishing_prices balloting reviewing_ballots finished).freeze
+    PHASE_KINDS = %w[drafting informing accepting reviewing selecting valuating publishing_prices balloting
+                reviewing_ballots finished].freeze
+    PUBLISHED_PRICES_PHASES = %w[publishing_prices balloting reviewing_ballots finished].freeze
     SUMMARY_MAX_LENGTH = 1000
     DESCRIPTION_MAX_LENGTH = 2000
 
     translates :summary, touch: true
     translates :description, touch: true
     include Globalizable
+
+    class Translation
+      before_validation :sanitize_description
+
+      private
+
+        def sanitize_description
+          self.description = WYSIWYGSanitizer.new.sanitize(description)
+        end
+    end
+
     include Sanitizable
 
     belongs_to :budget
@@ -99,15 +110,5 @@ class Budget
       def in_phase_or_later?(phase)
         PHASE_KINDS.index(kind) >= PHASE_KINDS.index(phase)
       end
-
-    class Translation < Globalize::ActiveRecord::Translation
-      before_validation :sanitize_description
-
-      private
-
-        def sanitize_description
-          self.description = WYSIWYGSanitizer.new.sanitize(description)
-        end
-    end
   end
 end

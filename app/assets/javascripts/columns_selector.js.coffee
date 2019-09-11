@@ -1,6 +1,8 @@
+"use strict"
+
 App.ColumnsSelector =
 
-  initColums: (name) ->
+  initColums: () ->
     App.ColumnsSelector.hideAll()
     c_value = App.ColumnsSelector.currentValue()
 
@@ -9,17 +11,14 @@ App.ColumnsSelector =
       App.Cookies.saveCookie($("#js-columns-selector").data("cookie"), c_value, 30)
     columns = c_value.split(",")
 
-    for column in columns
-      do ->
-        $("[data-field=" + column + "]").removeClass("hidden")
-        $("#column_selector_" + column).prop("checked", true)
+    columns.forEach (column) ->
+      $("[data-field=" + column + "]").removeClass("hidden")
+      $("#column_selector_" + column).prop("checked", true)
 
   initChecks: () ->
-    fields = $(".column-selecteable th[data-field]")
-    columns = []
     $(".column-selecteable th[data-field]").each ->
       field = $(this).data("field")
-      text = $.trim($(this).text())
+      text = $(this).text().trim()
       item = $("#column_selector_item_template").clone()
       item.prop("id", "column_selector_item_" + field)
       input = item.find("input")
@@ -42,12 +41,10 @@ App.ColumnsSelector =
     $(".column-selector-item input").prop("checked", false)
 
   toggleColumn: (event) ->
-    column = $(event.target).data("column")
-    App.ColumnsSelector.displayColumn(column)
+    App.ColumnsSelector.displayColumn($(event.target).data("column"))
 
   displayColumn: (column) ->
-    item = $("#column_selector_" + column)
-    if item.prop("checked")
+    if $("#column_selector_" + column).prop("checked")
       $("[data-field=" + column + "]").removeClass("hidden")
     else
       $("[data-field=" + column + "]").addClass("hidden")
@@ -70,7 +67,7 @@ App.ColumnsSelector =
 
   initialize: ->
     App.ColumnsSelector.initChecks()
-    columns = App.ColumnsSelector.initColums($("#js-columns-selector").data("cookie"))
+    App.ColumnsSelector.initColums()
 
     $("#js-columns-selector").on
       click: (event) ->

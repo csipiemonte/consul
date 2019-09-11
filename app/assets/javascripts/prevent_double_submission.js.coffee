@@ -1,3 +1,5 @@
+"use strict"
+
 App.PreventDoubleSubmission =
   disable_buttons: (buttons) ->
     setTimeout ->
@@ -34,5 +36,3 @@ App.PreventDoubleSubmission =
         buttons = $(this).find(":button, :submit")
         App.PreventDoubleSubmission.reset_buttons(buttons)
     )
-
-    false
