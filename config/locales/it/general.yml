@@ -488,6 +488,7 @@ it:
       poster: Manifesto
       recommended_actions: Azioni consigliate
       messages: Messaggi agli utenti
+      related_content: Contenuto relazionato
     form:
       request: Sollecita
     create_request:
