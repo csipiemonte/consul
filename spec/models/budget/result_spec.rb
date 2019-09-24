@@ -4,8 +4,7 @@ describe Budget::Result do
 
   describe "calculate_winners" do
     let(:budget) { create(:budget) }
-    let(:group) { create(:budget_group, budget: budget) }
-    let(:heading) { create(:budget_heading, group: group, price: 1000) }
+    let(:heading) { create(:budget_heading, budget: budget, price: 1000) }
 
     context "When there is no winners" do
       it "calculates the correct winner set" do
@@ -15,7 +14,7 @@ describe Budget::Result do
         investment4 = create(:budget_investment, :selected, heading: heading, price: 500, ballot_lines_count: 600, winner: false)
         investment5 = create(:budget_investment, :selected, heading: heading, price: 100, ballot_lines_count: 500, winner: false)
 
-        described_class.new(budget, heading).calculate_winners
+        Budget::Result.new(budget, heading).calculate_winners
 
         expect(heading.investments.winners.pluck(:id)).to match_array([investment1.id, investment2.id, investment4.id])
       end
@@ -29,7 +28,7 @@ describe Budget::Result do
         investment4 = create(:budget_investment, :winner, heading: heading, price: 500, ballot_lines_count: 600)
         investment5 = create(:budget_investment, :winner, heading: heading, price: 100, ballot_lines_count: 500)
 
-        described_class.new(budget, heading).calculate_winners
+        Budget::Result.new(budget, heading).calculate_winners
 
         expect(heading.investments.winners.pluck(:id)).to match_array([investment1.id, investment2.id, investment4.id])
       end

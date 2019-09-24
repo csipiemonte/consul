@@ -38,7 +38,7 @@ gem "omniauth-facebook", "~> 4.0.0"
 gem "omniauth-google-oauth2", "~> 0.5.2"
 gem "omniauth-twitter", "~> 1.4.0"
 gem "paperclip", "~> 5.2.1"
-gem "paranoia", "~> 2.4.1"
+gem "paranoia", "~> 2.4.2"
 gem "pg", "~> 0.21.0"
 gem "pg_search", "~> 2.0.1"
 gem "recipient_interceptor", "~> 0.2.0"
@@ -70,11 +70,11 @@ group :development, :test do
   gem "byebug", "~> 10.0.0"
   gem "factory_bot_rails", "~> 4.8.2"
   gem "faker", "~> 1.8.7"
-  gem "i18n-tasks", "~> 0.9.25"
+  gem "i18n-tasks", "~> 0.9.29"
   gem "knapsack_pro", "~> 1.1.0"
   gem "launchy", "~> 2.4.3"
   gem "letter_opener_web", "~> 1.3.4"
-  gem "puma", "~> 3.12.1"
+  gem "puma", "~> 4.1.1"
   gem "spring", "~> 2.0.1"
   gem "spring-commands-rspec", "~> 1.0.4"
 end
@@ -84,7 +84,7 @@ group :test do
   gem "capybara-webmock", "~> 0.5.3"
   gem "coveralls", "~> 0.8.22", require: false
   gem "database_cleaner", "~> 1.7.0"
-  gem "email_spec", "~> 2.1.0"
+  gem "email_spec", "~> 2.2.0"
   gem "rspec-rails", "~> 3.8"
   gem "selenium-webdriver", "~> 3.141"
 end
@@ -97,7 +97,7 @@ group :development do
   gem "erb_lint", require: false
   gem "mdl", "~> 0.5.0", require: false
   gem "rubocop", "~> 0.60.0", require: false
-  gem "rubocop-rspec", "~> 1.33.0", require: false
+  gem "rubocop-rspec", "~> 1.35.0", require: false
   gem "rvm1-capistrano3", "~> 1.4.0", require: false
   gem "scss_lint", "~> 0.55.0", require: false
   gem "web-console", "~> 3.3.0"
