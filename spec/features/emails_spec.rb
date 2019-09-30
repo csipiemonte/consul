@@ -269,7 +269,6 @@ describe "Emails" do
 
       notification1 = create_proposal_notification(proposal1)
       notification2 = create_proposal_notification(proposal2)
-      notification3 = create_proposal_notification(proposal3)
 
       email_digest = EmailDigest.new(user)
       email_digest.deliver(Time.current)
@@ -483,14 +482,10 @@ describe "Emails" do
   context "Newsletter" do
 
     scenario "Send newsletter email to selected users" do
-      user_with_newsletter_in_segment_1 = create(:user, newsletter: true)
-      user_with_newsletter_in_segment_2 = create(:user, newsletter: true)
+      user_with_newsletter_in_segment_1 = create(:user, :with_proposal, newsletter: true)
+      user_with_newsletter_in_segment_2 = create(:user, :with_proposal, newsletter: true)
       user_with_newsletter_not_in_segment = create(:user, newsletter: true)
-      user_without_newsletter_in_segment = create(:user, newsletter: false)
-
-      create(:proposal, author: user_with_newsletter_in_segment_1)
-      create(:proposal, author: user_with_newsletter_in_segment_2)
-      create(:proposal, author: user_without_newsletter_in_segment)
+      user_without_newsletter_in_segment = create(:user, :with_proposal, newsletter: false)
 
       admin = create(:administrator)
       login_as(admin.user)

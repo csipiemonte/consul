@@ -49,8 +49,8 @@ describe DirectMessage do
         direct_message1 = create(:direct_message, sender: sender)
         direct_message2 = create(:direct_message, sender: sender)
 
-        direct_message3 = build(:direct_message)
-        expect(direct_message).to be_valid
+        direct_message3 = build(:direct_message, sender: sender)
+        expect(direct_message3).to be_valid
       end
 
       it "is valid if no direct_messages sent" do
@@ -85,8 +85,8 @@ describe DirectMessage do
       end
 
       it "does not return direct messages created another day" do
-        direct_message1 = create(:direct_message, created_at: 1.day.ago)
-        direct_message2 = create(:direct_message, created_at: 1.day.from_now)
+        create(:direct_message, created_at: 1.day.ago)
+        create(:direct_message, created_at: 1.day.from_now)
 
         expect(DirectMessage.today.count).to eq 0
       end

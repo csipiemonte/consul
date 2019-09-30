@@ -14,7 +14,7 @@ describe EmailDigest do
 
       email_digest = EmailDigest.new(user1)
 
-      expect(email_digest.notifications).to include(notification1)
+      expect(email_digest.notifications).to eq [notification1]
       expect(email_digest.notifications).not_to include(notification2)
     end
 
@@ -29,7 +29,7 @@ describe EmailDigest do
 
       email_digest = EmailDigest.new(user)
 
-      expect(email_digest.notifications).to include(notification1)
+      expect(email_digest.notifications).to eq [notification1]
       expect(email_digest.notifications).not_to include(notification2)
     end
 
@@ -91,7 +91,7 @@ describe EmailDigest do
       email_digest = EmailDigest.new(user)
       email_digest.deliver(Time.current)
 
-      expect(all_emails.count).to eq(0)
+      expect(all_emails).to be_empty
     end
 
   end

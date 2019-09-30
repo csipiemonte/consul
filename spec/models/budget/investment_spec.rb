@@ -130,7 +130,7 @@ describe Budget::Investment do
 
   describe "#should_show_votes?" do
     it "returns true in selecting phase" do
-      budget = create(:budget, phase: "selecting")
+      budget = create(:budget, :selecting)
       investment = create(:budget_investment, budget: budget)
 
       expect(investment.should_show_votes?).to eq(true)
@@ -148,7 +148,7 @@ describe Budget::Investment do
 
   describe "#should_show_vote_count?" do
     it "returns true in valuating phase" do
-      budget = create(:budget, phase: "valuating")
+      budget = create(:budget, :valuating)
       investment = create(:budget_investment, budget: budget)
 
       expect(investment.should_show_vote_count?).to eq(true)
@@ -166,14 +166,14 @@ describe Budget::Investment do
 
   describe "#should_show_ballots?" do
     it "returns true in balloting phase for selected investments" do
-      budget = create(:budget, phase: "balloting")
+      budget = create(:budget, :balloting)
       investment = create(:budget_investment, :selected, budget: budget)
 
       expect(investment.should_show_ballots?).to eq(true)
     end
 
     it "returns false for unselected investments" do
-      budget = create(:budget, phase: "balloting")
+      budget = create(:budget, :balloting)
       investment = create(:budget_investment, :unselected, budget: budget)
 
       expect(investment.should_show_ballots?).to eq(false)
@@ -262,10 +262,7 @@ describe Budget::Investment do
   describe "#should_show_unfeasibility_explanation?" do
     let(:budget) { create(:budget) }
     let(:investment) do
-      create(:budget_investment, budget: budget,
-             unfeasibility_explanation: "because of reasons",
-             valuation_finished: true,
-             feasibility: "unfeasible")
+      create(:budget_investment, :unfeasible, :finished, budget: budget)
     end
 
     it "returns true for unfeasible investments with unfeasibility explanation and valuation finished" do
@@ -322,8 +319,7 @@ describe Budget::Investment do
 
       investments_by_budget = Budget::Investment.by_budget(budget1)
 
-      expect(investments_by_budget).to include investment1
-      expect(investments_by_budget).to include investment2
+      expect(investments_by_budget).to match_array [investment1, investment2]
       expect(investments_by_budget).not_to include investment3
     end
   end
@@ -335,8 +331,7 @@ describe Budget::Investment do
 
       by_admin = Budget::Investment.by_admin(33)
 
-      expect(by_admin.size).to eq(1)
-      expect(by_admin.first).to eq(investment1)
+      expect(by_admin).to eq [investment1]
     end
   end
 
@@ -355,8 +350,7 @@ describe Budget::Investment do
 
       by_valuator = Budget::Investment.by_valuator(valuator1.id)
 
-      expect(by_valuator.size).to eq(2)
-      expect(by_valuator.sort).to eq([investment1, investment3].sort)
+      expect(by_valuator).to match_array [investment1, investment3]
     end
   end
 
@@ -373,7 +367,6 @@ describe Budget::Investment do
 
       by_valuator_group = Budget::Investment.by_valuator_group(valuator.valuator_group_id)
 
-      expect(by_valuator_group.size).to eq(2)
       expect(by_valuator_group).to contain_exactly(assigned_investment, another_assigned_investment)
     end
   end
@@ -385,13 +378,13 @@ describe Budget::Investment do
     let!(:investment) { create(:budget_investment, :feasible, heading: heading) }
 
     it "finds budget by id or slug" do
-      result = Budget::Investment.scoped_filter({ budget_id: budget.id }, nil)
-      expect(result.count).to be 1
-      expect(result.first.id).to be investment.id
+      results = Budget::Investment.scoped_filter({ budget_id: budget.id }, nil)
 
-      result = Budget::Investment.scoped_filter({ budget_id: "budget_slug" }, nil)
-      expect(result.count).to be 1
-      expect(result.first.id).to be investment.id
+      expect(results).to eq [investment]
+
+      results = Budget::Investment.scoped_filter({ budget_id: "budget_slug" }, nil)
+
+      expect(results).to eq [investment]
     end
 
     it "does not raise error if budget is not found" do
@@ -404,40 +397,37 @@ describe Budget::Investment do
   describe "scopes" do
     describe "valuation_open" do
       it "returns all investments with false valuation_finished" do
-        investment1 = create(:budget_investment, valuation_finished: true)
+        investment1 = create(:budget_investment, :finished)
         investment2 = create(:budget_investment)
 
         valuation_open = Budget::Investment.valuation_open
 
-        expect(valuation_open.size).to eq(1)
-        expect(valuation_open.first).to eq(investment2)
+        expect(valuation_open).to eq [investment2]
       end
     end
 
     describe "without_admin" do
       it "returns all open investments without assigned admin" do
-        investment1 = create(:budget_investment, valuation_finished: true)
-        investment2 = create(:budget_investment, administrator: create(:administrator))
+        investment1 = create(:budget_investment, :finished)
+        investment2 = create(:budget_investment, :with_administrator)
         investment3 = create(:budget_investment)
 
         without_admin = Budget::Investment.without_admin
 
-        expect(without_admin.size).to eq(1)
-        expect(without_admin.first).to eq(investment3)
+        expect(without_admin).to eq [investment3]
       end
     end
 
     describe "managed" do
       it "returns all open investments with assigned admin but without assigned valuators" do
-        investment1 = create(:budget_investment, administrator: create(:administrator))
-        investment2 = create(:budget_investment, administrator: create(:administrator), valuation_finished: true)
-        investment3 = create(:budget_investment, administrator: create(:administrator))
+        investment1 = create(:budget_investment, :with_administrator)
+        investment2 = create(:budget_investment, :with_administrator, :finished)
+        investment3 = create(:budget_investment, :with_administrator)
         investment1.valuators << create(:valuator)
 
         managed = Budget::Investment.managed
 
-        expect(managed.size).to eq(1)
-        expect(managed.first).to eq(investment3)
+        expect(managed).to eq [investment3]
       end
     end
 
@@ -445,29 +435,27 @@ describe Budget::Investment do
       it "returns all investments with assigned valuator but valuation not finished" do
         investment1 = create(:budget_investment)
         investment2 = create(:budget_investment)
-        investment3 = create(:budget_investment, valuation_finished: true)
+        investment3 = create(:budget_investment, :finished)
 
         investment2.valuators << create(:valuator)
         investment3.valuators << create(:valuator)
 
         valuating = Budget::Investment.valuating
 
-        expect(valuating.size).to eq(1)
-        expect(valuating.first).to eq(investment2)
+        expect(valuating).to eq [investment2]
       end
 
       it "returns all investments with assigned valuator groups but valuation not finished" do
         investment1 = create(:budget_investment)
         investment2 = create(:budget_investment)
-        investment3 = create(:budget_investment, valuation_finished: true)
+        investment3 = create(:budget_investment, :finished)
 
         investment2.valuator_groups << create(:valuator_group)
         investment3.valuator_groups << create(:valuator_group)
 
         valuating = Budget::Investment.valuating
 
-        expect(valuating.size).to eq(1)
-        expect(valuating.first).to eq(investment2)
+        expect(valuating).to eq [investment2]
       end
     end
 
@@ -475,15 +463,14 @@ describe Budget::Investment do
       it "returns all investments with valuation finished" do
         investment1 = create(:budget_investment)
         investment2 = create(:budget_investment)
-        investment3 = create(:budget_investment, valuation_finished: true)
+        investment3 = create(:budget_investment, :finished)
 
         investment2.valuators << create(:valuator)
         investment3.valuators << create(:valuator)
 
         valuation_finished = Budget::Investment.valuation_finished
 
-        expect(valuation_finished.size).to eq(1)
-        expect(valuation_finished.first).to eq(investment3)
+        expect(valuation_finished).to eq [investment3]
       end
     end
 
@@ -511,7 +498,7 @@ describe Budget::Investment do
         undecided_investment = create(:budget_investment, :undecided)
         feasible_investment = create(:budget_investment, :feasible)
 
-        expect(Budget::Investment.not_unfeasible.sort).to eq [undecided_investment, feasible_investment].sort
+        expect(Budget::Investment.not_unfeasible).to match_array [undecided_investment, feasible_investment]
       end
     end
 
@@ -541,7 +528,7 @@ describe Budget::Investment do
         unselected_undecided_investment = create(:budget_investment, :unselected, :undecided)
         unselected_feasible_investment = create(:budget_investment, :unselected, :feasible)
 
-        expect(Budget::Investment.unselected.sort).to eq [unselected_undecided_investment, unselected_feasible_investment].sort
+        expect(Budget::Investment.unselected).to match_array [unselected_undecided_investment, unselected_feasible_investment]
       end
     end
 
@@ -555,10 +542,8 @@ describe Budget::Investment do
 
       it "takes into consideration title fallbacks when there is no translation for current locale" do
         create(:budget_investment, title: "BBBB")
-        Globalize.with_locale(:es) do
-          I18n.with_locale(:es) do
-            create(:budget_investment, title: "AAAA")
-          end
+        I18n.with_locale(:es) do
+          create(:budget_investment, title: "AAAA")
         end
 
         expect(Budget::Investment.sort_by_title.map(&:title)).to eq %w[AAAA BBBB]
@@ -570,11 +555,9 @@ describe Budget::Investment do
 
       let!(:investment) do
         I18n.with_locale(:es) do
-          Globalize.with_locale(:es) do
-            create(:budget_investment,
-              title_es: "Título del proyecto de inversión",
-              description_es: "Descripción del proyecto de inversión")
-          end
+          create(:budget_investment,
+            title_es: "Título del proyecto de inversión",
+            description_es: "Descripción del proyecto de inversión")
         end
       end
 
@@ -654,9 +637,9 @@ describe Budget::Investment do
       heading1 = create(:budget_heading, group: group)
       heading2 = create(:budget_heading, group: group)
 
-      investment1 = create(:budget_investment, heading: heading1, budget: budget)
-      investment2 = create(:budget_investment, heading: heading1, budget: budget)
-      investment3 = create(:budget_investment, heading: heading2, budget: budget)
+      investment1 = create(:budget_investment, heading: heading1)
+      investment2 = create(:budget_investment, heading: heading1)
+      investment3 = create(:budget_investment, heading: heading2)
 
       results = Budget::Investment.apply_filters_and_search(budget, heading_id: heading1.id)
 
@@ -672,8 +655,7 @@ describe Budget::Investment do
 
       results = Budget::Investment.apply_filters_and_search(budget, search: "health")
 
-      expect(results).to     include investment1
-      expect(results).to     include investment2
+      expect(results).to match_array [investment1, investment2]
       expect(results).not_to include investment3
     end
   end
@@ -736,7 +718,7 @@ describe Budget::Investment do
     let(:heading)     { create(:budget_heading, group: group) }
     let(:user)        { create(:user, :level_two) }
     let(:luser)       { create(:user) }
-    let(:district_sp) { create(:budget_investment, budget: budget, group: group, heading: heading) }
+    let(:district_sp) { create(:budget_investment, budget: budget, heading: heading) }
 
     describe "#reason_for_not_being_selectable_by" do
       it "rejects not logged in users" do
@@ -874,35 +856,6 @@ describe Budget::Investment do
     end
   end
 
-  describe "#headings_voted_by_user" do
-    it "returns the headings voted by a user" do
-      user1 = create(:user)
-      user2 = create(:user)
-
-      budget = create(:budget)
-      group = create(:budget_group, budget: budget)
-
-      new_york = create(:budget_heading, group: group)
-      san_franciso = create(:budget_heading, group: group)
-      another_heading = create(:budget_heading, group: group)
-
-      new_york_investment = create(:budget_investment, heading: new_york)
-      san_franciso_investment = create(:budget_investment, heading: san_franciso)
-      another_investment = create(:budget_investment, heading: san_franciso)
-
-      create(:vote, votable: new_york_investment, voter: user1)
-      create(:vote, votable: san_franciso_investment, voter: user1)
-
-      expect(another_investment.headings_voted_by_user(user1)).to include(new_york.id)
-      expect(another_investment.headings_voted_by_user(user1)).to include(san_franciso.id)
-      expect(another_investment.headings_voted_by_user(user1)).not_to include(another_heading.id)
-
-      expect(another_investment.headings_voted_by_user(user2)).not_to include(new_york.id)
-      expect(another_investment.headings_voted_by_user(user2)).not_to include(san_franciso.id)
-      expect(another_investment.headings_voted_by_user(user2)).not_to include(another_heading.id)
-    end
-  end
-
   describe "#voted_in?" do
 
     let(:user) { create(:user) }
@@ -928,9 +881,7 @@ describe Budget::Investment do
         most_voted = create(:budget_investment, cached_votes_up: 10)
         some_votes = create(:budget_investment, cached_votes_up: 5)
 
-        expect(Budget::Investment.sort_by_confidence_score.first).to eq most_voted
-        expect(Budget::Investment.sort_by_confidence_score.second).to eq some_votes
-        expect(Budget::Investment.sort_by_confidence_score.third).to eq least_voted
+        expect(Budget::Investment.sort_by_confidence_score).to eq [most_voted, some_votes, least_voted]
       end
 
       it "orders by confidence_score and then by id" do
@@ -939,10 +890,9 @@ describe Budget::Investment do
         most_voted2  = create(:budget_investment, cached_votes_up: 10)
         least_voted2 = create(:budget_investment, cached_votes_up: 1)
 
-        expect(Budget::Investment.sort_by_confidence_score.first).to eq most_voted2
-        expect(Budget::Investment.sort_by_confidence_score.second).to eq most_voted
-        expect(Budget::Investment.sort_by_confidence_score.third).to eq least_voted2
-        expect(Budget::Investment.sort_by_confidence_score.fourth).to eq least_voted
+        expect(Budget::Investment.sort_by_confidence_score).to eq [
+          most_voted2, most_voted, least_voted2, least_voted
+        ]
       end
     end
   end
@@ -983,7 +933,7 @@ describe Budget::Investment do
       inv2 = create(:budget_investment)
       create(:vote, votable: inv1)
 
-      expect(Budget::Investment.with_supports).to include(inv1)
+      expect(Budget::Investment.with_supports).to eq [inv1]
       expect(Budget::Investment.with_supports).not_to include(inv2)
     end
   end
@@ -1038,8 +988,8 @@ describe Budget::Investment do
           california = create(:budget_heading, group: group)
           new_york = create(:budget_heading, group: group)
 
-          inv1 = create(:budget_investment, :selected, budget: budget, group: group, heading: california)
-          inv2 = create(:budget_investment, :selected, budget: budget, group: group, heading: new_york)
+          inv1 = create(:budget_investment, :selected, budget: budget, heading: california)
+          inv2 = create(:budget_investment, :selected, budget: budget, heading: new_york)
           ballot = create(:budget_ballot, user: user, budget: budget)
           ballot.investments << inv1
 
@@ -1050,8 +1000,8 @@ describe Budget::Investment do
           budget.phase = "balloting"
           districts = create(:budget_group, budget: budget)
           carabanchel = create(:budget_heading, group: districts, price: 35)
-          inv1 = create(:budget_investment, :selected, budget: budget, group: districts, heading: carabanchel, price: 30)
-          inv2 = create(:budget_investment, :selected, budget: budget, group: districts, heading: carabanchel, price: 10)
+          inv1 = create(:budget_investment, :selected, budget: budget, heading: carabanchel, price: 30)
+          inv2 = create(:budget_investment, :selected, budget: budget, heading: carabanchel, price: 10)
 
           ballot = create(:budget_ballot, user: user, budget: budget)
           ballot.investments << inv1
@@ -1067,7 +1017,7 @@ describe Budget::Investment do
 
   describe "Reclassification" do
 
-    let(:budget)   { create(:budget, phase: "balloting")   }
+    let(:budget)   { create(:budget, :balloting)   }
     let(:group)    { create(:budget_group, budget: budget) }
     let(:heading1) { create(:budget_heading, group: group) }
     let(:heading2) { create(:budget_heading, group: group) }
@@ -1206,7 +1156,7 @@ describe Budget::Investment do
   end
 
   describe "scoped_filter" do
-    let(:budget)   { create(:budget, phase: "balloting")   }
+    let(:budget)   { create(:budget, :balloting)   }
     let(:investment) { create(:budget_investment, budget: budget) }
 
     describe "with without_admin filter" do
@@ -1219,8 +1169,8 @@ describe Budget::Investment do
           :with_administrator,
           budget: budget)
         investment3 = create(:budget_investment, budget: budget)
+
         expect(Budget::Investment.scoped_filter(params, "all")).to eq([investment3])
-        expect(Budget::Investment.scoped_filter(params, "all").count).to eq(1)
       end
     end
 
@@ -1235,10 +1185,9 @@ describe Budget::Investment do
           budget: budget)
         investment3 = create(:budget_investment,
           budget: budget)
+
         expect(Budget::Investment.scoped_filter(params, "all"))
           .to contain_exactly(investment2, investment3)
-        expect(Budget::Investment.scoped_filter(params, "all").count)
-        .to eq(2)
       end
     end
 
@@ -1246,16 +1195,12 @@ describe Budget::Investment do
       let(:params) { { advanced_filters: ["under_valuation"], budget_id: budget.id } }
       it "returns only investment under valuation" do
         valuator1 = create(:valuator)
-        investment1 = create(:budget_investment,
-          :with_administrator,
-          valuation_finished: false,
-          budget: budget)
+        investment1 = create(:budget_investment, :with_administrator, :unfinished, budget: budget)
         investment1.valuators << valuator1
         create(:budget_investment, :with_administrator, budget: budget)
         create(:budget_investment, budget: budget)
 
         expect(Budget::Investment.scoped_filter(params, "all")).to eq([investment1])
-        expect(Budget::Investment.scoped_filter(params, "all").count).to eq(1)
       end
     end
 
@@ -1270,24 +1215,19 @@ describe Budget::Investment do
           budget: budget)
         create(:budget_investment,
           budget: budget)
+
         expect(Budget::Investment.scoped_filter(params, "all")).to eq([investment1])
-        expect(Budget::Investment.scoped_filter(params, "all").count).to eq(1)
       end
     end
 
     describe "with winners filter" do
       let(:params) { { advanced_filters: ["winners"], budget_id: budget.id } }
       it "returns only investment winners" do
-        investment1 = create(:budget_investment,
-          :winner,
-          valuation_finished: true,
-          budget: budget)
-        create(:budget_investment,
-          :with_administrator,
-          budget: budget)
+        investment1 = create(:budget_investment, :winner, :finished, budget: budget)
+        create(:budget_investment, :with_administrator, budget: budget)
         create(:budget_investment, budget: budget)
+
         expect(Budget::Investment.scoped_filter(params, "all")).to eq([investment1])
-        expect(Budget::Investment.scoped_filter(params, "all").count).to eq(1)
       end
     end
   end

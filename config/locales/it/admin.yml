@@ -1029,11 +1029,6 @@ it:
     poll_booth_assignments:
       alert:
         shifts: "Sono presenti turni assegnati per questa urna. Rimuovendo l'assegnazione, questi turni saranno eliminati. Si desidera procedere?"
-      flash:
-        destroy: "Urna deallocata"
-        create: "Urna assegnata"
-        error_destroy: "Si è verificato un errore nella deallocazione dell'urna"
-        error_create: "Si è verificato un errore nell'assegnazione dell'urna"
       show:
         location: "Ubicazione"
         officers: "Presidenti di seggio"

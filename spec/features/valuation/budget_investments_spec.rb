@@ -119,22 +119,18 @@ describe "Valuation budget investments" do
       finished_heading = create(:budget_heading, name: "Only Finished", group: group)
       create(:budget_investment, :visible_to_valuators, title: "Valuating Investment ONE",
                                                         heading: valuating_heading,
-                                                        group: group,
                                                         budget: budget,
                                                         valuators: [valuator])
       create(:budget_investment, :visible_to_valuators, title: "Valuating Investment TWO",
                                                         heading: valuating_finished_heading,
-                                                        group: group,
                                                         budget: budget,
                                                         valuators: [valuator])
       create(:budget_investment, :visible_to_valuators, :finished, title: "Finished ONE",
                                                                    heading: valuating_finished_heading,
-                                                                   group: group,
                                                                    budget: budget,
                                                                    valuators: [valuator])
       create(:budget_investment, :visible_to_valuators, :finished, title: "Finished TWO",
                                                                    heading: finished_heading,
-                                                                   group: group,
                                                                    budget: budget,
                                                                    valuators: [valuator])
 
@@ -210,9 +206,9 @@ describe "Valuation budget investments" do
     scenario "Index filtering by valuation status" do
       valuating = create(:budget_investment, :visible_to_valuators, budget: budget,
                                                                     title: "Ongoing valuation")
-      valuated  = create(:budget_investment, :visible_to_valuators, budget: budget,
-                                                                    title: "Old idea",
-                                                                    valuation_finished: true)
+      valuated  = create(:budget_investment, :visible_to_valuators, :finished,
+                                                                    budget: budget,
+                                                                    title: "Old idea")
       valuating.valuators << valuator
       valuated.valuators << valuator
 
@@ -241,7 +237,7 @@ describe "Valuation budget investments" do
       create(:valuator, user: create(:user, username: "Rick", email: "rick@valuators.org"))
     end
     let(:investment) do
-      create(:budget_investment, budget: budget, price: 1234, feasibility: "unfeasible",
+      create(:budget_investment, :unfeasible, budget: budget, price: 1234,
                                  unfeasibility_explanation: "It is impossible",
                                  administrator: administrator,)
     end

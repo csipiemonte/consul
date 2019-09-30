@@ -104,5 +104,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # SPID logout url
-  config.spid_logout_url = '/stg_deciditorinosliv1spid_gasp_coto/logout.do'
+  config.spid_logout_url = '/deciditorinosliv1spid_gasp_coto/logout.do'
 end

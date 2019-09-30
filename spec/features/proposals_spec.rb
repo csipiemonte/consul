@@ -13,18 +13,8 @@ describe "Proposals" do
   end
 
   context "Concerns" do
-    it_behaves_like "notifiable in-app", Proposal
+    it_behaves_like "notifiable in-app", :proposal
     it_behaves_like "relationable", Proposal
-    it_behaves_like "new_translatable",
-                    "proposal",
-                    "new_proposal_path",
-                    %w[title summary],
-                    { "description" => :ckeditor }
-    it_behaves_like "edit_translatable",
-                    "proposal",
-                    "edit_proposal_path",
-                    %w[title summary],
-                    { "description" => :ckeditor }
     it_behaves_like "remotely_translatable",
                     :proposal,
                     "proposals_path",
@@ -41,9 +31,9 @@ describe "Proposals" do
       Setting["feature.featured_proposals"] = true
       Setting["featured_proposals_number"] = 3
     end
+    let!(:featured_proposals) { create_featured_proposals }
 
     scenario "Lists featured and regular proposals" do
-      featured_proposals = create_featured_proposals
       proposals = [create(:proposal), create(:proposal), create(:proposal)]
 
       visit proposals_path
@@ -67,7 +57,6 @@ describe "Proposals" do
     end
 
     scenario "Index view mode" do
-      featured_proposals = create_featured_proposals
       proposals = [create(:proposal), create(:proposal), create(:proposal)]
 
       visit proposals_path
@@ -106,7 +95,7 @@ describe "Proposals" do
 
     scenario "Pagination" do
       per_page = Kaminari.config.default_per_page
-      (per_page + 5).times { create(:proposal) }
+      (per_page + 2).times { create(:proposal) }
 
       visit proposals_path
 
@@ -124,12 +113,10 @@ describe "Proposals" do
     end
 
     scenario "Index should show proposal descriptive image only when is defined" do
-      featured_proposals = create_featured_proposals
       proposal = create(:proposal)
-      proposal_with_image = create(:proposal)
-      image = create(:image, imageable: proposal_with_image)
+      proposal_with_image = create(:proposal, :with_image)
 
-      visit proposals_path(id: proposal)
+      visit proposals_path
 
       within("#proposal_#{proposal.id}") do
         expect(page).not_to have_css("div.with-image")
@@ -496,10 +483,9 @@ describe "Proposals" do
     end
 
     scenario "Specific geozone" do
-      geozone = create(:geozone, name: "California")
-      geozone = create(:geozone, name: "New York")
-      author = create(:user)
-      login_as(author)
+      create(:geozone, name: "California")
+      create(:geozone, name: "New York")
+      login_as(create(:user))
 
       visit new_proposal_path
 
@@ -584,7 +570,6 @@ describe "Proposals" do
     end
 
     scenario "Index has a link to retired proposals list" do
-      create_featured_proposals
       not_retired = create(:proposal)
       retired = create(:proposal, :retired)
 
@@ -701,8 +686,6 @@ describe "Proposals" do
   describe "Proposal index order filters" do
 
     scenario "Default order is hot_score", :js do
-      create_featured_proposals
-
       best_proposal = create(:proposal, title: "Best proposal")
       best_proposal.update_column(:hot_score, 10)
       worst_proposal = create(:proposal, title: "Worst proposal")
@@ -717,8 +700,6 @@ describe "Proposals" do
     end
 
     scenario "Proposals are ordered by confidence_score", :js do
-      create_featured_proposals
-
       best_proposal = create(:proposal, title: "Best proposal")
       best_proposal.update_column(:confidence_score, 10)
       worst_proposal = create(:proposal, title: "Worst proposal")
@@ -740,8 +721,6 @@ describe "Proposals" do
     end
 
     scenario "Proposals are ordered by newest", :js do
-      create_featured_proposals
-
       best_proposal = create(:proposal, title: "Best proposal", created_at: Time.current)
       medium_proposal = create(:proposal, title: "Medium proposal", created_at: Time.current - 1.hour)
       worst_proposal = create(:proposal, title: "Worst proposal", created_at: Time.current - 1.day)
@@ -876,7 +855,6 @@ describe "Proposals" do
   describe "Archived proposals" do
 
     scenario "show on proposals list" do
-      create_featured_proposals
       archived_proposals = create_archived_proposals
 
       visit proposals_path
@@ -890,7 +868,6 @@ describe "Proposals" do
     end
 
     scenario "do not show in other index tabs" do
-      create_featured_proposals
       archived_proposal = create(:proposal, :archived)
 
       visit proposals_path
@@ -910,7 +887,6 @@ describe "Proposals" do
     end
 
     scenario "do not show support buttons in index" do
-      create_featured_proposals
       archived_proposals = create_archived_proposals
 
       visit proposals_path(order: "archival_date")
@@ -1021,7 +997,7 @@ describe "Proposals" do
     end
 
     scenario "do not show recommented proposal in selected proposals list" do
-      create(:proposal, title: "Recommended", cached_votes_up: 10, tag_list: "Economy")
+      create(:proposal, title: "Recommended", tag_list: "Economy")
 
       user = create(:user)
       create(:follow, followable: create(:proposal, tag_list: "Economy"), user: user)
@@ -1461,9 +1437,9 @@ describe "Proposals" do
     end
 
     scenario "Order by relevance by default", :js do
-      proposal1 = create(:proposal, title: "Show you got",      cached_votes_up: 10)
-      proposal2 = create(:proposal, title: "Show what you got", cached_votes_up: 1)
-      proposal3 = create(:proposal, title: "Show you got",      cached_votes_up: 100)
+      create(:proposal, title: "Show you got",      cached_votes_up: 10)
+      create(:proposal, title: "Show what you got", cached_votes_up: 1)
+      create(:proposal, title: "Show you got",      cached_votes_up: 100)
 
       visit proposals_path
       fill_in "search", with: "Show what you got"
@@ -1479,10 +1455,10 @@ describe "Proposals" do
     end
 
     scenario "Reorder results maintaing search", :js do
-      proposal1 = create(:proposal, title: "Show you got",      cached_votes_up: 10,  created_at: 1.week.ago)
-      proposal2 = create(:proposal, title: "Show what you got", cached_votes_up: 1,   created_at: 1.month.ago)
-      proposal3 = create(:proposal, title: "Show you got",      cached_votes_up: 100, created_at: Time.current)
-      proposal4 = create(:proposal, title: "Do not display",    cached_votes_up: 1,   created_at: 1.week.ago)
+      create(:proposal, title: "Show you got",      cached_votes_up: 10,  created_at: 1.week.ago)
+      create(:proposal, title: "Show what you got", cached_votes_up: 1,   created_at: 1.month.ago)
+      create(:proposal, title: "Show you got",      cached_votes_up: 100, created_at: Time.current)
+      create(:proposal, title: "Do not display",    cached_votes_up: 1,   created_at: 1.week.ago)
 
       visit proposals_path
       fill_in "search", with: "Show what you got"
@@ -1504,7 +1480,6 @@ describe "Proposals" do
 
     scenario "Reorder by recommendations results maintaing search" do
       user = create(:user, recommended_proposals: true)
-      login_as(user)
 
       proposal1 = create(:proposal, title: "Show you got",      cached_votes_up: 10,  tag_list: "Sport")
       proposal2 = create(:proposal, title: "Show what you got", cached_votes_up: 1,   tag_list: "Sport")
@@ -1513,6 +1488,7 @@ describe "Proposals" do
       proposal5 = create(:proposal, tag_list: "Sport")
       create(:follow, followable: proposal5, user: user)
 
+      login_as(user)
       visit proposals_path
       fill_in "search", with: "Show you got"
       click_button "Search"
@@ -1528,6 +1504,7 @@ describe "Proposals" do
     end
 
     scenario "After a search do not show featured proposals" do
+      Setting["feature.featured_proposals"] = true
       featured_proposals = create_featured_proposals
       proposal = create(:proposal, title: "Abcdefghi")
 
@@ -1666,6 +1643,7 @@ describe "Proposals" do
                   {}
 
   scenario "Erased author" do
+    Setting["feature.featured_proposals"] = true
     user = create(:user)
     proposal = create(:proposal, author: user)
     user.erase
@@ -1747,9 +1725,6 @@ describe "Proposals" do
 
   context "Suggesting proposals" do
     scenario "Show up to 5 suggestions", :js do
-      author = create(:user)
-      login_as(author)
-
       create(:proposal, title: "First proposal, has search term")
       create(:proposal, title: "Second title")
       create(:proposal, title: "Third proposal, has search term")
@@ -1758,6 +1733,7 @@ describe "Proposals" do
       create(:proposal, title: "Sixth proposal, has search term")
       create(:proposal, title: "Seventh proposal, has search term")
 
+      login_as(create(:user))
       visit new_proposal_path
       fill_in "Proposal title", with: "search"
       check "proposal_terms_of_service"
@@ -1768,12 +1744,10 @@ describe "Proposals" do
     end
 
     scenario "No found suggestions", :js do
-      author = create(:user)
-      login_as(author)
-
       create(:proposal, title: "First proposal").update_column(:confidence_score, 10)
       create(:proposal, title: "Second proposal").update_column(:confidence_score, 8)
 
+      login_as(create(:user))
       visit new_proposal_path
       fill_in "Proposal title", with: "debate"
       check "proposal_terms_of_service"

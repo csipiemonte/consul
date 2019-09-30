@@ -25,8 +25,7 @@ describe Notification do
         read_notification2 = create(:notification, :read)
         unread_notification = create(:notification)
 
-        expect(Notification.read).to include read_notification1
-        expect(Notification.read).to include read_notification2
+        expect(Notification.read).to match_array [read_notification1, read_notification2]
         expect(Notification.read).not_to include unread_notification
       end
     end
@@ -37,8 +36,7 @@ describe Notification do
         unread_notification1 = create(:notification)
         unread_notification2 = create(:notification)
 
-        expect(Notification.unread).to include unread_notification1
-        expect(Notification.unread).to include unread_notification2
+        expect(Notification.unread).to match_array [unread_notification1, unread_notification2]
         expect(Notification.unread).not_to include read_notification
       end
     end
@@ -48,10 +46,7 @@ describe Notification do
         old_notification = create :notification
         new_notification = create :notification
 
-        sorted_notifications = Notification.recent
-        expect(sorted_notifications.size).to be 2
-        expect(sorted_notifications.first).to eq new_notification
-        expect(sorted_notifications.last).to eq old_notification
+        expect(Notification.recent).to eq [new_notification, old_notification]
       end
     end
 
